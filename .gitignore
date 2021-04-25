@@ -100,3 +100,8 @@ postcss_error.log
 
 # ripgrep ignore file
 .rgignore
+
+config/master.key
+config/credentials.yml.enc
+config/environments/development.rb
+config/environments/production.rb
