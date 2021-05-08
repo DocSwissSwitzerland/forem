@@ -1,11 +1,13 @@
 module EdgeCache
   class BustArticle
+    # rubocop:disable Rails/RelativeDateConstant
     TIMEFRAMES = [
       [-> { 1.week.ago }, "week"],
       [-> { 1.month.ago }, "month"],
       [-> { 1.year.ago }, "year"],
       [-> { 5.years.ago }, "infinity"],
     ].freeze
+    # rubocop:enable Rails/RelativeDateConstant
 
     def self.call(article)
       return unless article
@@ -22,7 +24,7 @@ module EdgeCache
       bust_tag_pages(cache_bust, article)
     end
 
-    def self.paths_for(article)
+    def self.paths_for(article, &block)
       paths = [
         article.path,
         "/#{article.user.username}",
@@ -35,9 +37,7 @@ module EdgeCache
         "/api/articles/#{article.id}",
       ]
 
-      paths.each do |path|
-        yield path
-      end
+      paths.each(&block)
 
       yield "/#{article.organization.slug}" if article.organization.present?
 
