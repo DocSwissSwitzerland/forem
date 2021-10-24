@@ -7,16 +7,17 @@ module Settings
       community_name: Settings::Community,
       community_description: Settings::Community,
 
-      suggested_tags: SiteConfig,
-      suggested_users: SiteConfig
+      suggested_tags: Settings::General,
+      suggested_users: Settings::General
     }.freeze
+    MAPPING_KEYS = MAPPINGS.keys
 
     MAPPINGS.each do |setting, settings_model|
       delegate setting, "#{setting}=", to: settings_model
     end
 
     def self.keys
-      MAPPINGS.keys
+      MAPPING_KEYS
     end
 
     def self.missing

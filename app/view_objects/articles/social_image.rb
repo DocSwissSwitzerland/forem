@@ -4,10 +4,10 @@ module Articles
 
     SOCIAL_PREVIEW_MIGRATION_DATETIME = Time.zone.parse("2019-04-22T00:00:00Z")
 
-    def initialize(article, **options)
+    def initialize(article, height: 500, width: 1000)
       @article = article
-      @height = options[:height] || 500
-      @width = options[:width] || 1000
+      @height = height
+      @width = width
     end
 
     def url
@@ -18,7 +18,7 @@ module Articles
       end
       return legacy_article_social_image unless use_new_social_url?
 
-      article_social_preview_url(article, format: :png, host: SiteConfig.app_domain)
+      article_social_preview_url(article, format: :png, host: Settings::General.app_domain)
     end
 
     private

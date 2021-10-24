@@ -43,7 +43,7 @@ function fetchNext(el, endpoint, insertCallback) {
 }
 
 function insertNext(params, buildCallback) {
-  return function insertEntries(entries) {
+  return function insertEntries(entries = []) {
     var list = document.getElementById(params.listId || 'sublist');
     var newFollowersHTML = '';
     entries.forEach(function insertAnEntry(entry) {
@@ -57,7 +57,9 @@ function insertNext(params, buildCallback) {
     });
 
     var followList = document.getElementById('following-wrapper');
-    followList.insertAdjacentHTML('beforeend', newFollowersHTML);
+    if (followList) {
+      followList.insertAdjacentHTML('beforeend', newFollowersHTML);
+    }
     if (nextPage > 0) {
       fetching = false;
     }
@@ -286,15 +288,11 @@ function insertArticles(articles) {
   }
 }
 
-function fetchNextPodcastPage(el) {
-  fetchNext(el, '/api/podcast_episodes', insertArticles);
-}
-
 function paginate(tag, params, requiresApproval) {
-  const searchHash = {
-    ...{ per_page: 15, page: nextPage },
-    ...JSON.parse(params),
-  };
+  const searchHash = Object.assign(
+    { per_page: 15, page: nextPage },
+    JSON.parse(params),
+  );
 
   if (tag && tag.length > 0) {
     searchHash.tag_names = searchHash.tag_names || [];
@@ -365,12 +363,7 @@ function fetchNextPageIfNearBottom() {
   var fetchCallback;
   var scrollableElem;
 
-  if (indexWhich === 'podcast-episodes') {
-    scrollableElem = document.getElementById('main-content');
-    fetchCallback = function fetch() {
-      fetchNextPodcastPage(indexContainer);
-    };
-  } else if (indexWhich === 'videos') {
+  if (indexWhich === 'videos') {
     scrollableElem = document.getElementById('main-content');
     fetchCallback = function fetch() {
       fetchNextVideoPage(indexContainer);

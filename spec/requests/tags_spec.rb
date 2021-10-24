@@ -3,8 +3,30 @@ require "rails_helper"
 RSpec.describe "Tags", type: :request, proper_status: true do
   describe "GET /tags" do
     it "returns proper page" do
-      get "/tags"
+      get tags_path
       expect(response.body).to include("Top tags")
+    end
+
+    it "does not include tags with alias" do
+      create(:tag, name: "ruby")
+      create(:tag, name: "aliastag", alias_for: "ruby")
+
+      get tags_path
+      expect(response.body).not_to include("aliastag")
+    end
+  end
+
+  describe "GET /tags/suggest" do
+    it "returns a JSON representation of the top tags", :aggregate_failures do
+      tag = create(:tag)
+
+      get suggest_tags_path
+
+      expect(response).to have_http_status(:ok)
+      expect(response.content_type).to match(%r{application/json; charset=utf-8}i)
+      response_tag = JSON.parse(response.body).first
+      expect(response_tag["name"]).to eq(tag.name)
+      expect(response_tag).to have_key("rules_html")
     end
   end
 
@@ -16,7 +38,7 @@ RSpec.describe "Tags", type: :request, proper_status: true do
     let(:super_admin)          { create(:user, :super_admin) }
 
     before do
-      allow(SiteConfig).to receive(:suggested_tags).and_return(%w[beginners javascript career])
+      allow(Settings::General).to receive(:suggested_tags).and_return(%w[beginners javascript career])
     end
 
     it "does not allow not logged-in users" do
@@ -120,11 +142,11 @@ RSpec.describe "Tags", type: :request, proper_status: true do
     end
 
     before do
-      allow(SiteConfig).to receive(:suggested_tags).and_return(%w[beginners javascript career])
+      allow(Settings::General).to receive(:suggested_tags).and_return(%w[beginners javascript career])
     end
 
     it "returns tags" do
-      create(:tag, name: SiteConfig.suggested_tags.first)
+      create(:tag, name: Settings::General.suggested_tags.first)
 
       get onboarding_tags_path, headers: headers
 
@@ -132,7 +154,7 @@ RSpec.describe "Tags", type: :request, proper_status: true do
     end
 
     it "returns tags with the correct json representation" do
-      tag = create(:tag, name: SiteConfig.suggested_tags.first)
+      tag = create(:tag, name: Settings::General.suggested_tags.first)
 
       get onboarding_tags_path, headers: headers
 
@@ -142,7 +164,7 @@ RSpec.describe "Tags", type: :request, proper_status: true do
       expect(response_tag["name"]).to eq(tag.name)
       expect(response_tag["bg_color_hex"]).to eq(tag.bg_color_hex)
       expect(response_tag["text_color_hex"]).to eq(tag.text_color_hex)
-      expect(response_tag["following"]).to be_nil
+      expect(response_tag[I18n.t("core.following")]).to be_nil
     end
 
     it "returns only suggested tags" do
@@ -154,7 +176,7 @@ RSpec.describe "Tags", type: :request, proper_status: true do
     end
 
     it "sets the correct edge caching surrogate key for all tags" do
-      tag = create(:tag, name: SiteConfig.suggested_tags.first)
+      tag = create(:tag, name: Settings::General.suggested_tags.first)
 
       get onboarding_tags_path, headers: headers
 

@@ -10,7 +10,6 @@ RSpec.describe "Registrations", type: :request do
 
         Authentication::Providers.enabled.each do |provider_name|
           provider = Authentication::Providers.get!(provider_name)
-          next if provider.provider_name == :apple && !Flipper.enabled?(:apple_auth)
 
           expect(response.body).to include("Continue with #{provider.official_name}")
         end
@@ -22,7 +21,7 @@ RSpec.describe "Registrations", type: :request do
 
         get sign_up_path
 
-        expect(response.body).not_to include("Have a password? Continue with your email address")
+        expect(response.body).not_to include("Have a password? Log in")
       end
     end
 
@@ -46,7 +45,7 @@ RSpec.describe "Registrations", type: :request do
       it "does not show the sign in text for password based authentication" do
         get sign_up_path
 
-        expect(response.body).not_to include("Have a password? Continue with your email address")
+        expect(response.body).not_to include("Have a password? Log in")
       end
     end
 
@@ -77,7 +76,23 @@ RSpec.describe "Registrations", type: :request do
       it "shows the sign in text for password based authentication" do
         get sign_up_path, params: { state: "new-user" }
 
-        expect(response.body).to include("View more sign in options")
+        expect(response.body).to include("Already have an account? <a href=\"/enter\">Log in</a>")
+      end
+
+      it "persists uploaded image" do
+        name = "test"
+        image_path = Rails.root.join("spec/support/fixtures/images/image1.jpeg")
+        post users_path, params: {
+          user: {
+            name: name,
+            username: "username",
+            email: "yo@whatup.com",
+            password: "password",
+            password_confirmation: "password",
+            profile_image: Rack::Test::UploadedFile.new(image_path, "image/jpeg")
+          }
+        }
+        expect(File.read(User.last.profile_image.file.file)).to eq(File.read(image_path))
       end
 
       it "creates a user with a random profile image if none was uploaded" do
@@ -135,15 +150,14 @@ RSpec.describe "Registrations", type: :request do
     context "with the creator_onboarding feature flag" do
       before do
         allow(FeatureFlag).to receive(:enabled?).with(:creator_onboarding).and_return(true)
-        allow(FeatureFlag).to receive(:enabled?).with(:runtime_banner).and_return(false)
-        allow(SiteConfig).to receive(:waiting_on_first_user).and_return(true)
+        allow(Settings::General).to receive(:waiting_on_first_user).and_return(true)
         allow(Settings::UserExperience).to receive(:public).and_return(false)
       end
 
       it "renders the creator onboarding form" do
         get root_path
-        expect(response.body).to include("Let's create an admin account for your community.")
-        expect(response.body).to include("Create admin account")
+        expect(response.body).to include("Let's start your Forem journey!")
+        expect(response.body).to include("Create your admin account first")
       end
     end
   end
@@ -151,7 +165,7 @@ RSpec.describe "Registrations", type: :request do
   describe "GET /users/signup" do
     context "when site is in waiting_on_first_user state" do
       before do
-        allow(SiteConfig).to receive(:waiting_on_first_user).and_return(true)
+        allow(Settings::General).to receive(:waiting_on_first_user).and_return(true)
         ENV["FOREM_OWNER_SECRET"] = "test"
       end
 
@@ -296,7 +310,7 @@ RSpec.describe "Registrations", type: :request do
       end
     end
 
-    context "when site configured to accept email registration AND require captcha" do
+    context "when Forem instance configured to accept email registration AND require captcha" do
       before do
         allow_any_instance_of(ProfileImageUploader).to receive(:download!)
         allow(Settings::Authentication).to receive(:recaptcha_secret_key).and_return("someSecretKey")
@@ -334,7 +348,7 @@ RSpec.describe "Registrations", type: :request do
     context "when site is in waiting_on_first_user state" do
       before do
         allow_any_instance_of(ProfileImageUploader).to receive(:download!)
-        allow(SiteConfig).to receive(:waiting_on_first_user).and_return(true)
+        allow(Settings::General).to receive(:waiting_on_first_user).and_return(true)
         ENV["FOREM_OWNER_SECRET"] = nil
       end
 
@@ -370,14 +384,14 @@ RSpec.describe "Registrations", type: :request do
       end
 
       it "creates mascot user" do
-        expect(Settings::Mascot.mascot_user_id).to be_nil
+        expect(Settings::General.mascot_user_id).to be_nil
         post "/users", params:
           { user: { name: "test #{rand(10)}",
                     username: "haha_#{rand(10)}",
                     email: "yoooo#{rand(100)}@yo.co",
                     password: "PaSSw0rd_yo000",
                     password_confirmation: "PaSSw0rd_yo000" } }
-        expect(Settings::Mascot.mascot_user_id).to eq User.last.id
+        expect(Settings::General.mascot_user_id).to eq User.last.id
 
         mascot_account = User.mascot_account
         expect(mascot_account.username).to eq Users::CreateMascotAccount::MASCOT_PARAMS[:username]
@@ -409,6 +423,18 @@ RSpec.describe "Registrations", type: :request do
           expect(User.first).to be nil
         end.to raise_error Pundit::NotAuthorizedError
       end
+
+      it "enqueues Discover::RegisterWorker" do
+        sidekiq_assert_enqueued_with(job: Discover::RegisterWorker) do
+          post "/users", params:
+            { user: { name: "test #{rand(10)}",
+                      username: "haha_#{rand(10)}",
+                      email: "yoooo#{rand(100)}@yo.co",
+                      password: "PaSSw0rd_yo000",
+                      forem_owner_secret: "test",
+                      password_confirmation: "PaSSw0rd_yo000" } }
+        end
+      end
     end
 
     context "with the creator_onboarding feature flag" do
@@ -416,7 +442,7 @@ RSpec.describe "Registrations", type: :request do
         allow_any_instance_of(ProfileImageUploader).to receive(:download!)
         allow(FeatureFlag).to receive(:enabled?).with(:creator_onboarding).and_return(true)
         allow(FeatureFlag).to receive(:enabled?).with(:runtime_banner).and_return(false)
-        allow(SiteConfig).to receive(:waiting_on_first_user).and_return(true)
+        allow(Settings::General).to receive(:waiting_on_first_user).and_return(true)
       end
 
       it "creates user with valid params passed" do

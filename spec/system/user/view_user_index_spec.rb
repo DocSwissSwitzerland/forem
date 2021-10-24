@@ -29,12 +29,12 @@ RSpec.describe "User index", type: :system do
       def shows_header
         within("h1") { expect(page).to have_content(user.name) }
         within(".profile-header__actions") do
-          expect(page).to have_button("Follow")
+          expect(page).to have_button(I18n.t("core.follow"))
         end
       end
 
       def shows_title
-        expect(page).to have_title("#{user.name} - #{SiteConfig.community_name}")
+        expect(page).to have_title("#{user.name} - #{Settings::Community.community_name}")
       end
 
       def shows_articles
@@ -99,7 +99,7 @@ RSpec.describe "User index", type: :system do
     def shows_header
       within("h1") { expect(page).to have_content(user.name) }
       within(".profile-header__actions") do
-        expect(page).to have_button("Edit profile")
+        expect(page).to have_button(I18n.t("core.edit_profile"))
       end
     end
 

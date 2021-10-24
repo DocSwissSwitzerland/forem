@@ -13,7 +13,7 @@ class EmailDigestArticleCollector
       return [] unless should_receive_email?
 
       articles = if user_has_followings?
-                   experience_level_rating = (@user.experience_level || 5)
+                   experience_level_rating = (@user.setting.experience_level || 5)
                    experience_level_rating_min = experience_level_rating - 3.6
                    experience_level_rating_max = experience_level_rating + 3.6
 
@@ -50,7 +50,7 @@ class EmailDigestArticleCollector
     return true unless last_email_sent_at
 
     # Has it been at least x days since @user received an email?
-    Time.current - last_email_sent_at >= SiteConfig.periodic_email_digest
+    Time.current - last_email_sent_at >= Settings::General.periodic_email_digest
   end
 
   def last_email_sent_at
@@ -65,7 +65,9 @@ class EmailDigestArticleCollector
   end
 
   def user_has_followings?
-    @user.following_users_count.positive? || @user.cached_followed_tag_names.any?
+    @user.following_users_count.positive? ||
+      @user.cached_followed_tag_names.any? ||
+      @user.cached_antifollowed_tag_names.any?
   end
 
   def last_user_emails

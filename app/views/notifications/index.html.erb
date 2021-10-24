@@ -12,9 +12,11 @@
   <meta property="og:site_name" content="<%= community_name %>" />
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@<%= SiteConfig.social_media_handles["twitter"] %>">
+  <meta name="twitter:site" content="@<%= Settings::General.social_media_handles["twitter"] %>">
   <meta name="twitter:title" content="Notifications - <%= community_name %>">
   <meta name="twitter:description" content="Notifications inbox for <%= community_name %>">
+
+   <%= javascript_packs_with_chunks_tag "notificationPage", defer: true %>
 <% end %>
 
 <script>
@@ -41,7 +43,7 @@
 
 <% if user_signed_in? %>
   <main id="main-content">
-    <header class="crayons-layout crayons-layout--limited-l crayons-layout--1-col p-4 flex items-center justify-between">
+    <header class="crayons-layout crayons-layout--limited-l crayons-layout--1-col p-3 flex items-center justify-between">
       <h1 class="crayons-title">Notifications</h1>
       <a href="<%= user_settings_path(tab: :notifications) %>" class="crayons-btn crayons-btn--ghost">Settings</a>
     </header>
@@ -50,7 +52,7 @@
       <div class="crayons-layout__sidebar-left">
         <%= render "notifications/nav_menu" %>
       </div>
-      <main class="crayons-layout__content">
+      <div class="crayons-layout__content" data-follow-button-container="true">
         <div id="articles-list">
           <%= render "notifications_list", params: params %>
         </div>
@@ -62,10 +64,11 @@
             Load More
           </button>
         <% end %>
-      </main>
+      </div>
     </div>
     <%= render "articles/fitvids" %>
   </main>
+  <%= javascript_packs_with_chunks_tag "followButtons", defer: true %>
 <% else %>
   <%= render "devise/registrations/registration_form" %>
 <% end %>

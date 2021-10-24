@@ -231,7 +231,6 @@
     form {
       padding: 10px 0px;
       font-size: 15px;
-      font-family: $helvetica-condensed;
       font-stretch: condensed;
 
       select {
@@ -279,6 +278,10 @@ $column-flex: 1;
   &__col {
     flex: $column-flex;
   }
+}
+
+.crayons-tabs--analytics {
+  justify-content: center;
 }
 
 .graphs {

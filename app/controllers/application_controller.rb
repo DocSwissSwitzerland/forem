@@ -5,6 +5,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception, prepend: true
   before_action :remember_cookie_sync
   before_action :forward_to_app_config_domain
+  before_action :determine_locale
 
   include SessionCurrentUser
   include ValidRequest
@@ -29,16 +30,17 @@ class ApplicationController < ActionController::Base
     )
   end
 
-  PUBLIC_CONTROLLERS = %w[shell
-                          async_info
-                          ga_events
-                          service_worker
-                          omniauth_callbacks
-                          registrations
+  PUBLIC_CONTROLLERS = %w[async_info
                           confirmations
+                          deep_links
+                          ga_events
+                          health_checks
+                          instances
                           invitations
+                          omniauth_callbacks
                           passwords
-                          health_checks].freeze
+                          registrations
+                          service_worker].freeze
   private_constant :PUBLIC_CONTROLLERS
 
   CONTENT_CHANGE_PATHS = [
@@ -55,6 +57,8 @@ class ApplicationController < ActionController::Base
 
     if api_action?
       authenticate!
+    elsif (@page = Page.landing_page)
+      render template: "pages/show"
     else
       @user ||= User.new
       render template: "devise/registrations/new"
@@ -167,11 +171,19 @@ class ApplicationController < ActionController::Base
   end
 
   def initialize_stripe
-    Stripe.api_key = SiteConfig.stripe_api_key
+    Stripe.api_key = Settings::General.stripe_api_key
 
     return unless Rails.env.development? && Stripe.api_key.present?
 
     Stripe.log_level = Stripe::LEVEL_INFO
+  end
+
+  def determine_locale
+    I18n.locale = if %w[en fr].include?(params[:locale])
+                    params[:locale]
+                  else
+                    Settings::UserExperience.default_locale
+                  end
   end
 
   def remember_cookie_sync
@@ -185,19 +197,28 @@ class ApplicationController < ActionController::Base
   end
 
   def forward_to_app_config_domain
-    return unless request.get? && # Let's only redirect get requests for this purpose.
-      request.host == ENV["APP_DOMAIN"] && # If the request equals the original set domain, e.g. forem-x.forem.cloud.
-      ENV["APP_DOMAIN"] != SiteConfig.app_domain # If the app domain config has now been set, let's go there instead.
+    # Let's only redirect get requests for this purpose.
+    return unless request.get? &&
+      # If the request equals the original set domain, e.g. forem-x.forem.cloud.
+      request.host == ENV["APP_DOMAIN"] &&
+      # If the app domain config has now been set, let's go there instead.
+      ENV["APP_DOMAIN"] != Settings::General.app_domain
 
     redirect_to URL.url(request.fullpath)
   end
 
   def bust_content_change_caches
     EdgeCache::Bust.call(CONTENT_CHANGE_PATHS)
-    SiteConfig.admin_action_taken_at = Time.current # Used as cache key
+    Settings::General.admin_action_taken_at = Time.current # Used as cache key
   end
 
-  protected
+  # To ensure that components are sent back as HTML, we wrap their rendering in
+  # this helper method
+  def render_component(component_class, *args, **kwargs)
+    render component_class.new(*args, **kwargs), content_type: "text/html"
+  end
+
+  private
 
   def configure_permitted_parameters
     devise_parameter_sanitizer.permit(:sign_up, keys: %i[username name profile_image profile_image_url])

@@ -1,20 +1,21 @@
 <% title "Dashboard" %>
-
-<main id="main-content">
   <header class="crayons-layout">
-    <h1 class="p-2 pb-0 m:p-0 crayons-title">Dashboard</h1>
+    <h1 class="p-2 pb-0 m:p-0 crayons-title"></h1>
+<main id="main-content">
+  <section class="crayons-layout">
+    <h1 class="p-2 pb-0 m:p-0 crayons-title"><%= t("core.dashboard") %></h1>
     <%= render "actions_mobile" %>
     <%= render "analytics" %>
-  </header>
+  </section>
 
   <div class="crayons-layout crayons-layout--2-cols">
-    <aside class="crayons-layout__sidebar-left">
+    <div class="crayons-layout__sidebar-left">
       <%= render "actions" %>
-    </aside>
+    </div>
 
     <div class="crayons-layout__content flex flex-col">
       <div class="flex items-center justify-between mb-3">
-        <h2 class="hidden m:block crayons-subtitle-2">Posts</h2>
+        <h2 class="hidden m:block crayons-subtitle-2"><%= t("core.posts") %></h2>
 
         <div class="flex flex-wrap">
           <% if params[:which] != "organization" %>
@@ -22,7 +23,7 @@
               <%= link_to "Show archived", "javascript:;", id: "toggleArchivedLink", class: "crayons-btn crayons-btn--outlined ml-2 whitespace-nowrap my-1" %>
             <% end %>
             <% if @articles.any? %>
-              <%= select_tag "dashboard_sort", options_for_select(sort_options, params[:sort]), 'aria-label': "Sort By", class: "crayons-select w-auto ml-2 my-1" %>
+              <%= select_tag "dashboard_sort", options_for_select(sort_options, params[:sort]), "aria-label": "Sort By", class: "crayons-select w-auto ml-2 my-1" %>
             <% end %>
           <% end %>
 
@@ -38,6 +39,7 @@
       </div>
 
       <% if @articles.any? %>
+        <%= javascript_packs_with_chunks_tag "dashboardDropdowns", defer: true %>
         <div class="crayons-card mb-6">
           <% @articles.each do |article| %>
             <% if params[:which] == "organization" %>
@@ -55,12 +57,12 @@
       <% else %>
         <div class="p-6 m:p-9 crayons-card crayons-card--secondary align-center fs-l h-100 flex items-center justify-center flex-1">
           <div>
-            <% if Settings::Mascot.image_url.present? %>
-              <% image_url = Images::Optimizer.call(Settings::Mascot.image_url, width: 300, crop: "imagga_scale") %>
-              <%= image_tag(image_url, class: "sloan mb-7", alt: Settings::Mascot.image_description.to_s) %>
+            <% if Settings::General.mascot_image_url.present? %>
+              <% image_url = Images::Optimizer.call(Settings::General.mascot_image_url, width: 300, crop: "imagga_scale") %>
+              <%= image_tag(image_url, class: "sloan mb-7", alt: "Mascot image") %>
             <% end %>
-            <p class="mb-6">This is where you can manage your posts, but you haven't written anything yet.</p>
-            <p><a href="/new" class="crayons-btn crayons-btn--l">Write your first post now</a></p>
+            <p class="mb-6"><%= t("dashboard.empty_post") %></p>
+            <p><a href="/new" class="crayons-btn crayons-btn--l"><%= t("dashboard.write_new_post") %></a></p>
           </div>
         </div>
       <% end %>

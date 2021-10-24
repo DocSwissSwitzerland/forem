@@ -218,7 +218,7 @@ export const MentionAutocompleteTextArea = forwardRef(
         // inputs. This check is necessary to prevent an issue in iOS browsers only.
         // An additional check to see if the component can be focusable
         // covers the use case for clicking on elements in the mention autocomplete list.
-        activeInput.focus();
+        activeInput.focus({ preventScroll: true });
         activeInput.setSelectionRange(cursorPosition, cursorPosition - 1);
         setFocusable(true);
       }
@@ -226,16 +226,14 @@ export const MentionAutocompleteTextArea = forwardRef(
 
     const handleTextInputChange = ({ target: { value } }) => {
       setTextContent(value);
-      const isComboboxVisible = !comboboxRef.current.classList.contains(
-        'hidden',
-      );
+      const isComboboxVisible =
+        !comboboxRef.current.classList.contains('hidden');
       const currentActiveInput = isComboboxVisible
         ? comboboxRef.current
         : plainTextAreaRef.current;
 
-      const { isUserMention, indexOfMentionStart } = getMentionWordData(
-        currentActiveInput,
-      );
+      const { isUserMention, indexOfMentionStart } =
+        getMentionWordData(currentActiveInput);
 
       const { selectionStart } = currentActiveInput;
 
@@ -327,7 +325,7 @@ export const MentionAutocompleteTextArea = forwardRef(
           plainTextArea,
           comboboxTextArea,
         });
-        plainTextArea.focus();
+        plainTextArea.focus({ preventScroll: true });
       }
 
       // Initialize the new text areas in the "non-autosuggest" state, hiding the combobox until a search begins
@@ -349,6 +347,7 @@ export const MentionAutocompleteTextArea = forwardRef(
         >
           <ComboboxInput
             {...autocompleteInputProps}
+            data-gramm_editor="false"
             aria-label="Mention user"
             ref={comboboxRef}
             value={textContent}
@@ -367,6 +366,7 @@ export const MentionAutocompleteTextArea = forwardRef(
 
           <textarea
             {...autocompleteInputProps}
+            data-gramm_editor="false"
             id={inputId}
             data-mention-autocomplete-active="true"
             ref={mergeInputRefs([plainTextAreaRef, forwardedRef])}
@@ -391,6 +391,7 @@ export const MentionAutocompleteTextArea = forwardRef(
                 <ComboboxList>
                   {users.map((user) => (
                     <ComboboxOption
+                      key={user.username}
                       value={user.username}
                       className="crayons-autocomplete__option flex items-center"
                     >

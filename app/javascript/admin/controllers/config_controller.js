@@ -1,6 +1,7 @@
 /* global jQuery */
-import { Controller } from 'stimulus';
+import { Controller } from '@hotwired/stimulus';
 import { adminModal } from '../adminModal';
+import { displaySnackbar } from '../messageUtilities';
 
 const recaptchaFields = document.getElementById('recaptchaContainer');
 const emailRegistrationCheckbox = document.getElementById(
@@ -10,12 +11,10 @@ const emailAuthSettingsSection = document.getElementById(
   'email-auth-settings-section',
 );
 const emailAuthModalTitle = 'Disable Email address registration';
-// TODO: Remove the sentence "You must update site config to save this action!"
-// once we build more robust flow for Admin/Config
+
 const emailAuthModalBody = `
   <p>If you disable Email address as a registration option, people cannot create an account with their email address.</p>
-  <p>However, people who have already created an account using their email address can continue to login.</p>
-  <p><strong>You must confirm and update site config to save below this action.</strong></p>`;
+  <p>However, people who have already created an account using their email address can continue to login.</p>`;
 
 export default class ConfigController extends Controller {
   static targets = [
@@ -63,14 +62,14 @@ export default class ConfigController extends Controller {
         (letter) => `_${letter.toLowerCase()}`,
       );
       document.querySelector(
-        `button[data-id=site_config_${snakeCaseName}]`,
+        `button[data-id=settings_${snakeCaseName}]`,
       ).disabled = newValue;
     }
   }
 
   closeAdminModal() {
     // per forem/internalEngineering#336, need to short-circuit the
-    // "Update Site Configuration" button submit action; chose not to
+    // "Update Settings" button submit action; chose not to
     // define Target on actual "Update" button (since it's a partial).
     // The Target is defined on the Authentication form, and that section's
     // "Update" button is queried.
@@ -91,6 +90,29 @@ export default class ConfigController extends Controller {
     if (document.getElementsByClassName('crayons-modal')[0]) {
       document.body.style.height = '100vh';
       document.body.style.overflowY = 'hidden';
+    }
+  }
+
+  async updateConfigurationSettings(event) {
+    event.preventDefault();
+    try {
+      const body = new FormData(event.target);
+      const response = await fetch(event.target.action, {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json',
+          'X-CSRF-Token': document.querySelector("meta[name='csrf-token']")
+            ?.content,
+        },
+        body,
+        credentials: 'same-origin',
+      });
+
+      const outcome = await response.json();
+
+      displaySnackbar(outcome.message ?? outcome.error);
+    } catch (err) {
+      displaySnackbar(err.message);
     }
   }
 
@@ -127,6 +149,8 @@ export default class ConfigController extends Controller {
     event.preventDefault();
     this.configModalAnchorTarget.innerHTML = adminModal({
       title: emailAuthModalTitle,
+      controllerName: 'config',
+      closeModalFunction: 'closeAdminModal',
       body: emailAuthModalBody,
       leftBtnText: 'Confirm disable',
       leftBtnAction: 'disableEmailAuthFromModal',
@@ -159,7 +183,7 @@ export default class ConfigController extends Controller {
 
   enableOrEditAuthProvider(event) {
     event.preventDefault();
-    const providerName = event.target.dataset.providerName;
+    const { providerName } = event.target.dataset;
     const enabledIndicator = document.getElementById(
       `${providerName}-enabled-indicator`,
     );
@@ -178,7 +202,7 @@ export default class ConfigController extends Controller {
 
   disableAuthProvider(event) {
     event.preventDefault();
-    const providerName = event.target.dataset.providerName;
+    const { providerName } = event.target.dataset;
     const enabledIndicator = document.getElementById(
       `${providerName}-enabled-indicator`,
     );
@@ -196,15 +220,17 @@ export default class ConfigController extends Controller {
   }
 
   authProviderModalBody(provider) {
-    return `<p>If you disable ${provider} as a login option, people cannot authenticate with ${provider}.</p><p><strong>You must update Site Config to save this action!</strong></p>`;
+    return `<p>If you disable ${provider} as a login option, people cannot authenticate with ${provider}.</p><p><strong>You must update Settings to save this action!</strong></p>`;
   }
 
   activateAuthProviderModal(event) {
     event.preventDefault();
-    const providerName = event.target.dataset.providerName;
-    const providerOfficialName = event.target.dataset.providerOfficialName;
+    const { providerName } = event.target.dataset;
+    const { providerOfficialName } = event.target.dataset;
     this.configModalAnchorTarget.innerHTML = adminModal({
       title: this.authProviderModalTitle(providerOfficialName),
+      controllerName: 'config',
+      closeModalFunction: 'closeAdminModal',
       body: this.authProviderModalBody(providerOfficialName),
       leftBtnText: 'Confirm disable',
       leftBtnAction: 'disableAuthProviderFromModal',
@@ -219,7 +245,7 @@ export default class ConfigController extends Controller {
 
   disableAuthProviderFromModal(event) {
     event.preventDefault();
-    const providerName = event.target.dataset.providerName;
+    const { providerName } = event.target.dataset;
     const authEnableButton = document.getElementById(
       `${providerName}-auth-btn`,
     );
@@ -244,7 +270,7 @@ export default class ConfigController extends Controller {
       const targetAuthDisableBtn = document.querySelector(
         '[data-enable-auth="true"]',
       );
-      targetAuthDisableBtn.parentElement.classList.add('crayons-tooltip');
+      targetAuthDisableBtn.parentElement.classList.add('crayons-hover-tooltip');
       targetAuthDisableBtn.parentElement.setAttribute(
         'data-tooltip',
         'To edit this, you must first enable Email address as a registration option',
@@ -255,7 +281,7 @@ export default class ConfigController extends Controller {
 
   hideAuthProviderSettings(event) {
     event.preventDefault();
-    const providerName = event.target.dataset.providerName;
+    const { providerName } = event.target.dataset;
     document
       .getElementById(`${providerName}-auth-settings`)
       .classList.add('hidden');
@@ -271,9 +297,8 @@ export default class ConfigController extends Controller {
       .forEach((provider) => {
         enabledProviderArray.push(provider.dataset.providerName);
       });
-    document.getElementById(
-      'auth_providers_to_enable',
-    ).value = enabledProviderArray;
+    document.getElementById('auth_providers_to_enable').value =
+      enabledProviderArray;
   }
 
   adjustAuthenticationOptions() {
@@ -292,7 +317,20 @@ export default class ConfigController extends Controller {
       .querySelectorAll('[data-enable-auth="true"]')
       .forEach((provider) => {
         const { providerName } = provider.dataset;
-        if (
+        if (providerName == 'apple') {
+          if (
+            !document.getElementById('settings_authentication_apple_client_id')
+              .value ||
+            !document.getElementById('settings_authentication_apple_key_id')
+              .value ||
+            !document.getElementById('settings_authentication_apple_pem')
+              .value ||
+            !document.getElementById('settings_authentication_apple_team_id')
+              .value
+          ) {
+            providersWithMissingKeys.push(providerName);
+          }
+        } else if (
           !document.getElementById(
             `settings_authentication_${providerName}_key`,
           ).value ||
@@ -330,6 +368,8 @@ export default class ConfigController extends Controller {
   activateMissingKeysModal(providers) {
     this.configModalAnchorTarget.innerHTML = adminModal({
       title: 'Setup not complete',
+      controllerName: 'config',
+      closeModalFunction: 'closeAdminModal',
       body: this.missingAuthKeysModalBody(providers),
       leftBtnText: 'Continue editing',
       leftBtnAction: 'closeAdminModal',
@@ -344,7 +384,7 @@ export default class ConfigController extends Controller {
       event.preventDefault();
       this.activateMissingKeysModal(this.enabledProvidersWithMissingKeys());
     } else {
-      event.target.submit();
+      this.updateConfigurationSettings(event);
     }
   }
 

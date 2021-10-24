@@ -16,14 +16,14 @@ function loadForm() {
   const snackZone = document.getElementById('snack-zone');
 
   if (snackZone) {
-    render(<Snackbar lifespan="3" />, snackZone);
+    render(<Snackbar lifespan={3} />, snackZone);
   }
 
   getUserDataAndCsrfToken().then(({ currentUser, csrfToken }) => {
     window.currentUser = currentUser;
     window.csrfToken = csrfToken;
 
-    const root = document.getElementById('js-article-form');
+    const root = document.querySelector('main');
     const { article, organizations, version, siteLogo } = root.dataset;
 
     render(

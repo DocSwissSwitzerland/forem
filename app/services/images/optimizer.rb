@@ -5,8 +5,10 @@ module Images
 
       if imgproxy_enabled?
         imgproxy(img_src, **kwargs)
-      else
+      elsif cloudinary_enabled?
         cloudinary(img_src, **kwargs)
+      else
+        img_src
       end
     end
 
@@ -35,6 +37,7 @@ module Images
       height: nil,
       width: nil,
       max_bytes: 500_000, # Keep everything under half of one MB.
+      auto_rotate: true,
       resizing_type: nil
     }.freeze
 
@@ -57,6 +60,12 @@ module Images
 
     def self.imgproxy_enabled?
       Imgproxy.config.key.present? && Imgproxy.config.salt.present?
+    end
+
+    def self.cloudinary_enabled?
+      config = Cloudinary.config
+
+      config.cloud_name.present? && config.api_key.present? && config.api_secret.present?
     end
 
     def self.get_imgproxy_endpoint

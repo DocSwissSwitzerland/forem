@@ -55,6 +55,10 @@ module PracticalDeveloper
 
     config.middleware.use Rack::Deflater
 
+    config.i18n.load_path += Dir[Rails.root.join("config/locales/**/*.yml")]
+
+    config.i18n.fallbacks = [:en]
+
     # Globally handle Pundit::NotAuthorizedError by serving 404
     config.action_dispatch.rescue_responses["Pundit::NotAuthorizedError"] = :not_found
 
@@ -62,8 +66,6 @@ module PracticalDeveloper
     # Unfortunately there isn't an easy way to use them and use view caching at the same time.
     # Therefore we disable "per_form_csrf_tokens" for the time being.
     config.action_controller.per_form_csrf_tokens = false
-
-    config.middleware.use SetCookieDomain
 
     # NOTE: [Rails 6]
     # To improve security, Rails embeds the purpose and expiry metadata inside encrypted or signed cookies value.

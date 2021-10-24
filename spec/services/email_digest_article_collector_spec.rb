@@ -36,7 +36,7 @@ RSpec.describe EmailDigestArticleCollector, type: :service do
       end
 
       it "will return no articles when user shouldn't receive any" do
-        Timecop.freeze(SiteConfig.periodic_email_digest.days.from_now - 1) do
+        Timecop.freeze(Settings::General.periodic_email_digest.days.from_now - 1) do
           articles = described_class.new(user).articles_to_send
           expect(articles).to be_empty
         end
@@ -54,10 +54,27 @@ RSpec.describe EmailDigestArticleCollector, type: :service do
       end
 
       it "evaluates that user is ready to receive an email" do
-        Timecop.freeze((SiteConfig.periodic_email_digest + 1).days.from_now) do
+        Timecop.freeze((Settings::General.periodic_email_digest + 1).days.from_now) do
           articles = described_class.new(user).articles_to_send
           expect(articles).not_to be_empty
         end
+      end
+    end
+
+    context "when using tags" do
+      it "takes 'antifollowed' tags into account", :aggregate_failures do
+        articles = create_list(:article, 3, public_reactions_count: 40, score: 40)
+        tag = articles.first.tags.first
+        user.follow(tag)
+
+        digest1 = described_class.new(user).articles_to_send
+        expect(digest1.size).to eq 3
+
+        tag_follow = user.follows.first
+        tag_follow.update(explicit_points: -999)
+
+        digest2 = described_class.new(user).articles_to_send
+        expect(digest2.size).to eq 0
       end
     end
   end

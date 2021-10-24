@@ -67,9 +67,8 @@ RSpec.describe "CommentsCreate", type: :request do
       user.update(blocked_by_count: 1)
       blocker_article = create(:article, user: blocker)
 
-      expect do
-        post comments_path, params: comment_params(commentable_id: blocker_article.id)
-      end.to raise_error(Pundit::NotAuthorizedError)
+      post comments_path, params: comment_params(commentable_id: blocker_article.id)
+      expect(response).to have_http_status(:unprocessable_entity)
     end
   end
 
@@ -161,7 +160,7 @@ RSpec.describe "CommentsCreate", type: :request do
     end
 
     def reply_and_mention_comment_author_as_moderator(comment)
-      allow(Settings::Mascot).to receive(:mascot_user_id)
+      allow(Settings::General).to receive(:mascot_user_id)
         .and_return(moderator_replier.id)
 
       sign_in moderator_replier

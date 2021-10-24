@@ -27,8 +27,10 @@ module GithubRepos
           watchers_count: fetched_repo.watchers,
           stargazers_count: fetched_repo.stargazers_count,
           info_hash: fetched_repo.to_hash,
+          # Touch `updated_at` even if nothing here was updated. See PR #12853
+          # for more details.
+          updated_at: Time.current,
         )
-        repo.touch(:updated_at)
         if repo.user&.github_repos_updated_at&.before?(TOUCH_USER_COOLDOWN.ago)
           repo.user.touch(:github_repos_updated_at)
         end
@@ -38,11 +40,9 @@ module GithubRepos
              Github::Errors::RepositoryUnavailable
         repo.destroy
       rescue Github::Errors::ClientError => e
-        if e.message.include? "Repository access blocked"
-          repo.destroy
-        else
-          raise e
-        end
+        raise e unless e.message.include?("Repository access blocked")
+
+        repo.destroy
       end
     end
   end

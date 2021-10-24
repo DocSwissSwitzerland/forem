@@ -1,4 +1,4 @@
-import { Controller } from 'stimulus';
+import { Controller } from '@hotwired/stimulus';
 
 export default class ModalController extends Controller {
   static values = {
@@ -7,6 +7,13 @@ export default class ModalController extends Controller {
     title: String,
     size: String,
   };
+
+  async closeModal() {
+    const { render } = await import('preact');
+    const modalRoot = document.querySelector(this.rootSelectorValue);
+
+    render(null, modalRoot);
+  }
 
   async toggleModal() {
     const [{ Modal }, { render, h }] = await Promise.all([
@@ -19,9 +26,7 @@ export default class ModalController extends Controller {
     render(
       <Modal
         title={this.titleValue}
-        onClose={() => {
-          render(null, modalRoot);
-        }}
+        onClose={() => this.closeModal()}
         size={this.sizeValue}
       >
         <div
