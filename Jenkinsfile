@@ -5,7 +5,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'docker build . -f ./Containerfile'
+        sh 'pwd'
       }
     }
 
