@@ -80,48 +80,48 @@ ENTRYPOINT ["./scripts/entrypoint.sh"]
 CMD ["bundle", "exec", "rails", "server", "-b", "0.0.0.0", "-p", "3000"]
 
 ## Testing
-FROM builder AS testing
+#FROM builder AS testing
 
-USER root
+#USER root
 
-RUN dnf install --setopt install_weak_deps=false -y \
-    chromium-headless chromedriver && \
-    yum clean all && \
-    rm -rf /var/cache/yum
+#RUN dnf install --setopt install_weak_deps=false -y \
+#    chromium-headless chromedriver && \
+#    yum clean all && \
+#    rm -rf /var/cache/yum
 
-COPY --chown="${APP_USER}":"${APP_USER}" ./spec "${APP_HOME}"/spec
-COPY --from=builder /usr/local/bin/dockerize /usr/local/bin/dockerize
+#COPY --chown="${APP_USER}":"${APP_USER}" ./spec "${APP_HOME}"/spec
+#COPY --from=builder /usr/local/bin/dockerize /usr/local/bin/dockerize
 
-RUN chown "${APP_USER}":"${APP_USER}" -R "${APP_HOME}"
+#RUN chown "${APP_USER}":"${APP_USER}" -R "${APP_HOME}"#
 
-USER "${APP_USER}"
+#USER "${APP_USER}"
 
-RUN bundle config --local build.sassc --disable-march-tune-native && \
-    bundle config --delete without && \
-    bundle install --deployment --jobs 4 --retry 5 && \
-    find "${APP_HOME}"/vendor/bundle -name "*.c" -delete && \
-    find "${APP_HOME}"/vendor/bundle -name "*.o" -delete
+#RUN bundle config --local build.sassc --disable-march-tune-native && \
+#    bundle config --delete without && \
+#    bundle install --deployment --jobs 4 --retry 5 && \
+#    find "${APP_HOME}"/vendor/bundle -name "*.c" -delete && \
+#    find "${APP_HOME}"/vendor/bundle -name "*.o" -delete
 
-ENTRYPOINT ["./scripts/entrypoint.sh"]
+#ENTRYPOINT ["./scripts/entrypoint.sh"]
 
-CMD ["bundle", "exec", "rails", "server", "-b", "0.0.0.0", "-p", "3000"]
+#CMD ["bundle", "exec", "rails", "server", "-b", "0.0.0.0", "-p", "3000"]
 
 ## Development
-FROM builder AS development
+#FROM builder AS development
 
-COPY --chown="${APP_USER}":"${APP_USER}" ./spec "${APP_HOME}"/spec
-COPY --from=builder /usr/local/bin/dockerize /usr/local/bin/dockerize
+#COPY --chown="${APP_USER}":"${APP_USER}" ./spec "${APP_HOME}"/spec
+#COPY --from=builder /usr/local/bin/dockerize /usr/local/bin/dockerize
 
-RUN chown "${APP_USER}":"${APP_USER}" -R "${APP_HOME}"
+#RUN chown "${APP_USER}":"${APP_USER}" -R "${APP_HOME}"
 
-USER "${APP_USER}"
+#USER "${APP_USER}"
 
-RUN bundle config --local build.sassc --disable-march-tune-native && \
-    bundle config --delete without && \
-    bundle install --deployment --jobs 4 --retry 5 && \
-    find "${APP_HOME}"/vendor/bundle -name "*.c" -delete && \
-    find "${APP_HOME}"/vendor/bundle -name "*.o" -delete
+#RUN bundle config --local build.sassc --disable-march-tune-native && \
+#    bundle config --delete without && \
+#    bundle install --deployment --jobs 4 --retry 5 && \
+#    find "${APP_HOME}"/vendor/bundle -name "*.c" -delete && \
+#    find "${APP_HOME}"/vendor/bundle -name "*.o" -delete
 
-ENTRYPOINT ["./scripts/entrypoint.sh"]
+#ENTRYPOINT ["./scripts/entrypoint.sh"]
 
-CMD ["bundle", "exec", "rails", "server", "-b", "0.0.0.0", "-p", "3000"]
+#CMD ["bundle", "exec", "rails", "server", "-b", "0.0.0.0", "-p", "3000"]
