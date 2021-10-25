@@ -1,0 +1,29 @@
+]0;forem | overmind[1;38;5;7msystem        [0m | [1mTmux socket name: overmind-forem-AaxIXIcAiHO5NrgFur9Ap[0m
+[1;38;5;7msystem        [0m | [1mTmux session ID: forem[0m
+[1;38;5;7msystem        [0m | [1mListening at ./.overmind.sock[0m
+[1;38;5;4msidekiq_worker[0m | [1mStarted with pid 17410...[0m
+[1;38;5;2mrelease       [0m | [1mStarted with pid 17405...[0m
+[1;38;5;3mweb           [0m | [1mStarted with pid 17407...[0m
+[1;38;5;2mrelease       [0m | + [[ '' = \b\l\o\c\k\e\d ]]
+[1;38;5;2mrelease       [0m | + STATEMENT_TIMEOUT=4500000
+[1;38;5;2mrelease       [0m | + bundle exec rails app_initializer:setup
+[1;38;5;3mweb           [0m | buildpack=pgbouncer at=pgbouncer-enabled
+[1;38;5;3mweb           [0m | buildpack=pgbouncer at=pgbouncer-launched pid=17418 signal=SIGINT
+[1;38;5;3mweb           [0m | buildpack=pgbouncer at=pgbouncer-start
+[1;38;5;3mweb           [0m | buildpack=pgbouncer at=app-launched pid=17419
+[1;38;5;3mweb           [0m | buildpack=pgbouncer at=app-start
+[1;38;5;3mweb           [0m | bin/start-pgbouncer: line 92: vendor/pgbouncer/bin/pgbouncer: No such file or directory
+[1;38;5;3mweb           [0m | buildpack=pgbouncer at=pgbouncer-end
+[1;38;5;3mweb           [0m | buildpack=pgbouncer at=exit process=pgbouncer
+[1;38;5;3mweb           [0m | buildpack=pgbouncer at=kill-app pid=17419
+[1;38;5;3mweb           [0m | buildpack=pgbouncer at=wait-app pid=17419
+[1;38;5;3mweb           [0m | [1mExited[0m
+[1;38;5;2mrelease       [0m | [1mInterrupting...[0m
+[1;38;5;4msidekiq_worker[0m | [1mInterrupting...[0m
+[1;38;5;2mrelease       [0m | ++ notify
+[1;38;5;2mrelease       [0m | +++ caller
+[1;38;5;2mrelease       [0m | ++ FAILED_COMMAND='19 ./release-tasks.sh: STATEMENT_TIMEOUT=4500000 bundle exec rails app_initializer:setup'
+[1;38;5;2mrelease       [0m | ++ bundle exec rails runner ReleasePhaseNotifier.ping_slack
+[1;38;5;4msidekiq_worker[0m | [1mExited[0m
+[1;38;5;2mrelease       [0m | [1mKilling...[0m
+[1;38;5;2mrelease       [0m | [1mExited[0m

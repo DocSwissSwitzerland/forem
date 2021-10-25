@@ -2,13 +2,6 @@
   <h2 class="fs-l fw-bold mb-2">
     <%= render "shared/authentication_title" %>
   </h2>
-  <p class="color-base-70 mb-4">
-    <% if SiteConfig.tagline.present? %>
-      <%= SiteConfig.tagline %>
-    <% else %>
-      Log in to customize your experience and get involved.
-    <% end %>
-  </p>
   <div>
     <a href="https://identity.zurich-expats.ch" class="crayons-btn w-100 mb-2" aria-label="Create new account">Create new account</a>
     <a href="<%= sign_up_path %>" class="crayons-btn crayons-btn--ghost-brand w-100" aria-label="Log in">Log in</a>

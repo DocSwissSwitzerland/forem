@@ -12,7 +12,7 @@ Rails.application.configure do
   config.eager_load = true
 
   # Show full error reports.
-  config.consider_all_requests_local = false
+  config.consider_all_requests_local = true
 
   config.cache_store = :redis_cache_store, { url: ENV["REDIS_URL"], expires_in: 1.hour.to_i }
 

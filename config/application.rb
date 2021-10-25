@@ -19,7 +19,7 @@ require "sprockets/railtie"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-#Dotenv::Railtie.load if Rails.env.test? || Rails.env.development?
+# Dotenv::Railtie.load if Rails.env.test? || Rails.env.development?
 
 module PracticalDeveloper
   class Application < Rails::Application
@@ -66,10 +66,16 @@ module PracticalDeveloper
     # Unfortunately there isn't an easy way to use them and use view caching at the same time.
     # Therefore we disable "per_form_csrf_tokens" for the time being.
     config.action_controller.per_form_csrf_tokens = false
-
+    config.action_dispatch.show_exceptions = true
+    config.consider_all_requests_local = true
     # NOTE: [Rails 6]
     # To improve security, Rails embeds the purpose and expiry metadata inside encrypted or signed cookies value.
     config.action_dispatch.use_cookies_with_metadata = false
+    # config.web_console.whitelisted_ips = "77.109.114.91"
+    # config.logger = Logger.new(STDOUT)
+
+    # config.force_ssl = true
+    Rails.application.config.action_dispatch.signed_cookie_digest = "SHA256"
 
     # After-initialize checker to add routes to reserved words
     config.after_initialize do
