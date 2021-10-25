@@ -1,6 +1,6 @@
 module Authentication
   module Providers
-    class ZurichExpats < Provider
+    class Zurichexpats < Provider
       OFFICIAL_NAME = "ZurichExpats".freeze
       SETTINGS_URL = "https://identity.zurich-expats.ch/".freeze
       TRUSTED_CALLBACK_ORIGIN = "https://identity.zurich-expats.ch".freeze
