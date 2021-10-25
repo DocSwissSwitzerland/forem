@@ -188,6 +188,8 @@ const DEFAULT_AUTH_CONFIG = {
   facebookSecret: '',
   githubKey: '',
   githubSecret: '',
+  zurichexpatsKey: '',
+  zurichexpatsSecret: '',
   twitterKey: '',
   twitterSecret: '',
 };
@@ -229,6 +231,8 @@ Cypress.Commands.add(
     facebookSecret = '',
     githubKey = '',
     githubSecret = '',
+    //    zurichexpatsKey = '',
+    //    zurichexpatsSecret = '',
     twitterKey = '',
     twitterSecret = '',
   } = DEFAULT_AUTH_CONFIG) => {

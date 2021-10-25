@@ -23,6 +23,8 @@ module Settings
     setting :require_captcha_for_email_password_registration, type: :boolean, default: false
     setting :twitter_key, type: :string, default: ApplicationConfig["TWITTER_KEY"]
     setting :twitter_secret, type: :string, default: ApplicationConfig["TWITTER_SECRET"]
+    setting :zurichexpats_key, type: :string, default: ApplicationConfig["ZURICHEXPATS_KEY"]
+    setting :zurichexpats_secret, type: :string, default: ApplicationConfig["ZURICHEXPATS_SECRET"]
 
     # Google ReCATPCHA keys
     setting :recaptcha_site_key, type: :string, default: ApplicationConfig["RECAPTCHA_SITE"]

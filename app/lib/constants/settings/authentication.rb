@@ -55,6 +55,14 @@ module Constants
           description: "The \"Client Secret\" portion of the ZurichExpats Oauth Apps portal",
           placeholder: ""
         },
+        github_key: {
+          description: "The \"Client ID\" portion of the ZurichExpats Oauth Apps portal",
+          placeholder: ""
+        },
+        github_secret: {
+          description: "The \"Client Secret\" portion of the ZurichExpats Oauth Apps portal",
+          placeholder: ""
+        },
         invite_only_mode: {
           description: "Only users invited by email can join this community.",
           placeholder: ""

@@ -18,6 +18,12 @@ GITHUB_OMNIUATH_SETUP = lambda do |env|
   env["omniauth.strategy"].options[:scope] = "user:email"
 end
 
+ZURICHEXPATS_OMNIUATH_SETUP = lambda do |env|
+  env["omniauth.strategy"].options[:client_id] = Settings::Authentication.zurichexpats_key
+  env["omniauth.strategy"].options[:client_secret] = Settings::Authentication.zurichexpats_secret
+  env["omniauth.strategy"].options[:scope] = "profile email"
+end
+
 FACEBOOK_OMNIAUTH_SETUP = lambda do |env|
   env["omniauth.strategy"].options[:client_id] = Settings::Authentication.facebook_key
   env["omniauth.strategy"].options[:client_secret] = Settings::Authentication.facebook_secret
@@ -320,6 +326,7 @@ Devise.setup do |config|
 
   # Fun fact, unless Twitter is last, it doesn't work for some reason.
   config.omniauth :facebook, setup: FACEBOOK_OMNIAUTH_SETUP
+  config.omniauth :zurichexpats, setup: ZURICHEXPATS_OMNIUATH_SETUP, strategy_class: OmniAuth::Strategies::Zurichexpats
   config.omniauth :github, setup: GITHUB_OMNIUATH_SETUP
   config.omniauth :apple, setup: APPLE_OMNIAUTH_SETUP
   config.omniauth :forem, setup: FOREM_OMNIAUTH_SETUP, strategy_class: OmniAuth::Strategies::Forem
