@@ -3,8 +3,6 @@ module Authentication
     class Zurichexpats < Provider
       OFFICIAL_NAME = "ZurichExpats".freeze
       SETTINGS_URL = "https://identity.zurich-expats.ch/".freeze
-      TRUSTED_CALLBACK_ORIGIN = "https://identity.zurich-expats.ch".freeze
-      CALLBACK_PATH = "/users/auth/zurichexpats/callback".freeze
 
       def new_user_data
         # Apple sends `first_name` and `last_name` as separate fields
@@ -12,7 +10,7 @@ module Authentication
 
         user_data = {
           email: info.email,
-          apple_username: user_nickname,
+          zurichexpats_username: user_nickname,
           name: name
         }
 
@@ -30,10 +28,10 @@ module Authentication
         # the first login. To cover the case where a user disconnects their
         # Apple authorization, signs in again and then changes their name,
         # we update the username only if the name is not nil
-        apple_username = info.first_name&.downcase
-        return {} unless apple_username
+        zurichexpats_username = info.first_name&.downcase
+        return {} unless zurichexpats_username
 
-        { apple_username: apple_username }
+        { zurichexpats_username: zurichexpats_username }
       end
 
       # For Apple we override this method because the `info` payload doesn't
