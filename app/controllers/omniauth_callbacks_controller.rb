@@ -50,6 +50,8 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
     auth_payload = request.env["omniauth.auth"]
     cta_variant = request.env["omniauth.params"]["state"].to_s
 
+    puts "auth_payload #{auth_payload}"
+
     @user = Authentication::Authenticator.call(
       auth_payload,
       current_user: current_user,

@@ -1,59 +1,49 @@
+require 'httparty'
+require 'date'
+
 module Authentication
   module Providers
     class Zurichexpats < Provider
+      include HTTParty
+
       OFFICIAL_NAME = "ZurichExpats".freeze
-      SETTINGS_URL = "https://identity.zurich-expats.ch/".freeze
+      SETTINGS_URL = "https://identity.zurich-expats.ch/admin".freeze
 
       def new_user_data
-        # Apple sends `first_name` and `last_name` as separate fields
-        name = "#{info.first_name} #{info.last_name}"
+        date_a = DateTime.now()
+        username =  "#{identity_userinfo.parsed_response["name"]}".parameterize.underscore
+        username = username[0 .. 20]
 
         user_data = {
-          email: info.email,
-          zurichexpats_username: user_nickname,
-          name: name
+          email: identity_userinfo.parsed_response["email"],
+          zurichexpats_username: identity_userinfo.parsed_response["sub"],
+          name: identity_userinfo.parsed_response["name"],
+          username: "#{username}_#{identity_userinfo.parsed_response["sub"]}".downcase!,
+          created_at: date_a
         }
-
-        if Rails.env.test?
-          user_data[:profile_image] = Settings::General.mascot_image_url
-        else
-          user_data[:remote_profile_image_url] = Users::ProfileImageGenerator.call
-        end
 
         user_data
       end
 
       def existing_user_data
-        # Apple by default will send nil `first_name` and `last_name` after
-        # the first login. To cover the case where a user disconnects their
-        # Apple authorization, signs in again and then changes their name,
-        # we update the username only if the name is not nil
-        zurichexpats_username = info.first_name&.downcase
-        return {} unless zurichexpats_username
+        user_data = {
+          zurichexpats_username: identity_userinfo.parsed_response["sub"],
+        }
 
-        { zurichexpats_username: zurichexpats_username }
+        user_data
       end
 
-      # For Apple we override this method because the `info` payload doesn't
-      # include `nickname`. On top of not having a username, Apple allows users
-      # to 'choose' the first_name & last_name sent our way so they are
-      # definitely not assured to be unique. We still need `user_nickname` to
-      # always be the same on each login so we use the email hash as suffix to
-      # avoid collisions with other registrations with the same first_name
+      def identity_userinfo
+        params = { headers: { "Authorization" => "Bearer #{auth_payload.credentials.token}" } }
+        self.class.get("https://identity.zurich-expats.ch/connect/userinfo", params)
+      end
+
       def user_nickname
-        if info.first_name.present? || info.last_name.present?
-          # We sometimes get `info.first_name` and `info.last_name`
-          [
-            info.first_name&.downcase,
-            info.last_name&.downcase,
-            Digest::SHA512.hexdigest(info.email),
-          ].join("_")[0...25]
-        else
-          # This covers an edge case where the Apple Id has already given
-          # permissions to the forem auth and we don't have anything else
-          # to work with other than the email
-          ["user", Digest::SHA512.hexdigest(info.email)].join("_")[0...15]
-        end
+        identity_userinfo.parsed_response["name"]
+      end
+
+      def uid
+        identity_userinfo.parsed_response["sub"]
       end
 
       def self.official_name

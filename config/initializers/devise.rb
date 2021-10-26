@@ -21,7 +21,7 @@ end
 ZURICHEXPATS_OMNIUATH_SETUP = lambda do |env|
   env["omniauth.strategy"].options[:client_id] = Settings::Authentication.zurichexpats_key
   env["omniauth.strategy"].options[:client_secret] = Settings::Authentication.zurichexpats_secret
-  env["omniauth.strategy"].options[:scope] = "profile email"
+  env["omniauth.strategy"].options[:scope] = "profile email openid"
 end
 
 FACEBOOK_OMNIAUTH_SETUP = lambda do |env|
