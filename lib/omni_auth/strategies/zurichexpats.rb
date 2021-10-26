@@ -11,7 +11,7 @@ module OmniAuth
       }
 
       def request_phase
-        redirectme = { redirect_uri => "https://social.zurich-expats.ch/users/auth/zurichexpats/callback" }
+        redirectme = { "redirect_uri" => "https://social.zurich-expats.ch/users/auth/zurichexpats/callback" }
         redirect client.auth_code.authorize_url(redirectme.merge(authorize_params))
       end
     end
