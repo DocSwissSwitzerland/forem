@@ -11,14 +11,14 @@ module Authentication
 
       def new_user_data
         date_a = DateTime.now()
-        username =  "#{identity_userinfo.parsed_response["name"]}".parameterize.underscore
-        username = username[0 .. 20]
+        short_username = identity_userinfo.parsed_response["name"].delete(" ")
+        short_username = short_username[0 .. 20]
 
         user_data = {
           email: identity_userinfo.parsed_response["email"],
           zurichexpats_username: identity_userinfo.parsed_response["sub"],
           name: identity_userinfo.parsed_response["name"],
-          username: "#{username}_#{identity_userinfo.parsed_response["sub"]}".downcase!,
+          username: "#{short_username}_#{identity_userinfo.parsed_response["sub"]}".downcase!,
           created_at: date_a
         }
 

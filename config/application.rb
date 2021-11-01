@@ -71,7 +71,10 @@ module PracticalDeveloper
     # NOTE: [Rails 6]
     # To improve security, Rails embeds the purpose and expiry metadata inside encrypted or signed cookies value.
     config.action_dispatch.use_cookies_with_metadata = false
-    config.web_console.whitelisted_ips = "77.109.114.91"
+
+    if defined?(onfig.web_console)
+      config.web_console.whitelisted_ips = "77.109.114.91"
+    end
     # config.logger = Logger.new(STDOUT)
 
     # config.force_ssl = true
