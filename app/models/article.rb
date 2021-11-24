@@ -9,6 +9,8 @@ class Article < ApplicationRecord
   acts_as_taggable_on :tags
   resourcify
 
+  DEFAULT_FEED_PAGINATION_WINDOW_SIZE = 50
+
   attr_accessor :publish_under_org
   attr_writer :series
 
@@ -114,7 +116,7 @@ class Article < ApplicationRecord
     article.saved_change_to_user_id?
   }
 
-  after_commit :async_score_calc, :touch_collection, :detect_animated_images, on: %i[create update]
+  after_commit :async_score_calc, :touch_collection, :enrich_image_attributes, on: %i[create update]
 
   # The trigger `update_reading_list_document` is used to keep the `articles.reading_list_document` column updated.
   #
@@ -460,6 +462,7 @@ class Article < ApplicationRecord
   def update_score
     self.score = reactions.sum(:points) + Reaction.where(reactable_id: user_id, reactable_type: "User").sum(:points)
     update_columns(score: score,
+                   privileged_users_reaction_points_sum: reactions.privileged_category.sum(:points),
                    comment_score: comments.sum(:score),
                    hotness_score: BlackBox.article_hotness_score(self),
                    spaminess_rating: BlackBox.calculate_spaminess(self))
@@ -806,27 +809,7 @@ class Article < ApplicationRecord
   end
 
   def create_conditional_autovomits
-    return unless Settings::RateLimit.spam_trigger_terms.any? do |term|
-                    Regexp.new(term.downcase).match?(title.downcase)
-                  end
-
-    Reaction.create(
-      user_id: Settings::General.mascot_user_id,
-      reactable_id: id,
-      reactable_type: "Article",
-      category: "vomit",
-    )
-
-    return unless Reaction.article_vomits.where(reactable_id: user.articles.pluck(:id)).size > 2
-
-    user.add_role(:suspended)
-    Note.create(
-      author_id: Settings::General.mascot_user_id,
-      noteable_id: user_id,
-      noteable_type: "User",
-      reason: "automatic_suspend",
-      content: "User suspended for too many spammy articles, triggered by autovomit.",
-    )
+    Spam::ArticleHandler.handle!(article: self)
   end
 
   def async_bust
@@ -841,10 +824,10 @@ class Article < ApplicationRecord
     Slack::Messengers::ArticlePublished.call(article: self)
   end
 
-  def detect_animated_images
+  def enrich_image_attributes
     return unless FeatureFlag.enabled?(:detect_animated_images)
     return unless saved_change_to_attribute?(:processed_html)
 
-    ::Articles::DetectAnimatedImagesWorker.perform_async(id)
+    ::Articles::EnrichImageAttributesWorker.perform_async(id)
   end
 end
