@@ -57,7 +57,7 @@ module CarrierWaveInitializer
         local_storage_config
       end
     else
-      local_storage_config
+      standard_production_config
     end
   end
 end
