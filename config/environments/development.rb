@@ -87,8 +87,8 @@ Rails.application.configure do
   config.action_mailer.perform_deliveries = true
   config.action_mailer.default_url_options = { host: config.app_domain }
   config.action_mailer.smtp_settings = {
-    address: ENV["SMTP_ADDRESS"],
-    port: ENV["SMTP_PORT"],
+    address: ENV["SMTP_ADDRESS"] || "localhost",
+    port: ENV["SMTP_PORT"] || "25",
     authentication: ENV["SMTP_AUTHENTICATION"].presence || :plain,
     user_name: ENV["SMTP_USER_NAME"],
     password: ENV["SMTP_PASSWORD"],
