@@ -42,7 +42,7 @@ module CarrierWaveInitializer
       config.fog_credentials = {
         provider: "AWS",
         use_iam_profile: true,
-        region: "us-east-2"
+        region: "eu-west-1"
       }
     end
   end
@@ -57,7 +57,7 @@ module CarrierWaveInitializer
         local_storage_config
       end
     else
-      local_storage_config
+      standard_production_config
     end
   end
 end
