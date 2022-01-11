@@ -4,7 +4,7 @@ const path = require('path');
 const { environment } = require('@rails/webpacker');
 const HoneybadgerSourceMapPlugin = require('@honeybadger-io/webpack');
 const erb = require('./loaders/erb');
-
+const jquery = require('jquery');
 /*
 The customizations below are to create the vendor chunk. The vendor chunk is no longer consumed like it was in webpacker 3.
 There is no longer one vendor bundle. It gets code split based on what webpacker packs need. All the object spreading e.g. `...config.optimization` is to keep
@@ -42,6 +42,14 @@ environment.splitChunks((config) => {
 environment.loaders.delete('nodeModules');
 
 environment.loaders.append('erb', erb);
+
+environment.loaders.append('expose', {
+    test: require.resolve('jquery'),
+    loader: 'expose-loader',
+    options: {
+        exposes: ['$', 'jquery'],
+    }
+});
 
 if (process.env.HONEYBADGER_API_KEY && process.env.ASSETS_URL) {
   environment.plugins.append(
