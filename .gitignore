@@ -103,3 +103,4 @@ dump.rdb
 
 # pry configuration file
 .pryrc
+config/credentials.yml.enc
