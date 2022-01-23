@@ -67,6 +67,14 @@ module Constants
           description: "The \"Client Secret\" portion of the ZurichExpats Oauth Apps portal",
           placeholder: ""
         },
+        google_oauth2_key: {
+          description: "The \"Client ID\" portion of the OAuth 2.0 page on the Google Cloud Platform portal",
+          placeholder: ""
+        },
+        google_oauth2_secret: {
+          description: "The \"Client Secret\" portion of the OAuth 2.0 page on the Google Cloud Platform portal",
+          placeholder: ""
+        },
         invite_only_mode: {
           description: "Only users invited by email can join this community.",
           placeholder: ""
