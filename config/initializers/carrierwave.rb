@@ -28,7 +28,8 @@ module CarrierWaveInitializer
         aws_access_key_id: ApplicationConfig["AWS_ID"],
         aws_secret_access_key: ApplicationConfig["AWS_SECRET"],
         region: ApplicationConfig["AWS_UPLOAD_REGION"].presence || ApplicationConfig["AWS_DEFAULT_REGION"] || "eu-west-1",
-	endpoint: "https://blob.zurich-expats.ch"
+	endpoint: "https://blob.zurich-expats.ch",
+	path_style: true
       }
     end
   end
