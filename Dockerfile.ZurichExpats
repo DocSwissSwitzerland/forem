@@ -1,0 +1,18 @@
+FROM debian:buster-slim as base
+ENV JOBS=max
+ENV PATH="/usr/local/rvm/bin/:/usr/local/rvm/rubies/ruby-3.0.2/bin:${PATH}"
+RUN apt-get update && apt-get upgrade -y && apt-get install -y build-essential libcurl4-openssl-dev libpq-dev
+RUN apt-get install git curl apt-transport-https ca-certificates gnupg2 procps dash -y
+RUN curl -sSL https://rvm.io/pkuczynski.asc | gpg2 --import -
+RUN curl -sL https://deb.nodesource.com/setup_16.x | bash -
+RUN apt-get -y install nodejs
+RUN curl -sSL https://get.rvm.io | bash -s stable --ruby
+RUN /usr/local/rvm/scripts/rvm
+RUN rvm install --default 3.0.2
+RUN rvm use 3.0.2
+RUN git clone https://github.com/DocSwissSwitzerland/forem.git --depth 1
+RUN cd forem && gem install rubygems-bundler
+RUN cd forem && bin/bundle install
+RUN npm install -g yarn
+RUN cd forem && yarn install
+RUN cd forem && bin/rails webpacker:compile
