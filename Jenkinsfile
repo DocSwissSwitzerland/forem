@@ -1,9 +1,8 @@
 pipeline {
-  agent {
-    dockerfile true
-  }
+  agent any
+
   stages {
-    stage('build') {
+    stage('Docker') {
       steps {
         sh 'docker build . -f Dockerfile.ZurichExpats'
       }
