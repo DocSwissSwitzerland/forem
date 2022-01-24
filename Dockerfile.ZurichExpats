@@ -2,7 +2,7 @@ FROM debian:buster-slim as base
 EXPOSE 3000
 ENV JOBS=max
 ENV PATH="/usr/local/rvm/bin/:/usr/local/rvm/rubies/ruby-3.0.2/bin:${PATH}"
-RUN apt-get update && apt-get upgrade -y && apt-get install -y build-essential libcurl4-openssl-dev libpq-dev
+RUN apt-get update && apt-get upgrade -y && apt-get install -y build-essential libcurl4-openssl-dev libpq-dev iproute2
 RUN apt-get install git curl apt-transport-https ca-certificates gnupg2 procps dash -y
 RUN curl -sSL https://rvm.io/pkuczynski.asc | gpg2 --import -
 RUN curl -sL https://deb.nodesource.com/setup_16.x | bash -
