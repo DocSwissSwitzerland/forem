@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('Docker') {
       steps {
-        sh 'docker build . -f Dockerfile.ZurichExpats'
+        sh 'docker build . -f Dockerfile.ZurichExpatsBuild'
       }
     }
 
