@@ -61,9 +61,9 @@ module PracticalDeveloper
     config.middleware.use Rack::Deflater
 
     config.i18n.load_path += Dir[Rails.root.join("config/locales/**/*.yml")]
-
+    config.i18n.available_locales = [:en, :de, :fr, :nl, :sv, :se, :pt, :it, :el, :pl]
     config.i18n.fallbacks = [:en]
-
+ 
     # Globally handle Pundit::NotAuthorizedError by serving 404
     config.action_dispatch.rescue_responses["Pundit::NotAuthorizedError"] = :not_found
 
