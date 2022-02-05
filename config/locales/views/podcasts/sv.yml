@@ -1,0 +1,36 @@
+sv:
+  views:
+    podcasts:
+      meta:
+        title: Podsändningar
+        description: Upptäck tekniska podsändningar för %{member}
+        og:
+          title: Podsändningar i %{community}
+      browse: Bläddra
+      heading: Podsändningar
+      close: ×
+      form:
+        heading: Föreslå en podsändingen
+        errors:
+          one: '1 fel vid generering av podsändningsfel:'
+          other: ' %{count} fel vid generering av podsändningsfel:'
+        owner: Jag äger den här poddsändan.
+        return: < återgå till podsändningar
+        suggest: Föreslå
+      list: podsändningar
+      listen: Klicka här om du vill hämta / lyssna
+      source: Episod-källa
+      statuses:
+        ssl_failed: Det gick inte att verifiera SSL-certifikatet vid hämtning av podsänds råvara
+        unparsable: Podcast's rss kunde inte tolkas
+        unplayable: Den här poddsändan kanske inte är spelbar i webbläsaren
+        unreachable: Inmatnings-URL för Podcast är inte tillgänglig
+      speed: 1x
+      tag: podcast
+      initializing: initierar ...
+      unsupported: Din webbläsare stöder inte ljudelementet.
+      featured_shows: Aktuella program
+      latest_episodes: Senaste episoder
+      suggest_a_podcast: Föreslå en podsändingen
+      view_all_podcasts: Visa alla podsändningar
+

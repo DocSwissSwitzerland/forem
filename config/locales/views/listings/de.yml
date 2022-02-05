@@ -1,0 +1,80 @@
+de:
+  views:
+    listings:
+      meta:
+        description: ' %{community} -Liste'
+      heading: Anzeigen
+      back: Zurück
+      delete:
+        subtitle: Sind Sie sicher, dass Sie diese Liste löschen möchten?
+        description:
+          text_html: Sie können diese Aktion nicht rückgängig machen, möchten Sie stattdessen nur %{action} verwenden?
+          edit: Bearbeiten
+          unpublish: Nicht veröffentlichen
+        edit: Bearbeiten
+        submit: Löschen
+        unpublish: Nicht veröffentlichen
+      edit:
+        heading: Liste bearbeiten
+        bump:
+          subtitle: Bump your listing
+          button: Bump-Liste
+          description: Sie können Ihre Notierung für den gleichen Preis wie die Original-Notierung
+          last: 'Letzte Veröffentlichung/Bumped: %{date}'
+        notice: Sie können nur Titel/body/tags von Entwürfen oder innerhalb der ersten 24 Stunden der Auflistung oder bumping bearbeiten
+        not_published:
+          text_html: Diese Liste ist %{nicht} veröffentlicht.
+          aside_html: Diese Liste ist %{nicht} veröffentlicht
+          not: Nicht
+        publish: Liste veröffentlichen
+        unpublish: Veröffentlichung nicht veröffentlichen
+        update: Liste aktualisieren
+        update_draft: Entwurf aktualisieren
+      to_edit: Bearbeiten
+      errors:
+        one: '1 Fehler untersagte, dass diese Liste gespeichert wurde:'
+        other: ' %{count} Fehler untersagten, dass diese Liste gesichert wurde:'
+      expired: Diese Liste ist abgelaufen.
+      form:
+        body_markdown:
+          description: 400 Zeichen max, 12 Zeilenumbruch max, keine Bilder erlaubt, * Preisabschlag wird empfohlen *. Bitte nehmen Sie bei Bedarf eine Kontaktmethode auf.
+          placeholder: '...'
+        category:
+          label: Kategorie
+          placeholder: Konferenz-GFP (1 Credit)
+          summary: Kategoriedetails/Regeln
+        expiry:
+          description: Gegebenenfalls für zeitkritische Ereignisse, Fristen usw.
+        location:
+          description: Maximal 32 Zeichen, Klartext
+          label: Standort (falls zutreffend für Ereignisse usw.)
+          placeholder: New York
+        no_credit: Um eine Liste zu erstellen, benötigen Sie mindestens ein Guthaben.
+        organization:
+          description: Die Veröffentlichung im Namen einer Organisation verbringt die Credits der Organisation.
+          none: Keine
+        publish: Liste veröffentlichen
+        purchase: Kaufgutschriften
+        save: Entwurf speichern
+        save_notice: Es werden keine Gutschriften für die Speicherung eines Entwurfs berechnet.
+        tags:
+          placeholder: Bis zu 8 Tags hinzufügen ...
+        title:
+          placeholder: 128 Zeichen max, Klartext
+      nav:
+        aria_label: Anzeigen
+        create: Erstellen
+        manage: Verwalten
+      new:
+        meta:
+          title: Neue Liste
+        heading: Gemeinschaftsliste erstellen
+        buy: Kaufen Sie mehr
+        disclaimer:
+          subtitle: Haftungsausschluss
+          description1: ' %{community} admins können Tags und Kategorien ändern, um die Genauigkeit sicherzustellen. Wir können auch unangemessene Auflistungen zurücknehmen und erstatten.'
+          description2: Einträge verfallen 30 Tage, nachdem sie veröffentlicht wurden oder "bumped".
+        organization: Organisationsgutschriften
+        personal: Persönliche Kredite
+      preview_icon: DEV-Logo
+

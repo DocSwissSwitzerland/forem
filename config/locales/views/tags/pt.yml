@@ -1,0 +1,64 @@
+pt:
+  views:
+    tags:
+      meta:
+        title: Tags
+        description: Tags a seguir em %{comunidade}
+        og:
+          description: ' %{comunidade} é ótimo!'
+      heading:
+        default: Principais tags
+        search_results: Resultados da pesquisa para %{q}
+      search:
+        aria_labels:
+          search_input: Termo de pesquisa de Tag
+          submit: Tags de pesquisa
+        placeholder: Pesquisa por tag
+      edit:
+        meta:
+          title: Editar %{tag}
+        admin: Admin
+        help: Ajuda
+        view: Visualização
+        form:
+          pretty_name:
+            label: Nome bonito
+            placeholder: Este é o nome no topo da página de show.
+          bg_color_hex:
+            label: Bg cor hex
+          text_color_hex:
+            label: Hex de cor de texto
+          short_summary:
+            label: Resumo curto
+            placeholder: Breve visão geral do que esta tag é tudo.
+          wiki_body_markdown:
+            label: Marcação do corpo Wiki
+            placeholder: Esta é uma seção 'sobre'. Sinta-se à vontade para adicionar um FAQ, recursos adicionais, etc.
+          rules_markdown:
+            label: Marcação de regras
+            placeholder: Opcional-Pode ser usado para desafios, ou seja, diretrizes de submissão.
+          submit: Salvar
+      follow: Seguir
+      following_tags: Seguir tags
+      moderator:
+        text_html: 'comma separada, o espaço é opcional. Exemplo: %{code}'
+        code: 123
+        placeholder: 'comma separada, o espaço é opcional. Exemplo: 1,2,3'
+      published:
+        one: 1 post publicado
+        other: ' %{count} posts publicados'
+      sidebar:
+        about: 'sobre # %{tag}'
+        admin: Admin
+        edit: Editar
+        guidelines: orientações de envio
+        moderate: Moderado
+        mods: moderadores de tag
+        new: Criar Post
+        older: 'Posts mais antigos # %{tag}'
+        published:
+          one: 1 Post Publicado
+          other: ' %{count} Posts Publicados'
+        sponsor: ' %{tag} é patrocinado por'
+      sponsor: '| Patrocinado por %{org} ❤️'
+

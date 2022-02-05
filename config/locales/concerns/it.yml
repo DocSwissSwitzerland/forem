@@ -1,0 +1,6 @@
+it:
+  concerns:
+    image_uploads:
+      too_long: nomefile troppo lungo - il max è %{max} caratteri.
+      is_not_file: tipo di file non valido. Si prega di caricare un'immagine valida.
+

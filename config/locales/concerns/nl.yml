@@ -1,0 +1,6 @@
+nl:
+  concerns:
+    image_uploads:
+      too_long: bestandsnaam is te lang-de max is %{max} tekens.
+      is_not_file: ongeldig bestandstype. Upload een geldig image.
+

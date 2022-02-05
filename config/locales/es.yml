@@ -1,0 +1,184 @@
+es:
+  contact_prompts:
+    if_any_questions_html: <a href="/contact">Póngase en contacto con nosotros</a> si tiene alguna pregunta.
+    if_continued_trouble_html: <a href="/contact">Póngase en contacto con nosotros</a> si continúa teniendo problemas.
+    if_we_can_help_html: <a href="/contact">Póngase en contacto con nosotros</a> si hay algo con lo que podamos ayudar.
+  core:
+    add_comment: Añadir comentario
+    beta: beta
+    comment: Comentario
+    copy_link: Enlace de copia
+    edit_profile: Editar perfil
+    follow: Continuación
+    follow_back: Seguir de nuevo
+    following: Continuación
+    like: 'Como:'
+    loading: cargando ...
+    reaction: Reacción
+    report_abuse: Abuso de informes
+    search: Búsqueda
+  datetime:
+    distance_in_words_ago:
+      about_x_hours:
+        one: hace aproximadamente 1 hora
+        other: acerca de %{count} horas hace
+      about_x_months:
+        one: hace aproximadamente 1 mes
+        other: Hace aproximadamente %{count} meses
+      about_x_years:
+        one: hace aproximadamente 1 año
+        other: acerca de %{count} años atrás
+      almost_x_years:
+        one: hace casi 1 año
+        other: casi %{count} años atrás
+      half_a_minute: hace medio minuto
+      less_than_x_seconds:
+        one: menos de 1 segundo hace
+        other: menos de %{count} segundos hace
+      less_than_x_minutes:
+        one: hace menos de un minuto
+        other: hace menos de %{count} minutos
+      over_x_years:
+        one: hace más de 1 año
+        other: Hace más de %{count} años
+      x_seconds:
+        one: 1 segundo hace
+        other: ' %{count} segundos hace'
+      x_minutes:
+        one: Hace 1 minuto
+        other: ' %{count} minutos hace'
+      x_days:
+        one: Hace 1 día
+        other: ' %{count} días atrás'
+      x_months:
+        one: Hace 1 mes
+        other: ' %{count} meses atrás'
+      x_years:
+        one: Hace 1 año
+        other: ' %{count} años atrás'
+    expired_ago:
+      about_x_hours:
+        one: Caducado hace aproximadamente 1 hora
+        other: Caducado hace aproximadamente %{count} horas
+      about_x_months:
+        one: Caducado hace aproximadamente 1 mes
+        other: Caducado hace aproximadamente %{count} meses
+      about_x_years:
+        one: Caducado hace aproximadamente 1 año
+        other: Caducado hace aproximadamente %{count} años
+      almost_x_years:
+        one: Caducado hace casi 1 año
+        other: Caducado casi %{count} años atrás
+      half_a_minute: Caducado hace medio minuto
+      less_than_x_seconds:
+        one: Caducado hace menos de 1 segundo
+        other: Caducado menos de %{count} segundos hace
+      less_than_x_minutes:
+        one: Caducado hace menos de un minuto
+        other: Caducado hace menos de %{count} minutos
+      over_x_years:
+        one: Caducado hace más de 1 año
+        other: Caducado en %{count} años atrás
+      x_seconds:
+        one: Caducado hace 1 segundo
+        other: ' %{count} segundos caducado hace'
+      x_minutes:
+        one: Caducado hace 1 minuto
+        other: ' %{count} caducado hace minutos'
+      x_days:
+        one: Caducado hace 1 día
+        other: ' %{count} caducado hace días'
+      x_months:
+        one: Caducado hace 1 mes
+        other: ' %{count} caducado hace meses'
+      x_years:
+        one: Caducado hace 1 año
+        other: ' %{count} caducado hace años'
+    expires_in:
+      about_x_hours:
+        one: Caduca en aproximadamente 1 hora
+        other: Caduca en aproximadamente %{count} horas
+      about_x_months:
+        one: Expira en aproximadamente 1 mes
+        other: Caduca en aproximadamente %{count} meses
+      about_x_years:
+        one: Expira en aproximadamente 1 año
+        other: Caduca en aproximadamente %{count} años
+      almost_x_years:
+        one: Expira en casi 1 año
+        other: Caduca en casi %{count} años
+      half_a_minute: Caduca en medio minuto
+      less_than_x_seconds:
+        one: Caduca en menos de 1 segundo
+        other: Caduca en menos de %{count} segundos
+      less_than_x_minutes:
+        one: Caduca en menos de un minuto
+        other: Caduca en menos de %{count} minutos
+      over_x_years:
+        one: Expira en más de 1 año
+        other: Caduca en más de %{count} años
+      x_seconds:
+        one: Caduca en 1 segundo
+        other: Caduca en %{count} segundos
+      x_minutes:
+        one: Caduca en 1 minuto
+        other: Caduca en %{count} minutos
+      x_days:
+        one: Caduca en 1 día
+        other: Caduca en %{count} días
+      x_months:
+        one: Expira en 1 mes
+        other: Caduca en %{count} meses
+      x_years:
+        one: Expira en 1 año
+        other: Caduca en %{count} años
+  errors:
+    messages:
+      accepted: debe ser aceptado
+      bad_protocol: debe empezar por %{protocols}
+      bad_uri: es un url no válido
+      blank: no puede estar en blanco
+      confirmation: no coincide con %{attribute}
+      contains_prohibited_characters: contiene caracteres Unicode no alfanuméricos o prohibidos
+      empty: no puede estar vacío
+      equal_to: debe ser igual a %{count}
+      even: debe ser incluso
+      exclusion: está reservado
+      general: 'Error: %{errors}'
+      greater_than: debe ser mayor que %{count}
+      greater_than_or_equal_to: debe ser mayor o igual que %{count}
+      inclusion: no está incluido en la lista
+      invalid: no es válido
+      less_than: debe ser menor que %{count}
+      less_than_or_equal_to: debe ser menor o igual que %{count}
+      model_invalid: 'La validación ha fallado: %{errors}'
+      not_a_number: no es un número
+      not_an_integer: debe ser un entero
+      odd: debe ser impar
+      other_than: debe ser distinto de %{count}
+      present: debe estar en blanco
+      required: debe existir
+      taken: ya se ha tomado
+      too_long:
+        one: es demasiado largo (el máximo es 1 carácter)
+        other: es demasiado largo (el máximo es %{count} caracteres)
+      too_short:
+        one: es demasiado corto (mínimo es 1 carácter)
+        other: es demasiado corto (el mínimo es %{count} caracteres)
+      try_again_email: 'Se ha producido un error. Vuelva a intentarlo o envíe un correo electrónico a: %{email}'
+      wrong_length:
+        one: es la longitud incorrecta (debe ser 1 carácter)
+        other: es la longitud incorrecta (debe ser %{count} caracteres)
+  time:
+    formats:
+      comment: '%B %d, %Y'
+      github: '%b %d, %Y'
+      json: '%b %e, %Y'
+      medium: '%b%-d, %Y'
+      reddit: "%b %e ' %y"
+      short: '%b%-e'
+      short_with_yy: "%b%-d ' %y"
+      short_with_year: '%b%-e, %Y'
+      stackexchange: "%b %e ' %y"
+      tweet: '%H: %M %p-%d %b %Y'
+

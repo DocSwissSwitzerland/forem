@@ -1,0 +1,33 @@
+sv:
+  devise:
+    failure:
+      invited: Du har en väntande inbjudan. Acceptera det för att slutföra skapandet av ditt konto.
+    invitations:
+      edit:
+        header: Ange ditt lösenord
+        submit_button: Låt oss få igång
+      invitation_removed: Din inbjudan togs bort.
+      invitation_token_invalid: Det angivna inbjudningselementet är inte giltigt.
+      new:
+        header: Sänd inbjudan
+        submit_button: Sänd en inbjudan
+      no_invitations_remaining: Inga inbjudningar återstår
+      send_instructions: Ett inbjudningsmejl har skickats till %{email}.
+      updated: Ditt lösenord har angetts. Du är nu inloggad.
+      updated_not_active: Ditt lösenord har angetts.
+    mailer:
+      invitation_instructions:
+        accept_instructions: Du kan acceptera inbjudan genom att klicka på den här länken
+        accept: Acceptera inbjudningar
+        accept_until: Inbjudan upphör att gälla efter %{due_date}.
+        hello: Hej %{name}
+        ignore: Om du inte vill acceptera inbjudan, ignorera det här mejlet. Ditt konto kommer inte att skapas förrän du har åtkomst till länken ovan och ange ditt lösenord.
+        someone_invited_you: Du har blivit inbjuden att delta i %{community_name} gemenskap på %{url}.
+        subject: Inbjudningar
+  time:
+    formats:
+      devise:
+        mailer:
+          invitation_instructions:
+            accept_until_format: '%B %d, %Y %I: %M %p'
+

@@ -1,0 +1,184 @@
+sv:
+  contact_prompts:
+    if_any_questions_html: <a href="/contact">Kontakta oss</a> om du har några frågor.
+    if_continued_trouble_html: <a href="/contact">Kontakta oss</a> om du fortsätter att ha problem.
+    if_we_can_help_html: <a href="/contact">Kontakta oss</a> om det finns något som vi kan hjälpa till med.
+  core:
+    add_comment: Lägg till kommentar
+    beta: beta
+    comment: Kommentar
+    copy_link: Kopiera länk
+    edit_profile: Ändra profil
+    follow: Följ
+    follow_back: Följ tillbaka
+    following: Följa
+    like: Som
+    loading: läser in ...
+    reaction: Reaktion
+    report_abuse: Rapportera missbruk
+    search: Sök
+  datetime:
+    distance_in_words_ago:
+      about_x_hours:
+        one: ungefär en timme sedan
+        other: ungefär %{count} timmar sedan
+      about_x_months:
+        one: ungefär en månad sedan
+        other: ungefär %{count} månader sedan
+      about_x_years:
+        one: ungefär 1 år sedan
+        other: ungefär %{count} år sedan
+      almost_x_years:
+        one: nästan 1 år sedan
+        other: nästan %{count} år sedan
+      half_a_minute: för en halv minut sedan
+      less_than_x_seconds:
+        one: mindre än 1 sekund sedan
+        other: mindre än %{count} sekunder sedan
+      less_than_x_minutes:
+        one: mindre än en minut sedan
+        other: mindre än %{count} minuter sedan
+      over_x_years:
+        one: över 1 år sedan
+        other: över %{count} år sedan
+      x_seconds:
+        one: 1 sekund sedan
+        other: ' %{count} sekunder sedan'
+      x_minutes:
+        one: 1 minut sedan
+        other: ' %{count} minuter sedan'
+      x_days:
+        one: 1 dag sedan
+        other: ' %{count} dagar sedan'
+      x_months:
+        one: 1 månad sedan
+        other: ' %{count} månader sedan'
+      x_years:
+        one: 1 år sedan
+        other: ' %{count} år sedan'
+    expired_ago:
+      about_x_hours:
+        one: Upprörd för ungefär en timme sedan
+        other: Utred ungefär %{count} timmar sedan
+      about_x_months:
+        one: Upprörd för ungefär en månad sedan
+        other: Utred ungefär %{count} månader sedan
+      about_x_years:
+        one: Upprörd för ungefär 1 år sedan
+        other: Utred ungefär %{count} år sedan
+      almost_x_years:
+        one: Upprörd för nästan ett år sedan
+        other: Utred nästan %{count} år sedan
+      half_a_minute: Utred för en halv minut sedan
+      less_than_x_seconds:
+        one: Utred för mindre än 1 sekund sedan
+        other: Upprörd mindre än %{count} sekunder sedan
+      less_than_x_minutes:
+        one: Utred för mindre än en minut sedan
+        other: Upprörd mindre än %{count} minuter sedan
+      over_x_years:
+        one: Upprörd över 1 år sedan
+        other: Utred över %{count} år sedan
+      x_seconds:
+        one: Upprörd för 1 sekund sedan
+        other: Uppbåd %{count} sekunder sedan
+      x_minutes:
+        one: Upprörd för 1 minut sedan
+        other: Uppbåd %{count} minuter sedan
+      x_days:
+        one: Upprörd för 1 dag sedan
+        other: Utred %{count} dagar sedan
+      x_months:
+        one: Upprörd för en månad sedan
+        other: Utred %{count} månader sedan
+      x_years:
+        one: Upprörd för ett år sedan
+        other: Utred %{count} år sedan
+    expires_in:
+      about_x_hours:
+        one: Upphör att gälla om 1 timme
+        other: Upphör att gälla i %{count} timmar
+      about_x_months:
+        one: Upphör att gälla i ungefär 1 månad
+        other: Upphör att gälla %{count} månader
+      about_x_years:
+        one: Upphör att gälla om 1 år
+        other: Upphör att gälla %{count} år
+      almost_x_years:
+        one: Upphör att gälla i nästan 1 år
+        other: Upphör att gälla i nästan %{count} år
+      half_a_minute: Upphör att gälla om en halv minut
+      less_than_x_seconds:
+        one: Upphör att gälla på mindre än 1 sekund
+        other: Utgår på mindre än %{count} sekunder
+      less_than_x_minutes:
+        one: Undantaget löper ut om mindre än en minut
+        other: Utgår på mindre än %{count} minuter
+      over_x_years:
+        one: Upphör att gälla under mer än 1 år
+        other: Upphör att gälla i över %{count} år
+      x_seconds:
+        one: Upphör att gälla i 1 sekund
+        other: Upphör i %{count} sekunder
+      x_minutes:
+        one: Upphör att gälla om 1 minut
+        other: Upphör att gälla i %{count} minuter
+      x_days:
+        one: Upphör att gälla om 1 dag
+        other: Upphör att gälla i %{count} dagar
+      x_months:
+        one: Upphör att gälla om 1 månad
+        other: Upphör att gälla i %{count} månader
+      x_years:
+        one: Upphör att gälla om 1 år
+        other: Upphör att gälla i %{count} år
+  errors:
+    messages:
+      accepted: måste accepteras
+      bad_protocol: måste börja med %{protokoll}
+      bad_uri: är en ogiltig webbadress
+      blank: kan inte vara tomt
+      confirmation: matchar inte %{attribute}
+      contains_prohibited_characters: innehåller icke-alfanumeriska eller förbjudna Unicode-tecken
+      empty: kan inte vara tom
+      equal_to: måste vara lika med %{count}
+      even: måste vara jämnt
+      exclusion: är reserverat
+      general: 'Fel: %{errors}'
+      greater_than: måste vara större än %{count}
+      greater_than_or_equal_to: måste vara större än eller lika med %{count}
+      inclusion: finns inte med i listan
+      invalid: är ogiltig
+      less_than: måste vara mindre än %{count}
+      less_than_or_equal_to: måste vara mindre än eller lika med %{count}
+      model_invalid: 'Valideringen misslyckades: %{errors}'
+      not_a_number: är inte ett tal
+      not_an_integer: måste vara ett heltal
+      odd: måste vara udda
+      other_than: måste vara annat än %{count}
+      present: måste vara tomt
+      required: måste finnas
+      taken: har redan tagits
+      too_long:
+        one: är för långt (max 1 tecken)
+        other: är för långt (maximum är %{count} tecken)
+      too_short:
+        one: är för kort (minst 1 tecken)
+        other: är för kort (minst %{count} tecken)
+      try_again_email: 'Det uppstod ett fel. Försök igen eller skicka e-post till: %{email}'
+      wrong_length:
+        one: är fel längd (ska vara 1 tecken)
+        other: är fel längd (ska vara %{count} tecken)
+  time:
+    formats:
+      comment: '%B %d, %Y'
+      github: '% b %d,% Y'
+      json: '% b% e,% Y'
+      medium: '% b%-d,% Y'
+      reddit: "% b% e ' %y"
+      short: '% b%-e'
+      short_with_yy: "% b%-d ' %y"
+      short_with_year: '% b%-e,% Y'
+      stackexchange: "% b% e ' %y"
+      tweet: '%H: %M %p-%d %b %Y'
+

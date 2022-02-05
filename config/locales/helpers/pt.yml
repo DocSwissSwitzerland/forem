@@ -1,0 +1,238 @@
+pt:
+  helpers:
+    label:
+      listing:
+        body_markdown: Markdown do Corpo
+        expires_at: Data Expirada Customizada
+        location: Local
+        organization_id: Post sob uma organização
+        tag_list: Tags
+        title: Título
+      organization:
+        name: Nome
+        slug: Nome do usuário
+        profile_image: Imagem do perfil
+        nav_image: Logotipo para temas leves
+        dark_nav_image: Logotipo para temas escuros
+        twitter_username: Nome de usuário do Twitter
+        github_username: Nome de usuário do GitHub
+        url: Url do website
+        tag_line: Linha de tag
+        summary: Resumo
+        location: Local
+        email: E-mail de suporte
+        company_size: Tamanho da organização
+        story: Nossa história
+        tech_stack: Nossa pilha
+        cta_body_markdown: Texto do corpo
+        cta_button_text: Texto do link
+        cta_button_url: Url de link
+        proof: Prova
+      podcast:
+        android_url: Url do Android
+        description: Descrição
+        feed_url: Url de Alimentação
+        image: Imagem
+        itunes_url: Url itunes
+        main_color_hex: Hex de cor principal
+        overcast_url: Url do overcast
+        pattern_image: Imagem de padrão
+        slug: Slug
+        soundcloud_url: Url Soundcloud
+        title: Título
+        twitter_username: Nome de usuário do Twitter
+        website_url: Url do website
+      response_template:
+        title: Título
+        content: Corpo de comentário (Markdown)
+      user:
+        name: Nome
+        email: E-mail
+        username: Nome do usuário
+        profile_image: Imagem do perfil
+      users_notification_setting:
+        email_newsletter: Envie-me e-mails semanais de newsletter
+        email_digest_periodic: Envie-me uma digestão periódica de posts principais das minhas tags
+        email_membership_newsletter: Envie-me sustentando e-mails de newsletter de associação
+        email_tag_mod_newsletter: Enviar-me tag moderador newsletter emails
+        email_community_mod_newsletter: Envie-me newsletter do moderador da comunidade
+        email_comment_notifications: Envie-me um e-mail quando alguém responder a mim em um fio de comentário
+        email_follower_notifications: Envie-me um e-mail quando alguém novo me seguir
+        email_mention_notifications: Envie-me um e-mail quando alguém me menciona
+        email_badge_notifications: Envie-me um e-mail quando recebo um crachá
+        email_unread_notifications: Envie-me lembretes ocasionais que eu tenho notificações não lidas em %{community}
+        mobile_mention_notifications: Envie-me uma notificação push quando alguém me menciona
+        mobile_comment_notifications: Envie-me uma notificação push quando alguém responder a mim em um fio de comentário
+        welcome_notifications: Envie-me dicas ocasionais sobre como apriviver minha experiência %{comunidade}
+        reaction_notifications: Enviar notificações quando alguém reage aos meus comentários ou posts
+        mod_roundrobin_notifications: Envie-me comunidade ocasional-notificações de mod de sucesso
+      users_setting:
+        feed_url: URL de Feed RSS
+    placeholder:
+      organization:
+        name: Acme Inc.
+        slug: acmeinc
+        url: https://yoursite.com
+        location: Halifax, Nova Scotia
+        email: mail@example.com
+        company_size: '...'
+        story: '...'
+        tech_stack: '...'
+        cta_body_markdown: '...'
+        cta_button_text: Site Acme de Visita
+        cta_button_url: https://example.com
+        proof: '...'
+      response_template:
+        title: '...'
+      user:
+        name: John Doe
+        email: john.doe@example.com
+        username: johndoe
+        feed_url: https://yoursite.com/feed
+    application_helper:
+      app_logo: Logotipo do app
+      follow:
+        aria_label:
+          Organization: 'Seguir organização: %{nome}'
+          Tag: 'Seguir a tag: %{nome}'
+          User: 'Seguir usuário: %{nome}'
+          default: 'Seguir %{type}: %{nome}'
+        text:
+          Organization: Seguir
+          Tag: Seguir
+          User: Seguir
+          default: Seguir
+      required: Necessário
+      subtitle:
+        week: Principais posts desta semana
+        month: Principais posts deste mês
+        year: Principais posts este ano
+        infinity: Todos os posts
+        latest: Últimos posts
+      title_text: ' %{título}- %{timeframe}'
+    articles_helper:
+      logo: ' %{service_name} logo'
+      most_comments: Maioria Dos Comentários
+      most_reactions: Maioria Das Reações
+      most_views: Maioria Das Visualizações
+      recently_created: Recentemente Criado
+      recently_published: Recentemente Publicado
+    authentication_helper:
+      any_of_those: qualquer um desses
+      email_password: E-mail & Senha
+      reminder: 'Lembrete: você usou %{method} para autenticar sua conta, então por favor use %{dem} para assinar em se solicitado.'
+      that: que
+      invite_only: Você não pode fazer isso até que desative o Modo de Convite Apenas
+    comments_helper:
+      ama: ama
+      ask_me_anything: Pergunte-Me Qualquer coisa
+      author: Autor
+      like: Como
+      nbsp_likes_html:
+        one: '&nbsp; como'
+        other: '&nbsp; likes'
+    feedback_messages_helper:
+      offender:
+        body: >
+          Olá,
+
+
+          Foi trazido à nossa atenção que você violou o %{comunidade} Código de Conduta e / ou Termos de Uso.
+
+
+          Se esse comportamento continuar, poderemos precisar suspender a sua conta %{comunidade}.
+
+
+          Se você acha que houve um erro, por favor, responda a este e-mail e vamos dar um outro olhar.
+
+           %{comunidade} Equipe
+        subject: ' %{comunidade} Código de Conduta Violação'
+      reporter:
+        body: >
+          Oi lá, Obrigado por sinalizar conteúdo que pode estar violando o %{comunidade} Código de Conduta e / ou nossos Termos de Uso. Estamos a analisar o seu relatório e vai tomar as devidas
+
+          ação.
+
+          Agradecemos a sua ajuda enquanto trabalhamos para fomentar um ambiente positivo e inclusivo para todos! %{comunidade} Equipe
+        subject: ' %{comunidade} Relatório'
+      affected:
+        body: >
+          Oi lá,
+
+
+          Notamos alguns comentários (feitos por outros) em seu post que violam o %{comunidade} Código de Conduta e / ou nossos Termos de Uso. Temos tolerância zero para tal comportamento e estamos tomando providas adequadas.
+
+
+          Obrigado por ser demais, e por favor, não hesite em nos enviar por e-mail com qualquer dúvida! Saudamos todos os feedbacks e ideias à medida que continuamos trabalhando para fomentar uma comunidade aberta e inclusiva.
+
+           %{comunidade} Equipe
+        subject: Aviso de cortesia de %{comunidade}
+    listing_helper:
+      option:
+        one: ' %{cl_name} ( %{count} Crédito)'
+        other: ' %{nome_cl_name} ( %{count} Créditos)'
+    organization_helper:
+      option: ' %{org_name} ( %{não gasto})'
+    rate_limit_checker_helper:
+      day:
+        one: dia
+        other: dias
+      general: Quantas %{coisa} pode um novo membro ( %{timeframe} ou menos) criar dentro de qualquer período de 5 minute bits?
+      published:
+        title: Número limite de posts criados
+        description: Quantos posts alguém pode criar dentro de qualquer período de 30 second?
+      antispam:
+        title: Número limite de posts criados por um novo membro
+      update:
+        title: Limitar número de atualizações em um post
+        description: Quantas atualizações alguém pode fazer dentro de qualquer período de 30 second? Atualizar API docs quando alterado.
+      upload:
+        title: Número limite de imagens carregadas
+        description: Quantas imagens alguém pode fazer upload dentro de qualquer período de 30 second?
+      user:
+        title: Limite número de alterações que alguém pode fazer à sua conta
+        description: Quantas mudanças alguém pode fazer para a sua conta de usuário dentro de qualquer período de 30 second?
+      follow:
+        title: Limite número de seguidores que alguém pode seguir diariamente
+        description: Quantas pessoas alguém pode seguir em um dia?
+      reaction:
+        title: Limitar número de reações a um post ou comentário
+        description: Quantas vezes alguém pode reagir a um post ou comentar dentro de qualquer período de 30 second minutos?
+      feedback:
+        title: Limite número de vezes que alguém pode relatar abusos
+        description: Quantas vezes alguém pode relatar abuso dentro de qualquer período de 5 minute?
+      comment:
+        title: Número limite de comentários criados
+        description: Quantos comentários alguém pode criar dentro de qualquer período de 30 second?
+      comment_antispam:
+        title: Limitar número de comentários criados por um novo membro
+      mention:
+        title: Limitar número de @-menções em um post ou comentário
+        description: Quantas vezes alguém pode @-mencionar outros usuários em um post ou comentar?
+      listing:
+        title: Número limite de listagens criadas
+        description: Quantas listagens alguém pode criar dentro de qualquer período de 1 minute?
+      organization:
+        title: Número limite de organizações criadas
+        description: Quantas organizações alguém pode criar dentro de qualquer período de 5 minute?
+      subscription:
+        title: Limite número de vezes que alguém pode assinar a tag de líquido mailing list
+        description: Quantas vezes alguém pode se inscrever em uma lista de mailing dentro de qualquer período de 30 second?
+      recipient:
+        title: Limite número de emails gerais que enviamos
+        description: Quantos e-mails podemos enviar para alguém dentro de qualquer período de 2 minute?
+      confirmation:
+        title: Limite número de emails de confirmação que enviamos
+        description: Quantas vezes podemos enviar um e-mail de confirmação para alguém dentro de um período de 2 minute?
+      thing:
+        posts: postagens
+        comments: comentários
+    settings_helper:
+      advanced: Avançado
+      beginner: Iniciante
+      expert: Especialista
+      mid_level: Nível médio
+      novice: Novato
+    social_link_helper:
+      n_a: N/A
+

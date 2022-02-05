@@ -1,0 +1,24 @@
+el:
+  views:
+    actions:
+      copy:
+        text: Αντιγραφή στο πρόχειρο
+        button: Αντιγραφή διασύνδεσης
+      more:
+        title: Κι άλλο ...
+        aria_label: 'Επιλογές κοινής χρήσης:'
+      share:
+        facebook:
+          text: Κοινή χρήση στο Facebook
+        hackernews:
+          text: Κοινή χρήση σε Hacker News
+        linkedin:
+          text: Κοινή χρήση στο LinkedIn
+        reddit:
+          text: Κοινή χρήση στο Reddit
+        twitter:
+          text: Κοινή χρήση στο Twitter
+          query: '" %{άρθρο}" κατά  %{author}'
+        link: Share Post μέσω ...
+        report: Αναφορά κατάχρησης.
+

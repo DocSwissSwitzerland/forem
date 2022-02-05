@@ -1,0 +1,89 @@
+es:
+  views:
+    articles:
+      meta:
+        description: Un artículo de la comunidad
+      actions:
+        aria_label: Acciones del artículo
+      comments:
+        aria_label: Comentarios para el post %{title} ( %{num})
+        subtitle_html: Debate %{num}
+        num: ( %{num})
+        subscribe: Suscribirse
+      conduct:
+        aria_label: Controles de conducta
+        code: Código de conducta
+        report: Abuso de informes
+      delete:
+        heading: ¿Está seguro de que desea suprimir este artículo?
+        desc:
+          text_html: No puede deshacer esta acción, quizás sólo desea %{action} en su lugar?
+          edit: edit
+          unpublish: unpublish
+        action:
+          button: Suprimir
+          cancel: Desestimación
+          edit: Editar
+          unpublish: No publicar
+      lock:
+        meta:
+          title: Confirmar bloqueo de discusión
+        heading: ¿Está seguro de que desea bloquear la discusión en este post?
+        desc_html: Los usuarios no podrán añadir nuevos comentarios. Esto <em class="fw-bold">no</em> eliminará los comentarios existentes. Puede desbloquear la discusión en cualquier momento para permitir a los usuarios volver a dejar comentarios.
+        cancel: Cancelar
+        notes:
+          label: Notes (opcional)-sólo es visible para usted y los administradores
+          placeholder: Más detalles sobre por qué ha bloqueado la discusión.
+        reason:
+          label: Motivo de bloqueo del debate (opcional)-se mostrará públicamente
+          placeholder: La razón por la que estás bloqueando esta discusión.
+        submit: Discusión de bloqueo
+      preview_discuss_html:
+        zero: ¡Nueva Discusión!
+        one: '#discuss <img src="%{image}" /> %{count}'
+        other: '#discuss <img src="%{image}" /> %{count}'
+      save:
+        title: Guardar en la lista de lectura
+        aria_label: Guardar en la lista de lectura
+        initial: Guardar
+        success: Guardado
+      series:
+        subtitle: ' %{slug} ( %{size})'
+        size:
+          one: ' %{count} Serie De Parte'
+          other: ' %{count} Serie De Parte'
+        published: Publicado %{date}
+        inbetween:
+          num: '...'
+          text:
+            one: una parte más ...
+            other: ' %{count} más partes ...'
+          title: Ver más
+      unlock:
+        meta:
+          title: Confirmar desbloqueo de discusión
+        heading: ¿Está seguro de que desea desbloquear la discusión en este post?
+        desc: Los usuarios podrán añadir nuevos comentarios. Puede bloquear la discusión en cualquier momento para evitar que los usuarios dejen comentarios de nuevo.
+        cancel: Cancelar
+        notes: 'Notas de cuándo se ha bloqueado esta discusión (sólo es visible para usted y los administradores):'
+        reason: 'Razón por la que este debate se ha bloqueado (públicamente visible):'
+        submit: Desbloquear la discusión
+      unpublished:
+        subtitle: Publicación no publicada.
+        text: ' Este URL es público pero secreto, por lo que comparte a su propia discreción.'
+        edit: Pulse para editar
+      co_authors_html: con %{names}
+      crossposted:
+        text_html: Publicado originalmente en %{url} %{on}
+        on_html: en %{date}
+      edited: Actualizado en %{date}
+      edited_html: Actualizado en %{date}
+      for_org_html: ' %{start} para %{end} %{org}'
+      missing: Artículo Ya No Disponible
+      posted_html: Publicado en %{date}
+      read_next: Leer a continuación
+      reading_time:
+        one: 1 min read
+        other: ' %{count} min read'
+      right_nav: Detalles del autor
+

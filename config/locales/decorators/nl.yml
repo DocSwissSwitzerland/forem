@@ -1,0 +1,5 @@
+nl:
+  decorators:
+    article_decorator:
+      tagged_with: ' Getagd met %{cached_tag_list}.'
+

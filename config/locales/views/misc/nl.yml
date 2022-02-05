@@ -1,0 +1,142 @@
+nl:
+  views:
+    badges:
+      meta:
+        title: Badges
+        name: ' %{title} Badge'
+      all:
+        one: Eén badge tonen
+        other: Alle %{count} badges afbeelden
+      heading: Badges
+      desc: Ontvang badges voor geweldig zijn! Klik op een badge om te zien hoe je het kunt verdienen.
+      name: "\U0001F3C5  %{title} Badge \U0001F3C5"
+    campaign:
+      subtitle: Verhalen ( %{count})
+      view: Alle berichten bekijken
+    deep_links:
+      subtitle: De mobiele app wordt geopend ...
+      alert:
+        subtitle: Oeps! Heb je vast geprobeerd om de mobiele app te openen?
+        desc_html: Zorg ervoor dat het is geïnstalleerd en probeer het opnieuw. Als het probleem aanhoudt, neemt u contact op met %{email}
+        back: Breng me terug.
+        again: Probeer het opnieuw
+        install: Installeer de app
+    email_subscriptions:
+      unsubscribe:
+        heading: "U bent niet geabonnend vanaf %{type}. \U0001F614"
+        description_html: Je zult niet langer e-mails zoals deze ontvangen. Als u uw volledige e-mailvoorkeuren wilt herschrijven of beheren, kunt u %{link} gebruiken.
+        link: klik hier
+      invalid:
+        heading: Token is vervallen of ongeldig
+        description_html: Alsjeblieft %{signin} om uw e-mailvoorkeuren te beheren.
+        signin: teken-in
+    hamburger:
+      icon: Navigatiemenu
+      icon_close: Sluiten
+      icon_left: Menu links
+      icon_right: Rechtermenu
+    logo:
+      color_1:
+        label: Merk kleur 1
+        description: Gebruikt voor achtergronden, randen etc.
+        select:
+          aria_label: Merk kleur 1 kleur selector
+          label: Merk kleur 1 kleur selecteren
+      color_2:
+        label: Merk kleur 2
+        description_html: Gebruikt voor teksten (meestal op <em>Merkkleur 1</em>).
+        select:
+          aria_label: Merk kleur 2 kleurenkiezer
+          label: Merk kleur 2 kleur selecteren
+      preview:
+        icon: App-logo
+        text: 'Voorbeeld:'
+    onboardings:
+      meta:
+        title: Welkom bij %{community}
+      heading: Je bent nu een deel van de gemeenschap!
+      subtitle: SUGGESTIES VOOR DINGEN DIE U KUNT DOEN
+      close: Welkomstbericht sluiten
+      settings_html: "<span class=\"emoji\">\U0001F485\U0001F3FC</span>Uw profiel aanpassen"
+      welcome_html: "<span class=\"emoji\">\U0001F60A</span>Deelnemen aan de welkomstthread"
+      write_html: "<span class=\"emoji\">✍\U0001F3FE</span>Schrijf uw eerste %{community} post"
+    pins:
+      article: Vastgezet
+      pinned: "\U0001F4CC Pinned! (vastgezette posts chronologisch, 5 max)"
+      removed: "\U0001F5D1 -pen verwijderd"
+      error: U kunt slechts vijf pennetjes hebben
+    reading_list:
+      meta:
+        title: Leeslijst
+        description: Mijn opgeslagen posten.
+        og:
+          title: Lijst- %{community} wordt gelezen
+    search:
+      heading: Zoekresultaten %{for}
+      for: ' voor %{query}'
+      placeholder: Zoeken ...
+      icon:
+        aria_label: Zoeken
+        title: Zoeken
+      nav:
+        posts: Posten
+        podcasts: Podcasts
+        people: Personen
+        comments: Commentaar
+        my_posts: Alleen mijn berichten
+        tags: Tags
+      sort:
+        aria_label: Sorteeropties voor zoekresultaten
+        relevance: Meest relevant
+        newest: Nieuwste
+        oldest: Oudste
+      meta:
+        title: Zoekresultaten %{for}
+        for: ' voor %{query}'
+        description: ' %{site} = > Zoekresultaten'
+    series:
+      meta:
+        description: ' %{title} bekijken op %{site}'
+      heading: " %{user}'s Series"
+      empty: Deze gebruiker heeft geen enkele reeks
+      list:
+        heading: " %{series} Series ' Artikelen"
+        back: Terug naar %{user}'s Series
+        empty: Deze serie heeft geen artikelen
+    sponsor:
+      seek: Sponsor worden
+    stats:
+      meta:
+        title: Statistieken voor uw artikel
+      heading_html: Statistieken voor " %{article}"
+      period:
+        aria_label: Analyseperiode
+        week: Week
+        month: Maand
+        infinity: Oneindigheid
+      readers: Overzicht van lezers
+      followers: Overzicht nieuwe volgers
+      reactions: "Reacties Samenvatting ❤\U0001F984\U0001F516"
+      comments: "Samenvatting van opmerkingen \U0001F4AC"
+      traffic:
+        text: "Overzicht verkeersbron \U0001F6A6"
+        source: Bron
+        views: Views
+    sticky:
+      joined: Samengevoegd
+      default_cta: Meer informatie
+      email: E-mail
+      hot: Warm
+      location: Locatie
+      more_from_html: Meer van %{actor}
+      no_summary: Berichten in deze tag
+      trending_html: Trending op %{app}
+    videos:
+      meta:
+        title: Video's
+        og:
+          description: Alle video's op %{community}
+      heading: ' %{community} op video'
+      beta_html: <strong>Video is bèta:</strong>  %{contact}
+      upload: "\U0001F3A5 Het videobestand \U0001F64Cuploaden"
+

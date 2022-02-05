@@ -1,0 +1,184 @@
+pt:
+  contact_prompts:
+    if_any_questions_html: <a href="/contact">Entre em contato conosco</a> se você tiver alguma dúvida.
+    if_continued_trouble_html: <a href="/contact">Entre em contato conosco</a> se você continuar tendo problemas.
+    if_we_can_help_html: <a href="/contact">Entre em contato conosco</a> se há algo que possamos ajudar.
+  core:
+    add_comment: Adicionar comentário
+    beta: beta
+    comment: Comentário
+    copy_link: Link de cópia
+    edit_profile: Perfil de edição
+    follow: Seguir
+    follow_back: Seguir de volta
+    following: A seguir
+    like: Como
+    loading: carregando ...
+    reaction: Reação
+    report_abuse: Abuso de relatório
+    search: Pesquisa
+  datetime:
+    distance_in_words_ago:
+      about_x_hours:
+        one: cerca de 1 hora ago
+        other: cerca de %{count} horas atrás
+      about_x_months:
+        one: cerca de 1 mês atrás
+        other: cerca de %{count} meses atrás
+      about_x_years:
+        one: cerca de 1 ano atrás
+        other: cerca de %{conte} anos atrás
+      almost_x_years:
+        one: quase 1 ano ago
+        other: quase %{conto} anos atrás
+      half_a_minute: meio minuto atrás
+      less_than_x_seconds:
+        one: há menos de 1 second minutos
+        other: menos de %{count} segundos atrás
+      less_than_x_minutes:
+        one: há menos de um minuto
+        other: menos de %{count} minutos atrás
+      over_x_years:
+        one: mais de 1 ano ago
+        other: over %{count} anos atrás
+      x_seconds:
+        one: 1 second minutos atrás
+        other: ' %{count} segundos atrás'
+      x_minutes:
+        one: 1 minute minutos atrás
+        other: ' %{contagem} minutos atrás'
+      x_days:
+        one: 1 dia atrás
+        other: ' %{count} dias atrás'
+      x_months:
+        one: 1 mês atrás
+        other: ' %{count} meses atrás'
+      x_years:
+        one: 1 ano atrás
+        other: ' %{conte} anos atrás'
+    expired_ago:
+      about_x_hours:
+        one: Expirado cerca de 1 hora atrás
+        other: Expirado cerca de %{count} horas atrás
+      about_x_months:
+        one: Expirado cerca de 1 mês atrás
+        other: Expirado cerca de %{count} meses atrás
+      about_x_years:
+        one: Expirado cerca de 1 ano atrás
+        other: Expirado cerca de %{count} anos atrás
+      almost_x_years:
+        one: Expirado há quase 1 ano
+        other: Expirado quase %{conto} anos atrás
+      half_a_minute: Expirado meio minuto atrás
+      less_than_x_seconds:
+        one: Expirado há menos de 1 second minutos
+        other: Expirado menos de %{count} segundos atrás
+      less_than_x_minutes:
+        one: Expirado menos de um minuto atrás
+        other: Expirado menos de %{count} minutos atrás
+      over_x_years:
+        one: Expirado mais de 1 ano ago
+        other: Expirado ao longo de %{count} anos atrás
+      x_seconds:
+        one: Expirado há 1 second minutos
+        other: Expirado %{count} segundos atrás
+      x_minutes:
+        one: Expirado há 1 minute minutos
+        other: Expirado %{count} minutos atrás
+      x_days:
+        one: Expirado há 1 dia
+        other: Expirado %{count} dias atrás
+      x_months:
+        one: Expirado há 1 mês
+        other: Expirado %{count} meses atrás
+      x_years:
+        one: Expirado há 1 ano
+        other: Expirado %{count} anos atrás
+    expires_in:
+      about_x_hours:
+        one: Expira em cerca de 1 hora
+        other: Expira em cerca de %{count} horas
+      about_x_months:
+        one: Expira em cerca de 1 mês
+        other: Expira em cerca de %{count} meses
+      about_x_years:
+        one: Expira em cerca de 1 ano
+        other: Expira em cerca de %{count} anos
+      almost_x_years:
+        one: Expira em quase 1 ano
+        other: Expira em quase %{count} anos
+      half_a_minute: Expira em meio minuto
+      less_than_x_seconds:
+        one: Expira em menos de 1 second
+        other: Expira em menos de %{count} segundos
+      less_than_x_minutes:
+        one: Expira em menos de um minuto
+        other: Expira em menos de %{count} minutos
+      over_x_years:
+        one: Expira em mais de 1 ano
+        other: Expira em mais de %{count} anos
+      x_seconds:
+        one: Expira em 1 second
+        other: Expira em %{count} segundos
+      x_minutes:
+        one: Expira em 1 minute
+        other: Expira em %{count} minutos
+      x_days:
+        one: Expira em 1 dia
+        other: Expira em %{count} dias
+      x_months:
+        one: Expira em 1 mês
+        other: Expira em %{count} meses
+      x_years:
+        one: Expira em 1 ano
+        other: Expira em %{count} anos
+  errors:
+    messages:
+      accepted: deve ser aceito
+      bad_protocol: deve iniciar com %{protocolos}
+      bad_uri: é uma url inválida
+      blank: não pode estar em branco
+      confirmation: não corresponde %{atributo}
+      contains_prohibited_characters: contém caracteres unicode não alfanuméricos ou proibidos
+      empty: não pode estar vazio
+      equal_to: deve ser igual a %{count}
+      even: deve ser mesmo
+      exclusion: é reservado
+      general: 'Erro: %{erros}'
+      greater_than: deve ser maior que %{count}
+      greater_than_or_equal_to: deve ser maior ou igual a %{count}
+      inclusion: não está incluído na lista
+      invalid: é inválido
+      less_than: deve ser menor que %{count}
+      less_than_or_equal_to: deve ser menor ou igual a %{count}
+      model_invalid: 'Falha na validação: %{erros}'
+      not_a_number: não é um número
+      not_an_integer: deve ser um inteiro
+      odd: deve ser estranho
+      other_than: deve ser diferente de %{count}
+      present: deve estar em branco
+      required: deve existir
+      taken: já foi levado
+      too_long:
+        one: é muito longo (máximo é 1 caractere)
+        other: é muito longo (máximo é %{count} caracteres)
+      too_short:
+        one: é curto demais (mínimo é 1 caractere)
+        other: é curto demais (mínimo é %{count} caracteres)
+      try_again_email: 'Ocorreu um erro. Tente novamente ou envie um e-mail para: %{email}'
+      wrong_length:
+        one: é o comprimento errado (deve ser de 1 caracteres)
+        other: é o comprimento errado (deve ser %{count} caracteres)
+  time:
+    formats:
+      comment: '%B %d, %Y'
+      github: '%b %d, %Y'
+      json: '%b %e, %Y'
+      medium: '%b%-d, %Y'
+      reddit: "%b %e ' %y"
+      short: '%b%-e'
+      short_with_yy: "%b%-d ' %y"
+      short_with_year: '%b%-e, %Y'
+      stackexchange: "%b %e ' %y"
+      tweet: '%H: %M %p-%d %b %Y'
+

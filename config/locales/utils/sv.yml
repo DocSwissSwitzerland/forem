@@ -1,0 +1,14 @@
+sv:
+  xml:
+    opensearch:
+      short_name: ' %{community} sökning'
+      description: Sök efter inlägg från %{community}.
+    user:
+      image: ' %{user} profilbild'
+  json:
+    author: Aktiva %{community} författare
+  mailer:
+    adjust: Justera dina e-postinställningar
+    adjust_only_html: Vill du inte ha mejl som det här? Justera dina e-postinställningar på %{path}
+    unsubscribe: Sluta prenumerera
+

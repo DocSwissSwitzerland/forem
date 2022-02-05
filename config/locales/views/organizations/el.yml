@@ -1,0 +1,32 @@
+el:
+  views:
+    organizations:
+      empty: 404 βιο δεν βρέθηκε
+      external:
+        icon: Εικονίδιο εξωτερικής διασύνδεσης
+      follow: 'Ακολούθη:'
+      github:
+        icon: Λογότυπο GitHub
+      joined:
+        icon: "' Ενταξη"
+        text_html: Προσχώρηση στο  %{date}
+      location:
+        icon: 'Τοποθεσία:'
+      logo: Εικόνα προφίλ  %{org}
+      size: "' Υπάλληλοι"
+      sponsor:
+        text: ' %{επίπεδο} Χορηγός της Κοινότητας ❤️'
+        level:
+          gold: -Χρυσό.
+          silver: -Σίλβερ.
+          bronze: Χάλκινο.
+          tag: 'Ετικέτα:'
+          media: Media.
+          devrel: Devrel.
+      stack: στοίβα μας.
+      story: Η ιστορία.
+      support: E-mail υποστήριξης
+      team: -Ναι.
+      twitter:
+        icon: Λογότυπο Twitter
+

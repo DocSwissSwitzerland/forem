@@ -1,0 +1,131 @@
+el:
+  models:
+    api_secret:
+      api_limit_reached: Εντοπίστηκε μυστικό όριο 20 ανά χρήστη για το API
+    application_record:
+      uninferrable: Δεν ήταν δυνατή η εισαγωγή ενός διακριτικού για το  %{class}.
+    article:
+      a_post_by: Μια δημοσίευση κατά  %{όνομα_χρήστη}
+      video_unpermitted: δεν μπορεί να προστεθεί από το μέλος χωρίς άδεια.
+      video_processing: δεν μπορεί να οριστεί σε true αν το βίντεο εξακολουθεί να επεξεργάζεται
+      cannot_search_tags_for: 'Δεν είναι δυνατή η αναζήτηση προσδιοριστικών για:  %{tag}'
+      cannot_search_tags_for_tags: 'Δεν είναι δυνατή η αναζήτηση προσδιοριστικών για:  %{tags}'
+      unique_coauthor: Οι ταυτότητες συντακτών πρέπει να είναι μοναδικές
+      too_many_tags: υπερβαίνει το μέγιστο 4 προσδιοριστικά
+      is_too_long: είναι πολύ μακριά.
+      invalid_date: πρέπει να καταχωρείται σε μορφή DD/MM/YYYY με τρέχουσα ή προηγούμενη ημερομηνία
+      series_unpermitted: Πρέπει να έχετε την άδεια να το κάνετε.
+      invalid_coauthor: πρέπει να είναι έγκυρες ταυτότητες χρήστη
+      same_author: δεν πρέπει να είναι ο ίδιος χρήστης με το συντάκτη
+      must_not_have_spaces: δεν πρέπει να έχουν κενά.
+      published: "' Εκδοση"
+      unique_url: έχει ήδη ληφθεί. Email  %{email} για περισσότερες λεπτομέρειες.
+      mention_too_many:
+        one: Δεν μπορείτε να αναφέρετε περισσότερους από  %{count} χρήστες σε μια δημοσίευση!
+        other: Δεν μπορείτε να αναφέρετε περισσότερους από  %{count} χρήστες σε μια δημοσίευση!
+    broadcast:
+      single_active: Μπορείτε να έχετε μόνο μία ενεργή ανακοίνωση.
+    comment:
+      deleted: '[διαγράφεται]'
+      has_been_deleted: Το  %{type} έχει διαγραφεί.
+      hidden: '[Κρυμμένος από τον συντάκτη]'
+      is_not_valid: δεν είναι έγκυρη.
+      locked: η συζήτηση είναι κλειδωμένη σε αυτό το Post
+      type:
+        Article: "' Αρθρο"
+        item: -σημείο
+        PodcastEpisode: επεισόδιο Podcast
+      suspended_too_many: Ο χρήστης ανέστειλε για πολλές spammy αλληλεπιδράσεις, που προκαλούνται από αυτόματος.
+      mention_too_many:
+        one: Δεν μπορείτε να αναφέρετε περισσότερους από  %{count} χρήστες σε ένα σχόλιο!
+        other: Δεν μπορείτε να αναφέρετε περισσότερους από  %{count} χρήστες σε ένα σχόλιο!
+    feedback_message:
+      reported: Αναφέρατε προηγουμένως αυτή τη διεύθυνση URL.
+    github_issue:
+      issue_comment_not_found: Το σχόλιο  %{issue_id} δεν βρέθηκε
+      issue_not_found: Η έκδοση  %{issue_id} δεν βρέθηκε
+    html_variant:
+      no_edits: δεν μπορεί να αλλάξει μόλις δημοσιευθεί και εγκριθεί.
+    identity:
+      no_email_msg: Δεν βρέθηκαν μηνύματα email. Συνδεθείτε στο λογαριασμό του  %{provider} για να αποφύγετε τα σφάλματα.
+    listing:
+      too_many_tags: υπερβαίνει το μέγιστο των 8 ετικετών
+      too_many_linebreaks: Έχει πάρα πολλές γενεές. Όχι πάνω από 12 επιτρέπονται.
+      image_not_allowed: δεν επιτρέπεται να περιλαμβάνει εικόνες.
+      liquid_not_allowed: δεν επιτρέπεται να περιλαμβάνει ετικέτες υγρών.
+    mention:
+      is_not_valid: δεν είναι έγκυρη.
+    organization:
+      integer_only: Ακέραιος μόνο. Δεν επιτρέπεται.
+      reserved_word: '%<value>s είναι μια δεσμευμένη λέξη. Οι διαχειριστές δικτυακών τόπων μπορούν να βοηθήσουν στην εγγραφή του οργανισμού σας.'
+    page:
+      body_must_exist: πρέπει να υπάρχει αν το body_html ή το body_json δεν υπάρχει.
+    podcast:
+      slug_is_reserved: Η σφαίρα είναι δεσμευμένη.
+    podcast_episode_appearance:
+      provided_role_is_not_valid: Ο ρόλος δεν είναι έγκυρος.
+    poll_skip:
+      cannot_vote_more_than_once: δεν μπορεί να ψηφίσει περισσότερες από μία φορές σε μία δημοσκόπηση
+    poll_vote:
+      cannot_vote_more_than_once: δεν μπορεί να ψηφίσει περισσότερες από μία φορές σε μία δημοσκόπηση
+    profile_pin:
+      only_five: δεν μπορεί να έχει περισσότερες από πέντε θέσεις καρφιτσωμένα
+      pin_unpermitted: πρέπει να έχουν τα κατάλληλα δικαιώματα για το pin
+    rating_vote:
+      not_permitted: δεν επιτρέπεται να αναλάβει αυτή την ενέργεια.
+    reaction:
+      is_not_valid: δεν είναι έγκυρη.
+    response_template:
+      user_nil_only: δεν μπορεί να έχει συσχετιστεί ταυτότητα χρήστη.
+      comment_markdown: Τα πρότυπα σχολίων πρέπει να χρησιμοποιούν το Markdown ως είδος περιεχομένου.
+      email_text: Τα πρότυπα email πρέπει να χρησιμοποιούν απλό κείμενο ή HTML ως είδος περιεχομένου.
+      limit_reached: Συμπληρώθηκε το όριο των 30 προτύπων ανά χρήστη.
+    settings:
+      campaign:
+        share_your_project: Κοινή χρήση του έργου
+      community:
+        message: δεν μπορεί να περιλαμβάνει το χαρακτήρα "<" και "> "
+        new_forem: Νέο Forem
+        user: -χρήστης
+      general:
+        community_sponsors: Community Χορηγοί
+        the_community_mascot: Η μασκότ της κοινότητας
+      user_experience:
+        message: 'πρέπει να είναι ένας χαρακτήρας 3 ή 6 χαρακτήρων (ξεκινώντας από το #)'
+    sponsorship:
+      invalid_type: δεν είναι χορηγός.
+      already_sponsored: Η ετικέτα έχει ήδη χρηματοδοτηθεί.
+      only_one_level: Μπορείτε να έχετε μόνο μία χορηγία του  %{επίπεδα}
+      level:
+        gold: -χρυσός.
+        silver: -Σίλβερ.
+        bronze: -χάλκινο
+    tag:
+      alias_for: Το alias_for πρέπει να παραπέμπει σε υπάρχον προσδιοριστικό
+    tag_adjustment:
+      too_many_tags: 4 ετικέτες max ανά άρθρο.
+      unpermitted: δεν έχει προνόμιο προσαρμογής αυτών των προσδιοριστικών.
+      not_live: Η επιλογή για αφαίρεση δεν είναι τρέχον.
+      unique: Δεν μπορεί να είναι ήδη προσαρμοσμένο προσδιοριστικό.
+    tweet:
+      tweet_not_found: Το Tweet δεν βρέθηκε
+    user:
+      could_not_send: Δεν ήταν δυνατή η αποστολή επιβεβαίωσης.  %{_μηνύματος}
+      password_not_matched: δεν συμφωνεί με την επιβεβαίωση κωδικού πρόσβασης
+      has_been_banished: έχει εξοριστεί.
+      is_taken: Το  %{όνομα_χρήστη} λαμβάνεται.
+      user_could_not_be_saved: Ο χρήστης δεν αποθηκεύτηκε.  %{_μηνύματος}
+      username_is_reserved: όνομα χρήστη είναι δεσμευτεί
+    user_block:
+      cant_be_the_same: Δεν μπορεί να είναι το ίδιο με τον αποκλεισμό.
+    user_subscription:
+      non_apple: Δεν μπορώ να εγγραφείτε σε ένα ιδιωτικό ρελέ Apple. Ενημερώστε το email.
+      source_not_found: Η προέλευση δεν βρέθηκε. Βεβαιωθείτε ότι το  %{source} είναι ενεργό!
+      not_enabled: Οι συνδρομές χρηστών δεν έχουν ενεργοποιηθεί για την προέλευση.
+    users:
+      deleted_user:
+        name: '[Διαγραφή χρήστη]'
+      setting:
+        invalid_hex: δεν είναι έγκυρο hex χρώμα
+        invalid_rss: δεν είναι έγκυρη τροφοδοσία RSS/Atom
+

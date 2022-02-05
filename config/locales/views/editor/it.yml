@@ -1,0 +1,28 @@
+it:
+  views:
+    editor:
+      meta:
+        title: Modifica post
+      heading:
+        new: Nuovo Post
+      create: Crea Post
+      close:
+        icon: Chiudi
+        title: Chiudere l'editor
+      cover_image:
+        add: Aggiungere un'immagine di copertina
+        change: Modifica
+      edit: Modifica
+      modes: Visualizza le modalità post
+      new_title: Nuovo titolo post qui ...
+      preview: Anteprima
+      video:
+        progress:
+          heading: ⏳ Video Transcoding In Progress ⏳
+          notice_1: Riceverai una email quando questo processo finirà.
+          notice_2: Questo è un post non pubblicato ordinario. Aggiungere titolo / tags/body/etc, e poi contrassegnare come pubblicato dopo che il video è realizzato.
+        submit_image:
+          button: Invia modifica
+          text: 'Anteprima URL immagine: '
+          placeholder: Nuovo URL Miniatura
+

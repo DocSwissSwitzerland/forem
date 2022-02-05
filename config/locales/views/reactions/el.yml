@@ -1,0 +1,31 @@
+el:
+  views:
+    reactions:
+      category:
+        hands: Τα χέρια!
+        like: Όπως ...
+        readinglist: Λίστα ανάγνωσης.
+        thinking: Η σκέψη ...
+        thumbsup: -Ναι.
+        thumbsdown: Κάτω τα ...
+        unicorn: μονόκερος
+        vomit: 'Ενδείκτης:'
+      summary:
+        count_html:
+          one: ' %{αριθμός}  %{έναρξη} της αντίδρασης  %{end}'
+          other: ' %{αριθμός}  %{έναρξη} αντιδράσεις  %{end}'
+        title: "' Αντιδράσεις"
+      like:
+        title: Καρδιά!
+        aria_label: Όπως ...
+        icon: Αγαπημένο κουμπί καρδιάς.
+        text: Όπως ...
+      unicorn:
+        title: μονόκερος
+        aria_label: React με μονόκερο
+      readingList:
+        title: 'Αποθήκευση:'
+        aria_label: Προσθήκη στη λίστα ανάγνωσης
+        icon: Αποθήκευση κουμπιού
+        text: 'Αποθήκευση:'
+

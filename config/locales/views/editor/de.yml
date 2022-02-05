@@ -1,0 +1,28 @@
+de:
+  views:
+    editor:
+      meta:
+        title: Post bearbeiten
+      heading:
+        new: Neue Post
+      create: Post erstellen
+      close:
+        icon: Schließen
+        title: Editor schließen
+      cover_image:
+        add: Titelbild hinzufügen
+        change: Ändern
+      edit: Bearbeiten
+      modes: Postmodi anzeigen
+      new_title: Neuer Post-Titel hier ...
+      preview: Vorschau
+      video:
+        progress:
+          heading: ⏳ Video-Transcodierung in Bearbeitung ⏳
+          notice_1: Wenn dieser Prozess abgeschlossen ist, erhalten Sie eine E-Mail.
+          notice_2: Dies ist ein gewöhnlicher, unveröffentlichter Posten. Hinzufügen von Titel/tags/body/etc, und dann als veröffentlicht markieren, nachdem das Video verarbeitet wird.
+        submit_image:
+          button: Änderung übergeben
+          text: 'Vorschau für Bild-URL: '
+          placeholder: Neue Piktogramm-URL
+

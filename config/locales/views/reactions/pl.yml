@@ -1,0 +1,31 @@
+pl:
+  views:
+    reactions:
+      category:
+        hands: Dłonie
+        like: Podobne
+        readinglist: Odczytywanie listy
+        thinking: Myślenie
+        thumbsup: Kciuki w górę
+        thumbsdown: Kciuki w dół
+        unicorn: jednorożec
+        vomit: Flaga
+      summary:
+        count_html:
+          one: ' %{count} %{start} reakcja %{end}'
+          other: ' %{count} %{start} reakcje %{end}'
+        title: Reakcje
+      like:
+        title: Serce
+        aria_label: Podobne
+        icon: Ulubiony przycisk serca
+        text: Podobne
+      unicorn:
+        title: jednorożec
+        aria_label: Reaguj z jednoroże
+      readingList:
+        title: Zapisz
+        aria_label: Dodaj do listy odczytów
+        icon: Przycisk Zapisz
+        text: Zapisz
+

@@ -1,0 +1,122 @@
+sv:
+  views:
+    moderations:
+      heading: Mod Center
+      actions:
+        meta:
+          title: Moderera %{title}
+          title2: '[Moderera ] %{title}'
+        heading: Moderera inlägg
+        subtitle: Rate the quality of the quality of the post
+        abusive:
+          subtitle_html: Flagga %{user} som Abusive
+          desc_html: Det här är motsvarigheten till att flagga <b>all</b> för den här användarens artiklar och kommer att sänka artikelns poäng.
+        adjust:
+          heading: Justera taggar
+          subtitle: Lägg till eller ta bort etiketter
+          aria_label: Öppna justering av taggar
+          icon: Justera taggar
+          add: Lägg till etikett
+          add_placeholder: Lägg till en etikett
+          reason: Orsak till märkningsjustering
+          remove: Ta bort etikett
+          submit: Skicka in
+        approve:
+          add: Markera som godkänd
+          remove: Ta bort godkännande
+        checkmark: Checkmärke
+        close: Stäng fönstret med moderatoråtgärder
+        delete:
+          subtitle: Ta bort kommentaren
+          button: Ta bort kommentar
+        edit:
+          post: Redigera inlägg
+          article_admin: 'Administratör: Artikel'
+          comment_admin: 'Admin: Kommentar'
+          user_admin: 'Admin: Användare'
+          resource_admin: 'ResourceAdmin: Artikel'
+        errors:
+          one: 'Ett fel har förbjudit det här blocket från att sparas:'
+          other: ' %{count} fel förbjöd det här blocket från att sparas:'
+        experience:
+          heading: Ange erfarenhetsnivå
+          heading2: Erfarenhetsnivå
+          subtitle: Kurera den lämpligaste publiken för den här posten.
+          aria_label: Öppen erfarenhetsnivå
+          icon: Bok
+          desc_html: Vem <em>kan</em> hitta den här tjänsten som mest värdefull, baserat på den totala erfarenheten?
+          from: ' %{lvl}- '
+          level:
+            Advanced: Avancerat
+            Beginner: Nybörjare
+            Expert: Expert
+            Mid-level: Mid-nivå
+            Novice: Novis
+        flag: Flagganvändare
+        how: Hur fungerar det här?
+        hidden:
+          subtitle: Dolda kommentarer
+          by: Kommentar av %{user}
+        hint:
+          subtitle: Alla negativa reaktioner är privata.
+          desc_html: >-
+            Använd <b>Hög kvalitet</b> om du vill flytta det här innehållet av någon anledning (kvalitet, användbarhet osv.).
+
+            <br /> Använd <b>Låg kvalitet</b> om du vill flytta det här innehållet av någon anledning (kvalitet, användbarhet osv.).
+
+            <br /> Använd <b>Flagga till administratörer</b> för uppförandekod för brott (trakasserier, för att vara en idiot, skräppost osv.).
+        other: Andra saker du kan göra
+        add_reaction: Lägg till en reaktion
+        suspicious: Misstänkt
+        tag:
+          subtitle: Märkningsjustering
+          add: Lägg till
+          added_html: <b>För närvarande tillagt märkord:</b>  %{tag}
+          live_html: <b>Aktuella taggar:</b>  %{tags}
+          reason: Orsak till justering (vara supersnäll)-endast orsaken är nödvändig. Meddelandet kommer att ta hand om resten.
+          remove: Ta bort
+          removed_html: <b>Nuvarande tagg för närvarande:</b>  %{tag}
+          select: Välj etikett
+          submit: Skicka märkningsjustering
+          tag_name: Märkordsnamn
+          undo:
+            button: ×
+            confirm: Är du säker på att du vill ångra %{type} av %{tag}-taggen?
+            type:
+              addition: tillägg
+              removal: borttagning
+        thumb_down: Tummen ner
+        thumb_up: Tummen upp
+        toggle: Växla avsnitt
+        unpublish: Avpublicera artikel
+        vote_down: Låg kvalitet
+        flag_to_admins: Flagga till administratörer
+        vote_up: Hög kvalitet
+      all: Alla avsnitt
+      aside:
+        all: Alla avsnitt
+        code_of_conduct: Uppförandekod
+        external: Extern länk
+        feedback:
+          subtitle: Har du fått feedback för att förbättra din Mod-upplevelse?
+          description: Mejla %{email}!
+        hello: "Hej! \U0001F44B"
+        thanks: Tack för att du har hjälpt till att hålla %{community} säkert! ❤️
+        inbox: Inkorg
+        resources: Resurser
+        tag: Modereringsguide för märkord
+        terms_and_conditions: Termer och villkor
+        trusted: Användarhandbok för tillförlitliga användare
+      author: Författare
+      date: Datum
+      notice:
+        subtitle: ' %{community}-modem'
+        desc1_html: Vi tilldelarregelbundet vissa %{community} medlemmar med förhöjda behörigheter för att hjälpa till att moderera gemenskapen.
+        desc2_html: Checka ut vår %{kod} och läser igenom vår %{pålitlig} och %{tag}.
+        desc3_html: Om du vill hjälpa oss som en betrodd användare eller tagg mod, mejla oss på %{email} och låt oss veta vilken roll du är intresserad av och varför. Om det är måttligt, så säg vilka brickor du vill vara måttlig för.
+        desc4: P.S. Du är inte inloggad.
+        code_of_conduct: Uppförandekod
+        tag: Modereringsguide för märkord
+        trusted: Användarhandbok för tillförlitliga användare
+      post: Lämna in
+

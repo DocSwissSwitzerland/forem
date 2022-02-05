@@ -1,0 +1,25 @@
+pt:
+  views:
+    stories:
+      meta:
+        description_tagged: ' %{tag} conteúdo em %{nome}'
+        page: ' Página %{página}'
+        rss: ' %{nome} Feed RSS'
+      heading: Posts
+      discuss: '#discuss'
+      follow: Seguir
+      menu:
+        aria_left: navegação-botão-esquerda
+        aria_right: nav-button-direito
+      sort:
+        aria_label: Visualizar posts por
+        aria_tagged: Visualizar posts tagged by
+        relevant: Relevante
+        week: Semana
+        month: Mês
+        year: Ano
+        infinity: Infinito
+        latest: Últimas
+        signin_html: "\U0001F44B <a href=\"%{path}\">Assinale-se</a> para os posts de classificação de habilidades por <strong>top</strong> e <strong>últimas</strong>."
+        top: Superior
+

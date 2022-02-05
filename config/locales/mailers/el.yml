@@ -1,0 +1,33 @@
+el:
+  mailers:
+    digest_mailer:
+      from: Το Digest
+      more_top_posts: πιο πάνω  %{community} δημοσιεύσεις
+      more_top_posts_based: πιο πάνω  %{κοινότητας} θέσεις βάσει των συμφερόντων σας
+      more_top_posts_from: πιο πάνω διαβάζει από την κοινότητα.
+      more_trending_posts: πιο trending  %{community} δημοσιεύσεις
+      more_trending_posts_picked: πιο trending  %{κοινότητας} θέσεις που επιλέχθηκε για σας
+      other_posts: άλλες δημοσιεύσεις που θα θέλατε.
+      other_community_posts: άλλες  %{κοινότητας} δημοσιεύσεις που θα θέλατε
+      other_top_posts: άλλες θέσεις του ανώτερου  %{community}
+      other_trending_posts: άλλες νέες θέσεις σε  %{community}
+    notify_mailer:
+      account_deleted: ' %{community} - Επιβεβαίωση διαγραφής λογαριασμού'
+      deletion_requested: ' %{community} - Ζητούμενη διαγραφή λογαριασμού'
+      trusted: -Συγχαρητήρια! Είστε πλέον ένας "έμπιστος" χρήστης σε  %{community}!
+      moderator: '-Συγχαρητήρια! Είστε ο επιτηρητής για το #  %{tag_name}'
+      new_follower: Απλά σας ακολούθησε στο  %{κοινότητα}
+      new_mention: Το  %{name} μόλις σας ανέφερε στο  %{type}
+      org_deleted: ' %{community} - Επιβεβαίωση διαγραφής οργανισμού'
+      new_reply: Ο χρήστης  %{name} απάντησε στο  %{type}
+      feedback: Ευχαριστούμε για την αναφορά σας για το  %{community}
+      export: Η εξαγωγή του περιεχομένου είναι έτοιμη.
+      unread_notifications:
+        one: "\U0001F525 Έχετε  %{count} μη αναγνωσόμενες ειδοποιήσεις για το  %{community}"
+        other: "\U0001F525 Έχετε  %{count} μη αναγνωσόμενες ειδοποιήσεις για το  %{community}"
+      new_badge: Μόλις πήρες σήμα.
+      video_upload: Η μεταφόρτωση του βίντεο ολοκληρώθηκε.
+    verification_mailer:
+      from: ' %{community} Επαλήθευση Email <%{email}>'
+      verify_ownership: Επαλήθευση της ιδιοκτησίας του λογαριασμού σας  %{κοινότητας}
+

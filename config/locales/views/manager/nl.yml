@@ -1,0 +1,25 @@
+nl:
+  views:
+    manager:
+      meta:
+        title: ' %{titel} beheren'
+      error:
+        pins: "Uh! %{error} \U0001F62C"
+      tools:
+        heading: 'Gereedschappen:'
+        subtitle: 'Ervaringsniveau van post:'
+        text_html: Is uw post meer geschreven voor een beginner of een uitgebreid publiek? Pas dit niveau aan als een <em>zachte</em> indicator die u helpt bij het tonen van de post aan de mensen die het meest zullen profiteren.
+      nav:
+        dashboard: Dashboard
+        text: "\U0001F449 Uw bericht beheren"
+      rating:
+        heading: Ervaringsniveau van post
+        text: Voor wie is deze post het meest relevant?
+        lower: "\U0001F448 Beginner"
+        higher: "Expert \U0001F449"
+      tips:
+        heading: 'Tips:'
+        text_1: Schrijf je eigen tweet over de post, die persoonlijk beschrijft waarom je het schreef of waarom mensen het nuttig zouden kunnen vinden. We kunnen je opnieuw tweeten.
+        text_2_html: 'Delen om aggregators te koppelen, zoals <a href="https://www.reddit.com">Reddit</a>. Probeer de meest specifieke subreddits te kiezen, zoals <a href="https://www.reddit.com/r/javascript">/r/javascript</a> of <a href="https://www.reddit.com/r/python">/r/python</a>, etc. <em>Waarschuwing: schokken en trollen kunnen op de loer liggen.</em>'
+        text_3: Deel met uw collega's of lokale gemeenschappen. Vraag mensen om vragen te laten voor u in de commentaren. Het is een geweldige manier om extra discussie te vonken.
+

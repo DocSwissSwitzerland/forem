@@ -1,0 +1,24 @@
+nl:
+  views:
+    actions:
+      copy:
+        text: Gekopieerd naar klembord
+        button: Link kopiëren
+      more:
+        title: Meer ...
+        aria_label: Opties voor delen delen
+      share:
+        facebook:
+          text: Delen naar Facebook
+        hackernews:
+          text: Delen naar Hacker Nieuws
+        linkedin:
+          text: Delen naar LinkedIn
+        reddit:
+          text: Delen naar Reddit
+        twitter:
+          text: Delen aan Twitter
+          query: '" %{article}" door %{author}'
+        link: Post delen via ...
+        report: Misbruik melden
+

@@ -1,0 +1,90 @@
+sv:
+  views:
+    users:
+      meta:
+        og:
+          title: ' %{user}- %{community}-profil'
+      comments:
+        all:
+          one: Alla %{count} kommentarer
+          other: Alla %{count} kommentarer
+        last:
+          one: Senaste %{count} kommentarer
+          other: Senaste %{count} kommentarer
+        recent: Senaste kommentarer
+        view: Visa all aktivitet
+        view_all:
+          one: Visa alla %{count} kommentarer
+          other: Visa alla %{count} kommentarer
+        view_last:
+          one: Visa sista 1 kommentar
+          other: Visa senaste %{count} kommentarer
+      github:
+        heading: GitHub-lager
+        fork: Gaffel
+        stars:
+          one: 1 stjärna
+          other: ' %{count} stjärnor'
+      pin_icon: Pin
+      pinned: Favoriter
+      profile_fields:
+        bio:
+          label: Bio
+          placeholder: En kort bio ...
+        display_email_on_profile: Visa e-post på profil
+        location:
+          label: Plats
+          placeholder: Halifax, Nova Scotia
+        website:
+          label: Webbplats-URL
+          placeholder: https://yoursite.com
+        education: Utbildning
+        currently_learning: För närvarande lärande
+        currently_hacking_on: För närvarande hackar på
+        available_for: Tillgänglig för
+        skills_languages: Kompeten/språk
+        work: Arbete
+      side:
+        comment:
+          icon: Kommentar
+          text:
+            one: 1 kommentar skriven
+            other: ' %{count} kommentarer skrivna'
+        org: Organisationer
+        post:
+          icon: Lämna in
+          text:
+            one: 1 post publicerad
+            other: ' %{count} inlägg publicerade'
+        tag:
+          icon: Etikett
+          text:
+            one: 1 tagg följt
+            other: ' %{count} taggar följde'
+      signout:
+        meta:
+          title: Bekräfta signering- %{community}
+        heading: Är du säker på att du vill logga ut?
+        yes: Ja, skriv ut
+      block: Blockera @ %{user}
+      details: Profildetaljer för %{user}
+      dropdown: Användaråtgärder
+      email_icon: E-postadress
+      empty: 404 bio hittades inte
+      flag: Flagga @ %{user}
+      follow: Följ
+      joined:
+        icon: Koppfotade
+        text_html: Sammansatt på %{date}
+      location_icon: Plats
+      logo: ' %{user} profilbild'
+      more: Mer information om @ %{user}
+      send_pm:
+        code: Uppförandekod
+        notice_html: Alla privata interaktioner <b>måste</b> foga sig efter %{code}.
+        placeholder: Skriv in ditt meddelande här ...
+        submit: Skicka
+      social: ' %{service} webbplats'
+      unflag: Avflagga @ %{user}
+      website: Personlig webbplats
+

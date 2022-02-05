@@ -1,0 +1,36 @@
+nl:
+  views:
+    podcasts:
+      meta:
+        title: Podcasts
+        description: Technische podcasts opsporen voor %{member}
+        og:
+          title: Podcasts op %{community}
+      browse: Bladeren
+      heading: Podcasts
+      close: ×
+      form:
+        heading: Een Podcast voorstellen
+        errors:
+          one: '1 fout bij het maken van een podcast:'
+          other: ' %{count} fouten tijdens het maken van een podcast:'
+        owner: Ik ben de eigenaar van deze podcast
+        return: < terug naar podcasts
+        suggest: Voorstellen
+      list: podcasts
+      listen: Klik hier om te downloaden/te luisteren
+      source: Aflevering bron
+      statuses:
+        ssl_failed: SSL-certificaatcontrole is mislukt tijdens het ophalen van de feed_url van de podcast
+        unparsable: Rss van podcast kon niet worden ontleed
+        unplayable: Deze podcast is mogelijk niet afspeelbaar in de browser
+        unreachable: Feed_url van podcast is niet bereikbaar
+      speed: 1x
+      tag: podcast
+      initializing: initialiseren ...
+      unsupported: Uw browser ondersteunt het audio-element niet.
+      featured_shows: Aanbevolen programma's
+      latest_episodes: Laatste afleveringen
+      suggest_a_podcast: Een Podcast voorstellen
+      view_all_podcasts: Alle podcasts bekijken
+

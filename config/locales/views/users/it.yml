@@ -1,0 +1,90 @@
+it:
+  views:
+    users:
+      meta:
+        og:
+          title: ' %{user} - %{community} Profilo'
+      comments:
+        all:
+          one: Tutti i commenti %{count}
+          other: Tutti i commenti %{count}
+        last:
+          one: Ultimi %{count} commenti
+          other: Ultimi %{count} commenti
+        recent: Commenti recenti
+        view: Visualizza tutta l'attività
+        view_all:
+          one: Visualizza tutti i commenti %{count}
+          other: Visualizza tutti i commenti %{count}
+        view_last:
+          one: Visualizza ultimo 1 Commento
+          other: Visualizza ultimo %{conteggio} Commenti
+      github:
+        heading: Repository GitHub
+        fork: Forcella
+        stars:
+          one: 1 stella
+          other: ' %{conteggio} stelle'
+      pin_icon: Pin
+      pinned: Pinned
+      profile_fields:
+        bio:
+          label: Bio
+          placeholder: Un breve bio ...
+        display_email_on_profile: Visualizza email sul profilo
+        location:
+          label: Ubicazione
+          placeholder: Halifax, Nova Scotia
+        website:
+          label: URL sito web
+          placeholder: https://yoursite.com
+        education: Istruzione
+        currently_learning: Attualmente apprendimento
+        currently_hacking_on: Attualmente hacking su
+        available_for: Disponibile per
+        skills_languages: Competenze / Lingue
+        work: Lavoro
+      side:
+        comment:
+          icon: Commento
+          text:
+            one: 1 commento scritto
+            other: ' %{conteggio} commenti scritti'
+        org: Organizzazioni
+        post:
+          icon: Post
+          text:
+            one: 1 post pubblicato
+            other: ' %{conteggio} posti pubblicati'
+        tag:
+          icon: Tag
+          text:
+            one: 1 tag seguito
+            other: ' %{count} tag seguiti'
+      signout:
+        meta:
+          title: Conferma firma - %{community}
+        heading: Sei sicuro di voler firmare?
+        yes: Sì, firmi
+      block: Blocco @ %{utente}
+      details: Dettagli profilo %{utente}
+      dropdown: Azioni utente
+      email_icon: Indirizzo email
+      empty: 404 bio non trovato
+      flag: Indicatore @ %{utente}
+      follow: Segui
+      joined:
+        icon: Unito
+        text_html: Uniti in %{data}
+      location_icon: Ubicazione
+      logo: Immagine profilo %{user}
+      more: Ulteriori info su @ %{utente}
+      send_pm:
+        code: codice di condotta
+        notice_html: Tutte le interazioni private <b>devono</b> attenersi al %{codice}.
+        placeholder: Inserisce il tuo messaggio qui ...
+        submit: Invia
+      social: '% sito web %{service}'
+      unflag: Unflag @ %{utente}
+      website: Sito web personale
+

@@ -1,0 +1,64 @@
+nl:
+  views:
+    tags:
+      meta:
+        title: Tags
+        description: Te volgen tags op %{community}
+        og:
+          description: ' %{community} is geweldig!'
+      heading:
+        default: Toptags
+        search_results: Zoekresultaten voor %{q}
+      search:
+        aria_labels:
+          search_input: Zoekterm voor tags
+          submit: Zoektags
+        placeholder: Zoeken naar tag
+      edit:
+        meta:
+          title: ' %{tag} bewerken'
+        admin: Beheerder
+        help: Help
+        view: Bekijken
+        form:
+          pretty_name:
+            label: Mooie naam
+            placeholder: Dit is de naam boven aan de showpagina.
+          bg_color_hex:
+            label: Bg-kleur hex
+          text_color_hex:
+            label: Tekstkleur hex
+          short_summary:
+            label: Korte samenvatting
+            placeholder: Kort overzicht van waar deze tag om draait.
+          wiki_body_markdown:
+            label: Markdown van wiki-body
+            placeholder: Dit is een 'over' sectie. Voel je vrij om een FAQ, extra middelen, enz. toe te voegen.
+          rules_markdown:
+            label: Markeringsregels
+            placeholder: Optioneel-Kan worden gebruikt voor uitdagingen, d.w.z. richtlijnen voor indiening.
+          submit: Opslaan
+      follow: Volgen
+      following_tags: Volgende tags
+      moderator:
+        text_html: "door komma's gescheiden, is ruimte optioneel. Voorbeeld: %{code}"
+        code: 123
+        placeholder: "door komma's gescheiden, is ruimte optioneel. Voorbeeld: 1,2,3"
+      published:
+        one: 1 post gepubliceerd
+        other: ' %{count} berichten gepubliceerd'
+      sidebar:
+        about: 'over # %{tag}'
+        admin: Beheerder
+        edit: Bewerken
+        guidelines: richtsnoeren voor indiening
+        moderate: Matig
+        mods: moderators voor tags
+        new: Post maken
+        older: 'Oudere # %{tag} postings'
+        published:
+          one: 1 Post Gepubliceerd
+          other: ' %{count} Posts gepubliceerd'
+        sponsor: ' %{tag} wordt ondersteund door'
+      sponsor: '| Ondersteund door %{org} ❤️'
+

@@ -1,0 +1,6 @@
+pl:
+  concerns:
+    image_uploads:
+      too_long: 'zbyt długa nazwa pliku-maksymalna liczba znaków: %{max}.'
+      is_not_file: Niepoprawny typ pliku. Prześlij poprawny obraz.
+

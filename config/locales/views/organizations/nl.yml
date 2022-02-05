@@ -1,0 +1,32 @@
+nl:
+  views:
+    organizations:
+      empty: 404 bio niet gevonden
+      external:
+        icon: Pictogram Externe link
+      follow: Volgen
+      github:
+        icon: Logo van GitHub
+      joined:
+        icon: Samengevoegd
+        text_html: Lid van %{date}
+      location:
+        icon: Locatie
+      logo: Profielfoto %{org}
+      size: Werknemers
+      sponsor:
+        text: ' %{level} Community Sponsor ❤️'
+        level:
+          gold: Goud
+          silver: Zilver
+          bronze: Brons
+          tag: Label
+          media: Opslagmedia
+          devrel: Devrel
+      stack: onze stapel
+      story: Ons verhaal
+      support: E-mail ondersteunen
+      team: Ontmoet het team
+      twitter:
+        icon: Twitter-logo
+

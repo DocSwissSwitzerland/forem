@@ -1,0 +1,64 @@
+es:
+  devise:
+    confirmations:
+      confirmed: Su dirección de correo electrónico se ha confirmado satisfactoriamente.
+      send_instructions: Recibirá un correo electrónico con instrucciones para confirmar su dirección de correo electrónico en unos minutos.
+      send_paranoid_instructions: Si su dirección de correo electrónico existe en nuestra base de datos, recibirá un correo electrónico con instrucciones para confirmar su dirección de correo electrónico en pocos minutos.
+    failure:
+      already_authenticated: Ya está firmado.
+      inactive: Su cuenta aún no está activada.
+      invalid: ' %{authentication_keys} o contraseña no válidos.'
+      last_attempt: Tiene un intento más antes de que la cuenta esté bloqueada.
+      locked: Su cuenta está bloqueada.
+      not_found_in_database: ' %{authentication_keys} o contraseña no válidos.'
+      timeout: La sesión ha caducado. Por favor, vuelva a iniciar sesión para continuar.
+      unauthenticated: Debe iniciar sesión o registrarse antes de continuar.
+      unconfirmed: Debe confirmar su dirección de correo electrónico antes de continuar.
+    mailer:
+      confirmation_instructions:
+        subject: Instrucciones de confirmación
+      email_changed:
+        subject: Correo electrónico cambiado
+      password_change:
+        subject: Contraseña cambiada
+      reset_password_instructions:
+        subject: Restablecer las instrucciones de contraseña
+      unlock_instructions:
+        subject: Instrucciones de desbloqueo
+    omniauth_callbacks:
+      failure: No se ha podido autenticar de %{kind} porque " %{reason}".
+      success: Se ha autenticado correctamente desde la cuenta %{kind}.
+    passwords:
+      no_token: No puede acceder a esta página sin llegar de un correo electrónico de restablecimiento de contraseña. Si viene de un correo electrónico de restablecimiento de contraseña, asegúrese de que ha utilizado el URL completo proporcionado.
+      send_instructions: Recibirá un correo electrónico con instrucciones sobre cómo restablecer su contraseña en pocos minutos.
+      send_paranoid_instructions: Si su dirección de correo electrónico existe en nuestra base de datos, recibirá un enlace de recuperación de contraseña en su dirección de correo electrónico en unos minutos.
+      updated: La contraseña se ha cambiado satisfactoriamente. Ahora está firmado.
+      updated_not_active: La contraseña se ha cambiado satisfactoriamente.
+    registrations:
+      destroyed: ¡Adiós! Su cuenta ha sido cancelada con éxito. Esperamos verte de nuevo pronto.
+      signed_up: ¡Bienvenido! Se ha firmado correctamente.
+      signed_up_but_inactive: Se ha firmado correctamente. Sin embargo, no podríamos firmarte porque tu cuenta aún no está activada.
+      signed_up_but_locked: Se ha firmado correctamente. Sin embargo, no podríamos firmarlo porque su cuenta está bloqueada.
+      signed_up_but_unconfirmed: Se ha enviado un mensaje con un enlace de confirmación a su dirección de correo electrónico. Por favor, siga el enlace para activar su cuenta.
+      update_needs_confirmation: Ha actualizado su cuenta correctamente, pero necesitamos verificar su nueva dirección de correo electrónico. Por favor, compruebe su correo electrónico y siga el enlace de confirmación para confirmar su nueva dirección de correo electrónico.
+      updated: Su cuenta se ha actualizado satisfactoriamente.
+      updated_but_not_signed_in: Su cuenta se ha actualizado correctamente, pero desde que se cambió su contraseña, es necesario que vuelva a iniciar sesión.
+    sessions:
+      already_signed_out: Se ha firmado satisfactoriamente.
+      signed_in: Se ha firmado satisfactoriamente.
+      signed_out: Se ha firmado satisfactoriamente.
+    unlocks:
+      send_instructions: Recibirás un correo electrónico con instrucciones de cómo desbloquear tu cuenta en unos minutos.
+      send_paranoid_instructions: Si tu cuenta existe, recibirás un correo electrónico con instrucciones para cómo desbloquearlo en unos minutos.
+      unlocked: Su cuenta se ha desbloqueado satisfactoriamente. Por favor, inicie sesión para continuar.
+  errors:
+    messages:
+      already_confirmed: ya se ha confirmado, por favor intente firmar en
+      confirmation_period_expired: debe confirmarse en %{period}, solicite una nueva
+      expired: ha caducado, solicite una nueva
+      not_found: no encontrado
+      not_locked: no se ha bloqueado
+      not_saved:
+        one: '1 error ha prohibido que se guarde este %{resource}:'
+        other: ' %{count} errores ha prohibido que se guarde este %{resource}:'
+

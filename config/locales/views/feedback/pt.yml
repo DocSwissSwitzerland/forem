@@ -1,0 +1,20 @@
+pt:
+  views:
+    feedback:
+      meta:
+        title: Feedback
+      heading: Obrigado por seu relatório.
+      home: Voltar para página inicial
+      form:
+        rude_or_vulgar: Rude ou vulgar
+        harassment: Assédio ou discurso de ódio
+        spam: Spam ou questão de direitos autorais
+        listings: Mensagem / categoria de listagens inapropriadas
+        other: Outro
+        url: URL informada
+        message:
+          subtitle: Mensagem
+          description: Por favor, forneça qualquer informação adicional ou contexto que nos ajude a entender e lidar com a situação.
+          placeholder: '...'
+        submit: Enviar Feedback
+

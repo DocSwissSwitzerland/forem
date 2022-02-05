@@ -1,0 +1,89 @@
+pl:
+  views:
+    articles:
+      meta:
+        description: Artykuł ze społeczności
+      actions:
+        aria_label: Działania dotyczące artykułów
+      comments:
+        aria_label: Komentarze do postu %{title} ( %{num})
+        subtitle_html: Dyskusja %{num}
+        num: ( %{num})
+        subscribe: Subskrybowanie
+      conduct:
+        aria_label: Przeprowadzanie kontroli
+        code: Kodeks postępowania
+        report: Nadużywanie raportów
+      delete:
+        heading: Czy na pewno usunąć ten artykuł?
+        desc:
+          text_html: Nie można cofnąć tego działania, być może po prostu chcesz %{action} zamiast tego?
+          edit: edytuj
+          unpublish: cofanie publikacji
+        action:
+          button: Usuń
+          cancel: Odrzuć
+          edit: Edytuj
+          unpublish: Anuluj publikowanie
+      lock:
+        meta:
+          title: Potwierdzenie blokady dyskusji
+        heading: Czy na pewno chcesz zablokować dyskusję na tym stanowisku?
+        desc_html: Użytkownicy nie będą mogli dodawać nowych komentarzy. Spowoduje to <em class="fw-bold">nie</em> usunięcie istniejących komentarzy. Dyskusję można odblokować w dowolnym momencie, aby umożliwić użytkownikom ponowne pozostawienie komentarzy.
+        cancel: Anuluj
+        notes:
+          label: Uwagi (opcjonalne)-jest to widoczne tylko dla Ciebie i adminów
+          placeholder: Więcej szczegółów na temat tego, dlaczego zamknął się dyskusja.
+        reason:
+          label: Przyczyna zablokowania dyskusji (opcjonalnie)-zostanie ona wyświetlona publicznie.
+          placeholder: Powód, dla którego zamykacie tę dyskusję.
+        submit: Blokowanie dyskusji
+      preview_discuss_html:
+        zero: Nowa dyskusja!
+        one: '#dyskusja <img src="%{image}" /> %{count}'
+        other: '#dyskusja <img src="%{image}" /> %{count}'
+      save:
+        title: Zapisz do listy odczytów
+        aria_label: Zapisz do listy odczytów
+        initial: Zapisz
+        success: Zapisane
+      series:
+        subtitle: ' %{slug} ( %{size})'
+        size:
+          one: ' %{count} Seria części'
+          other: ' %{count} Seria części'
+        published: 'Data publikacji: %{date}'
+        inbetween:
+          num: '...'
+          text:
+            one: jeszcze jedna część ...
+            other: ' %{count} więcej części ...'
+          title: Wyświetl więcej
+      unlock:
+        meta:
+          title: Potwierdź odblokowanie dyskusji
+        heading: Czy na pewno odblokować dyskusję na tym stanowisku?
+        desc: Użytkownicy będą mogli dodawać nowe komentarze. Istnieje możliwość zablokowania dyskusji w dowolnym momencie, aby uniemożliwić użytkownikom ponowne pozostawienie komentarzy.
+        cancel: Anuluj
+        notes: 'Uwagi od momentu, gdy ta dyskusja była zablokowana (widoczna tylko dla użytkownika i administratorów):'
+        reason: 'Przyczyna, dla której ta dyskusja została zablokowana (publicznie widoczna):'
+        submit: Odblokuj dyskusję
+      unpublished:
+        subtitle: Nieopublikowany wpis.
+        text: ' Ten adres URL jest publiczny, ale tajny, więc należy się do niego podzielić według własnego uznania.'
+        edit: Kliknij, aby edytować
+      co_authors_html: z %{names}
+      crossposted:
+        text_html: Pierwotnie opublikowane pod adresem %{url} %{on}
+        on_html: w dniu %{date}
+      edited: 'Zaktualizowano: %{date}'
+      edited_html: 'Zaktualizowano: %{date}'
+      for_org_html: ' %{start} dla %{end} %{org}'
+      missing: Artykuł nie jest już dostępny
+      posted_html: 'Opublikowane dnia: %{date}'
+      read_next: Czytaj dalej
+      reading_time:
+        one: 1 min. odczyt
+        other: 'Liczba odczytanych: %{count} min'
+      right_nav: Szczegóły autora
+

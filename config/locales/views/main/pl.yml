@@ -1,0 +1,71 @@
+pl:
+  views:
+    main:
+      aria_home: ' %{community} Home'
+      header:
+        create_account: Utwórz konto
+        login: Zaloguj się
+        nav:
+          aria_label: Menu nawigacyjne
+        moderation:
+          aria_label: Moderowanie
+          icon: Moderowanie
+        notifications:
+          aria_label: Powiadomienia
+          icon: Powiadomienia
+        skip: Przejdź do treści
+      modal:
+        create_account:
+          aria_label: Utwórz nowe konto
+          text: Utwórz konto
+        login:
+          aria_label: Zaloguj się
+          text: Zaloguj się
+      nav:
+        admin: Administrator
+        dashboard: Panel kontrolny
+        placeholder: '...'
+        list: Odczytywanie listy
+        moderator_center: Centrum moderatora
+        other: Inne
+        settings: Ustawienia
+      nav_name:
+        About: Informacje o
+        Code of Conduct: Kodeks postępowania
+        Contact: Kontakt
+        FAQ: często zadawane pytania
+        Listings: Listingi
+        Podcasts: Podcasty
+        Privacy Policy: Polityka prywatności
+        Reading List: Odczytywanie listy
+        Sponsors: Sponsorzy
+        Tags: Znaczniki
+        Terms of use: Warunki używania
+        Videos: Filmy wideo
+      side:
+        listings:
+          heading: Listingi
+          all: Zobacz wszystkie
+          new: Tworzenie listy
+        trend: trending guides/resources
+        recent: ostatnio odpytywane
+      tags:
+        aria_label: Dostosuj priorytet znacznika
+        follow: Śledź
+        my_tags: Moje znaczniki
+        popular_tags: Popularne znaczniki
+      footer:
+        built:
+          text_html: Zbudowano w %{forem}- %{opensource} oprogramowania, które uprawnia %{dev} i innych wspólnot integracyjnych.
+          forem: Forem
+          opensource: Open source
+          dev: DEV
+        desc_html: ' %{społeczność}- %{desc}'
+        logo: Logo forem
+        powered:
+          text_html: Wykonane z miłością i %{rails}. %{community} <span title="copyright">&copy;</span>  %{copyright}.
+          rails: Ruby on Rails
+      home: Spis treści
+      create_post: Utwórz wpis
+      signout: Wyloguj
+

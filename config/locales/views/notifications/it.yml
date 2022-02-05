@@ -1,0 +1,87 @@
+it:
+  views:
+    notifications:
+      meta:
+        description: Notifiche inbox per %{community}
+        og:
+          title: Notifiche - %{community}
+      heading: Notifiche
+      badge:
+        heading_html: Hai ricevuto il badge %{badge}
+        awarded_html: "Ricevi anche %{credits} da utilizzare per %{listelli} se hai qualcosa che ti piacerebbe promuovere. \U0001F389"
+        credits:
+          one: ' %{count} nuovi crediti'
+          other: ' %{count} nuovi crediti'
+        listings: listini di comunità
+        more: Maggiori informazioni sui listini
+        profile: Visita il tuo profilo
+      broadcast:
+        visit_html: Visita %{impostazioni} per gestire le notifiche.
+        settings: Impostazioni
+      comment:
+        commented_html: ' %{utente} commentato il %{titolo}'
+        first_html: ' %{user} ha scritto il loro primo commento su %{title}'
+        first_reply: "Date loro la loro prima risposta! \U0001F389"
+        left_html: ' %{user} ha appena lasciato un commento su %{title}.'
+        replied_html: ' %{user} ha risposto ad un thread in %{title}'
+        report: Tutte le reazioni negative sono 100% private. Se questo commento viola il codice di condotta, si prega di votare / riportare come inappropriato.
+        welcome_html: Visto che sono nuovi alla comunità, potrebbe lasciare una bella risposta per aiutarli a sentirsi i benvenuti? <strong>Grazie!</strong>
+      error:
+        subtitle: Si è verificato un errore!
+        desc: Questo è stato registrato e lo stiamo tracciando.
+      follow:
+        and_html: ' %{primo} e %{secondo} ti hanno seguito!'
+        and_other_html:
+          one: ' %{primo} e %{altri} ti hanno seguito!'
+          other: ' %{primo} e %{altri} ti hanno seguito!'
+        others:
+          one: ' %{count} altri'
+          other: ' %{count} altri'
+        single_html: ' %{name} ti ha seguito!'
+      load: Carico di più
+      mention:
+        article_html: ' %{utente} ti ha parlato in un post %{if_org}'
+        comment_html: ' %{utente} ti ha menzionato in un commento'
+        article_mobile: ' %{utente} ti ha menzionato nel post %{title}'
+        comment_mobile: ' %{user} ti ha parlato in un commento su %{title}'
+        if_org_html: ' under %{org}'
+      milestone:
+        heading_html: Il tuo post %{titolo} ha superato %{tipo}!
+        check: Controllare il pannello di controllo
+        intro: "\U0001F389\U0001F389\U0001F389\U0001F389\U0001F389\U0001F389\U0001F389\U0001F389"
+        type:
+          View:
+            one: ' %{count} views'
+            other: ' %{count} views'
+          Reaction:
+            one: ' %{conteggio} reazioni'
+            other: ' %{conteggio} reazioni'
+      nav:
+        aria_label: Notifiche
+        all: Tutto
+        comments: Commenti
+        posts: Posti
+      new_post:
+        if_org_html: ' under %{org}'
+        verb_html: ' %{user} ha realizzato un nuovo post %{if_org}'
+      reacted:
+        and_html: ' %{primo} e %{last}'
+        and_other_html:
+          one: ' %{primo} e %{conteggio} altri'
+          other: ' %{primo} e %{conteggio} altri'
+        verb_html:
+          one: ' %{start} %{attori} ha reagito al %{title} con %{fine} %{reazioni}'
+          other: ' %{start} %{attori} ha reagito al %{title} con %{fine} %{reazioni}'
+        your:
+          article: il tuo articolo
+          comment: il tuo commento
+      settings: Impostazioni
+      tag:
+        heading: "Ehi c'è \U0001F44B"
+        add_html: I moderatori hanno aggiunto il tag <strong> %{tag}</strong> al tuo post %{title}. Mods ha ritenuto questo tag rappresentato il tuo articolo.
+        check_html: Controllare %{altri} che possono essere più appropriati
+        other: altri tag popolari
+        reason: "Motivo dell'azione:"
+        remove_html: I moderatori hanno rimosso il tag <strong> %{tag}</strong> dal tuo post %{title}. Alcuni tag hanno delle linee guida di inoltro speciali, e le mod devono regolare i tag per adattarsi al meglio alla community.
+        support_html: "Grazie per essere parte di %{community}! %{email} \U0001F917"
+

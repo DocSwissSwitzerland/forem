@@ -1,0 +1,64 @@
+nl:
+  devise:
+    confirmations:
+      confirmed: Uw e-mailadres is bevestigd.
+      send_instructions: U ontvangt een e-mail met instructies voor het bevestigen van uw e-mailadres in een paar minuten.
+      send_paranoid_instructions: Als uw e-mailadres aanwezig is in onze database, ontvangt u een e-mail met instructies voor het bevestigen van uw e-mailadres in een paar minuten.
+    failure:
+      already_authenticated: U bent al aangemeld.
+      inactive: Uw account is nog niet geactiveerd.
+      invalid: Ongeldig %{authentication_keys} of wachtwoord.
+      last_attempt: U hebt nog een poging voordat uw account is vergrendeld.
+      locked: Uw account is vergrendeld.
+      not_found_in_database: Ongeldig %{authentication_keys} of wachtwoord.
+      timeout: Uw sessie is verlopen. Meld u opnieuw aan om door te gaan.
+      unauthenticated: U moet zich aanmelden of aanmelden voordat u verder gaat.
+      unconfirmed: U moet uw e-mailadres bevestigen voordat u verder gaat.
+    mailer:
+      confirmation_instructions:
+        subject: Bevestigingsinstructies
+      email_changed:
+        subject: E-mail gewijzigd
+      password_change:
+        subject: Wachtwoord gewijzigd
+      reset_password_instructions:
+        subject: Wachtwoordinstructies opnieuw instellen
+      unlock_instructions:
+        subject: Instructies ontgrendelen
+    omniauth_callbacks:
+      failure: Kan u niet verifiëren van %{child} omdat " %{reason}".
+      success: Met succes geverifieerd vanaf %{child} account.
+    passwords:
+      no_token: U kunt deze pagina niet openen zonder te komen van een e-mail voor het resetten van wachtwoorden. Als u komt van een wachtwoord reset e-mail, zorg ervoor dat u gebruikt de volledige URL verstrekt.
+      send_instructions: U ontvangt een e-mail met instructies over het resetten van uw wachtwoord in een paar minuten.
+      send_paranoid_instructions: Als uw e-mailadres bestaat in onze database, ontvangt u een wachtwoord herstel link op uw e-mailadres in een paar minuten.
+      updated: Uw wachtwoord is gewijzigd. U bent nu aangemeld.
+      updated_not_active: Uw wachtwoord is gewijzigd.
+    registrations:
+      destroyed: Dag! Uw account is geannuleerd. We hopen u snel weer te zien.
+      signed_up: Welkom! U hebt zich aangemeld.
+      signed_up_but_inactive: U hebt zich aangemeld. We konden u echter niet aanmelden omdat uw account nog niet geactiveerd is.
+      signed_up_but_locked: U hebt zich aangemeld. We kunnen u echter niet aanmelden omdat uw account is vergrendeld.
+      signed_up_but_unconfirmed: Er is een bericht met een bevestigingslink naar uw e-mailadres verzonden. Volg de link om uw account te activeren.
+      update_needs_confirmation: U hebt uw account met succes bijgewerkt, maar we moeten uw nieuwe e-mailadres controleren. Controleer uw e-mail en volg de bevestigingslink om uw nieuwe e-mailadres te bevestigen.
+      updated: Uw account is bijgewerkt.
+      updated_but_not_signed_in: Uw account is bijgewerkt, maar omdat uw wachtwoord is gewijzigd, moet u zich opnieuw aanmelden.
+    sessions:
+      already_signed_out: Ondertekend met succes.
+      signed_in: Ondertekend in geslaagd.
+      signed_out: Ondertekend met succes.
+    unlocks:
+      send_instructions: U ontvangt een e-mail met instructies voor het ontgrendelen van uw account in een paar minuten.
+      send_paranoid_instructions: Als uw account bestaat, ontvangt u een e-mail met instructies voor het ontgrendelen van uw account in een paar minuten.
+      unlocked: Uw account is ontgrendeld. Meld u aan om door te gaan.
+  errors:
+    messages:
+      already_confirmed: is al bevestigd, probeer dan te tekenen in
+      confirmation_period_expired: moet worden bevestigd binnen %{period}, vraag een nieuwe
+      expired: is vervallen, vraag een nieuwe
+      not_found: niet gevonden
+      not_locked: is niet vergrendeld
+      not_saved:
+        one: '1 fout bij het opslaan van deze %{resource}:'
+        other: ' %{count} fouten hebben deze %{resource} verboden om te worden opgeslagen:'
+

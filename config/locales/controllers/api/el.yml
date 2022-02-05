@@ -1,0 +1,21 @@
+el:
+  api:
+    v0:
+      analytics_controller:
+        invalid_date_format: Οι παράμετροι ημερομηνίας 'start' ή 'end' πρέπει να έχουν τη μορφή ' εεεε-μμ-ηη '
+        start_missing: Λείπει η απαιτούμενη παράμετρος ' start '
+      articles_controller:
+        must_be_json: Το είδος param πρέπει να είναι αντικείμενο JSON. Παρασχέσατε άρθρο ως  %{type}
+      follows_controller:
+        followed:
+          one: ακολούθησε ο χρήστης  %{count}
+          other: ακολουθούμενη από  %{count} χρήστες
+      health_checks_controller:
+        app_is_up: Το App είναι επάνω!
+        database_connected: Σύνδεση βάσης δεδομένων
+        database_not_connected: Η βάση δεδομένων ΔΕΝ συνδέεται!
+        redis_connected: Συνδέθηκε Redis
+        redis_not_connected: Το Redis ΔΕΝ είναι συνδεδεμένο!
+      listings_controller:
+        no_credit: Όχι αρκετές διαθέσιμες πιστώσεις.
+

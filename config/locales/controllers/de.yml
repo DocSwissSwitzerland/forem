@@ -1,0 +1,121 @@
+de:
+  api_secrets_controller:
+    generated: 'Ihr API-Schlüssel wurde generiert: %{secret}'
+    revoked: Ihr API-Schlüssel wurde widerrufen.
+  application_controller:
+    bad_request: 'Fehler: Ungültige Anforderung'
+    not_authorized: 'Fehler: nicht autorisiert'
+    please_sign_in: Melden Sie sich an
+  articles_controller:
+    deleted: Artikel wurde erfolgreich gelöscht.
+  comments_controller:
+    create:
+      success: Erstellt
+      failure: Kommentar bereits vorhanden
+    delete:
+      error: Etwas ging schief; Kommentar NICHT gelöscht.
+      notice: Der Kommentar wurde erfolgreich gelöscht.
+    markdown: 'In Ihrem Preisabschlag ist ein Fehler aufgetreten: %{error}'
+    markdown_html: "<p>\U0001F614 Es ist ein Fehler in Ihrem Preisabschlag aufgetreten</p><hr><p> %{error}</p>"
+    moderated: Aufgrund von Moderationsaktion nicht zulässig
+  confirmations_controller:
+    email_sent: E-Mail gesendet! Wenden Sie sich an die Unterstützung von %{email}, wenn Sie Probleme haben, Ihre Bestätigungsanweisungen zu erhalten.
+  credits_controller:
+    done:
+      one: ' %{count} neue Credits gekauft!'
+      other: ' %{count} neue Credits gekauft!'
+  devices_controller:
+    not_found: Nicht gefunden
+  discussion_locks_controller:
+    locked: Die Diskussion wurde erfolgreich abgeschlossen!
+    unlocked: Diskussion wurde erfolgreich freigeschaltet!
+  email_subscriptions_controller:
+    badge_notifications: Badge-Benachrichtigungen
+    comment_notifications: Kommentarbenachrichtigungen
+    digest_emails: ' %{community} verdauliche E-Mails'
+    follower_notifications: Folgebenachrichtigungen
+    mention_notifications: Benachrichtigungen über
+    this_list: Diese Liste
+    unread_notifications: Ungelesene Benachrichtigungen
+  feedback_messages_controller:
+    error_fill: "Stellen Sie sicher, dass die Formulare gefüllt sind. \U0001F916 Weitere mögliche Fehler: %{errors}"
+    n_a: Nicht zutreffend
+    submitted: Ihr Bericht wird übergeben
+  follows_controller:
+    already_followed: bereits befolgt
+    daily_limit: Täglicher Account-Grenzwert erreicht!
+    followed: Gefolgt von
+    unfollowed: nicht befolgt
+  github_repos_controller:
+    repo_not_found: GitHub-Repository nicht gefunden
+    github_unauthorized: 'GitHub Unbefugt: %{e_message}'
+  image_uploads_controller:
+    server_error: Es ist ein Serverfehler aufgetreten!
+  listings_controller:
+    deleted: Die Liste wurde erfolgreich gelöscht.
+    no_credit: Nicht genügend verfügbare Credits
+  omniauth_callbacks_controller:
+    log_in_error: 'Fehler beim Anmelden: %{e}'
+    username_taken: Benutzername wurde bereits verwendet
+  organizations_controller:
+    secret_updated: Ihr Organisationsgeheimnis wurde aktualisiert
+    deletion_scheduled: 'Ihre Organisation: " %{organization_name}" ist terminiert. Sie werden benachrichtigt, wenn sie gelöscht werden.'
+    not_deleted: Ihre Organisation wurde nicht gelöscht; Sie müssen ein Administrator sein, das einzige Mitglied in der Organisation und keine Artikel mit der Organisation verbunden sein.
+    created: Ihre Organisation wurde erfolgreich erstellt und Sie sind ein Administrator.
+    updated: Ihre Organisation wurde erfolgreich aktualisiert.
+  podcasts_controller:
+    podcast_suggested: Podcast vorgeschlagen
+  profiles_controller:
+    updated: Ihr Profil wurde aktualisiert
+  rating_votes_controller:
+    not_upserted_successfully: Nicht erfolgreich Upserted
+  registrations_controller:
+    error:
+      recaptcha: Sie müssen die recaptcha ✅ abschließen.
+      domain: ist nicht in zulässigen Domänen enthalten.
+  response_templates_controller:
+    response_template_error: 'Antwortschablonenfehler: %{errors}'
+    created: Ihre Antwortvorlage " %{title}" wurde erstellt.
+    deleted: Ihre Antwortvorlage " %{title}" wurde gelöscht.
+    updated: Ihre Antwortvorlage " %{title}" wurde aktualisiert.
+  social_previews_controller:
+    fonts: Roboto | Roboto + Kondensiert
+  stories:
+    pinned_articles_controller:
+      not_found: nicht gefunden
+  stories_controller:
+    404_bio_not_found: 404 bio nicht gefunden
+    searching: '... suchen'
+  stripe_active_cards_controller:
+    cannot_remove: Die Karte kann nicht entfernt werden, wenn Sie eine aktive Mitgliedschaft haben. Bitte stornieren Sie zuerst Ihre Mitgliedschaft.
+    cannot_update: Beim Aktualisieren der Fakturierungsinformationen ist ein Problem aufgetreten.
+    updated: Ihre Rechnungsstellungsinformationen wurden aktualisiert.
+    removed: Ihre Karte wurde erfolgreich entfernt.
+  tag_adjustments_controller:
+    failure: 'Fehler: %{errors}'
+    destroyed: Tag-Anpassung zerstört
+  tags_controller:
+    tag_successfully_updated: "Tag erfolgreich aktualisiert! \U0001F44D "
+  users_controller:
+    removed_admin: ' %{name} ist kein Administrator mehr.'
+    removed_member: ' %{name} ist nicht mehr Teil Ihrer Organisation.'
+    added_admin: ' %{name} ist jetzt ein Administrator.'
+    provide_email: Bitte geben Sie eine E-Mail an, um Ihr Konto zu löschen.
+    provide_email_delete: Bitte geben Sie eine E-Mail an, um Ihr Konto zu löschen
+    send_export: ' Der Export wird Ihnen in Kürze per E-Mail zugeschickt.'
+    invalid_secret: Das geheime Organisationsgeheimnis war ungültig.
+    username_blank: Benutzername darf nicht leer sein
+    deletion_in_progress: Sie haben den Account-Löschvorgang bereits angefordert. Bitte überprüfen Sie Ihre E-Mail auf weitere Anweisungen.
+    joined_org: Sie haben sich der Organisation %{organization_name} angeschlossen.
+    left_org: Sie haben Ihre Organisation verlassen.
+    deletion_requested: Sie haben den Account-Löschvorgang angefordert. Bitte überprüfen Sie Ihre E-Mail auf weitere Anweisungen.
+    log_in_to_delete: Sie müssen angemeldet sein, um mit dem Account-Löschen fortzufahren.
+    deletion_scheduled: Der Löschvorgang für Ihr Konto ist geplant. Sie werden benachrichtigt, wenn sie gelöscht werden.
+    removed_identity: Ihr %{provider} -Konto wurde erfolgreich entfernt.
+    updated_config: Ihre Konfiguration wurde aktualisiert. Aktualisieren, um alle Änderungen anzuzeigen.
+    updated_profile: Ihr Profil wurde erfolgreich aktualisiert.
+    token_expired: Ihr Token ist abgelaufen, bitte fordern Sie eine neue an. Token werden nur für 12 Stunden nach dem Löschen des Accounts gestartet.
+  video_states_controller:
+    related_article_not_found: Zugehöriger Artikel nicht gefunden
+    video_state_updated: Videostatus aktualisiert
+

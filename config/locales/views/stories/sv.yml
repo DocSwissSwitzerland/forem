@@ -1,0 +1,25 @@
+sv:
+  views:
+    stories:
+      meta:
+        description_tagged: ' %{tag} innehåll i %{name}'
+        page: ' Sida %{page}'
+        rss: ' %{name} RSS-flöde'
+      heading: Poster
+      discuss: '#discuss'
+      follow: Följ
+      menu:
+        aria_left: nav-knappen-vänster
+        aria_right: nav-knappen-höger
+      sort:
+        aria_label: Visa inlägg efter
+        aria_tagged: Visa taggade inlägg efter
+        relevant: Relevant
+        week: Vecka
+        month: Månad
+        year: År
+        infinity: Oändlighet
+        latest: Senaste
+        signin_html: "\U0001F44B <a href=\"%{path}\">Logga in</a> för de sorteringsfunktioner som finns i <strong>top</strong> och <strong>senaste</strong>."
+        top: Överst
+

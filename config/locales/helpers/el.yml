@@ -1,0 +1,240 @@
+el:
+  helpers:
+    label:
+      listing:
+        body_markdown: Markdown του σώματος
+        expires_at: Προσαρμοσμένη ημερομηνία λήξης
+        location: 'Τοποθεσία:'
+        organization_id: Δημοσίευση σε έναν οργανισμό
+        tag_list: 'Ετικέτες:'
+        title: "' Τίτλος"
+      organization:
+        name: "' Ονομα"
+        slug: 'Όνομα χρήστη:'
+        profile_image: Εικόνα προφίλ.
+        nav_image: Λογότυπο για φωτεινά θέματα
+        dark_nav_image: Λογότυπο για σκοτεινά θέματα
+        twitter_username: Όνομα χρήστη Twitter
+        github_username: Όνομα χρήστη GitHub
+        url: Διεύθυνση URL ιστοσελίδας
+        tag_line: Γραμμή Tag
+        summary: 'Περίληψη:'
+        location: 'Τοποθεσία:'
+        email: E-mail υποστήριξης
+        company_size: 'Μέγεθος οργανισμού:'
+        story: -Ναι.
+        tech_stack: Η στοίβα μας
+        cta_body_markdown: 'Κείμενο σώματος:'
+        cta_button_text: Κείμενο διασύνδεσης
+        cta_button_url: Διεύθυνση URL διασύνδεσης
+        proof: "' Αποδειξη"
+      podcast:
+        android_url: Διεύθυνση URL Android
+        description: 'Περιγραφή:'
+        feed_url: Διεύθυνση URL
+        image: 'Εικόνα:'
+        itunes_url: Itunes url
+        main_color_hex: Κύριο χρώμα hex
+        overcast_url: Διεύθυνση URL
+        pattern_image: Εικόνα μοτίβου
+        slug: Slug.
+        soundcloud_url: Διεύθυνση URL Soundcloud
+        title: "' Τίτλος"
+        twitter_username: Όνομα χρήστη Twitter
+        website_url: Διεύθυνση URL ιστοσελίδας
+      response_template:
+        title: "' Τίτλος"
+        content: Σχόλιο το σώμα (Markdown)
+      user:
+        name: "' Ονομα"
+        email: 'Email:'
+        username: 'Όνομα χρήστη:'
+        profile_image: Εικόνα προφίλ.
+      users_notification_setting:
+        email_newsletter: Στείλτε μου εβδομαδιαία email newsletter
+        email_digest_periodic: Στείλτε μου μια περιοδική σύνοψη των κορυφαίων δημοσιεύσεων από τα δικά μου.
+        email_membership_newsletter: Στείλτε μου τη διατήρηση των μελών ενημερωτικό δελτίο μέλους
+        email_tag_mod_newsletter: Στείλτε μου tag moderator newsletter emails
+        email_community_mod_newsletter: Αποστολή e-mail της κοινότητας ηλεκτρονικού ταχυδρομείου newsletter
+        email_comment_notifications: Αποστολή μηνύματος email όταν κάποιος απαντήσει σε μένα σε ένα νήμα σχολίου
+        email_follower_notifications: Στείλε μου ένα email όταν κάποιος με ακολουθήσει.
+        email_mention_notifications: Στείλε μου ένα email όταν κάποιος με αναφέρει
+        email_badge_notifications: Στείλε μου ένα email όταν λάβω σήμα.
+        email_unread_notifications: Στείλτε μου περιστασιακές υπενθυμίσεις ότι έχω αδιάβαστα ειδοποιήσεις για το  %{community}
+        mobile_mention_notifications: Στείλε μου μια ειδοποίηση όταν κάποιος με αναφέρει.
+        mobile_comment_notifications: Αποστολή ειδοποίησης push όταν κάποιος απαντήσει σε μένα σε ένα νήμα σχολίου
+        welcome_notifications: Στείλτε μου μερικές συμβουλές για το πώς να βελτιώσω την εμπειρία του  %{κοινότητας}
+        reaction_notifications: Αποστολή ειδοποιήσεων όταν κάποιος αντιδρά στα σχόλια ή τις δημοσιεύσεις μου
+        mod_roundrobin_notifications: Στείλτε μου περιστασιακή κοινότητα-επιτυχία mod ειδοποιήσεις
+      users_setting:
+        feed_url: Διεύθυνση URL διανομής RSS
+    placeholder:
+      organization:
+        name: Acme Inc.
+        slug: Acmeinc
+        url: https://yoursite.com
+        location: Halifax, Nova Scotia
+        email: mail@example.com
+        company_size: '- ...'
+        story: '- ...'
+        tech_stack: '- ...'
+        cta_body_markdown: '- ...'
+        cta_button_text: Επισκεφθείτε την ιστοσελίδα Acme
+        cta_button_url: https://example.com
+        proof: '- ...'
+      response_template:
+        title: '- ...'
+      user:
+        name: Τζον Ντο.
+        email: john.doe@example.com
+        username: Johndoe
+        feed_url: https://yoursite.com/feed
+    application_helper:
+      app_logo: Λογότυπο App
+      follow:
+        aria_label:
+          Organization: 'Παρακολούθηση οργανισμού:  %{name}'
+          Tag: 'Παρακολούθηση ετικέτας:  %{name}'
+          User: 'Παρακολούθηση χρήστη:  %{name}'
+          default: 'Παρακολούθηση  %{type}:  %{name}'
+        text:
+          Organization: 'Ακολούθη:'
+          Tag: 'Ακολούθη:'
+          User: 'Ακολούθη:'
+          default: 'Ακολούθη:'
+      required: Απαιτούμενη
+      subtitle:
+        week: Κορυφαίες θέσεις αυτή την εβδομάδα
+        month: Κορυφαίες θέσεις αυτό το μήνα
+        year: Κορυφαίες θέσεις φέτος.
+        infinity: Όλες οι θέσεις
+        latest: Τελευταίες δημοσιεύσεις
+      title_text: ' %{τίτλος}- %{χρονοδιάγραμμα}'
+    articles_helper:
+      logo: Λογότυπο  %{όνομα_υπηρεσίας}
+      most_comments: Τα περισσότερα σχόλια
+      most_reactions: Οι περισσότερες αντιδράσεις
+      most_views: Οι περισσότερες προβολές
+      recently_created: Πρόσφατα δημιουργήθηκε.
+      recently_published: (')
+    authentication_helper:
+      any_of_those: οποιοδήποτε από αυτά
+      email_password: Email & Κωδικός πρόσβασης
+      reminder: 'Υπενθύμιση: Χρησιμοποιήσατε το  %{method} για την εξακρίβωση των στοιχείων του λογαριασμού σας. Χρησιμοποιήστε το  %{dem} για να συνδεθείτε αν σας ζητηθεί.'
+      that: '- ...'
+      invite_only: Δεν μπορείτε να το κάνετε αυτό μέχρι να απενεργοποιήσετε την επιλογή Πρόσκληση μόνο
+    comments_helper:
+      ama: '- ...'
+      ask_me_anything: Ρώτα Με Οτιδήποτε.
+      author: 'Συγγραφέας:'
+      like: Όπως ...
+      nbsp_likes_html:
+        one: '&nbsp; όπως'
+        other: '&nbsp; αρέσει'
+    feedback_messages_helper:
+      offender:
+        body: >
+          Γεια σας.
+
+
+          Έχει επισημανθεί ότι έχετε παραβιάσει τον Κώδικα Συμπεριφοράς και/ή Όρους Χρήσης του  %{κοινότητας}.
+
+
+          Αν αυτή η συμπεριφορά συνεχιστεί, ίσως χρειαστεί να αναστείλουμε το λογαριασμό  %{κοινότητας} σας.
+
+
+          Αν νομίζετε ότι υπήρξε ένα λάθος, παρακαλώ απαντάτε σε αυτό το email και θα ρίξουμε άλλη μια ματιά.
+
+
+          Ομάδα  %{κοινότητας}
+        subject: ' %{κοινότητα} Παραβίαση κώδικα συμπεριφοράς'
+      reporter:
+        body: >
+          Γεια σας, Σας ευχαριστούμε για την επισήμανση περιεχομένου που μπορεί να παραβιάζει το  %{community} Κώδικας Συμπεριφοράς και/ή τους Όρους Χρήσης μας. Εξετάζουμε την έκθεσή σας και θα την εξετάσουμε.
+
+          -δράση.
+
+          Εκτιμούμε τη βοήθειά σας καθώς εργαζόμαστε για την προώθηση ενός θετικού και περιεκτικού περιβάλλοντος για όλους!  %{κοινότητα}
+        subject: ' %{κοινότητας} Αναφορά'
+      affected:
+        body: >
+          Γεια σου.
+
+
+          Παρατηρήσαμε ορισμένα σχόλια (κατασκευασμένα από άλλα) στη θέση σας που παραβιάζουν τον Κώδικα Συμπεριφοράς του  %{community} ή/και τους Όρους Χρήσης μας. Έχουμε μηδενική ανοχή για τέτοια συμπεριφορά και λαμβάνουν τα κατάλληλα μέτρα.
+
+
+          Ευχαριστώ για να είναι φοβερό, και παρακαλώ μην διστάσετε να μας στείλετε email με οποιεσδήποτε ερωτήσεις! Χαιρετίζουμε όλα τα σχόλια και τις ιδέες καθώς συνεχίζουμε να εργαζόμαστε για την προώθηση μιας ανοιχτής και περιεκτικής κοινότητας.
+
+
+          Ομάδα  %{κοινότητας}
+        subject: Ειδοποίηση από το  %{community}
+    listing_helper:
+      option:
+        one: ' %{cl_name} ( %{count} πιστώσεις)'
+        other: ' %{cl_name} ( %{count} Μονάδες)'
+    organization_helper:
+      option: ' %{όνομα_org_name} ( %{unδαπάνης})'
+    rate_limit_checker_helper:
+      day:
+        one: 'ημέρα:'
+        other: ημέρες.
+      general: Πόσα  %{πράγμα} μπορεί να δημιουργήσει ένα νέο μέλος ( %{timeframe} ή λιγότερο) μέσα σε οποιαδήποτε χρονική περίοδο 5 λεπτών;
+      published:
+        title: Ο αριθμός των θέσεων που δημιουργήθηκαν
+        description: Πόσες θέσεις μπορεί να δημιουργήσει κάποιος μέσα σε 30 δευτερόλεπτα;
+      antispam:
+        title: Περιορισμός αριθμού θέσεων που δημιουργήθηκαν από ένα νέο μέλος
+      update:
+        title: Περιορισμός ενημερώσεων σε μια δημοσίευση.
+        description: Πόσες ενημερώσεις μπορεί να κάνει κάποιος μέσα σε 30 δευτερόλεπτα; Ενημέρωση εγγράφων API κατά την αλλαγή.
+      upload:
+        title: Περιορισμός αριθμού εικόνων που μεταφορτώθηκαν
+        description: Πόσες εικόνες μπορεί να φορτώσει κάποιος μέσα σε 30 δευτερόλεπτα;
+      user:
+        title: Περιορισμός αριθμού αλλαγών που μπορεί να κάνει κάποιος στο λογαριασμό του.
+        description: Πόσες αλλαγές μπορεί να κάνει κάποιος στο λογαριασμό χρήστη εντός οποιασδήποτε 30 δευτερολέπτων;
+      follow:
+        title: Περιορισμός αριθμού των οπαδών κάποιος μπορεί να ακολουθήσει καθημερινά
+        description: Πόσοι άνθρωποι μπορούν να ακολουθήσουν σε μια μέρα;
+      reaction:
+        title: Περιορισμός αριθμού αντιδράσεων σε δημοσίευση ή σχόλιο.
+        description: Πόσες φορές μπορεί κάποιος να αντιδράσει σε μια θέση ή να σχολιάσει μέσα σε 30 δευτερόλεπτα;
+      feedback:
+        title: Όρια φορές που κάποιος μπορεί να αναφέρει κατάχρηση.
+        description: Πόσες φορές μπορεί κάποιος να αναφέρει κακοποίηση ανά 5 λεπτά;
+      comment:
+        title: Περιορισμός αριθμού σχολίων που δημιουργήθηκαν
+        description: Πόσα σχόλια μπορεί να δημιουργήσει κάποιος μέσα σε 30 δευτερόλεπτα;
+      comment_antispam:
+        title: Περιορισμός αριθμού σχολίων που δημιουργήθηκαν από ένα νέο μέλος
+      mention:
+        title: Περιορισμός αριθμού @ - αναφορές σε μια δημοσίευση ή σχόλιο
+        description: Πόσες φορές μπορεί κάποιος @ - αναφέρω άλλους χρήστες σε μια θέση ή σχόλιο;
+      listing:
+        title: Ο αριθμός των καταχωρήσεων που δημιουργήθηκαν.
+        description: Πόσες καταχωρήσεις μπορεί κάποιος να δημιουργήσει μέσα σε οποιαδήποτε περίοδο 1 λεπτό;
+      organization:
+        title: Περιορισμός αριθμού οργανισμών που δημιουργήθηκαν
+        description: Πόσες οργανώσεις μπορεί να δημιουργήσει κάποιος μέσα σε οποιαδήποτε περίοδο 5 λεπτών;
+      subscription:
+        title: Περιορισμός αριθμού φορές που κάποιος μπορεί να εγγραφεί στο mailing list υγρή ετικέτα
+        description: Πόσες φορές μπορεί κάποιος να εγγραφεί σε μια λίστα αλληλογραφίας μέσα σε 30 δευτερόλεπτα;
+      recipient:
+        title: Περιορισμός αριθμού γενικών μηνυμάτων email που στέλνουμε
+        description: Πόσα μηνύματα μπορούμε να στείλουμε σε κάποιον μέσα σε διάστημα 2 λεπτών;
+      confirmation:
+        title: Περιορισμός αριθμού των email επιβεβαίωσης που στέλνουμε
+        description: Πόσες φορές μπορούμε να στείλουμε ένα email επιβεβαίωσης σε κάποιον εντός χρονικού διαστήματος 2 λεπτών;
+      thing:
+        posts: δημοσιεύματα.
+        comments: παρατηρησεις
+    settings_helper:
+      advanced: -Προχωρημένο
+      beginner: 'Αρχή:'
+      expert: "' Ειπε"
+      mid_level: Mid-επίπεδο
+      novice: -Όχι.
+    social_link_helper:
+      n_a: N/A
+

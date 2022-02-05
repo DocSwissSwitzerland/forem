@@ -1,0 +1,89 @@
+sv:
+  views:
+    articles:
+      meta:
+        description: En artikel från gemenskapen
+      actions:
+        aria_label: Artikel
+      comments:
+        aria_label: Kommentarer för post %{title} ( %{num})
+        subtitle_html: Diskussion %{num}
+        num: ( %{num})
+        subscribe: Prenumerera
+      conduct:
+        aria_label: Genomförandekontroller
+        code: Uppförandekod
+        report: Rapportera missbruk
+      delete:
+        heading: Är du säker på att du vill ta bort den här artikeln?
+        desc:
+          text_html: Du kan inte ångra den här åtgärden. Du kanske bara vill ha %{action} i stället?
+          edit: redigera
+          unpublish: avpublicera
+        action:
+          button: Radera
+          cancel: Ignorera
+          edit: Redigera
+          unpublish: Avpublicera
+      lock:
+        meta:
+          title: Bekräfta avslagningslås
+        heading: Är du säker på att du vill låsa diskussionen på den här posten?
+        desc_html: Användare kommer inte att kunna lägga till nya kommentarer. Det här kommer <em class="fw-bold">inte</em> att ta bort befintliga kommentarer. Du kan låsa upp diskussionen när som helst för att användarna ska kunna lämna kommentarer igen.
+        cancel: Avbryt
+        notes:
+          label: Anteckningar (valfritt)-det här är endast synligt för dig och administratörer
+          placeholder: Mer information om varför du låste diskussionen.
+        reason:
+          label: Orsak till att låsa diskussionen (valfritt)-det här kommer att visas för allmänheten
+          placeholder: Orsaken till att du låser den här diskussionen.
+        submit: Lås diskussion
+      preview_discuss_html:
+        zero: Ny diskussion!
+        one: '#diskutera <img src="%{image}" /> %{count}'
+        other: '#diskutera <img src="%{image}" /> %{count}'
+      save:
+        title: Spara till att läsa lista
+        aria_label: Spara till att läsa lista
+        initial: Spara
+        success: Sparad
+      series:
+        subtitle: ' %{slug} ( %{size})'
+        size:
+          one: ' %{count} artikelserie'
+          other: ' %{count} artikelserie'
+        published: Publicerades %{date}
+        inbetween:
+          num: -...
+          text:
+            one: En del till ...
+            other: ' %{count} fler delar ...'
+          title: Visa mer
+      unlock:
+        meta:
+          title: Bekräfta avspärrning
+        heading: Är du säker på att du vill låsa upp diskussionen på den här posten?
+        desc: Användare kommer att kunna lägga till nya kommentarer. Du kan låsa diskussionen när som helst för att hindra användare från att lämna kommentarer igen.
+        cancel: Avbryt
+        notes: 'Anteckningar från när denna diskussion var låst (endast synlig för dig och administratörer):'
+        reason: 'Skäl till att denna diskussion var låst (offentligt synlig):'
+        submit: Lås upp diskussion
+      unpublished:
+        subtitle: Opublicerat inlägg.
+        text: ' Den här webbadressen är allmän men hemlig, så dela med dig av din egen diskretion.'
+        edit: Klicka för att redigera
+      co_authors_html: med %{names}
+      crossposted:
+        text_html: Ursprungligen publicerades vid %{url} %{on}
+        on_html: ' %{date}'
+      edited: Uppdaterades %{date}
+      edited_html: Uppdaterades %{date}
+      for_org_html: ' %{start} för %{end} %{org}'
+      missing: Artikel Ingen längre tillgänglig
+      posted_html: Inlämnat på %{date}
+      read_next: Läs nästa
+      reading_time:
+        one: 1 min
+        other: ' %{count} min läst'
+      right_nav: Upphovsman
+

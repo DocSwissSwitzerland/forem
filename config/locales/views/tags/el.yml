@@ -1,0 +1,64 @@
+el:
+  views:
+    tags:
+      meta:
+        title: 'Ετικέτες:'
+        description: Προσδιοριστικά που ακολουθούν το  %{community}
+        og:
+          description: Η  %{κοινότητα} είναι μεγάλη!
+      heading:
+        default: Κορυφαία προσδιοριστικά
+        search_results: Αποτελέσματα αναζήτησης για  %{q}
+      search:
+        aria_labels:
+          search_input: όρος αναζήτησης προσδιοριστικών
+          submit: Αναζήτηση ετικετών
+        placeholder: Αναζήτηση για tag
+      edit:
+        meta:
+          title: Τροποποίηση  %{tag}
+        admin: Admin.
+        help: 'Βοήθεια:'
+        view: "' Προβολή"
+        form:
+          pretty_name:
+            label: Ωραίο όνομα!
+            placeholder: Αυτό είναι το όνομα στην κορυφή της σελίδας του show.
+          bg_color_hex:
+            label: Bg χρώματος hex
+          text_color_hex:
+            label: Χρώμα κειμένου hex
+          short_summary:
+            label: Σύντομη περίληψη
+            placeholder: Σύντομη επισκόπηση του τι αυτή η ετικέτα είναι όλα σχετικά.
+          wiki_body_markdown:
+            label: Markdown του wiki
+            placeholder: Αυτό είναι ένα "περίπου" τμήμα. Μπορείτε να προσθέσετε μια FAQ, πρόσθετους πόρους, κλπ.
+          rules_markdown:
+            label: Κανόνες markdown
+            placeholder: Προαιρετικά-Μπορεί να χρησιμοποιηθεί για τις προκλήσεις, δηλαδή τις οδηγίες υποβολής.
+          submit: 'Αποθήκευση:'
+      follow: 'Ακολούθη:'
+      following_tags: Ακολουθώντας προσδιοριστικά
+      moderator:
+        text_html: 'διαχωρισμένα με κόμμα, το διάστημα είναι προαιρετικό. Παράδειγμα:  %{code}'
+        code: 123
+        placeholder: 'διαχωρισμένα με κόμμα, το διάστημα είναι προαιρετικό. Παράδειγμα: 1,2,3'
+      published:
+        one: 1 δημοσιευμένη δημοσίευση
+        other: ' %{count} δημοσιεύσεις που δημοσιεύονται'
+      sidebar:
+        about: 'περίπου #  %{tag}'
+        admin: Admin.
+        edit: 'Τροποποίηση:'
+        guidelines: κατευθυντήριες γραμμές υποβολής
+        moderate: 'Μέτρια:'
+        mods: επιτηρητές προσδιοριστικών
+        new: Δημιουργία Post
+        older: 'Παλαιότερες θέσεις #  %{tag}'
+        published:
+          one: 1 Δημοσίευση Δημοσίευση
+          other: ' %{count} Δημοσίευση Δημοσιεύσεων'
+        sponsor: Ο χρήστης  %{tag} χρηματοδοτείται από
+      sponsor: '| Χορηγούμενη από  %{org} ❤️'
+

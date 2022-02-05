@@ -1,0 +1,40 @@
+nl:
+  create_mascot:
+    name: Mascotte
+    error: Mascotte al ingesteld
+  broadcast:
+    welcome:
+      ask_question: "Sloan hier! \U0001F44B Ik merkte dat u nog niet <a href='https://dev.to/t/explainlikeimfive'>een vraag gesteld</a> hebt. Een vraag stellen is eenvoudig te doen; klik gewoon op 'Post maken' in de zijbalk van de tagpagina om aan de slag te gaan!"
+      customize_experience: "Sloan hier! \U0001F44B Wist u dat u uw DEV-ervaring kunt aanpassen? Probeerchanginguw lettertype en themachangingte wijzigen en vind de beste stijl voor u!"
+      customize_feed: "Hallo, ik ben het weer! \U0001F44B Nu u deel bent van de DEV-community, kunt u zich concentreren op het personaliseren van uw content. U kunt beginnen met <a href='/tags'>bepaalde tags volgen</a> om uw feed aan te passen! \U0001F389"
+      discuss_and_ask: "Sloan hier! \U0001F44B Ik heb gemerkt dat u nog niet <a href='https://dev.to/t/explainlikeimfive'>een vraag hebt gesteld</a> of <a href='https://dev.to/t/discuss'>een discussie hebt gestart</a> nog niet. Het is gemakkelijk om beide te doen; klik gewoon op 'Post maken' in de zijbalk van de tag pagina om te beginnen!"
+      download_app: "Sloan hier, met een laatste tip! \U0001F44B Heb je de DEV mobiele app al gedownload? Overweeg het <a href='https://dev.to/downloads'>downloaden</a> zodat u toegang krijgt tot al uw favoriete DEV-content op de go!"
+      set_up_profile: "Welkom bij DEV! \U0001F44B Ik ben Sloan, de community mascotte en ik ben hier om te helpen u aan de slag te gaan. Laten we beginnen met <a href='/settings'>uw profiel instellen</a>!"
+      start_discussion: "Sloan hier! \U0001F44B Ik heb gemerkt dat u nog niet <a href='https://dev.to/t/discuss'>een discussie hebt gestart</a> . Het starten van een discussie is eenvoudig te doen; klik gewoon op 'Post maken' in de zijbalk van de tagpagina om aan de slag te gaan!"
+      welcome_thread: "Sloan hier weer! \U0001F44B DEV is een vriendelijke gemeenschap. Waarom uzelf niet introduceren door een reactie achter te laten in <a href='/welcome'>de welkomstthread</a>!"
+    connect:
+      apple: "U staat op een rol! \U0001F389 Heeft u een Apple-account? Overweeg het <a href='/settings'>aansluiten.."
+      facebook: "Je bent op een roll! \U0001F389 Heb je een Facebook-account? Overweeg het <a href='/settings'>aansluiten.."
+      forem: "U staat op een rol! \U0001F389 Heeft u een Forem-account? Overweeg het <a href='/settings'>aansluiten.."
+      github: "Je bent op een rol! \U0001F389 Heb je een GitHub account? Overweeg <a href='/settings'>het aansluiten</a> zodat u uw repo's kunt vastzetten aan uw profiel."
+      google: "U bent op een roll! \U0001F389 Heeft u een Google-account? Overweeg het <a href='/settings'>aansluiten.."
+      twitter: "Je bent op een roll! \U0001F389 Heb je een Twitter-account? Zie <a href='/settings'>verbindenitzodat we @mention u kunnen gebruiken als we uw post delen via ons Twitter-account <a href='https://twitter.com/thePracticalDev'>@thePracticalDev</a>."
+  errors:
+    authentication:
+      errors:
+        suspended: Het lijkt erop dat uw vorige %{community_name} account is onderbroken. Als zodanig hebben we maatregelen genomen om te voorkomen dat u een nieuw account maakt met %{community_name} en zijn community. Als u denkt dat er een fout is geweest, stuur ons dan een e-mail naar %{community_email}, en we zullen nog een kijkje nemen.
+    fastly_config:
+      must_be_array: 'configs: moet een array van tekenreeksen zijn'
+      invalid_config: Ongeldige Fastly config- %{invalid_config}. Alleen %{valid_configs_join} is geldig.
+  policies:
+    application_policy:
+      must_be_logged_in: moet ingelogd zijn
+      you_must_be_logged_in: U moet aangemeld zijn
+    liquid_tag_policy:
+      no_user_found: Geen gebruiker gevonden
+      not_permitted: Gebruiker is niet gemachtigd om deze vloeibare tag te gebruiken
+  uploaders:
+    base_uploader:
+      too_many_frames: GIF bevat te veel frames. Maximum aantal toegestane frames is %{frame_max}.
+      timeout: Time-out voor afbeeldingsverwerking.
+

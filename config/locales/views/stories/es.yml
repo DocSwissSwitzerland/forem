@@ -1,0 +1,25 @@
+es:
+  views:
+    stories:
+      meta:
+        description_tagged: ' %{tag} contenido en %{name}'
+        page: ' Página %{page}'
+        rss: ' %{name} canal de información RSS'
+      heading: Puestos
+      discuss: '#discuss'
+      follow: Continuación
+      menu:
+        aria_left: nav-botón-izquierda
+        aria_right: nav-button-right
+      sort:
+        aria_label: Ver publicaciones de
+        aria_tagged: Ver publicaciones etiquetadas por
+        relevant: Pertinente
+        week: Semana
+        month: Mes
+        year: Año
+        infinity: Infinity
+        latest: Último
+        signin_html: "\U0001F44B <a href=\"%{path}\">Inicie sesión</a> para los mensajes de clasificación de capacidad <strong>top</strong> y <strong>latest</strong>."
+        top: Superior
+

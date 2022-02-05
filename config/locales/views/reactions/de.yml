@@ -1,0 +1,31 @@
+de:
+  views:
+    reactions:
+      category:
+        hands: Hände
+        like: Wie
+        readinglist: Leseliste
+        thinking: Denken
+        thumbsup: Daumen hoch
+        thumbsdown: Daumen nach unten
+        unicorn: Einhorn
+        vomit: Markierung
+      summary:
+        count_html:
+          one: ' %{count} %{start} Reaktion %{end}'
+          other: ' %{count} %{start} Reaktionen %{end}'
+        title: Reaktionen
+      like:
+        title: Herz
+        aria_label: Wie
+        icon: Lieblings-Herzknopf
+        text: Wie
+      unicorn:
+        title: Einhorn
+        aria_label: Mit Einhorn reagieren
+      readingList:
+        title: Speichern
+        aria_label: Zur Leseliste hinzufügen
+        icon: Schaltfläche speichern
+        text: Speichern
+

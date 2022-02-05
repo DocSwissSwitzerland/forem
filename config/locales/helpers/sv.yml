@@ -1,0 +1,238 @@
+sv:
+  helpers:
+    label:
+      listing:
+        body_markdown: Markeringstext
+        expires_at: Anpassat giltighetsdatum
+        location: Plats
+        organization_id: Lämna in under en organisation
+        tag_list: Etiketter
+        title: Rubrik
+      organization:
+        name: NamnName
+        slug: Användarnamn
+        profile_image: Profilbild
+        nav_image: Logotyp för lätta teman
+        dark_nav_image: Logotyp för mörka teman
+        twitter_username: Twitter-användarnamn
+        github_username: Användarnamn för GitHub
+        url: Webbplats-URL
+        tag_line: Etikettlinje
+        summary: Sammanfattning
+        location: Plats
+        email: Supportmejl
+        company_size: Företagsstorlek
+        story: Vår historia
+        tech_stack: Vår stack
+        cta_body_markdown: Body-text
+        cta_button_text: Länktext
+        cta_button_url: Länkadress
+        proof: Bevis
+      podcast:
+        android_url: Android-URL
+        description: Beskrivning
+        feed_url: Flöde
+        image: Bild
+        itunes_url: Itunes-URL
+        main_color_hex: Huvudfärg för färg
+        overcast_url: Ersätt webbadress
+        pattern_image: Mönsterbild
+        slug: Slug
+        soundcloud_url: Ljudmolnwebbadress
+        title: Rubrik
+        twitter_username: Twitter-användarnamn
+        website_url: Webbplats-URL
+      response_template:
+        title: Rubrik
+        content: Kommentarinstans (Markdown)
+      user:
+        name: NamnName
+        email: E-post
+        username: Användarnamn
+        profile_image: Profilbild
+      users_notification_setting:
+        email_newsletter: Skicka mig veckovis newsletter-mejl
+        email_digest_periodic: Skicka mig ett periodiskt sammandrag av toppposter från mina taggar
+        email_membership_newsletter: Skicka mig att hålla ett nyhetsbrev med nyhetsbrev
+        email_tag_mod_newsletter: Skicka etikettmeddelanden till etikettens moderator-nyhetsbrev
+        email_community_mod_newsletter: Sänd ett nyhetsbrev från gemenskapen till moderator-nyhetsbrev
+        email_comment_notifications: Skicka ett e-postmeddelande till mig när någon svarar till mig i en kommentarstråd
+        email_follower_notifications: Skicka ett mejl till mig när någon ny följer mig
+        email_mention_notifications: Skicka ett mejl när någon nämner mig.
+        email_badge_notifications: Skicka ett mejl till mig när jag får en bricka
+        email_unread_notifications: Skicka tillfälliga påminnelser om att jag har olästa aviseringar i %{community}
+        mobile_mention_notifications: Skicka mig en anmälan när någon nämner mig
+        mobile_comment_notifications: Skicka en push-avisering när någon svarar till mig i en kommentarstråd
+        welcome_notifications: Skicka enstaka tips om hur du förbättrar min %{community}-upplevelse
+        reaction_notifications: Skicka aviseringar när någon reagerar på mina kommentarer eller inlägg
+        mod_roundrobin_notifications: Skicka tillfälliga meddelanden om framgångsaviseringar för gemenskapen
+      users_setting:
+        feed_url: RSS-flöde-URL
+    placeholder:
+      organization:
+        name: Acme Inc.
+        slug: acmeinc
+        url: https://yoursite.com
+        location: Halifax, Nova Scotia
+        email: mail@example.com
+        company_size: -...
+        story: -...
+        tech_stack: -...
+        cta_body_markdown: -...
+        cta_button_text: Besök Acme-platsen
+        cta_button_url: https://example.com
+        proof: -...
+      response_template:
+        title: -...
+      user:
+        name: John Doe
+        email: john.doe@example.com
+        username: johndoe
+        feed_url: https://yoursite.com/feed
+    application_helper:
+      app_logo: Applogotyp
+      follow:
+        aria_label:
+          Organization: 'Bevakningsorganisation: %{name}'
+          Tag: 'Följ tagg: %{name}'
+          User: 'Bevakningsanvändare: %{name}'
+          default: 'Bevaka %{type}: %{name}'
+        text:
+          Organization: Följ
+          Tag: Följ
+          User: Följ
+          default: Följ
+      required: Krävs
+      subtitle:
+        week: Toppinlägg den här veckan
+        month: Uppsta inlägg den här månaden
+        year: Toppstationer i år
+        infinity: Alla inlägg
+        latest: Senaste tjänster
+      title_text: ' %{title}- %{timeframe}'
+    articles_helper:
+      logo: Logotyp för %{service_name}
+      most_comments: De flesta kommentarer
+      most_reactions: De flesta åtgärder
+      most_views: De flesta vyer
+      recently_created: Nyligen skapade
+      recently_published: Nyligen publicerad
+    authentication_helper:
+      any_of_those: någon av dessa
+      email_password: E-postlösenord
+      reminder: 'Påminnelse: Du använde %{method} för att autentisera ditt konto, så använd %{dem} för att logga in om du blir tillfrågad.'
+      that: som
+      invite_only: Du kan inte göra det förrän du avaktiverar endast Inbjudan
+    comments_helper:
+      ama: AMA
+      ask_me_anything: Fråga mig allt
+      author: Författare
+      like: Som
+      nbsp_likes_html:
+        one: '&nbsp; som'
+        other: '&nbsp; gillanden'
+    feedback_messages_helper:
+      offender:
+        body: >
+          Hej.
+
+
+          Vi har uppmärksammats på att ni har brutit mot den procentueringskod som %{community} uppförandekod och / eller användningsvillkoren har brutit mot.
+
+
+          Om det här beteendet fortsätter kan du behöva avbryta %{community}-kontot.
+
+
+          Om du tror att det har skett ett misstag, svara på det här mejlet så kommer vi att ta en annan titt.
+
+           %{community}-grupp
+        subject: ' %{community}-kod för regelöverträdelse'
+      reporter:
+        body: >
+          Hej, tack för att du har flaggat innehåll som kan ha brutit mot %{community}-uppförandekoden och / eller användningsvillkoren. Vi tittar på ert betänkande och kommer att vidta lämpliga åtgärder.
+
+          åtgärd.
+
+          Vi uppskattar er hjälp när vi arbetar för att främja en positiv och allomfattande miljö för alla! %{community}-gruppen
+        subject: ' %{community}-rapport'
+      affected:
+        body: >
+          Hej.
+
+
+          Vi lade märke till några kommentarer (som gjorts av andra) på din post som bryter mot %{community} uppförandekoden och / eller användningsvillkoren. Vi har nolltolerans för sådant beteende och vidtar lämpliga åtgärder.
+
+
+          Tack för att du är grym, och tveka inte att mejla oss med några frågor! Vi välkomnar alla feedback och idéer när vi fortsätter att arbeta för att främja en öppen och inkluderande gemenskap.
+
+           %{community}-grupp
+        subject: Tillkännagivande från %{community}
+    listing_helper:
+      option:
+        one: ' %{cl_name} ( %{count} kredit)'
+        other: ' %{cl_name} ( %{count} Credits)'
+    organization_helper:
+      option: ' %{org_name} ( %{unspenderat})'
+    rate_limit_checker_helper:
+      day:
+        one: dag
+        other: dagar
+      general: Hur många %{thing} kan en ny medlem ( %{timeframe} eller mindre) skapa inom en 5-minutersperiod?
+      published:
+        title: Begränsa antalet skapade inlägg
+        description: Hur många tjänster kan någon skapa inom en 30 andra period?
+      antispam:
+        title: Begränsa antalet inlägg som skapats av en ny medlem
+      update:
+        title: Begränsa antalet uppdateringar till en post
+        description: Hur många uppdateringar kan någon göra inom en 30 andra period? Uppdatera API-dokument när de ändras.
+      upload:
+        title: Begränsa antal överförda bilder
+        description: Hur många bilder kan någon ladda upp inom en 30 andra period?
+      user:
+        title: Begränsa antalet ändringar som någon kan göra till sitt konto
+        description: Hur många ändringar kan någon göra för sitt användarkonto inom en 30 andra period?
+      follow:
+        title: Begränsa antalet följare som någon kan följa dagligen
+        description: Hur många människor kan någon följa på en dag?
+      reaction:
+        title: Begränsa antalet reaktioner på en post eller kommentar
+        description: Hur många gånger kan någon reagera på en post eller kommentar inom en 30 andra period?
+      feedback:
+        title: Begränsa antalet gånger någon kan rapportera missbruk
+        description: Hur många gånger kan någon anmäla övergrepp inom en femminutersperiod?
+      comment:
+        title: Begränsa antalet kommentarer som har skapats
+        description: Hur många kommentarer kan någon skapa inom en 30 andra period?
+      comment_antispam:
+        title: Begränsa antalet kommentarer som har skapats av en ny medlem
+      mention:
+        title: Begränsa antalet @-omnämnanden i en post eller kommentar
+        description: Hur många gånger kan någon @-nämna andra användare i en post eller en kommentar?
+      listing:
+        title: Begränsa antal listade listor
+        description: Hur många lyssningar kan någon skapa inom en minuts period?
+      organization:
+        title: Begränsa antalet skapade organisationer
+        description: Hur många organisationer kan någon skapa inom en femminutersperiod?
+      subscription:
+        title: Begränsa antalet gånger någon kan prenumerera på mejllistlikattagg
+        description: Hur många gånger kan någon prenumerera på en sändlista inom en 30 andra period?
+      recipient:
+        title: Begränsa antal allmänna e-postmeddelanden som vi skickar
+        description: Hur många mejl kan vi skicka till någon inom en 2 minuters period?
+      confirmation:
+        title: Begränsa antalet bekräftelsemeddelar som skickas
+        description: Hur många gånger kan vi skicka ett bekräftelsemeddelande till någon inom en 2 minuters period?
+      thing:
+        posts: inlägg
+        comments: kommentarer
+    settings_helper:
+      advanced: Avancerat
+      beginner: Nybörjare
+      expert: Expert
+      mid_level: Mid-nivå
+      novice: Novis
+    social_link_helper:
+      n_a: EJ TILLÄMPLIGT
+

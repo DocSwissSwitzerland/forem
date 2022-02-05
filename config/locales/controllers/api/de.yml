@@ -1,0 +1,21 @@
+de:
+  api:
+    v0:
+      analytics_controller:
+        invalid_date_format: Die Datumsparameter 'start' oder 'end' müssen das Format' jjjj-mm-tt ' haben.
+        start_missing: Erforderlicher Parameter 'start' fehlt
+      articles_controller:
+        must_be_json: Der Artikel-Parameter muss ein JSON-Objekt sein. Sie haben Artikel als %{type} bereitgestellt
+      follows_controller:
+        followed:
+          one: gefolgt von %{count} Benutzer
+          other: gefolgt von %{count} Benutzern
+      health_checks_controller:
+        app_is_up: App ist oben!
+        database_connected: Datenbank verbunden
+        database_not_connected: Datenbank NICHT verbunden!
+        redis_connected: Verbundene Wahlwiederholungen
+        redis_not_connected: Redis NICHT verbunden!
+      listings_controller:
+        no_credit: Nicht genügend verfügbare Credits
+

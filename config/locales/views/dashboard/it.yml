@@ -1,0 +1,150 @@
+it:
+  views:
+    dashboard:
+      meta:
+        title: Dashboard - %{sito}
+      heading: Dashboard
+      actions:
+        mobile:
+          posts: Posti ( %{num})
+          followers: Followers ( %{num})
+          following_tags: Seguenti tag ( %{num})
+          following_users: Seguenti utenti ( %{num})
+          following_orgs: Seguenti organizzazioni ( %{num})
+          following_pods: Seguenti podcast ( %{num})
+        posts: Posti
+        series: Serie
+        followers: Seguaci
+        following_tags: Seguenti tag
+        following_users: Seguenti utenti
+        following_orgs: Seguenti organizzazioni
+        following_pods: Seguenti podcast
+        listings: Listini
+        analytics: Analytics
+        for_org: Analytics per %{org}
+        upload: Carica un video
+      analytics:
+        meta:
+          title: Analytics
+        heading: Analytics Dashboard per %{name}
+        desc_1: Benvenuti nel Dashboard Analytics, la home delle metriche di user approfondite in modo che gli autori possano prendere decisioni guidate dai dati sull'ecosistema %{members}.
+        desc_2: Questa dashboard evidenzia approfondimenti approfonditi soprattutto relativi a %{membri} relazioni, autori e blogger seri.
+        back: "\U0001F448 Torna a Dashboard Principale"
+        your: Il tuo Dashboard
+        org: Dashboard %{org} Analytics
+      article:
+        heading:
+          text_html: ' %{archiviato} %{titolo}'
+          archived: '[Archivi] '
+        archived: Archiviato
+        published: 'Pubblicato:'
+        published_html: 'Pubblicato: %{data}'
+        edited: 'Modificato:'
+        edited_html: 'Modificato: %{data}'
+        series: 'Serie:'
+        series_html: <strong>Serie:</strong>  %{serie}
+        draft: Bozza
+        reactions:
+          title: Reazioni
+          icon: Reazioni
+          text_html:
+            one: ' %{num} reazione'
+            other: ' %{num} reazioni'
+        comments:
+          title: Commenti
+          icon: Commenti
+          text_html:
+            one: ' %{num} commento'
+            other: ' %{num} commenti'
+        views:
+          title: Viste
+          icon: Viste
+          lt_25: <25
+          text_html:
+            one: '% %{scala} vista'
+            other: ' %{scala} viste'
+          u_25: under 25
+        subscriptions:
+          title: Abbonamenti
+          icon: Dati
+          number: Abbonamenti ( %{num})
+        delete: Elimina
+        unpin: Unpin
+        pin:
+          title: Pin al profilo
+          button: Pin al profilo
+          text: Pin
+        manage:
+          aria_label: 'Gestione post: %{titolo}'
+          text: Gestire
+        lock: Discussione blocco
+        unlock: Discussione sblocco
+        edit:
+          aria_label: 'Modifica post: %{titolo}'
+          text: Modifica
+        more:
+          title: 'Più opzioni per il post: %{titolo}'
+          icon: More ...
+        stats: Stats
+        archive: Archivio post
+        unarchive: Post non archivio
+        author: Autore
+        author_is: 'AUTORE: '
+        save: Salva
+        submit: Invia modifica autore
+      followers:
+        heading: Dashboard " Seguaci
+        empty: Non hai ancora follower ...
+      following_orgs:
+        heading: Dashboard " Seguenti organizzazioni
+        empty: Non segui ancora nessuna organizzazione ...
+      following_pods:
+        heading: Dashboard " Seguenti podcast
+        empty: Non segui ancora nessun podcast ...
+      following_tags:
+        heading: Dashboard " Seguenti tag
+        adjust: Regola il peso del tag per modificare il tuo feed di casa. Valori superiori significano più apparizioni per quel tag.
+        anti:
+          title: Questo tag ha un peso di seguito negativo
+          text: Anti - follow
+        default: Predefinito 1,0
+        empty: Non segui ancora nessun tag ...
+        number:
+          aria_label: ' %{name} peso tag'
+        update: Aggiornare Pesi
+      following_users:
+        heading: Dashboard " Seguenti utenti
+        empty: Non segui nessun utente ...
+      listings:
+        meta:
+          title: Dashboard dei listini
+      posts:
+        heading: Posti
+        archived: Mostra archiviato
+        option:
+          creation-desc: Creato Recentemente
+          published-desc: Pubblicato Recentemente
+          views-desc: Più Viste
+          reactions-desc: Maggior Reazioni
+          comments-desc: Più commenti
+          aria_label: Ordina per
+        org: ' %{name} ( %{num})'
+        personal: Personale
+        empty:
+          desc: Qui è dove puoi gestire i tuoi post, ma non hai ancora scritto nulla.
+          new: Scrivi il tuo primo post ora
+      subscriptions:
+        meta:
+          title: Abbonamenti %{titolo}
+        heading: Abbonamenti
+        subhead:
+          text_html: ' %{per} %{source}'
+          for: per
+        empty: Non hai abbonati per questo %{kind} eppure ...
+      summary:
+        reactions: Reazioni post totali
+        views: Viste post totali
+        listings: Listini creati
+        credits: Crediti disponibili
+        lt_500: <500
+

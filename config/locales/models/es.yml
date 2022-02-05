@@ -1,0 +1,131 @@
+es:
+  models:
+    api_secret:
+      api_limit_reached: Se ha alcanzado el límite secreto de API de 20 por usuario
+    application_record:
+      uninferrable: No se ha podido inferir un decorador para %{class}.
+    article:
+      a_post_by: Un post de %{user_name}
+      video_unpermitted: no se puede añadir por miembro sin permiso
+      video_processing: no se puede establecer en true si el vídeo sigue procesando
+      cannot_search_tags_for: 'No se pueden buscar etiquetas para: %{tag}'
+      cannot_search_tags_for_tags: 'No se pueden buscar etiquetas para: %{tags}'
+      unique_coauthor: los ID de co-autor deben ser exclusivos
+      too_many_tags: superar el máximo de 4 etiquetas
+      is_too_long: es demasiado largo.
+      invalid_date: debe especificarse en formato DD/MM/AAAA con fecha actual o anterior
+      series_unpermitted: debe ser uno tiene permiso para publicar en
+      invalid_coauthor: debe ser ID de usuario válidos
+      same_author: no debe ser el mismo usuario que el autor
+      must_not_have_spaces: no debe tener espacios
+      published: Publicado
+      unique_url: ya se ha tomado. Correo electrónico %{email} para obtener más detalles.
+      mention_too_many:
+        one: No puede mencionar más de %{count} usuarios en una publicación.
+        other: No puede mencionar más de %{count} usuarios en una publicación.
+    broadcast:
+      single_active: Sólo puede tener una emisión de anuncio activo
+    comment:
+      deleted: '[suprimido]'
+      has_been_deleted: ' %{type} se ha suprimido.'
+      hidden: '[oculto por el autor]'
+      is_not_valid: no es válido.
+      locked: la discusión está bloqueada en este Post
+      type:
+        Article: Artículo
+        item: Artículo
+        PodcastEpisode: Episodio de podcast
+      suspended_too_many: Usuario suspendido por demasiadas interacciones de spammy, provocado por el autovomio.
+      mention_too_many:
+        one: No puede mencionar más de %{count} usuarios en un comentario.
+        other: No puede mencionar más de %{count} usuarios en un comentario.
+    feedback_message:
+      reported: (usted) ha informado previamente de este URL.
+    github_issue:
+      issue_comment_not_found: No se ha encontrado el comentario de problema %{issue_id}
+      issue_not_found: No se ha encontrado el número %{issue_id}
+    html_variant:
+      no_edits: no puede cambiar una vez publicado y aprobado
+    identity:
+      no_email_msg: No se encontró correo electrónico. Vuelva a enlazar su cuenta de %{provider} para evitar errores.
+    listing:
+      too_many_tags: superar el máximo de 8 etiquetas
+      too_many_linebreaks: tiene demasiados linebreaks. No más de 12 permitidos.
+      image_not_allowed: no está permitido incluir imágenes.
+      liquid_not_allowed: no está permitido incluir etiquetas de líquido.
+    mention:
+      is_not_valid: no es válido.
+    organization:
+      integer_only: Sólo entero. No se permite ningún signo.
+      reserved_word: '%<value>s es una palabra reservada. Póngase en contacto con los administradores del sitio para ayudarle a registrar su organización.'
+    page:
+      body_must_exist: debe existir si body_html o body_json no existe.
+    podcast:
+      slug_is_reserved: slug está reservado
+    podcast_episode_appearance:
+      provided_role_is_not_valid: el rol proporcionado no es válido
+    poll_skip:
+      cannot_vote_more_than_once: no puede votar más de una vez en una encuesta
+    poll_vote:
+      cannot_vote_more_than_once: no puede votar más de una vez en una encuesta
+    profile_pin:
+      only_five: no puede tener más de cinco puestos fijos totales
+      pin_unpermitted: debe tener los permisos adecuados para la patilla
+    rating_vote:
+      not_permitted: no está autorizado a tomar esta acción.
+    reaction:
+      is_not_valid: no es válido.
+    response_template:
+      user_nil_only: no puede tener un ID de usuario asociado.
+      comment_markdown: Las plantillas de comentarios deben utilizar Markdown como su tipo de contenido.
+      email_text: Las plantillas de correo electrónico deben utilizar texto sin formato o HTML como tipo de contenido.
+      limit_reached: Se ha alcanzado el límite de plantilla de respuesta de 30 por usuario
+    settings:
+      campaign:
+        share_your_project: Comparta su proyecto
+      community:
+        message: no puede incluir el carácter "<" ni "> "
+        new_forem: New Forem
+        user: usuario
+      general:
+        community_sponsors: Patrocinadores comunitarios
+        the_community_mascot: La mascota de la comunidad
+      user_experience:
+        message: 'debe ser un hexadecimal de 3 o 6 caracteres (empezando por #)'
+    sponsorship:
+      invalid_type: no es un tipo esponsorable
+      already_sponsored: El código ya está patrocinado
+      only_one_level: Sólo puede tener un patrocinio de %{levels}
+      level:
+        gold: oro
+        silver: plata
+        bronze: Bronce
+    tag:
+      alias_for: alias_for debe hacer referencia a un código existente
+    tag_adjustment:
+      too_many_tags: 4 etiquetas máx por artículo.
+      unpermitted: no tiene privilegios para ajustar estas etiquetas
+      not_live: seleccionado para eliminación no es un código activo actual.
+      unique: no puede ser un código ya ajustado
+    tweet:
+      tweet_not_found: No se encuentra el tuit
+    user:
+      could_not_send: no se ha podido enviar la confirmación.  %{e_message}
+      password_not_matched: no coincide con la confirmación de contraseña
+      has_been_banished: ha sido desterrado.
+      is_taken: Se ha tomado %{username}.
+      user_could_not_be_saved: No se ha podido guardar el usuario.  %{e_message}
+      username_is_reserved: nombre_usuario está reservado
+    user_block:
+      cant_be_the_same: no puede ser el mismo que el blocked_id
+    user_subscription:
+      non_apple: No se puede suscribir con un relé privado de Apple. Actualice el correo electrónico.
+      source_not_found: Origen no encontrado. Asegúrese de que su %{source} esté activo.
+      not_enabled: Las suscripciones de usuario no están habilitadas para el origen.
+    users:
+      deleted_user:
+        name: '[Usuario suprimido]'
+      setting:
+        invalid_hex: no es un color hexadecimal válido
+        invalid_rss: no es un canal de información RSS/Atom válido
+

@@ -1,0 +1,14 @@
+nl:
+  xml:
+    opensearch:
+      short_name: ' %{community} Zoeken'
+      description: Posts van %{community} zoeken.
+    user:
+      image: ' %{user} profielafbeelding'
+  json:
+    author: Actief %{community} auteur
+  mailer:
+    adjust: Uw e-mailinstellingen aanpassen
+    adjust_only_html: Wil je geen e-mails zoals deze? Uw e-mailinstellingen aanpassen op %{path}
+    unsubscribe: Abonnement opzeggen
+

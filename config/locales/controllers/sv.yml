@@ -1,0 +1,121 @@
+sv:
+  api_secrets_controller:
+    generated: 'Din API-nyckel har genererats: %{secret}'
+    revoked: Din API-nyckel har återkallats.
+  application_controller:
+    bad_request: 'Fel: Felaktig begäran'
+    not_authorized: 'Fel: saknar behörighet'
+    please_sign_in: Var god skriv under
+  articles_controller:
+    deleted: Artikeln har tagits bort.
+  comments_controller:
+    create:
+      success: skapat
+      failure: kommentaren finns redan
+    delete:
+      error: Något gick fel. Kommentaren togs inte bort.
+      notice: Kommentaren togs bort.
+    markdown: 'Det uppstod ett fel i din markeringar: %{error}'
+    markdown_html: "<p>\U0001F614 Det uppstod ett fel i markeringskoden</p><hr><p> %{error}</p>"
+    moderated: Inte tillåtet på grund av modereringsåtgärd
+  confirmations_controller:
+    email_sent: Sänd mejl! Kontakta support på %{email} om du har problem med att ta emot dina bekräftelseinstruktioner.
+  credits_controller:
+    done:
+      one: ' %{count} nya krediter köpta!'
+      other: ' %{count} nya krediter köpta!'
+  devices_controller:
+    not_found: Ej hittad
+  discussion_locks_controller:
+    locked: Diskussionen var klar!
+    unlocked: Diskussionen var olåst!
+  email_subscriptions_controller:
+    badge_notifications: namnbrickor
+    comment_notifications: kommentarsaviseringar
+    digest_emails: ' %{community} sammandrag'
+    follower_notifications: uppföljningsmeddelanden
+    mention_notifications: nämna meddelanden
+    this_list: den här listan
+    unread_notifications: olästa meddelanden
+  feedback_messages_controller:
+    error_fill: "Se till att blanketterna fylls i. \U0001F916 Andra möjliga fel: %{errors}"
+    n_a: EJ TILLÄMPLIGT
+    submitted: Din rapport har skickats in
+  follows_controller:
+    already_followed: redan bevakad
+    daily_limit: Daglig kontogräns har uppnåtts!
+    followed: följt
+    unfollowed: obevakad
+  github_repos_controller:
+    repo_not_found: GitHub-lagret hittades inte
+    github_unauthorized: 'GitHub Obehörig: %{e_message}'
+  image_uploads_controller:
+    server_error: Ett serverfel har inträffat.
+  listings_controller:
+    deleted: Listning har tagits bort.
+    no_credit: Inte tillräckligt med tillgängliga krediter
+  omniauth_callbacks_controller:
+    log_in_error: 'Logga in fel: %{e}'
+    username_taken: username har redan tagits
+  organizations_controller:
+    secret_updated: Din organisationshemlighet uppdaterades
+    deletion_scheduled: 'Din organisation: " %{organization_name}" borttag schemaläggs. Du blir underrättad när den tas bort.'
+    not_deleted: Din organisation har inte tagits bort. Du måste vara en administratör, den enda medlemmen i företaget, och har inga artiklar som är anslutna till företaget.
+    created: Din organisation har skapats och du är en administratör.
+    updated: Din organisation har uppdaterats.
+  podcasts_controller:
+    podcast_suggested: Podcast föreslog
+  profiles_controller:
+    updated: Din profil har uppdaterats
+  rating_votes_controller:
+    not_upserted_successfully: Ej överfört lyckades
+  registrations_controller:
+    error:
+      recaptcha: Du måste slutföra reaptcha ✅
+      domain: är inte inkluderad i tillåtna domäner.
+  response_templates_controller:
+    response_template_error: 'Svarsmallsfel: %{errors}'
+    created: Din svarsmall " %{title}" har skapats.
+    deleted: Din svarsmall " %{title}" har tagits bort.
+    updated: Din svarsmall " %{title}" uppdaterades.
+  social_previews_controller:
+    fonts: Roboto | Roboto + Condensed
+  stories:
+    pinned_articles_controller:
+      not_found: hittades inte
+  stories_controller:
+    404_bio_not_found: 404 bio hittades inte
+    searching: '... söka'
+  stripe_active_cards_controller:
+    cannot_remove: Kan inte ta bort kort om du har ett aktivt medlemskap. Avbryta ditt medlemskap först.
+    cannot_update: Det gick inte att uppdatera faktureringsinformationen.
+    updated: Din faktureringsinformation har uppdaterats
+    removed: Ditt kort har tagits bort.
+  tag_adjustments_controller:
+    failure: 'Fel: %{errors}'
+    destroyed: Taggjustering förstörd
+  tags_controller:
+    tag_successfully_updated: "Taggen uppdaterades! \U0001F44D "
+  users_controller:
+    removed_admin: ' %{name} är inte längre ett administratörsnamn.'
+    removed_member: ' %{name} är inte längre en del av företaget.'
+    added_admin: ' %{name} är nu admin.'
+    provide_email: Du måste ange ett e-postmeddelande om du vill ta bort ditt konto.
+    provide_email_delete: Ange ett e-postmeddelande om du vill ta bort ditt konto
+    send_export: ' Export kommer att mejas till dig inom kort.'
+    invalid_secret: Den angivna företagshemligheten var ogiltig.
+    username_blank: Användarnamn får inte vara tomt
+    deletion_in_progress: Du har redan begärt att kontot ska tas bort. Kontrollera din mejl om du vill ha mer information.
+    joined_org: Du har gått med i %{organization_name}-organisationen.
+    left_org: Du har lämnat din organisation.
+    deletion_requested: Du har begärt borttagning av konto. Kontrollera din mejl om du vill ha mer information.
+    log_in_to_delete: Du måste vara inloggad för att gå vidare med kontoborttagning.
+    deletion_scheduled: Din kontoborttagning är schemalagd. Du blir underrättad när den tas bort.
+    removed_identity: Din %{provider}-konto togs bort.
+    updated_config: Din config har uppdaterats. Uppdatera för att se alla ändringar.
+    updated_profile: Din profil har uppdaterats.
+    token_expired: Elementet har upphört att gälla, begär en ny. Tokenerna varar bara i 12 timmar efter att borttagning av konto initieras.
+  video_states_controller:
+    related_article_not_found: Relaterad artikel hittades inte
+    video_state_updated: Videostatus uppdaterad
+

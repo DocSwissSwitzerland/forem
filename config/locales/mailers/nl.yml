@@ -1,0 +1,33 @@
+nl:
+  mailers:
+    digest_mailer:
+      from: Verteren
+      more_top_posts: meer top %{community} berichten
+      more_top_posts_based: meer top %{community} posten op basis van uw interesses
+      more_top_posts_from: meer van de community leest
+      more_trending_posts: meer trending %{community} berichten
+      more_trending_posts_picked: meer trending %{community} posts gekozen voor u
+      other_posts: andere berichten die u wilt
+      other_community_posts: andere %{community} posts die u wilt
+      other_top_posts: andere top %{community} berichten
+      other_trending_posts: andere trending %{community} berichten
+    notify_mailer:
+      account_deleted: ' %{community}-Bevestiging Account wissen'
+      deletion_requested: ' %{community}-Account wissen aangevraagd'
+      trusted: Gefeliciteerd! Je bent nu een "vertrouwde" gebruiker op %{community}!
+      moderator: 'Gefeliciteerd! U bent de moderator voor # %{tag_name}'
+      new_follower: Gevolgd door %{community}
+      new_mention: ' %{name} heeft u zojuist vermeld in hun %{type}'
+      org_deleted: ' %{community}-Bevestiging Organisatie Wissen'
+      new_reply: ' %{name} heeft geantwoord op uw %{type}'
+      feedback: Bedankt voor uw rapport over %{community}
+      export: De export van uw content is gereed
+      unread_notifications:
+        one: "\U0001F525 U hebt %{count} ongelezen meldingen op %{community}"
+        other: "\U0001F525 U hebt %{count} ongelezen meldingen op %{community}"
+      new_badge: Je hebt net een badge.
+      video_upload: Uw video-upload is voltooid
+    verification_mailer:
+      from: ' %{community} E-mailverificatie <%{email}>'
+      verify_ownership: Controleer Uw %{community}-account Eigendom
+

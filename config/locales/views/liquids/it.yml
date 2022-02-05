@@ -1,0 +1,44 @@
+it:
+  views:
+    liquids:
+      github:
+        view: Vista su GitHub
+      medium:
+        logo: Logo Medio
+      poll:
+        show_results: Mostrami solo i risultati
+      reddit:
+        author: 'Autore: %{autore}'
+        see: Vedi post completo
+      stackexchange:
+        answer:
+          text_html: ' %{risposta} re: %{titolo}'
+          answer: risposta
+        answers: 'Risposte: %{count}'
+        comments: 'Commenti: %{conteggio}'
+        open:
+          answer: Open Full Answer
+          article: Articolo completo aperto
+          question: Domanda completa aperta
+      twitter:
+        view: Visualizza su Twitter
+      user_subscription:
+        confirm:
+          subtitle: Conferma sottoscrittore
+          button_text: Conferma abbonamento
+          cancel_text: Annulla
+          text_html: Condividerete il vostro indirizzo email %{email}, username, nome e URL del profilo DEV con %{username}. Una volta fatto questo, non è possibile sfatare questo.
+        logged_out: Devi prima firma in DEV.
+        sign_in: Firma In
+        subscribe:
+          apple:
+            button: Iscriviti
+            desc_html: Ehi, ecco! Sembra che quando hai creato il tuo account DEV hai firmato con Apple usando un indirizzo email relay privato. Se ti piacerebbe sottoscrivere, per favore %{aggiornamento} prima ad un indirizzo email diverso.
+            update: aggiornare il proprio indirizzo email in Impostazioni
+          button: Iscriviti
+          desc_html: Sottoscrivi con %{email} l'indirizzo email associato al tuo account DEV. Per utilizzare un indirizzo email diverso è possibile %{aggiornamento}.
+          update: aggiornare il proprio indirizzo email in Impostazioni
+      wikipedia:
+        logo: Wikipedia Logo
+        view: Vista su Wikipedia
+

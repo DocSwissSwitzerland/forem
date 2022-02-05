@@ -1,0 +1,87 @@
+nl:
+  views:
+    notifications:
+      meta:
+        description: Postvak voor meldingen voor %{community}
+        og:
+          title: Meldingen- %{community}
+      heading: Kennisgevingen
+      badge:
+        heading_html: U hebt de %{badge}-badge ontvangen
+        awarded_html: "U krijgt ook %{credits} om te gebruiken voor %{listings} als u iets hebt dat u wilt promoten. \U0001F389"
+        credits:
+          one: ' %{count} nieuwe kredieten'
+          other: ' %{count} nieuwe kredieten'
+        listings: lijsten van community's
+        more: Meer informatie over aanbiedingen
+        profile: Bezoek uw profiel
+      broadcast:
+        visit_html: Bezoek %{settings} om uw meldingen te beheren.
+        settings: Instellingen
+      comment:
+        commented_html: ' %{user} heeft gereageerd op %{title}'
+        first_html: ' %{user} heeft zijn eerste reactie op %{title} geschreven'
+        first_reply: "Geef ze hun eerste antwoord! \U0001F389"
+        left_html: ' %{user} heeft een reactie achtergelaten op %{title}.'
+        replied_html: ' %{user} heeft geantwoord op een thread in %{title}'
+        report: Alle negatieve reacties zijn 100% privé. Als dit commentaar in strijd is met de gedragscode, gelieve de stemming/verslag als ongepast te doen.
+        welcome_html: Aangezien zij nieuw zijn voor de gemeenschap, kunt u een mooi antwoord achterlaten om hen te helpen zich welkom te voelen? <strong>Dank u!</strong>
+      error:
+        subtitle: Er is een fout opgetreden!
+        desc: Dit is vastgelegd en we volgen het.
+      follow:
+        and_html: ' %{first} en %{second} volgden u!'
+        and_other_html:
+          one: ' %{first} en %{anderen} volgde u!'
+          other: ' %{first} en %{anderen} volgde u!'
+        others:
+          one: ' %{count} anderen'
+          other: ' %{count} anderen'
+        single_html: ' %{name} heeft u gevolgd!'
+      load: Meer laden
+      mention:
+        article_html: ' %{user} heeft u vermeld in een post %{if_org}'
+        comment_html: ' %{user} heeft u vermeld in een reactie'
+        article_mobile: ' %{user} heeft u vermeld in de post %{title}'
+        comment_mobile: ' %{user} heeft u vermeld in een reactie op %{title}'
+        if_org_html: ' onder %{org}'
+      milestone:
+        heading_html: Uw post %{title} heeft %{type} doorgegeven!
+        check: Uw dashboard controleren
+        intro: "\U0001F389\U0001F389\U0001F389\U0001F389\U0001F389\U0001F389\U0001F389\U0001F389"
+        type:
+          View:
+            one: ' %{count} views'
+            other: ' %{count} views'
+          Reaction:
+            one: ' %{count} reacties'
+            other: ' %{count} reacties'
+      nav:
+        aria_label: Kennisgevingen
+        all: Alle
+        comments: Commentaar
+        posts: Posten
+      new_post:
+        if_org_html: ' onder %{org}'
+        verb_html: ' %{user} heeft een nieuwe post %{if_org} gemaakt'
+      reacted:
+        and_html: ' %{first} en %{last}'
+        and_other_html:
+          one: ' %{first} en %{count} anderen'
+          other: ' %{first} en %{count} anderen'
+        verb_html:
+          one: ' %{start} %{actors} reageerde op %{title} met %{end} %{reacties}'
+          other: ' %{start} %{actors} reageerde op %{title} met %{end} %{reacties}'
+        your:
+          article: uw artikel
+          comment: uw reactie
+      settings: Instellingen
+      tag:
+        heading: "Hey er \U0001F44B"
+        add_html: Moderators hebben de tag <strong> %{tag}</strong> toegevoegd aan uw post %{title}. Mods voelden dat deze tag uw artikel vertegenwoordigde.
+        check_html: ' %{other} uitchecken wat mogelijk meer geschikt is'
+        other: andere populaire tags
+        reason: 'Reden voor actie:'
+        remove_html: Moderators hebben de tag <strong> %{tag}</strong> verwijderd uit uw post %{title}. Bepaalde tags hebben speciale indieningsrichtlijnen en mods moeten tags aanpassen om de community het best te kunnen aanpassen.
+        support_html: "Bedankt voor het deelnemen van %{community}! %{email} \U0001F917"
+

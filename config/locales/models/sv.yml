@@ -1,0 +1,131 @@
+sv:
+  models:
+    api_secret:
+      api_limit_reached: API-hemlig gräns på 20 per användare har uppnåtts
+    application_record:
+      uninferrable: Det gick inte att infra en dekoreringsfunktion för %{class}.
+    article:
+      a_post_by: En post med %{user_name}
+      video_unpermitted: kan inte läggas till av medlem utan behörighet
+      video_processing: kan inte ställas in på true om video fortfarande bearbetas
+      cannot_search_tags_for: 'Det går inte att söka i etiketter för: %{tag}'
+      cannot_search_tags_for_tags: 'Det går inte att söka i etiketter för: %{tags}'
+      unique_coauthor: co-author-IDn måste vara unika
+      too_many_tags: överskrida maximalt 4 taggar
+      is_too_long: är för lång.
+      invalid_date: måste anges med formatet DD/MM/ÅÅÅÅ med aktuellt eller tidigare datum
+      series_unpermitted: måste vara en som du har behörighet att skicka till
+      invalid_coauthor: måste vara giltiga användar-IDn
+      same_author: får inte vara samma användare som upphovsmannen
+      must_not_have_spaces: får inte ha blanktecken
+      published: Publicerad
+      unique_url: har redan tagits. Mejl %{email} för ytterligare detaljer.
+      mention_too_many:
+        one: Du kan inte nämna mer än %{count} användare i en post!
+        other: Du kan inte nämna mer än %{count} användare i en post!
+    broadcast:
+      single_active: Du kan bara ha en aktiv meddelandesändning
+    comment:
+      deleted: '[utgår ]'
+      has_been_deleted: ' %{type} har tagits bort.'
+      hidden: '[döljs efter upphovsman ]'
+      is_not_valid: är ogiltig.
+      locked: Diskussionen är låst på den här posten
+      type:
+        Article: Artikel
+        item: objekt
+        PodcastEpisode: Podsändningsavsnitt
+      suspended_too_many: Användaren avaktiverade för många interaktioner för många interaktioner, som utlöstes av autovomit.
+      mention_too_many:
+        one: Du kan inte nämna mer än %{count} användare i en kommentar!
+        other: Du kan inte nämna mer än %{count} användare i en kommentar!
+    feedback_message:
+      reported: (du) har tidigare rapporterat denna URL.
+    github_issue:
+      issue_comment_not_found: Utfärdandekommentar %{emitte_id} hittades inte
+      issue_not_found: Utfärda %{emitte_id} hittades inte
+    html_variant:
+      no_edits: kan inte ändras efter publicerad och godkänd
+    identity:
+      no_email_msg: Inget mejl hittades. Relänka %{provider}-kontot för att undvika fel.
+    listing:
+      too_many_tags: överskrida max 8 taggar
+      too_many_linebreaks: har för många radbrytningar. Inte mer än 12 tillåtna.
+      image_not_allowed: är inte tillåtet att ta med bilder.
+      liquid_not_allowed: är inte tillåtet att ta med likvida taggar.
+    mention:
+      is_not_valid: är ogiltig.
+    organization:
+      integer_only: Endast heltal. Inga tecken tillåtna.
+      reserved_word: '%<value>s är ett reserverat ord. Kontakta platsadministratörer för att registrera din organisation.'
+    page:
+      body_must_exist: måste finnas om body_html eller body_json inte finns.
+    podcast:
+      slug_is_reserved: Slam är reserverat
+    podcast_episode_appearance:
+      provided_role_is_not_valid: tillhandahållen roll är inte giltig
+    poll_skip:
+      cannot_vote_more_than_once: kan inte rösta mer än en gång i en opinionsundersökning
+    poll_vote:
+      cannot_vote_more_than_once: kan inte rösta mer än en gång i en opinionsundersökning
+    profile_pin:
+      only_five: får inte ha mer än fem totala befattningar
+      pin_unpermitted: måste ha rätt behörighet för PIN
+    rating_vote:
+      not_permitted: är inte tillåten att vidta dessa åtgärder.
+    reaction:
+      is_not_valid: är ogiltig.
+    response_template:
+      user_nil_only: kan inte ha ett användar-ID som är associerat.
+      comment_markdown: Kommentarsmallar måste använda Markdown som innehållstyp.
+      email_text: E-postmallar måste använda vanlig text eller HTML som innehållstyp.
+      limit_reached: Svarsmallsgränsen på 30 per användare har uppnåtts
+    settings:
+      campaign:
+        share_your_project: Dela ditt projekt
+      community:
+        message: får inte innehålla tecknet "<" eller "> "
+        new_forem: Ny Forem
+        user: användare
+      general:
+        community_sponsors: Community Sponsors
+        the_community_mascot: Den gemensamma maskot
+      user_experience:
+        message: 'måste vara en hexhex för 3 eller 6 tecken (börjar med #)'
+    sponsorship:
+      invalid_type: är inte en sponsor typ
+      already_sponsored: Taggen är redan sponsrad
+      only_one_level: Du kan bara ha en sponsring av %{levels}
+      level:
+        gold: guld
+        silver: silver
+        bronze: brons
+    tag:
+      alias_for: alias_for måste referera till ett befintligt märkord
+    tag_adjustment:
+      too_many_tags: 4 taggar max per artikel.
+      unpermitted: har inte behörighet att justera dessa taggar
+      not_live: valt för borttagning är inte en aktuell levande tagg.
+      unique: kan inte vara ett redan justerat märkord
+    tweet:
+      tweet_not_found: Tweet hittades inte
+    user:
+      could_not_send: Det gick inte att sända bekräftelse.  %{e_message}
+      password_not_matched: matchar inte lösenordsbekräftelse
+      has_been_banished: Han har blivit förvisad.
+      is_taken: ' %{username} tas.'
+      user_could_not_be_saved: Användaren kunde inte sparas.  %{e_message}
+      username_is_reserved: username är reserverat
+    user_block:
+      cant_be_the_same: kan inte vara samma som blocked_id
+    user_subscription:
+      non_apple: Kan inte prenumerera på ett Apple-privat relä. Uppdatera mejl.
+      source_not_found: Källan hittades inte. Kontrollera att %{source} är aktiv!
+      not_enabled: Användarprenumerationer är inte aktiverade för källan.
+    users:
+      deleted_user:
+        name: '[Borttagen användare ]'
+      setting:
+        invalid_hex: är inte en giltig hex-färg
+        invalid_rss: är inte en giltig RSS/Atom-kanal
+

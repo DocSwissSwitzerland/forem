@@ -1,0 +1,121 @@
+es:
+  api_secrets_controller:
+    generated: 'Se ha generado la clave de API: %{secret}'
+    revoked: Se ha revocado la clave de API.
+  application_controller:
+    bad_request: 'Error: Solicitud incorrecta'
+    not_authorized: 'Error: no autorizado'
+    please_sign_in: Por favor, inicie sesión
+  articles_controller:
+    deleted: El artículo se ha suprimido correctamente.
+  comments_controller:
+    create:
+      success: created
+      failure: el comentario ya existe
+    delete:
+      error: Algo salió mal; Comentario NO suprimido.
+      notice: El comentario se ha suprimido correctamente.
+    markdown: 'Se ha producido un error en la rebaja: %{error}'
+    markdown_html: "<p>\U0001F614 Se ha producido un error en la rebaja</p><hr><p> %{error}</p>"
+    moderated: No permitido debido a la acción de moderación
+  confirmations_controller:
+    email_sent: ¡Correo electrónico enviado! Póngase en contacto con el soporte en %{email} si tiene problemas para recibir las instrucciones de confirmación.
+  credits_controller:
+    done:
+      one: ' %{count} nuevos créditos comprados!'
+      other: ' %{count} nuevos créditos comprados!'
+  devices_controller:
+    not_found: No encontrado
+  discussion_locks_controller:
+    locked: La discusión se ha bloqueado satisfactoriamente.
+    unlocked: La discusión se ha desbloqueado satisfactoriamente.
+  email_subscriptions_controller:
+    badge_notifications: notificaciones de identificación
+    comment_notifications: notificaciones de comentarios
+    digest_emails: ' %{community} resumen de correos electrónicos'
+    follower_notifications: notificaciones de seguidores
+    mention_notifications: Mencionar notificaciones
+    this_list: esta lista
+    unread_notifications: Notificaciones no leídas
+  feedback_messages_controller:
+    error_fill: "Asegúrese de que las formas están llenas. \U0001F916 Otros errores posibles: %{errors}"
+    n_a: N/D
+    submitted: El informe se envía
+  follows_controller:
+    already_followed: ya seguido
+    daily_limit: ¡Sigue el límite de la cuenta diaria!
+    followed: seguida
+    unfollowed: desseguida
+  github_repos_controller:
+    repo_not_found: No se ha encontrado el repositorio de GitHub
+    github_unauthorized: 'GitHub no autorizado: %{e_message}'
+  image_uploads_controller:
+    server_error: Se ha producido un error de servidor.
+  listings_controller:
+    deleted: La lista se ha suprimido correctamente.
+    no_credit: No hay suficientes créditos disponibles
+  omniauth_callbacks_controller:
+    log_in_error: 'Error de inicio de sesión: %{e}'
+    username_taken: nombre de usuario ya se ha tomado
+  organizations_controller:
+    secret_updated: El secreto de la organización se ha actualizado
+    deletion_scheduled: 'La supresión de la organización: " %{organization_name}" está planificada. Se le notificará cuando se suprima.'
+    not_deleted: La organización no se ha suprimido; debe ser un administrador, el único miembro de la organización y no tener artículos conectados a la organización.
+    created: La organización se ha creado correctamente y es un administrador.
+    updated: La organización se ha actualizado correctamente.
+  podcasts_controller:
+    podcast_suggested: Podcast sugerido
+  profiles_controller:
+    updated: Su perfil se ha actualizado
+  rating_votes_controller:
+    not_upserted_successfully: No se ha podido actualizar correctamente
+  registrations_controller:
+    error:
+      recaptcha: Debe completar la recaptcha ✅
+      domain: no se incluye en los dominios permitidos.
+  response_templates_controller:
+    response_template_error: 'Error de plantilla de respuesta: %{errors}'
+    created: Se ha creado la plantilla de respuesta " %{title}".
+    deleted: La plantilla de respuesta " %{title}" se ha suprimido.
+    updated: La plantilla de respuesta " %{title}" se ha actualizado.
+  social_previews_controller:
+    fonts: Roboto | Roboto + condensado
+  stories:
+    pinned_articles_controller:
+      not_found: no encontrado
+  stories_controller:
+    404_bio_not_found: 404 bio no encontrado
+    searching: '... búsqueda'
+  stripe_active_cards_controller:
+    cannot_remove: No se puede quitar la tarjeta si usted tiene una membresía activa. Por favor, cancele primero su membresía.
+    cannot_update: Se ha producido un problema al actualizar la información de facturación.
+    updated: Se ha actualizado la información de facturación
+    removed: La tarjeta se ha eliminado satisfactoriamente.
+  tag_adjustments_controller:
+    failure: 'Error: %{errors}'
+    destroyed: Ajuste de etiqueta destruido
+  tags_controller:
+    tag_successfully_updated: "La etiqueta se ha actualizado correctamente. \U0001F44D "
+  users_controller:
+    removed_admin: ' %{name} ya no es un administrador.'
+    removed_member: ' %{name} ya no forma parte de la organización.'
+    added_admin: ' %{name} es ahora un administrador.'
+    provide_email: Por favor, proporcione un correo electrónico para eliminar su cuenta.
+    provide_email_delete: Por favor, proporcione un correo electrónico para eliminar su cuenta
+    send_export: ' La exportación le será enviada por correo electrónico en breve.'
+    invalid_secret: El secreto de organización dado no era válido.
+    username_blank: El nombre de usuario no puede
+    deletion_in_progress: Ya ha solicitado la supresión de la cuenta. Por favor, compruebe su correo electrónico para obtener más instrucciones.
+    joined_org: Se ha unido a la organización %{organization_name}.
+    left_org: Usted ha dejado su organización.
+    deletion_requested: Ha solicitado la supresión de la cuenta. Por favor, compruebe su correo electrónico para obtener más instrucciones.
+    log_in_to_delete: Debe haber iniciado la sesión para continuar con la supresión de la cuenta.
+    deletion_scheduled: La supresión de la cuenta está planificada. Se le notificará cuando se suprima.
+    removed_identity: La cuenta de %{provider} se ha eliminado satisfactoriamente.
+    updated_config: Se ha actualizado la configuración. Renueve para ver todos los cambios.
+    updated_profile: El perfil se ha actualizado correctamente.
+    token_expired: Su señal ha caducado, solicite una nueva. Las señales sólo duran 12 horas después de iniciar la supresión de la cuenta.
+  video_states_controller:
+    related_article_not_found: Artículo relacionado no encontrado
+    video_state_updated: Estado de vídeo actualizado
+

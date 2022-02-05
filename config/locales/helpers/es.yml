@@ -1,0 +1,238 @@
+es:
+  helpers:
+    label:
+      listing:
+        body_markdown: Carrocería Markdown
+        expires_at: Fecha de caducidad personalizada
+        location: Ubicación
+        organization_id: Puesto bajo una organización
+        tag_list: Etiquetas
+        title: Título
+      organization:
+        name: Nombre
+        slug: Nombre
+        profile_image: Imagen de perfil
+        nav_image: Logotipo para temas de luz
+        dark_nav_image: Logotipo para temas oscuros
+        twitter_username: Nombre de usuario
+        github_username: Nombre de usuario de GitHub
+        url: Dirección URL
+        tag_line: Línea de etiqueta
+        summary: Resumen
+        location: Ubicación
+        email: Soporte electrónico
+        company_size: Tamaño de organización
+        story: Nuestra historia
+        tech_stack: Nuestra pila
+        cta_body_markdown: Texto del cuerpo
+        cta_button_text: Texto del enlace
+        cta_button_url: URL de enlace
+        proof: Prueba
+      podcast:
+        android_url: URL de Android
+        description: Descripción
+        feed_url: Url de alimentación
+        image: Imagen
+        itunes_url: URL de Itunes
+        main_color_hex: Hex de color principal
+        overcast_url: URL de conversión
+        pattern_image: Imagen de patrón
+        slug: Slug
+        soundcloud_url: URL de nube de sonido
+        title: Título
+        twitter_username: Nombre de usuario
+        website_url: Dirección URL
+      response_template:
+        title: Título
+        content: Cuerpo del comentario (Markdown)
+      user:
+        name: Nombre
+        email: Correo electrónico
+        username: Nombre
+        profile_image: Imagen de perfil
+      users_notification_setting:
+        email_newsletter: Enviar mensajes de correo electrónico semanales
+        email_digest_periodic: Envíame un resumen periódico de los principales puestos de mis etiquetas
+        email_membership_newsletter: Envíenme mensajes de correo electrónico de afiliación
+        email_tag_mod_newsletter: Enviar correos electrónicos de boletín de moderador de etiquetas
+        email_community_mod_newsletter: Enviar mensajes de correo electrónico del moderador de la
+        email_comment_notifications: Envíame un correo electrónico cuando alguien me responda en un hilo de comentarios
+        email_follower_notifications: Enviarme un correo electrónico cuando alguien nuevo me sigue
+        email_mention_notifications: Envíame un correo electrónico cuando alguien me mencione
+        email_badge_notifications: Enviarme un correo electrónico cuando recibo un identificador
+        email_unread_notifications: Enviarme recordatorios ocasionales de que tengo notificaciones no leídas en %{community}
+        mobile_mention_notifications: Enviarme una notificación de envío cuando alguien me menciona
+        mobile_comment_notifications: Enviarme una notificación push cuando alguien me responda en un hilo de comentarios
+        welcome_notifications: Enviarme consejos ocasionales sobre cómo mejorar mi experiencia %{community}
+        reaction_notifications: Enviar notificaciones cuando alguien reacciona a mis comentarios o mensajes
+        mod_roundrobin_notifications: Enviar notificaciones de mod de éxito de comunidad ocasional
+      users_setting:
+        feed_url: URL de fuente RSS
+    placeholder:
+      organization:
+        name: Acme Inc.
+        slug: acmeinc
+        url: https://yoursite.com
+        location: Halifax, Nueva Escocia
+        email: mail@example.com
+        company_size: '...'
+        story: '...'
+        tech_stack: '...'
+        cta_body_markdown: '...'
+        cta_button_text: Visitar el sitio de Acme
+        cta_button_url: https://example.com
+        proof: '...'
+      response_template:
+        title: '...'
+      user:
+        name: John Doe
+        email: john.doe@example.com
+        username: johndoe
+        feed_url: https://yoursite.com/feed
+    application_helper:
+      app_logo: Logotipo de aplicación
+      follow:
+        aria_label:
+          Organization: 'Seguir organización: %{name}'
+          Tag: 'Código de seguimiento: %{name}'
+          User: 'Seguir al usuario: %{name}'
+          default: 'Seguir %{type}: %{name}'
+        text:
+          Organization: Continuación
+          Tag: Continuación
+          User: Continuación
+          default: Continuación
+      required: Obligatorio
+      subtitle:
+        week: Puestos principales esta semana
+        month: Primeros puestos este mes
+        year: Primeros puestos este año
+        infinity: Todos los puestos
+        latest: Últimas publicaciones
+      title_text: ' %{title}- %{marco temporal}'
+    articles_helper:
+      logo: ' %{service_name} logotipo'
+      most_comments: Más comentarios
+      most_reactions: Mayoría Reacciones
+      most_views: Más vistas
+      recently_created: Creado recientemente
+      recently_published: Publicado recientemente
+    authentication_helper:
+      any_of_those: cualquiera de los
+      email_password: Correo electrónico y contraseña
+      reminder: 'Recordatorio: ha utilizado %{method} para autenticar su cuenta, por lo que utilice %{dem} para iniciar la sesión si se le solicita.'
+      that: que
+      invite_only: No puede hacerlo hasta que inhabilite la modalidad de sólo invitación
+    comments_helper:
+      ama: ama
+      ask_me_anything: Pregúntame cualquier cosa
+      author: Autor
+      like: 'Como:'
+      nbsp_likes_html:
+        one: '&nbsp; como'
+        other: '&nbsp; likes'
+    feedback_messages_helper:
+      offender:
+        body: >
+          Hola,
+
+
+          Se nos ha llamado la atención de que ha violado el Código de Conducta y/o Condiciones de Uso de %{community}.
+
+
+          Si este comportamiento continúa, es posible que necesitemos suspender su cuenta de %{community}.
+
+
+          Si usted piensa que ha habido un error, por favor responda a este correo electrónico y vamos a tomar otra mirada.
+
+           %{comunidad} Equipo
+        subject: ' %{community} Código de violación de conducta'
+      reporter:
+        body: >
+          Hola, Gracias por flaquear el contenido que puede estar en violación del Código de Conducta de %{comunidad} y/o nuestras Condiciones de Uso. Estamos examinando su informe y tomaremos las medidas oportunas.
+
+          acción.
+
+          Agradecemos su ayuda mientras trabajamos para fomentar un entorno positivo e inclusivo para todos! %{community} Team
+        subject: ' %{comunidad} Informe'
+      affected:
+        body: >
+          Hola,
+
+
+          Notamos algunos comentarios (hechos por otros) en su post que violan el Código de Conducta de %{community} y/o nuestros Términos de Uso. Tenemos tolerancia cero para este comportamiento y estamos tomando las medidas apropiadas.
+
+
+          Gracias por ser impresionante, y por favor no dude en enviarnos un correo electrónico con cualquier pregunta! Damos la bienvenida a todos los comentarios e ideas mientras continuamos trabajando para fomentar una comunidad abierta e inclusiva.
+
+           %{comunidad} Equipo
+        subject: Aviso de cortesía de %{community}
+    listing_helper:
+      option:
+        one: ' %{cl_name} ( %{count} Crédito)'
+        other: ' %{cl_name} ( %{count} Créditos)'
+    organization_helper:
+      option: ' %{org_name} ( %{ungasted})'
+    rate_limit_checker_helper:
+      day:
+        one: día
+        other: días
+      general: ¿Cuántas %{thing} puede crear un nuevo miembro ( %{temporal} o menos) dentro de un periodo de 5 minutos?
+      published:
+        title: Número límite de puestos creados
+        description: ¿Cuántas publicaciones puede crear alguien dentro de un periodo de 30 segundos?
+      antispam:
+        title: Limitar el número de puestos creados por un nuevo miembro
+      update:
+        title: Limitar el número de actualizaciones a un puesto
+        description: ¿Cuántas actualizaciones puede hacer alguien dentro de un periodo de 30 segundos? Actualizar documentos de API cuando se cambia.
+      upload:
+        title: Número límite de imágenes cargadas
+        description: ¿Cuántas imágenes puede subir alguien dentro de un periodo de 30 segundos?
+      user:
+        title: Limitar el número de cambios que alguien puede hacer en su cuenta
+        description: ¿Cuántos cambios puede hacer alguien a su cuenta de usuario dentro de un periodo de 30 segundos?
+      follow:
+        title: Número límite de seguidores que alguien puede seguir diariamente
+        description: ¿Cuántas personas pueden seguir alguien en un día?
+      reaction:
+        title: Limitar el número de reacciones a un post o comentario
+        description: ¿Cuántas veces puede alguien reaccionar a un post o comentar dentro de un periodo de 30 segundos?
+      feedback:
+        title: Limitar el número de veces que alguien puede denunciar el abuso
+        description: ¿Cuántas veces alguien puede denunciar el abuso en un periodo de 5 minutos?
+      comment:
+        title: Número límite de comentarios creados
+        description: ¿Cuántos comentarios puede crear alguien dentro de un periodo de 30 segundos?
+      comment_antispam:
+        title: Limitar el número de comentarios creados por un nuevo miembro
+      mention:
+        title: Número de límite de  en una publicación o comentario
+        description: ¿Cuántas veces puede alguien @-mencionar a otros usuarios en un post o comentario?
+      listing:
+        title: Limitar el número de listados creados
+        description: ¿Cuántos listados puede crear alguien dentro de un periodo de 1 minuto?
+      organization:
+        title: Número límite de organizaciones creadas
+        description: ¿Cuántas organizaciones pueden crear alguien dentro de un periodo de 5 minutos?
+      subscription:
+        title: Limitar el número de veces que alguien puede suscribirse a la etiqueta líquida de la lista de correo
+        description: ¿Cuántas veces alguien puede suscribirse a una lista de correo dentro de un periodo de 30 segundos?
+      recipient:
+        title: Limitar el número de emails generales que enviamos
+        description: ¿Cuántos correos electrónicos podemos enviar a alguien dentro de un periodo de 2 minutos?
+      confirmation:
+        title: Limitar el número de correos electrónicos de confirmación que enviamos
+        description: ¿Cuántas veces podemos enviar un correo electrónico de confirmación a alguien dentro de un periodo de 2 minutos?
+      thing:
+        posts: posteos
+        comments: Observaciones
+    settings_helper:
+      advanced: Avanzado
+      beginner: Principiante
+      expert: Experto
+      mid_level: Nivel medio
+      novice: Novatos
+    social_link_helper:
+      n_a: N/D
+

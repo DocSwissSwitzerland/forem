@@ -1,0 +1,24 @@
+it:
+  views:
+    actions:
+      copy:
+        text: Copiato in Clipboard
+        button: Collegamento copia
+      more:
+        title: More ...
+        aria_label: Condividi opzioni post
+      share:
+        facebook:
+          text: Condividi su Facebook
+        hackernews:
+          text: Condividi su Hacker News
+        linkedin:
+          text: Condividi a LinkedIn
+        reddit:
+          text: Condividi su Reddit
+        twitter:
+          text: Condividi su Twitter
+          query: '" %{article}" per %{autore}'
+        link: Condividi Post via ...
+        report: Report Abuso
+

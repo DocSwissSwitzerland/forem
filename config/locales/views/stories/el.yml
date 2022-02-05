@@ -1,0 +1,25 @@
+el:
+  views:
+    stories:
+      meta:
+        description_tagged: ' %{tag} περιεχόμενο στο  %{name}'
+        page: ' Σελίδα  %{σελίδα}'
+        rss: ' %{name} RSS Feed'
+      heading: -Θέσεις
+      discuss: '#discuss'
+      follow: 'Ακολούθη:'
+      menu:
+        aria_left: Nav-αριστερό κουμπί
+        aria_right: Nav-κουμπί-δεξιά
+      sort:
+        aria_label: 'Προβολή θέσεων από:'
+        aria_tagged: Προβολή θέσεων με προσδιοριστικά
+        relevant: (')
+        week: '"Εβδομάδα"'
+        month: 'Μήνας:'
+        year: "' Έτος"
+        infinity: -Άπειρο
+        latest: Τελευταία.
+        signin_html: "\U0001F44B <a href=\"%{path}\">Συνδεθείτε</a> για να βρείτε τις θέσεις ταξινόμησης <strong>top</strong> και <strong>τελευταίας</strong>."
+        top: Πάνω!
+

@@ -1,0 +1,33 @@
+it:
+  devise:
+    failure:
+      invited: Hai un invito in sospeso, accettalo per finire di creare il tuo account.
+    invitations:
+      edit:
+        header: Impostare la password
+        submit_button: Andiamo a Started
+      invitation_removed: Il tuo invito è stato rimosso.
+      invitation_token_invalid: Il token di invito fornito non è valido!
+      new:
+        header: Invia invito
+        submit_button: Invia un invito
+      no_invitations_remaining: Nessun invito rimanente
+      send_instructions: Una email di invito è stata inviata in %{email}.
+      updated: La tua password è stata impostata correttamente. Ora sei firmato.
+      updated_not_active: La tua password è stata impostata correttamente.
+    mailer:
+      invitation_instructions:
+        accept_instructions: È possibile accettare l'invito cliccando questo link
+        accept: Accetta Invito
+        accept_until: Questo invito scadrà dopo %{due_date}.
+        hello: Hello %{name}
+        ignore: Se non si desidera accettare l'invito, si prega di ignorare questa email. Il tuo account non verrà creato fino a quando non accedi al link sopra e impostate la password.
+        someone_invited_you: Sei stato invitato ad unire la community %{community_name} alla %{url}.
+        subject: Istruzioni di invito
+  time:
+    formats:
+      devise:
+        mailer:
+          invitation_instructions:
+            accept_until_format: '%B, %Y %I: %M %p'
+

@@ -1,0 +1,146 @@
+es:
+  views:
+    comments:
+      meta:
+        title_root: Discusión de %{title}
+        description: Un artículo de la comunidad
+        og:
+          title: Discusión de %{title}
+          title_rel: ' %{root}- %{site}'
+          title_root: '[Debate] %{title}- %{site}'
+          description: ' %{site} Comentario'
+      parent:
+        subtitle_html: ' %{start} Discusión en: %{end} %{title}'
+        metadata_html: ' %{name} %{on}'
+        date: ' en %{date}'
+        full: Debate completo
+        read: Leer post completo
+        view: Ver publicación
+        view_full:
+          one: Ver discusión completa ( %{count} comentario)
+          other: Ver discusión completa ( %{count} comentarios)
+        reply_html: ' %{start} Respuestas para: %{end} %{title}'
+      delete:
+        heading: ¿Está seguro de que desea suprimir este comentario?
+        desc_html: No puede deshacer esta acción, quizás sólo desea %{action} en su lugar?
+        action: Editar
+        submit: Suprimir
+        edit: Editar
+        cancel: Desestimación
+      collapse: Colapso
+      edit: Editar comentario
+      edited:
+        text_html: '&bull; Se ha editado %{on}'
+        on_html: en %{date}
+      expand: Ampliar
+      hidden:
+        text_html: Algunos comentarios han sido ocultados por el autor del post- %{info}
+        info: Más información
+      hider:
+        description_html: ¿Está seguro de que desea ocultar este comentario? Se ocultará en su post, pero seguirá siendo visible a través del comentario %{permalink}.
+        hide_child: Ocultar comentarios hijo también
+        note_html: Para más acciones, puede considerar el bloqueo de esta persona y/o %{reporting}
+        permalink: permalink
+        reporting: abuso de información
+        submit: Confirmar
+      locked: La discusión se ha bloqueado. No se pueden añadir nuevos comentarios.
+      orphan:
+        deleted: '[Comentario de un puesto suprimido]'
+      re:
+        text_html: ' %{re} %{title}'
+        re: 'Re: '
+      settings:
+        meta:
+          title: Valores de comentario
+        heading: Valores de comentario
+        state:
+          show:
+            subtitle: Mostrar notificaciones de hebras
+            desc: Recibirás todas las notificaciones para este comentario y cualquiera de tus comentarios en esta cadena.
+          mute:
+            subtitle: Silenciar notificaciones de hebras
+            desc: Todas las notificaciones para este comentario y cualquiera de sus comentarios en la hebra están actualmente silenciadas.
+        subscribe:
+          subtitle: Suscripción
+          desc: Todavía está suscrito a todos los comentarios en la hebra más amplia, lo que significa que todavía recibirá notificaciones para las respuestas a este comentario.
+          mute: Notificaciones mudas
+          unmute: Notificaciones no silenciadas
+      quality:
+        low: Comentario marcado como baja calidad/no constructiva por la comunidad.
+        conduct: Ver Código de Conducta
+        hidden:
+          icon: Info
+          text:
+            visible_in_permalink: Comentario oculto por post-autor-hebra sólo visible en esta permalink
+            accessible_via_permalink: Comentario oculto por post-autor-sólo accesible a través de permalink
+      write:
+        errors:
+          one: '1 error ha prohibido que se guarde este comentario:'
+          other: ' %{count} errores ha prohibido que se guarde este comentario:'
+        field:
+          aria_label: Añadir un comentario a la discusión
+          placeholder: Añadir a la discusión
+          submit: Carga
+          templates: Plantillas
+          upload: Imagen de carga
+          use: Utilizar una plantilla de respuesta
+          guide:
+            title: Guía de rebajas
+            icon: Guía del editor
+        template:
+          article: Este post viene con una plantilla de comentarios
+          create:
+            subtitle: Crear plantilla
+            desc: Las plantillas le permiten responder rápidamente a preguntas frecuentes o almacenar fragmentos de código para su reutilización.
+          moderator: Moderador
+          personal: Personal
+        submit: Presentar
+        preview: Vista previa
+        cancel: Desestimación
+      menu:
+        aria_label: Cambiar menú desplegable
+        icon: Menú desplegable
+        copy:
+          aria_label: Copiar enlace al comentario de %{user}
+          text: Enlace de copia
+        settings:
+          aria_label: Ir a la configuración de comentarios de %{user}
+        action:
+          aria_label: ' %{action} %{user} comentario'
+          hide: Ocultar
+          unhide: Deshilar
+          hide_text: Ocultar
+          unhide_text: Deshilar
+        moderate:
+          aria_label: Comentario moderado de %{user}
+        report:
+          aria_label: Informe %{user} del comentario como abusivo o que viola nuestro código de conducta y/o términos y condiciones
+      footer:
+        heart:
+          title: Corazón
+          icon: 'Como comentario: '
+          count_html: ' %{num} %{me gusta}'
+          text: 'Como:'
+        reply:
+          aria_label: Respuesta a un comentario ...
+          icon: Botón de comentario
+          done: Respuesta
+          text: Respuesta
+          placeholder: Respuesta ...
+        thread:
+          icon: Rosca
+          text: Rosca
+        view:
+          icon: Botón de vista
+          text: Vista
+      count:
+        one: ' %{count} comentario'
+        other: ' %{count} comentarios'
+      empty: Nuevo
+      add: Añadir comentario
+      summary:
+        count_html:
+          one: ' %{count} %{start} comentario %{end}'
+          other: ' %{count} %{start} comentarios %{end}'
+        title: Observaciones
+

@@ -1,0 +1,55 @@
+sv:
+  views:
+    credits:
+      meta:
+        title: Tack till
+      ledger:
+        class:
+          listing: Listar
+        category: Kategori
+        item: Objekt
+        cost: Kostnad (krediter)
+        date: Datum
+        misc: Diverse artiklar
+      listing:
+        create: Skapa en lista
+        dashboard: Gå till Listings-kontrollpanel
+      new:
+        meta:
+          title: Inköpskrediter
+        heading: Inköpsreduktionsenheter för @ %{name}
+        form:
+          amount:
+            label: Mängd som ska köpta
+            placeholder: Ange alla belopp
+          method:
+            label: Betalningsmetod
+            number: '**** **** **** %{last}'
+            exp: ' %{mm} / %{yy}'
+            add: Lägg till nytt kort
+          submit: Slutför inköpta
+          submitting: Skickar ...
+          note_org: '*Alla organisationssadminer har åtkomst till krediter ägda av företaget'
+        switch:
+          org: Växla till %{name}
+          user: Växla till personligt köp
+        status:
+          subtitle:
+            org: Hur många krediter har %{name}?
+            user: Hur många krediter har jag för närvarande?
+          desc:
+            org: ' %{name} har %{count} krediter.'
+            user: Du har %{count} krediter.
+        how:
+          subtitle: Hur kan jag få krediter?
+          desc_html: Medlemmar får <strong>5 krediter</strong> för varje profilbricka som du tjänar.
+      purchase: Köp ytterligare krediter
+      tag: 'Märkord: %{name}'
+      status:
+        user:
+          one: Du har %{count} personlig kredit att använda
+          other: Du har %{count} personliga krediter att använda
+        org_html:
+          one: ' %{name} har %{num} kredit att använda'
+          other: ' %{name} har %{num} krediter att använda'
+

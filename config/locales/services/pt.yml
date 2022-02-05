@@ -1,0 +1,109 @@
+pt:
+  services:
+    analytics_service:
+      no_stats: Você não pode visualizar as estadas deste artigo
+    article_with_video_creation_service:
+      unpublished_video: Vídeo inédito ~ %{rand}
+    authentication:
+      authenticator:
+        not_allowed: Desculpe, mas o domínio para o seu endereço de e-mail não é permitido. Este São pode ter signup limitado para apenas domínios de email especificados ou bloquear este domínio específico da junção.
+      providers:
+        apple:
+          name: ' %{first} %{last}'
+        not_available: Provedor %{nome} não está disponível!
+        not_enabled: O provedor %{nome} não está ativado!
+    badges:
+      award_beloved_comment:
+        message: "Você é famoso! [Este é o comentário] ( %{comentário}) para o qual você está sendo reconhecido. \U0001F604"
+      award_streak:
+        longest: 16 semanas! Você alcançou a maior sequência de escrita possível. Isso faz com que você seja elegível para questes especiais no futuro. Continue com as contribuições incríveis para nossa comunidade!
+        message:
+          one: "Parabéns por alcançar este streak! A escrita consistente é difícil. O próximo crachá de streak que você pode obter é o %{count} Semana Badge. \U0001F609"
+          other: "Parabéns por alcançar este streak! A escrita consistente é difícil. O próximo crachá de streak que você pode obter é o %{count} Semana Badge. \U0001F609"
+      award_yearly_club:
+        message:
+          one: Feliz %{comunidade} aniversário! Você pode acreditar que já foi %{conto} ano já?!
+          other: Feliz %{comunidade} aniversário! Você pode acreditar que já foi %{count} anos já?!
+      congrats: Parabéns !!!
+      thank_you: Muito obrigado por suas contribuições!
+    broadcasts:
+      welcome_notification:
+        generator:
+          welcome: 'Notificação de boas-vindas: %{key}'
+    error_messages:
+      clean:
+        parse_error: Houve um problema analisando o YAML de matéria frontais. Talvez você precise escapar de uma citação ou de um cólon ou algo assim. E-mail %{email} se você está tendo problemas.
+    html:
+      parser:
+        enter_fullscreen_mode: Entrar no modo fullscreen
+        exit_fullscreen_mode: Sair do modo fullscreen
+    mailchimp:
+      bot:
+        member_in_compliance_state: Membro No Estado De Compliance
+    markdown_processor:
+      parser:
+        invalid_markdown_detected: Marcação inválida detectada!
+    moderator:
+      banish_user:
+        spam_account: conta de spam
+      manage_activity_and_roles:
+        need_super: Você precisa de status super admin para tomar esta ação
+      merge_user:
+        duplicate: O usuário tem métodos de autenticação duplicados nas duas contas. Por favor, faça a verificação dupla e exclua a identidade que o usuário não está mais usando. Esta geralmente é a conta social já excluída, ou o método de autenticação vinculado ao usuário a ser excluído.
+        multiple: O usuário que está sendo excluído já possui dois ou mais métodos de autenticação. Tem certeza que este é o usuário certo a ser excluído? Se for assim, um super admin precisará fazer isso a partir do console para estar seguro.
+        same_user: Não é possível mesclar os mesmos dois IDs de usuário
+    notifications:
+      new_comment:
+        new: "\U0001F4AC Novo Comentário"
+      new_mention:
+        new: "\U0001F5E3️ Nova Menção"
+    payments:
+      customer:
+        usd: usd
+      errors:
+        select_payment_method: Por favor, selecione um método de pagamento
+      process_credit_purchase:
+        charge:
+          one: Compra de créditos %{count}.
+          other: Compra de créditos %{count}.
+    rate_limit_checker:
+      invalid_key: 'Chave de Cache inválida: nenhum componente exclusivo presente'
+      limit_reached:
+        one: Limite de taxa atingido, tente novamente em %{count} segundos
+        other: Limite de taxa atingido, tente novamente em %{count} segundos
+    slack:
+      messengers:
+        article_fetched_feed:
+          body: >
+            Novo Artigo Recuperado via RSS: %{título}
+             %{url}
+        article_published:
+          body: >
+            Novo Artigo Publicado: %{título}
+             %{url}
+        feedback:
+          anonymous_report: '*Relatório anônimos:'
+          final_message: >2-
+             %{user_detail} Categoria: %{category} Relatório Interno: %{reports_url} * _ Reportar URL: %{reported_url} _ *
+            ----- *Message: * %{message}
+          body: >
+            *Logged in user: * reporter: %{username}- %{url} e-mail: <mailto:%{email}|%{email}>
+        potential_spammer:
+          body: >
+            Potencial usuário de spam! %{url}
+        sponsorship:
+          body: >2
+             %{user} comprou um patrocínio %{type} para %{organization}
+    spam:
+      article_handler:
+        suspended_too_many: Usuário suspenso por muitos artigos de spammy, acionados por autovômito.
+    user_subscriptions:
+      create_from_controller_params:
+        source_not_found: Fonte não encontrada.
+        email_mismatch: Incompatibilidade de e-mail do assinante.
+    users:
+      remove_role:
+        remove_self: Os admins não podem remover funções de si mesmos.
+        remove_super: As funções Super Admin não podem ser removidas.
+        error: Havia uma questão removendo esse papel.  %{e_message}
+

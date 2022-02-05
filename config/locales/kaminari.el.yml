@@ -1,0 +1,9 @@
+el:
+  views:
+    pagination:
+      first: '&laquo; Πρώτα'
+      last: Τελευταίες &raquo;
+      next: Επόμενο &rsa;
+      previous: '&lsaquo; Προηγούμενο'
+      truncate: '&hellip;'
+

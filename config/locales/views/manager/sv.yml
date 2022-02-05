@@ -1,0 +1,25 @@
+sv:
+  views:
+    manager:
+      meta:
+        title: Hantera %{title}
+      error:
+        pins: " %{error} \U0001F62C"
+      tools:
+        heading: 'Verktyg:'
+        subtitle: 'Erfarenhetsnivå:'
+        text_html: Är din post skriven mer för en nybörjare eller en avancerad publik? Justera den här nivån som en <em>försiktig</em> -indikator som kommer att hjälpa till att visa tjänsten till de personer som kommer att ha störst nytta av det.
+      nav:
+        dashboard: Kontrollpanel
+        text: "\U0001F449 Hantera inlägg"
+      rating:
+        heading: Erfarenhetsnivå
+        text: Vem är denna tjänst mest relevant för?
+        lower: "\U0001F448 Beginner"
+        higher: "Expert \U0001F449"
+      tips:
+        heading: 'Tips:'
+        text_1: Skriv en egen tweet om posten, som beskriver personligen varför du skrev det eller varför folk skulle tycka att det var användbart. Vi kanske retweetar dig.
+        text_2_html: 'Dela för att länka aggregeringar, t.ex. <a href="https://www.reddit.com">Reddit</a>. Försök att välja de mest ämnesspecifika subredditerna, t.ex. <a href="https://www.reddit.com/r/javascript">/r/javascript</a> eller <a href="https://www.reddit.com/r/python">/r/python</a>osv. <em>Varning: jerks-och troll kan lura.</em>'
+        text_3: Dela med dina arbetskamrater eller lokala gemenskaper. Be folk att lämna frågor till dig i kommentarerna. Det är ett bra sätt att få igång ytterligare diskussioner.
+

@@ -1,0 +1,110 @@
+pl:
+  liquid_tags:
+    asciinema_tag:
+      invalid_asciinema_id: 'Niepoprawny identyfikator Asciinema: %{id}'
+    blogcast_tag:
+      invalid_blogcast_id: Niepoprawny identyfikator blogcasty
+    codepen_tag:
+      invalid_codepen_url: Niepoprawny adres URL CodePen
+      invalid_options: Niepoprawne opcje
+    codesandbox_tag:
+      invalid_id: 'Błąd CodeSandbox: Niepoprawny identyfikator'
+    comment_tag:
+      invalid_comment: Niepoprawny identyfikator komentarza lub adres URL
+    dotnet_fiddle_tag:
+      invalid_dotnetfiddle_url: Niepoprawny adres URL obszaru DotnetFiddle
+    gist_tag:
+      invalid_filename: Niepoprawna nazwa pliku
+      invalid_format: 'Niepoprawny odsyłacz Gist: %{link} Dowiązania muszą być zgodne z następującym formatem: https://gist.github.com/username/gist_id'
+      invalid_gist_link: 'Niepoprawny odsyłacz do środowiska Gist: należy podać odsyłacz Gist.'
+    git_pitch_tag:
+      invalid_gitpitch_url: Niepoprawny adres URL GitPitch
+    github_tag:
+      github_issue_tag:
+        comment_for: Komentarz dla
+        commented_on: skomentował
+        invalid_github_issue_pull: Niepoprawny problem GitHub, żądanie pobrania lub odsyłacz do komentarza
+        posted_on: Opublikowano w
+      github_readme_tag:
+        invalid_options: 'Znacznik GitHub: niepoprawne opcje: %{invalid}-obsługiwane opcje: %{valid}'
+        invalid_github_repository: Niepoprawna ścieżka repozytorium GitHub lub adres URL
+    glitch_tag:
+      invalid_glitch_id: Niepoprawny identyfikator pliku Glitch
+      invalid_options: Niepoprawne opcje
+    instagram_tag:
+      invalid_instagram_id: Niepoprawny identyfikator Instagrama
+    js_fiddle_tag:
+      invalid_jsfiddle_url: Niepoprawny adres URL pakietu JSFiddle
+      invalid_options: Niepoprawne opcje
+    jsitor_tag:
+      invalid_jsitor_link: Niepoprawny odsyłacz JSitor. Więcej informacji można znaleźć w podręczniku edytora.
+    kotlin_tag:
+      invalid_kotlin_playground: Niepoprawny adres URL serwera Playground Kotlin
+    link_tag:
+      not_exist: 'Artykuł, którego szukasz, nie istnieje: %{slug}'
+      not_exist_link: 'Artykuł, którego szukasz, nie istnieje: {% link %{slug}%}'
+    liquid_tag_base:
+      invalid_context: Niepoprawny kontekst. Ten znacznik płynny może być używany tylko w %{valid}.
+      no_source_found: Nie znaleziono źródła
+    listing_tag:
+      invalid_url_or_slug: Niepoprawny adres URL lub szg. Nie znaleziono listy.
+    medium_tag:
+      invalid_link_url: Niepoprawny adres URL odsyłacza lub adres URL odsyłacza nie istnieje
+    next_tech_tag:
+      invalid_url: Niepoprawny adres URL współużytkowanego zasobu współużytkowanego
+    null_tag:
+      liquid_tag_is_disabled: Znacznik liquid# %{tag_name} jest wyłączony
+    organization_tag:
+      invalid_slug: Niepoprawna nazwa slug organizacji
+      invalid_url: Niepoprawny adres URL organizacji
+    parler_tag:
+      invalid_parler_url: Niepoprawny adres URL programu Parler
+    podcast_tag:
+      invalid_podcast_link: Niepoprawny odsyłacz podcastu
+    poll_tag:
+      invalid_poll_id: Niepoprawny identyfikator odpytywania
+    reddit_tag:
+      invalid_reddit_link: 'Niepoprawny odsyłacz Reddit: %{url}'
+    replit_tag:
+      invalid_replit_id: Niepoprawny adres URL Replit lub @user/slug
+    runkit_tag:
+      runkit_tag_is_invalid: Znacznik Runkit jest niepoprawny
+    slideshare_tag:
+      invalid_slideshare_key: Niepoprawny klucz Slideshare
+    soundcloud_tag:
+      invalid_soundcloud_url: "Niepoprawny adres URL pliku Soundcloud-spróbuj wyłączyć wszystkie params URL: '?something = value'"
+    speakerdeck_tag:
+      invalid_speakerdeck_id: Niepoprawny id. Speakera
+    spotify_tag:
+      invalid_spotify_uri: Niepoprawny identyfikator URI elementu Spotify lub adres URL.
+    stackblitz_tag:
+      invalid_options: Niepoprawne opcje
+      invalid_stackblitz_id: Niepoprawny identyfikator Stackblitz
+    stackery_tag:
+      missing_argument: Stackery-Brak argumentów właściciela i/lub nazwy repozytorium
+    stackexchange_tag:
+      post_not_found: 'Nie można znaleźć wypowiedzi o tym identyfikatorze: {% %{tag} %{input}%}'
+      invalid_id: 'Niepoprawny identyfikator wymiany stosu: {% %{tag} %{input}%}'
+      invalid_site: 'Niepoprawny serwis wymiany stosu: {% %{tag} %{input}%}'
+    tag_tag:
+      invalid_tag_name: niepoprawna nazwa znacznika
+    tweet_tag:
+      invalid_twitter_id: Niepoprawny identyfikator lub adres URL serwisu Twitter
+    twitch_tag:
+      invalid_twitch_id: Niepoprawny identyfikator Twitch, Slug lub URL
+    twitter_timeline_tag:
+      invalid_url: Niepoprawny adres URL Timeline Twittera
+    unified_embed:
+      tag:
+        invalid_url: Adres URL embed jest niepoprawny
+    user_subscription_tag:
+      submit: Wyślij
+      submitting: Wprowadzanie ...
+      subscribed: Jesteś już zasubskrybowany.
+    wikipedia_tag:
+      section_not_found: Nie udało się znaleźć artykułu w Wikipedii- %{input}
+      article_not_found: 'Nie można znaleźć artykułu Wikipedii- %{input}: %{response_detail}'
+      invalid_wikipedia_url: Niepoprawny adres URL Wikipedii
+    youtube_tag:
+      invalid_youtube_id: Niepoprawny identyfikator lub adres URL serwisu YouTube
+

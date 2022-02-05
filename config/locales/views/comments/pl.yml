@@ -1,0 +1,146 @@
+pl:
+  views:
+    comments:
+      meta:
+        title_root: Dyskusja o %{title}
+        description: Artykuł ze społeczności
+        og:
+          title: Dyskusja o %{title}
+          title_rel: ' %{root}- %{site}'
+          title_root: '[Dyskusja] %{title}- %{site}'
+          description: ' %{site} Comment'
+      parent:
+        subtitle_html: ' %{start} Dyskusja na temat: %{end} %{title}'
+        metadata_html: ' %{name} %{on}'
+        date: ' w dniu %{date}'
+        full: Pełna dyskusja
+        read: Przeczytaj cały wpis
+        view: Wyświetl wpis
+        view_full:
+          one: Wyświetl pełną dyskusję ( %{count} komentarz)
+          other: Wyświetl pełną dyskusję ( %{count} komentarzy)
+        reply_html: ' %{start} odpowiedzi dla: %{end} %{title}'
+      delete:
+        heading: Czy na pewno usunąć ten komentarz?
+        desc_html: Nie można cofnąć tego działania, być może po prostu chcesz %{action} zamiast tego?
+        action: Edytuj
+        submit: Usuń
+        edit: Edytuj
+        cancel: Odrzuć
+      collapse: Zwiń
+      edit: Edytowanie komentarza
+      edited:
+        text_html: '&bull; Edytowane %{on}'
+        on_html: w dniu %{date}
+      expand: Rozwiń
+      hidden:
+        text_html: Niektóre komentarze zostały ukryte przez autora wypowiedzi- %{info}
+        info: dowiedzieć się więcej
+      hider:
+        description_html: Czy na pewno ukryć ten komentarz? Zostanie on ukryty w swoim poście, ale nadal będzie widoczny przez komentarz %{permalink}.
+        hide_child: Ukryj komentarze podrzędne
+        note_html: W przypadku dalszych czynności można rozważyć zablokowanie tej osoby i/lub %{reporting}
+        permalink: permalink
+        reporting: zgłaszanie nadużyć
+        submit: Potwierdź
+      locked: Dyskusja została zablokowana. Nie można dodać nowych komentarzy.
+      orphan:
+        deleted: '[Komentarz do usuniętej wypowiedzi]'
+      re:
+        text_html: ' %{re} %{title}'
+        re: 'Odp: '
+      settings:
+        meta:
+          title: Ustawienia komentarza
+        heading: Ustawienia komentarza
+        state:
+          show:
+            subtitle: Wyświetlanie powiadomień o wątkach
+            desc: Użytkownik otrzyma wszystkie powiadomienia dotyczące tego komentarza i dowolnych komentarzy w tym łańcuchu.
+          mute:
+            subtitle: Wyciszanie powiadomień wątków
+            desc: Wszystkie powiadomienia dotyczące tego komentarza i dowolnych komentarzy w wątku są obecnie wyciszone.
+        subscribe:
+          subtitle: Subskrypcja
+          desc: Nadal subskrybujesz wszystkie komentarze w szerszym wątku, co będzie oznaczał, że nadal będziesz otrzymywać powiadomienia o odpowiedziach na ten komentarz.
+          mute: Powiadomienia o wyciszonych
+          unmute: Anuluj wyciszenie powiadomień
+      quality:
+        low: Komentarz oznaczony jako niskojakościowy/niekonstruktywny przez społeczność.
+        conduct: Wyświetl kod postępowania
+        hidden:
+          icon: Informacja
+          text:
+            visible_in_permalink: Komentarz ukryty przez post autor-wątek widoczny tylko w tym permalink
+            accessible_via_permalink: Komentarz ukryty przez post autor-wątek jest dostępny tylko przez permalink
+      write:
+        errors:
+          one: '1 błąd zabroniony tego komentarza przed zapisami:'
+          other: 'Liczba błędów ( %{count}) zabronionych tego komentarza przed zapisami:'
+        field:
+          aria_label: Dodaj komentarz do dyskusji
+          placeholder: Dodaj do dyskusji
+          submit: Prześlij
+          templates: Szablony
+          upload: Prześlij obraz
+          use: Użyj szablonu odpowiedzi
+          guide:
+            title: Podręcznik markdown
+            icon: Podręcznik edytora
+        template:
+          article: Ten wpis jest dostarczany z szablonem komentarzy
+          create:
+            subtitle: Utwórz szablon
+            desc: Szablony pozwalają na szybkie odpowiadanie na często zadawane pytania lub zapisywanie fragmentów kodu w celu ponownego użycia.
+          moderator: Moderator
+          personal: Osobiste
+        submit: Wyślij
+        preview: Podgląd
+        cancel: Odrzuć
+      menu:
+        aria_label: Przełącz menu rozwijane
+        icon: Menu rozwijane
+        copy:
+          aria_label: Kopiuj odsyłacz do komentarza %{user}
+          text: Kopiuj odsyłacz
+        settings:
+          aria_label: Przejdź do ustawień komentarzy użytkownika ( %{user})
+        action:
+          aria_label: " %{action} %{user} ' komentarz"
+          hide: Ukryj
+          unhide: Anuluj ukrycie
+          hide_text: Ukryj
+          unhide_text: Anuluj ukrycie
+        moderate:
+          aria_label: Umiarkowany (%) komentarz użytkownika {user}
+        report:
+          aria_label: Zgłos komentarz %{user} jako abusive lub naruszający nasz kodeks postępowania i/lub warunki
+      footer:
+        heart:
+          title: serce
+          icon: 'Podobny komentarz: '
+          count_html: ' %{num} %{polubienia}'
+          text: Podobne
+        reply:
+          aria_label: Odpowiedz na komentarz ...
+          icon: Przycisk komentarza
+          done: Udzielono odpowiedzi
+          text: Odpowiedz
+          placeholder: Odpowiedz ...
+        thread:
+          icon: Wątek
+          text: Wątek
+        view:
+          icon: Przycisk Wyświetl
+          text: Widok
+      count:
+        one: ' %{count} komentarz'
+        other: 'Liczba komentarzy: %{count}'
+      empty: Nowy
+      add: Dodaj komentarz
+      summary:
+        count_html:
+          one: ' %{count} %{start} komentarz %{end}'
+          other: ' %{count} %{start} komentarze %{end}'
+        title: Komentarze
+

@@ -1,0 +1,33 @@
+de:
+  mailers:
+    digest_mailer:
+      from: Verdauung
+      more_top_posts: mehr top %{community} Beiträge
+      more_top_posts_based: Mehr Top- %{community} Beiträge basierend auf Ihren Interessen
+      more_top_posts_from: mehr Top-Lesevorgänge aus der Community
+      more_trending_posts: ' %{community} -Beiträge zu trending%'
+      more_trending_posts_picked: Mehr trending %{community} Beiträge für Sie ausgewählt
+      other_posts: andere Stellen, die Sie vielleicht mögen
+      other_community_posts: Andere %{community} -Beiträge, die Sie möglicherweise
+      other_top_posts: andere obere %{community} -Stellen
+      other_trending_posts: andere trending %{community} -Stellen
+    notify_mailer:
+      account_deleted: ' %{community}-Bestätigung der Account-Löschung'
+      deletion_requested: ' %{community}-Anforderung zum Löschen des Accounts angefordert'
+      trusted: Congrats! Sie sind jetzt ein "vertrauenswürdiger" Benutzer in %{community}!
+      moderator: 'Congrats! Sie sind der Moderator für # %{tag_name}'
+      new_follower: Sie sind nur auf %{community} gefolgt.
+      new_mention: ' %{name} hat Sie gerade in %{type} erwähnt'
+      org_deleted: ' %{community}-Bestätigung der Organisationslöschungsbestätigung'
+      new_reply: " %{name} antwortete auf ' %{type}'"
+      feedback: Vielen Dank für Ihren Bericht über %{community}
+      export: Der Export Ihres Inhalts ist bereit
+      unread_notifications:
+        one: "\U0001F525 Sie verfügen über %{count} ungelesene Benachrichtigungen in %{community}"
+        other: "\U0001F525 Sie verfügen über %{count} ungelesene Benachrichtigungen in %{community}"
+      new_badge: Sie haben gerade ein Abzeichen bekommen
+      video_upload: Ihr Video-Upload ist abgeschlossen
+    verification_mailer:
+      from: ' %{community} E-Mail-Prüfung <%{email}>'
+      verify_ownership: Überprüfen Sie Ihre %{community} -Kontoeigentumsrechte
+

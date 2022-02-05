@@ -1,0 +1,64 @@
+es:
+  views:
+    tags:
+      meta:
+        title: Etiquetas
+        description: Etiquetas a seguir en %{community}
+        og:
+          description: ' %{community} es genial!'
+      heading:
+        default: Etiquetas principales
+        search_results: Resultados de búsqueda para %{q}
+      search:
+        aria_labels:
+          search_input: Término de búsqueda de etiquetas
+          submit: Etiquetas de búsqueda
+        placeholder: Buscar etiqueta
+      edit:
+        meta:
+          title: Editar %{tag}
+        admin: Administrador
+        help: Ayuda
+        view: Vista
+        form:
+          pretty_name:
+            label: Nombre bonito
+            placeholder: Este es el nombre en la parte superior de la página de presentación.
+          bg_color_hex:
+            label: Hex de color Bg
+          text_color_hex:
+            label: Color de texto hexadecimal
+          short_summary:
+            label: Breve resumen
+            placeholder: Breve descripción de lo que se trata de esta etiqueta.
+          wiki_body_markdown:
+            label: Marcación del cuerpo del wiki
+            placeholder: Esta es una sección sobre 'acerca'. Siéntase libre de añadir un FAQ, recursos adicionales, etc.
+          rules_markdown:
+            label: Rebaja de reglas
+            placeholder: Opcional-Se puede utilizar para los retos, es decir, las directrices de envío.
+          submit: Guardar
+      follow: Continuación
+      following_tags: 'Etiquetas siguientes:'
+      moderator:
+        text_html: 'separados por comas, el espacio es opcional. Ejemplo: %{code}'
+        code: 123
+        placeholder: 'separados por comas, el espacio es opcional. Ejemplo: 1,2,3'
+      published:
+        one: 1 post publicado
+        other: ' %{count} publicaciones publicadas'
+      sidebar:
+        about: 'acerca de # %{tag}'
+        admin: Administrador
+        edit: Editar
+        guidelines: directrices de presentación
+        moderate: Moderado
+        mods: Los moderadores
+        new: Crear post
+        older: 'Mensajes antiguos del # %{tag}'
+        published:
+          one: 1 Post Publicado
+          other: ' %{count} Mensajes publicados'
+        sponsor: ' %{tag} está patrocinado por'
+      sponsor: '| Patrocinado por %{org} ❤️'
+

@@ -1,0 +1,80 @@
+pt:
+  views:
+    listings:
+      meta:
+        description: ' %{comunidade} Listagem'
+      heading: Listagens
+      back: Voltar
+      delete:
+        subtitle: Tem certeza de que deseja excluir esta listagem?
+        description:
+          text_html: Não é possível desfazer essa ação, talvez você apenas deseje %{action} em vez disso?
+          edit: editar
+          unpublish: unpublicar
+        edit: Editar
+        submit: Excluir
+        unpublish: Não publicar
+      edit:
+        heading: Editar Listagem
+        bump:
+          subtitle: Bump sua listagem
+          button: Listagem de bump
+          description: Você pode bump sua listagem pelo mesmo preço que a listagem original
+          last: 'Último Publicado / Bumped: %{date}'
+        notice: Você só pode editar título / body/tags de rascunhos ou dentro das primeiras 24 horas de listagem ou esbarragem
+        not_published:
+          text_html: Esta listagem é %{não} publicada.
+          aside_html: Esta listagem é %{não} publicada
+          not: não
+        publish: Publicar listagem
+        unpublish: Listagem de despublicação
+        update: Listando de
+        update_draft: Atualizar rascunho
+      to_edit: Editar
+      errors:
+        one: '1 Um erro proibiu esta listagem de ser salva:'
+        other: ' %{count} erros proibia esta listagem de ser salva:'
+      expired: Esta listagem expirou.
+      form:
+        body_markdown:
+          description: 400 caracteres máx, 12 line break max, nenhuma imagem permitida, * a marcação é encorajada *. Por favor, inclua um método de contato se necessário.
+          placeholder: '...'
+        category:
+          label: Categoria
+          placeholder: Conferência PCP (1 Crédito)
+          summary: Detalhes / regras da categoria
+        expiry:
+          description: Se aplicável para eventos sensíveis ao tempo, prazos, etc.
+        location:
+          description: 32 caracteres max, texto simples
+          label: Local (Se aplicável para eventos, etc.)
+          placeholder: Nova York
+        no_credit: Você precisa de pelo menos um crédito para criar uma listagem.
+        organization:
+          description: Postar em nome de uma organização gasta os créditos da organização.
+          none: Nenhum
+        publish: Publicar listagem
+        purchase: Créditos de compra
+        save: Salvar rascunho
+        save_notice: Você não será cobrado créditos para salvar um rascunho.
+        tags:
+          placeholder: Adicionar até 8 tags ...
+        title:
+          placeholder: 128 caracteres max, texto simples
+      nav:
+        aria_label: Listagens
+        create: Criar
+        manage: Gerenciar
+      new:
+        meta:
+          title: Nova Listagem
+        heading: Criar uma Listagem Comunitária
+        buy: Comprar mais
+        disclaimer:
+          subtitle: Disclaimer
+          description1: ' %{comunidade} admins podem modificar tags e categorias para garantir a precisão. Podemos também derrubar e restituir listagens inapropriadas.'
+          description2: Listagens expiram 30 dias após serem publicadas ou "esburacadas".
+        organization: Créditos da organização
+        personal: Créditos pessoais
+      preview_icon: Logotipo do DEV
+

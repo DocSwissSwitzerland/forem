@@ -1,0 +1,150 @@
+de:
+  views:
+    dashboard:
+      meta:
+        title: Dashboard- %{site}
+      heading: Dashboard
+      actions:
+        mobile:
+          posts: Beiträge ( %{num})
+          followers: Follower ( %{num})
+          following_tags: Folgende Tags ( %{num})
+          following_users: Folgende Benutzer ( %{num})
+          following_orgs: Nach Organisationen ( %{num})
+          following_pods: Nach Podcasts ( %{num})
+        posts: Beiträge
+        series: Serie
+        followers: Anhänger
+        following_tags: Folgende Tags
+        following_users: Folgende Benutzer
+        following_orgs: Folgende Organisationen
+        following_pods: Folgende Podcasts
+        listings: Anzeigen
+        analytics: Analyse
+        for_org: Analyse für %{org}
+        upload: Video hochladen
+      analytics:
+        meta:
+          title: Analyse
+        heading: Analysedashboard für %{name}
+        desc_1: Willkommen beim Analyse-Dashboard, dem Home of Indepth-Benutzermessdaten, damit die Autoren datengesteuerte Entscheidungen über das %{members} -Ökosystem treffen können.
+        desc_2: In diesem Dashboard werden tiefe Einsichten hervorgehoben, die insbesondere für die Beziehungen zwischen %{members}, Autoren und seriösen Bloggern relevant sind.
+        back: "\U0001F448 Zurück zum Hauptdashboard"
+        your: Ihr Dashboard
+        org: Dashboard ' %{org} Analytics'
+      article:
+        heading:
+          text_html: ' %{archiviert} %{title}'
+          archived: '[Archiviert] '
+        archived: Archiviert
+        published: 'Veröffentlicht:'
+        published_html: 'Veröffentlicht: %{date}'
+        edited: 'Bearbeitet:'
+        edited_html: 'Bearbeitet: %{date}'
+        series: 'Serie:'
+        series_html: <strong>Series:</strong>  %{series}
+        draft: Entwurf
+        reactions:
+          title: Reaktionen
+          icon: Reaktionen
+          text_html:
+            one: ' %{num} Reaktion'
+            other: ' %{num} Reaktionen'
+        comments:
+          title: Kommentare
+          icon: Kommentare
+          text_html:
+            one: ' %{num} Kommentar'
+            other: ' %{num} Kommentare'
+        views:
+          title: Ansichten
+          icon: Ansichten
+          lt_25: < 25
+          text_html:
+            one: Ansicht ' %{scale}'
+            other: ' %{scale} Ansichten'
+          u_25: unter 25
+        subscriptions:
+          title: Subskriptionen
+          icon: Daten
+          number: Subskriptionen ( %{num})
+        delete: Löschen
+        unpin: Unpin
+        pin:
+          title: Kontaktstift zum Profil
+          button: Kontaktstift zum Profil
+          text: Pin
+        manage:
+          aria_label: 'Post verwalten: %{title}'
+          text: Verwalten
+        lock: Diskussion sperren
+        unlock: Diskussion entsperren
+        edit:
+          aria_label: 'Post bearbeiten: %{title}'
+          text: Bearbeiten
+        more:
+          title: 'Weitere Optionen für den Beitrag: %{title}'
+          icon: Mehr ...
+        stats: Statistik
+        archive: Archivpost
+        unarchive: Unarchiv-Beitrag
+        author: Autor
+        author_is: 'AUTHOR: '
+        save: Speichern
+        submit: Autorenänderung übergeben
+      followers:
+        heading: Dashboard " Anhänger
+        empty: Du hast noch keine Follower ...
+      following_orgs:
+        heading: Dashboard " Folgende Organisationen
+        empty: Sie folgen noch keiner Organisation ...
+      following_pods:
+        heading: Dashboard " Folgende Podcasts
+        empty: Du folgst noch keine Podcasts ...
+      following_tags:
+        heading: Dashboard " Folgende Tags
+        adjust: Passen Sie die Taggewichtung an, um Ihren Hausfeed zu ändern Höhere Werte bedeuten mehr Auftritte für diesen Tag.
+        anti:
+          title: Dieses Tag hat negative Folgegewichtung
+          text: Anti-follow
+        default: Standard 1.0
+        empty: Sie folgen noch keine Tags ...
+        number:
+          aria_label: ' %{name}, Taggewichtung'
+        update: Wertigkeiten aktualisieren
+      following_users:
+        heading: Dashboard " Folgende Benutzer
+        empty: Sie folgen keinem Benutzer ...
+      listings:
+        meta:
+          title: Übersicht über Listen
+      posts:
+        heading: Beiträge
+        archived: Archivierte anzeigen
+        option:
+          creation-desc: Kürzlich erstellt
+          published-desc: Kürzlich veröffentlicht
+          views-desc: Die meisten Ansichten
+          reactions-desc: Die meisten Reaktionen
+          comments-desc: Die meisten Kommentare
+          aria_label: Sortieren nach
+        org: ' %{name} ( %{num})'
+        personal: Personal
+        empty:
+          desc: Hier können Sie Ihre Beiträge verwalten, aber Sie haben noch nichts geschrieben.
+          new: Schreibe deinen ersten Beitrag jetzt
+      subscriptions:
+        meta:
+          title: Abonnements %{title}
+        heading: Subskriptionen
+        subhead:
+          text_html: ' %{für} %{source}'
+          for: für
+        empty: Sie haben noch keine Abonnenten für diesen %{kind}.
+      summary:
+        reactions: Gesamtpost-Reaktionen
+        views: Gesamtpostansichten
+        listings: Erstellte Listen
+        credits: Verfügbare Gutschriften
+        lt_500: < 500
+

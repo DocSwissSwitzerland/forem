@@ -1,0 +1,28 @@
+sv:
+  views:
+    editor:
+      meta:
+        title: Redigera inlägg
+      heading:
+        new: Nytt inlägg
+      create: Skapa inlägg
+      close:
+        icon: Stängning
+        title: Stäng redigeraren
+      cover_image:
+        add: Lägg till en omslagsbild
+        change: Förändring
+      edit: Redigera
+      modes: Visa postlägen
+      new_title: Ny posttitel här ...
+      preview: Förhandsgranska
+      video:
+        progress:
+          heading: ⏳ Videoomvanddning Pågår ⏳
+          notice_1: Du får ett e-postmeddelande när processen är klar.
+          notice_2: Det här är en vanlig opublicerad post. Lägg till titel / tagg/body/etc, och markera sedan så som publicerats efter att videon har bearbetat bearbetningen.
+        submit_image:
+          button: Ändra ändring
+          text: 'Förhandsgranskningsbild-URL: '
+          placeholder: Ny miniatyrbilds-URL
+

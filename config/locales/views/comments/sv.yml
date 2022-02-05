@@ -1,0 +1,146 @@
+sv:
+  views:
+    comments:
+      meta:
+        title_root: Diskussion av %{title}
+        description: En artikel från gemenskapen
+        og:
+          title: Diskussion av %{title}
+          title_rel: ' %{root}- %{site}'
+          title_root: '[Diskussion ] %{title}- %{site}'
+          description: ' %{site} kommentar'
+      parent:
+        subtitle_html: ' %{start} Diskussion på: %{end} %{title}'
+        metadata_html: ' %{name} %{on}'
+        date: '  %{date}'
+        full: Fullständig diskussion
+        read: Läsa hela inlägg
+        view: Visa inlägg
+        view_full:
+          one: Visa fullständig diskussion ( %{count} kommentar)
+          other: Visa fullständig diskussion ( %{count} kommentarer)
+        reply_html: ' %{start} Replies för: %{end} %{title}'
+      delete:
+        heading: Är du säker på att du vill ta bort den här kommentaren?
+        desc_html: Du kan inte ångra den här åtgärden. Du kanske bara vill ha %{action} i stället?
+        action: Redigera
+        submit: Radera
+        edit: Redigera
+        cancel: Ignorera
+      collapse: Komprimera
+      edit: Redigera kommentar
+      edited:
+        text_html: '&bull; Redigerat %{on}'
+        on_html: ' %{date}'
+      expand: Expandera
+      hidden:
+        text_html: Vissa kommentarer har dolats av postens författare- %{info}
+        info: ta reda på mer
+      hider:
+        description_html: Är du säker på att du vill dölja den här kommentaren? Den kommer att döljas i din post, men den kommer fortfarande att visas via kommentarens %{permalink}.
+        hide_child: Dölj underordnade kommentarer också
+        note_html: För ytterligare åtgärder kan du överväga att blockera den här personen och / eller %{rapportering}
+        permalink: permalink
+        reporting: Rapporteringsmissbruk
+        submit: Bekräfta
+      locked: Diskussionen har varit låst. Nya kommentarer kan inte läggas till.
+      orphan:
+        deleted: '[Kommentar från en borttagen post ]'
+      re:
+        text_html: ' %{re} %{title}'
+        re: 'Re: '
+      settings:
+        meta:
+          title: Kommentarsinställningar
+        heading: Kommentarsinställningar
+        state:
+          show:
+            subtitle: Visa trådmeddelanden
+            desc: Du kommer att få alla aviseringar för den här kommentaren och alla dina kommentarer i den här kedjan.
+          mute:
+            subtitle: Muting-trådmeddelanden
+            desc: Alla aviseringar för den här kommentaren och eventuella kommentarer i tråden är muterade.
+        subscribe:
+          subtitle: Prenumeration
+          desc: Du prenumererar fortfarande på alla kommentarer i den bredare tråden, vilket innebär att du kommer att få meddelanden för svar på den här kommentaren.
+          mute: Tysta meddelanden
+          unmute: Avstängning av aviseringar
+      quality:
+        low: Kommentar markerade som lågkvalit/icke-konstruktivt av gemenskapen.
+        conduct: Visa kod för kanal
+        hidden:
+          icon: Information
+          text:
+            visible_in_permalink: Kommentar som är dold efter författare-tråden är endast synlig i det här permalinken
+            accessible_via_permalink: Kommentar gömd efter författare-tråden är endast tillgänglig via permalink
+      write:
+        errors:
+          one: 1 fel. Det är inte tillåtet att spara kommentaren från att
+          other: ' %{count} fel har förbjudit den här kommentaren från att sparas:'
+        field:
+          aria_label: Lägg till en kommentar till diskussionen
+          placeholder: Lägg till i diskussionen
+          submit: Överför
+          templates: Mallar
+          upload: Överför bild
+          use: Använd en svarsmall
+          guide:
+            title: Markeringshandbok
+            icon: Editorguide
+        template:
+          article: Posten levereras med en kommentarsmall
+          create:
+            subtitle: Skapa mall
+            desc: Mallar låter dig snabbt besvara vanliga frågor om vanliga frågor eller lagra kodstycken för återanvändning.
+          moderator: Moderator
+          personal: Personlig
+        submit: Skicka in
+        preview: Förhandsgranska
+        cancel: Ignorera
+      menu:
+        aria_label: Växla meny för avhoppningsmeny
+        icon: Dropdown-meny
+        copy:
+          aria_label: Kopiera länk till %{user} s kommentar
+          text: Kopiera länk
+        settings:
+          aria_label: Gå till %{user} s kommentarsinställningar
+        action:
+          aria_label: ' %{action} %{user} s kommentar'
+          hide: Dölj
+          unhide: Ta bort
+          hide_text: Dölj
+          unhide_text: Ta bort
+        moderate:
+          aria_label: Moderera %{user} s kommentar
+        report:
+          aria_label: Rapport %{user} s kommentar som oegentlig eller som bryter mot vår uppförandekod och / eller villkor
+      footer:
+        heart:
+          title: hjärta
+          icon: 'Som kommentar: '
+          count_html: ' %{num} %{likes}'
+          text: Som
+        reply:
+          aria_label: Svara på en kommentar ...
+          icon: Kommentarknapp
+          done: Ljög
+          text: Svara
+          placeholder: Svara ...
+        thread:
+          icon: Tråd
+          text: Tråd
+        view:
+          icon: Knappen Visa
+          text: Vy
+      count:
+        one: ' %{count} kommentar'
+        other: ' %{count} kommentarer'
+      empty: Nyheter
+      add: Lägg till kommentar
+      summary:
+        count_html:
+          one: ' %{count} %{start} kommentar %{end}'
+          other: ' %{count} %{start} kommentarer %{end}'
+        title: Kommentarer
+

@@ -1,0 +1,238 @@
+nl:
+  helpers:
+    label:
+      listing:
+        body_markdown: Body Markdown
+        expires_at: Aangepaste vervaldatum
+        location: Locatie
+        organization_id: Post onder een organisatie
+        tag_list: Tags
+        title: Titel
+      organization:
+        name: Naam
+        slug: Gebruikersnaam
+        profile_image: Profielafbeelding
+        nav_image: Logo voor lichte thema's
+        dark_nav_image: Logo voor donkere thema's
+        twitter_username: Twitter-gebruikersnaam
+        github_username: GitHub gebruikersnaam
+        url: URL van website
+        tag_line: Taglijn
+        summary: Samenvatting
+        location: Locatie
+        email: E-mail ondersteunen
+        company_size: Grootte organisatie
+        story: Ons verhaal
+        tech_stack: Onze stapel
+        cta_body_markdown: Tekst in tekst
+        cta_button_text: Linktekst
+        cta_button_url: Link-URL
+        proof: Bewijs
+      podcast:
+        android_url: Android-URL
+        description: Omschrijving
+        feed_url: Feed-URL
+        image: Afbeelding
+        itunes_url: Itunes-URL
+        main_color_hex: Hoofdkleur hex
+        overcast_url: Overcast-URL
+        pattern_image: Patroonafbeelding
+        slug: Slakken
+        soundcloud_url: URL van soundcloud
+        title: Titel
+        twitter_username: Twitter-gebruikersnaam
+        website_url: URL van website
+      response_template:
+        title: Titel
+        content: Corpus van commentaar (Markdown)
+      user:
+        name: Naam
+        email: E-mail
+        username: Gebruikersnaam
+        profile_image: Profielafbeelding
+      users_notification_setting:
+        email_newsletter: Stuur me wekelijkse nieuwsbrief e-mails
+        email_digest_periodic: Stuur me een periodieke samenvatting van topberichten van mijn tags
+        email_membership_newsletter: Stuur me onderhouden lidmaatschap nieuwsbrief e-mails
+        email_tag_mod_newsletter: E-mails van tagmoderator-nieuwsbrief verzenden
+        email_community_mod_newsletter: E-mails van communitymoderator-nieuwsbrief verzenden
+        email_comment_notifications: Stuur me een e-mail wanneer iemand me antwoordt in een commentaar thread
+        email_follower_notifications: Stuur me een email wanneer iemand me nieuw volgt
+        email_mention_notifications: Stuur me een email wanneer iemand mij noemt
+        email_badge_notifications: Stuur me een e-mail wanneer ik een badge ontvang
+        email_unread_notifications: Stuur me af en toe herinneringen dat ik heb ongelezen meldingen op %{community}
+        mobile_mention_notifications: Stuur me een push-bericht wanneer iemand me noemt
+        mobile_comment_notifications: Stuur me een push-bericht wanneer iemand me antwoordt in een commentaar thread
+        welcome_notifications: Stuur me af en toe tips voor het verbeteren van mijn %{community} ervaring
+        reaction_notifications: Meldingen verzenden wanneer iemand reageert op mijn opmerkingen of berichten
+        mod_roundrobin_notifications: Stuur me af en toe een community-succes mod meldingen
+      users_setting:
+        feed_url: URL RSS-feed
+    placeholder:
+      organization:
+        name: Acme Inc.
+        slug: acmeinc
+        url: https://yoursite.com
+        location: Halifax, Nova Scotia
+        email: mail@example.com
+        company_size: '...'
+        story: '...'
+        tech_stack: '...'
+        cta_body_markdown: '...'
+        cta_button_text: Bezoek Acme Site
+        cta_button_url: https://example.com
+        proof: '...'
+      response_template:
+        title: '...'
+      user:
+        name: Onbekende
+        email: john.doe@example.com
+        username: johndoe
+        feed_url: https://yoursite.com/feed
+    application_helper:
+      app_logo: App-logo
+      follow:
+        aria_label:
+          Organization: 'Organisatie volgen: %{name}'
+          Tag: 'Tag volgen: %{name}'
+          User: 'Gebruiker volgen: %{name}'
+          default: 'Volgen %{type}: %{name}'
+        text:
+          Organization: Volgen
+          Tag: Volgen
+          User: Volgen
+          default: Volgen
+      required: Vereist
+      subtitle:
+        week: Top posts deze week
+        month: Bovenste berichten deze maand
+        year: Top posten dit jaar
+        infinity: Alle berichten
+        latest: Laatste berichten
+      title_text: ' %{title}- %{tijdschema}'
+    articles_helper:
+      logo: ' %{servicenaam} logo'
+      most_comments: Meest commentaar
+      most_reactions: Meest reacties
+      most_views: Meeste views
+      recently_created: Recent gemaakt
+      recently_published: Recent gepubliceerd
+    authentication_helper:
+      any_of_those: een van deze
+      email_password: E-mail en wachtwoord
+      reminder: 'Herinnering: u hebt %{method} gebruikt om uw account te verifiëren, dus gebruik %{dem} om u aan te melden als hierom wordt gevraagd.'
+      that: die
+      invite_only: U kunt dit niet doen totdat u de werkstand Alleen uitnodigen uitschakelt.
+    comments_helper:
+      ama: Ama
+      ask_me_anything: Vraag Me Iets.
+      author: Auteur
+      like: Zoals
+      nbsp_likes_html:
+        one: '&nbsp; als'
+        other: '&nbsp; likes'
+    feedback_messages_helper:
+      offender:
+        body: >
+          Hallo,
+
+
+          Er is onze aandacht gevestigd op het feit dat u de %{community} Code of Conduct en/of Gebruiksvoorwaarden hebt geschonden.
+
+
+          Als dit gedrag wordt voortgezet, moeten we mogelijk uw %{community}-account onderbreken.
+
+
+          Als u denkt dat er een fout is geweest, gelieve te antwoorden op deze e-mail en we zullen een andere blik te nemen.
+
+           %{community}-team
+        subject: ' %{community} Code of Conduct Violation'
+      reporter:
+        body: >
+          Hallo daar, Dank u voor het markeren van inhoud die in strijd kan zijn met de %{community} Code of Conduct en/of onze Gebruiksvoorwaarden. Wij kijken naar uw verslag en zullen de nodige maatregelen nemen.
+
+          actie.
+
+          Wij waarderen uw hulp als we werken om een positieve en inclusieve omgeving te bevorderen voor alle! %{community} Team
+        subject: ' %{community} Rapport'
+      affected:
+        body: >
+          Hallo daar,
+
+
+          We hebben enkele reacties (gemaakt door anderen) op uw post opgemerkt die de %{community} Code of Conduct en/of onze Gebruiksvoorwaarden schenden. We hebben geen tolerantie voor dergelijk gedrag en nemen passende maatregelen.
+
+
+          Bedankt voor het zijn geweldig, en aarzel niet om ons te mailen met eventuele vragen! We verwelkomen alle feedback en ideeën als we blijven werken aan een open en inclusieve gemeenschap te bevorderen.
+
+           %{community}-team
+        subject: Mededeling van beleefdheid van %{community}
+    listing_helper:
+      option:
+        one: ' %{cl_name} ( %{count} Credit)'
+        other: ' %{cl_name} ( %{count} credits)'
+    organization_helper:
+      option: ' %{org_name} ( %{unbesteed})'
+    rate_limit_checker_helper:
+      day:
+        one: Dag
+        other: dagen
+      general: Hoeveel %{ding} kan een nieuw lid ( %{tijdsbestek} of minder) maken binnen een periode van 5 minuten?
+      published:
+        title: Aantal gecreëerde posten beperken
+        description: Hoeveel berichten kan iemand maken binnen 30 seconden?
+      antispam:
+        title: Aantal door een nieuw lid gemaakte berichten beperken
+      update:
+        title: Aantal updates beperken tot een post
+        description: Hoeveel updates kan iemand maken binnen 30 seconden? API-documenten bijwerken wanneer gewijzigd.
+      upload:
+        title: Aantal geüploade afbeeldingen beperken
+        description: Hoeveel afbeeldingen kan iemand uploaden binnen 30 seconden?
+      user:
+        title: Het aantal wijzigingen beperken dat iemand kan aanbrengen op hun account
+        description: Hoeveel wijzigingen kunnen iemand binnen 30 seconden aan hun gebruikersaccount maken?
+      follow:
+        title: Beperkt aantal volgers dat iemand dagelijks kan volgen
+        description: Hoeveel mensen kunnen iemand per dag volgen?
+      reaction:
+        title: Aantal reacties op een post of commentaar beperken
+        description: Hoe vaak kan iemand binnen 30 seconden reageren op een post of commentaar?
+      feedback:
+        title: Limiet aantal keren dat iemand misbruik kan melden
+        description: Hoe vaak kan iemand misbruik melden binnen 5 minuten?
+      comment:
+        title: Aantal gemaakte opmerkingen beperken
+        description: Hoeveel reacties kan iemand maken binnen 30 seconden?
+      comment_antispam:
+        title: Beperkt aantal reacties dat is gemaakt door een nieuw lid
+      mention:
+        title: Beperkt aantal @-vermeldingen in een post of commentaar
+        description: Hoe vaak kan iemand @-noemen andere gebruikers in een post of commentaar?
+      listing:
+        title: Aantal gemaakte lijsten beperken
+        description: Hoeveel lijsten kan iemand maken binnen een periode van 1 minuut?
+      organization:
+        title: Aantal gemaakte organisaties beperken
+        description: Hoeveel organisaties kunnen iemand binnen 5 minuten maken?
+      subscription:
+        title: Het aantal keren dat iemand zich kan abonneren op een verzendlijst van een vloeibaar label
+        description: Hoe vaak kan iemand zich binnen 30 seconden abonneren op een mailinglijst?
+      recipient:
+        title: Limiet aantal algemene e-mails die we verzenden
+        description: Hoeveel e-mails kunnen we binnen 2 minuten naar iemand sturen?
+      confirmation:
+        title: Maximumaantal bevestigingsmails dat we verzenden
+        description: Hoe vaak kunnen we binnen 2 minuten een bevestigingsmail sturen naar iemand?
+      thing:
+        posts: Postings
+        comments: commentaar
+    settings_helper:
+      advanced: Geavanceerd
+      beginner: Beginner
+      expert: Deskundige
+      mid_level: Middenniveau
+      novice: Beginner
+    social_link_helper:
+      n_a: N.v.t.
+

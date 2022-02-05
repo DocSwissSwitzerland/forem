@@ -1,0 +1,33 @@
+nl:
+  devise:
+    failure:
+      invited: U hebt een uitnodiging in behandeling, accepteert deze om uw account te maken.
+    invitations:
+      edit:
+        header: Stel uw wachtwoord in
+        submit_button: Laten We Beginnen.
+      invitation_removed: Uw uitnodiging is verwijderd.
+      invitation_token_invalid: Het opgegeven uitnotokentoken is niet geldig!
+      new:
+        header: Uitnodiging verzenden
+        submit_button: Uitnodiging verzenden
+      no_invitations_remaining: Geen uitnodigingen overblijven
+      send_instructions: Er is een uitnodeemail verzonden naar %{email}.
+      updated: Uw wachtwoord is correct ingesteld. U bent nu aangemeld.
+      updated_not_active: Uw wachtwoord is correct ingesteld.
+    mailer:
+      invitation_instructions:
+        accept_instructions: U kunt de uitnodiging accepteren door op deze link te klikken
+        accept: Uitnodiging accepteren
+        accept_until: Deze uitnodiging vervalt na %{due_date}.
+        hello: Hallo %{naam}
+        ignore: Als u de uitnodiging niet wilt accepteren, kunt u deze e-mail negeren. Uw account wordt pas gemaakt als u de bovenstaande link opent en uw wachtwoord instelt.
+        someone_invited_you: U bent uitgenodigd om deel te nemen aan de %{community_name} community op %{url}.
+        subject: Uitnodiging
+  time:
+    formats:
+      devise:
+        mailer:
+          invitation_instructions:
+            accept_until_format: '%B %d, %Y %I: %M %p'
+

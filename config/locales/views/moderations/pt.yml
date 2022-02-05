@@ -1,0 +1,122 @@
+pt:
+  views:
+    moderations:
+      heading: Centro de Mod
+      actions:
+        meta:
+          title: Moderando %{título}
+          title2: '[Moderado] %{título}'
+        heading: Post moderado
+        subtitle: Taxa a qualidade deste post
+        abusive:
+          subtitle_html: Flag %{user} como Abusivo
+          desc_html: Isso é o equivalente a sinalizar <b>todos</b> dos artigos deste usuário e vai baixar suas pontuações de artigo.
+        adjust:
+          heading: Ajustar tags
+          subtitle: Adicionar ou remover tags
+          aria_label: Seção de tags de ajuste aberto
+          icon: Ajustar tags
+          add: Adicionar tag
+          add_placeholder: Adicionar uma tag
+          reason: Razão do ajuste da tag
+          remove: Remover a tag
+          submit: Enviar
+        approve:
+          add: Marca como aprovada
+          remove: Remover aprovação
+        checkmark: Marca de verificação
+        close: Painel de ações do moderador fechar
+        delete:
+          subtitle: Excluir Este Comentário
+          button: Excluir Comentário
+        edit:
+          post: Postar Post
+          article_admin: 'Admin: Artigo'
+          comment_admin: 'Admin: Comentar'
+          user_admin: 'Admin: Usuário'
+          resource_admin: 'ResourceAdmin: Artigo'
+        errors:
+          one: '1 Um erro proibiu este bloco de ser salvo:'
+          other: ' %{count} erros proibidos este bloco de ser salvo:'
+        experience:
+          heading: Definir nível de experiência
+          heading2: Nível de Experiência de Post
+          subtitle: Curte o público mais apropriado para este post
+          aria_label: Seção de nível de experiência aberta
+          icon: Livro
+          desc_html: Quem <em>pode</em> encontrar esse post mais valioso, baseado em nível de experiência geral?
+          from: ' %{lvl}- '
+          level:
+            Advanced: Avançado
+            Beginner: Iniciante
+            Expert: Especialista
+            Mid-level: Nível médio
+            Novice: Novato
+        flag: Usuário de sinalização
+        how: Como isso funciona?
+        hidden:
+          subtitle: Comentários Ocultos
+          by: Comentário por %{user}
+        hint:
+          subtitle: Todas as reações negativas são privadas.
+          desc_html: >-
+            Use <b>Alta Qualidade</b> para mover esse conteúdo "para cima" por qualquer motivo (qualidade, utilidade, etc.).
+
+            <br /> Use <b>Baixo Qualidade</b> para mover esse conteúdo "para baixo" por qualquer motivo (qualidade, utilidade, etc.).
+
+            <br /> Use <b>Bandeira para Admins</b> para código de conduta violações (assédio, sendo um idiota, spam, etc.).
+        other: Outras coisas que você pode fazer
+        add_reaction: Adicionar uma reação
+        suspicious: Suspeito
+        tag:
+          subtitle: Ajustes De Tag
+          add: Adicionar
+          added_html: <b>tag atualmente incluída:</b>  %{tag}
+          live_html: <b>Tags ao vivo atuais:</b>  %{tags}
+          reason: Motivo para ajuste (Seja super gentil)-Somente a razão é necessária, a notificação irá cuidar do restante.
+          remove: Remover
+          removed_html: <b>tag removida atualmente:</b>  %{tag}
+          select: Selecionar Tag
+          submit: Ajuste De Tag De Envio
+          tag_name: Nome da Tag
+          undo:
+            button: ×
+            confirm: Tem certeza de que deseja desfazer o %{type} da tag %{tag}?
+            type:
+              addition: adição
+              removal: remoção
+        thumb_down: Polegar para baixo
+        thumb_up: Polegar para cima
+        toggle: Seção de comutação
+        unpublish: Despublicar Artigo
+        vote_down: Baixa Qualidade
+        flag_to_admins: Sinalização para Admins
+        vote_up: Alta Qualidade
+      all: Todos os tópicos
+      aside:
+        all: Todos os tópicos
+        code_of_conduct: Código de Conduta
+        external: Link externo
+        feedback:
+          subtitle: Ter feedback para melhorar sua experiência em Mod?
+          description: Por favor, e-mail %{email}!
+        hello: "Olá! \U0001F44B"
+        thanks: Obrigado por ajudá-lo a manter %{comunidade} segura! ❤️
+        inbox: Caixa de entrada
+        resources: Recursos
+        tag: Guia de Moderação da Tag
+        terms_and_conditions: Termos & Condições
+        trusted: Guia do Usuário Confiado
+      author: Autor
+      date: Data
+      notice:
+        subtitle: ' %{comunidade} Mods'
+        desc1_html: Nós premiamos periodicamente alguns membros %{comunitários} com privilégios elevados para ajudar a moderar a comunidade.
+        desc2_html: Confira o nosso %{code} e leia através de nossa %{confiável} e %{tag}.
+        desc3_html: Se você gostaria de nos auxiliar como um usuário confiável ou mod de tag, por favor e-Mail em %{email} e deixe-nos saber qual papel você está interessado e por quê. Se for a moderação da tag, por favor, diga-nos quais tags você gostaria de moderar para.
+        desc4: P.S. Você não está atualmente assinado em.
+        code_of_conduct: Código de Conduta
+        tag: Guia de Moderação da Tag
+        trusted: Guia do Usuário Confiado
+      post: Postagem
+

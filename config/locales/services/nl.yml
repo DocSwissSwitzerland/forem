@@ -1,0 +1,109 @@
+nl:
+  services:
+    analytics_service:
+      no_stats: U kunt de statistieken van dit artikel niet bekijken
+    article_with_video_creation_service:
+      unpublished_video: Niet-gepubliceerde video ~ %{rand}
+    authentication:
+      authenticator:
+        not_allowed: Sorry, maar het domein voor uw e-mailadres is niet toegestaan. Deze Forem kan beperkt aanmelden om alleen gespecificeerde e-mail domeinen of geblokkeerd dit specifieke domein uit te sluiten.
+      providers:
+        apple:
+          name: ' %{first} %{last}'
+        not_available: Provider %{name} is niet beschikbaar!
+        not_enabled: Provider %{name} is niet ingeschakeld!
+    badges:
+      award_beloved_comment:
+        message: "Je bent beroemd! [Dit is de opmerking] ( %{comment}) waarvoor je wordt herkend. \U0001F604"
+      award_streak:
+        longest: 16 weken! Je hebt het langst geschreven streak mogelijk gemaakt. Dit maakt u in aanmerking komen voor speciale quests in de toekomst. Houd de geweldige bijdragen aan onze gemeenschap!
+        message:
+          one: "Gefeliciteerd met het bereiken van deze streak! Consistent schrijven is moeilijk. De volgende streak-badge die je kunt krijgen is de %{count} Week Badge. \U0001F609"
+          other: "Gefeliciteerd met het bereiken van deze streak! Consistent schrijven is moeilijk. De volgende streak-badge die je kunt krijgen is de %{count} Week Badge. \U0001F609"
+      award_yearly_club:
+        message:
+          one: Gelukkige %{community} verjaardag! Kun je geloven dat het al ${count} jaar is?
+          other: Gelukkige %{community} verjaardag! Kun je geloven dat het al ${count} jaar is geweest?
+      congrats: Congrats !!!
+      thank_you: Dank u wel voor uw bijdragen!
+    broadcasts:
+      welcome_notification:
+        generator:
+          welcome: 'Welkomstbericht: %{key}'
+    error_messages:
+      clean:
+        parse_error: Er is een probleem opgetreden bij het ontleden van de YAML. Misschien moet je ontsnappen aan een citaat of een dikke darm of zoiets. E-mail %{email} als u problemen hebt.
+    html:
+      parser:
+        enter_fullscreen_mode: Volledig scherm opgeven
+        exit_fullscreen_mode: Volledig scherm verlaten
+    mailchimp:
+      bot:
+        member_in_compliance_state: Lid in nalevingsstatus
+    markdown_processor:
+      parser:
+        invalid_markdown_detected: Ongeldige markdown gevonden!
+    moderator:
+      banish_user:
+        spam_account: Spam account
+      manage_activity_and_roles:
+        need_super: U hebt de superbeheerstatus nodig om deze actie te kunnen uitvoeren
+      merge_user:
+        duplicate: De gebruiker heeft dubbele verificatiemethoden op de twee accounts. Dubbele controle en verwijder de identiteit die de gebruiker niet meer gebruikt. Dit is meestal het reeds verwijderde sociale account, of de verificatiemethode die aan de gebruiker is gekoppeld om te worden gewist.
+        multiple: De gebruiker die wordt gewist heeft al twee of meer verificatiemethoden. Weet u zeker dat dit de juiste gebruiker is die moet worden gewist? Als dat zo is, moet een superbeheerder dit doen vanuit de console om veilig te zijn.
+        same_user: U kunt niet dezelfde twee gebruikers-ID's samenvoegen
+    notifications:
+      new_comment:
+        new: "\U0001F4AC Nieuw commentaar"
+      new_mention:
+        new: "\U0001F5E3️ Nieuwe vermelding"
+    payments:
+      customer:
+        usd: usd
+      errors:
+        select_payment_method: Selecteer een betalingsmethode
+      process_credit_purchase:
+        charge:
+          one: Aankoop van %{count} credits.
+          other: Aankoop van %{count} credits.
+    rate_limit_checker:
+      invalid_key: 'Ongeldige cachesleutel: geen unieke component aanwezig'
+      limit_reached:
+        one: Snelheidslimiet bereikt, probeer het opnieuw in %{count} seconden
+        other: Snelheidslimiet bereikt, probeer het opnieuw in %{count} seconden
+    slack:
+      messengers:
+        article_fetched_feed:
+          body: >
+            Nieuw artikel opgehaald via RSS: %{title}
+             %{url}
+        article_published:
+          body: >
+            Nieuw artikel gepubliceerd: %{title}
+             %{url}
+        feedback:
+          anonymous_report: '*Anoniem rapport:'
+          final_message: >2-
+             %{user_detail} Categorie: %{category} Intern rapport: %{reports_url} * _ Gerapporteerde URL: %{reported_url} _ *
+            ----- *Message: * %{bericht}
+          body: >
+            *Aangemeld in gebruiker: * reporter: %{username}- %{url} e-mail: <mailto:%{email}|%{email}>
+        potential_spammer:
+          body: >
+            Potentiële spamgebruiker! %{url}
+        sponsorship:
+          body: >2
+             %{user} heeft een %{type}-sponsoring voor %{organization} gekocht
+    spam:
+      article_handler:
+        suspended_too_many: Gebruiker geschorst voor te veel spammy artikelen, veroorzaakt door autovomit.
+    user_subscriptions:
+      create_from_controller_params:
+        source_not_found: Bron niet gevonden.
+        email_mismatch: E-mail abonnee komt niet overeen.
+    users:
+      remove_role:
+        remove_self: Beheerders kunnen geen rollen van zichzelf verwijderen.
+        remove_super: Superbeheerdersrollen kunnen niet worden verwijderd.
+        error: Er is een probleem met het verwijderen van deze rol.  %{e_message}
+

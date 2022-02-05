@@ -1,0 +1,25 @@
+es:
+  views:
+    manager:
+      meta:
+        title: Gestionar %{title}
+      error:
+        pins: "Uh Oh! %{error} \U0001F62C"
+      tools:
+        heading: 'Herramientas:'
+        subtitle: 'Experiencia Nivel de Post:'
+        text_html: ¿Tu publicación es más escrita para un público principiante o avanzado? Ajuste este nivel como un indicador <em>suave</em> que ayudará a mostrar el mensaje a las personas que más se beneficiarán.
+      nav:
+        dashboard: Dashboard
+        text: "\U0001F449 Manage Your Post"
+      rating:
+        heading: Nivel de experiencia de Post
+        text: ¿Quién es este post más relevante para?
+        lower: "\U0001F448 Principiante"
+        higher: "Experto \U0001F449"
+      tips:
+        heading: 'Consejos:'
+        text_1: Escribe tu propio tweet sobre el post, describiendo personalmente por qué lo escribió o por qué la gente podría encontrarlo útil. Podemos retuitear a usted.
+        text_2_html: 'Compartir para enlazar agregadores como <a href="https://www.reddit.com">Reddit</a>. Intente elegir los subreddits más específicos del tema, como por ejemplo <a href="https://www.reddit.com/r/javascript">/r/javascript</a> o <a href="https://www.reddit.com/r/python">/r/python</a>, etc. <em>Aviso: los tirones y los trolls pueden estar al acecho.</em>'
+        text_3: Comparta con sus compañeros de trabajo o comunidades locales. Pida a la gente que deje las preguntas para usted en los comentarios. Es una gran manera de desatar una discusión adicional.
+

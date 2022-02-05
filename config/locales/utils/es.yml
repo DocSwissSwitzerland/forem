@@ -1,0 +1,14 @@
+es:
+  xml:
+    opensearch:
+      short_name: ' %{comunidad} Buscar'
+      description: Buscar publicaciones de %{community}.
+    user:
+      image: ' %{user} imagen de perfil'
+  json:
+    author: Activo %{community} autor
+  mailer:
+    adjust: Ajuste sus ajustes de correo electrónico
+    adjust_only_html: ¿No quieres recibir correos electrónicos como este? Ajuste los valores de correo electrónico en %{path}
+    unsubscribe: Anular suscripción
+

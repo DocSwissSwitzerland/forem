@@ -1,0 +1,150 @@
+el:
+  views:
+    dashboard:
+      meta:
+        title: Χειριστήριο -  %{site}
+      heading: Dashboard.
+      actions:
+        mobile:
+          posts: Θέσεις ( %{num})
+          followers: Οπαδοί ( %{num})
+          following_tags: Ακολουθούν προσδιοριστικά ( %{num})
+          following_users: Οι ακόλουθοι χρήστες ( %{num})
+          following_orgs: Μετά από οργανισμούς ( %{num})
+          following_pods: Μετά από podcast ( %{num})
+        posts: -Θέσεις
+        series: 'Σειρά:'
+        followers: 'Οι ακόλουθοι:'
+        following_tags: Ακολουθώντας προσδιοριστικά
+        following_users: 'Παρακολούθηση χρηστών:'
+        following_orgs: (')
+        following_pods: Μετά τα podcast
+        listings: 'Καταχωρήσεις:'
+        analytics: Αναλυτική ανάλυση
+        for_org: Ανάλυσης για  %{org}
+        upload: Μεταφόρτωση βίντεο
+      analytics:
+        meta:
+          title: Αναλυτική ανάλυση
+        heading: Χειριστήριο ανάλυσης για το  %{name}
+        desc_1: Καλωσορίσατε στο χειριστήριο του Analytics, στο σπίτι των αναλυτικών μετρικών στοιχείων χρήστη, ώστε οι συντάκτες να μπορούν να λαμβάνουν αποφάσεις με βάση δεδομένα σχετικά με το οικοσύστημα του  %{members}.
+        desc_2: Αυτό το ταμπλό αναδεικνύει βαθιές ιδέες ιδιαίτερα σημαντικές για το  %{μελών} σχέσεις, συγγραφείς και σοβαρούς bloggers.
+        back: "\U0001F448 Πίσω στο κύριο χειριστήριο"
+        your: Το χειριστήριο.
+        org: Χειριστήριο ανάλυσης  %{org}
+      article:
+        heading:
+          text_html: ' %{αρχειοθετήθηκε}  %{τίτλος}'
+          archived: '-Ναι. '
+        archived: "' Αρχει"
+        published: 'Δημοσίευση:'
+        published_html: 'Δημοσίευση:  %{ημερομηνία}'
+        edited: 'Τροποποιήθηκε:'
+        edited_html: 'Επιμέλεια:  %{date}'
+        series: 'Σειρά:'
+        series_html: <strong>Σειρά:</strong>  %{σειρά}
+        draft: "')"
+        reactions:
+          title: "' Αντιδράσεις"
+          icon: "' Αντιδράσεις"
+          text_html:
+            one: ' %{num} αντίδραση'
+            other: ' %{num} αντιδράσεις'
+        comments:
+          title: 'Σχόλια:'
+          icon: 'Σχόλια:'
+          text_html:
+            one: ' %{num} σχολίου'
+            other: ' %{num} σχόλια'
+        views:
+          title: "'."
+          icon: "'."
+          lt_25: < 25
+          text_html:
+            one: '{κλίμακα} προβολή'
+            other: ' %{κλίμακα}'
+          u_25: κάτω των 25
+        subscriptions:
+          title: Συνδρομές.
+          icon: 'Δεδομένα:'
+          number: Συνδρομές (%)
+        delete: 'Διαγραφή:'
+        unpin: 'Αναίρεση:'
+        pin:
+          title: Pin για προφίλ
+          button: Pin για προφίλ
+          text: Pin
+        manage:
+          aria_label: 'Διαχείριση θέσης:  %{τίτλος}'
+          text: "' Διαχείριση"
+        lock: Συζήτηση κλειδώματος
+        unlock: Ξεκλείδωμα συζήτησης
+        edit:
+          aria_label: 'Επεξεργασία θέσης:  %{τίτλος}'
+          text: 'Τροποποίηση:'
+        more:
+          title: 'Περισσότερες επιλογές για τη δημοσίευση:  %{title}'
+          icon: Κι άλλο ...
+        stats: "' Stats"
+        archive: Αρχείο αποθήκευσης.
+        unarchive: Unarchive post
+        author: 'Συγγραφέας:'
+        author_is: 'ΣΥΓΓΡΑΦΈΑΣ: '
+        save: 'Αποθήκευση:'
+        submit: 'Αλλαγή συντάκτη:'
+      followers:
+        heading: 'Dashboard " Οι ακόλουθοι:'
+        empty: Δεν έχεις οπαδούς ακόμα ...
+      following_orgs:
+        heading: Dashboard " (')
+        empty: Δεν ακολουθείς καμία οργάνωση ακόμα ...
+      following_pods:
+        heading: Dashboard " Μετά τα podcast
+        empty: Δεν ακολουθείς κανένα podcast ακόμα ...
+      following_tags:
+        heading: Dashboard " Ακολουθώντας προσδιοριστικά
+        adjust: Ρυθμίστε το βάρος για να τροποποιήσετε το σπίτι σας. Υψηλότερες τιμές σημαίνουν περισσότερες εμφανίσεις για το συγκεκριμένο προσδιοριστικό.
+        anti:
+          title: Αυτό το προσδιοριστικό έχει αρνητικό αποτέλεσμα.
+          text: Αντι-παρακολούθηση
+        default: Προεπιλογή 1.0
+        empty: Δεν ακολουθείς καμία πινακίδα ακόμα ...
+        number:
+          aria_label: ' %{name}'
+        update: Ενημέρωση Weights
+      following_users:
+        heading: 'Dashboard " Παρακολούθηση χρηστών:'
+        empty: Δεν ακολουθείς κανέναν χρήστη ...
+      listings:
+        meta:
+          title: Χειριστήριο ακρόασης
+      posts:
+        heading: -Θέσεις
+        archived: Εμφάνιση αρχείου αποθήκευσης
+        option:
+          creation-desc: Πρόσφατα δημιουργήθηκε.
+          published-desc: (')
+          views-desc: Οι περισσότερες προβολές
+          reactions-desc: Οι περισσότερες αντιδράσεις
+          comments-desc: Τα περισσότερα σχόλια
+          aria_label: Ταξινόμηση Κατά
+        org: ' %{name} ( %{num})'
+        personal: 'Προσωπικό:'
+        empty:
+          desc: Εδώ μπορείτε να διαχειριστείτε τις θέσεις σας, αλλά δεν έχετε γράψει τίποτα ακόμα.
+          new: Γράψε την πρώτη σου θέση τώρα.
+      subscriptions:
+        meta:
+          title: Συνδρομές  %{τίτλος}
+        heading: Συνδρομές.
+        subhead:
+          text_html: ' %{για}  %{πηγή}'
+          for: 'για:'
+        empty: Δεν έχετε συνδρομητές για αυτό το  %{kind} ακόμα ...
+      summary:
+        reactions: Συνολικές αντιδράσεις μετά
+        views: Σύνολο post προβολές
+        listings: Καταχωρήσεις που δημιουργήθηκαν
+        credits: 'Διαθέσι!:'
+        lt_500: < 500
+

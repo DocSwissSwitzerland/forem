@@ -1,0 +1,64 @@
+de:
+  devise:
+    confirmations:
+      confirmed: Ihre E-Mail-Adresse wurde erfolgreich bestätigt.
+      send_instructions: Sie erhalten eine E-Mail mit Anweisungen, wie Sie Ihre E-Mail-Adresse in wenigen Minuten bestätigen können.
+      send_paranoid_instructions: Wenn Ihre E-Mail-Adresse in unserer Datenbank vorhanden ist, erhalten Sie eine E-Mail mit Anweisungen, wie Sie Ihre E-Mail-Adresse in wenigen Minuten bestätigen können.
+    failure:
+      already_authenticated: Sie sind bereits angemeldet.
+      inactive: Ihr Konto ist noch nicht aktiviert.
+      invalid: Ungültige %{authentication_keys} oder Kennwort.
+      last_attempt: Sie haben einen weiteren Versuch, bevor Ihr Konto gesperrt ist.
+      locked: Ihr Konto ist gesperrt.
+      not_found_in_database: Ungültige %{authentication_keys} oder Kennwort.
+      timeout: Ihre Sitzung ist abgelaufen. Bitte melden Sie sich erneut an, um fortzufahren.
+      unauthenticated: Sie müssen sich anmelden oder anmelden, bevor Sie fortfahren.
+      unconfirmed: Sie müssen Ihre E-Mail-Adresse bestätigen, bevor Sie fortfahren.
+    mailer:
+      confirmation_instructions:
+        subject: Bestätigungsanweisungen
+      email_changed:
+        subject: E-Mail geändert
+      password_change:
+        subject: Kennwort geändert
+      reset_password_instructions:
+        subject: Anweisungen zum Zurücksetzen des Kennworts
+      unlock_instructions:
+        subject: Anweisungen entsperren
+    omniauth_callbacks:
+      failure: Sie konnten Sie nicht von %{kind} authentifizieren, da " %{reason}".
+      success: Es wurde erfolgreich vom %{kind} -Konto authentifiziert.
+    passwords:
+      no_token: Sie können auf diese Seite nicht zugreifen, ohne von einer Passwort-Reset-E-Mail zu kommen. Wenn Sie von einer Passwort-Reset-E-Mail kommen, stellen Sie bitte sicher, dass Sie die vollständige URL angegeben haben.
+      send_instructions: Sie erhalten eine E-Mail mit Anweisungen, wie Sie Ihr Kennwort in wenigen Minuten zurücksetzen können.
+      send_paranoid_instructions: Wenn Ihre E-Mail-Adresse in unserer Datenbank vorhanden ist, erhalten Sie in wenigen Minuten einen Passwort-Wiederherstellungslink an Ihrer E-Mail-Adresse.
+      updated: Ihr Kennwort wurde erfolgreich geändert. Sie sind jetzt angemeldet.
+      updated_not_active: Ihr Kennwort wurde erfolgreich geändert.
+    registrations:
+      destroyed: Bye! Ihr Konto wurde erfolgreich abgebrochen. Wir hoffen, Sie bald wieder zu sehen.
+      signed_up: Willkommen! Sie haben sich erfolgreich angemeldet.
+      signed_up_but_inactive: Sie haben sich erfolgreich angemeldet. Allerdings konnten wir Sie nicht unterschreiben, weil Ihr Konto noch nicht aktiviert ist.
+      signed_up_but_locked: Sie haben sich erfolgreich angemeldet. Allerdings konnten wir Sie nicht unterschreiben, weil Ihr Konto gesperrt ist.
+      signed_up_but_unconfirmed: Eine Nachricht mit einem Bestätigungslink wurde an Ihre E-Mail-Adresse gesendet. Bitte folgen Sie dem Link, um Ihr Konto zu aktivieren.
+      update_needs_confirmation: Sie haben Ihr Konto erfolgreich aktualisiert, aber wir müssen Ihre neue E-Mail-Adresse überprüfen. Bitte überprüfen Sie Ihre E-Mail und folgen dem Bestätigungslink, um Ihre neue E-Mail-Adresse zu bestätigen.
+      updated: Ihr Konto wurde erfolgreich aktualisiert.
+      updated_but_not_signed_in: Ihr Konto wurde erfolgreich aktualisiert, aber da Ihr Kennwort geändert wurde, müssen Sie sich erneut anmelden.
+    sessions:
+      already_signed_out: Erfolgreich abgeschlossen.
+      signed_in: Wurde erfolgreich angemeldet.
+      signed_out: Erfolgreich abgeschlossen.
+    unlocks:
+      send_instructions: Sie erhalten eine E-Mail mit Anweisungen, wie Sie Ihr Konto in ein paar Minuten entsperren können.
+      send_paranoid_instructions: Wenn Ihr Konto vorhanden ist, erhalten Sie eine E-Mail mit Anweisungen, wie Sie diese in wenigen Minuten entsperren können.
+      unlocked: Ihr Konto wurde erfolgreich entsperrt. Bitte melden Sie sich an, um fortzufahren.
+  errors:
+    messages:
+      already_confirmed: wurde bereits bestätigt, bitte versuchen Sie unterschreiben
+      confirmation_period_expired: muss innerhalb von %{period} bestätigt werden, fordern Sie bitte eine neue
+      expired: ist abgelaufen, fordern Sie bitte eine neue
+      not_found: nicht gefunden
+      not_locked: war nicht gesperrt
+      not_saved:
+        one: '1 Fehler bei der Speicherung dieser %{resource}:'
+        other: ' %{count} Fehler untersagten, dass diese %{resource} gesichert wurden:'
+

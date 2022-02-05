@@ -1,0 +1,142 @@
+de:
+  views:
+    badges:
+      meta:
+        title: Abzeichen
+        name: ' %{title} Badge'
+      all:
+        one: Ein Badge anzeigen
+        other: Alle %{count} Badges anzeigen
+      heading: Abzeichen
+      desc: Erhalten Sie Abzeichen, um awesome zu sein! Klicken Sie auf einen Abzeichen, um zu sehen, wie Sie es verdienen können.
+      name: "\U0001F3C5  %{title} Badge \U0001F3C5"
+    campaign:
+      subtitle: Geschichten ( %{count})
+      view: Alle Beiträge ansehen
+    deep_links:
+      subtitle: Die mobile App wird geöffnet ...
+      alert:
+        subtitle: Whoops! Hast du versucht, die mobile App zu öffnen?
+        desc_html: Stellen Sie sicher, dass es installiert ist, und versuchen Sie es erneut Wenn das Problem weiterhin auftritt, kontaktieren Sie %{email}
+        back: Nimm mich zurück.
+        again: Wiederholen
+        install: App installieren
+    email_subscriptions:
+      unsubscribe:
+        heading: "Sie wurden von %{type} abgemeldet. \U0001F614"
+        description_html: Sie erhalten keine E-Mails mehr wie diese. Wenn Sie Ihre vollständigen E-Mail-Vorgaben erneut abonnieren oder verwalten möchten, klicken Sie bitte auf %{link}.
+        link: Hier klicken
+      invalid:
+        heading: Token abgelaufen oder ungültig
+        description_html: Bitte %{signin}, um Ihre E-Mail-Einstellungen zu verwalten.
+        signin: Anmeldung
+    hamburger:
+      icon: Navigationsmenü
+      icon_close: Schließen
+      icon_left: Menü links
+      icon_right: Rechtes Menü
+    logo:
+      color_1:
+        label: Markenfarbe 1
+        description: Verwendet für Hintergründe, Grenzen etc.
+        select:
+          aria_label: Farbe 1 Farbe Selektor
+          label: Marke Farbe 1 Farbe auswählen
+      color_2:
+        label: Markenfarbe 2
+        description_html: Wird für Texte verwendet (in der Regel auf <em>Markenfarbe 1</em>gesetzt).
+        select:
+          aria_label: Marke Farbe 2 Farbauswahl
+          label: Marke Farbe 2 Farbe auswählen
+      preview:
+        icon: App-Logo
+        text: 'Vorschau:'
+    onboardings:
+      meta:
+        title: Willkommen in %{community}
+      heading: Du bist jetzt ein Teil der Community!
+      subtitle: VORGESCHLAGENE DINGE, DIE SIE TUN KÖNNEN
+      close: Begrüßungsnachricht schließen
+      settings_html: "<span class=\"emoji\">\U0001F485\U0001F3FC</span>Profil anpassen"
+      welcome_html: "<span class=\"emoji\">\U0001F60A</span>Willkommen-Thread"
+      write_html: "<span class=\"emoji\">✍\U0001F3FE</span>Schreiben Sie den ersten %{community} -Eintrag"
+    pins:
+      article: Verzinnt
+      pinned: "\U0001F4CC Pinnt! (gepinnte Beiträge werden chronologisch angezeigt, 5 max)"
+      removed: "\U0001F5D1 Pin entfernt"
+      error: Sie können nur fünf Pins haben
+    reading_list:
+      meta:
+        title: Leseliste
+        description: Meine gespeicherten Beiträge.
+        og:
+          title: Leseliste- %{community}
+    search:
+      heading: Suchergebnisse %{for}
+      for: ' für %{query}'
+      placeholder: Suchen ...
+      icon:
+        aria_label: Suchen
+        title: Suchen
+      nav:
+        posts: Beiträge
+        podcasts: Podcasts
+        people: Personen
+        comments: Kommentare
+        my_posts: Nur meine Beiträge
+        tags: Tags
+      sort:
+        aria_label: Sortieroptionen für Suchergebnis
+        relevance: Am Relevantesten
+        newest: Neueste
+        oldest: Älteste
+      meta:
+        title: Suchergebnisse %{for}
+        for: ' für %{query}'
+        description: ' %{site} = > Suchergebnisse'
+    series:
+      meta:
+        description: ' %{title} auf %{site} anzeigen'
+      heading: Serie %{user}
+      empty: Dieser Benutzer hat keine Serie
+      list:
+        heading: Artikel der Serie %{series}
+        back: Zurück zu %{user}'s Series
+        empty: Diese Serie hat keine Artikel
+    sponsor:
+      seek: Werden Sie Sponsor
+    stats:
+      meta:
+        title: Statistiken für Ihren Artikel
+      heading_html: Statistik für " %{article}"
+      period:
+        aria_label: Analysezeitraum
+        week: Woche
+        month: Monat
+        infinity: Unendlichkeit
+      readers: Leserzusammenfassung
+      followers: Neue Follower-Zusammenfassung
+      reactions: "Zusammenfassung der Reaktionen ❤\U0001F984\U0001F516"
+      comments: "Kommentare-Zusammenfassung \U0001F4AC"
+      traffic:
+        text: "Verkehrsquellenzusammenfassung \U0001F6A6"
+        source: Quelle
+        views: Ansichten
+    sticky:
+      joined: Verbunden
+      default_cta: Weitere Informationen
+      email: E-Mail
+      hot: Heiß
+      location: Position
+      more_from_html: Mehr von %{actor}
+      no_summary: Beiträge in diesem Tag
+      trending_html: Trending on %{app}
+    videos:
+      meta:
+        title: Videos
+        og:
+          description: Alle Videos in %{community}
+      heading: ' %{community} auf Video'
+      beta_html: <strong>Video ist Beta:</strong>  %{contact}
+      upload: "\U0001F3A5 Video-Datei hochladen \U0001F64C"
+

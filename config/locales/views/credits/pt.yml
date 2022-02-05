@@ -1,0 +1,55 @@
+pt:
+  views:
+    credits:
+      meta:
+        title: Créditos
+      ledger:
+        class:
+          listing: Listagem
+        category: Categoria
+        item: Item
+        cost: Custo (créditos)
+        date: Data
+        misc: Itens diversos
+      listing:
+        create: Criar uma Listagem
+        dashboard: Ir para o Painel de Listagens
+      new:
+        meta:
+          title: Créditos De Compra
+        heading: Créditos de compra para @ %{name}
+        form:
+          amount:
+            label: Quantidade para Compra
+            placeholder: Insira qualquer quantia
+          method:
+            label: Método de pagamento
+            number: '**** **** **** %{last}'
+            exp: ' %{mm} / %{yy}'
+            add: Adicionar Novo Cartão
+          submit: Compra Completa
+          submitting: Enviando ...
+          note_org: '*Todas as admins de org têm acesso a créditos pertencentes à organização'
+        switch:
+          org: Alternar para %{nome}
+          user: Mudar para compra pessoal
+        status:
+          subtitle:
+            org: Quantos créditos %{nome} tem?
+            user: Quantos créditos eu tenho atualmente?
+          desc:
+            org: ' %{nome} tem %{count} créditos.'
+            user: Você tem %{count} créditos.
+        how:
+          subtitle: Como posso ganhar créditos?
+          desc_html: Os membros recebem <strong>5 créditos</strong> por cada crachá de perfil que você ganha.
+      purchase: Comprar créditos adicionais
+      tag: 'Tag: %{nome}'
+      status:
+        user:
+          one: Você tem %{count} crédito pessoal para gastar
+          other: Você tem %{count} créditos pessoais para gastar
+        org_html:
+          one: ' %{nome} tem %{num} crédito para gastar'
+          other: ' %{nome} tem %{num} créditos para gastar'
+

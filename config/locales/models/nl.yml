@@ -1,0 +1,131 @@
+nl:
+  models:
+    api_secret:
+      api_limit_reached: API-geheime limiet van 20 per gebruiker is bereikt
+    application_record:
+      uninferrable: Een decorator voor %{class} kan niet worden opgebracht.
+    article:
+      a_post_by: Een post met %{user_name}
+      video_unpermitted: kan niet worden toegevoegd door lid zonder toestemming
+      video_processing: kan niet worden ingesteld op true als video nog steeds wordt verwerkt
+      cannot_search_tags_for: 'Kan tags niet zoeken voor: %{tag}'
+      cannot_search_tags_for_tags: 'Kan tags niet zoeken voor: %{tags}'
+      unique_coauthor: co-auteur ID's moeten uniek zijn
+      too_many_tags: overschrijdt het maximum van 4 tags
+      is_too_long: is te lang.
+      invalid_date: moet worden ingevoerd in de notatie DD/MM/JJJJ, met de huidige of de vorige datum
+      series_unpermitted: moet zijn een u toestemming om te posten naar
+      invalid_coauthor: moet geldige gebruikers-ID's zijn
+      same_author: mag niet dezelfde gebruiker zijn als de auteur
+      must_not_have_spaces: mag geen spaties bevatten
+      published: Gepubliceerd
+      unique_url: is al genomen. E-mail %{email} voor meer informatie.
+      mention_too_many:
+        one: U kunt niet meer dan %{count} gebruikers in een post noemen!
+        other: U kunt niet meer dan %{count} gebruikers in een post noemen!
+    broadcast:
+      single_active: U kunt slechts één actieve mededeling verzenden
+    comment:
+      deleted: '[verwijderd]'
+      has_been_deleted: ' %{type} is gewist.'
+      hidden: '[verborgen door post-auteur]'
+      is_not_valid: is niet geldig.
+      locked: de discussie is vergrendeld op deze post
+      type:
+        Article: Artikel
+        item: artikel
+        PodcastEpisode: Aflevering van podcast
+      suspended_too_many: Gebruiker geschorst voor te veel spammy interacties, veroorzaakt door autovomit.
+      mention_too_many:
+        one: U kunt niet meer dan %{count} gebruikers in een reactie vermelden!
+        other: U kunt niet meer dan %{count} gebruikers in een reactie vermelden!
+    feedback_message:
+      reported: (u) heeft deze URL eerder gemeld.
+    github_issue:
+      issue_comment_not_found: Uitgiftcommentaar %{issue_id} niet gevonden
+      issue_not_found: Probleem %{issue_id} niet gevonden
+    html_variant:
+      no_edits: kan niet veranderen na publicatie en goedgekeurd
+    identity:
+      no_email_msg: Geen e-mail gevonden. Verweer uw %{provider} account om fouten te voorkomen.
+    listing:
+      too_many_tags: overschrijdt de maximum van 8 tags
+      too_many_linebreaks: heeft te veel linebreaks. Niet meer dan 12 toegestaan.
+      image_not_allowed: is niet toegestaan om afbeeldingen op te nemen.
+      liquid_not_allowed: mag geen vloeibare tags bevatten.
+    mention:
+      is_not_valid: is niet geldig.
+    organization:
+      integer_only: Alleen geheel getal. Geen teken toegestaan.
+      reserved_word: '%<value>s is een gereserveerd woord. Neem contact op met sitebeheerders voor hulp bij het registreren van uw organisatie.'
+    page:
+      body_must_exist: moet bestaan als body_html of body_json niet bestaat.
+    podcast:
+      slug_is_reserved: slug is gereserveerd
+    podcast_episode_appearance:
+      provided_role_is_not_valid: gegeven rol is niet geldig
+    poll_skip:
+      cannot_vote_more_than_once: kan niet meer dan één keer stemmen in een peiling
+    poll_vote:
+      cannot_vote_more_than_once: kan niet meer dan één keer stemmen in een peiling
+    profile_pin:
+      only_five: kan niet meer dan vijf totaal vastgezette posts hebben
+      pin_unpermitted: moet de juiste toegangsrechten hebben voor pin
+    rating_vote:
+      not_permitted: is niet toegestaan om deze actie te ondernemen.
+    reaction:
+      is_not_valid: is niet geldig.
+    response_template:
+      user_nil_only: Er kan geen gebruikers-ID gekoppeld zijn.
+      comment_markdown: Commentsjablonen moeten Markdown gebruiken als contenttype.
+      email_text: E-mailsjablonen moeten platte tekst of HTML gebruiken als contenttype.
+      limit_reached: Limiet voor responssjabloon van 30 per gebruiker is bereikt
+    settings:
+      campaign:
+        share_your_project: Uw project delen
+      community:
+        message: mag niet het teken "<" en "> " bevatten
+        new_forem: Nieuwe Forem
+        user: gebruiker
+      general:
+        community_sponsors: Sponsors van de Gemeenschap
+        the_community_mascot: De gemeenschap mascotte
+      user_experience:
+        message: 'moet een 3-of 6-teken hex zijn (beginnend met #)'
+    sponsorship:
+      invalid_type: is geen sponsorbaar type
+      already_sponsored: De tag is al gesponsd
+      only_one_level: U kunt slechts één sponsor van %{levels} hebben
+      level:
+        gold: goud
+        silver: zilver
+        bronze: brons
+    tag:
+      alias_for: alias_for moet verwijzen naar een bestaande tag
+    tag_adjustment:
+      too_many_tags: 4 tags max per artikel.
+      unpermitted: heeft geen bevoegdheid om deze tags aan te passen
+      not_live: is geselecteerd voor verwijdering is geen actuele live-tag.
+      unique: kan geen al aangepaste tag zijn
+    tweet:
+      tweet_not_found: Tweet niet gevonden
+    user:
+      could_not_send: bevestiging kon niet worden verzonden.  %{e_message}
+      password_not_matched: komt niet overeen met bevestiging van wachtwoord
+      has_been_banished: is verbannen.
+      is_taken: ' %{username} is bezet.'
+      user_could_not_be_saved: Gebruiker kan niet worden opgeslagen.  %{e_message}
+      username_is_reserved: gebruikersnaam is gereserveerd
+    user_block:
+      cant_be_the_same: kan niet hetzelfde zijn als de blocked_id
+    user_subscription:
+      non_apple: Kan zich niet abonneren op een eigen Apple-relais. Werk de e-mail bij.
+      source_not_found: Bron niet gevonden. Controleer of uw %{source} actief is!
+      not_enabled: Gebruikersabonnementen zijn niet ingeschakeld voor de bron.
+    users:
+      deleted_user:
+        name: '[Verwijderde gebruiker]'
+      setting:
+        invalid_hex: is geen geldige hex-kleur
+        invalid_rss: is geen geldige RSS/Atom-feed
+

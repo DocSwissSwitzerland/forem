@@ -1,0 +1,24 @@
+de:
+  views:
+    actions:
+      copy:
+        text: In Zwischenablage kopiert
+        button: Link kopieren
+      more:
+        title: Mehr ...
+        aria_label: Optionen für gemeinsame Nutzung
+      share:
+        facebook:
+          text: Gemeinsam mit Facebook
+        hackernews:
+          text: Teile an Hacker News
+        linkedin:
+          text: Anteil an LinkedIn
+        reddit:
+          text: Anteil an Reddit
+        twitter:
+          text: Gemeinsam mit Twitter
+          query: '" %{article}" von %{author}'
+        link: Teilen Sie Post über ...
+        report: Missbrauch melden
+

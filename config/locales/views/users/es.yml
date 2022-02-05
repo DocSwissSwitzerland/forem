@@ -1,0 +1,90 @@
+es:
+  views:
+    users:
+      meta:
+        og:
+          title: ' %{user}- %{community} Perfil'
+      comments:
+        all:
+          one: Todos los %{count} comentarios
+          other: Todos los %{count} comentarios
+        last:
+          one: Últimos %{count} comentarios
+          other: Últimos %{count} comentarios
+        recent: Observaciones recientes
+        view: Ver toda la actividad
+        view_all:
+          one: Ver todos los %{count} comentarios
+          other: Ver todos los %{count} comentarios
+        view_last:
+          one: Ver el último 1 comentario
+          other: Ver el último %{count} Comentarios
+      github:
+        heading: Repositorios de GitHub
+        fork: Tenedor
+        stars:
+          one: 1 estrella
+          other: ' %{count} estrellas'
+      pin_icon: Perno
+      pinned: Inmovilizado
+      profile_fields:
+        bio:
+          label: Bio
+          placeholder: Un bio corto ...
+        display_email_on_profile: Mostrar correo electrónico en el perfil
+        location:
+          label: Ubicación
+          placeholder: Halifax, Nueva Escocia
+        website:
+          label: Dirección URL
+          placeholder: https://yoursite.com
+        education: Educación
+        currently_learning: Actualmente aprendizaje
+        currently_hacking_on: Actualmente hackeando
+        available_for: Disponible para
+        skills_languages: Habilidades/Idiomas
+        work: Trabajo
+      side:
+        comment:
+          icon: Comentario
+          text:
+            one: 1 comentario escrito
+            other: ' %{count} comentarios escritos'
+        org: Organizaciones
+        post:
+          icon: Post
+          text:
+            one: 1 post publicado
+            other: ' %{count} publicaciones publicadas'
+        tag:
+          icon: Etiqueta
+          text:
+            one: 1 etiqueta seguida
+            other: ' %{count} etiquetas seguidas'
+      signout:
+        meta:
+          title: Confirmar firma- %{community}
+        heading: ¿Está seguro de que desea firmar?
+        yes: Sí, firmar
+      block: Bloquear @ %{user}
+      details: Detalles de perfil de %{user}
+      dropdown: Acciones de usuario
+      email_icon: Dirección electrónica
+      empty: 404 bio no encontrado
+      flag: Distintivo @ %{user}
+      follow: Continuación
+      joined:
+        icon: Unidos
+        text_html: Unido en %{date}
+      location_icon: Ubicación
+      logo: ' %{user} imagen de perfil'
+      more: Más información sobre el @ %{user}
+      send_pm:
+        code: código de conducta
+        notice_html: Todas las interacciones privadas <b>deben</b> acatar el %{code}.
+        placeholder: Introduce tu mensaje aquí ...
+        submit: Enviar
+      social: ' %{service} sitio web'
+      unflag: Desmarcar @ %{user}
+      website: Sitio web personal
+

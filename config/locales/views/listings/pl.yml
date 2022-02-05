@@ -1,0 +1,80 @@
+pl:
+  views:
+    listings:
+      meta:
+        description: ' %{community} Listing'
+      heading: Listingi
+      back: Wstecz
+      delete:
+        subtitle: Czy na pewno usunąć tę listę?
+        description:
+          text_html: Nie można cofnąć tego działania, być może po prostu chcesz %{action} zamiast tego?
+          edit: edytuj
+          unpublish: cofanie publikacji
+        edit: Edytuj
+        submit: Usuń
+        unpublish: Anuluj publikowanie
+      edit:
+        heading: Edycja listy
+        bump:
+          subtitle: Podbij swoją listę
+          button: Lista stłuczki
+          description: Możesz podbić swoją notę za taką samą cenę, co oryginalna lista
+          last: 'Ostatnio opublikowane/ZBumpowane: %{date}'
+        notice: Użytkownik może edytować tylko tytuł/body/tagi draftów lub w ciągu pierwszych 24 godzin notowania lub wpadania
+        not_published:
+          text_html: Ta lista zawiera %{not} opublikowanych.
+          aside_html: Ta lista zawiera %{not} opublikowanych
+          not: nie
+        publish: Opublikuj listę
+        unpublish: Opublikuj listę
+        update: Aktualizacja listingu
+        update_draft: Aktualizuj wersję roboczą
+      to_edit: Edytuj
+      errors:
+        one: '1 błąd zabronić zapisania tego listingu:'
+        other: 'Liczba błędów: %{count} zabronionych, aby zapisać następującą listę:'
+      expired: Ta lista utraciła ważność.
+      form:
+        body_markdown:
+          description: 400 znaków max, 12 line break max, no images allowed, * markdown is Zachęta *. W razie potrzeby prosimy o włączenie metody kontaktu.
+          placeholder: '...'
+        category:
+          label: Kategoria
+          placeholder: Konferencja CFP (1 Kredyt)
+          summary: Szczegóły/reguły kategorii
+        expiry:
+          description: W stosownych przypadkach, terminy, terminy itp.
+        location:
+          description: 'Maksymalna liczba znaków: 32 znaki, zwykły tekst'
+          label: Lokalizacja (jeśli dotyczy zdarzeń, itp.)
+          placeholder: Nowy Jork
+        no_credit: Musisz mieć co najmniej jeden kredyt, aby stworzyć listę.
+        organization:
+          description: Delegowanie w imieniu organizacji wydaje kredyty organizacji.
+          none: Brak
+        publish: Opublikuj listę
+        purchase: Kredyty zakupu
+        save: Zapisz wersję roboczą
+        save_notice: Nie będziesz obciążony kredytami, aby zapisać wersję roboczą.
+        tags:
+          placeholder: Dodaj do 8 znaczników ...
+        title:
+          placeholder: Maks. 128 znaków, zwykły tekst
+      nav:
+        aria_label: Listingi
+        create: Utwórz
+        manage: Zarządzaj
+      new:
+        meta:
+          title: Nowa lista
+        heading: Tworzenie listy społeczności
+        buy: Kup więcej
+        disclaimer:
+          subtitle: Zastrzeżenie
+          description1: Użytkownicy %{community} admins mogą modyfikować znaczniki i kategorie w celu zapewnienia dokładności. Możemy również podjąć i zwrócić niewłaściwe listingi.
+          description2: Listingi tracą ważność po upływie 30 dni od daty ich publikacji lub "zderzaka".
+        organization: Uznania organizacji
+        personal: Kredyty osobiste
+      preview_icon: DEV, logo
+

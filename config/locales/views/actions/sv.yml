@@ -1,0 +1,24 @@
+sv:
+  views:
+    actions:
+      copy:
+        text: Kopierat till Urklipp
+        button: Kopiera länk
+      more:
+        title: Mer ...
+        aria_label: Dela postalternativ
+      share:
+        facebook:
+          text: Dela till Facebook
+        hackernews:
+          text: Dela till Hacker-nyheter
+        linkedin:
+          text: Dela till LinkedIn
+        reddit:
+          text: Dela till Reddit
+        twitter:
+          text: Dela till Twitter
+          query: '" %{article}" av %{author}'
+        link: Dela inlägg via ...
+        report: Rapportera asbuse
+

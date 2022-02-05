@@ -1,0 +1,110 @@
+sv:
+  liquid_tags:
+    asciinema_tag:
+      invalid_asciinema_id: 'Ogiltigt Asciinema-ID: %{id}'
+    blogcast_tag:
+      invalid_blogcast_id: Ogiltigt blogcast-ID
+    codepen_tag:
+      invalid_codepen_url: Ogiltig CodePen-URL
+      invalid_options: Ogiltiga alternativ
+    codesandbox_tag:
+      invalid_id: 'Kodesandlådefel: Ogiltigt ID'
+    comment_tag:
+      invalid_comment: Ogiltigt kommentars-ID eller URL
+    dotnet_fiddle_tag:
+      invalid_dotnetfiddle_url: Ogiltig DotnetFiddle-URL
+    gist_tag:
+      invalid_filename: Ogiltigt filnamn
+      invalid_format: 'En ogiltig Gist-länk: %{link} Länkar måste följa det här formatet: https://gist.github.com/username/gist_id'
+      invalid_gist_link: 'Ogiltig Gist-länk: Du måste ange en Gist-länk'
+    git_pitch_tag:
+      invalid_gitpitch_url: Ogiltig GitPitch-URL
+    github_tag:
+      github_issue_tag:
+        comment_for: Kommentar för
+        commented_on: kommenterade
+        invalid_github_issue_pull: Ogiltig GitHub-fråga, dra begäran eller kommentarslänk
+        posted_on: postat på
+      github_readme_tag:
+        invalid_options: 'GitHub-märkord: ogiltiga alternativ: %{ogiltiga}-hanterade alternativ: %{valid}'
+        invalid_github_repository: Ogiltig GitHub-behållarsökväg eller webbadress
+    glitch_tag:
+      invalid_glitch_id: Ogiltigt Glitch-ID
+      invalid_options: Ogiltiga alternativ
+    instagram_tag:
+      invalid_instagram_id: Ogiltigt Instagram-ID
+    js_fiddle_tag:
+      invalid_jsfiddle_url: Ogiltig JSFiddle-URL
+      invalid_options: Ogiltiga alternativ
+    jsitor_tag:
+      invalid_jsitor_link: Ogiltig JSitor-länk. Läs redigeringsguiden för mer information.
+    kotlin_tag:
+      invalid_kotlin_playground: Ogiltig Kotlin Playground-URL
+    link_tag:
+      not_exist: 'Artikeln du letar efter finns inte: %{slug}'
+      not_exist_link: 'Artikeln du letar efter finns inte: {% link %{slug}%}'
+    liquid_tag_base:
+      invalid_context: Ogiltig kontext. Det här flytande märkordet kan endast användas i %{valid}.
+      no_source_found: Ingen källa hittades
+    listing_tag:
+      invalid_url_or_slug: Ogiltig URL-eller snigel. Listning hittades inte.
+    medium_tag:
+      invalid_link_url: Ogiltig länk-URL eller länk-URL finns inte
+    next_tech_tag:
+      invalid_url: Ogiltig URL för nästa Tech-delning
+    null_tag:
+      liquid_tag_is_disabled: Liquid# %{tag_name}-märkordet är avaktiverat
+    organization_tag:
+      invalid_slug: Ogiltigt organisationssnigel
+      invalid_url: Ogiltig organisations-URL
+    parler_tag:
+      invalid_parler_url: Ogiltig Parler-URL
+    podcast_tag:
+      invalid_podcast_link: Ogiltig podsänk-länk
+    poll_tag:
+      invalid_poll_id: Ogiltigt poll-ID
+    reddit_tag:
+      invalid_reddit_link: 'Ogiltig Reddit-länk: %{url}'
+    replit_tag:
+      invalid_replit_id: Ogiltig URL-adress för Replit eller @user/slug
+    runkit_tag:
+      runkit_tag_is_invalid: Körspaketstaggen är ogiltig
+    slideshare_tag:
+      invalid_slideshare_key: Ogiltig bilddelningsnyckel
+    soundcloud_tag:
+      invalid_soundcloud_url: "Ogiltig Soundcloud-URL-försök att ta bort eventuella URL-parametrar: '?a = value'"
+    speakerdeck_tag:
+      invalid_speakerdeck_id: Ogiltigt stavnings-ID
+    spotify_tag:
+      invalid_spotify_uri: Ogiltig Spotify-URI eller URL.
+    stackblitz_tag:
+      invalid_options: Ogiltiga alternativ
+      invalid_stackblitz_id: Ogiltig stackblitz-ID
+    stackery_tag:
+      missing_argument: Stackery-Saknar ägare och / eller lagernamnsargument
+    stackexchange_tag:
+      post_not_found: 'Det gick inte att hitta en post med det IDt: {% %{tag} %{input}%}'
+      invalid_id: 'Ogiltigt Stack Exchange-ID: {% %{tag} %{input}%}'
+      invalid_site: 'Ogiltig Stack Exchange-plats: {% %{tag} %{input}%}'
+    tag_tag:
+      invalid_tag_name: Ogiltigt märkordsnamn
+    tweet_tag:
+      invalid_twitter_id: Ogiltigt Twitter-ID eller webbadress
+    twitch_tag:
+      invalid_twitch_id: Ogiltigt Twitch-ID, Slug eller URL
+    twitter_timeline_tag:
+      invalid_url: Ogiltig Twitter-tidslinje-URL
+    unified_embed:
+      tag:
+        invalid_url: Ogiltig Embed-URL
+    user_subscription_tag:
+      submit: Skicka in
+      submitting: Skickar ...
+      subscribed: Du är redan prenumererade.
+    wikipedia_tag:
+      section_not_found: Det gick inte att hitta avsnittet med artikeln i Wikipedia- %{input}
+      article_not_found: 'Det gick inte att hitta artikeln i Wikipedia- %{input}: %{response_detalj}'
+      invalid_wikipedia_url: Ogiltig Wikipedia-URL
+    youtube_tag:
+      invalid_youtube_id: Ogiltigt YouTube-ID eller URL
+

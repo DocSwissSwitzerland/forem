@@ -1,0 +1,80 @@
+nl:
+  views:
+    listings:
+      meta:
+        description: Lijst van %{community}
+      heading: Lijsten
+      back: Terug
+      delete:
+        subtitle: Weet u zeker dat u deze lijst wilt wissen?
+        description:
+          text_html: U kunt deze actie niet ongedaan maken, misschien wilt u in plaats daarvan slechts %{action}?
+          edit: bewerken
+          unpublish: niet publiceren
+        edit: Bewerken
+        submit: Wissen
+        unpublish: Niet publiceren
+      edit:
+        heading: Lijst bewerken
+        bump:
+          subtitle: Bump uw lijst
+          button: Bumplisting
+          description: U kunt uw lijst tegen dezelfde prijs als de oorspronkelijke lijst
+          last: 'Laatst gepubliceerd/Bumped: %{date}'
+        notice: U kunt alleen titel/body/tags van concepten of binnen de eerste 24 uur van de lijst of bumping bewerken
+        not_published:
+          text_html: Deze lijst is %{not} gepubliceerd.
+          aside_html: Deze lijst is %{not} gepubliceerd
+          not: niet
+        publish: Lijst publiceren
+        unpublish: Niet-publicatielijst
+        update: Lijst bijwerken
+        update_draft: Concept bijwerken
+      to_edit: Bewerken
+      errors:
+        one: '1 fout bij het niet opslaan van deze lijst:'
+        other: ' %{count} fouten hebben deze lijst verboden om te worden opgeslagen:'
+      expired: Deze lijst is vervallen.
+      form:
+        body_markdown:
+          description: 400 tekens max, 12 lijn pauze max, geen afbeeldingen toegestaan, * markdown wordt aangemoedigd *. Neem indien nodig een contactmethode op.
+          placeholder: '...'
+        category:
+          label: Categorie
+          placeholder: Gemeenschappelijk visserijbeleid (1 Krediet)
+          summary: Categorie-/regels
+        expiry:
+          description: Indien van toepassing voor tijdgevoelige gebeurtenissen, deadlines, enz.
+        location:
+          description: 32 tekens max, platte tekst
+          label: Locatie (indien van toepassing voor evenementen, enz.)
+          placeholder: New York
+        no_credit: U hebt ten minste een krediet nodig om een lijst te maken.
+        organization:
+          description: Detachering voor rekening van een organisatie brengt de kredieten van de organisatie uit.
+          none: Geen
+        publish: Lijst publiceren
+        purchase: Aankoopkredieten
+        save: Concept opslaan
+        save_notice: U krijgt geen crediteringen om een concept op te slaan.
+        tags:
+          placeholder: Maximaal 8 tags toevoegen ...
+        title:
+          placeholder: 128 tekens max, platte tekst
+      nav:
+        aria_label: Lijsten
+        create: Maken
+        manage: Beheren
+      new:
+        meta:
+          title: Nieuwe lijst
+        heading: Een communitylijst maken
+        buy: Meer kopen
+        disclaimer:
+          subtitle: Disclaimer
+          description1: ' %{community} admins kunnen tags en categorieën wijzigen om nauwkeurigheid te garanderen. We kunnen ook nemen en terug te betalen ongepaste lijsten.'
+          description2: Lijsten vervallen 30 dagen nadat ze zijn gepubliceerd of "bumped".
+        organization: Organisatiekredieten
+        personal: Persoonlijke kredieten
+      preview_icon: DEV-logo
+

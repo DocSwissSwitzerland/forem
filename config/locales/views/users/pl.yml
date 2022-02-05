@@ -1,0 +1,90 @@
+pl:
+  views:
+    users:
+      meta:
+        og:
+          title: ' %{user}- %{community} Profil'
+      comments:
+        all:
+          one: Wszystkie komentarze ( %{count})
+          other: Wszystkie komentarze ( %{count})
+        last:
+          one: Ostatnie %{count} komentarzy
+          other: Ostatnie %{count} komentarzy
+        recent: Ostatnie komentarze
+        view: Wyświetl wszystkie działania
+        view_all:
+          one: Wyświetl wszystkie komentarze ( %{count})
+          other: Wyświetl wszystkie komentarze ( %{count})
+        view_last:
+          one: Wyświetl ostatni komentarz 1
+          other: Wyświetl ostatnie %{count} komentarzy
+      github:
+        heading: Repozytoria GitHub
+        fork: Widelec
+        stars:
+          one: 1 gwiazdka
+          other: 'Liczba gwiazdek: %{count}'
+      pin_icon: Zaczep
+      pinned: Przypięte
+      profile_fields:
+        bio:
+          label: Bio
+          placeholder: Krótki bio ...
+        display_email_on_profile: Wyświetl wiadomość e-mail w profilu
+        location:
+          label: Położenie
+          placeholder: Halifax, Nowa Szkocja
+        website:
+          label: adres URL serwisu WWW
+          placeholder: https://yoursite.com
+        education: Edukacja
+        currently_learning: Obecnie nauka
+        currently_hacking_on: Obecnie hacking
+        available_for: Dostępne dla
+        skills_languages: Umiejętności/Języki
+        work: Praca
+      side:
+        comment:
+          icon: Komentarz
+          text:
+            one: 'Liczba zapisanych komentarzy: 1'
+            other: 'Liczba zapisanych komentarzy: %{count}'
+        org: Organizacje
+        post:
+          icon: Publikuj
+          text:
+            one: 1 post opublikowany
+            other: 'Liczba opublikowanych wypowiedzi: %{count}'
+        tag:
+          icon: Znacznik
+          text:
+            one: Po oznakowaniu 1
+            other: 'Liczba śledzonych znaczników: %{count}'
+      signout:
+        meta:
+          title: Potwierdź sygnalizację- %{community}
+        heading: Czy na pewno chcesz się wylogować?
+        yes: Tak, wyloguj się
+      block: Blok @ %{user}
+      details: Szczegóły profilu %{user}
+      dropdown: Czynności użytkownika
+      email_icon: Adres e-mail
+      empty: 404 bio nie znaleziono
+      flag: Flaga @ %{user}
+      follow: Śledź
+      joined:
+        icon: Połączono
+        text_html: 'Dołączył (a): %{date}'
+      location_icon: Położenie
+      logo: Obraz profilu %{user}
+      more: Więcej informacji o @ %{user}
+      send_pm:
+        code: kod postępowania
+        notice_html: Wszystkie interakcje prywatne <b>muszą</b> trwać przy użyciu kodu %{code}.
+        placeholder: W tym miejscu wprowadź swój komunikat ...
+        submit: Wyślij
+      social: Serwis WWW %{service}
+      unflag: Usuń flagę @ %{user}
+      website: Osobisty serwis WWW
+

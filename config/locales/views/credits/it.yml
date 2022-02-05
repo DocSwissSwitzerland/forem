@@ -1,0 +1,55 @@
+it:
+  views:
+    credits:
+      meta:
+        title: Credits
+      ledger:
+        class:
+          listing: Elenco
+        category: Categoria
+        item: Articolo
+        cost: Costo (crediti)
+        date: Data
+        misc: Voci varie
+      listing:
+        create: Creare un elenco
+        dashboard: Vai al Dashboard Listings
+      new:
+        meta:
+          title: Crediti Acquisti
+        heading: Crediti di acquisto per @ %{name}
+        form:
+          amount:
+            label: Importo a acquisto
+            placeholder: Inserire qualsiasi importo
+          method:
+            label: Metodo di pagamento
+            number: '**** **** **** %{ultimo}'
+            exp: ' %{mm} / %{yy}'
+            add: Aggiungi nuova scheda
+          submit: Completo Acquisto
+          submitting: Inoltro ...
+          note_org: "*Tutti gli admins org hanno accesso ai crediti di proprietà dell'organizzazione"
+        switch:
+          org: Passa a %{name}
+          user: Passa all'acquisto personale
+        status:
+          subtitle:
+            org: Quanti crediti ha %{name}?
+            user: Quanti crediti ho attualmente?
+          desc:
+            org: ' %{name} ha %{count} credits.'
+            user: Hai %{count} credits.
+        how:
+          subtitle: Come posso guadagnare i crediti?
+          desc_html: I membri ricevono <strong>5 credits</strong> per ogni badge di profilo che guadagni.
+      purchase: Acquistare ulteriori crediti
+      tag: 'Tag: %{name}'
+      status:
+        user:
+          one: Hai %{count} credito personale da spendere
+          other: Hai %{count} crediti personali da spendere
+        org_html:
+          one: ' %{name} ha %{num} credito da spendere'
+          other: ' %{name} ha %{num} credits da spendere'
+

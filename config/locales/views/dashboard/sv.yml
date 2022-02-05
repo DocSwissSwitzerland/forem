@@ -1,0 +1,150 @@
+sv:
+  views:
+    dashboard:
+      meta:
+        title: Dashboard- %{site}
+      heading: Kontrollpanel
+      actions:
+        mobile:
+          posts: Poster ( %{num})
+          followers: Uppföljare ( %{num})
+          following_tags: Följande taggar ( %{num})
+          following_users: Följa användare ( %{num})
+          following_orgs: Bevaka organisationer ( %{num})
+          following_pods: Följa podcastar ( %{num})
+        posts: Poster
+        series: Serie
+        followers: Uppföljare
+        following_tags: Bevaka etiketter
+        following_users: Bevaka användare
+        following_orgs: Bevaka organisationer
+        following_pods: Följa podsändningar
+        listings: Listningar
+        analytics: Analys
+        for_org: Analys för %{org}
+        upload: Överför en video
+      analytics:
+        meta:
+          title: Analys
+        heading: Analys-kontrollpanel för %{name}
+        desc_1: Välkommen till Analytics Dashboard, hemmet för djuplodande användarinformation så att författare kan göra datadrivna beslut om %{Medlems} ekosystem.
+        desc_2: Den här kontrollpanelen visar på djupa insikter som är särskilt relevanta för %{medlemmar} relationer, författare och seriösa bloggare.
+        back: "\U0001F448 Tillbaka till Main Dashboard"
+        your: Din kontrollpanel
+        org: ' %{org} Analytics-kontrollpanel'
+      article:
+        heading:
+          text_html: ' %{archived} %{title}'
+          archived: '[Arkiverad ] '
+        archived: Arkiverad
+        published: 'Publicerad:'
+        published_html: 'Publicerades: %{date}'
+        edited: 'Redigerat:'
+        edited_html: 'Redigerades: %{date}'
+        series: 'Serie:'
+        series_html: <strong>Serie:</strong>  %{series}
+        draft: Utkast
+        reactions:
+          title: Reaktioner
+          icon: Reaktioner
+          text_html:
+            one: ' %{num} reaktion'
+            other: ' %{num} reaktioner'
+        comments:
+          title: Kommentarer
+          icon: Kommentarer
+          text_html:
+            one: ' %{num} kommentar'
+            other: ' %{num} kommentarer'
+        views:
+          title: Vyer
+          icon: Vyer
+          lt_25: < 25
+          text_html:
+            one: ' %{scale}-vy'
+            other: ' %{scale} vyer'
+          u_25: under 25
+        subscriptions:
+          title: Abonnemang
+          icon: Data
+          number: Prenumerationer ( %{num})
+        delete: Radera
+        unpin: Packa upp
+        pin:
+          title: Pin till profil
+          button: Pin till profil
+          text: Pin
+        manage:
+          aria_label: 'Hantera inlägg: %{title}'
+          text: Hantera
+        lock: Lås diskussion
+        unlock: Lås upp diskussion
+        edit:
+          aria_label: 'Redigera inlägg: %{title}'
+          text: Redigera
+        more:
+          title: 'Fler alternativ för post: %{title}'
+          icon: Mer ...
+        stats: Stats
+        archive: Arkivpost
+        unarchive: Arkivera post
+        author: Författare
+        author_is: 'FÖRFATTARE: '
+        save: Spara
+        submit: Skicka in författarändring
+      followers:
+        heading: Dashboard " Uppföljare
+        empty: Du har inga följare än ...
+      following_orgs:
+        heading: Dashboard " Bevaka organisationer
+        empty: Du följer inte några organisationer än ...
+      following_pods:
+        heading: Dashboard " Följa podsändningar
+        empty: Du följer inga poddsändningar än ...
+      following_tags:
+        heading: Dashboard " Bevaka etiketter
+        adjust: Justera etikettens vikt för att ändra hemmatningen. Högre värden betyder fler framträdanden för den etiketten.
+        anti:
+          title: Märkordet har en negativ totalvikt
+          text: Anti-uppföljning
+        default: Standard 1.0
+        empty: Du har inte följt några taggar än ...
+        number:
+          aria_label: ' %{name} taggvikt'
+        update: Uppdatera vikter
+      following_users:
+        heading: Dashboard " Bevaka användare
+        empty: Du följer inga användare ...
+      listings:
+        meta:
+          title: Listings-kontrollpanel
+      posts:
+        heading: Poster
+        archived: Visa arkiverade
+        option:
+          creation-desc: Nyligen skapade
+          published-desc: Nyligen publicerad
+          views-desc: De flesta vyer
+          reactions-desc: De flesta åtgärder
+          comments-desc: De flesta kommentarer
+          aria_label: Sortera efter
+        org: ' %{name} ( %{num})'
+        personal: Personlig
+        empty:
+          desc: Det är här du kan hantera dina inlägg, men du har inte skrivit något ännu.
+          new: Skriv ditt första inlägg nu.
+      subscriptions:
+        meta:
+          title: Prenumerationer %{title}
+        heading: Abonnemang
+        subhead:
+          text_html: ' %{for} %{source}'
+          for: för
+        empty: Du har inga prenumeranter för den här %{kind} ännu ...
+      summary:
+        reactions: Totalt efter reaktionerna
+        views: Totalt efter vyer
+        listings: Listningar skapade
+        credits: Tillgodogöranden
+        lt_500: < 500
+

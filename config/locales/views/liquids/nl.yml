@@ -1,0 +1,44 @@
+nl:
+  views:
+    liquids:
+      github:
+        view: Uitzicht op GitHub
+      medium:
+        logo: Gemiddeld logo
+      poll:
+        show_results: Laat me de resultaten zien.
+      reddit:
+        author: 'Auteur: %{author}'
+        see: Zie volledige post
+      stackexchange:
+        answer:
+          text_html: ' %{antwoord} re: %{title}'
+          answer: Antwoord
+        answers: 'Antwoorden: %{count}'
+        comments: 'Commentaar: %{count}'
+        open:
+          answer: Volledig antwoord openen
+          article: Volledig artikel openen
+          question: Volledige vraag openen
+      twitter:
+        view: Bekijk op Twitter
+      user_subscription:
+        confirm:
+          subtitle: Abonneren bevestigen
+          button_text: Abonnement bevestigen
+          cancel_text: Annuleren
+          text_html: U deelt uw e-mailadres %{email}, gebruikersnaam, naam en DEV profiel URL met %{username}. Zodra u dit doet, kunt u dit niet ongedaan maken.
+        logged_out: U moet eerst aanmelden bij DEV.
+        sign_in: Aanmelden
+        subscribe:
+          apple:
+            button: Abonneren
+            desc_html: Hé, daar! Het ziet eruit als wanneer u uw DEV account hebt gemaakt dat u hebt aangemeld bij Apple met behulp van een persoonlijk relais-e-mailadres. Als u zich wilt abonneren, wilt u %{update} eerst naar een ander e-mailadres.
+            update: update uw e-mailadres in Instellingen
+          button: Abonneren
+          desc_html: U kunt zich abonneren op %{email} het e-mailadres dat is gekoppeld aan uw DEV-account. Als u een ander e-mailadres wilt gebruiken, kunt u %{update}.
+          update: update uw e-mailadres in Instellingen
+      wikipedia:
+        logo: Wikipedia-logo
+        view: Uitzicht op Wikipedia
+

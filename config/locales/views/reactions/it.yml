@@ -1,0 +1,31 @@
+it:
+  views:
+    reactions:
+      category:
+        hands: Mani
+        like: Come
+        readinglist: Elenco di lettura
+        thinking: Pensare
+        thumbsup: Pollici in su
+        thumbsdown: Pollice verso il basso
+        unicorn: Unicorno
+        vomit: Bandiera
+      summary:
+        count_html:
+          one: ' %{count} %{start} reazione %{fine}'
+          other: ' %{count} %{start} reazioni %{fine}'
+        title: Reazioni
+      like:
+        title: Cuore
+        aria_label: Come
+        icon: Pulsante del cuore preferito
+        text: Come
+      unicorn:
+        title: Unicorno
+        aria_label: Reagire con unicorno
+      readingList:
+        title: Salva
+        aria_label: Aggiungi alla lista di lettura
+        icon: Pulsante di salvataggio
+        text: Salva
+

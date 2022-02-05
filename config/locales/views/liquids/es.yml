@@ -1,0 +1,44 @@
+es:
+  views:
+    liquids:
+      github:
+        view: Vista en GitHub
+      medium:
+        logo: Logotipo medio
+      poll:
+        show_results: Sólo me muestran los resultados
+      reddit:
+        author: 'Autor: %{author}'
+        see: Véase el correo completo
+      stackexchange:
+        answer:
+          text_html: ' %{answer} re: %{title}'
+          answer: respuesta
+        answers: 'Respuestas: %{count}'
+        comments: 'Comentarios: %{count}'
+        open:
+          answer: Open Full Answer
+          article: Artículo Completo Abierto
+          question: Abrir una pregunta completa
+      twitter:
+        view: Ver en Twitter
+      user_subscription:
+        confirm:
+          subtitle: Confirmar suscripción
+          button_text: Confirmar suscripción
+          cancel_text: Cancelar
+          text_html: Compartirás tu dirección de correo electrónico %{email}, nombre de usuario, nombre y URL de perfil DEV con %{username}. Una vez que hagas esto, no puedes deshacer esto.
+        logged_out: Primero debe iniciar sesión en DEV.
+        sign_in: Iniciar sesión
+        subscribe:
+          apple:
+            button: Suscribirse
+            desc_html: ¡Oye, ahí! Parece que cuando creó su cuenta DEV se firmó con Apple utilizando una dirección de correo electrónico de retransmisión privada. Si desea suscribirse, por favor, %{update} primero a una dirección de correo electrónico diferente.
+            update: actualizar su dirección de correo electrónico en Configuración
+          button: Suscribirse
+          desc_html: Usted se suscribirá con %{email} la dirección de correo electrónico asociada con su cuenta DEV. Para utilizar una dirección de correo electrónico diferente, puede %{update}.
+          update: actualizar su dirección de correo electrónico en Configuración
+      wikipedia:
+        logo: Logotipo de Wikipedia
+        view: Ver en Wikipedia
+

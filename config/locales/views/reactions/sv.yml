@@ -1,0 +1,31 @@
+sv:
+  views:
+    reactions:
+      category:
+        hands: Händer
+        like: Som
+        readinglist: Läser lista
+        thinking: Funderar
+        thumbsup: Tummen upp
+        thumbsdown: Tummen ner
+        unicorn: Enhörning
+        vomit: Flagga
+      summary:
+        count_html:
+          one: ' %{count} %{start} reaktion %{end}'
+          other: ' %{count} %{start} reaktioner %{end}'
+        title: Reaktioner
+      like:
+        title: Hjärta
+        aria_label: Som
+        icon: Favorit hjärta knapp
+        text: Som
+      unicorn:
+        title: Enhörning
+        aria_label: Reagera med enhörning
+      readingList:
+        title: Spara
+        aria_label: Lägg till i läsningslista
+        icon: Knappen Spara
+        text: Spara
+

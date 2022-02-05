@@ -1,0 +1,77 @@
+nl:
+  views:
+    auth:
+      background: achtergrondeachtergrond
+      create:
+        aria_label: Nieuwe account aanmaken
+        text: Account maken
+      creator:
+        text1: Laten we beginnen met je Forem reis!
+        text2: Maak eerst uw beheerdersaccount.
+        text3: Dan lopen we door je Forem setup.
+        hint:
+          aria_label: Gebruikersnaam bewerken
+          icon: Gebruikersnaam bewerken
+          text_html: ' %{start} Uw gebruikersnaam is %{end} %{button}'
+        submit: Mijn account aanmaken
+      login:
+        aria_label: Aanmelden
+        text: Aanmelden
+        continue: Doorgaan
+        forgot: Ik ben mijn wachtwoord vergeten
+      provider:
+        text: ' %{action} met %{provider}'
+        login: Doorgaan
+        signup: Aanmelden
+        email:
+          icon: E-mail
+          text: Aanmelden met e-mail
+      register:
+        errors:
+          one: Whoops, we vonden %{count} probleem
+          other: Whoops, we vonden %{count} problemen
+        allow:
+          one_html: Registratie beperkt tot <strong>@ %{domein}</strong> e-mails.
+          list: Registratie beperkt tot de volgende e-mails
+        create: Uw account aanmaken
+        field:
+          name:
+            aria_label: Naam
+            label: Naam
+          username:
+            aria_label: Gebruikersnaam
+            desc: Een gebruikersnaam kan alleen letters, cijfers en onderstrepingstekens bevatten. De maximale lengte van de gebruikersnaam mag uit 30 tekens bestaan.
+            label: Gebruikersnaam
+          email:
+            aria_label: E-mail
+            label: E-mail
+            placeholder: john@example.com
+          password:
+            aria_label: Wachtwoord
+            desc: Minimaal 8 tekens
+            label: Wachtwoord
+            placeholder: ••••••••
+            hide: Wachtwoord verbergen
+            show: Wachtwoord tonen
+          confirm:
+            aria_label: Bevestiging wachtwoord
+            label: Bevestiging wachtwoord
+          required: '*-vereist'
+        secret:
+          label: Nieuw Forem-geheim
+          placeholder: Zoals verstrekt door uw Forem-host
+        submit: Aanmelden
+      wizard:
+        meta:
+          title: Laten we beginnen met Forem.
+        heading: Laten we beginnen met je Forem reis
+        step_1: Maak een account aan. Het zal het eerste super admin account zijn.
+        step_2_html: Nadat u zich hebt aangemeld, kunt u uw community configureren op %{path}.
+        step_3: Er is veel dat je kunt doen als een admin, maar er is een leercurve.
+        step_4: Gelieve te reiken naar het Forem team als je niet zeker bent over iets!
+        step_5: "Voor Het Machtigen Van Community \U0001F331"
+      tagline: Log in om uw ervaring aan te passen en betrokken te raken.
+      title:
+        text_html: <a href="/" class="c-link c-link--branded"> %{name}</a> is een community van %{maybe_size} verbazingwekkend %{label}
+        size: ' %{num} '
+

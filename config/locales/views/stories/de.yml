@@ -1,0 +1,25 @@
+de:
+  views:
+    stories:
+      meta:
+        description_tagged: ' %{tag} Inhalt in %{name}'
+        page: ' Seite %{page}'
+        rss: ' %{name} RSS-Feed'
+      heading: Beiträge
+      discuss: '#discuss'
+      follow: Folgen
+      menu:
+        aria_left: nav-button-links
+        aria_right: nav-button-rechts
+      sort:
+        aria_label: Beiträge von ansehen nach
+        aria_tagged: Mit Tags versehene Beiträge von
+        relevant: Relevant
+        week: Woche
+        month: Monat
+        year: Jahr
+        infinity: Unendlichkeit
+        latest: Letzte
+        signin_html: "\U0001F44B <a href=\"%{path}\">Melden Sie sich an</a> für die Funktionen für die Fähigkeit zum Sortieren nach <strong>top</strong> und <strong>latest</strong>."
+        top: Oben
+

@@ -1,0 +1,109 @@
+de:
+  services:
+    analytics_service:
+      no_stats: Sie können die Statistiken dieses Artikels nicht anzeigen
+    article_with_video_creation_service:
+      unpublished_video: Nicht publizierter Video ~ %{rand}
+    authentication:
+      authenticator:
+        not_allowed: Sorry, aber die Domain für Ihre E-Mail-Adresse ist nicht erlaubt. Dieser Forem hat möglicherweise nur begrenzte Anmeldedaten für angegebene E-Mail-Domänen oder blockiert diese spezifische Domäne vom Beitritt.
+      providers:
+        apple:
+          name: ' %{first} %{last}'
+        not_available: Provider %{name} ist nicht verfügbar!
+        not_enabled: Provider %{name} ist nicht aktiviert!
+    badges:
+      award_beloved_comment:
+        message: "Sie sind berühmt! [Dies ist der Kommentar] ( %{comment}), für den Sie erkannt werden. \U0001F604"
+      award_streak:
+        longest: 16 Wochen! Du hast die längste Schreibstreche erreicht. Das macht Sie für besondere Quests in der Zukunft in Frage. Halten Sie die erstaunlichen Beiträge für unsere Community!
+        message:
+          one: "Congrats auf die Erreichung dieses Streaks! Konsequentes Schreiben ist hart. Die nächste Streak-Abzeichen, die Sie erhalten können, ist die %{count} Woche Badge. \U0001F609"
+          other: "Congrats auf die Erreichung dieses Streaks! Konsequentes Schreiben ist hart. Die nächste Streak-Abzeichen, die Sie erhalten können, ist die %{count} Woche Badge. \U0001F609"
+      award_yearly_club:
+        message:
+          one: Happy %{community} Geburtstag! Können Sie glauben, dass es bereits %{count} Jahr gewesen ist?!
+          other: Happy %{community} Geburtstag! Können Sie glauben, dass es bereits in %{count} Jahre gewesen ist?!
+      congrats: Congrats !!!
+      thank_you: Vielen Dank für Ihre Beiträge!
+    broadcasts:
+      welcome_notification:
+        generator:
+          welcome: 'Benachrichtigung über Begrüßung: %{key}'
+    error_messages:
+      clean:
+        parse_error: Bei der Syntaxanalyse der YAML-Front war ein Problem aufgetreten. Vielleicht müssen Sie einem Zitat oder einem Doppelpunkt oder etwas entkommen. E-Mail %{email}, wenn Sie Probleme haben.
+    html:
+      parser:
+        enter_fullscreen_mode: Fullscreen-Modus eingeben
+        exit_fullscreen_mode: Fullscreen-Modus beenden
+    mailchimp:
+      bot:
+        member_in_compliance_state: Mitglied im Konformitätsstatus
+    markdown_processor:
+      parser:
+        invalid_markdown_detected: Ungültiger Preisabschlag festgestellt!
+    moderator:
+      banish_user:
+        spam_account: SPAM
+      manage_activity_and_roles:
+        need_super: Sie benötigen den Superadministratorstatus, um diese Aktion auszuführen.
+      merge_user:
+        duplicate: Der Benutzer verfügt über doppelte Authentifizierungsmethoden für die beiden Accounts. Überprüfen und löschen Sie die Identität, die der Benutzer nicht mehr verwendet. Hierbei handelt es sich in der Regel um das bereits gelöschte Sozialkonto oder die Authentifizierungsmethode, die an den Benutzer gebunden ist, der gelöscht werden soll.
+        multiple: Der Benutzer, der gelöscht wird, verfügt bereits über zwei oder mehr Authentifizierungsmethoden. Sind Sie sicher, dass dies der richtige Benutzer ist, der gelöscht werden soll? Wenn dies der Fall ist, muss ein Superadministrator dies von der Konsole aus ausführen, um sicher zu sein.
+        same_user: Sie können dieselben beiden Benutzer-IDs nicht zusammenführen.
+    notifications:
+      new_comment:
+        new: "\U0001F4AC Neuer Kommentar"
+      new_mention:
+        new: "\U0001F5E3️ Neue Erwähnung"
+    payments:
+      customer:
+        usd: Usd
+      errors:
+        select_payment_method: Wählen Sie eine Zahlungsmethode aus.
+      process_credit_purchase:
+        charge:
+          one: Kauf von %{count} Credits.
+          other: Kauf von %{count} Credits.
+    rate_limit_checker:
+      invalid_key: 'Ungültiger Cacheschlüssel: Keine eindeutige Komponente vorhanden'
+      limit_reached:
+        one: Ratenbegrenzung erreicht, versuchen Sie es erneut in %{count} Sekunden
+        other: Ratenbegrenzung erreicht, versuchen Sie es erneut in %{count} Sekunden
+    slack:
+      messengers:
+        article_fetched_feed:
+          body: >
+            Neuer Artikel abgerufen über RSS: %{title}
+             %{url}
+        article_published:
+          body: >
+            Neuer Artikel Veröffentlicht: %{title}
+             %{url}
+        feedback:
+          anonymous_report: '*Anonymer Bericht:'
+          final_message: >2-
+             %{user_detail} Kategorie: %{category} Interner Bericht: %{reports_url} * _ Reported URL: %{reported_url} _ *
+            ----- *Message: * %{message}
+          body: >
+            *Logged in user: * reporter: %{username}- %{url} email: <mailto:%{email}|%{email}>
+        potential_spammer:
+          body: >
+            Potenzieller Spam-Benutzer! %{url}
+        sponsorship:
+          body: >2
+             %{user} hat ein Sponsoring in %{type} für %{organization} gekauft
+    spam:
+      article_handler:
+        suspended_too_many: Benutzer für zu viele spammy Artikel ausgesetzt, ausgelöst durch autovomit.
+    user_subscriptions:
+      create_from_controller_params:
+        source_not_found: Quelle nicht gefunden.
+        email_mismatch: Abweichung bei Subskribentenemail
+    users:
+      remove_role:
+        remove_self: Admins können Rollen nicht von sich selbst entfernen.
+        remove_super: Superadministratorrollen können nicht entfernt werden.
+        error: Es gab ein Problem, das diese Rolle entfernt hat.  %{e_message}
+

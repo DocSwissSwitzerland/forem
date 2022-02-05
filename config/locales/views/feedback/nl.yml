@@ -1,0 +1,20 @@
+nl:
+  views:
+    feedback:
+      meta:
+        title: Feedback
+      heading: Dank u voor uw verslag.
+      home: Terug naar homepage
+      form:
+        rude_or_vulgar: Grof of vulgair
+        harassment: Intimidatie of haatspraak
+        spam: Probleem met spam of copyright
+        listings: Ongepast listings bericht/categorie
+        other: Andere
+        url: Opgegeven URL
+        message:
+          subtitle: Bericht
+          description: Geef eventuele aanvullende informatie of context die ons zal helpen begrijpen en omgaan met de situatie.
+          placeholder: '...'
+        submit: Feedback verzenden
+

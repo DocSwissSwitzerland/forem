@@ -1,0 +1,89 @@
+pt:
+  views:
+    articles:
+      meta:
+        description: Um artigo da comunidade
+      actions:
+        aria_label: Ações de artigo
+      comments:
+        aria_label: Comentários para o post %{title} ( %{num})
+        subtitle_html: Discussão %{num}
+        num: ( %{num})
+        subscribe: Assinar
+      conduct:
+        aria_label: Controles de conduta
+        code: Código de Conduta
+        report: Abuso de relatório
+      delete:
+        heading: Tem certeza de que deseja excluir este artigo?
+        desc:
+          text_html: Não é possível desfazer essa ação, talvez você apenas deseje %{action} em vez disso?
+          edit: editar
+          unpublish: unpublicar
+        action:
+          button: Excluir
+          cancel: Dispensar
+          edit: Editar
+          unpublish: Não publicar
+      lock:
+        meta:
+          title: Confirmar Bloqueio de Discussão
+        heading: Tem certeza de que quer travar a discussão sobre este post?
+        desc_html: Os usuários não serão capazes de adicionar novos comentários. Isto irá <em class="fw-bold">não</em> remover comentários existentes. Você pode desbloquear a discussão a qualquer momento para permitir que os usuários deixem comentários novamente.
+        cancel: Cancelar
+        notes:
+          label: Notas (opcional)-isso só é visível para você e admins
+          placeholder: Mais detalhes sobre por que você trancou a discussão.
+        reason:
+          label: Motivo para bloquear a discussão (opcional)-esta será exibida publicamente
+          placeholder: A razão pela qual você está travando essa discussão.
+        submit: Discussão de bloqueio
+      preview_discuss_html:
+        zero: Nova Discussão!
+        one: '#discutir <img src="%{image}" /> %{count}'
+        other: '#discutir <img src="%{image}" /> %{count}'
+      save:
+        title: Salvar a lista de leitura
+        aria_label: Salvar a lista de leitura
+        initial: Salvar
+        success: Salvo
+      series:
+        subtitle: ' %{slug} ( %{size})'
+        size:
+          one: ' %{count} Part Series'
+          other: ' %{count} Part Series'
+        published: Publicado %{date}
+        inbetween:
+          num: '...'
+          text:
+            one: mais uma parte ...
+            other: ' %{count} mais peças ...'
+          title: Visualizar mais
+      unlock:
+        meta:
+          title: Confirmar Desbloqueio De Discussão
+        heading: Tem certeza de que deseja desbloquear a discussão sobre este post?
+        desc: Os usuários poderão adicionar novos comentários. Você pode bloquear a discussão a qualquer momento para evitar que os usuários deixem comentários novamente.
+        cancel: Cancelar
+        notes: 'Notas de quando esta discussão foi travada (só visível para você e admins):'
+        reason: 'Razão esta discussão foi travada (publicamente visível):'
+        submit: Desbloquear discussão
+      unpublished:
+        subtitle: Post inédito.
+        text: ' Esta URL é pública mas secreta, portanto, compartilhe a seu próprio critério.'
+        edit: Clique para editar
+      co_authors_html: com %{nomes}
+      crossposted:
+        text_html: Originalmente publicado em %{url} %{em}
+        on_html: em %{date}
+      edited: Atualizado em %{date}
+      edited_html: Atualizado em %{date}
+      for_org_html: ' %{start} para %{end} %{org}'
+      missing: Artigo Não Mais Disponível
+      posted_html: Postado em %{date}
+      read_next: Leia a seguir
+      reading_time:
+        one: 1 min leitura
+        other: ' %{count} min read'
+      right_nav: Detalhes do autor
+

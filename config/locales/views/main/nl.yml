@@ -1,0 +1,71 @@
+nl:
+  views:
+    main:
+      aria_home: ' %{community} Home'
+      header:
+        create_account: Account maken
+        login: Aanmelden
+        nav:
+          aria_label: Navigatiemenu
+        moderation:
+          aria_label: Moderatie
+          icon: Moderatie
+        notifications:
+          aria_label: Kennisgevingen
+          icon: Kennisgevingen
+        skip: Naar content
+      modal:
+        create_account:
+          aria_label: Nieuwe account aanmaken
+          text: Account maken
+        login:
+          aria_label: Aanmelden
+          text: Aanmelden
+      nav:
+        admin: Beheerder
+        dashboard: Dashboard
+        placeholder: '...'
+        list: Leeslijst
+        moderator_center: Moderatorcentrum
+        other: Andere
+        settings: Instellingen
+      nav_name:
+        About: Info
+        Code of Conduct: Gedragscode
+        Contact: Contactpersoon
+        FAQ: FAQ
+        Listings: Lijsten
+        Podcasts: Podcasts
+        Privacy Policy: Privacybeleid
+        Reading List: Leeslijst
+        Sponsors: Sponsors
+        Tags: Tags
+        Terms of use: Gebruiksvoorwaarden
+        Videos: Video's
+      side:
+        listings:
+          heading: Lijsten
+          all: Alles bekijken
+          new: Lijst maken
+        trend: trending guides/resources
+        recent: recentelijk opgevraagd
+      tags:
+        aria_label: Prioriteit van tag aanpassen
+        follow: Volgen
+        my_tags: Mijn tags
+        popular_tags: Populaire tags
+      footer:
+        built:
+          text_html: Gebouwd op %{forem}-de %{opensource} software waarmee %{dev} en andere inclusieve community's worden gemachtigd.
+          forem: Forem
+          opensource: bron openen
+          dev: DEV
+        desc_html: ' %{community}- %{desc}'
+        logo: Logo van Forem
+        powered:
+          text_html: Gemaakt met liefde en %{rails}. %{community} <span title="copyright">&copy;</span>  %{copyright}.
+          rails: Ruby on Rails
+      home: Thuis
+      create_post: Post maken
+      signout: Afmelden
+

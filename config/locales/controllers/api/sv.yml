@@ -1,0 +1,21 @@
+sv:
+  api:
+    v0:
+      analytics_controller:
+        invalid_date_format: Datumparametrarna "start" eller "end" måste vara i formatet "åååå-mm-dd"
+        start_missing: Nödvändig start-parameter saknas
+      articles_controller:
+        must_be_json: Artikelparam måste vara ett JSON-objekt. Du har tillhandahållen artikel som %{type}
+      follows_controller:
+        followed:
+          one: följt %{count} användare
+          other: följt %{count} användare
+      health_checks_controller:
+        app_is_up: Appen är uppe!
+        database_connected: Databasansluten
+        database_not_connected: Databasen är INTE ansluten!
+        redis_connected: Redis är ansluten
+        redis_not_connected: Redis är INTE ansluten!
+      listings_controller:
+        no_credit: Inte tillräckligt med tillgängliga krediter
+

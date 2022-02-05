@@ -1,0 +1,20 @@
+de:
+  views:
+    feedback:
+      meta:
+        title: Feedback
+      heading: Vielen Dank für Ihren Bericht.
+      home: Zur Homepage zurückkehren
+      form:
+        rude_or_vulgar: Rude oder vulgär
+        harassment: Belästigung oder Hassrede
+        spam: Spam-oder Urheberrechtsfrage
+        listings: Nachricht/Kategorie für unpassende Angebote
+        other: Sonstige
+        url: Gemeldete URL
+        message:
+          subtitle: Nachricht
+          description: Bitte geben Sie alle zusätzlichen Informationen oder Kontexte an, die uns helfen, die Situation zu verstehen und zu handhaben.
+          placeholder: '...'
+        submit: Feedback senden
+

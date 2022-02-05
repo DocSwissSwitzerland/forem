@@ -1,0 +1,64 @@
+sv:
+  devise:
+    confirmations:
+      confirmed: E-postadressen har bekräftats.
+      send_instructions: Du kommer att få ett e-postmeddelande med instruktioner för hur du kan bekräfta din mejladress om några minuter.
+      send_paranoid_instructions: Om din e-postadress finns i vår databas kommer du att få ett e-postmeddelande med instruktioner för hur du kan bekräfta din mejladress om några minuter.
+    failure:
+      already_authenticated: Du är redan inloggad.
+      inactive: Ditt konto är inte aktiverat ännu.
+      invalid: Ogiltig %{authentication_keys} eller lösenord.
+      last_attempt: Du har ett försök till innan ditt konto är låst.
+      locked: Ditt konto är låst.
+      not_found_in_database: Ogiltig %{authentication_keys} eller lösenord.
+      timeout: Sessionen har upphört. Du måste logga in igen för att fortsätta.
+      unauthenticated: Du måste logga in eller logga in innan du fortsätter.
+      unconfirmed: Du måste bekräfta din mejladress innan du fortsätter.
+    mailer:
+      confirmation_instructions:
+        subject: Bekräftelseinstruktioner
+      email_changed:
+        subject: E-poständring
+      password_change:
+        subject: Lösenordet har ändrats
+      reset_password_instructions:
+        subject: Instruktioner för
+      unlock_instructions:
+        subject: Lås upp instruktioner
+    omniauth_callbacks:
+      failure: Det gick inte att autentisera dig från %{kind} eftersom " %{reason}".
+      success: Autentiserad från %{kind}-konto.
+    passwords:
+      no_token: Du kan inte komma åt den här sidan utan att komma från ett lösenord för återställning av lösenord. Om du kommer från ett lösenord för återställning av lösenord, se till att du använder den fullständiga URL-adressen.
+      send_instructions: Du kommer att få ett e-postmeddelande med instruktioner om hur du återställer ditt lösenord inom några minuter.
+      send_paranoid_instructions: Om din e-postadress finns i vår databas kommer du att få en lösenordsåterställningslänk i din mejladress om några minuter.
+      updated: Ditt lösenord har ändrats. Du är nu inloggad.
+      updated_not_active: Ditt lösenord har ändrats.
+    registrations:
+      destroyed: Hej då! Ditt konto har annullerats. Vi hoppas få se dig snart igen.
+      signed_up: Välkomna! Du har skrivit in dig.
+      signed_up_but_inactive: Du har skrivit in dig. Men vi kunde inte skriva in dig på grund av att ditt konto ännu inte aktiverats.
+      signed_up_but_locked: Du har skrivit in dig. Men vi kunde inte skriva in dig eftersom ditt konto är låst.
+      signed_up_but_unconfirmed: Ett meddelande med bekräftelslänkar har skickats till din e-postadress. Följ länken för att aktivera ditt konto.
+      update_needs_confirmation: Du har uppdaterat ditt konto, men vi måste verifiera din nya mejladress. Kontrollera e-postmeddelandet och följ bekräftelsemeddelaren för att bekräfta din nya mejladress.
+      updated: Ditt konto har uppdaterats.
+      updated_but_not_signed_in: Ditt konto har uppdaterats, men eftersom ditt lösenord har ändrats måste du logga in igen.
+    sessions:
+      already_signed_out: Signerad ut.
+      signed_in: Signerat med lyckat resultat.
+      signed_out: Signerad ut.
+    unlocks:
+      send_instructions: Du kommer att få ett e-postmeddelande med instruktioner om hur du låser upp ditt konto inom några minuter.
+      send_paranoid_instructions: Om ditt konto finns kommer du att få ett e-postmeddelande med instruktioner om hur du låser upp den inom några minuter.
+      unlocked: Ditt konto har låsts upp utan problem. Du måste logga in för att fortsätta.
+  errors:
+    messages:
+      already_confirmed: har redan bekräftats, försök logga in
+      confirmation_period_expired: måste bekräftas inom %{period}, be om en ny
+      expired: har upphört att gälla, begär en ny
+      not_found: hittades inte
+      not_locked: var inte låst
+      not_saved:
+        one: '1 fel: Det är förbjudet att spara %{resource} från att sparas:'
+        other: ' %{count} fel har förbjudit denna %{resource} från att sparas:'
+

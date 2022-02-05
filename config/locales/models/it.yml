@@ -1,0 +1,131 @@
+it:
+  models:
+    api_secret:
+      api_limit_reached: È stato raggiunto il limite segreto API di 20 per utente
+    application_record:
+      uninferrable: Impossibile infettare un decoratore per %{class}.
+    article:
+      a_post_by: Un post per %{user_name}
+      video_unpermitted: non può essere aggiunto per membro senza permesso
+      video_processing: non può essere impostato su true se il video è ancora in elaborazione
+      cannot_search_tags_for: 'Impossibile cercare i tag per: %{tag}'
+      cannot_search_tags_for_tags: 'Impossibile cercare i tag per: %{tag}'
+      unique_coauthor: gli ID coautore devono essere univmi
+      too_many_tags: superare il massimo di 4 tag
+      is_too_long: è troppo lungo.
+      invalid_date: deve essere inserito in formato DD/MM/YYYY con data corrente o passata
+      series_unpermitted: deve essere uno che si ha il permesso di post a
+      invalid_coauthor: devono essere ID utente validi
+      same_author: non deve essere lo stesso utente dell'autore
+      must_not_have_spaces: non deve avere spazi
+      published: Pubblicato
+      unique_url: è già stato preso. Email %{email} per ulteriori dettagli.
+      mention_too_many:
+        one: Non è possibile citare più di %{count} utenti in un post!
+        other: Non è possibile citare più di %{count} utenti in un post!
+    broadcast:
+      single_active: È possibile avere solo un annuncio attivo trasmesso
+    comment:
+      deleted: '[eliminato]'
+      has_been_deleted: ' %{tipo} è stato eliminato.'
+      hidden: '[nascosto da post autore]'
+      is_not_valid: non è valido.
+      locked: la discussione è bloccata su questo Post
+      type:
+        Article: Articolo
+        item: articolo
+        PodcastEpisode: Episodio di Podcast
+      suspended_too_many: Utente sospeso per troppe interazioni spammy, attivate da autovelox.
+      mention_too_many:
+        one: Non è possibile citare più di %{count} utenti in un commento!
+        other: Non è possibile citare più di %{count} utenti in un commento!
+    feedback_message:
+      reported: (tu) precedentemente riportato questo URL.
+    github_issue:
+      issue_comment_not_found: Rilascio commento %{issue_id} non trovato
+      issue_not_found: Numero %{issue_id} non trovato
+    html_variant:
+      no_edits: non può cambiare una volta pubblicato e approvato
+    identity:
+      no_email_msg: Nessuna email trovata. Si prega di relink il tuo account %{provider} per evitare errori.
+    listing:
+      too_many_tags: superare il massimo di 8 tag
+      too_many_linebreaks: ha troppi linebreak. Non più di 12 ammessi.
+      image_not_allowed: non è consentito includere immagini.
+      liquid_not_allowed: non è consentito includere tag liquidi.
+    mention:
+      is_not_valid: non è valido.
+    organization:
+      integer_only: Solo intero. Nessun segno consentito.
+      reserved_word: '%<value>s è una parola riservata. Contatti del sito di contatto per la registrazione della tua organizzazione.'
+    page:
+      body_must_exist: deve esistere se body_html o body_json non esiste.
+    podcast:
+      slug_is_reserved: slug è riservato
+    podcast_episode_appearance:
+      provided_role_is_not_valid: ruolo fornito non è valido
+    poll_skip:
+      cannot_vote_more_than_once: non può votare più di una volta in un solo sondaggio
+    poll_vote:
+      cannot_vote_more_than_once: non può votare più di una volta in un solo sondaggio
+    profile_pin:
+      only_five: non può avere più di cinque posti totali bloccati
+      pin_unpermitted: deve avere le autorizzazioni appropriate per il pin
+    rating_vote:
+      not_permitted: non è consentito prendere questa azione.
+    reaction:
+      is_not_valid: non è valido.
+    response_template:
+      user_nil_only: non può avere un ID utente associato.
+      comment_markdown: I modelli di commento devono utilizzare Markdown come tipo di contenuto.
+      email_text: I modelli di email devono utilizzare testo semplice o HTML come il suo tipo di contenuto.
+      limit_reached: È stato raggiunto il limite del modello di risposta di 30 per utente
+    settings:
+      campaign:
+        share_your_project: Condividi il tuo progetto
+      community:
+        message: non può includere il carattere "<" né "> "
+        new_forem: Nuovo Forem
+        user: utente
+      general:
+        community_sponsors: Sponsor Community
+        the_community_mascot: La mascotte della comunità
+      user_experience:
+        message: 'deve essere un esadecimale da 3 o 6 (a partire da #)'
+    sponsorship:
+      invalid_type: non è un tipo sponsorizzabile
+      already_sponsored: Il tag è già sponsorizzato
+      only_one_level: Puoi avere solo una sponsorizzazione di %{livelli}
+      level:
+        gold: oro
+        silver: argento
+        bronze: bronzo
+    tag:
+      alias_for: alias_for deve fare riferimento a un tag esistente
+    tag_adjustment:
+      too_many_tags: 4 tag max per articolo.
+      unpermitted: non ha privilegio di regolare questi tag
+      not_live: selezionato per la rimozione non è un tag live corrente.
+      unique: non può essere un tag già regolato
+    tweet:
+      tweet_not_found: Tweet non trovato
+    user:
+      could_not_send: la conferma non potrebbe essere inviata.  %{e_messaggio}
+      password_not_matched: non corrisponde alla conferma della password
+      has_been_banished: è stato bandito.
+      is_taken: ' %{username} è preso.'
+      user_could_not_be_saved: L'utente non potrebbe essere salvato.  %{e_messaggio}
+      username_is_reserved: username è riservato
+    user_block:
+      cant_be_the_same: non può essere lo stesso del blocked_id
+    user_subscription:
+      non_apple: Impossibile sottoscrivere un relè privato Apple. Si prega di aggiornare email.
+      source_not_found: Origine non trovata. Si prega di assicurarsi che la tua %{source} sia attiva!
+      not_enabled: Gli abbonamenti utente non sono abilitati per la sorgente.
+    users:
+      deleted_user:
+        name: '[Utente eliminato]'
+      setting:
+        invalid_hex: non è un colore hex valido
+        invalid_rss: non è un feed RSS/Atom valido
+

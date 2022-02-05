@@ -1,0 +1,6 @@
+pt:
+  concerns:
+    image_uploads:
+      too_long: filename too long-o max é %{max} caracteres.
+      is_not_file: tipo de arquivo inválido. Faça o upload de uma imagem válida.
+

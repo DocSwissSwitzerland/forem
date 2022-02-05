@@ -1,0 +1,142 @@
+pl:
+  views:
+    badges:
+      meta:
+        title: Odznaki
+        name: ' %{title} Odznaka'
+      all:
+        one: Pokaż jedną kartę identyfikacyjną
+        other: Pokaż wszystkie %{count} odznak
+      heading: Odznaki
+      desc: Otrzymuj odznaki za bycie niesamowitym! Kliknij na odznakę, aby zobaczyć, jak można zarobić.
+      name: "\U0001F3C5  %{title} Odznaka \U0001F3C5"
+    campaign:
+      subtitle: Historie ( %{count})
+      view: Zobacz wszystkie posty
+    deep_links:
+      subtitle: Otwieranie aplikacji mobilnej ...
+      alert:
+        subtitle: Whoops! Czy utknęliście przy próbie otwarcia aplikacji mobilnej?
+        desc_html: Upewnij się, że jest zainstalowany i spróbuj ponownie. Jeśli problem będzie się powtarzać, skontaktuj się z adresem %{email}
+        back: Zabierz mnie z powrotem
+        again: Spróbuj ponownie
+        install: Zainstaluj aplikację
+    email_subscriptions:
+      unsubscribe:
+        heading: "Nie zasubskrybowano z %{type}. \U0001F614"
+        description_html: Nie będziesz już otrzymywać wiadomości e-mail w ten sposób. Jeśli chcesz ponownie zasubskrybować swoje preferencje poczty elektronicznej lub zarządzaj nimi, %{link}.
+        link: kliknij tutaj
+      invalid:
+        heading: Token utracił ważność lub jest niepoprawny
+        description_html: ' %{signin} umożliwia zarządzanie preferencjami poczty elektronicznej.'
+        signin: sign-in
+    hamburger:
+      icon: Menu nawigacyjne
+      icon_close: Zamknij
+      icon_left: Menu po lewej
+      icon_right: Menu z prawej
+    logo:
+      color_1:
+        label: Kolor marki 1
+        description: Służy do tła, granic itp.
+        select:
+          aria_label: Kolor marki 1 selektor kolorów
+          label: Kolor marki 1 kolor wybierz
+      color_2:
+        label: Kolor marki 2
+        description_html: Używane w przypadku tekstów (zwykle umieszczanych w <em>Kolor marki 1</em>).
+        select:
+          aria_label: Kolor marki 2 selektor kolorów
+          label: Kolor marki 2 kolor wybierz
+      preview:
+        icon: Logo aplikacji
+        text: 'Podgląd:'
+    onboardings:
+      meta:
+        title: Witamy w społeczności %{community}
+      heading: Jesteś teraz częścią społeczności!
+      subtitle: SUGEROWANE RZECZY, KTÓRE MOŻESZ WYKONAĆ
+      close: Zamknij komunikat powitalny
+      settings_html: "<span class=\"emoji\">\U0001F485\U0001F3FC</span>Dostosuj profil"
+      welcome_html: "<span class=\"emoji\">\U0001F60A</span>Dołącz do wątku powitania"
+      write_html: "<span class=\"emoji\">✍\U0001F3FE</span>Napisz swój pierwszy %{community} post"
+    pins:
+      article: Przypięte
+      pinned: "\U0001F4CC Pinned! (przypięte słupki wyświetlane chronologicznie, 5 max)"
+      removed: "\U0001F5D1 Przypnij usunięty"
+      error: Możesz mieć tylko pięć pinów
+    reading_list:
+      meta:
+        title: Odczytywanie listy
+        description: Moje zapisane wypowiedzi.
+        og:
+          title: Odczytywanie listy- %{community}
+    search:
+      heading: Wyniki wyszukiwania %{for}
+      for: ' dla %{query}'
+      placeholder: Szukaj ...
+      icon:
+        aria_label: Szukaj
+        title: Szukaj
+      nav:
+        posts: Wypowiedzi
+        podcasts: Podcasty
+        people: Osoby
+        comments: Komentarze
+        my_posts: Tylko moje wypowiedzi
+        tags: Znaczniki
+      sort:
+        aria_label: Opcje sortowania wyników wyszukiwania
+        relevance: Najistotniejsze
+        newest: Najnowsze
+        oldest: Najstarsze
+      meta:
+        title: Wyniki wyszukiwania %{for}
+        for: ' dla %{query}'
+        description: ' %{site} = > Wyniki wyszukiwania'
+    series:
+      meta:
+        description: Wyświetl %{title} na %{site}
+      heading: Seria %{user}
+      empty: Ten użytkownik nie ma żadnych serii
+      list:
+        heading: " %{series} Series ' Artykuły"
+        back: Powrót do %{user}'s Series
+        empty: Ta seria nie ma żadnych artykułów
+    sponsor:
+      seek: Zostań sponsorem
+    stats:
+      meta:
+        title: Statystyki dla Twojego artykułu
+      heading_html: Statystyki dla " %{article}"
+      period:
+        aria_label: Okres analizy
+        week: Tydzień
+        month: Miesiąc
+        infinity: Nieskończoność
+      readers: Podsumowanie czytelników
+      followers: Podsumowanie nowych obserwatorów
+      reactions: "Podsumowanie reakcji ❤\U0001F984\U0001F516"
+      comments: "Podsumowanie komentarzy \U0001F4AC"
+      traffic:
+        text: "Podsumowanie źródła ruchu danych \U0001F6A6"
+        source: Źródło
+        views: Widoki
+    sticky:
+      joined: Połączono
+      default_cta: Dowiedz się więcej
+      email: Adres e-mail
+      hot: Gorące
+      location: Położenie
+      more_from_html: Więcej z %{actor}
+      no_summary: Wypowiedzi w tym znaczniku
+      trending_html: Trend w %{app}
+    videos:
+      meta:
+        title: Filmy wideo
+        og:
+          description: Wszystkie filmy wideo w %{community}
+      heading: ' %{community} w wideo'
+      beta_html: <strong>Wideo jest beta:</strong>  %{contact}
+      upload: "\U0001F3A5 Prześlij plik wideo \U0001F64C"
+
