@@ -1,0 +1,44 @@
+pt:
+  views:
+    liquids:
+      github:
+        view: Visualizar no GitHub
+      medium:
+        logo: Logotipo médio
+      poll:
+        show_results: Só me mostre os resultados
+      reddit:
+        author: 'Autor: %{author}'
+        see: Ver post completo
+      stackexchange:
+        answer:
+          text_html: ' %{resposta} re: %{título}'
+          answer: resposta
+        answers: 'Respostas: %{count}'
+        comments: 'Comentários: %{count}'
+        open:
+          answer: Aberta Resposta Completa
+          article: Aberto Artigo Completo
+          question: Questão Aberta Completa
+      twitter:
+        view: Visualizar no Twitter
+      user_subscription:
+        confirm:
+          subtitle: Confirmar assinatura
+          button_text: Confirmar assinatura
+          cancel_text: Cancelar
+          text_html: Você vai compartilhar seu endereço de e-mail %{email}, nome de usuário, nome e URL do perfil DEV com %{username}. Uma vez que você fizer isso, você não pode desfazer isso.
+        logged_out: Você deve primeiro se inscrever no DEV.
+        sign_in: Assinar em
+        subscribe:
+          apple:
+            button: Assinar
+            desc_html: Ei, lá! Parece que quando você criou sua conta DEV você se firmou com a Apple usando um endereço de e-mail de relay privado. Se você gostaria de assinar, por favor %{update} primeiro para um endereço de e-mail diferente.
+            update: atualizar seu endereço de e-mail em Configurações
+          button: Assinar
+          desc_html: Você assinará com %{email} o endereço de e-mail associado à sua conta DEV. Para usar um endereço de e-mail diferente, você pode %{atualizar}.
+          update: atualizar seu endereço de e-mail em Configurações
+      wikipedia:
+        logo: Logotipo da Wikipedia
+        view: Visualizar na Wikipédia
+

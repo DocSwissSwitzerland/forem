@@ -1,0 +1,33 @@
+de:
+  devise:
+    failure:
+      invited: Sie verfügen über eine anstehende Einladung und akzeptieren diese, um die Erstellung Ihres Kontos abzuschließen.
+    invitations:
+      edit:
+        header: Kennwort festlegen
+        submit_button: Lets-Erste Schritte
+      invitation_removed: Ihre Einladung wurde entfernt.
+      invitation_token_invalid: Das angegebene Einladungs-Token ist nicht gültig!
+      new:
+        header: Einladung senden
+        submit_button: Einladung senden
+      no_invitations_remaining: Keine Einladungen übrig
+      send_instructions: Eine Einladungs-E-Mail wurde an %{email} gesendet.
+      updated: Ihr Kennwort wurde erfolgreich festgelegt. Sie sind jetzt angemeldet.
+      updated_not_active: Ihr Kennwort wurde erfolgreich festgelegt.
+    mailer:
+      invitation_instructions:
+        accept_instructions: Sie können die Einladung akzeptieren, indem Sie auf diesen Link klicken
+        accept: Einladung akzeptieren
+        accept_until: Diese Einladung läuft nach %{due_date} ab.
+        hello: Hallo %{name}
+        ignore: Wenn Sie die Einladung nicht akzeptieren wollen, ignorieren Sie bitte diese E-Mail. Ihr Konto wird erst erstellt, wenn Sie auf den oben genannten Link zugreifen und Ihr Kennwort festlegen.
+        someone_invited_you: Sie wurden eingeladen, sich der Community %{community_name} in %{url} anzuschließen.
+        subject: Einladungsanweisungen
+  time:
+    formats:
+      devise:
+        mailer:
+          invitation_instructions:
+            accept_until_format: '%B %d, %Y %I: %M %p'
+

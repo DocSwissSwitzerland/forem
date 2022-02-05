@@ -1,0 +1,238 @@
+de:
+  helpers:
+    label:
+      listing:
+        body_markdown: Körpermarkdown
+        expires_at: Datum des benutzerdefinierten Ablaufs
+        location: Position
+        organization_id: Unter einer Organisation veröffentlichen
+        tag_list: Tags
+        title: Titel
+      organization:
+        name: Name
+        slug: Benutzername
+        profile_image: Profilbild
+        nav_image: Logo für Lichtthemen
+        dark_nav_image: Logo für dunkle Themen
+        twitter_username: Twitter-Benutzername
+        github_username: GitHub-Benutzername
+        url: Website-URL
+        tag_line: Markierungszeile
+        summary: Zusammenfassung
+        location: Position
+        email: E-Mail unterstützen
+        company_size: Organisationsgröße
+        story: Unsere Geschichte
+        tech_stack: Unser Stack
+        cta_body_markdown: Text des Körpers
+        cta_button_text: Linktext
+        cta_button_url: Link-URL
+        proof: Nachweis
+      podcast:
+        android_url: Android-URL
+        description: Beschreibung
+        feed_url: Feed-URL
+        image: Bild
+        itunes_url: Itunes-URL
+        main_color_hex: Hauptfarbe hexadezimal
+        overcast_url: Übercast-URL
+        pattern_image: Musterbild
+        slug: Slug
+        soundcloud_url: Soundcloud-URL
+        title: Titel
+        twitter_username: Twitter-Benutzername
+        website_url: Website-URL
+      response_template:
+        title: Titel
+        content: Kommentarkörper (Markdown)
+      user:
+        name: Name
+        email: E-Mail
+        username: Benutzername
+        profile_image: Profilbild
+      users_notification_setting:
+        email_newsletter: Schicken Sie mir wöchentliche Newsletter-E
+        email_digest_periodic: Senden Sie mir einen regelmäßigen Digest von Top-Posts aus meinen Tags
+        email_membership_newsletter: Schicken Sie mir Ihre Newsletter-E-Mail-Newsletter
+        email_tag_mod_newsletter: Senden Sie mir Tagungs-Moderator Newsletter E-Mails
+        email_community_mod_newsletter: Senden Sie mir Community Moderator Newsletter E-Mails
+        email_comment_notifications: Schicken Sie mir eine E-Mail, wenn mir jemand in einem Kommentar-Thread antwortet
+        email_follower_notifications: Schicken Sie mir eine E-Mail, wenn mir jemand folgt
+        email_mention_notifications: Schicken Sie mir eine E-Mail, wenn jemand erwähnt
+        email_badge_notifications: Schicken Sie mir eine E-Mail, wenn ich ein Badge
+        email_unread_notifications: Schicken Sie mir gelegentliche Erinnerungen, dass ich Benachrichtigungen über %{community} ungelöst habe
+        mobile_mention_notifications: Schicken Sie mir eine Push-Benachrichtigung, wenn jemand erwähnt
+        mobile_comment_notifications: Schicken Sie mir eine Push-Benachrichtigung, wenn mir jemand in einem Kommentar-Thread antwortet
+        welcome_notifications: Schicken Sie mir gelegentliche Tipps, wie Sie meine %{community} -Erfahrung verbessern können
+        reaction_notifications: Benachrichtigungen senden, wenn jemand auf meine Kommentare oder Beiträge reagiert
+        mod_roundrobin_notifications: Schicken Sie mir gelegentliche Community-Erfolg Mod-Benachrichtigungen
+      users_setting:
+        feed_url: RSS-Feed-URL
+    placeholder:
+      organization:
+        name: Acme Inc.
+        slug: acmeinc
+        url: https://yoursite.com
+        location: Halifax, Nova Scotia
+        email: mail@example.com
+        company_size: '...'
+        story: '...'
+        tech_stack: '...'
+        cta_body_markdown: '...'
+        cta_button_text: Website von Acme besuchen
+        cta_button_url: https://example.com
+        proof: '...'
+      response_template:
+        title: '...'
+      user:
+        name: John Doe
+        email: john.doe@example.com
+        username: johndoe
+        feed_url: https://yoursite.com/feed
+    application_helper:
+      app_logo: App-Logo
+      follow:
+        aria_label:
+          Organization: 'Organisation folgen: %{name}'
+          Tag: 'Tag folgen: %{name}'
+          User: 'Benutzer folgen: %{name}'
+          default: ' %{type}: %{name}'
+        text:
+          Organization: Folgen
+          Tag: Folgen
+          User: Folgen
+          default: Folgen
+      required: Erforderlich
+      subtitle:
+        week: Top-Beiträge in dieser Woche
+        month: Top-Beiträge in diesem Monat
+        year: Top-Beiträge in diesem Jahr
+        infinity: Alle Beiträge
+        latest: Letzte Beiträge
+      title_text: ' %{title}- %{timeframe}'
+    articles_helper:
+      logo: ' %{Servicename}, Logo'
+      most_comments: Die meisten Kommentare
+      most_reactions: Die meisten Reaktionen
+      most_views: Die meisten Ansichten
+      recently_created: Kürzlich erstellt
+      recently_published: Kürzlich veröffentlicht
+    authentication_helper:
+      any_of_those: von denen,
+      email_password: E-Mail & Kennwort
+      reminder: 'Erinnerung: Sie haben %{method} verwendet, um Ihr Konto zu authentifizieren. Verwenden Sie daher bitte %{dem}, um bei entsprechender Aufforderung zu signieren.'
+      that: ', dass'
+      invite_only: Sie können dies erst tun, wenn Sie den Modus 'Nur einladen' inaktivieren.
+    comments_helper:
+      ama: Ama
+      ask_me_anything: Fragen Sie Mich.
+      author: Autor
+      like: Wie
+      nbsp_likes_html:
+        one: '&nbsp; wie'
+        other: '&nbsp; Likes'
+    feedback_messages_helper:
+      offender:
+        body: >
+          Hallo,
+
+
+          Es wurde darauf hingewiesen, dass Sie gegen den Code of Conduct und/oder die Nutzungsbedingungen von %{community} verstoßen haben.
+
+
+          Wenn dieses Verhalten fortgesetzt wird, müssen Sie möglicherweise Ihr %{community} -Konto aussetzen.
+
+
+          Wenn Sie glauben, dass es einen Fehler gegeben hat, antworten Sie bitte auf diese E-Mail, und wir werden einen anderen Blick nehmen.
+
+           %{community} Team
+        subject: ' %{community} Code of Conduct Violation'
+      reporter:
+        body: >
+          Hallo, danke für die Markierung von Inhalten, die unter Verstoß gegen den %{community} Code of Conduct und/oder unsere Nutzungsbedingungen sein können. Wir schauen in Ihren Bericht und werden angemessen
+
+          Aktion.
+
+          Wir freuen uns über Ihre Hilfe bei der Förderung einer positiven und inklusiven Umgebung für alle! %{community} Team
+        subject: ' %{community} Bericht'
+      affected:
+        body: >
+          Hallo, dort,
+
+
+          Wir haben einige Kommentare (gemacht von anderen) auf Ihrem Beitrag, die gegen den %{community} Code of Conduct und/oder unsere Nutzungsbedingungen verstoßen, bemerkt. Wir haben null Toleranz für ein solches Verhalten und ergreifen entsprechende Maßnahmen.
+
+
+          Vielen Dank für awesome, und zögern Sie nicht, uns per E-Mail mit allen Fragen zu mailen! Wir begrüßen alle Rückmeldungen und Ideen, da wir weiter daran arbeiten, eine offene und integrative Gemeinschaft zu fördern.
+
+           %{community} Team
+        subject: Courtesy Notice from %{community}
+    listing_helper:
+      option:
+        one: ' %{cl_name} ( %{count} Credit)'
+        other: ' %{cl_name} ( %{count} Credits)'
+    organization_helper:
+      option: ' %{org_name} ( %{unverbracht})'
+    rate_limit_checker_helper:
+      day:
+        one: Tag
+        other: Tage
+      general: Wie viele %{thing} kann ein neues Mitglied ( %{timeframe} oder weniger) innerhalb von 5 Minuten erstellen?
+      published:
+        title: Anzahl der erstellten Beiträge begrenzen
+        description: Wie viele Beiträge kann jemand innerhalb von 30 Sekunden erstellen?
+      antispam:
+        title: Anzahl der von einem neuen Mitglied erstellten Beiträge begrenzen
+      update:
+        title: Anzahl der Aktualisierungen für einen Beitrag begrenzen
+        description: Wie viele Updates kann jemand innerhalb von 30 Sekunden machen? API-Dokumente aktualisieren, wenn sie geändert werden
+      upload:
+        title: Anzahl hochgeladener Bilder begrenzen
+        description: Wie viele Bilder kann jemand innerhalb von 30 Sekunden hochladen?
+      user:
+        title: Begrenzung der Anzahl der Änderungen, die jemand auf seinem Konto vornehmen kann
+        description: Wie viele Änderungen kann ein Benutzer innerhalb von 30 Sekunden an seinem Benutzeraccount vornehmen?
+      follow:
+        title: Anzahl der Follower, die jemand täglich verfolgen kann
+        description: Wie viele Menschen kann jemand an einem Tag verfolgen?
+      reaction:
+        title: Begrenzung der Anzahl der Reaktionen auf einen Beitrag oder Kommentar
+        description: Wie oft kann jemand auf einen Beitrag reagieren oder innerhalb von 30 Sekunden auf einen Kommentar antworten?
+      feedback:
+        title: Begrenzung der Anzahl der Fälle, in denen Missbrauch gemeldet werden kann
+        description: Wie oft kann jemand Missbrauch innerhalb von 5 Minuten melden?
+      comment:
+        title: Anzahl der erstellten Kommentare begrenzen
+        description: Wie viele Kommentare kann jemand innerhalb von 30 Sekunden erstellen?
+      comment_antispam:
+        title: Anzahl der Kommentare begrenzen, die von einem neuen Mitglied erstellt wurden
+      mention:
+        title: Anzahl der @-Erwähnungen in einem Beitrag oder Kommentar begrenzen
+        description: Wie oft kann jemand @ andere Benutzer in einem Beitrag oder Kommentar erwähnen?
+      listing:
+        title: Anzahl erstellter Listen begrenzen
+        description: Wie viele Inserate kann jemand innerhalb von 1 Minute erstellen?
+      organization:
+        title: Begrenzung der Anzahl der erstellten Organisationen
+        description: Wie viele Organisationen kann jemand innerhalb von 5 Minuten erstellen?
+      subscription:
+        title: Begrenzung der Häufigkeit, mit der jemand den flüssigen Tag für die Mailing-Liste subskribieren kann
+        description: Wie oft kann sich jemand innerhalb von 30 Sekunden für eine Mailingliste anmelden?
+      recipient:
+        title: Anzahl der von uns gesendeten allgemeinen E-Mails begrenzen
+        description: Wie viele E-Mails können wir innerhalb von 2 Minuten an jemanden senden?
+      confirmation:
+        title: Anzahl der Bestätigungs-E-Mails begrenzen
+        description: Wie oft können wir innerhalb von 2 Minuten eine Bestätigungs-E-Mail an jemanden senden?
+      thing:
+        posts: Beiträge
+        comments: Kommentare
+    settings_helper:
+      advanced: Erweitert
+      beginner: Beginner
+      expert: Experte
+      mid_level: Mittelebene
+      novice: Novize
+    social_link_helper:
+      n_a: Nicht zutreffend
+

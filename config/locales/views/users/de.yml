@@ -1,0 +1,90 @@
+de:
+  views:
+    users:
+      meta:
+        og:
+          title: ' %{user}- %{community} Profil'
+      comments:
+        all:
+          one: Alle %{count} Kommentare
+          other: Alle %{count} Kommentare
+        last:
+          one: Letzte %{count} Kommentare
+          other: Letzte %{count} Kommentare
+        recent: Aktuelle Kommentare
+        view: Alle Aktivitäten anzeigen
+        view_all:
+          one: Alle %{count} Kommentare anzeigen
+          other: Alle %{count} Kommentare anzeigen
+        view_last:
+          one: Letzte 1 Kommentar anzeigen
+          other: Letzte %{count} Kommentare anzeigen
+      github:
+        heading: GitHub-Repositorys
+        fork: Gabel
+        stars:
+          one: 1 Stern
+          other: ' %{count} Sterne'
+      pin_icon: Pin
+      pinned: Verzinnt
+      profile_fields:
+        bio:
+          label: Bio
+          placeholder: Ein kurzer Bio ...
+        display_email_on_profile: E-Mail auf Profil anzeigen
+        location:
+          label: Position
+          placeholder: Halifax, Nova Scotia
+        website:
+          label: Website-URL
+          placeholder: https://yoursite.com
+        education: Bildung
+        currently_learning: Derzeit lernen
+        currently_hacking_on: Momentan hacking on
+        available_for: Verfügbar für
+        skills_languages: Fertigkeiten/Sprachen
+        work: Arbeit
+      side:
+        comment:
+          icon: Kommentar
+          text:
+            one: 1 Kommentar geschrieben
+            other: ' %{count} Kommentare geschrieben'
+        org: Organisationen
+        post:
+          icon: Beitrag
+          text:
+            one: 1 Beitrag veröffentlicht
+            other: ' %{count} Beiträge veröffentlicht'
+        tag:
+          icon: Tag
+          text:
+            one: 1 Tag gefolgt
+            other: ' %{count} Tags gefolgt'
+      signout:
+        meta:
+          title: Signout- %{community} bestätigen
+        heading: Sind Sie sicher, dass Sie sich abmelden möchten?
+        yes: Ja, melden Sie sich an
+      block: Block @ %{user}
+      details: ' %{user} -Profildetails'
+      dropdown: Benutzeraktionen
+      email_icon: E-Mail-Adresse
+      empty: 404 bio nicht gefunden
+      flag: Flag @ %{user}
+      follow: Folgen
+      joined:
+        icon: Verbunden
+        text_html: Verbunden am %{date}
+      location_icon: Position
+      logo: ' %{user} Profilbild'
+      more: Weitere Informationen zu @ %{user}
+      send_pm:
+        code: Verhaltenskodex
+        notice_html: Alle privaten Interaktionen <b>müssen</b> durch den %{code} übereinstimmen.
+        placeholder: Geben Sie hier Ihre Nachricht ein ...
+        submit: Senden
+      social: Website " %{service}"
+      unflag: Unflag @ %{user}
+      website: Persönliche Website
+

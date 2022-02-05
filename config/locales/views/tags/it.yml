@@ -1,0 +1,64 @@
+it:
+  views:
+    tags:
+      meta:
+        title: Tag
+        description: Tag da seguire su %{community}
+        og:
+          description: ' %{community} è grande!'
+      heading:
+        default: Primi tag
+        search_results: Risultati della ricerca per %{q}
+      search:
+        aria_labels:
+          search_input: Termine di ricerca del tag
+          submit: Tag di ricerca
+        placeholder: Ricerca per tag
+      edit:
+        meta:
+          title: Modifica %{tag}
+        admin: Admin
+        help: Guida
+        view: Vista
+        form:
+          pretty_name:
+            label: Bel nome
+            placeholder: Questo è il nome nella parte superiore della pagina dello show.
+          bg_color_hex:
+            label: Bg color hex
+          text_color_hex:
+            label: Colore del colore del testo
+          short_summary:
+            label: Breve riepilogo
+            placeholder: Breve panoramica di ciò che questo tag è tutto circa.
+          wiki_body_markdown:
+            label: Markdown del corpo Wiki
+            placeholder: Questa è una sezione "about". Sentiti libero di aggiungere una FAQ, risorse aggiuntive, ecc.
+          rules_markdown:
+            label: Markdown delle regole
+            placeholder: Opzionale - Può essere utilizzato per le sfide, ovvero le linee guida di presentazione.
+          submit: Salva
+      follow: Segui
+      following_tags: Seguenti tag
+      moderator:
+        text_html: 'virgola separata, lo spazio è facoltativo. Esempio: %{codice}'
+        code: 123
+        placeholder: 'virgola separata, lo spazio è facoltativo. Esempio: 1,2,3'
+      published:
+        one: 1 post pubblicato
+        other: ' %{conteggio} posti pubblicati'
+      sidebar:
+        about: 'circa # %{tag}'
+        admin: Admin
+        edit: Modifica
+        guidelines: indicazioni di inoltro
+        moderate: Moderato
+        mods: moderatori di tag
+        new: Crea Post
+        older: 'Anziani # %{tag} post'
+        published:
+          one: 1 Post Pubblicato
+          other: ' %{conteggio} Posti Pubblicati'
+        sponsor: ' %{tag} è sponsorizzato da'
+      sponsor: '| Sponsorizzato per %{org} ❤️'
+

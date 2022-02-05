@@ -1,0 +1,44 @@
+el:
+  views:
+    liquids:
+      github:
+        view: Προβολή στο GitHub
+      medium:
+        logo: Μεσαίο Λογότυπο
+      poll:
+        show_results: Απλά δείξε μου τα αποτελέσματα.
+      reddit:
+        author: 'Συγγραφέας:  %{author}'
+        see: Δείτε το Full Post
+      stackexchange:
+        answer:
+          text_html: ' %{απάντηση}:  %{τίτλος}'
+          answer: "' απάντηση"
+        answers: 'Απαντήσεις:  %{count}'
+        comments: 'Σχόλια:  %{count}'
+        open:
+          answer: Άνοιγμα πλήρους απάντησης
+          article: Ανοικτό πλήρες άρθρο
+          question: Άνοιγμα πλήρους ερώτησης
+      twitter:
+        view: Προβολή στο Twitter
+      user_subscription:
+        confirm:
+          subtitle: Επιβεβαίωση συνδρομής
+          button_text: Επιβεβαίωση συνδρομής
+          cancel_text: Ακύρωση.
+          text_html: Θα μοιραστείτε τη διεύθυνση e-mail σας  %{email}, όνομα χρήστη, όνομα και προφίλ DEV με  %{όνομα_χρήστη}. Μόλις το κάνετε αυτό, δεν μπορείτε να το αναιρείτε.
+        logged_out: Πρέπει πρώτα να συνδεθείτε στο DEV.
+        sign_in: 'Σύνδεση:'
+        subscribe:
+          apple:
+            button: 'Συνδρομή:'
+            desc_html: Γεια σου! Μοιάζει με τη δημιουργία του λογαριασμού DEV που έχετε υπογράψει με την Apple χρησιμοποιώντας μια ιδιωτική διεύθυνση ηλεκτρονικού ταχυδρομείου αναμετάδοσης. Αν θέλετε να εγγραφείτε, παρακαλώ το  %{update} πρώτα σε διαφορετική διεύθυνση email.
+            update: ενημέρωση της διεύθυνσης email σας στις Ρυθμίσεις
+          button: 'Συνδρομή:'
+          desc_html: Θα εγγραφείτε στο  %{email} τη διεύθυνση e-mail που αντιστοιχεί στο λογαριασμό σας DEV. Για να χρησιμοποιήσετε διαφορετική διεύθυνση e-mail, μπορείτε να επιλέξετε  %{update}.
+          update: ενημέρωση της διεύθυνσης email σας στις Ρυθμίσεις
+      wikipedia:
+        logo: Λογότυπο της Wikipedia
+        view: Προβολή στη Wikipedia
+

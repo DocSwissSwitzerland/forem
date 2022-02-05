@@ -1,0 +1,25 @@
+de:
+  views:
+    manager:
+      meta:
+        title: ' %{title} verwalten'
+      error:
+        pins: "Uh Oh! %{error} \U0001F62C"
+      tools:
+        heading: 'Werkzeuge:'
+        subtitle: 'Erfahrungsstufe der Post:'
+        text_html: Ist Ihr Beitrag mehr für ein Anfänger oder ein fortgeschrittenes Publikum geschrieben? Passen Sie diese Ebene als <em>sanften</em> Indikator an, der dazu beitragen wird, den Beitrag an die Personen zu zeigen, die am meisten davon profitieren werden.
+      nav:
+        dashboard: Dashboard
+        text: "\U0001F449 Ihre Post verwalten"
+      rating:
+        heading: Erfahrungsstufe der Post
+        text: Für wen ist dieser Posten am relevantesten?
+        lower: "\U0001F448 Beginner"
+        higher: "Experte \U0001F449"
+      tips:
+        heading: 'Tipps:'
+        text_1: Schreiben Sie Ihren eigenen Tweet über den Beitrag, beschreiben Sie persönlich, warum Sie es geschrieben haben oder warum die Leute es nützlich finden könnten. Wir können dich retuschieren.
+        text_2_html: 'Gemeinsam nutzen, um Aggregatoren, wie z. B. <a href="https://www.reddit.com">Reddit</a>, zu verknüpfen. Versuchen Sie, die meisten themenspezifischen Subreddits auszuwählen, wie z. B. <a href="https://www.reddit.com/r/javascript">/r/javascript</a> oder <a href="https://www.reddit.com/r/python">/r/python</a>. <em>Warnung: Trikots und Trolle können lauert werden.</em>'
+        text_3: Teilen Sie mit Ihren Mitarbeitern oder lokalen Gemeinschaften. Bitten Sie die Leute, in den Kommentaren Fragen für Sie zu hinterlassen. Es ist ein großartiger Weg, zusätzliche Diskussionen zu entfachen.
+

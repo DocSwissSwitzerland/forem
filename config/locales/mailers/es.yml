@@ -1,0 +1,33 @@
+es:
+  mailers:
+    digest_mailer:
+      from: Digest
+      more_top_posts: más entradas de %{community} superiores
+      more_top_posts_based: más %{community} puestos en función de sus intereses
+      more_top_posts_from: más lecturas superiores de la comunidad
+      more_trending_posts: más tendencias %{community} posts
+      more_trending_posts_picked: más tendencias %{community} publicaciones seleccionadas para usted
+      other_posts: otros puestos que puede ser
+      other_community_posts: otros %{community} publicaciones que puede ser
+      other_top_posts: otros puntos principales de %{community}
+      other_trending_posts: otras tendencias %{community} publicaciones
+    notify_mailer:
+      account_deleted: ' %{community}-Confirmación de supresión de cuenta'
+      deletion_requested: ' %{community}-Supresión De Cuenta Solicitada'
+      trusted: ¡Congratas! ¡Ahora eres un usuario de "confianza" en %{community}!
+      moderator: '¡Congratas! Usted es el moderador del # %{tag_name}'
+      new_follower: sólo le ha seguido en %{community}
+      new_mention: ' %{name} acaba de mencionarle en su %{type}'
+      org_deleted: ' %{community}-Confirmación de supresión de organización'
+      new_reply: ' %{name} ha respondido a su %{type}'
+      feedback: Gracias por su informe en %{community}
+      export: La exportación de su contenido está lista
+      unread_notifications:
+        one: "\U0001F525 Tiene %{count} notificaciones no leídas en %{community}"
+        other: "\U0001F525 Tiene %{count} notificaciones no leídas en %{community}"
+      new_badge: Usted acaba de obtener una insignia
+      video_upload: La carga de vídeo está completa
+    verification_mailer:
+      from: ' %{community} Verificación de correo electrónico <%{email}>'
+      verify_ownership: Verificar La Propiedad De Cuenta De %{community}
+

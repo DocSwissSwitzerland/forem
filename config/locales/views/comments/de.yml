@@ -1,0 +1,146 @@
+de:
+  views:
+    comments:
+      meta:
+        title_root: Diskussion über %{title}
+        description: Ein Artikel aus der Community
+        og:
+          title: Diskussion über %{title}
+          title_rel: ' %{root}- %{site}'
+          title_root: '[Diskussion] %{title}- %{site}'
+          description: ' %{site} Kommentar'
+      parent:
+        subtitle_html: ' %{start} Diskussion zu: %{end} %{title}'
+        metadata_html: ' %{name} %{on}'
+        date: ' am %{date}'
+        full: Volle Diskussion
+        read: Lesen Sie den vollständigen Beitrag
+        view: Beitrag anzeigen
+        view_full:
+          one: Vollständige Diskussion anzeigen ( %{count} Kommentar)
+          other: Vollständige Diskussion anzeigen ( %{count} Kommentare)
+        reply_html: ' %{start} Antworten für: %{end} %{title}'
+      delete:
+        heading: Sind Sie sicher, dass Sie diesen Kommentar löschen möchten?
+        desc_html: Sie können diese Aktion nicht rückgängig machen, möchten Sie stattdessen nur %{action} verwenden?
+        action: Bearbeiten
+        submit: Löschen
+        edit: Bearbeiten
+        cancel: Entlassung
+      collapse: Ausblenden
+      edit: Kommentar bearbeiten
+      edited:
+        text_html: '&Bull; bearbeitet %{on}'
+        on_html: am %{date}
+      expand: Erweitern
+      hidden:
+        text_html: Einige Kommentare wurden durch den Autor des Postings ausgeblendet- %{info}
+        info: Erfahren Sie mehr
+      hider:
+        description_html: Sind Sie sicher, dass Sie diesen Kommentar ausblenden möchten? Es wird in Ihrem Beitrag verborgen, wird aber immer noch über die comment' s %{permalink} sichtbar sein.
+        hide_child: Untergeordnete Kommentare als auch ausblenden
+        note_html: Für weitere Aktionen können Sie die Blockierung dieser Person und/oder %{reporting} in Betracht ziehen.
+        permalink: Permalink
+        reporting: Missbrauch melden
+        submit: Bestätigen
+      locked: Die Diskussion wurde gesperrt. Neue Kommentare können nicht hinzugefügt werden.
+      orphan:
+        deleted: '[Kommentar von einem gelöschten Beitrag]'
+      re:
+        text_html: ' %{re} %{title}'
+        re: 'Re: '
+      settings:
+        meta:
+          title: Kommentareinstellungen
+        heading: Kommentareinstellungen
+        state:
+          show:
+            subtitle: Threadbenachrichtigungen anzeigen
+            desc: Sie erhalten alle Benachrichtigungen für diesen Kommentar und alle Ihre Kommentare in dieser Kette.
+          mute:
+            subtitle: Threadbenachrichtigungen für Muting
+            desc: Alle Benachrichtigungen für diesen Kommentar und alle Ihre Kommentare im Thread werden derzeit stumm geschaltet.
+        subscribe:
+          subtitle: Subskription
+          desc: Sie sind immer noch für alle Kommentare im breiteren Thread abonniert, was bedeutet, dass Sie immer noch Benachrichtigungen für Antworten auf diesen Kommentar erhalten.
+          mute: Stummbenachrichtigungen
+          unmute: Unstumme Benachrichtigungen
+      quality:
+        low: Kommentar als niedrig quality/non-konstruktiv von der Community gekennzeichnet.
+        conduct: Code of Conduct anzeigen
+        hidden:
+          icon: Info
+          text:
+            visible_in_permalink: Kommentar versteckt von post Autor-Thread nur sichtbar in diesem Permalink
+            accessible_via_permalink: Kommentar verborgen von post author-Thread nur über Permalink zugänglich
+      write:
+        errors:
+          one: '1 Fehler bei der Speicherung dieses Kommentars:'
+          other: ' %{count} Fehler untersagten, dass dieser Kommentar gespeichert wurde:'
+        field:
+          aria_label: Kommentar zu der Diskussion hinzufügen
+          placeholder: Zur Diskussion hinzufügen
+          submit: Hochladen
+          templates: Vorlagen
+          upload: Bild hochladen
+          use: Antwortvorlage verwenden
+          guide:
+            title: Markdown-Handbuch
+            icon: Editorhandbuch
+        template:
+          article: Dieser Beitrag kommt mit einer Kommentar-Vorlage
+          create:
+            subtitle: Vorlage erstellen
+            desc: Mit Vorlagen können Sie schnell FAQs beantworten oder Snippets zur erneuten Verwendung speichern.
+          moderator: Moderator
+          personal: Personal
+        submit: Übergeben
+        preview: Vorschau
+        cancel: Entlassung
+      menu:
+        aria_label: Dropdown-Menü umschalten
+        icon: Dropdown-Menü
+        copy:
+          aria_label: Link in %{user} s Kommentar kopieren
+          text: Link kopieren
+        settings:
+          aria_label: Gehen Sie zu %{user}'s Kommentareinstellungen
+        action:
+          aria_label: ' %{action} %{user} Kommentar'
+          hide: Ausblenden
+          unhide: Nicht ausblenden
+          hide_text: Ausblenden
+          unhide_text: Nicht ausblenden
+        moderate:
+          aria_label: Kommentar zu moderaten %{user}
+        report:
+          aria_label: Bericht %{user} Kommentar als missbräuchlich oder verletzt unseren Verhaltenskodex und/oder Bedingungen und Bedingungen
+      footer:
+        heart:
+          title: Herz
+          icon: 'Wie Kommentar: '
+          count_html: ' %{num} %{gern}'
+          text: Wie
+        reply:
+          aria_label: Auf einen Kommentar antworten ...
+          icon: Kommentar-Schaltfläche
+          done: Beantwortet
+          text: Antwort
+          placeholder: Antworten ...
+        thread:
+          icon: Thread
+          text: Thread
+        view:
+          icon: Sicht, Schaltfläche
+          text: Anzeigen
+      count:
+        one: ' %{count} Kommentar'
+        other: ' %{count} Kommentare'
+      empty: Neu
+      add: Kommentar hinzufügen
+      summary:
+        count_html:
+          one: ' %{count} %{start} Kommentar %{end}'
+          other: ' %{count} %{start} Kommentare %{end}'
+        title: Kommentare
+

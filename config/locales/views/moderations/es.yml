@@ -1,0 +1,122 @@
+es:
+  views:
+    moderations:
+      heading: Centro de mod
+      actions:
+        meta:
+          title: Moderando %{title}
+          title2: '[Moderado] %{title}'
+        heading: Post moderado
+        subtitle: Valorar la calidad de este post
+        abusive:
+          subtitle_html: Distintivo %{user} como Abusivo
+          desc_html: Este es el equivalente de flaquear <b>todo</b> de los artículos de este usuario y reducirá sus puntuaciones de artículo.
+        adjust:
+          heading: Ajustar etiquetas
+          subtitle: Añadir o eliminar etiquetas
+          aria_label: Sección de etiquetas de ajuste abierto
+          icon: Ajustar etiquetas
+          add: Añadir etiqueta
+          add_placeholder: Añadir una etiqueta
+          reason: Motivo del ajuste de la etiqueta
+          remove: Eliminar etiqueta
+          submit: Presentar
+        approve:
+          add: Marca como aprobada
+          remove: Quitar la aprobación
+        checkmark: Marca de verificación
+        close: Panel Cerrar acciones de moderador
+        delete:
+          subtitle: Suprimir Este Comentario
+          button: Suprimir comentario
+        edit:
+          post: Editar post
+          article_admin: 'Admin: Artículo'
+          comment_admin: 'Admin: Comentario'
+          user_admin: 'Admin: Usuario'
+          resource_admin: 'ResourceAdmin: Artículo'
+        errors:
+          one: '1 error ha prohibido que se guarde este bloque:'
+          other: ' %{count} errores han prohibido que se guarde este bloque:'
+        experience:
+          heading: Establecer el nivel de experiencia
+          heading2: Nivel de experiencia de Post
+          subtitle: Cura la audiencia más apropiada para este post
+          aria_label: Sección de nivel de experiencia abierta
+          icon: Libro
+          desc_html: ¿Quién <em>podría</em> encontrar este post más valioso, basado en el nivel de experiencia general?
+          from: ' %{lvl}- '
+          level:
+            Advanced: Avanzado
+            Beginner: Principiante
+            Expert: Experto
+            Mid-level: Nivel medio
+            Novice: Novatos
+        flag: Usuario del distintivo
+        how: ¿Cómo funciona este trabajo?
+        hidden:
+          subtitle: Comentarios ocultos
+          by: Comentario de %{user}
+        hint:
+          subtitle: Todas las reacciones negativas son privadas.
+          desc_html: >-
+            Utilice <b>High Quality</b> para mover este contenido "hacia arriba" por cualquier motivo (calidad, utilidad, etc.).
+
+            <br /> Utilice <b>Calidad baja</b> para mover este contenido "hacia abajo" por cualquier motivo (calidad, utilidad, etc.).
+
+            <br /> Utilice <b>Flag to Admins</b> para obtener código de infracciones de conducta (acoso, ser un tirón, spam, etc.).
+        other: Otras cosas que puedes hacer
+        add_reaction: Añadir una reacción
+        suspicious: Sospechoso
+        tag:
+          subtitle: Ajustes de etiqueta
+          add: Añadir
+          added_html: <b>Etiqueta añadida actualmente:</b>  %{tag}
+          live_html: <b>Códigos activos actuales:</b>  %{tags}
+          reason: Motivo de ajuste (Ser súper amable)-Solo se necesita el motivo, la notificación se hará cargo del resto.
+          remove: Eliminar
+          removed_html: <b>Código eliminado actualmente:</b>  %{tag}
+          select: Seleccionar código
+          submit: Ajuste de etiqueta de envío
+          tag_name: Nombre de etiqueta
+          undo:
+            button: ×
+            confirm: ¿Está seguro de que desea deshacer el %{type} del código %{tag}?
+            type:
+              addition: adición
+              removal: eliminación
+        thumb_down: Pulgar hacia abajo
+        thumb_up: Pulgar hacia arriba
+        toggle: Alternar sección
+        unpublish: Artículo 5
+        vote_down: Baja calidad
+        flag_to_admins: Distintivo a Admins
+        vote_up: Alta calidad
+      all: Todos los temas
+      aside:
+        all: Todos los temas
+        code_of_conduct: Código de conducta
+        external: Enlace externo
+        feedback:
+          subtitle: ¿Tiene retroalimentación para mejorar su experiencia de Mod?
+          description: Por favor email %{email}!
+        hello: "¡Hola! \U0001F44B"
+        thanks: Gracias por ayudar a mantener a %{community} safe! ❤️
+        inbox: Bandeja
+        resources: Recursos
+        tag: Guía de moderación de etiquetas
+        terms_and_conditions: Términos y condiciones
+        trusted: Guía del usuario fiable
+      author: Autor
+      date: Fecha
+      notice:
+        subtitle: ' %{community} Mods'
+        desc1_html: Periódicamente otorgamos a algunos miembros de %{community} con privilegios elevados para ayudar a moderar la comunidad.
+        desc2_html: Echa un vistazo a nuestro %{code} y lee a través de nuestro %{trusted} y %{tag}.
+        desc3_html: Si desea ayudarnos como usuario de confianza o etiqueta mod, por favor envíenos un correo electrónico al %{email} y háganos saber en qué rol está interesado y por qué. Si es una moderación de etiquetas, por favor, cuéntanos qué etiquetas te gustaría moderar.
+        desc4: P.S. Actualmente no está firmado.
+        code_of_conduct: Código de conducta
+        tag: Guía de moderación de etiquetas
+        trusted: Guía del usuario fiable
+      post: Post
+

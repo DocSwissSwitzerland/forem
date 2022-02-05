@@ -1,0 +1,21 @@
+nl:
+  api:
+    v0:
+      analytics_controller:
+        invalid_date_format: Datumparameters 'start' of 'end' moeten de notatie 'jjjj-mm-dd' hebben
+        start_missing: De vereiste 'start'-parameter ontbreekt
+      articles_controller:
+        must_be_json: artikel param moet een JSON-object zijn. U hebt artikel als %{type} opgegeven
+      follows_controller:
+        followed:
+          one: gevolgd %{count} gebruiker
+          other: ' %{count} gebruikers gevolgd'
+      health_checks_controller:
+        app_is_up: De app is op!
+        database_connected: Database verbonden
+        database_not_connected: Database NIET verbonden!
+        redis_connected: Roodhaan verbonden
+        redis_not_connected: Redis NIET verbonden!
+      listings_controller:
+        no_credit: Niet genoeg beschikbare kredieten
+

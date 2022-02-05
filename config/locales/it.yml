@@ -1,0 +1,184 @@
+it:
+  contact_prompts:
+    if_any_questions_html: <a href="/contact">Contattaci</a> se hai delle domande.
+    if_continued_trouble_html: <a href="/contact">Contattaci</a> se si continua ad avere problemi.
+    if_we_can_help_html: <a href="/contact">Contattaci</a> se c'è qualcosa di cui possiamo aiutare.
+  core:
+    add_comment: Aggiungi commento
+    beta: beta
+    comment: Commento
+    copy_link: Collegamento copia
+    edit_profile: Modifica profilo
+    follow: Segui
+    follow_back: Segui indietro
+    following: Seguendo
+    like: Come
+    loading: caricamento ...
+    reaction: Reazione
+    report_abuse: Abusi di report
+    search: Ricerca
+  datetime:
+    distance_in_words_ago:
+      about_x_hours:
+        one: circa 1 ora fa
+        other: circa %{count} ore fa
+      about_x_months:
+        one: circa 1 mese fa
+        other: circa %{count} mesi fa
+      about_x_years:
+        one: circa 1 anno fa
+        other: circa %{count} anni fa
+      almost_x_years:
+        one: quasi 1 anno fa
+        other: quasi %{conta} anni fa
+      half_a_minute: mezzo minuto fa
+      less_than_x_seconds:
+        one: meno di 1 second minuti fa
+        other: meno di %{count} secondi fa
+      less_than_x_minutes:
+        one: meno di un minuto fa
+        other: meno di %{count} minuti fa
+      over_x_years:
+        one: oltre 1 anno fa
+        other: over %{count} anni fa
+      x_seconds:
+        one: 1 second minuti fa
+        other: ' %{conteggio} secondi fa'
+      x_minutes:
+        one: 1 minute minuti fa
+        other: ' %{conteggio} minuti fa'
+      x_days:
+        one: 1 giorno fa
+        other: ' %{conteggio} giorni fa'
+      x_months:
+        one: 1 mese fa
+        other: ' %{count} mesi fa'
+      x_years:
+        one: 1 anno fa
+        other: ' %{conteggio} anni fa'
+    expired_ago:
+      about_x_hours:
+        one: Scaduto circa 1 ora fa
+        other: Scaduto circa %{conteggio} ore fa
+      about_x_months:
+        one: Scaduto circa 1 mese fa
+        other: Scaduto circa %{count} mesi fa
+      about_x_years:
+        one: Scaduto circa 1 anno fa
+        other: Scaduto circa %{conteggio} anni fa
+      almost_x_years:
+        one: Scaduto quasi 1 anno fa
+        other: Scaduto quasi %{conteggio} anni fa
+      half_a_minute: Scaduto mezzo minuto fa
+      less_than_x_seconds:
+        one: Scaduto meno di 1 second minuti fa
+        other: Scaduto meno di %{conteggio} secondi fa
+      less_than_x_minutes:
+        one: Scaduto meno di un minuto fa
+        other: Scaduto meno di %{conteggio} minuti fa
+      over_x_years:
+        one: Scaduto oltre 1 anno fa
+        other: Scaduto il %{count} anni fa
+      x_seconds:
+        one: Scaduto 1 second minuti fa
+        other: '% scaduto {conteggio} secondi fa'
+      x_minutes:
+        one: Scaduto 1 minute minuti fa
+        other: '% scaduto {conteggio} minuti fa'
+      x_days:
+        one: Scaduto 1 giorno fa
+        other: '% scaduto {conteggio} giorni fa'
+      x_months:
+        one: Scaduto 1 mese fa
+        other: '% scaduto {count} mesi fa'
+      x_years:
+        one: Scaduto 1 anno fa
+        other: '% scaduto {conteggio} anni fa'
+    expires_in:
+      about_x_hours:
+        one: Scade in circa 1 ora
+        other: Scade in circa %{conteggio} ore
+      about_x_months:
+        one: Scade in circa 1 mese
+        other: Scade in circa %{count} mesi
+      about_x_years:
+        one: Scade in circa 1 anno
+        other: Scade in circa %{conteggio} anni
+      almost_x_years:
+        one: Scade in quasi 1 anno
+        other: Scade in quasi %{count} anni
+      half_a_minute: Scade tra mezzo minuto
+      less_than_x_seconds:
+        one: Scade in meno di 1 second
+        other: Scade in meno di %{count} secondi
+      less_than_x_minutes:
+        one: Scade in meno di un minuto
+        other: Scade in meno di %{conteggio} minuti
+      over_x_years:
+        one: Scade in oltre 1 anno
+        other: Scade in oltre %{conteggio} anni
+      x_seconds:
+        one: Scade nel 1 second
+        other: Scade in %{conteggio} secondi
+      x_minutes:
+        one: Scade nel 1 minute
+        other: Scade in %{conteggio} minuti
+      x_days:
+        one: Scade in 1 giorno
+        other: Scade in %{conteggio} giorni
+      x_months:
+        one: Scade in 1 mese
+        other: Scade in %{conteggio} mesi
+      x_years:
+        one: Scade in 1 anno
+        other: Scade in %{conteggio} anni
+  errors:
+    messages:
+      accepted: deve essere accettato
+      bad_protocol: deve iniziare con %{protocolli}
+      bad_uri: è un url non valido
+      blank: non può essere vuoto
+      confirmation: non corrisponde %{attributo}
+      contains_prohibited_characters: contiene caratteri unicode non alfanumerici o vietati
+      empty: non può essere vuoto
+      equal_to: deve essere uguale a %{count}
+      even: deve essere pari
+      exclusion: è riservato
+      general: 'Errore: %{errori}'
+      greater_than: deve essere maggiore di %{count}
+      greater_than_or_equal_to: deve essere maggiore o uguale a %{count}
+      inclusion: non è incluso nell'elenco
+      invalid: non è valido
+      less_than: deve essere inferiore a %{count}
+      less_than_or_equal_to: deve essere inferiore o uguale a %{conteggio}
+      model_invalid: 'Convalida non riuscita: %{errori}'
+      not_a_number: non è un numero
+      not_an_integer: deve essere un intero
+      odd: deve essere strano
+      other_than: deve essere diverso da %{count}
+      present: deve essere vuoto
+      required: deve esistere
+      taken: è già stato preso
+      too_long:
+        one: è troppo lungo (massimo è 1 carattere)
+        other: è troppo lungo (massimo è %{count} caratteri)
+      too_short:
+        one: è troppo breve (minimo è 1 carattere)
+        other: è troppo breve (minimo è %{count} caratteri)
+      try_again_email: 'Si è verificato un errore. Provare di nuovo o inviare una email a: %{email}'
+      wrong_length:
+        one: è la lunghezza errata (dovrebbe essere di 1 carattere)
+        other: è la lunghezza errata (dovrebbe essere %{count} caratteri)
+  time:
+    formats:
+      comment: '%B, %Y'
+      github: '%b, %Y'
+      json: '%b %e, %Y'
+      medium: '%b% - d, %Y'
+      reddit: "%b %e ' %y"
+      short: '%b% - e'
+      short_with_yy: "%b% - d ' %y"
+      short_with_year: '%b% - e, %Y'
+      stackexchange: "%b %e ' %y"
+      tweet: '%H: %M %p - %b %Y'
+

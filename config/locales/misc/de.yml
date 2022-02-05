@@ -1,0 +1,40 @@
+de:
+  create_mascot:
+    name: Maskottchen
+    error: Maskottchen bereits eingestellt
+  broadcast:
+    welcome:
+      ask_question: "Sloan hier! \U0001F44B Ich habe gemerkt, dass Sie noch nicht <a href='https://dev.to/t/explainlikeimfive'>eine Frage gestellt haben</a> . Es ist einfach, eine Frage zu stellen. Klicken Sie einfach auf \" Post\" in der Seitenleiste der Tagseite, um loslegen zu können!"
+      customize_experience: "Sloan hier! \U0001F44B Haben Sie gewusst, dass Sie Ihre DEV-Erfahrung anpassen können? Versuchen Sie, <a href='settings/customization'>Ihre Schriftart und Ihr Thema</a> zu ändern und finden Sie den besten Stil für Sie!"
+      customize_feed: "Hi, ich bin wieder da! \U0001F44B Nun, da du ein Teil der DEV Community bist, konzentriert sich lets auf die Personalisierung deines Inhalts. Sie können mit <a href='/tags'>nach einigen Tags</a> beginnen, um Ihren Feed anpassen zu können. \U0001F389"
+      discuss_and_ask: "Sloan hier! \U0001F44B Ich habe festgestellt, dass Sie noch nicht <a href='https://dev.to/t/explainlikeimfive'>eine Frage gestellt</a> oder <a href='https://dev.to/t/discuss'>eine Diskussion gestartet</a> haben. Es ist einfach, beides zu tun; klicken Sie einfach auf \" Post\" in der Seitenleiste der Tag-Seite, um loszuwerden!"
+      download_app: "Sloan hier, mit einem letzten Tipp! \U0001F44B Haben Sie die Mobile-App von DEV noch heruntergeladen? Betrachten Sie es als <a href='https://dev.to/downloads'>Download</a> , damit Sie auf alle Ihre bevorzugten DEV-Inhalte zugreifen können!"
+      set_up_profile: "Willkommen bei DEV! \U0001F44B Ich bin Sloan, das Community-Maskottchen und ich bin hier, um Ihnen dabei zu helfen, dass Sie angefangen haben. Let' s beginnen, indem Sie <a href='/settings'>Ihr Profil einrichten</a>!"
+      start_discussion: "Sloan hier! \U0001F44B Ich habe festgestellt, dass Sie noch nicht <a href='https://dev.to/t/discuss'>eine Diskussion gestartet</a> haben. Das Starten einer Diskussion ist einfach zu tun; klicken Sie einfach auf ' Post' in der Seitenleiste der Tagseite, um loszuwerden!"
+      welcome_thread: "Sloan wieder hier! \U0001F44B DEV ist eine freundliche Community. Warum Sie sich nicht vorstellen, indem Sie einen Kommentar in <a href='/welcome'>den willkommenen Thread</a>hinterlassen!"
+    connect:
+      apple: "Sie sind auf einer Rolle! \U0001F389 Haben Sie ein Apple-Konto? Betrachten Sie <a href='/settings'>Verbinden</a>."
+      facebook: "Sie sind auf einer Rolle! \U0001F389 Haben Sie einen Facebook-Account? Betrachten Sie <a href='/settings'>Verbinden</a>."
+      forem: "Sie sind auf einer Rolle! \U0001F389 Haben Sie ein Forem-Konto? Betrachten Sie <a href='/settings'>Verbinden</a>."
+      github: "Sie befinden sich auf einer Rolle! \U0001F389 Haben Sie ein GitHub-Konto? Ziehen Sie die <a href='/settings'>Verbindung</a> in Betracht, damit Sie alle Ihre Repos an Ihr Profil anheften können."
+      google: "Sie sind auf einer Rolle! \U0001F389 Haben Sie ein Google-Konto? Betrachten Sie <a href='/settings'>Verbinden</a>."
+      twitter: "Sie sind auf einer Rolle! \U0001F389 Haben Sie einen Twitter-Account? Ziehen Sie die <a href='/settings'>Verbindung</a> in Betracht, so dass wir @mention Sie über unseren Twitter-Account <a href='https://twitter.com/thePracticalDev'>@thePracticalDev</a>gemeinsam nutzen können."
+  errors:
+    authentication:
+      errors:
+        suspended: Es wird angezeigt, dass Ihr früherer Account %{community_name} ausgesetzt wurde. Als solche haben wir Maßnahmen ergriffen, um zu verhindern, dass Sie ein neues Konto mit %{community_name} und seiner Community erstellen. Wenn Sie denken, dass es einen Fehler gegeben hat, senden Sie uns bitte eine E-Mail an %{community_email}, und wir werden einen anderen Blick nehmen.
+    fastly_config:
+      must_be_array: 'configs: muss ein Array von Strings sein'
+      invalid_config: Ungültige Fastly-Konfiguration- %{invalid_config}. Nur %{valid_configs_join} sind gültig.
+  policies:
+    application_policy:
+      must_be_logged_in: muss angemeldet sein
+      you_must_be_logged_in: Sie müssen angemeldet sein.
+    liquid_tag_policy:
+      no_user_found: Kein Benutzer gefunden
+      not_permitted: Der Benutzer ist nicht berechtigt, diesen flüssigen Tag zu verwenden
+  uploaders:
+    base_uploader:
+      too_many_frames: GIF enthält zu viele Rahmen. Max. Rahmenanzahl zulässig ist %{frame_max}.
+      timeout: Die Bildverarbeitung wurde überschritten.
+

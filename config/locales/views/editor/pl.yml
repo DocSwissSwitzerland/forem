@@ -1,0 +1,28 @@
+pl:
+  views:
+    editor:
+      meta:
+        title: Edytuj wpis
+      heading:
+        new: Nowy wpis
+      create: Utwórz wpis
+      close:
+        icon: Zamknij
+        title: Zamknij edytor
+      cover_image:
+        add: Dodaj obraz okładki
+        change: Zmień
+      edit: Edytuj
+      modes: Wyświetl tryby wypowiedzi
+      new_title: Nowy tytuł postu tutaj ...
+      preview: Podgląd
+      video:
+        progress:
+          heading: ⏳ Transkodowanie Wideo W Toku ⏳
+          notice_1: Po zakończeniu tego procesu otrzymasz wiadomość e-mail.
+          notice_2: Jest to zwykły niepublikowany post. Dodaj tytuł/znacznik/body/etc, a następnie zaznacz jako opublikowane po zakończeniu przetwarzania filmu wideo.
+        submit_image:
+          button: Wprowadź zmianę
+          text: 'Adres URL obrazu podglądu: '
+          placeholder: Nowy adres URL miniatury
+

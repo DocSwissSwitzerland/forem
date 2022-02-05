@@ -1,0 +1,55 @@
+de:
+  views:
+    credits:
+      meta:
+        title: Gutschriften
+      ledger:
+        class:
+          listing: Liste
+        category: Kategorie
+        item: Element
+        cost: Kosten (Gutschriften)
+        date: Datum
+        misc: Verschiedene Artikel
+      listing:
+        create: Liste erstellen
+        dashboard: Zum Anzeigen-Dashboard wechseln
+      new:
+        meta:
+          title: Einkaufsgutschriften
+        heading: Kaufgutschriften für @ %{name}
+        form:
+          amount:
+            label: Betrag zum Kauf
+            placeholder: Jeden Betrag eingeben
+          method:
+            label: Zahlungsmethode
+            number: '**** **** **** %{last}'
+            exp: ' %{mm}/ %{yy}'
+            add: Neue Karte hinzufügen
+          submit: Vollständiger Einkauf
+          submitting: Wird übergeben ...
+          note_org: '*Alle Organisationsadministratoren haben Zugriff auf Credits, deren Eigner die Organisation ist.'
+        switch:
+          org: Auf %{name} umschalten
+          user: Zum persönlichen Kauf wechseln
+        status:
+          subtitle:
+            org: Wie viele Credits hat %{name}?
+            user: Wie viele Credits habe ich derzeit?
+          desc:
+            org: ' %{name} hat %{count} Credits.'
+            user: Sie haben %{count} Credits.
+        how:
+          subtitle: Wie kann ich Credits verdienen?
+          desc_html: Mitglieder erhalten <strong>5 Credits</strong> für jedes Profilabzeichen, das Sie verdienen.
+      purchase: Zusätzliche Gutschriften erwerben
+      tag: 'Tag: %{name}'
+      status:
+        user:
+          one: Sie haben %{count} persönliche Gutschriften für Ausgaben
+          other: Sie haben %{count} persönliche Gutschriften für Ausgaben
+        org_html:
+          one: ' %{name} hat %{num} Kredit für Ausgaben'
+          other: ' %{name} hat %{num} Gutschriften für Ausgaben'
+

@@ -1,0 +1,150 @@
+nl:
+  views:
+    dashboard:
+      meta:
+        title: Dashboard- %{site}
+      heading: Dashboard
+      actions:
+        mobile:
+          posts: Posts ( %{num})
+          followers: Volgers ( %{num})
+          following_tags: Volgende tags ( %{num})
+          following_users: Volgende gebruikers ( %{num})
+          following_orgs: Volgende organisaties ( %{num})
+          following_pods: Volgende podcasts ( %{num})
+        posts: Posten
+        series: Reeks
+        followers: Volgers
+        following_tags: Volgende tags
+        following_users: Volgende gebruikers
+        following_orgs: Volgende organisaties
+        following_pods: Volgende podcasts
+        listings: Lijsten
+        analytics: Analyse
+        for_org: Analyse voor %{org}
+        upload: Video uploaden
+      analytics:
+        meta:
+          title: Analyse
+        heading: Analysedashboard voor %{name}
+        desc_1: Welkom bij het Analytics Dashboard, het huis van in-depth gebruikerscijfers zodat auteurs op gegevens gebaseerde beslissingen kunnen nemen over het ecosysteem van %{members}.
+        desc_2: Dit dashboard belicht diepe inzichten die relevant zijn voor %{members} relaties, auteurs en serieuze bloggers.
+        back: "\U0001F448 Terug naar hoofddashboard"
+        your: Uw dashboard
+        org: ' %{org} Analytics Dashboard'
+      article:
+        heading:
+          text_html: ' %{gearchiveerd} %{titel}'
+          archived: '[Gearchiveerd] '
+        archived: Gearchiveerd
+        published: 'Gepubliceerd:'
+        published_html: 'Gepubliceerd: %{date}'
+        edited: 'Bewerkt:'
+        edited_html: 'Bewerkt: %{date}'
+        series: 'Reeks:'
+        series_html: <strong>Reeks:</strong>  %{series}
+        draft: Concept
+        reactions:
+          title: Reacties
+          icon: Reacties
+          text_html:
+            one: ' %{num} reactie'
+            other: ' %{num} reacties'
+        comments:
+          title: Commentaar
+          icon: Commentaar
+          text_html:
+            one: ' %{num} reactie'
+            other: ' %{num} reacties'
+        views:
+          title: Views
+          icon: Views
+          lt_25: < 25
+          text_html:
+            one: ' %{scale} bekijken'
+            other: ' %{scale} views'
+          u_25: onder 25
+        subscriptions:
+          title: Abonnementen
+          icon: Gegevens
+          number: Abonnementen ( %{num})
+        delete: Wissen
+        unpin: Losmaken
+        pin:
+          title: Vastzetten naar profiel
+          button: Vastzetten naar profiel
+          text: Pennetje
+        manage:
+          aria_label: 'Post beheren: %{title}'
+          text: Beheren
+        lock: Discussie vergrendelen
+        unlock: Discussie ontgrendelen
+        edit:
+          aria_label: 'Post bewerken: %{title}'
+          text: Bewerken
+        more:
+          title: 'Meer opties voor post: %{title}'
+          icon: Meer ...
+        stats: Statistieken
+        archive: Archief-post
+        unarchive: Niet-archiefpost
+        author: Auteur
+        author_is: 'AUTEUR: '
+        save: Opslaan
+        submit: Auteur wijzigen
+      followers:
+        heading: Dashboard " Volgers
+        empty: Je hebt nog geen volgelingen.
+      following_orgs:
+        heading: Dashboard " Volgende organisaties
+        empty: Je volgt nog geen organisaties.
+      following_pods:
+        heading: Dashboard " Volgende podcasts
+        empty: Je volgt nog geen podcasts ...
+      following_tags:
+        heading: Dashboard " Volgende tags
+        adjust: Pas het taggewicht aan om uw eigen feed te wijzigen. Hogere waarden betekenen meer optredens voor die tag.
+        anti:
+          title: Dit label heeft een negatief vervolggewicht
+          text: Anti-follow
+        default: Standaard 1.0
+        empty: Je volgt nog geen tags.
+        number:
+          aria_label: ' %{name} taggewicht'
+        update: Gewichten bijwerken
+      following_users:
+        heading: Dashboard " Volgende gebruikers
+        empty: Je volgt geen gebruikers ...
+      listings:
+        meta:
+          title: Listings-dashboard
+      posts:
+        heading: Posten
+        archived: Gearchiveerd afbeelden
+        option:
+          creation-desc: Recent gemaakt
+          published-desc: Recent gepubliceerd
+          views-desc: Meeste views
+          reactions-desc: Meest reacties
+          comments-desc: Meest commentaar
+          aria_label: Sorteren op
+        org: ' %{name} ( %{num})'
+        personal: Persoonlijk
+        empty:
+          desc: Hier kunt u uw berichten beheren, maar u hebt nog niets geschreven.
+          new: Schrijf nu uw eerste post
+      subscriptions:
+        meta:
+          title: Abonnementen %{titel}
+        heading: Abonnementen
+        subhead:
+          text_html: ' %{voor} %{bron}'
+          for: voor
+        empty: U hebt geen abonnees voor deze %{kind} nog ...
+      summary:
+        reactions: Totaal postreacties
+        views: Totaalaantal posten
+        listings: Lijsten gemaakt
+        credits: Beschikbare kredieten
+        lt_500: < 500
+

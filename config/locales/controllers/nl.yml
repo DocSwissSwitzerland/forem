@@ -1,0 +1,121 @@
+nl:
+  api_secrets_controller:
+    generated: 'Uw API-sleutel is gegenereerd: %{secret}'
+    revoked: Uw API-sleutel is ingetrokken.
+  application_controller:
+    bad_request: 'Fout: Ongeldige opdracht'
+    not_authorized: 'Fout: niet gemachtigd'
+    please_sign_in: Meld u aan
+  articles_controller:
+    deleted: Artikel is gewist.
+  comments_controller:
+    create:
+      success: gemaakt
+      failure: commentaar bestaat al
+    delete:
+      error: Er is iets fout gegaan; commentaar is NIET gewist.
+      notice: Reactie is gewist.
+    markdown: 'Er is een fout opgetreden in uw markdown: %{error}'
+    markdown_html: "<p>\U0001F614 Er is een fout opgetreden in uw markup</p><hr><p> %{error}</p>"
+    moderated: Niet toegestaan vanwege actie met moderatie
+  confirmations_controller:
+    email_sent: E-mail verzonden! Neem contact op met ondersteuning bij %{email} als u problemen hebt met het ontvangen van uw bevestigingsinstructies.
+  credits_controller:
+    done:
+      one: ' %{count} nieuwe kredieten aangeschaft!'
+      other: ' %{count} nieuwe kredieten aangeschaft!'
+  devices_controller:
+    not_found: Niet gevonden
+  discussion_locks_controller:
+    locked: Discussie is succesvol afgesloten!
+    unlocked: Discussie is met succes ontgrendeld!
+  email_subscriptions_controller:
+    badge_notifications: badge-meldingen
+    comment_notifications: berichten over commentaar
+    digest_emails: ' %{community}-mailberichten'
+    follower_notifications: Volgmeldingen
+    mention_notifications: kennisgevingen vermelden
+    this_list: deze lijst
+    unread_notifications: ongelezen meldingen
+  feedback_messages_controller:
+    error_fill: "Zorg ervoor dat de formulieren ingevuld zijn. \U0001F916 Andere mogelijke fouten: %{errors}"
+    n_a: N.v.t.
+    submitted: Uw rapport is verzonden
+  follows_controller:
+    already_followed: al gevolgd
+    daily_limit: Limiet van het dagelijkse account bereikt!
+    followed: gevolgd
+    unfollowed: niet gevolgd
+  github_repos_controller:
+    repo_not_found: GitHub repository niet gevonden
+    github_unauthorized: 'GitHub onbevoegd: %{e_message}'
+  image_uploads_controller:
+    server_error: Er is een serverfout opgetreden!
+  listings_controller:
+    deleted: Lijst is gewist.
+    no_credit: Niet genoeg beschikbare kredieten
+  omniauth_callbacks_controller:
+    log_in_error: 'Fout in logboek: %{e}'
+    username_taken: gebruikersnaam is al gebruikt
+  organizations_controller:
+    secret_updated: Uw organisatie-geheim is bijgewerkt
+    deletion_scheduled: 'Uw organisatie: " %{organization_name}" wissen is gepland. U krijgt bericht wanneer het verwijderd is.'
+    not_deleted: Uw organisatie is niet gewist; u moet een beheerder zijn, het enige lid in de organisatie en geen artikelen hebben die zijn verbonden met de organisatie.
+    created: Uw organisatie is gemaakt en u bent een beheerder.
+    updated: Uw organisatie is bijgewerkt.
+  podcasts_controller:
+    podcast_suggested: Aanbevolen podcast
+  profiles_controller:
+    updated: Uw profiel is bijgewerkt
+  rating_votes_controller:
+    not_upserted_successfully: Niet Bijgewerkt
+  registrations_controller:
+    error:
+      recaptcha: U moet de recaptcha ✅voltooien
+      domain: is niet opgenomen in toegestane domeinen.
+  response_templates_controller:
+    response_template_error: 'Fout in responssjabloon: %{errors}'
+    created: Uw responssjabloon " %{title}" is gemaakt.
+    deleted: Uw responssjabloon " %{title}" is gewist.
+    updated: Uw responssjabloon " %{title}" is bijgewerkt.
+  social_previews_controller:
+    fonts: Roboto | Roboto + Condensed
+  stories:
+    pinned_articles_controller:
+      not_found: niet gevonden
+  stories_controller:
+    404_bio_not_found: 404 bio niet gevonden
+    searching: '... zoeken'
+  stripe_active_cards_controller:
+    cannot_remove: Kan kaart niet verwijderen als u een actief lidmaatschap hebt. Annuleert eerst uw lidmaatschap.
+    cannot_update: Er is een probleem opgetreden bij het bijwerken van uw factureringsgegevens.
+    updated: Uw factureringsgegevens zijn bijgewerkt
+    removed: Uw kaart is verwijderd.
+  tag_adjustments_controller:
+    failure: 'Fout: %{errors}'
+    destroyed: Wijziging van tag is vernietigd
+  tags_controller:
+    tag_successfully_updated: "Tag is bijgewerkt! \U0001F44D "
+  users_controller:
+    removed_admin: ' %{name} is niet langer een beheerder.'
+    removed_member: ' %{name} maakt geen deel uit van uw organisatie.'
+    added_admin: ' %{name} is nu een admin.'
+    provide_email: Geef een e-mail op om uw account te verwijderen.
+    provide_email_delete: Geef een e-mail op om uw account te verwijderen
+    send_export: ' De export wordt binnenkort naar u gemaild.'
+    invalid_secret: Het opgegeven organisatiegeheim is ongeldig.
+    username_blank: Gebruikersnaam mag niet leeg zijn
+    deletion_in_progress: U hebt al rekening gehouden met het wissen van accounts. Controleer uw e-mail voor verdere instructies.
+    joined_org: U bent toegetreden tot de organisatie %{organization_name}.
+    left_org: U hebt uw organisatie verlaten.
+    deletion_requested: U hebt rekening gehouden met het wissen van accounts Controleer uw e-mail voor verdere instructies.
+    log_in_to_delete: U moet zijn aangemeld om door te gaan met het wissen van accounts.
+    deletion_scheduled: Het wissen van uw account is gepland. U krijgt bericht wanneer het verwijderd is.
+    removed_identity: Uw %{provider}-account is verwijderd.
+    updated_config: Uw configuratie is bijgewerkt. Vernieuwen om alle wijzigingen te zien.
+    updated_profile: Uw profiel is bijgewerkt.
+    token_expired: Uw token is vervallen, vraag een nieuwe. Tokens duren slechts 12 uur nadat het wissen van de account is gestart.
+  video_states_controller:
+    related_article_not_found: Verwant artikel niet gevonden
+    video_state_updated: Videostatus bijgewerkt
+

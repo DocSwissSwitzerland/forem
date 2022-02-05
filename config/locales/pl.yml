@@ -1,0 +1,184 @@
+pl:
+  contact_prompts:
+    if_any_questions_html: <a href="/contact">Skontaktuj się z nami</a> , jeśli masz jakieś pytania.
+    if_continued_trouble_html: <a href="/contact">Skontaktuj się z nami</a> , jeśli nadal masz problemy.
+    if_we_can_help_html: <a href="/contact">Skontaktuj się z nami</a> , jeśli jest coś, z czym możemy pomóc.
+  core:
+    add_comment: Dodaj komentarz
+    beta: beta
+    comment: Komentarz
+    copy_link: Kopiuj odsyłacz
+    edit_profile: Edytuj profil
+    follow: Śledź
+    follow_back: Śledzenie wstecz
+    following: Śledzenie
+    like: Podobne
+    loading: ładowanie ...
+    reaction: Reakcja
+    report_abuse: Nadużywanie raportów
+    search: Szukaj
+  datetime:
+    distance_in_words_ago:
+      about_x_hours:
+        one: około 1 godziny temu
+        other: o %{count} godzin temu
+      about_x_months:
+        one: około 1 miesiąc temu
+        other: o %{count} miesiąc temu
+      about_x_years:
+        one: około 1 roku temu
+        other: o %{count} r. temu
+      almost_x_years:
+        one: prawie 1 rok temu
+        other: prawie %{count} lat temu
+      half_a_minute: pół minuty temu
+      less_than_x_seconds:
+        one: mniej niż 1 sekundę temu
+        other: mniej niż %{count} sekund temu
+      less_than_x_minutes:
+        one: mniej niż minutę temu
+        other: mniej niż %{count} minut temu
+      over_x_years:
+        one: ponad 1 rok temu
+        other: ponad %{count} lat temu
+      x_seconds:
+        one: 1 sekundę temu
+        other: ' %{count} s temu'
+      x_minutes:
+        one: 1 min temu
+        other: ' %{count} min temu'
+      x_days:
+        one: 1 dzień temu
+        other: ' %{count} dni temu'
+      x_months:
+        one: 1 miesiąc temu
+        other: ' %{count} mies. temu'
+      x_years:
+        one: 1 r. temu
+        other: ' %{count} r. temu'
+    expired_ago:
+      about_x_hours:
+        one: Wygasło około 1 godziny temu
+        other: 'Przeterminowane: %{count} godz. temu'
+      about_x_months:
+        one: Wygasło około 1 miesiąc temu
+        other: 'Przeterminowane: %{count} mies. temu'
+      about_x_years:
+        one: Wygasło około 1 roku temu
+        other: Utrata ważności ( %{count} r.) lat temu
+      almost_x_years:
+        one: Wygasło prawie 1 rok temu
+        other: Przeterminowane prawie %{count} lat temu
+      half_a_minute: Przedawnione pół minuty temu
+      less_than_x_seconds:
+        one: Wygasło mniej niż 1 sekundę temu
+        other: Wygasło mniej niż %{count} sekund temu
+      less_than_x_minutes:
+        one: Wygasło mniej niż minutę temu
+        other: Wygasło mniej niż %{count} minut temu
+      over_x_years:
+        one: Wygasło ponad 1 rok temu
+        other: Upłynęło ponad %{count} lat temu
+      x_seconds:
+        one: Wygasło 1 sekundę temu
+        other: Przeterminowany %{count} s temu
+      x_minutes:
+        one: Wygasło 1 minutę temu
+        other: Przeterminowany %{count} min temu
+      x_days:
+        one: Przedawniony 1 dzień temu
+        other: Przeterminowany %{count} dni temu
+      x_months:
+        one: Przedawniony 1 miesiąc temu
+        other: Przeterminowany %{count} mies. temu
+      x_years:
+        one: Przedawniony 1 rok temu
+        other: Przeterminowany %{count} r. temu
+    expires_in:
+      about_x_hours:
+        one: Traci ważność za około 1 godzinę
+        other: Traci ważność za około %{count} godz.
+      about_x_months:
+        one: Traci ważność za około 1 miesiąc
+        other: Traci ważność za około %{count} miesięcy
+      about_x_years:
+        one: Traci ważność za około 1 rok
+        other: 'Traci ważność (liczba lat: %{count})'
+      almost_x_years:
+        one: Traci ważność za prawie 1 rok
+        other: Traci ważność o prawie %{count} lat
+      half_a_minute: Traci ważność za pół minuty
+      less_than_x_seconds:
+        one: Traci ważność za mniej niż 1 sekundę
+        other: Traci ważność za mniej niż %{count} s
+      less_than_x_minutes:
+        one: Traci ważność za mniej niż minutę
+        other: Traci ważność za mniej niż %{count} min
+      over_x_years:
+        one: Traci ważność za ponad 1 rok
+        other: Traci ważność za ponad %{count} lat
+      x_seconds:
+        one: Traci ważność za 1 sekundę
+        other: Traci ważność ( %{count} s)
+      x_minutes:
+        one: Traci ważność za 1 minutę
+        other: Utrata ważności ( %{count} min)
+      x_days:
+        one: Traci ważność za 1 dzień
+        other: Utrata ważności ( %{count} dni)
+      x_months:
+        one: Traci ważność za 1 miesiąc
+        other: Traci ważność w %{count} mies.
+      x_years:
+        one: Traci ważność za 1 rok
+        other: Utrata ważności ( %{count} lat)
+  errors:
+    messages:
+      accepted: musi być zaakceptowany
+      bad_protocol: musi rozpoczynać się od %{protocols}
+      bad_uri: jest niepoprawnym adresem URL
+      blank: nie może być puste
+      confirmation: nie jest zgodne z %{attribute}
+      contains_prohibited_characters: zawiera znaki jednokodowe inne niż alfanumeryczne lub niedozwolone
+      empty: nie może być puste
+      equal_to: musi być równe %{count}
+      even: musi być parzysty
+      exclusion: jest zarezerwowany
+      general: 'Błąd: %{errors}'
+      greater_than: musi być większe niż %{count}
+      greater_than_or_equal_to: musi być większe lub równe %{count}
+      inclusion: nie znajduje się na liście
+      invalid: jest niepoprawne
+      less_than: musi być mniejsza niż %{count}
+      less_than_or_equal_to: musi być mniejsze lub równe %{count}
+      model_invalid: 'Sprawdzanie poprawności nie powiodło się: %{errors}'
+      not_a_number: nie jest liczbą
+      not_an_integer: musi być liczbą całkowitą
+      odd: musi być to dziwne
+      other_than: musi być inny niż %{count}
+      present: musi być puste
+      required: musi istnieć
+      taken: został już zabrany
+      too_long:
+        one: jest za długie (maksymalnie ma 1 znak)
+        other: 'jest za długa (maksymalna liczba znaków: %{count})'
+      too_short:
+        one: jest za krótkie (minimum to 1 znak)
+        other: 'jest za krótkie (minimalna liczba znaków: %{count})'
+      try_again_email: 'Wystąpił błąd. Spróbuj ponownie lub wyślij wiadomość e-mail na adres: %{email}'
+      wrong_length:
+        one: jest błędną długością (powinna mieć postać 1)
+        other: jest błędną długością (powinno to być %{count} znaków)
+  time:
+    formats:
+      comment: '%B %d, %Y'
+      github: '%b %d, %Y'
+      json: '%b %e, %Y'
+      medium: '%b%-d,% Y'
+      reddit: "%b %e ' %y"
+      short: '% b%-e'
+      short_with_yy: "%b%-d ' %y"
+      short_with_year: '% b%-e,% Y'
+      stackexchange: "%b %e ' %y"
+      tweet: '%H: %M %p-%d %b %Y'
+

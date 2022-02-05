@@ -1,0 +1,14 @@
+el:
+  xml:
+    opensearch:
+      short_name: ' %{community} Αναζήτηση'
+      description: Εύρεση δημοσιεύσεων από  %{κοινότητας}.
+    user:
+      image: Εικόνα προφίλ χρήστη  %{user}
+  json:
+    author: Συντάκτης του ενεργού  %{community}
+  mailer:
+    adjust: Προσαρμογή των ρυθμίσεων email σας
+    adjust_only_html: Δεν θέλεις να πάρεις τέτοια μηνύματα; Προσαρμογή των ρυθμίσεων email στο  %{path}
+    unsubscribe: 'Μη συνδρομή:'
+

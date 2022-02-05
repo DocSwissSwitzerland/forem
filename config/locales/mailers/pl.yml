@@ -1,0 +1,33 @@
+pl:
+  mailers:
+    digest_mailer:
+      from: Streszczenie
+      more_top_posts: więcej pozycji top %{community}
+      more_top_posts_based: więcej top %{community} postów w oparciu o Twoje zainteresowania
+      more_top_posts_from: więcej najlepszych odczytów ze społeczności
+      more_trending_posts: więcej postów %{community}
+      more_trending_posts_picked: więcej wpisów trending %{community} wybranych dla Ciebie
+      other_posts: inne wypowiedzi, które mogą być podobne
+      other_community_posts: inne %{community} postów, które możesz lubić
+      other_top_posts: inny top %{community} posty
+      other_trending_posts: inne trending %{community} wypowiedzi
+    notify_mailer:
+      account_deleted: ' %{community}-potwierdzenie usunięcia konta'
+      deletion_requested: ' %{community}-Zażądano usunięcia konta'
+      trusted: Congrats! Jesteś teraz "zaufanym" użytkownikiem w %{community}!
+      moderator: 'Congrats! Jesteś moderatorem dla # %{tag_name}'
+      new_follower: po prostu śledzono Cię w %{community}
+      new_mention: Użytkownik %{name} wspomniał Cię w swoim typie %{type}
+      org_deleted: ' %{community}-potwierdzenie usunięcia organizacji'
+      new_reply: Użytkownik %{name} odpowiedziała na Twój %{type}
+      feedback: Dziękujemy za raport w sprawie %{community}
+      export: Eksport treści jest gotowy
+      unread_notifications:
+        one: "\U0001F525 Liczba ( %{count}) nieprzeczytanych powiadomień ( %{community})"
+        other: "\U0001F525 Liczba ( %{count}) nieprzeczytanych powiadomień ( %{community})"
+      new_badge: Po prostu masz odznakę.
+      video_upload: Przesyłanie wideo zostało zakończone
+    verification_mailer:
+      from: ' %{community} Weryfikacja e-mail <%{email}>'
+      verify_ownership: Sprawdź, czy Twój %{community} Account Ownership
+

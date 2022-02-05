@@ -1,0 +1,77 @@
+sv:
+  views:
+    auth:
+      background: forem bakgrund
+      create:
+        aria_label: Skapa nytt konto
+        text: Skapa konto
+      creator:
+        text1: Låt oss starta din Forem resa!
+        text2: Skapa ditt administratörskonto först.
+        text3: Sen går vi igenom din Forem-inställning.
+        hint:
+          aria_label: Redigera användarnamn
+          icon: Redigera användarnamn
+          text_html: ' %{start} Ditt användarnamn kommer att vara %{end} %{button}'
+        submit: Skapa mitt konto
+      login:
+        aria_label: Logga in
+        text: Logga in
+        continue: Fortsätt
+        forgot: Jag har glömt mitt lösenord.
+      provider:
+        text: ' %{action} med %{provider}'
+        login: Fortsätt
+        signup: Registrera dig
+        email:
+          icon: mejladress
+          text: Signera med e-post
+      register:
+        errors:
+          one: Hoppsan, vi hittade %{count} problem
+          other: Hoppsan, vi hittade %{count} problem
+        allow:
+          one_html: Registreringen begränsas till <strong>@ %{domain}</strong> -mejl.
+          list: Registrering begränsad till följande e-postmeddelanden
+        create: Skapa ditt konto
+        field:
+          name:
+            aria_label: NamnName
+            label: NamnName
+          username:
+            aria_label: Användarnamn
+            desc: Användarnamn får endast innehålla bokstäver, siffror och understreck. Maxlängden kan vara 30 tecken lång.
+            label: Användarnamn
+          email:
+            aria_label: E-post
+            label: E-post
+            placeholder: john@example.com
+          password:
+            aria_label: Lösenord
+            desc: Minst 8 tecken
+            label: Lösenord
+            placeholder: ••••••••
+            hide: Dölj lösenord
+            show: Visa lösenord
+          confirm:
+            aria_label: Bekräftelse av lösenord
+            label: Bekräftelse av lösenord
+          required: '*-krävs'
+        secret:
+          label: Ny Forem-hemlighet
+          placeholder: Enligt din Forem-värd.
+        submit: Registrera dig
+      wizard:
+        meta:
+          title: Låt oss börja med Forem.
+        heading: Låt oss starta din Forem resa
+        step_1: Skapa ett konto. Det blir det första superadmin-kontot.
+        step_2_html: När du har loggat in nedan kan du konfigurera gemenskapen på %{path}.
+        step_3: Det finns mycket du kan göra som admin, men det finns en inlärningskurva.
+        step_4: Var snäll och sträck ut till Forem-laget om du är osäker på något!
+        step_5: "För rederiering av gemenskapen \U0001F331"
+      tagline: Logga in för att anpassa din erfarenhet och engagera dig.
+      title:
+        text_html: <a href="/" class="c-link c-link--branded"> %{name}</a> är en gemenskap av %{maybe_size} fantastisk %{label}
+        size: ' %{num} '
+

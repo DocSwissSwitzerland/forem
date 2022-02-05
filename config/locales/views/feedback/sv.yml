@@ -1,0 +1,20 @@
+sv:
+  views:
+    feedback:
+      meta:
+        title: Feedback
+      heading: Tack för ert betänkande.
+      home: Gå tillbaka till hemsidan
+      form:
+        rude_or_vulgar: Rude eller vulgar
+        harassment: Trakasserier eller hattal
+        spam: Skräppost eller copyright-problem
+        listings: Felande listings-/kategorimeddelande
+        other: Andra slag
+        url: Rapporterad URL
+        message:
+          subtitle: Meddelande
+          description: Lämna ytterligare information eller sammanhang som kommer att hjälpa oss att förstå och hantera situationen.
+          placeholder: -...
+        submit: Skicka feedback
+

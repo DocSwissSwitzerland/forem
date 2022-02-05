@@ -1,0 +1,20 @@
+pl:
+  views:
+    feedback:
+      meta:
+        title: Opinia
+      heading: Dziękuję za pańskie sprawozdanie.
+      home: Powrót do strony głównej
+      form:
+        rude_or_vulgar: Rude lub wulgarny
+        harassment: Molestowanie lub mowę nienawiści
+        spam: Problem spamu lub praw autorskich
+        listings: Nieodpowiednia wiadomość/kategoria listingów
+        other: Inne
+        url: Zgłoszony adres URL
+        message:
+          subtitle: Wiadomość
+          description: Prosimy o podanie dodatkowych informacji lub kontekstu, które pomogą nam zrozumieć i zająć się sytuacją.
+          placeholder: '...'
+        submit: Wyślij opinię
+

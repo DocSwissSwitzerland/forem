@@ -1,0 +1,25 @@
+pl:
+  views:
+    manager:
+      meta:
+        title: Zarządzaj %{title}
+      error:
+        pins: "O! %{error} \U0001F62C"
+      tools:
+        heading: 'Narzędzia:'
+        subtitle: 'Poziom doświadczenia po:'
+        text_html: Czy twój post jest bardziej napisany dla początkujących lub zaawansowanych odbiorców? Dostosuj ten poziom jako <em>delikatny</em> indykator, który pomoże w pokazie wypowiedzi osobom, które odniosą najwięcej korzyści.
+      nav:
+        dashboard: Panel kontrolny
+        text: "\U0001F449 Zarządzaj wypowiedzią"
+      rating:
+        heading: Poziom doświadczenia wypowiedzi
+        text: Kto jest ten post najistotniejszy dla?
+        lower: "\U0001F448 Początkujący"
+        higher: "Ekspert \U0001F449"
+      tips:
+        heading: 'Wskazówki:'
+        text_1: Napisz swój własny tweet o poście, opisując osobiście, dlaczego to napisałeś lub dlaczego ludzie mogą go znaleźć przydatne. Możemy cię odtłaczać.
+        text_2_html: 'Udostępnij do współużytkowania, aby powiązać agregatory, takie jak <a href="https://www.reddit.com">Reddit</a>. Spróbuj wybrać najbardziej specyficzne dla tematu podreddity, takie jak <a href="https://www.reddit.com/r/javascript">/r/javascript</a> lub <a href="https://www.reddit.com/r/python">/r/python</a>, itp. <em>Ostrzeżenie: mogą być czasze i trolle.</em>'
+        text_3: Podziel się ze swoimi współpracownikami lub społecznościami lokalnymi. Poproś ludzi o pozostawienie pytań dla Ciebie w komentarzach. To świetny sposób na iskry dodatkowej dyskusji.
+

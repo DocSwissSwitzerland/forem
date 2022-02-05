@@ -1,0 +1,121 @@
+el:
+  api_secrets_controller:
+    generated: 'Το κλειδί API έχει δημιουργηθεί:  %{μυστικό}'
+    revoked: Το κλειδί API έχει ανακληθεί.
+  application_controller:
+    bad_request: 'Σφάλμα: Κακή Αίτηση'
+    not_authorized: 'Σφάλμα: δεν επιτρέπεται'
+    please_sign_in: Παρακαλώ υπογράψτε.
+  articles_controller:
+    deleted: Το άρθρο διαγράφηκε με επιτυχία.
+  comments_controller:
+    create:
+      success: 'δημιουργία:'
+      failure: το σχόλιο υπάρχει ήδη
+    delete:
+      error: Παρουσιάστηκε κάποιο σφάλμα. Το σχόλιο ΔΕΝ διαγράφηκε.
+      notice: Το σχόλιο διαγράφηκε με επιτυχία.
+    markdown: 'Παρουσιάστηκε σφάλμα κατά τη markdown:  %{error}'
+    markdown_html: "<p>\U0001F614 Παρουσιάστηκε σφάλμα στην markdown σας</p><hr><p> %{error}</p>"
+    moderated: Δεν επιτρέπεται η ενέργεια επιτήρησης.
+  confirmations_controller:
+    email_sent: Αποστολή email! Επικοινωνήστε με την υπηρεσία υποστήριξης στο  %{email} αν έχετε πρόβλημα να λάβετε τις οδηγίες επιβεβαίωσης.
+  credits_controller:
+    done:
+      one: Οι νέες πιστώσεις που αγοράστηκαν!
+      other: Οι νέες πιστώσεις που αγοράστηκαν!
+  devices_controller:
+    not_found: Δεν βρέθηκε.
+  discussion_locks_controller:
+    locked: Η συζήτηση κλειδώθηκε επιτυχώς!
+    unlocked: Η συζήτηση ξεκλείδωτη!
+  email_subscriptions_controller:
+    badge_notifications: ειδοποιήσεις σήματος
+    comment_notifications: ειδοποιήσεις σχολιασμού
+    digest_emails: ' %{κοινότητας} digest emails'
+    follower_notifications: κοινοποιησεις,
+    mention_notifications: 'αναφορά ειδοποιήσεων:'
+    this_list: η λίστα.
+    unread_notifications: μη αναγνωσμένα ειδοποιήσεις
+  feedback_messages_controller:
+    error_fill: "Βεβαιωθείτε ότι τα έντυπα είναι γεμάτα. \U0001F916 Άλλα πιθανά σφάλματα:  %{σφάλματα}"
+    n_a: N/A
+    submitted: Η αναφορά σας υποβάλλεται.
+  follows_controller:
+    already_followed: 'Ακολούθως:'
+    daily_limit: Ο ημερήσιος λογαριασμός ακολουθεί το όριο!
+    followed: ).
+    unfollowed: χωρίς παρακολούθηση.
+  github_repos_controller:
+    repo_not_found: Δεν βρέθηκε ο χώρος αποθήκευσης GitHub
+    github_unauthorized: 'Μη εξουσιοδοτημένη χρήση του GitHub:  %{e_message}'
+  image_uploads_controller:
+    server_error: Παρουσιάστηκε σφάλμα εξυπηρετητή!
+  listings_controller:
+    deleted: Η ακρόαση διαγράφηκε με επιτυχία.
+    no_credit: Όχι αρκετές διαθέσιμες πιστώσεις.
+  omniauth_callbacks_controller:
+    log_in_error: 'Καταγραφή σφάλματος:  %{e}'
+    username_taken: το όνομα χρήστη έχει ήδη ληφθεί
+  organizations_controller:
+    secret_updated: Το μυστικό σας ενημερώθηκε.
+    deletion_scheduled: 'Προγραμματίζεται η διαγραφή του οργανισμού σας: " %{organization_name}". Θα ειδοποιηθείς όταν διαγραφεί.'
+    not_deleted: Ο οργανισμός σας δεν διαγράφηκε. Πρέπει να είστε διαχειριστής, το μόνο μέλος του οργανισμού και να μην έχετε κανένα είδος που να συνδέεται με τον οργανισμό.
+    created: Ο οργανισμός σας δημιουργήθηκε με επιτυχία και είστε διαχειριστής.
+    updated: Ο οργανισμός σας ενημερώθηκε με επιτυχία.
+  podcasts_controller:
+    podcast_suggested: Η Podcast πρότεινε
+  profiles_controller:
+    updated: Το προφίλ σας ενημερώθηκε.
+  rating_votes_controller:
+    not_upserted_successfully: Μη Upserted Με επιτυχία
+  registrations_controller:
+    error:
+      recaptcha: Πρέπει να ολοκληρώσετε την recaptcha ✅
+      domain: δεν περιλαμβάνεται στους επιτρεπτους τομείς.
+  response_templates_controller:
+    response_template_error: 'Σφάλμα προτύπου απόκρισης:  %{σφάλματα}'
+    created: Δημιουργήθηκε το πρότυπο απόκρισης " %{title}".
+    deleted: Το πρότυπο ανταπόκρισης " %{title}" διαγράφηκε.
+    updated: Το πρότυπο ανταπόκρισης " %{title}" ενημερώθηκε.
+  social_previews_controller:
+    fonts: Ρομπότο | Roboto + Condensed
+  stories:
+    pinned_articles_controller:
+      not_found: δεν βρέθηκε.
+  stories_controller:
+    404_bio_not_found: 404 βιο δεν βρέθηκε
+    searching: '... αναζήτηση'
+  stripe_active_cards_controller:
+    cannot_remove: Δεν μπορείτε να αφαιρέσετε κάρτα αν έχετε ενεργή συμμετοχή. Ακυρώστε πρώτα τη συμμετοχή σας.
+    cannot_update: Παρουσιάστηκε πρόβλημα κατά την ενημέρωση των στοιχείων τιμολόγησης.
+    updated: Οι πληροφορίες χρέωσης ενημερώθηκαν.
+    removed: Η κάρτα αφαιρέθηκε με επιτυχία.
+  tag_adjustments_controller:
+    failure: 'Αποτυχία:  %{σφάλματα}'
+    destroyed: Καταστράφη ρυθμίσεων
+  tags_controller:
+    tag_successfully_updated: "Το προσδιοριστικό ενημερώθηκε με επιτυχία! \U0001F44D "
+  users_controller:
+    removed_admin: Το  %{name} δεν είναι πλέον διαχειριστής.
+    removed_member: Το  %{name} δεν αποτελεί πλέον τμήμα του οργανισμού σας.
+    added_admin: Ο χρήστης  %{name} είναι πλέον διαχειριστής.
+    provide_email: Καταχωρήστε ένα μήνυμα e-mail για τη διαγραφή του λογαριασμού σας.
+    provide_email_delete: Καταχωρήστε ένα μήνυμα e-mail για τη διαγραφή του λογαριασμού σας.
+    send_export: ' Η εξαγωγή θα σας αποσταλεί σύντομα.'
+    invalid_secret: Το δεδομένο όνομα οργανισμού δεν ήταν έγκυρο.
+    username_blank: Το όνομα χρήστη δεν είναι κενό.
+    deletion_in_progress: Έχετε ήδη ζητήσει τη διαγραφή λογαριασμού. Ελέγξτε το email σας για περαιτέρω οδηγίες.
+    joined_org: Έχετε συνδεθεί με τον οργανισμό  %{organization_name}.
+    left_org: Έχετε αφήσει τον οργανισμό σας.
+    deletion_requested: Ζητήσατε διαγραφή λογαριασμού. Ελέγξτε το email σας για περαιτέρω οδηγίες.
+    log_in_to_delete: Πρέπει να συνδεθείτε για να συνεχίσετε με τη διαγραφή λογαριασμού.
+    deletion_scheduled: Η διαγραφή του λογαριασμού σας έχει προγραμματιστεί. Θα ειδοποιηθείς όταν διαγραφεί.
+    removed_identity: Ο λογαριασμός του  %{provider} αφαιρέθηκε με επιτυχία.
+    updated_config: Οι ρυθμίσεις σας ενημερώθηκαν. Ανανέωση για να δείτε τις αλλαγές.
+    updated_profile: Το προφίλ σας ενημερώθηκε με επιτυχία.
+    token_expired: Το διακριτικό σας έχει λήξει, παρακαλώ ζητήστε ένα νέο. Το Tokens διαρκεί μόνο 12 ώρες μετά την έναρξη της διαγραφής λογαριασμού.
+  video_states_controller:
+    related_article_not_found: Το σχετικό άρθρο δεν βρέθηκε
+    video_state_updated: Ενημέρωση κατάστασης βίντεο
+

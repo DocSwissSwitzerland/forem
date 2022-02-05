@@ -1,0 +1,24 @@
+pl:
+  views:
+    actions:
+      copy:
+        text: Skopiowano do schowka
+        button: Kopiuj odsyłacz
+      more:
+        title: Więcej ...
+        aria_label: Opcje wypowiedzi dla zasobu współużytkowanego
+      share:
+        facebook:
+          text: Udostępnij na Facebooku
+        hackernews:
+          text: Podziel się na Hacker News
+        linkedin:
+          text: Udostępnij do portalu LinkedIn
+        reddit:
+          text: Udostępnij do współużytkowania dla Reddit
+        twitter:
+          text: Udostępnij do współużytkowania na Twitterze
+          query: '" %{article}" przez %{author}'
+        link: Udostępnij wpis za pośrednictwem ...
+        report: Zgłaszanie nadużyć
+

@@ -1,0 +1,270 @@
+sv:
+  views:
+    settings:
+      meta:
+        title: Inställningar
+      account:
+        connect: Anslut %{provider} konto
+        emails: Kontomeddelanden
+        primary: Primäre
+        provider_email: ' %{provider} mejl'
+        provider_profile: ' %{provider} profilinställningar'
+        api:
+          heading: ' %{community} API-nycklar'
+          desc_html: Du kan generera privata API-nycklar som ska användas för autentisering med %{community} API.  APIt är fortfarande i betafasen.  %{doc} innehåller ytterligare information.
+          active:
+            heading: Aktiva API-nycklar (dela aldrig dessa!)
+            created: 'Skapades: %{time}'
+          doc: dokumentation
+          gen:
+            heading: Generera en ny nyckel
+            label: Beskrivning
+            text: Vad är den här API-nyckeln för?
+            placeholder: Mitt projektnamn
+            submit: Generera API-nyckel
+          revoke: Återkalla
+        delete:
+          heading: Ta bort konto
+          desc1: 'Om du tar bort ditt konto kommer följande:'
+          desc1a: >
+            Ta bort din profil, tillsammans med dina autentiseringsassociationer.
+
+
+            Det här inkluderar inte applikationerna. Du måste ta bort dem själv.
+          desc1b: Ta bort alla innehåll som du har, t.ex. artiklar, kommentarer eller din avläsningslista.
+          desc1c: Tillåt att användarnamnet blir tillgängligt för någon.
+          desc2_html: ' %{tillhandahåller} för att ta bort ditt konto fullt ut.'
+          provide: ange ett e-postmeddelande
+          submit: Ta bort konto
+        export:
+          heading: Exportera innehåll
+          desc: Du kan begära en export av allt ditt innehåll. För närvarande stöder vi bara exporten av era inlägg och kommentarer. De kommer att mejas till din inkorg.
+          label: Begär en export av ditt innehåll
+          requested: Du har nyligen begärt en export av ditt innehåll. Kontrollera din mejl.
+          submit: Skicka in databegäran
+        remove:
+          heading: Ta bort OAuth-associationer
+          desc1: Du kan ta bort en av dina autentiseringsmetoder. Vi behöver fortfarande en för att autentisera dig.
+          desc2: 'Om du tar bort en OAuth-association kommer följande:'
+          desc2a: ta bort din förmåga att logga in med det kontot
+          desc2b: ta bort den associerade URL-adressen från din profil
+          desc3: >
+            Lägg märke till att det här inte återkallar OAuth-appåtkomst. Du måste göra det i inställningarna för den specifika leverantören:
+          confirm: Är du helt säker på att du vill ta bort %{provider}-kontot?
+          submit: Ta bort %{provider}
+      billing:
+        heading: Räkningar
+        add: Lägg till kreditkort
+        another: + Lägg till ett annat kreditkort
+        cards: Kreditkort
+        exp: Utgår %{month} / %{year}
+        label: Lägg till kort
+        number: ' %{brand} slut i %{last}'
+        make: Gör primär
+        primary: primär
+        remove: Ta bort kort
+      characters: 'Tillgängliga tecken: '
+      complete:
+        heading: Bekräfta ditt e-postmeddelande för att slutföra din profil.
+        desc: När du ändå håller på, fyll i allt.
+        github: Anslut ditt githubbkonto för att slutföra din identitet.
+        twitter: Anslut ditt twitterkonto för att slutföra din identitet.
+      custom:
+        adjacent: Permit Nearby Sponsors (vid publicering)
+        announce: Meddelanden
+        announce_desc: Annonseringar informerar dig om viktig information, som uppdateringar och händelser.
+        announce_field: Visa annonseringar (vid bläddring)
+        appearance: Utseende
+        basic: Grundläggande markeringar
+        content: Innehåll
+        editor: Editorversion
+        fixed: Fixerad till fönster
+        font: Basavläsningsteckensnitt
+        level: Vad är din approximativa erfarenhet nivå (1-5)?
+        level_desc: Detta kommer inte att visas på din profil eller någonstans offentligt. Det hjälper till att försiktigt bestämma vilket innehåll du visar tillsammans med taggar du följer osv.
+        navbar: Platsnavigeringsfält
+        rich: Rich + markdown
+        save: Spara
+        sponsor: Sponsorer
+        sponsor_desc: Du har möjlighet att ta bort sponsormeddelanden (där det är praktiskt att göra det). Våra underbara sponsorer hjälper till att upprätthålla plattformen och förbättra din erfarenhet, och vi strävar efter att göra deras närvaro konstruktiv för samhället, men det är fritt att använda denna inställning om du vill.
+        sponsor_field: Visa Sponsorer (vid bläddring)
+        static: Statiskt överst på sidan
+        theme: Platstema
+        writing: Skriva
+      danger: Danger-zon
+      destroy:
+        heading: Förstör ditt konto
+        desc: 'Om du tar bort ditt konto kommer följande:'
+        desc_1_html: ta bort din profil, tillsammans med dina Twitter-och GitHub-associationer. Det här inkluderar inte appbehörigheter. Du kommer att behöva ta bort dem själv på %{twitter} och %{github}.
+        desc_2: Ta bort allt innehåll som du har, t.ex. artiklar, kommentarer eller din avläsningslista.
+        desc_3: tillåta att ditt användarnamn blir tillgängligt för någon.
+        click: klicka här
+        confirm_html: 'För bekräftelse skriver du följande ord: <code> %{word}</code>'
+        ghost_html: Om du vill behålla ditt innehåll under %{Ghost}-konto, %{click}
+        github: Inställningar för GitHub-profil
+        submit: Ta bort konto
+        to_delete: 'Ta bort ditt konto:'
+        twitter: Twitter-profilinställningar
+        type: Skriv in ditt användarnamn
+        username: användarnamn
+        word: ta bort mitt konto
+      email: E-posta
+      errors:
+        org:
+          one: '1 det är inte tillåtet att lagra din företagsprofil från att sparas:'
+          other: ' %{count} fel har förbjudit din organisationsprofil från att sparas:'
+        profile:
+          one: '1 fel: Det är inte tillåtet att spara din profil:'
+          other: ' %{count} fel har förbjudit din profil från att sparas:'
+      extensions:
+        comment:
+          heading: Kommentarmallar
+          desc_html: Skapa och spara <strong>kommentarsmallar</strong> som du kan återanvända.
+          add: Lägg till ny kommentarsmall
+          confirm: 'Är du säker på att du vill ta bort: %{template}?'
+          create: Skapa en ny svarsmall
+          cue: Medlemsvärde för mall för mall
+          edit: Redigera
+          edit_template: Redigera kommentarsmall
+          remove: Ta bort
+          save: Spara mall
+          saved: Sparade mallar
+        generate: Generera en privat blogg från %{community} inlägg
+        github:
+          heading: Github
+          desc1: Pin GitHub-lagren till din profil.
+          desc2: Behållarna kommer att försvinna från din profil om du tar bort OAuth-associationen med GitHub.
+        learn: Läs mer
+        micro: 'Ta emot mikrobetalningar för tid för att läsa era inlägg direkt. '
+        payment: Betalningspointer
+        rss:
+          heading: Publicerar till %{community} från RSS
+          desc1_html: Poster kommer att landa i %{dashboard} <strong>som utkast</strong>, och sedan kan du publicera därifrån.
+          desc2: Formatering brukar se bra ut, men du kanske måste göra manuella fixar. I fallet med Medium kan du behöva bädda inbäddarna manuellt.
+          desc3_html: Läs den här %{guide} om du vill veta mer om hur utkast skapas från din kanal.
+          desc4: Fodret hämtas varje gång du skickar formuläret och uppdateringar hämtas regelbundet därefter.
+          desc5_html: 'FYI: URL-adresser för medelstora RSS-flöde är <em>https://medium.com/feed/@your_username</em>'
+          desc6: Genom att lämna in RSS-flödes-URL-adressen håller du med om att du äger och / eller har behörighet att syndikera det associerade innehållet.
+          dashboard: kontrollpanel
+          fetch: Hämta kanal nu
+          guide: guide
+          last_html: 'Hämtad senast: %{time}'
+          mark_canonical_html: Markera RSS-källan som kanonisk URL som standard <p class='crayons-field__description'>Om du markerar den här rutan, markerar posten automatiskt matningskällan som den kanoniska URL-adressen.</p>
+          referential_html: Ersätt självrefererande länkar med %{community}-specifika länkar <p class='crayons-field__description'>Om du markerar den här rutan, kommer posten automatiskt att ändra några URL-adresser som ingår i posten för att referera till versionen av artikeln i %{community}, om tillgängligt. Detta är främst avsett för personer som migrerar hela sin blogg till %{community}.</p>
+          save: Spara flödesinställningar
+          submit: Skicka flödesinställningar
+        save_web: Spara Web Monetization-inställningar
+        web: Monetering av webben
+      finalize_html: Du har begärt en ändring av %{email}. Kontrollera inkorgen för verifieringslänken så att ändringen slutför ändringen.
+      for_html: Inställningar för %{name}
+      group:
+        user: Användare
+        Basic: Grundläggande
+        Branding: Märkning
+        Coding: Kodning
+        Work: Arbete
+      new_org: Ny organisation
+      notifications:
+        email: E-postmeddelanden
+        general: Allmänna underrättelser
+        general_desc_html: Aviseringar som endast visas på %{page}.
+        mobile: Mobilmeddelanden
+        moderator: Moderatormeddelanden
+        page: sidan Meddelanden
+        save: Spara
+      org:
+        admin:
+          admin: Administratör
+          copy:
+            button:
+              aria_label: Kopiera organisations hemliga kod till Urklipp
+            icon: Kopiera till klippbordet
+            input:
+              aria_label: Organisationshemlighet (som ska roteras regelbundet)
+            text: Kopierat till klippbordet!
+          cta: Ringa-till-åtgärdslåda
+          cta_desc: Anpassbar text som visas till höger om varje inlägg för företaget.
+          delete:
+            heading: Ta bort organisation
+            confirm: 'Är du helt säker på att du vill ta bort din organisation: %{name}?'
+            desc_html: >-
+              Du kan ta bort din organisation om du:
+
+              <ul> <li>är den enda medlemmen i företaget</li> <li>är en admin för företaget</li> <li>organisationen har inga inlägg</li> <li>och företaget har inga krediter</li>
+
+              </ul>
+            submit: Ta bort %{name}
+            questions_html: Frågor? Mejla oss i %{email} för hjälp.
+            unmet: Din organisation uppfyller för närvarande inte ovanstående krav. Ta bort alla andra medlemmar och organisationsposter först.
+          details: Företagsdetaljer
+          form:
+            slug: 'Företagets URL-adress är: %{slug}'
+            tag_line: Begränsning av 60 tecken
+            summary: Begränsning av 250 tecken
+            location: Begränsning av 64 tecken
+            email: Begränsning av 64 tecken
+            company_size: Ange ett tal
+            story: Gräns på 640 tecken
+            tech_stack: Gräns på 640 tecken
+            cta_body_markdown: 'Begränsad markdown: _italic_ och ** bold** är okej. Länkar, och sidhuvuden osv. kommer inte att visas. 256 tecken.'
+            cta_button_text: Begränsning av 20 tecken
+            submit: Spara
+          gen:
+            confirm: Är du säker på att du vill generera en ny hemlighet? Alla obetalda hemligheter kommer att vara ogiltiga.
+            text: Du borde rotera det här regelbundet!
+            submit: Generera ny hemlighet
+          grow: Grow the team
+          invite: 'Bjud in lagkamrater genom att skicka dem hemligheten och följande instruktioner:'
+          inst1_html: Logga upp till %{url}
+          inst2_html: Navigera till %{url}
+          inst3_html: Klistra in den hemliga koden nedan och klicka på <b>Delta i företaget</b>
+          make:
+            confirm: Är du säker på att du vill ge %{user} admin-status?
+            title: Make-admin
+            text: Make-admin
+          members: Företagsmedlemmar
+          remove:
+            confirm: Är du säker på att du vill ta bort %{user} från företaget?
+            title: Ta bort från org
+            text: Ta bort från org
+          revoke:
+            confirm: Är du säker på att du vill ta bort administratörsstatus från %{user}?
+            title: Återkalla admin-status
+            text: Återkalla admin-status
+          secret_code: 'Din hemliga kod är:'
+          you: Du ...
+        create:
+          heading: Skapa en organisation
+          notice: Du måste ha din organisations behörighet att skicka in formuläret. Oärlighet kan resultera i en permanent suspension.
+          proof: Det här är bara en snabb blurb-indikering eller länk som visar att du uppenbarligen är associerad med den här organisationen.
+          required: Starred-fält krävs
+          slug: Företagets URL-adress kommer att vara %{url} / {username}
+          submit: Skapa organisation
+        join:
+          heading: Delta i en organisation
+          desc: Förutsatt till dig av en organisationadmin
+          label: Hemlig kod
+          placeholder: -...
+          submit: Delta i företaget
+        leave:
+          confirm: Är du säker på att du vill lämna den här organisationen?
+          submit: Lämna organisation
+        divider: ELLER
+      password:
+        heading: Ange nytt lösenord
+        desc_html: Om ditt konto skapades med hjälp av en social kontoautentisering, kanske du föredrar att lägga till en e-postinloggning. Om du har skrivit in dig med ett socialt mediekonto, <a href="%{path}"> återställ lösenordet</a> för din primära e-postadress ( %{email}) för att aktivera det här. Observera att e-postinloggning är ett tillägg till social inloggning i stället för en ersättning för den, så ditt autentiserade sociala konto kommer att fortsätta att vara länkat till ditt konto.
+        current: Nuvarande lösenord
+        confirm: Bekräfta nytt lösenord
+        new: Lösenord
+        submit: Ange nytt lösenord
+      previous: Det finns ett befintligt konto som är auktoriserat med det sociala kontot.
+      tab:
+        Profile: Profil
+        Customization: Anpassning
+        Notifications: Underrättelser
+        Account: Konto
+        Billing: Räkningar
+        Organization: Organisation
+        Extensions: Utökningar
+      save_profile: Spara profilinformation
+

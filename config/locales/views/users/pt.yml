@@ -1,0 +1,90 @@
+pt:
+  views:
+    users:
+      meta:
+        og:
+          title: ' %{user}- %{comunidade} Perfil'
+      comments:
+        all:
+          one: Todos os comentários %{count}
+          other: Todos os comentários %{count}
+        last:
+          one: Últimos %{count} comentários
+          other: Últimos %{count} comentários
+        recent: Comentários recentes
+        view: Visualizar toda a atividade
+        view_all:
+          one: Visualizar todos os comentários %{count}
+          other: Visualizar todos os comentários %{count}
+        view_last:
+          one: Visualizar último 1 comentário
+          other: Visualizar último %{count} Comments
+      github:
+        heading: Repositórios GitHub
+        fork: Garfo
+        stars:
+          one: 1 estrela
+          other: ' %{count} estrelas'
+      pin_icon: Pino
+      pinned: Pintado
+      profile_fields:
+        bio:
+          label: Bio
+          placeholder: Um bio curto ...
+        display_email_on_profile: Exibir e-mail no perfil
+        location:
+          label: Local
+          placeholder: Halifax, Nova Scotia
+        website:
+          label: URL do website
+          placeholder: https://yoursite.com
+        education: Educação
+        currently_learning: Atualmente aprendizagem
+        currently_hacking_on: Atualmente hackeando em
+        available_for: Disponível para
+        skills_languages: Habilidades / Idiomas
+        work: Trabalho
+      side:
+        comment:
+          icon: Comentário
+          text:
+            one: 1 comentário escrito
+            other: ' %{count} comentários escritos'
+        org: Organizações
+        post:
+          icon: Postagem
+          text:
+            one: 1 post publicado
+            other: ' %{count} posts publicados'
+        tag:
+          icon: Tag
+          text:
+            one: 1 tag seguida
+            other: ' %{count} tags seguidas'
+      signout:
+        meta:
+          title: Confirmar Signout- %{comunidade}
+        heading: Tem certeza de que quer se inscrever?
+        yes: Sim, assine-se
+      block: Bloco @ %{user}
+      details: '% detalhes do perfil do usuário}'
+      dropdown: Ações do usuário
+      email_icon: Endereço de e-mail
+      empty: 404 bio não encontrado
+      flag: Flag @ %{user}
+      follow: Seguir
+      joined:
+        icon: Unidos
+        text_html: Unido em %{date}
+      location_icon: Local
+      logo: '% de figura do perfil do {usuário}'
+      more: Mais info sobre @ %{user}
+      send_pm:
+        code: código de conduta
+        notice_html: Todas as interações privadas <b>devem</b> respeitar o %{code}.
+        placeholder: Digite sua mensagem aqui ...
+        submit: Enviar
+      social: '% website {service}'
+      unflag: Unflag @ %{user}
+      website: Website pessoal
+

@@ -1,0 +1,64 @@
+sv:
+  views:
+    tags:
+      meta:
+        title: Etiketter
+        description: Etiketter som ska följas i %{community}
+        og:
+          description: ' %{community} är bra!'
+      heading:
+        default: Topptaggar
+        search_results: Sökresultat för %{q}
+      search:
+        aria_labels:
+          search_input: Sökord för märkning
+          submit: Sök efter etiketter
+        placeholder: Sök efter tagg
+      edit:
+        meta:
+          title: Redigera %{tag}
+        admin: Administratör
+        help: Hjälp!
+        view: Vy
+        form:
+          pretty_name:
+            label: Söt namn
+            placeholder: Det här är namnet längst upp på utspelningssidan.
+          bg_color_hex:
+            label: Bg färg hex
+          text_color_hex:
+            label: Textfärgshöx
+          short_summary:
+            label: Kort sammanfattning
+            placeholder: Kortfattad översikt över vad den här märkningen handlar om.
+          wiki_body_markdown:
+            label: Wikikarossmarkeringar
+            placeholder: Det här är ett "om" avsnitt. Du får gärna lägga till en vanlig fråga, ytterligare resurser osv.
+          rules_markdown:
+            label: Regelmarkeringar
+            placeholder: Valfri-Kan användas för utmaningar, dvs. inlämningar.
+          submit: Spara
+      follow: Följ
+      following_tags: Bevaka etiketter
+      moderator:
+        text_html: 'Kommaseparerade, blanktecken är valfritt. Exempel: %{code}'
+        code: 123
+        placeholder: 'Kommaseparerade, blanktecken är valfritt. Exempel: 1,2,3'
+      published:
+        one: 1 post publicerad
+        other: ' %{count} inlägg publicerade'
+      sidebar:
+        about: 'ca # %{tag}'
+        admin: Administratör
+        edit: Redigera
+        guidelines: inlämningar
+        moderate: Måttlig
+        mods: etikettmoderatorer
+        new: Skapa inlägg
+        older: 'Äldre # %{tag} inlägg'
+        published:
+          one: 1 Publicerades efter publicering
+          other: ' %{count} posts publicerad'
+        sponsor: ' %{tag} är sponsrad av'
+      sponsor: '| Sponsored av %{org} ❤️'
+

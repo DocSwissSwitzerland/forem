@@ -1,0 +1,87 @@
+pt:
+  views:
+    notifications:
+      meta:
+        description: Caixa de entrada de notificações para %{comunidade}
+        og:
+          title: Notificações- %{comunidade}
+      heading: Notificações
+      badge:
+        heading_html: Você recebeu o crachá %{distintivo}
+        awarded_html: "Você também recebe %{créditos} para usar para %{listings} se você tem alguma coisa que você gostaria de promover. \U0001F389"
+        credits:
+          one: ' %{count} novos créditos'
+          other: ' %{count} novos créditos'
+        listings: listagens da comunidade
+        more: Mais informações sobre listagens
+        profile: Visite seu perfil
+      broadcast:
+        visit_html: Visite %{configurações} para gerenciar suas notificações.
+        settings: Configurações
+      comment:
+        commented_html: ' %{user} comentado em %{título}'
+        first_html: ' %{user} escreveu seu primeiro comentário em %{title}'
+        first_reply: "Dê a eles a primeira resposta deles! \U0001F389"
+        left_html: ' %{user} acabou de deixar um comentário em %{title}.'
+        replied_html: ' %{user} respondeu a uma thread em %{title}'
+        report: Todas as reações negativas são 100% privadas. Se este comentário violar o código de conduta, por favor, baixe o relatório / relatório como inapropriado.
+        welcome_html: Como eles são novos para a comunidade, você poderia deixar uma resposta agradável para ajudá-los a se sentiam bem-vindos? <strong>Obrigado!</strong>
+      error:
+        subtitle: Ocorreu um erro!
+        desc: Isso foi logado e estamos rastreando.
+      follow:
+        and_html: ' %{first} e %{second} seguiu você!'
+        and_other_html:
+          one: ' %{first} e %{outros} seguiram você!'
+          other: ' %{first} e %{outros} seguiram você!'
+        others:
+          one: ' %{count} outros'
+          other: ' %{count} outros'
+        single_html: ' %{nome} seguiu você!'
+      load: Carregar Mais
+      mention:
+        article_html: ' %{user} mencionou você em um post %{if_org}'
+        comment_html: ' %{user} mencionou você em um comentário'
+        article_mobile: ' %{user} mencionou você no post %{título}'
+        comment_mobile: ' %{user} mencionou você em um comentário em %{title}'
+        if_org_html: ' em %{org}'
+      milestone:
+        heading_html: Seu post %{título} passou %{type}!
+        check: Verifique seu painel
+        intro: "\U0001F389\U0001F389\U0001F389\U0001F389\U0001F389\U0001F389\U0001F389\U0001F389"
+        type:
+          View:
+            one: ' %{count} views'
+            other: ' %{count} views'
+          Reaction:
+            one: ' %{count} reações'
+            other: ' %{count} reações'
+      nav:
+        aria_label: Notificações
+        all: Todos
+        comments: Comentários
+        posts: Posts
+      new_post:
+        if_org_html: ' em %{org}'
+        verb_html: ' %{user} fez um novo post %{if_org}'
+      reacted:
+        and_html: ' %{first} e %{last}'
+        and_other_html:
+          one: ' %{first} e %{count} outros'
+          other: ' %{first} e %{count} outros'
+        verb_html:
+          one: ' %{start} %{actors} reagiu a %{title} com %{end} %{reações}'
+          other: ' %{start} %{actors} reagiu a %{title} com %{end} %{reações}'
+        your:
+          article: seu artigo
+          comment: seu comentário
+      settings: Configurações
+      tag:
+        heading: "Ei lá \U0001F44B"
+        add_html: Moderadores adicionaram a tag <strong> %{tag}</strong> ao seu post %{title}. Mods sentiu que esta tag representava seu artigo.
+        check_html: Check out %{other} que pode ser mais apropriado
+        other: outras tags populares
+        reason: 'Motivo da ação:'
+        remove_html: Moderadores removeram a tag <strong> %{tag}</strong> do seu post %{title}. Certas tags possuem diretrizes especiais de submissão, e mods precisam ajustar tags para melhor se encaixar na comunidade.
+        support_html: "Obrigado por fazer parte de %{comunidade}! %{email} \U0001F917"
+

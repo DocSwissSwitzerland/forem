@@ -1,0 +1,44 @@
+pl:
+  views:
+    liquids:
+      github:
+        view: Wyświetl na stronie GitHub
+      medium:
+        logo: Średnie logo
+      poll:
+        show_results: Po prostu pokaż mi wyniki
+      reddit:
+        author: 'Autor: %{author}'
+        see: Zobacz pełną wypowiedzię
+      stackexchange:
+        answer:
+          text_html: ' %{answer} re: %{title}'
+          answer: odpowiedź
+        answers: 'Odpowiedzi: %{count}'
+        comments: 'Komentarze: %{count}'
+        open:
+          answer: Otwórz pełną odpowiedź
+          article: Otwórz pełny artykuł
+          question: Otwórz pełne pytanie
+      twitter:
+        view: Zobacz na Twitterze
+      user_subscription:
+        confirm:
+          subtitle: Potwierdź subskrypcję
+          button_text: Potwierdź subskrypcję
+          cancel_text: Anuluj
+          text_html: Adres e-mail %{email}, nazwa użytkownika, nazwa i adres URL profilu DEV zostanie udostępniony do współużytkowania dla użytkownika %{username}. Po zakończeniu tego działania nie można cofnąć tego adresu.
+        logged_out: Najpierw należy wpisać się do DEV.
+        sign_in: Zaloguj się
+        subscribe:
+          apple:
+            button: Subskrybowanie
+            desc_html: Hej, tam! Wygląda na to, że podczas tworzenia konta DEV zapisałeś się na Apple, korzystając z adresu e-mail z prywatnym przekaźnikiem. Jeśli chcesz zasubskrybować, proszę %{update} najpierw na inny adres e-mail.
+            update: zaktualizuj swój adres e-mail w ustawieniach
+          button: Subskrybowanie
+          desc_html: Użytkownik subskrybuje ( %{email}) adres e-mail powiązany z kontem DEV. Aby użyć innego adresu e-mail, można %{update}.
+          update: zaktualizuj swój adres e-mail w ustawieniach
+      wikipedia:
+        logo: Logo Wikipedii
+        view: Zobacz na Wikipedii
+

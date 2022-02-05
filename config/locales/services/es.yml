@@ -1,0 +1,109 @@
+es:
+  services:
+    analytics_service:
+      no_stats: No puedes ver las estadísticas de este artículo
+    article_with_video_creation_service:
+      unpublished_video: Vídeo no publicado ~ %{rand}
+    authentication:
+      authenticator:
+        not_allowed: Lo sentimos, pero el dominio para su dirección de correo electrónico no está permitido. Este Forem puede haber limitado la señalización a sólo dominios de correo electrónico especificados o bloqueado este dominio específico de la unión.
+      providers:
+        apple:
+          name: ' %{first} %{last}'
+        not_available: El proveedor %{name} no está disponible.
+        not_enabled: El proveedor %{name} no está habilitado.
+    badges:
+      award_beloved_comment:
+        message: "¡Eres famoso! [Este es el comentario] ( %{comment}) para el que estás siendo reconocido. \U0001F604"
+      award_streak:
+        longest: ¡16 semanas! Has logrado la mayor racha de escritura posible. Esto te hace elegible para misiones especiales en el futuro. ¡Mantener las increíbles contribuciones a nuestra comunidad!
+        message:
+          one: "¡Congratas al lograr esta racha! La escritura consistente es dura. La siguiente insignia de la cadena que puedes obtener es el %{count} Week Badge. \U0001F609"
+          other: "¡Congratas al lograr esta racha! La escritura consistente es dura. La siguiente insignia de la cadena que puedes obtener es el %{count} Week Badge. \U0001F609"
+      award_yearly_club:
+        message:
+          one: ¡Feliz %{comunidad} de cumpleaños! ¿Puede creer que ya ha sido %{count} año?!
+          other: ¡Feliz %{comunidad} de cumpleaños! ¿Puede creer que ya ha sido %{count} años?!
+      congrats: Congrats !!!
+      thank_you: ¡Muchas gracias por sus contribuciones!
+    broadcasts:
+      welcome_notification:
+        generator:
+          welcome: 'Notificación de bienvenida: %{key}'
+    error_messages:
+      clean:
+        parse_error: Se ha producido un problema al analizar la YAML de la parte frontal. Tal vez usted necesita escapar de una cita o un colon o algo. Correo electrónico %{email} si tiene problemas.
+    html:
+      parser:
+        enter_fullscreen_mode: Especifique la modalidad de pantalla completa
+        exit_fullscreen_mode: Salida de modalidad de pantalla completa
+    mailchimp:
+      bot:
+        member_in_compliance_state: Miembro En Estado De Cumplimiento
+    markdown_processor:
+      parser:
+        invalid_markdown_detected: Se ha detectado un marcador no válido.
+    moderator:
+      banish_user:
+        spam_account: cuenta de spam
+      manage_activity_and_roles:
+        need_super: Necesita el estado de superadmin para tomar esta acción
+      merge_user:
+        duplicate: El usuario tiene métodos de autenticación duplicados en las dos cuentas. Efectúe una doble comprobación y suprima la identidad que el usuario ya no utiliza. Normalmente es la cuenta social ya suprimida o el método de autenticación vinculado al usuario que se va a suprimir.
+        multiple: El usuario que se está suprimiendo ya tiene dos o más métodos de autenticación. ¿Está seguro de que es el usuario correcto que se va a suprimir? Si es así, un super admin tendrá que hacer esto desde la consola para estar a salvo.
+        same_user: No puede fusionar los mismos dos ID de usuario
+    notifications:
+      new_comment:
+        new: "\U0001F4AC Nuevo comentario"
+      new_mention:
+        new: "\U0001F5E3️ Nueva Mención"
+    payments:
+      customer:
+        usd: usd
+      errors:
+        select_payment_method: Seleccione un método de pago
+      process_credit_purchase:
+        charge:
+          one: Compra de %{count} créditos.
+          other: Compra de %{count} créditos.
+    rate_limit_checker:
+      invalid_key: 'Clave de memoria caché no válida: ningún componente exclusivo presente'
+      limit_reached:
+        one: Límite de tarifa alcanzado, inténtelo de nuevo en %{count} segundos
+        other: Límite de tarifa alcanzado, inténtelo de nuevo en %{count} segundos
+    slack:
+      messengers:
+        article_fetched_feed:
+          body: >
+            Nuevo artículo recuperado a través de RSS: %{title}
+             %{url}
+        article_published:
+          body: >
+            Nuevo artículo Publicado: %{title}
+             %{url}
+        feedback:
+          anonymous_report: '*Informe anónimo:'
+          final_message: >2-
+             %{user_detail} Categoría: %{category} Informe interno: %{reports_url} * _ URL notificado: %{reported_url} _ *
+            ----- *Message: * %{message}
+          body: >
+            *Logged en usuario: * reporter: %{username}- %{url} email: <mailto:%{email}|%{email}>
+        potential_spammer:
+          body: >
+            Posible usuario de correo no deseado! %{url}
+        sponsorship:
+          body: >2
+             %{user} ha comprado un patrocinio %{type} para %{organization}
+    spam:
+      article_handler:
+        suspended_too_many: Usuario suspendido por demasiados artículos de spam, desencadenado por el autovómito.
+    user_subscriptions:
+      create_from_controller_params:
+        source_not_found: Origen no encontrado.
+        email_mismatch: Discrepancia de correo electrónico de suscriptor
+    users:
+      remove_role:
+        remove_self: Los administradores no pueden eliminar roles de sí mismos.
+        remove_super: Los roles de Super Admin no se pueden eliminar.
+        error: Se ha producido un problema al eliminar este rol.  %{e_message}
+

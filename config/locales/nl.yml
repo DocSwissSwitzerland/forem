@@ -1,0 +1,184 @@
+nl:
+  contact_prompts:
+    if_any_questions_html: <a href="/contact">Neem contact met ons op</a> als u vragen hebt.
+    if_continued_trouble_html: <a href="/contact">Neem contact met ons op</a> als u nog steeds problemen hebt.
+    if_we_can_help_html: <a href="/contact">Neem contact met ons op</a> als er iets is waarmee we kunnen helpen.
+  core:
+    add_comment: Commentaar toevoegen
+    beta: Bèta
+    comment: Opmerking
+    copy_link: Link kopiëren
+    edit_profile: Profiel bewerken
+    follow: Volgen
+    follow_back: Volg terug
+    following: Volgende
+    like: Zoals
+    loading: laden ...
+    reaction: Reactie
+    report_abuse: Misbruik melden
+    search: Zoeken
+  datetime:
+    distance_in_words_ago:
+      about_x_hours:
+        one: ongeveer 1 uur geleden
+        other: ongeveer %{count} uur geleden
+      about_x_months:
+        one: ongeveer 1 maand geleden
+        other: ongeveer %{count} maanden geleden
+      about_x_years:
+        one: ongeveer 1 jaar geleden
+        other: ongeveer %{count} jaar geleden
+      almost_x_years:
+        one: bijna 1 jaar geleden
+        other: bijna %{count} jaar geleden
+      half_a_minute: Een halve minuut geleden.
+      less_than_x_seconds:
+        one: minder dan 1 seconde geleden
+        other: minder dan %{count} seconden geleden
+      less_than_x_minutes:
+        one: minder dan een minuut geleden
+        other: minder dan %{count} minuten geleden
+      over_x_years:
+        one: meer dan 1 jaar geleden
+        other: meer dan %{count} jaar geleden
+      x_seconds:
+        one: 1 seconde geleden
+        other: ' %{count} seconden geleden'
+      x_minutes:
+        one: 1 minuut geleden
+        other: ' %{count} minuten geleden'
+      x_days:
+        one: 1 dag geleden
+        other: ' %{count} dagen geleden'
+      x_months:
+        one: 1 maand geleden
+        other: ' %{count} maanden geleden'
+      x_years:
+        one: 1 jaar geleden
+        other: ' %{count} jaar geleden'
+    expired_ago:
+      about_x_hours:
+        one: Vervallen ongeveer 1 uur geleden
+        other: Vervallen ongeveer %{count} uur geleden
+      about_x_months:
+        one: Vervallen ongeveer 1 maand geleden
+        other: Vervallen ongeveer %{count} maanden geleden
+      about_x_years:
+        one: Vervallen ongeveer 1 jaar geleden
+        other: Vervallen ongeveer %{count} jaar geleden
+      almost_x_years:
+        one: Verlopen bijna 1 jaar geleden
+        other: Vervallen bijna %{count} jaar geleden
+      half_a_minute: Een halve minuut geleden afgelopen.
+      less_than_x_seconds:
+        one: Vervallen minder dan 1 seconde geleden
+        other: Vervallen minder dan %{count} seconden geleden
+      less_than_x_minutes:
+        one: Minder dan een minuut geleden verlopen
+        other: Vervallen minder dan %{count} minuten geleden
+      over_x_years:
+        one: Vervallen meer dan 1 jaar geleden
+        other: Vervallen boven %{count} jaar geleden
+      x_seconds:
+        one: Vervallen 1 seconde geleden
+        other: Vervallen %{count} seconden geleden
+      x_minutes:
+        one: Vervallen 1 minuut geleden
+        other: Vervallen %{count} minuten geleden
+      x_days:
+        one: Vervallen 1 dag geleden
+        other: Vervallen %{count} dagen geleden
+      x_months:
+        one: Vervallen 1 maand geleden
+        other: Vervallen %{count} maanden geleden
+      x_years:
+        one: Vervallen 1 jaar geleden
+        other: Vervallen %{count} jaar geleden
+    expires_in:
+      about_x_hours:
+        one: Vervalt over ongeveer 1 uur
+        other: Vervalt over %{count} uur
+      about_x_months:
+        one: Vervalt over ongeveer 1 maand
+        other: Vervalt over %{count} maanden
+      about_x_years:
+        one: Vervalt over ongeveer 1 jaar
+        other: Vervalt over %{count} jaar
+      almost_x_years:
+        one: Vervalt over bijna 1 jaar
+        other: Vervalt over bijna %{count} jaar
+      half_a_minute: Vervalt over een halve minuut
+      less_than_x_seconds:
+        one: Vervalt in minder dan 1 seconde
+        other: Vervalt in minder dan %{count} seconden
+      less_than_x_minutes:
+        one: Vervalt in minder dan een minuut
+        other: Vervalt in minder dan %{count} minuten
+      over_x_years:
+        one: Vervalt over 1 jaar
+        other: Vervalt over %{count} jaar
+      x_seconds:
+        one: Vervalt over 1 seconde
+        other: Vervalt over %{count} seconden
+      x_minutes:
+        one: Vervalt over 1 minuut
+        other: Vervalt over %{count} minuten
+      x_days:
+        one: Vervalt over 1 dag
+        other: Vervalt over %{count} dagen
+      x_months:
+        one: Vervalt over 1 maand
+        other: Vervalt over %{count} maanden
+      x_years:
+        one: Vervalt over 1 jaar
+        other: Vervalt over %{count} jaar
+  errors:
+    messages:
+      accepted: moet worden geaccepteerd
+      bad_protocol: moet beginnen met %{protocollen}
+      bad_uri: is een ongeldige URL
+      blank: kan niet leeg zijn
+      confirmation: komt niet overeen met %{attribute}
+      contains_prohibited_characters: bevat niet-alfanumerieke of verboden unicode-tekens
+      empty: kan niet leeg zijn
+      equal_to: moet gelijk zijn aan %{count}
+      even: moet gelijk zijn
+      exclusion: is gereserveerd
+      general: 'Fout: %{errors}'
+      greater_than: moet groter zijn dan %{count}
+      greater_than_or_equal_to: moet groter zijn dan of gelijk zijn aan %{count}
+      inclusion: is niet opgenomen in de lijst
+      invalid: is ongeldig
+      less_than: moet kleiner zijn dan %{count}
+      less_than_or_equal_to: moet kleiner zijn dan of gelijk zijn aan %{count}
+      model_invalid: 'Validatie is mislukt: %{errors}'
+      not_a_number: is geen getal
+      not_an_integer: moet een geheel getal zijn
+      odd: moet vreemd zijn
+      other_than: moet anders zijn dan %{count}
+      present: moet blanco zijn
+      required: moet bestaan
+      taken: is al genomen
+      too_long:
+        one: is te lang (maximaal is 1 teken)
+        other: is te lang (maximaal is %{count} tekens)
+      too_short:
+        one: is te kort (minimum is 1 teken)
+        other: is te kort (minimum is %{count} tekens)
+      try_again_email: 'Er is een fout opgetreden. Probeer het opnieuw of stuur een e-mail naar: %{email}'
+      wrong_length:
+        one: is de verkeerde lengte (moet 1 teken zijn)
+        other: is de verkeerde lengte (moet %{count} tekens zijn)
+  time:
+    formats:
+      comment: '%B %d, %Y'
+      github: '%b %d, %Y'
+      json: '%b %e, %Y'
+      medium: '%b%-d, %Y'
+      reddit: "%b %e ' %y"
+      short: '%b%-e'
+      short_with_yy: "%b%-d ' %y"
+      short_with_year: '%b%-e, %Y'
+      stackexchange: "%b %e ' %y"
+      tweet: '%H: %M %p-%d %b %Y'
+

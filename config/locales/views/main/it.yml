@@ -1,0 +1,71 @@
+it:
+  views:
+    main:
+      aria_home: ' %{community} Home'
+      header:
+        create_account: Crea account
+        login: Accedi in
+        nav:
+          aria_label: Menu di navigazione
+        moderation:
+          aria_label: Moderazione
+          icon: Moderazione
+        notifications:
+          aria_label: Notifiche
+          icon: Notifiche
+        skip: Salta ai contenuti
+      modal:
+        create_account:
+          aria_label: Crea nuovo account
+          text: Crea account
+        login:
+          aria_label: Accedi in
+          text: Accedi in
+      nav:
+        admin: Admin
+        dashboard: Dashboard
+        placeholder: '...'
+        list: Elenco di lettura
+        moderator_center: Centro di moderatore
+        other: Altro
+        settings: Impostazioni
+      nav_name:
+        About: Informazioni su
+        Code of Conduct: Codice di condotta
+        Contact: Contatto
+        FAQ: FAQ
+        Listings: Listini
+        Podcasts: Podcast
+        Privacy Policy: Politica sulla privacy
+        Reading List: Elenco di lettura
+        Sponsors: Sponsor
+        Tags: Tag
+        Terms of use: Termini di utilizzo
+        Videos: Video
+      side:
+        listings:
+          heading: Listini
+          all: Vedi tutti
+          new: Creare un elenco
+        trend: guide / risorse trending
+        recent: recentemente queried
+      tags:
+        aria_label: Personalizzare la priorità del tag
+        follow: Segui
+        my_tags: My Tags
+        popular_tags: Tag Popolari
+      footer:
+        built:
+          text_html: Costruito su %{forem} - il software %{opensource} che potenze %{dev} e altre comunità inclusive.
+          forem: Forem
+          opensource: fonte aperta
+          dev: DEV
+        desc_html: ' %{community} - %{desc}'
+        logo: Logo Forem
+        powered:
+          text_html: Realizzato con amore e %{binari}. %{community} <span title="copyright">&copy;</span>  %{copyright}.
+          rails: Ruby su Rails
+      home: Home
+      create_post: Crea Post
+      signout: Firma fuori
+

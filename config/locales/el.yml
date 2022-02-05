@@ -1,0 +1,184 @@
+el:
+  contact_prompts:
+    if_any_questions_html: <a href="/contact">Επικοινωνήστε μαζί μας</a> αν έχετε οποιεσδήποτε ερωτήσεις.
+    if_continued_trouble_html: <a href="/contact">Επικοινωνήστε μαζί μας</a> αν συνεχίσετε να έχετε προβλήματα.
+    if_we_can_help_html: <a href="/contact">Επικοινωνήστε μαζί μας</a> αν υπάρχει κάτι που μπορούμε να βοηθήσουμε.
+  core:
+    add_comment: Προσθήκη σχολίου
+    beta: β.
+    comment: 'Σχόλιο:'
+    copy_link: Αντιγραφή διασύνδεσης
+    edit_profile: Τροποποίηση προφίλ
+    follow: 'Ακολούθη:'
+    follow_back: '"Παρακολούθηση"'
+    following: '):'
+    like: Όπως ...
+    loading: φόρτωση ...
+    reaction: "' Ανάληψη"
+    report_abuse: Αναφορά κατάχρησης.
+    search: Αναζήτηση.
+  datetime:
+    distance_in_words_ago:
+      about_x_hours:
+        one: πριν από 1 ώρα
+        other: ' %{count} ώρες πριν'
+      about_x_months:
+        one: περίπου 1 μήνα πριν
+        other: περίπου  %{count} μήνες πριν
+      about_x_years:
+        one: πριν από 1 χρόνο
+        other: περίπου  %{count} χρόνια πριν
+      almost_x_years:
+        one: σχεδόν 1 χρόνο πριν
+        other: σχεδόν  %{count} χρόνια πριν
+      half_a_minute: Μισό λεπτό πριν.
+      less_than_x_seconds:
+        one: λιγότερο από 1 δευτερόλεπτο πριν
+        other: λιγότερο από  %{count} δευτερόλεπτα πριν
+      less_than_x_minutes:
+        one: Πριν από ένα λεπτό.
+        other: λιγότερο από  %{count} λεπτά πριν
+      over_x_years:
+        one: άνω του 1 έτους
+        other: ' %{count} χρόνια πριν'
+      x_seconds:
+        one: Πριν από 1 δευτερόλεπτο
+        other: ' %{count} δευτερόλεπτα πριν'
+      x_minutes:
+        one: 1 λεπτό πριν
+        other: ' %{count} λεπτά πριν'
+      x_days:
+        one: 1 ημέρα πριν
+        other: ' %{count} ημέρες πριν'
+      x_months:
+        one: 1 μήνα πριν
+        other: ' %{count} μήνες πριν'
+      x_years:
+        one: Πριν από 1 χρόνο
+        other: ' %{count} χρόνια πριν'
+    expired_ago:
+      about_x_hours:
+        one: Έληξε πριν 1 ώρα.
+        other: Έληξε περίπου  %{count} ώρες πριν
+      about_x_months:
+        one: Έληξε περίπου 1 μήνα πριν
+        other: Έληξε περίπου  %{count} μήνες πριν
+      about_x_years:
+        one: Έληξε περίπου 1 χρόνο πριν
+        other: Έληξε περίπου  %{count} χρόνια πριν
+      almost_x_years:
+        one: Έληξε σχεδόν 1 χρόνο πριν
+        other: Έληξε σχεδόν  %{count} χρόνια πριν
+      half_a_minute: Έληξε πριν μισό λεπτό.
+      less_than_x_seconds:
+        one: Έληξε λιγότερο από 1 δευτερόλεπτο πριν
+        other: Έληξε λιγότερο από  %{count} δευτερόλεπτα πριν
+      less_than_x_minutes:
+        one: Έληξε πριν από ένα λεπτό.
+        other: Έληξε λιγότερο από  %{count} λεπτά πριν
+      over_x_years:
+        one: Έληξε πριν από 1 χρόνο
+        other: Έληξε πάνω από  %{count} χρόνια πριν
+      x_seconds:
+        one: Έληξε πριν από 1 δευτερόλεπτο
+        other: Έληξε  %{count} δευτερόλεπτα πριν
+      x_minutes:
+        one: Έληξε πριν 1 λεπτό
+        other: Έληξε  %{count} λεπτά πριν
+      x_days:
+        one: Έληξε πριν από 1 ημέρα
+        other: Ληγμένη  %{count} ημέρες πριν
+      x_months:
+        one: Έληξε πριν 1 μήνα
+        other: Έληξε  %{count} μήνες πριν
+      x_years:
+        one: Έληξε πριν 1 χρόνο
+        other: Ληγμένο  %{count} χρόνια πριν
+    expires_in:
+      about_x_hours:
+        one: Λήγει σε περίπου 1 ώρα
+        other: Λήγει σε περίπου  %{count} ώρες
+      about_x_months:
+        one: Λήγει σε περίπου 1 μήνα
+        other: Λήγει σε περίπου  %{count} μήνες
+      about_x_years:
+        one: Λήγει σε περίπου 1 έτος
+        other: Λήγει σε περίπου  %{count} έτη
+      almost_x_years:
+        one: Λήγει σε σχεδόν 1 χρόνο
+        other: Λήγει σε  %{count} έτη
+      half_a_minute: Λήγει σε μισό λεπτό.
+      less_than_x_seconds:
+        one: Λήγει σε λιγότερο από 1 δευτερόλεπτο
+        other: Λήγει σε λιγότερο από  %{count} δευτερόλεπτα
+      less_than_x_minutes:
+        one: Λήγει σε λιγότερο από ένα λεπτό
+        other: Λήγει σε λιγότερο από  %{count} λεπτά
+      over_x_years:
+        one: Λήγει σε πάνω από 1 έτος
+        other: Λήγει σε  %{count} έτη
+      x_seconds:
+        one: Λήγει σε 1 δευτερόλεπτο
+        other: Λήγει σε  %{count} δευτερόλεπτα
+      x_minutes:
+        one: Λήγει σε 1 λεπτό
+        other: Λήγει σε  %{count} λεπτά
+      x_days:
+        one: Λήγει σε 1 ημέρα
+        other: Λήγει σε  %{count} ημέρες
+      x_months:
+        one: Λήγει σε 1 μήνα
+        other: Λήγει σε  %{count} μήνες
+      x_years:
+        one: Λήγει σε 1 έτος
+        other: Λήγει σε  %{count} έτη
+  errors:
+    messages:
+      accepted: (')
+      bad_protocol: πρέπει να αρχίζει με  %{πρωτόκολλα}
+      bad_uri: δεν είναι έγκυρη διεύθυνση URL
+      blank: Δεν είναι κενό.
+      confirmation: Δεν συμφωνεί με το  %{γνώρισμα}
+      contains_prohibited_characters: περιέχει μη αλφαριθμητικούς ή απαγορευτους χαρακτήρες unicode
+      empty: Δεν είναι άδειο.
+      equal_to: πρέπει να ισούται με  %{count}
+      even: ακομα και ...
+      exclusion: ': δεσμεύεται.'
+      general: 'Σφάλμα:  %{σφάλματα}'
+      greater_than: πρέπει να είναι μεγαλύτερη από  %{count}
+      greater_than_or_equal_to: πρέπει να είναι μεγαλύτερη ή ίση με  %{count}
+      inclusion: δεν περιλαμβάνεται στη λίστα.
+      invalid: δεν είναι έγκυρο
+      less_than: πρέπει να είναι μικρότερη από  %{count}
+      less_than_or_equal_to: πρέπει να είναι μικρότερη ή ίση με  %{count}
+      model_invalid: 'Η επικύρωση απέτυχε:  %{σφάλματα}'
+      not_a_number: δεν είναι αριθμός.
+      not_an_integer: πρέπει να είναι ακέραιος.
+      odd: Θα είναι περίεργο.
+      other_than: δεν πρέπει να υπερβαίνει το  %{count}
+      present: πρέπει να είναι κενό
+      required: πρέπει να υπάρχει
+      taken: έχει ήδη ληφθεί.
+      too_long:
+        one: είναι πολύ μεγάλο (μέγιστο 1 χαρακτήρα)
+        other: είναι πολύ μεγάλο (το μέγιστο είναι  %{count} χαρακτήρες)
+      too_short:
+        one: είναι πολύ σύντομη (ελάχιστη είναι 1 χαρακτήρας)
+        other: είναι πολύ σύντομη (ελάχιστη τιμή είναι  %{count} χαρακτήρες)
+      try_again_email: 'Παρουσιάστηκε σφάλμα. Προσπαθήστε ξανά ή στείλτε email στο:  %{email}'
+      wrong_length:
+        one: είναι το λάθος μήκος (πρέπει να είναι 1 χαρακτήρας)
+        other: είναι το λάθος μήκος (πρέπει να είναι  %{count} χαρακτήρες)
+  time:
+    formats:
+      comment: '%B %d, %Y'
+      github: '% b % 1 %'
+      json: '%b %e, %Y'
+      medium: '%b % - δ, %Y'
+      reddit: "%b % ε ' %"
+      short: '% % - ε'
+      short_with_yy: "% b % - δ ' %y"
+      short_with_year: '%b % - ε, %Y'
+      stackexchange: "%b % ε ' %"
+      tweet: '%H: %M %p-%d %b %Y'
+

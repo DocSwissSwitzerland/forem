@@ -1,0 +1,109 @@
+el:
+  services:
+    analytics_service:
+      no_stats: Δεν μπορείς να δεις τα στατιστικά του άρθρου.
+    article_with_video_creation_service:
+      unpublished_video: Μη δημοσιευμένο βίντεο ~  %{rand}
+    authentication:
+      authenticator:
+        not_allowed: Δεν επιτρέπεται η χρήση του τομέα για τη διεύθυνση e-mail σας. Αυτό το Forem μπορεί να έχει περιορισμένη σήμανση σε συγκεκριμένους τομείς email ή να εμποδίζει τη σύνδεση αυτού του συγκεκριμένου τομέα.
+      providers:
+        apple:
+          name: ' %{πρώτο}  %{τελευταίο}'
+        not_available: Ο παροχέας  %{name} δεν είναι διαθέσιμος!
+        not_enabled: Ο παροχέας  %{name} δεν έχει ενεργοποιηθεί!
+    badges:
+      award_beloved_comment:
+        message: "Είστε διάσημος! [Αυτό είναι το σχόλιο] ( %{σχόλιο}) για το οποίο σας αναγνωρίζουν. \U0001F604"
+      award_streak:
+        longest: 16 εβδομάδες! Πέτυχες τη μεγαλύτερη δυνατή γραφή. Αυτό σας κάνει να δικαιούστε ειδικές αποστολές στο μέλλον. Συνεχίστε τις εκπληκτικές συνεισφορές στην κοινότητά μας!
+        message:
+          one: "Συγχαρητήρια για την επιτυχία! Η συνεπής γραφή είναι δύσκολη. Το επόμενο σήμα που μπορείς να πάρεις είναι το Σήμα της Βδομάδας. \U0001F609"
+          other: "Συγχαρητήρια για την επιτυχία! Η συνεπής γραφή είναι δύσκολη. Το επόμενο σήμα που μπορείς να πάρεις είναι το Σήμα της Βδομάδας. \U0001F609"
+      award_yearly_club:
+        message:
+          one: Χρόνια πολλά! Χρόνια πολλά! Το πιστεύεις ότι έχει περάσει ήδη ο χρόνος;
+          other: Χρόνια πολλά! Χρόνια πολλά! Το πιστεύεις ότι έχουν περάσει ήδη εκατό χρόνια;
+      congrats: Συγχαρητήρια !!!
+      thank_you: Σας ευχαριστώ πολύ για τις συνεισφορές σας!
+    broadcasts:
+      welcome_notification:
+        generator:
+          welcome: 'Ειδοποίηση υποδοχής:  %{κλειδί}'
+    error_messages:
+      clean:
+        parse_error: Παρουσιάστηκε πρόβλημα κατά την ανάλυση της πρώτης ύλης YAML. Ίσως πρέπει να ξεφύγεις από μια φράση ή ένα παχύ έντερο ή κάτι τέτοιο. Email  %{email} αν έχετε πρόβλημα.
+    html:
+      parser:
+        enter_fullscreen_mode: Εισαγωγή τρόπου πλήρους οθόνης
+        exit_fullscreen_mode: Έξοδος από πλήρη οθόνη
+    mailchimp:
+      bot:
+        member_in_compliance_state: 'Μέλος Του Κράτους Συμμόρφωσης:'
+    markdown_processor:
+      parser:
+        invalid_markdown_detected: Εντοπίστηκε μη έγκυρη markdown!
+    moderator:
+      banish_user:
+        spam_account: Λογαριασμός spam
+      manage_activity_and_roles:
+        need_super: Χρειάζεστε super admin κατάσταση για να πάρετε αυτή την ενέργεια
+      merge_user:
+        duplicate: Ο χρήστης έχει διπλότυπες μεθόδους εξακρίβωσης στοιχείων στους δύο λογαριασμούς. Ελέγξτε και διαγράψτε την ταυτότητα που ο χρήστης δεν χρησιμοποιεί πλέον. Αυτός είναι συνήθως ο ήδη διαγραμμένος κοινωνικός λογαριασμός ή η μέθοδος εξακρίβωσης στοιχείων που συνδέεται με το χρήστη που θα διαγραφεί.
+        multiple: Ο χρήστης που διαγράφεται διαθέτει ήδη δύο ή περισσότερες μεθόδους εξακρίβωσης στοιχείων. Είστε βέβαιοι ότι είναι ο σωστός χρήστης που θα διαγραφεί; Αν ναι, ένας διαχειριστής θα πρέπει να το κάνει αυτό από την κονσόλα για να είναι ασφαλής.
+        same_user: Δεν μπορείτε να συγχωνεύσετε τις ίδιες ταυτότητες χρήστη.
+    notifications:
+      new_comment:
+        new: "\U0001F4AC Νέο σχόλιο"
+      new_mention:
+        new: "\U0001F5E3️ Νέα αναφορά"
+    payments:
+      customer:
+        usd: σσ.
+      errors:
+        select_payment_method: Επιλέξτε μια μέθοδο πληρωμής.
+      process_credit_purchase:
+        charge:
+          one: Αγορά  %{count} πιστώσεων.
+          other: Αγορά  %{count} πιστώσεων.
+    rate_limit_checker:
+      invalid_key: 'Μη έγκυρο κλειδί λανθάνουσας μνήμης: δεν υπάρχει μοναδικό στοιχείο'
+      limit_reached:
+        one: Συμπληρώθηκε το όριο, προσπαθήστε ξανά σε  %{count} δευτερόλεπτα
+        other: Συμπληρώθηκε το όριο, προσπαθήστε ξανά σε  %{count} δευτερόλεπτα
+    slack:
+      messengers:
+        article_fetched_feed:
+          body: >
+            Νέο άρθρο Ανακτήθηκε μέσω RSS:  %{title}
+             %{url}
+        article_published:
+          body: >
+            Δημοσίευση νέου άρθρου:  %{τίτλος}
+             %{url}
+        feedback:
+          anonymous_report: 'Ανώνυμη αναφορά:'
+          final_message: >2-
+             %{όνομα_χρήστη} Κατηγορία:  %{κατηγορία} Εσωτερική αναφορά:  %{reports_url} * _ Αναφερόμενη διεύθυνση URL:  %{reported_url} _ *
+            ----- * Message: *  %{message}
+          body: >
+            *Logged στο χρήστη: * δημοσιογράφος:  %{username}- %{url} email: <mailto:%{email}|%{email}>
+        potential_spammer:
+          body: >
+            Πιθανός χρήστης spam!  %{url}
+        sponsorship:
+          body: >
+            Ο χρήστης  %{user} αγόρασε μια χορηγία  %{type} για το  %{οργανισμό}
+    spam:
+      article_handler:
+        suspended_too_many: Ο χρήστης ανέστειλε για πάρα πολλά spammy άρθρα, που προκαλούνται από αυτόματος.
+    user_subscriptions:
+      create_from_controller_params:
+        source_not_found: Η προέλευση δεν βρέθηκε.
+        email_mismatch: Ασυμφωνία email συνδρομητή.
+    users:
+      remove_role:
+        remove_self: Δεν είναι δυνατή η αφαίρεση ρόλων από τον εαυτό τους.
+        remove_super: Δεν είναι δυνατή η αφαίρεση ρόλων Super Admin.
+        error: Παρουσιάστηκε πρόβλημα κατά την αφαίρεση αυτού του ρόλου.  %{_μηνύματος}
+

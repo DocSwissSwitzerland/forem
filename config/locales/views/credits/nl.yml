@@ -1,0 +1,55 @@
+nl:
+  views:
+    credits:
+      meta:
+        title: Kredieten
+      ledger:
+        class:
+          listing: Notering
+        category: Categorie
+        item: Post
+        cost: Kosten (kredieten)
+        date: Datum
+        misc: Diverse posten
+      listing:
+        create: Lijst maken
+        dashboard: Ga naar Listings Dashboard
+      new:
+        meta:
+          title: Inkoopkredieten
+        heading: Aankoopkredieten voor @ %{name}
+        form:
+          amount:
+            label: Te kopen bedrag
+            placeholder: Geef een willekeurig bedrag op
+          method:
+            label: Betalingsmethode
+            number: '**** **** **** %{last}'
+            exp: ' %{mm}/ %{yy}'
+            add: Nieuwe kaart toevoegen
+          submit: Volledige aankoop
+          submitting: Verzenden ...
+          note_org: '*Alle org-beheerders hebben toegang tot kredieten die eigendom zijn van organisatie'
+        switch:
+          org: Overschakelen naar %{name}
+          user: Overschakelen op persoonlijke aankoop
+        status:
+          subtitle:
+            org: Hoeveel credits heeft %{name}?
+            user: Hoeveel credits heb ik op dit moment?
+          desc:
+            org: ' %{name} heeft %{count} credits.'
+            user: U hebt %{count} credits.
+        how:
+          subtitle: Hoe kan ik credits verdienen?
+          desc_html: Leden ontvangen <strong>5 credits</strong> voor elke profielbadge die u verdient.
+      purchase: Extra credits kopen
+      tag: 'Label: %{name}'
+      status:
+        user:
+          one: U hebt %{count} persoonlijk krediet te besteden
+          other: U hebt %{count} persoonlijke kredieten te besteden
+        org_html:
+          one: ' %{name} heeft %{num} te besteden krediet'
+          other: ' %{name} heeft %{num} credits om te besteden'
+

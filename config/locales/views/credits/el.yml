@@ -1,0 +1,55 @@
+el:
+  views:
+    credits:
+      meta:
+        title: Credits
+      ledger:
+        class:
+          listing: 'Εισαγωγή:'
+        category: 'Κατηγορία:'
+        item: "'."
+        cost: Κόστος (πιστώσεις)
+        date: "'."
+        misc: 'Διάφορα στοιχεία:'
+      listing:
+        create: 'Δημιουργία λίστας:'
+        dashboard: Μετάβαση στον πίνακα των Listings
+      new:
+        meta:
+          title: Credits αγοράς
+        heading: Αγορά πιστώσεων για το @  %{name}
+        form:
+          amount:
+            label: 'Ποσό προς αγορά:'
+            placeholder: Καταχωρήστε οποιοδήποτε ποσό.
+          method:
+            label: 'Μέθοδος πληρωμής:'
+            number: '**** ****  %{τελευταίο}'
+            exp: ' %{mm}/ %{yy}'
+            add: Προσθήκη νέας κάρτας
+          submit: 'Πλήρης Αγορά:'
+          submitting: Υποβολή ...
+          note_org: '* Όλες οι διαχειριστές org έχουν πρόσβαση σε πιστώσεις που ανήκουν στον οργανισμό'
+        switch:
+          org: Αλλαγή σε  %{name}
+          user: Αλλαγή σε προσωπική αγορά
+        status:
+          subtitle:
+            org: Πόσες πιστώσεις έχει το  %{name};
+            user: Πόσες πιστώσεις έχω αυτή τη στιγμή;
+          desc:
+            org: Το  %{name} έχει  %{count} πιστώσεις.
+            user: Έχεις % % των πιστώσεων.
+        how:
+          subtitle: Πώς μπορώ να κερδίσω πιστώσεις;
+          desc_html: Τα μέλη λαμβάνουν <strong>5 πιστώσεις</strong> για κάθε διακριτικό σήμα που κερδίζετε.
+      purchase: Αγορά πρόσθετων πιστώσεων
+      tag: 'Προσδιοριστικό:  %{name}'
+      status:
+        user:
+          one: Έχετε  %{count} προσωπική πίστωση για να περάσετε
+          other: Έχετε  %{count} προσωπικές πιστώσεις για να περάσετε
+        org_html:
+          one: Το  %{name} έχει  %{num} πίστωση για να ξοδέψει
+          other: Το  %{name} έχει  %{num} πιστώσεις για να δαπανήσουν
+

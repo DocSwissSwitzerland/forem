@@ -1,0 +1,33 @@
+sv:
+  mailers:
+    digest_mailer:
+      from: Sammansatt
+      more_top_posts: fler% av tjänsterna i %{community}
+      more_top_posts_based: fler översta %{community} inlägg baserat på dina intressen
+      more_top_posts_from: fler översta läsningar från gemenskapen
+      more_trending_posts: fler trend %{community} inlägg
+      more_trending_posts_picked: fler trend %{community} inlägg har hämtades för dig
+      other_posts: andra tjänster som du kanske gillar
+      other_community_posts: andra %{community} inlägg du kanske gillar
+      other_top_posts: andra övre %{community} inlägg
+      other_trending_posts: andra trend %{community} inlägg
+    notify_mailer:
+      account_deleted: ' %{community}-Konfirmering av konto'
+      deletion_requested: ' %{community}-Kontoborttagning begärd'
+      trusted: -Grattis! Du är nu en "betrodd" användare i %{community}!
+      moderator: '-Grattis! Du är moderatorn för # %{tag_name}'
+      new_follower: följde bara dig på %{community}
+      new_mention: ' %{name} nämnde just dig i %{type}'
+      org_deleted: ' %{community}-Bekräftelse av borttagning av organisation'
+      new_reply: ' %{name} svarade på din %{type}'
+      feedback: Tack för din rapport i %{community}
+      export: Export av ditt innehåll är klart
+      unread_notifications:
+        one: "\U0001F525 Du har %{count} olästa aviseringar i %{community}"
+        other: "\U0001F525 Du har %{count} olästa aviseringar i %{community}"
+      new_badge: Du har precis fått en bricka.
+      video_upload: Videouppladdningen är klar
+    verification_mailer:
+      from: ' %{community} Email Verification <%{email}>'
+      verify_ownership: Verifiera din %{community} kontoägande
+

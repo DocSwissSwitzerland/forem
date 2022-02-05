@@ -1,0 +1,71 @@
+sv:
+  views:
+    main:
+      aria_home: ' %{community}-startsida'
+      header:
+        create_account: Skapa konto
+        login: Logga in
+        nav:
+          aria_label: Navigeringsmeny
+        moderation:
+          aria_label: Moderering
+          icon: Moderering
+        notifications:
+          aria_label: Underrättelser
+          icon: Underrättelser
+        skip: Gå till innehåll
+      modal:
+        create_account:
+          aria_label: Skapa nytt konto
+          text: Skapa konto
+        login:
+          aria_label: Logga in
+          text: Logga in
+      nav:
+        admin: Administratör
+        dashboard: Kontrollpanel
+        placeholder: -...
+        list: Läser lista
+        moderator_center: Moderatorcenter
+        other: Andra slag
+        settings: Inställningar
+      nav_name:
+        About: Om
+        Code of Conduct: Uppförandekod
+        Contact: Kontaktperson
+        FAQ: FAQ
+        Listings: Listningar
+        Podcasts: Podsändningar
+        Privacy Policy: Privatpolicy
+        Reading List: Läser lista
+        Sponsors: Sponsorer
+        Tags: Etiketter
+        Terms of use: Användningsvillkor
+        Videos: Videofilmer
+      side:
+        listings:
+          heading: Listningar
+          all: Se alla
+          new: Skapa en lista
+        trend: trendar guider / resurser
+        recent: nyligen efterfrågade
+      tags:
+        aria_label: Anpassa märkningsprioritet
+        follow: Följ
+        my_tags: Mina taggar
+        popular_tags: Populära taggar
+      footer:
+        built:
+          text_html: Byggd på %{forem}-programvaran %{opensource} som har behörigheten %{dev} och andra inkluderande gemenskaper.
+          forem: Forem
+          opensource: öppen källkod
+          dev: DEV
+        desc_html: ' %{community}- %{desc}'
+        logo: Forem-logo
+        powered:
+          text_html: Tillverkade med kärlek och %{rails}. %{community} <span title="copyright">&copy;</span>  %{copyright}.
+          rails: Ruby på Rails
+      home: Hem
+      create_post: Skapa inlägg
+      signout: Logga ut
+

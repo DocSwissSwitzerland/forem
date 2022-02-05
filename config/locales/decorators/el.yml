@@ -1,0 +1,5 @@
+el:
+  decorators:
+    article_decorator:
+      tagged_with: ' Tagged με  %{cached_tag_list}.'
+

@@ -1,0 +1,55 @@
+pl:
+  views:
+    credits:
+      meta:
+        title: Uznania
+      ledger:
+        class:
+          listing: Lista
+        category: Kategoria
+        item: Pozycja
+        cost: Koszt (kredyty)
+        date: Data
+        misc: Różne elementy
+      listing:
+        create: Tworzenie listy
+        dashboard: Przejdź do panelu kontrolnego Listings
+      new:
+        meta:
+          title: Zaliczeń
+        heading: Zaliczeń zakupu dla @ %{name}
+        form:
+          amount:
+            label: Kwota do zakupu
+            placeholder: Wprowadź dowolną kwotę
+          method:
+            label: Forma płatności
+            number: '**** **** **** %{last}'
+            exp: ' %{mm}/ %{yy}'
+            add: Dodaj nową kartę
+          submit: Zakończ zakupy
+          submitting: Wprowadzanie ...
+          note_org: '*Wszyscy administratorzy organizacji mają dostęp do jednostek należących do organizacji'
+        switch:
+          org: Przełącz na %{name}
+          user: Przełącz na osobisty zakup
+        status:
+          subtitle:
+            org: Ile kredytów ma %{name}?
+            user: Ile kredytów mam obecnie?
+          desc:
+            org: ' %{name} has %{count} kredytów.'
+            user: Masz %{count} kredytów.
+        how:
+          subtitle: W jaki sposób mogę zdobyć kredyty?
+          desc_html: Członkowie otrzymują <strong>5 kredytów</strong> dla każdego uzyskanego odznaka profilu.
+      purchase: Zakup dodatkowych kredytów
+      tag: 'Znacznik: %{name}'
+      status:
+        user:
+          one: Masz %{count} osobistych kredytów do wydania
+          other: Masz %{count} osobistych kredytów do wydania
+        org_html:
+          one: ' %{name} ma %{num} kredytu do wydania'
+          other: ' %{name} ma %{num} kredytów do wydania'
+

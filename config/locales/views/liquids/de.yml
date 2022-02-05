@@ -1,0 +1,44 @@
+de:
+  views:
+    liquids:
+      github:
+        view: Auf GitHub anzeigen
+      medium:
+        logo: Mittleres Logo
+      poll:
+        show_results: Zeigen Sie mir einfach die Ergebnisse
+      reddit:
+        author: 'Autor: %{author}'
+        see: Siehe 'Vollständige Post'
+      stackexchange:
+        answer:
+          text_html: ' %{antwort} re: %{title}'
+          answer: Antwort
+        answers: 'Antworten: %{count}'
+        comments: 'Kommentare: %{count}'
+        open:
+          answer: Vollständige Antwort öffnen
+          article: Vollständigen Artikel öffnen
+          question: Vollständige Frage öffnen
+      twitter:
+        view: Blick auf Twitter
+      user_subscription:
+        confirm:
+          subtitle: Subskribieren bestätigen
+          button_text: Subskription bestätigen
+          cancel_text: Abbrechen
+          text_html: Sie teilen Ihre E-Mail-Adresse %{email}, Benutzername, Name und DEV Profil URL mit %{username}. Sobald Sie dies tun, können Sie dies nicht rückgängig machen.
+        logged_out: Sie müssen sich zunächst bei DEV anmelden.
+        sign_in: Anmelden
+        subscribe:
+          apple:
+            button: Subskribieren
+            desc_html: Hey, da! Es sieht aus, als wenn Sie Ihren DEV-Account erstellt haben, den Sie mit Apple unter Verwendung einer privaten Relay-E-Mail-Adresse angemeldet haben. Wenn Sie möchten, abonnieren Sie bitte %{update} zuerst an eine andere E-Mail-Adresse.
+            update: Aktualisieren Sie Ihre E-Mail-Adresse in den Einstellungen
+          button: Subskribieren
+          desc_html: Sie werden die E-Mail-Adresse, die Ihrem DEV-Konto zugeordnet ist, mit %{email} abonnieren. Um eine andere E-Mail-Adresse zu verwenden, können Sie %{update} verwenden.
+          update: Aktualisieren Sie Ihre E-Mail-Adresse in den Einstellungen
+      wikipedia:
+        logo: Wikipedia Logo
+        view: Blick auf Wikipedia
+

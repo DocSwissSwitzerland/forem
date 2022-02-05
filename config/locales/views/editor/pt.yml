@@ -1,0 +1,28 @@
+pt:
+  views:
+    editor:
+      meta:
+        title: Postar Post
+      heading:
+        new: Novo Post
+      create: Criar Post
+      close:
+        icon: Fechar
+        title: Fechar o editor
+      cover_image:
+        add: Adicionar uma imagem de capa
+        change: Mudança
+      edit: Editar
+      modes: Visualizar modos de post
+      new_title: Novo título do post aqui ...
+      preview: Preview
+      video:
+        progress:
+          heading: ⏳ Transcodificação de Vídeo Em Andamento ⏳
+          notice_1: Você vai receber um e-mail quando este processo terminar.
+          notice_2: Este é um post inédito ordinário. Adicionar título / tags/body/etc e, em seguida, marcar como publicado após o vídeo ser feito processamento.
+        submit_image:
+          button: Mudança de Enviar
+          text: 'URL da Imagem Preview: '
+          placeholder: Nova URL do Thumbnail
+

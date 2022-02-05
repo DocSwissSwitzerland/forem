@@ -1,0 +1,126 @@
+nl:
+  views:
+    moderations:
+      heading: Mod-centrum
+      actions:
+        meta:
+          title: ' %{titel} modereren'
+          title2: '[Gematigd] %{title}'
+        heading: Matige Post
+        subtitle: Prijs de kwaliteit van deze post
+        abusive:
+          subtitle_html: Vlag %{user} als Abusive
+          desc_html: Dit is het equivalent van het markeren van <b>alle</b> artikelen van deze gebruiker en zal hun artikelscores verlagen.
+        adjust:
+          heading: Tags aanpassen
+          subtitle: Tags toevoegen of verwijderen
+          aria_label: Sectie-tags voor aanpassen openen
+          icon: Tags aanpassen
+          add: Tag toevoegen
+          add_placeholder: Een tag toevoegen
+          reason: Reden voor aanbrengen van tags
+          remove: Tag verwijderen
+          submit: Verzenden
+        approve:
+          add: Markeren als goedgekeurd
+          remove: Goedkeuring verwijderen
+        checkmark: Vinkje
+        close: Actiescherm voor moderator sluiten
+        delete:
+          subtitle: Deze reactie wissen
+          button: Reactie wissen
+        edit:
+          post: Post bewerken
+          article_admin: 'Beheerder: Artikel'
+          comment_admin: 'Admin: Commentaar'
+          user_admin: 'Beheerder: Gebruiker'
+          resource_admin: 'ResourceAdmin: Artikel'
+        errors:
+          one: '1 fout tijdens het opslaan van dit blok:'
+          other: ' %{count} fouten hebben dit blok verboden om te worden opgeslagen:'
+        experience:
+          heading: Ervaringsniveau instellen
+          heading2: Ervaringsniveau van post
+          subtitle: Curate het meest geschikte publiek voor deze post
+          aria_label: Sectie ervaringsniveau openen
+          icon: Boek
+          desc_html: Wie vindt deze post <em>mogelijk</em> op basis van het algemene ervaringsniveau?
+          from: ' %{lvl}- '
+          level:
+            Advanced: Geavanceerd
+            Beginner: Beginner
+            Expert: Deskundige
+            Mid-level: Middenniveau
+            Novice: Beginner
+        flag: Vlag-gebruiker
+        how: Hoe werkt dit?
+        hidden:
+          subtitle: Verborgen commentaar
+          by: Commentaar van %{user}
+        hint:
+          subtitle: Alle negatieve reacties zijn privé.
+          desc_html: >-
+            Gebruik <b>High Quality</b> om deze content te verplaatsen naar een andere reden (kwaliteit, bruikbaarheid, etc.).
+
+            <br />
+
+            Gebruik <b>Low Quality</b> om deze content om welke reden dan ook te verplaatsen (kwaliteit, bruikbaarheid, etc.).
+
+            <br />
+
+            Gebruik <b>Flag to Admins</b> voor de code van overtredingen (intimidatie, een eikel, spam, etc.).
+        other: Andere dingen die je kunt doen
+        add_reaction: Reactie toevoegen
+        suspicious: Verdacht
+        tag:
+          subtitle: Labelaanpassingen
+          add: Toevoegen
+          added_html: <b>Momenteel toegevoegde tag:</b>  %{tag}
+          live_html: <b>Huidige live-tags:</b>  %{tags}
+          reason: Reden voor aanpassing (Wees super aardig)-Alleen de reden is nodig, de kennisgeving zal zorgen voor de rest.
+          remove: Verwijderen
+          removed_html: <b>Momenteel verwijderde tag:</b>  %{tag}
+          select: Tag selecteren
+          submit: Labelaanpassing verzenden
+          tag_name: Tagnaam
+          undo:
+            button: ×
+            confirm: Weet u zeker dat u de %{type} van de %{tag}-tag ongedaan wilt maken?
+            type:
+              addition: optellen
+              removal: verwijderen
+        thumb_down: Duim omlaag
+        thumb_up: Duim omhoog
+        toggle: Omschakelen
+        unpublish: Artikel niet publiceren
+        vote_down: Van Lage Kwaliteit
+        flag_to_admins: Vlag voor Admins
+        vote_up: Hoge kwaliteit
+      all: Alle onderwerpen
+      aside:
+        all: Alle onderwerpen
+        code_of_conduct: Gedragscode
+        external: Externe link
+        feedback:
+          subtitle: Hebben feedback om uw Mod ervaring te verbeteren?
+          description: E-mail %{email}!
+        hello: "Hallo! \U0001F44B"
+        thanks: Dank u voor het helpen om %{community} veilig te houden! ❤️
+        inbox: In-vak
+        resources: Middelen
+        tag: Handleiding voor moderatie van tags
+        terms_and_conditions: Voorwaarden & Voorwaarden
+        trusted: Betrouwbare gebruikershandleiding
+      author: Auteur
+      date: Datum
+      notice:
+        subtitle: ' %{community} Mods'
+        desc1_html: Op gezette tijden worden enkele %{community} leden toegewezen met verhoogde bevoegdheden om de community te helpen modereren.
+        desc2_html: Check onze %{code} en lees door onze %{trusted} en %{tag}.
+        desc3_html: Als u ons wilt helpen als betrouwbare gebruiker of tag mod, stuur ons dan naar %{email} en laat ons weten welke rol u geïnteresseerd bent in en waarom. Als het tag-moderatie is, vertel ons dan welke tags u wilt modereren.
+        desc4: P.S. U bent momenteel niet aangemeld.
+        code_of_conduct: Gedragscode
+        tag: Handleiding voor moderatie van tags
+        trusted: Betrouwbare gebruikershandleiding
+      post: Posten
+

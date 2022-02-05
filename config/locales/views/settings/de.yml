@@ -1,0 +1,270 @@
+de:
+  views:
+    settings:
+      meta:
+        title: Einstellungen
+      account:
+        connect: ' %{provider} -Konto verbinden'
+        emails: E-Mails für Account
+        primary: Primäre E-Mail
+        provider_email: ' %{provider}, E-Mail'
+        provider_profile: Profileinstellungen für %{provider}
+        api:
+          heading: API-Schlüssel für %{community}
+          desc_html: Sie können persönliche API-Schlüssel generieren, die für die Authentifizierung mit der API " %{community}" verwendet werden sollen.  Die API befindet sich noch in der Beta-Phase. Der %{doc} enthält weitere Informationen.
+          active:
+            heading: Aktive API-Schlüssel (diese werden niemals gemeinsam genutzt!)
+            created: 'Erstellt: %{time}'
+          doc: Dokumentation
+          gen:
+            heading: Neuen Schlüssel generieren
+            label: Beschreibung
+            text: Wofür wird dieser API-Schlüssel verwendet?
+            placeholder: Mein Projektname
+            submit: API-Schlüssel generieren
+          revoke: Widerrufen
+        delete:
+          heading: Account löschen
+          desc1: 'Löschen Ihres Kontos:'
+          desc1a: >
+            Löschen Sie Ihr Profil zusammen mit Ihren Authentifizierungszuordnungen.
+
+
+            Dies schließt keine Anwendungsberechtigungen ein. Sie müssen sie selbst entfernen:
+          desc1b: Löschen Sie alle Inhalte, die Sie haben, wie z. B. Artikel, Kommentare oder Ihre Leseliste.
+          desc1c: Lassen Sie Ihren Benutzernamen für jedermann zur Verfügung stehen.
+          desc2_html: Bitte, %{bereitstellen}, um Ihr Konto vollständig zu löschen.
+          provide: Eine E-Mail senden
+          submit: Account löschen
+        export:
+          heading: Inhalt exportieren
+          desc: Sie können einen Export Ihrer gesamten Inhalte anfordern. Derzeit unterstützen wir nur den Export Ihrer Beiträge und Kommentare. Sie werden per E-Mail an Ihren Posteingang geschickt.
+          label: Fordern Sie einen Export Ihrer Inhalte an
+          requested: Sie haben kürzlich einen Export Ihrer Inhalte angefordert. Bitte überprüfen Sie Ihre E-Mail.
+          submit: Datenanforderung übergeben
+        remove:
+          heading: OAuth-Zuordnungen entfernen
+          desc1: Sie können eine der Authentifizierungsmethoden entfernen. Wir brauchen noch einen, um dich zu authentifizieren.
+          desc2: 'Entfernen eines OAuth-Verbandes:'
+          desc2a: Entfernen Sie Ihre Fähigkeit, sich mit diesem Konto anzumelden
+          desc2b: Entfernen der zugehörigen URL aus Ihrem Profil
+          desc3: >
+            Beachten Sie, dass dies unseren OAuth-App-Zugriff nicht widerrufen kann; Sie müssen dies in Ihren Einstellungen für den jeweiligen Provider tun:
+          confirm: Sind Sie absolut sicher, dass Sie Ihr %{provider} -Konto entfernen möchten?
+          submit: ' %{provider} entfernen'
+      billing:
+        heading: Abrechnung
+        add: Kreditkarte hinzufügen
+        another: + Eine weitere Kreditkarte hinzufügen
+        cards: Ihre Kreditkarten
+        exp: Ablauf %{month}/ %{year}
+        label: Karte hinzufügen
+        number: ' %{brand} endend in %{last}'
+        make: Primär machen
+        primary: Primär
+        remove: Karte entfernen
+      characters: 'Verwendete verfügbare Zeichen: '
+      complete:
+        heading: Bestätigen Sie Ihre E-Mail, um Ihr Profil zu vervollständigen.
+        desc: Während Sie dabei sind, gehen Sie voran und füllen Sie alles aus.
+        github: Verbinden Sie Ihr Github-Konto so gut, dass Sie Ihre Identität abschließen.
+        twitter: Verbinden Sie Ihren Twitter-Account so gut, dass Sie Ihre Identität abschließen.
+      custom:
+        adjacent: In der Nähe Sponsoren zulassen (bei der Veröffentlichung)
+        announce: Ankündigungen
+        announce_desc: Ankündigungen informieren Sie über wichtige ortsweite Informationen, wie Updates und Veranstaltungen.
+        announce_field: Ankündigungen anzeigen (beim Durchsuchen)
+        appearance: Darstellung
+        basic: Basismarkdown
+        content: Inhalt
+        editor: Editorversion
+        fixed: Fest an Fenster
+        font: Basislese-Schriftart
+        level: Wie hoch ist Ihr ungefährer Erfahrungswert (1-5)?
+        level_desc: Dies wird nicht auf Ihrem Profil oder irgendwo öffentlich angezeigt. Es hilft sanft zu bestimmen, welche Inhalte Sie zusammen mit den Tags, die Sie folgen etc., angezeigt werden.
+        navbar: Standort-Navbar
+        rich: Rich + Preisabschlag
+        save: Speichern
+        sponsor: Sponsoren
+        sponsor_desc: Sie haben die Möglichkeit, Sponsoring-Messaging zu entfernen (wo es praktisch ist). Unsere wunderbaren Sponsoren tragen dazu bei, die Plattform zu erhalten und Ihre Erfahrung zu verbessern, und wir bemühen uns, ihre Präsenz in der Gemeinschaft konstruktiv zu gestalten, aber fühlen Sie sich frei, diese Einstellung zu nutzen, wenn Sie es wünschen.
+        sponsor_field: Sponsoren anzeigen (beim Durchsuchen)
+        static: Statisches Ende der Seite
+        theme: Site-Thema
+        writing: Schreiben
+      danger: Gefahrenzone
+      destroy:
+        heading: Löschen Sie Ihr Konto
+        desc: 'Löschen Ihres Kontos:'
+        desc_1_html: Löschen Sie Ihr Profil, zusammen mit Ihren Twitter-und/oder GitHub-Zuordnungen. Dies schließt keine App-Berechtigungen ein. Sie müssen sie selbst entfernen auf %{twitter} und %{github}.
+        desc_2: alle Inhalte, die Sie haben, wie z. B. Artikel, Kommentare oder Ihre Leseliste löschen.
+        desc_3: erlauben Sie Ihrem Benutzernamen, für jeden verfügbar zu werden.
+        click: Hier klicken
+        confirm_html: 'Geben Sie zur Bestätigung die folgenden Wörter ein: <code> %{word}</code>'
+        ghost_html: Wenn Sie Ihren Inhalt unter dem %{ghost} -Konto behalten möchten, klicken Sie bitte auf %{click}
+        github: GitHub-Profileinstellungen
+        submit: Account löschen
+        to_delete: 'So löschen Sie Ihr Konto:'
+        twitter: Einstellungen für Twitter-Profile
+        type: Geben Sie Ihren Benutzernamen ein.
+        username: Benutzername
+        word: Mein Konto löschen
+      email: E-Mail-Prüfung
+      errors:
+        org:
+          one: '1 Fehler untersagte, dass Ihr Organisationsprofil gesichert wurde:'
+          other: ' %{count} Fehler untersagten, dass Ihr Organisationsprofil gespeichert wurde:'
+        profile:
+          one: '1 Fehler untersagte, dass Ihr Profil gesichert wurde:'
+          other: ' %{count} Fehler untersagten, dass Ihr Profil gesichert wurde:'
+      extensions:
+        comment:
+          heading: Kommentarschablonen
+          desc_html: Erstellen und speichern Sie <strong>Kommentarschablonen</strong> , die Sie wiederverwenden können.
+          add: Neue Kommentarschablone hinzufügen
+          confirm: 'Sind Sie sicher, dass Sie: %{template} löschen möchten?'
+          create: Neue Antwortvorlage erstellen
+          cue: Unvergessliches Stichwort für Vorlage
+          edit: Bearbeiten
+          edit_template: Kommentarschablone bearbeiten
+          remove: Entfernen
+          save: Schablone speichern
+          saved: Gespeicherte Schablonen
+        generate: Generieren Sie einen persönlichen Blog aus Ihren %{community} -Beiträgen
+        github:
+          heading: GitHub
+          desc1: Setzen Sie Ihre GitHub-Repositorys in Ihr Profil ein.
+          desc2: Repositorys werden aus Ihrem Profil entfernt, wenn Sie die OAuth-Zuordnung mit GitHub entfernen.
+        learn: Weitere Informationen
+        micro: 'Erhalten Sie Mikropayments für die Zeit, um Ihre Beiträge direkt zu lesen. '
+        payment: Zahlungszeiger
+        rss:
+          heading: Veröffentlichen in %{community} von RSS
+          desc1_html: Beiträge landen in Ihrem %{dashboard} <strong>als Entwürfe</strong>, und dann können Sie von dort veröffentlichen.
+          desc2: Die Formatierung wird in der Regel gut aussehen, aber Sie müssen möglicherweise manuelle Korrekturen vornehmen. Im Falle von Medium müssen Sie möglicherweise embeds manuell korrigieren.
+          desc3_html: Um mehr darüber zu erfahren, wie Entwürfe aus Ihrem Feed erstellt werden, lesen Sie diese %{guide}.
+          desc4: Ihr Feed wird jedesmal abgerufen, wenn Sie dieses Formular einreichen, und Aktualisierungen werden automatisch danach automatisch abgerufen.
+          desc5_html: 'FYI: RSS-Feed-URLs für Medium sind <em>https://medium.com/feed/@your_username</em>'
+          desc6: Indem Sie Ihre RSS-Feed-URL übergeben, stimmen Sie zu, dass Sie Eigentümer und/oder berechtigt sind, den zugehörigen Inhalt zu syndizieren.
+          dashboard: Dashboard
+          fetch: Feed jetzt abrufen
+          guide: Leitfaden
+          last_html: 'Letzte Fetched: %{time}'
+          mark_canonical_html: Markieren Sie die RSS-Quelle standardmäßig als kanonische URL. <p class='crayons-field__description'>Wenn Sie dieses Kontrollkästchen aktivieren, markiert der Beitrag automatisch die Feed-Quelle als kanonische URL.</p>
+          referential_html: Ersetzen Sie selbstreferenzierende Links mit %{community}-spezifischen Links <p class='crayons-field__description'>Wenn Sie dieses Kontrollkästchen aktivieren, ändert der Beitrag automatisch alle URLs, die in dem Beitrag enthalten sind, um auf die Version dieses Artikels in %{community} zu verweisen, falls verfügbar. Dies ist in erster Linie für Benutzer gedacht, die ihren gesamten Blog auf %{community} migrieren.</p>
+          save: Feed-Einstellungen speichern
+          submit: Feedeinstellungen übergeben
+        save_web: Webmonetierungseinstellungen speichern
+        web: Webmonetisierung
+      finalize_html: Sie haben eine Änderung in %{email} angefordert. Überprüfen Sie Ihren Posteingang für den Verifizierungslink, um die Änderung zu finalisieren.
+      for_html: Einstellungen für %{name}
+      group:
+        user: Benutzer
+        Basic: Basis
+        Branding: Branding
+        Coding: Codierung
+        Work: Arbeit
+      new_org: Neue Organisation
+      notifications:
+        email: E-Mail-Benachrichtigungen
+        general: Allgemeine Benachrichtigungen
+        general_desc_html: Benachrichtigungen, die nur auf der %{page} angezeigt werden.
+        mobile: Mobile Benachrichtigungen
+        moderator: Moderatorbenachrichtigungen
+        page: Benachrichtigungsseite
+        save: Speichern
+      org:
+        admin:
+          admin: Administrator
+          copy:
+            button:
+              aria_label: Geheimen Code der Organisation in die Zwischenablage kopieren
+            icon: In Zwischenablage kopieren
+            input:
+              aria_label: Organisation geheim (um regelmäßig gedreht zu werden)
+            text: In Zwischenablage kopiert!
+          cta: Aufruf-to-Action-Feld
+          cta_desc: Anpassbarer Text, der rechts von jedem Beitrag für Ihre Organisation erscheint.
+          delete:
+            heading: Organisation löschen
+            confirm: 'Sind Sie absolut sicher, dass Sie Ihre Organisation löschen möchten: %{name}?'
+            desc_html: >-
+              Sie können Ihre Organisation löschen, wenn Sie:
+
+              <ul> <li>are the only member in the organization</li> <li>are an admin of the organization</li> <li>the organization has no posts</li> <li>and the organization has no credits</li> (Die Organisation hat keine Beiträge) <li>und die Organisation hat keine Credits</li>
+
+              </ul>
+            submit: '" %{name}" löschen'
+            questions_html: Fragen? Senden Sie uns eine E-Mail an %{email} um Hilfe zu erhalten.
+            unmet: Ihre Organisation erfüllt derzeit die oben genannten Voraussetzungen nicht. Bitte entfernen Sie zuerst alle anderen Mitglieder und Organisationsposten.
+          details: Details zur Organisation
+          form:
+            slug: 'Die URL Ihrer Organisation lautet: %{slug}'
+            tag_line: Begrenzung von 60 Zeichen
+            summary: Begrenzung von 250 Zeichen
+            location: Begrenzung von 64 Zeichen
+            email: Begrenzung von 64 Zeichen
+            company_size: Geben Sie eine Zahl ein
+            story: Begrenzung von 640 Zeichen
+            tech_stack: Begrenzung von 640 Zeichen
+            cta_body_markdown: 'Begrenzt markdown: _italic_ und ** bold** ist okay. Links, und Header etc. werden nicht angezeigt. 256 Zeichenbegrenzung.'
+            cta_button_text: Begrenzung von 20 Zeichen
+            submit: Speichern
+          gen:
+            confirm: Sind Sie sicher, dass Sie ein neues Geheimnis generieren möchten? Alle noch ausstehenden Geheimnisse sind ungültig.
+            text: Sie sollten das regelmäßig drehen!
+            submit: Neues Geheimnis generieren
+          grow: Das Team wachsen
+          invite: 'Laden Sie Teamkollegen ein, indem Sie ihnen das Geheimnis und die folgenden Anweisungen senden:'
+          inst1_html: Registrieren Sie sich bei %{url}
+          inst2_html: Navigieren Sie zu %{url}
+          inst3_html: Fügen Sie den unten stehenden Geheimcode ein und klicken Sie auf <b>Organisation verknüpfen</b> .
+          make:
+            confirm: Sind Sie sicher, dass Sie den Administratorstatus von %{user} angeben möchten?
+            title: Admin machen
+            text: Admin machen
+          members: Organisationsmitglieder
+          remove:
+            confirm: Sind Sie sicher, dass Sie %{user} aus der Organisation entfernen möchten?
+            title: Aus Organisation entfernen
+            text: Aus Organisation entfernen
+          revoke:
+            confirm: Sind Sie sicher, dass Sie den Administratorstatus von %{user} entfernen möchten?
+            title: Administratorstatus widerrufen
+            text: Administratorstatus widerrufen
+          secret_code: 'Ihr Geheimcode lautet:'
+          you: Sie
+        create:
+          heading: Organisation erstellen
+          notice: Sie müssen über die Berechtigung Ihres Unternehmens verfügen, dieses Formular zu übergeben. Die Unehrlichkeit kann zu einer dauerhaften Aussetzung führen.
+          proof: Dies ist nur ein kurzer Hinweis oder Link, der anzeigt, dass Sie eindeutig mit dieser Organisation verbunden sind.
+          required: Starred-Felder sind erforderlich
+          slug: Ihre Organisations-URL ist %{url}/{Benutzername}
+          submit: Organisation erstellen
+        join:
+          heading: Einer Organisation beitreten
+          desc: Für Sie von einem Organisationsadministrator bereitgestellt
+          label: Geheimer Code
+          placeholder: '...'
+          submit: Organisation verknüpfen
+        leave:
+          confirm: Sind Sie sicher, dass Sie diese Organisation verlassen möchten?
+          submit: Organisation verlassen
+        divider: ODER
+      password:
+        heading: Neues Kennwort festlegen
+        desc_html: Wenn Ihr Konto mit Hilfe der Social-Account-Authentifizierung erstellt wurde, können Sie es vorziehen, ein E-Mail-Protokoll in hinzuzufügen. Wenn Sie sich mit einem Social-Media-Konto angemeldet haben, <a href="%{path}"> setzen Sie das Kennwort</a> für Ihre primäre E-Mail-Adresse ( %{email}) zurück, um dies zu ermöglichen. Bitte beachten Sie, dass sich die E-Mail-Anmeldung nicht als Ersatz für den Social Login, sondern zusätzlich zum Social Login eignet, so dass Ihr authentifiziertes Sozialkonto weiterhin mit Ihrem Konto verbunden ist.
+        current: Aktuelles Kennwort
+        confirm: Neues Kennwort bestätigen
+        new: Kennwort
+        submit: Neues Kennwort festlegen
+      previous: Es gibt ein vorhandenes Konto, das mit diesem Sozialkonto autorisiert ist.
+      tab:
+        Profile: Profil
+        Customization: Anpassung
+        Notifications: Benachrichtigungen
+        Account: Konto
+        Billing: Abrechnung
+        Organization: Organisation
+        Extensions: Erweiterungen
+      save_profile: Profilinformationen speichern
+

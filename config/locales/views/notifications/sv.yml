@@ -1,0 +1,87 @@
+sv:
+  views:
+    notifications:
+      meta:
+        description: Meddelanden inkorg för %{community}
+        og:
+          title: Aviseringar- %{community}
+      heading: Underrättelser
+      badge:
+        heading_html: Du tog emot brickan %{bricka}
+        awarded_html: "Du får också %{krediter} att använda för %{listings} om du har något som du vill befordra. \U0001F389"
+        credits:
+          one: ' %{count} nya krediter'
+          other: ' %{count} nya krediter'
+        listings: gemenskapslistningar
+        more: Mer information om listningar
+        profile: Besök din profil
+      broadcast:
+        visit_html: Besök %{inställningar} för att hantera aviseringar.
+        settings: Inställningar
+      comment:
+        commented_html: ' %{user} kommenterade %{title}'
+        first_html: ' %{user} skrev sin första kommentar till %{title}'
+        first_reply: "Ge dem det första svaret! \U0001F389"
+        left_html: ' %{user} lämnade bara en kommentar till %{title}.'
+        replied_html: ' %{user} svarade på en tråd i %{title}'
+        report: Alla negativa reaktioner är 100% privata. Om den här kommentaren bryter mot uppförandekoden, var vänlig och rösta ner och rapportera som olämplig.
+        welcome_html: Eftersom de är nya i samhället, skulle ni kunna lämna ett trevligt svar för att hjälpa dem att känna sig välkomna? <strong>Tack!</strong>
+      error:
+        subtitle: Det uppstod ett fel.
+        desc: Den här har loggats och vi spårar den.
+      follow:
+        and_html: ' %{första} och %{second} följde dig!'
+        and_other_html:
+          one: ' %{första} och %{others} följde dig!'
+          other: ' %{första} och %{others} följde dig!'
+        others:
+          one: ' %{count} andra'
+          other: ' %{count} andra'
+        single_html: ' %{name} följde dig!'
+      load: Läs in mer
+      mention:
+        article_html: ' %{user} nämnde dig i en tjänst %{if_org}'
+        comment_html: ' %{user} nämnde dig i en kommentar'
+        article_mobile: ' %{user} nämnde dig i posten %{title}'
+        comment_mobile: ' %{user} nämnde dig i en kommentar till %{title}'
+        if_org_html: ' under %{org}'
+      milestone:
+        heading_html: Din post %{title} överförde %{type}!
+        check: Kontrollera kontrollpanelen
+        intro: "\U0001F389\U0001F389\U0001F389\U0001F389\U0001F389\U0001F389\U0001F389\U0001F389"
+        type:
+          View:
+            one: ' %{count} vyer'
+            other: ' %{count} vyer'
+          Reaction:
+            one: ' %{count} reaktioner'
+            other: ' %{count} reaktioner'
+      nav:
+        aria_label: Underrättelser
+        all: Alla
+        comments: Kommentarer
+        posts: Poster
+      new_post:
+        if_org_html: ' under %{org}'
+        verb_html: ' %{user} gjorde ett nytt inlägg %{if_org}'
+      reacted:
+        and_html: ' %{första} och %{last}'
+        and_other_html:
+          one: ' %{första} och %{count} andra'
+          other: ' %{första} och %{count} andra'
+        verb_html:
+          one: ' %{start} %{actors} reagerade på %{title} med %{end} %{reaktioner}'
+          other: ' %{start} %{actors} reagerade på %{title} med %{end} %{reaktioner}'
+        your:
+          article: din artikel
+          comment: din kommentar
+      settings: Inställningar
+      tag:
+        heading: "Hej där \U0001F44B"
+        add_html: Moderatorer lade till märkordet <strong> %{tag}</strong> till din post %{title}. Moder ansåg att den här etiketten stod för din artikel.
+        check_html: Checka ut %{other} vilket kan vara mer lämpligt
+        other: andra populära etiketter
+        reason: 'Orsak till åtgärd:'
+        remove_html: Moderatorer har tagit bort märkordet <strong> %{tag}</strong> från din post %{title}. Vissa taggar har särskilda inlämningsriktlinjer, och mods måste justera märkningar för att passa in gemenskapen.
+        support_html: "Tack för att du är en del av %{community}! %{email} \U0001F917"
+

@@ -1,0 +1,142 @@
+sv:
+  views:
+    badges:
+      meta:
+        title: Brickor
+        name: ' %{title} Badge'
+      all:
+        one: Visa en bricka
+        other: Visa alla %{count} brickor
+      heading: Brickor
+      desc: Ta emot brickor för att vara grymma! Klicka på en bricka för att se hur du kan förtjäna det.
+      name: "\U0001F3C5  %{title} Badge \U0001F3C5"
+    campaign:
+      subtitle: Historier ( %{count})
+      view: Se alla inlägg
+    deep_links:
+      subtitle: Öppnar den mobila appen ...
+      alert:
+        subtitle: Hoppsan! Har du fastnat för att öppna den mobila appen?
+        desc_html: Se till att den är installerad och försök igen. Om problemet kvarstår kontaktar du %{email}
+        back: Ta mig tillbaka.
+        again: Försök igen
+        install: Installera appen
+    email_subscriptions:
+      unsubscribe:
+        heading: "Du har inte prenumererar på %{type}. \U0001F614"
+        description_html: Du kommer inte längre att få mejl som det här. Om du vill prenumerera på eller hantera dina fullständiga e-postinställningar, %{link}.
+        link: klicka här
+      invalid:
+        heading: Token har upphört eller är ogiltig
+        description_html: ' %{signin} för att hantera dina e-postinställningar.'
+        signin: logga in
+    hamburger:
+      icon: Navigeringsmeny
+      icon_close: Stängning
+      icon_left: Vänster meny
+      icon_right: Högermeny
+    logo:
+      color_1:
+        label: Märkfärg 1
+        description: Används för bakgrunder, kantlinjer m.m.
+        select:
+          aria_label: Färgväljaren Brand color
+          label: Färg på brantfärg 1
+      color_2:
+        label: Märkfärg 2
+        description_html: Används för texter (brukar sätta på <em>Brand color 1</em>).
+        select:
+          aria_label: Färg på färgväljaren Brand
+          label: Färg för färgval 2
+      preview:
+        icon: Applogotyp
+        text: 'Förhandsgranska:'
+    onboardings:
+      meta:
+        title: Välkommen till %{community}
+      heading: Du är nu en del av samhället!
+      subtitle: FÖRESLAGNA SAKER DU KAN GÖRA
+      close: Stäng välkomstmeddelande
+      settings_html: "<span class=\"emoji\">\U0001F485\U0001F3FC</span>Anpassa din profil"
+      welcome_html: "<span class=\"emoji\">\U0001F60A</span>Gå med i välkomsttråden"
+      write_html: "<span class=\"emoji\">✍\U0001F3FE</span>Skriv din första %{community}-post"
+    pins:
+      article: Favoriter
+      pinned: "\U0001F4CC PinNed! (favoritinlägg visas kronologiskt, 5 max)"
+      removed: "\U0001F5D1 Pin togs bort"
+      error: Du kan bara ha fem stift.
+    reading_list:
+      meta:
+        title: Läser lista
+        description: Mina sparade inlägg.
+        og:
+          title: Läser lista- %{community}
+    search:
+      heading: Sökresultat %{for}
+      for: ' för %{query}'
+      placeholder: Sök ...
+      icon:
+        aria_label: Sök
+        title: Sök
+      nav:
+        posts: Poster
+        podcasts: Podsändningar
+        people: Personer
+        comments: Kommentarer
+        my_posts: Endast mina inlägg
+        tags: Etiketter
+      sort:
+        aria_label: Sorteringsalternativ för sökresultat
+        relevance: Mest relevant
+        newest: Nyaste
+        oldest: Äldsta
+      meta:
+        title: Sökresultat %{for}
+        for: ' för %{query}'
+        description: ' %{site} = > Sökresultat'
+    series:
+      meta:
+        description: Visa %{title} på %{site}
+      heading: ' %{user} s serie'
+      empty: Den här användaren har inga serier
+      list:
+        heading: " %{series} serier ' Artiklar"
+        back: Tillbaka till %{user} s serier
+        empty: Den här serien har inga artiklar.
+    sponsor:
+      seek: Bli en sponsor
+    stats:
+      meta:
+        title: Stats för din artikel
+      heading_html: Stats för " %{article}"
+      period:
+        aria_label: Analysperiod
+        week: Vecka
+        month: Månad
+        infinity: Oändlighet
+      readers: Readers-sammanfattning
+      followers: Översikt över nya uppföljare
+      reactions: "Reaktionerna Sammanfattning ❤\U0001F984\U0001F516"
+      comments: "Kommentarsammanfattning \U0001F4AC"
+      traffic:
+        text: "Trafikkällsöversikt \U0001F6A6"
+        source: Källkod
+        views: Vyer
+    sticky:
+      joined: Koppfotade
+      default_cta: Läs mer
+      email: E-post
+      hot: Varmkorv
+      location: Plats
+      more_from_html: Mer från %{actor}
+      no_summary: Poster i den här taggen
+      trending_html: Trendar %{app}
+    videos:
+      meta:
+        title: Videofilmer
+        og:
+          description: Alla videor på %{community}
+      heading: ' %{community} på video'
+      beta_html: <strong>Video är beta:</strong>  %{contact}
+      upload: "\U0001F3A5 Överför videofil \U0001F64C"
+

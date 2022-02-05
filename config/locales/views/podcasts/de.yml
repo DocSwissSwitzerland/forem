@@ -1,0 +1,36 @@
+de:
+  views:
+    podcasts:
+      meta:
+        title: Podcasts
+        description: Technische Podcasts für %{member} erkennen
+        og:
+          title: Podcasts zu %{community}
+      browse: Durchsuchen
+      heading: Podcasts
+      close: ×
+      form:
+        heading: Schlagen Sie einen Podcast vor
+        errors:
+          one: '1 Fehler beim Erstellen eines Podcasts:'
+          other: ' %{count} Fehler beim Erstellen eines Podcasts:'
+        owner: Ich bin der Besitzer dieses Podcasts
+        return: < zurück zu Podcasts
+        suggest: Vorschlagen
+      list: Podcasts
+      listen: Klicken Sie hier zum Herunterladen/Zuhören
+      source: Episoden-Quelle
+      statuses:
+        ssl_failed: Das SSL-Zertifikat konnte beim Abrufen von 'feed_url' des Podcasts nicht verifiziert werden.
+        unparsable: Podcast's rss konnte nicht geparst werden
+        unplayable: Dieser Podcast ist möglicherweise nicht im Browser spielbar
+        unreachable: Feed_url von Podcast ist nicht erreichbar
+      speed: 1x
+      tag: Podcast
+      initializing: Initialisierung ...
+      unsupported: Ihr Browser unterstützt das Audioelement nicht.
+      featured_shows: Vorgestellte Shows
+      latest_episodes: Aktuelle Episoden
+      suggest_a_podcast: Schlagen Sie einen Podcast vor
+      view_all_podcasts: Alle Podcasts anzeigen
+

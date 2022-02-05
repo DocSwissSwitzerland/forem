@@ -1,0 +1,28 @@
+nl:
+  views:
+    editor:
+      meta:
+        title: Post bewerken
+      heading:
+        new: Nieuwe posting
+      create: Post maken
+      close:
+        icon: Sluiten
+        title: De editor sluiten
+      cover_image:
+        add: Afdekplaatje toevoegen
+        change: Wijziging
+      edit: Bewerken
+      modes: Post-werkstanden bekijken
+      new_title: Nieuwe titel hier ...
+      preview: Voorbeeld
+      video:
+        progress:
+          heading: ⏳ Video Transcoding In Uitvoering ⏳
+          notice_1: U krijgt een e-mail wanneer dit proces eindigt.
+          notice_2: Dit is een gewone ongepubliceerde post. Voeg titel/tags/body/etc, en dan markeren als gepubliceerd nadat de video is gedaan verwerking.
+        submit_image:
+          button: Wijziging indienen
+          text: 'Preview van afbeelding-URL: '
+          placeholder: Nieuwe URL van miniatuur
+

@@ -1,0 +1,40 @@
+sv:
+  create_mascot:
+    name: Maskot
+    error: Mascot har redan angetts
+  broadcast:
+    welcome:
+      ask_question: "Sloan här! \U0001F44B Jag har lagt märke till att du inte har <a href='https://dev.to/t/explainlikeimfive'>ställt en fråga</a> än. Att ställa en fråga är enkelt att göra ; klicka bara på Skapa inlägg i sidofältet på taggsidan för att komma igång!"
+      customize_experience: "Sloan här! \U0001F44B visste du att du kan anpassa din DEV-upplevelse? Försök att byta <a href='settings/customization'>teckensnitt och tema</a> och hitta den bästa stilen för dig!"
+      customize_feed: "Hej, det är jag igen! \U0001F44B Nu när du är en del av DEV-gemenskapen, låt oss fokusera på att personalisera ditt innehåll. Du kan starta med <a href='/tags'>följa vissa etiketter</a> för att hjälpa till att anpassa flödet! \U0001F389"
+      discuss_and_ask: "Sloan här! \U0001F44B Jag märkte att du inte har <a href='https://dev.to/t/explainlikeimfive'>ställt en fråga</a> eller <a href='https://dev.to/t/discuss'>startade en diskussion</a> ännu. Det är enkelt att göra båda dessa. Klicka bara på 'Skapa inlägg' i sidofältet på taggsidan för att komma igång!"
+      download_app: "Sloan här, med ett sista tips! \U0001F44B Har du laddat ned den mobila appen DEV än? Överväg att <a href='https://dev.to/downloads'>hämta</a> den så att du kan få åtkomst till alla dina favoritinnehåll i DEV på den här sidan."
+      set_up_profile: "Välkommen till DEV! \U0001F44B , jag är Sloan, samhällsmaskot och jag är här för att hjälpa dig att komma igång. Låt oss börja med att <a href='/settings'>ställa in din profil</a>!"
+      start_discussion: "Sloan här! \U0001F44B Jag har lagt märke till att du inte har startat en diskussion än. Det är enkelt att starta en diskussion. Klicka bara på 'Skapa inlägg' i sidofältet på taggsidan för att komma igång!"
+      welcome_thread: "Sloan här igen! \U0001F44B är ett vänligt samhälle. Varför inte presentera dig genom att lämna en kommentar i <a href='/welcome'>välkomsttråden</a>!"
+    connect:
+      apple: "Du är på en rulle! \U0001F389 har du ett Apple-konto? Överväg att <a href='/settings'>ansluta den</a>."
+      facebook: Har du ett Facebook-konto på en rulle? Överväg att <a href='/settings'>ansluta den</a>.
+      forem: -Har du ett "Forem konto"? Överväg att <a href='/settings'>ansluta den</a>.
+      github: -Har du ett GitHub-konto? Överväg att <a href='/settings'>ansluta den</a> så att du kan ange vilken som helst av dina återfall till din profil.
+      google: Har du ett Google-konto på en rulle? Överväg att <a href='/settings'>ansluta den</a>.
+      twitter: "Du har en roll! \U0001F389 har du ett Twitter-konto? Överväg att <a href='/settings'>ansluta den</a> så att vi kan @mention om vi delar din post via vårt Twitter-konto <a href='https://twitter.com/thePracticalDev'>@thePracticalDev</a>."
+  errors:
+    authentication:
+      errors:
+        suspended: Det verkar som om ditt föregående %{community_name}-konto har avaktiverats. Som sådan har vi vidtagit åtgärder för att förhindra att du skapar ett nytt konto med %{community_name} och dess gemenskap. Om du tror att det har skett ett misstag, mejla oss på %{community_email}, och vi kommer att ta en annan titt.
+    fastly_config:
+      must_be_array: 'configs: måste vara en matris av strängar'
+      invalid_config: Ogiltig Fastly config- %{invalid_config}. Endast %{valid_configs_join} är giltiga.
+  policies:
+    application_policy:
+      must_be_logged_in: måste vara inloggad
+      you_must_be_logged_in: Du måste vara inloggad
+    liquid_tag_policy:
+      no_user_found: Ingen användare hittades
+      not_permitted: Användaren har inte behörighet att använda den här likvida etiketten
+  uploaders:
+    base_uploader:
+      too_many_frames: GIF innehåller för många ramar. Max antal frame-antal är %{frame_max}.
+      timeout: Tidsgränsen för bildbearbetning överskreds.
+

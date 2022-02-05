@@ -1,0 +1,71 @@
+el:
+  views:
+    main:
+      aria_home: ' %{κοινότητα}'
+      header:
+        create_account: 'Δημιουργία λογαριασμού:'
+        login: 'Σύνδεση:'
+        nav:
+          aria_label: Μενού πλοήγησης
+        moderation:
+          aria_label: -Επιτήρηση
+          icon: -Επιτήρηση
+        notifications:
+          aria_label: Κοινοποιήσεις
+          icon: Κοινοποιήσεις
+        skip: Μετάβαση στο περιεχόμενο
+      modal:
+        create_account:
+          aria_label: Δημιουργία νέου λογαριασμού
+          text: 'Δημιουργία λογαριασμού:'
+        login:
+          aria_label: 'Σύνδεση:'
+          text: 'Σύνδεση:'
+      nav:
+        admin: Admin.
+        dashboard: Dashboard.
+        placeholder: '- ...'
+        list: Λίστα ανάγνωσης.
+        moderator_center: Κέντρο Moderator
+        other: "' Αλλα"
+        settings: 'Ρυθμίσεις:'
+      nav_name:
+        About: -Ναι.
+        Code of Conduct: 'Κώδικας συμπεριφοράς:'
+        Contact: 'Επικοινωνία:'
+        FAQ: FAQ
+        Listings: 'Καταχωρήσεις:'
+        Podcasts: Podcasts
+        Privacy Policy: 'Πολιτική απορρήτου:'
+        Reading List: Λίστα ανάγνωσης
+        Sponsors: 'Χορηγοί:'
+        Tags: 'Ετικέτες:'
+        Terms of use: 'Όροι χρήσης:'
+        Videos: 'Βίντεο:'
+      side:
+        listings:
+          heading: 'Καταχωρήσεις:'
+          all: Δείτε όλα.
+          new: 'Δημιουργία λίστας:'
+        trend: Trending οδηγοί/πόροι
+        recent: 'Το ερώτημα:'
+      tags:
+        aria_label: Προσαρμογή προτεραιότητας προσδιοριστικού
+        follow: 'Ακολούθη:'
+        my_tags: Τα προσδιοριστικά μου
+        popular_tags: Δημοφιλή προσδιοριστικά
+      footer:
+        built:
+          text_html: Χτισμένο σε  %{forem} - το  %{opensource} λογισμικό που τροφοδοτεί το  %{dev} και άλλες κοινότητες χωρίς αποκλεισμοί.
+          forem: Η Forem
+          opensource: 'ανοικτή πηγή:'
+          dev: DEV.
+        desc_html: ' %{κοινότητα}- %{desc}'
+        logo: Λογότυπο Forem
+        powered:
+          text_html: Γίνεται με αγάπη και  %{ράγες}.  %{community} <span title="copyright">&copy;</span>  %{copyright}.
+          rails: Η Ruby on Rails
+      home: Home
+      create_post: Δημιουργία Post
+      signout: 'Υπογραφή:'
+

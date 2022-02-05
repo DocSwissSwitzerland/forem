@@ -1,0 +1,71 @@
+pt:
+  views:
+    main:
+      aria_home: ' %{comunidade} Home'
+      header:
+        create_account: Criar conta
+        login: Log em
+        nav:
+          aria_label: Menu de navegação
+        moderation:
+          aria_label: Moderação
+          icon: Moderação
+        notifications:
+          aria_label: Notificações
+          icon: Notificações
+        skip: Ir para o conteúdo
+      modal:
+        create_account:
+          aria_label: Criar nova conta
+          text: Criar conta
+        login:
+          aria_label: Log em
+          text: Log em
+      nav:
+        admin: Admin
+        dashboard: Painel
+        placeholder: '...'
+        list: Lista de leitura
+        moderator_center: Centro do Moderador
+        other: Outro
+        settings: Configurações
+      nav_name:
+        About: Sobre
+        Code of Conduct: Código de Conduta
+        Contact: Contato
+        FAQ: FAQ
+        Listings: Listagens
+        Podcasts: Podcasts
+        Privacy Policy: Política de privacidade
+        Reading List: Lista de leitura
+        Sponsors: Patrocinadores
+        Tags: Tags
+        Terms of use: Termos de utilização
+        Videos: Vídeos
+      side:
+        listings:
+          heading: Listagens
+          all: Ver todos
+          new: Criar uma Listagem
+        trend: guias de tendência / recursos
+        recent: recentemente consultado
+      tags:
+        aria_label: Customizar prioridade da tag
+        follow: Seguir
+        my_tags: Minhas Tags
+        popular_tags: Tags Populares
+      footer:
+        built:
+          text_html: Construído em %{forem}-o software %{opensource} que potenita %{dev} e outras comunidades inclusivas.
+          forem: São
+          opensource: fonte aberta
+          dev: DEV
+        desc_html: ' %{comunidade}- %{desc}'
+        logo: Logotipo do forem
+        powered:
+          text_html: Feito com amor e %{rails}. %{community} <span title="copyright">&copy;</span>  %{copyright}.
+          rails: Ruby on Rails
+      home: Home
+      create_post: Criar Post
+      signout: Assinale Out
+

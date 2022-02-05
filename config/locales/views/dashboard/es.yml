@@ -1,0 +1,150 @@
+es:
+  views:
+    dashboard:
+      meta:
+        title: Panel de control- %{site}
+      heading: Dashboard
+      actions:
+        mobile:
+          posts: Publicaciones ( %{num})
+          followers: Seguidores ( %{num})
+          following_tags: Siguientes códigos ( %{num})
+          following_users: Siguientes usuarios ( %{num})
+          following_orgs: Siguientes organizaciones ( %{num})
+          following_pods: Siguientes podcasts ( %{num})
+        posts: Puestos
+        series: Serie
+        followers: Seguidores
+        following_tags: 'Etiquetas siguientes:'
+        following_users: Seguimiento de usuarios
+        following_orgs: Siguientes organizaciones
+        following_pods: Siguientes podcasts
+        listings: Listados
+        analytics: Análisis
+        for_org: Analítica para %{org}
+        upload: Cómo subir un vídeo
+      analytics:
+        meta:
+          title: Análisis
+        heading: Panel de instrumentos de análisis para %{name}
+        desc_1: Bienvenido a Analytics Dashboard, el hogar de métricas de usuario en profundidad para que los autores puedan tomar decisiones basadas en datos sobre el ecosistema %{members}.
+        desc_2: Este panel de instrumentos resalta los conocimientos profundos especialmente relevantes para las relaciones, los autores y los blogueros serios de %{members}.
+        back: "\U0001F448 Volver al panel de instrumentos principal"
+        your: Panel de control
+        org: ' %{org} Analytics Dashboard'
+      article:
+        heading:
+          text_html: ' %{archivada} %{title}'
+          archived: '[Archivado] '
+        archived: Archivado
+        published: 'Publicado:'
+        published_html: 'Publicado: %{date}'
+        edited: 'Editado:'
+        edited_html: 'Editado: %{date}'
+        series: 'Serie:'
+        series_html: <strong>Serie:</strong>  %{series}
+        draft: Proyecto
+        reactions:
+          title: Reacciones
+          icon: Reacciones
+          text_html:
+            one: ' %{num} reacción'
+            other: ' %{num} reacciones'
+        comments:
+          title: Observaciones
+          icon: Observaciones
+          text_html:
+            one: ' %{num} comentario'
+            other: ' %{num} comentarios'
+        views:
+          title: Vistas
+          icon: Vistas
+          lt_25: < 25
+          text_html:
+            one: ' %{scale} vista'
+            other: ' %{scale} vistas'
+          u_25: menos de 25
+        subscriptions:
+          title: Suscripciones
+          icon: Datos
+          number: Suscripciones ( %{num})
+        delete: Suprimir
+        unpin: Unpin
+        pin:
+          title: Pin to profile
+          button: Pin to profile
+          text: Perno
+        manage:
+          aria_label: 'Gestionar post: %{title}'
+          text: Gestionar
+        lock: Discusión de bloqueo
+        unlock: Desbloquear la discusión
+        edit:
+          aria_label: 'Editar publicación: %{title}'
+          text: Editar
+        more:
+          title: 'Más opciones para el post: %{title}'
+          icon: Más ...
+        stats: Estadísticas
+        archive: Puesto de archivo
+        unarchive: Correo no archivado
+        author: Autor
+        author_is: 'AUTOR: '
+        save: Guardar
+        submit: Enviar cambio de autor
+      followers:
+        heading: Panel de instrumentos Seguidores
+        empty: Todavía no tienes ningún seguidor ...
+      following_orgs:
+        heading: Panel de instrumentos Siguientes organizaciones
+        empty: Aún no sigues ninguna organización ...
+      following_pods:
+        heading: Panel de instrumentos Siguientes podcasts
+        empty: Aún no sigues ningún podcast ...
+      following_tags:
+        heading: 'Panel de instrumentos Etiquetas siguientes:'
+        adjust: Ajuste el peso de la etiqueta para modificar la alimentación del hogar. Los valores más altos significan más apariciones para esa etiqueta.
+        anti:
+          title: Esta etiqueta tiene un peso de seguimiento negativo
+          text: Antiseguimiento
+        default: Valor predeterminado 1.0
+        empty: Aún no sigues ninguna etiqueta ...
+        number:
+          aria_label: ' %{name} peso de etiqueta'
+        update: Actualizar ponderaciones
+      following_users:
+        heading: Panel de instrumentos Seguimiento de usuarios
+        empty: No sigues a ningún usuario ...
+      listings:
+        meta:
+          title: Panel de instrumentos
+      posts:
+        heading: Puestos
+        archived: Mostrar archivado
+        option:
+          creation-desc: Creado recientemente
+          published-desc: Publicado recientemente
+          views-desc: Más vistas
+          reactions-desc: Mayoría Reacciones
+          comments-desc: Más comentarios
+          aria_label: Ordenar por
+        org: ' %{name} ( %{num})'
+        personal: Personal
+        empty:
+          desc: Aquí es donde puedes administrar tus publicaciones, pero aún no has escrito nada.
+          new: Escribe tu primer post ahora
+      subscriptions:
+        meta:
+          title: Suscripciones %{title}
+        heading: Suscripciones
+        subhead:
+          text_html: ' %{para} %{source}'
+          for: para
+        empty: Todavía no tiene ningún suscriptor para este %{kind} ...
+      summary:
+        reactions: Reacciones post-totales
+        views: Total post Views
+        listings: Listados creados
+        credits: Créditos disponibles
+        lt_500: < 500
+

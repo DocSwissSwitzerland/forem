@@ -1,0 +1,71 @@
+es:
+  views:
+    main:
+      aria_home: ' %{community} Inicio'
+      header:
+        create_account: Crear cuenta
+        login: Iniciar sesión
+        nav:
+          aria_label: Menú de navegación
+        moderation:
+          aria_label: Moderación
+          icon: Moderación
+        notifications:
+          aria_label: Notificaciones
+          icon: Notificaciones
+        skip: Omitir el contenido
+      modal:
+        create_account:
+          aria_label: Crear nueva cuenta
+          text: Crear cuenta
+        login:
+          aria_label: Iniciar sesión
+          text: Iniciar sesión
+      nav:
+        admin: Administrador
+        dashboard: Dashboard
+        placeholder: '...'
+        list: Lista de lectura
+        moderator_center: Centro de moderadores
+        other: Otros
+        settings: Configuración
+      nav_name:
+        About: Acerca de
+        Code of Conduct: Código de conducta
+        Contact: Contacto
+        FAQ: FAQ
+        Listings: Listados
+        Podcasts: Podcasts
+        Privacy Policy: Política de privacidad
+        Reading List: Lista de lectura
+        Sponsors: Patrocinadores
+        Tags: Etiquetas
+        Terms of use: Condiciones de uso
+        Videos: Vídeos
+      side:
+        listings:
+          heading: Listados
+          all: Ver todos
+          new: Crear un listado
+        trend: guías/recursos de tendencias
+        recent: recientemente consultado
+      tags:
+        aria_label: Personalizar la prioridad de etiqueta
+        follow: Continuación
+        my_tags: Mis etiquetas
+        popular_tags: Etiquetas populares
+      footer:
+        built:
+          text_html: Construido en %{forem}-el software %{opensource} que impulsa %{dev} y otras comunidades inclusivas.
+          forem: Capataz
+          opensource: Fuente abierta
+          dev: DEV
+        desc_html: ' %{comunidad}- %{desc}'
+        logo: Logotipo de Form
+        powered:
+          text_html: Hecho con amor y %{railes}. %{community} <span title="copyright">&copy;</span>  %{copyright}.
+          rails: Ruby on Rails
+      home: Casa
+      create_post: Crear post
+      signout: Signo de salida
+

@@ -1,0 +1,90 @@
+el:
+  views:
+    users:
+      meta:
+        og:
+          title: ' %{user}- %{κοινότητας} Προφίλ'
+      comments:
+        all:
+          one: Όλα τα σχόλια  %{count}
+          other: Όλα τα σχόλια  %{count}
+        last:
+          one: Τελευταία  %{count} σχόλια
+          other: Τελευταία  %{count} σχόλια
+        recent: 'Πρόσφατα σχόλια:'
+        view: Προβολή όλων των δραστηριοτήτων
+        view_all:
+          one: Προβολή όλων των σχολίων  %{count}
+          other: Προβολή όλων των σχολίων  %{count}
+        view_last:
+          one: Προβολή τελευταίου 1 Comment
+          other: Προβολή του τελευταίου  %{count} Σχόλια
+      github:
+        heading: Χώροι αποθήκευσης του GitHub
+        fork: Το Fork
+        stars:
+          one: 1 αστέρι
+          other: ' %{count} αστέρια'
+      pin_icon: Pin
+      pinned: -Ναι.
+      profile_fields:
+        bio:
+          label: Bio
+          placeholder: Ένα μικρό βιογραφικό ...
+        display_email_on_profile: Εμφάνιση email στο προφίλ
+        location:
+          label: 'Τοποθεσία:'
+          placeholder: Halifax, Nova Scotia
+        website:
+          label: Διεύθυνση URL ιστοσελίδας
+          placeholder: https://yoursite.com
+        education: "' Εκπαίδευση"
+        currently_learning: "' Εκμάθηση"
+        currently_hacking_on: Επί του παρόντος hacking
+        available_for: 'Διαθέσιμο για:'
+        skills_languages: Ικανότητες/Γλώσσες
+        work: "' Εργασία"
+      side:
+        comment:
+          icon: 'Σχόλιο:'
+          text:
+            one: 1 σχόλιο γραμμένο
+            other: ' %{count} σχόλια που γράψατε'
+        org: "' Οργανισμοί"
+        post:
+          icon: -Ποστ
+          text:
+            one: 1 δημοσιευμένη δημοσίευση
+            other: ' %{count} δημοσιεύσεις που δημοσιεύονται'
+        tag:
+          icon: 'Ετικέτα:'
+          text:
+            one: Ακολουθήθηκε 1 προσδιοριστικό
+            other: ' %{count} προσδιοριστικά'
+      signout:
+        meta:
+          title: Επιβεβαίωση Σήματος -  %{κοινότητας}
+        heading: -Σίγουρα θες να υπογράψεις;
+        yes: Ναι, υπέγραψε.
+      block: Πεδίο @  %{χρήστης}
+      details: Λεπτομέρειες προφίλ  %{user}
+      dropdown: 'Ενέργειες χρήστη:'
+      email_icon: Διεύθυνση email
+      empty: 404 βιο δεν βρέθηκε
+      flag: Σημαία @  %{χρήστης}
+      follow: 'Ακολούθη:'
+      joined:
+        icon: "' Ενταξη"
+        text_html: Προσχώρηση στο  %{date}
+      location_icon: 'Τοποθεσία:'
+      logo: Εικόνα προφίλ  %{user}
+      more: Περισσότερες πληροφορίες για το @  %{user}
+      send_pm:
+        code: 'Κώδικας συμπεριφοράς:'
+        notice_html: Όλες οι ιδιωτικές αλληλεπιδράσεις <b>πρέπει</b> να συμμορφώνονται με το  %{code}.
+        placeholder: Καταχωρήστε το μήνυμά σας εδώ ...
+        submit: 'Αποστολή:'
+      social: Ιστοσελίδα του  %{service}
+      unflag: Αναίρεση @  %{user}
+      website: Προσωπική ιστοσελίδα
+

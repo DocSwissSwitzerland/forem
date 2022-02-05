@@ -1,0 +1,77 @@
+pl:
+  views:
+    auth:
+      background: tło forem
+      create:
+        aria_label: Utwórz nowe konto
+        text: Utwórz konto
+      creator:
+        text1: Zacznijmy swoją przygodę z Forem!
+        text2: Najpierw utwórz konto administratora.
+        text3: A potem przejdziemy przez twoją konfigurację Forem.
+        hint:
+          aria_label: Edytuj nazwę użytkownika
+          icon: Edytuj nazwę użytkownika
+          text_html: ' %{start} Twoim nazwą użytkownika będzie %{end} %{button}'
+        submit: Utwórz moje konto
+      login:
+        aria_label: Zaloguj się
+        text: Zaloguj się
+        continue: Kontynuuj
+        forgot: Zapomniałem hasła
+      provider:
+        text: ' %{action} z %{provider}'
+        login: Kontynuuj
+        signup: Zarejestruj się
+        email:
+          icon: wiadomość e-mail
+          text: Zarejestruj się za pomocą poczty elektronicznej
+      register:
+        errors:
+          one: Whoops, znaleźliśmy %{count} problem
+          other: 'Liczba problemów, które wystąpiły: %{count}'
+        allow:
+          one_html: Rejestracja została ograniczona do wiadomości e-mail <strong>@ %{domena}</strong> .
+          list: Rejestracja ograniczona do następujących wiadomości e-mail
+        create: Utwórz konto
+        field:
+          name:
+            aria_label: Nazwa
+            label: Nazwa
+          username:
+            aria_label: Nazwa użytkownika
+            desc: Nazwa użytkownika może zawierać tylko litery, cyfry i znaki podkreślenia. Maksymalna długość nazwy użytkownika może wynosić 30 znaków.
+            label: Nazwa użytkownika
+          email:
+            aria_label: Adres e-mail
+            label: Adres e-mail
+            placeholder: john@example.com
+          password:
+            aria_label: Hasło
+            desc: Minimum 8 znaków
+            label: Hasło
+            placeholder: ••••••••
+            hide: Ukryj hasło
+            show: Pokaż hasło
+          confirm:
+            aria_label: Potwierdzenie hasła
+            label: Potwierdzenie hasła
+          required: '*-wymagane'
+        secret:
+          label: New Forem Secret
+          placeholder: Zgodnie z udostępnionym przez użytkownika Forem
+        submit: Zarejestruj się
+      wizard:
+        meta:
+          title: Zacznijmy od Forem
+        heading: Zacznijmy swoją przygodę z Forem
+        step_1: Utwórz konto. Będzie to pierwsze konto super admin.
+        step_2_html: Po zalogowaniu się poniżej można skonfigurować społeczność w ścieżce %{path}.
+        step_3: Istnieje wiele, które można zrobić jako administrator, ale jest krzywa uczenia się.
+        step_4: Proszę sięgać do zespołu Forem, jeśli nie masz pewności co do wszystkiego!
+        step_5: "Dla społeczności Empowering Community \U0001F331"
+      tagline: Zaloguj się, aby dostosować swoje doświadczenie i zaangażować się.
+      title:
+        text_html: <a href="/" class="c-link c-link--branded"> %{name}</a> to społeczność ( %{maybe_size}, zadziwiające %{label})
+        size: ' %{num} '
+

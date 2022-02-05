@@ -1,0 +1,142 @@
+el:
+  views:
+    badges:
+      meta:
+        title: Σήματα.
+        name: ' %{τίτλος} Σήμα'
+      all:
+        one: Δείξε ένα σήμα.
+        other: Εμφάνιση όλων των χαρακτήρων  %{count}
+      heading: Σήματα.
+      desc: Λάβετε σήματα για να είναι φοβερό! Κάντε κλικ στο σήμα για να δείτε πώς μπορείτε να το κερδίσετε.
+      name: "\U0001F3C5  %{τίτλος} Σήμα \U0001F3C5"
+    campaign:
+      subtitle: Ιστορίες ( %{count})
+      view: Δείτε όλες τις θέσεις
+    deep_links:
+      subtitle: Ανοίγοντας την εφαρμογή ...
+      alert:
+        subtitle: Ουπς! Κόλλησες προσπαθώντας να ανοίξεις την εφαρμογή;
+        desc_html: Βεβαιωθείτε ότι έχει εγκατασταθεί και προσπαθήστε ξανά. Αν το πρόβλημα παραμένει, επικοινωνήστε με το  %{email}
+        back: Πάρε με πίσω!
+        again: Δοκίμασε πάλι.
+        install: Εγκατάσταση της εφαρμογής
+    email_subscriptions:
+      unsubscribe:
+        heading: "Δεν έχετε εγγραφεί από το  %{type}. \U0001F614"
+        description_html: Δεν θα λαμβάνεις πλέον μηνύματα όπως αυτό. Αν θέλετε να επαναεγγραφείτε ή να διαχειριστείτε τις πλήρεις προτιμήσεις e-mail σας, παρακαλώ  %{link}.
+        link: κάντε κλικ εδώ
+      invalid:
+        heading: Εκπνεύσει ή μη έγκυρο διακριτικό
+        description_html: Παρακαλώ  %{signin} για τη διαχείριση των προτιμήσεων email σας.
+        signin: σύνδεση-in
+    hamburger:
+      icon: Μενού πλοήγησης
+      icon_close: Κλείσιμο
+      icon_left: Αριστερό μενού
+      icon_right: Δεξιά μενού.
+    logo:
+      color_1:
+        label: Χρώμα μάρκας 1
+        description: Χρησιμοποιείται για υπόβαθρο, σύνορα κλπ.
+        select:
+          aria_label: Χρώμα μάρκας 1 επιλογέας χρώματος
+          label: Χρώμα μάρκας 1 επιλέξτε
+      color_2:
+        label: Χρώμα μάρκας 2
+        description_html: Χρησιμοποιείται για κείμενα (συνήθως παρουσιάζονται στο <em>Brand color 1</em>).
+        select:
+          aria_label: Χρώμα μάρκα 2 επιλογέας χρώματος
+          label: Χρώμα μάρκας 2 χρώμα επιλέξτε
+      preview:
+        icon: Λογότυπο App
+        text: 'Προεπισκόπηση:'
+    onboardings:
+      meta:
+        title: Καλωσορίσατε στο  %{κοινότητα}
+      heading: Τώρα είσαι μέρος της κοινότητας!
+      subtitle: ΠΡΌΤΕΙΝΕ ΠΡΆΓΜΑΤΑ ΠΟΥ ΜΠΟΡΕΊΣ ΝΑ ΚΆΝΕΙΣ.
+      close: Κλείσιμο μηνύματος υποδοχής
+      settings_html: "<span class=\"emoji\">\U0001F485\U0001F3FC</span>Προσαρμογή του προφίλ σας"
+      welcome_html: "<span class=\"emoji\">\U0001F60A</span>Συμμετοχή στο νήμα υποδοχής"
+      write_html: "<span class=\"emoji\">✍\U0001F3FE</span>Γράψτε το πρώτο σας  %{κοινότητας}"
+    pins:
+      article: -Ναι.
+      pinned: "\U0001F4CC Σταθεροποιήθηκε! (οι σταθεροποιημένες θέσεις εμφανίζονται χρονολογικά, 5 μέγ.)"
+      removed: "Αφαίρεση του \U0001F5D1 Pin"
+      error: Μπορείς να έχεις μόνο πέντε κορίνες.
+    reading_list:
+      meta:
+        title: Λίστα ανάγνωσης
+        description: Τα φυλάκια μου.
+        og:
+          title: Λίστα ανάγνωσης -  %{κοινότητας}
+    search:
+      heading: Αποτελέσματα αναζήτησης  %{για}
+      for: ' για  %{ερώτημα}'
+      placeholder: Αναζήτηση ...
+      icon:
+        aria_label: Αναζήτηση.
+        title: Αναζήτηση.
+      nav:
+        posts: -Θέσεις
+        podcasts: Podcasts
+        people: "' νθρωποι"
+        comments: 'Σχόλια:'
+        my_posts: Οι θέσεις μου ...
+        tags: 'Ετικέτες:'
+      sort:
+        aria_label: Επιλογές ταξινόμησης αποτελεσμάτων αναζήτησης
+        relevance: Το πιο σχετικό.
+        newest: -Όχι.
+        oldest: Παλαιότερα.
+      meta:
+        title: Αποτελέσματα αναζήτησης  %{για}
+        for: ' για  %{ερώτημα}'
+        description: ' %{site} = > Αποτελέσματα αναζήτησης'
+    series:
+      meta:
+        description: Προβολή  %{title} σε  %{site}
+      heading: Σειρά  %{user}
+      empty: Αυτός ο χρήστης δεν έχει σειρά.
+      list:
+        heading: " %{σειρά} Σειρά ' Άρθρα"
+        back: Επιστροφή στη σειρά  %{user}
+        empty: Αυτή η σειρά δεν έχει άρθρα.
+    sponsor:
+      seek: Γίνε χορηγός.
+    stats:
+      meta:
+        title: Στατιστικά για το άρθρο σας
+      heading_html: Στατιστικά για το " %{άρθρο}"
+      period:
+        aria_label: 'Περίοδος ανάλυσης:'
+        week: '"Εβδομάδα"'
+        month: 'Μήνας:'
+        infinity: -Άπειρο
+      readers: Σύνοψη αναγνωστών
+      followers: Σύνοψη νέων φακέλων
+      reactions: "Σύνοψη αντίδρασης ❤\U0001F984\U0001F516"
+      comments: "Σύνοψη σχολίων \U0001F4AC"
+      traffic:
+        text: "Συνοπτική παρουσίαση κώδικα κυκλοφορίας \U0001F6A6"
+        source: 'Πηγή:'
+        views: "'."
+    sticky:
+      joined: "' Ενταξη"
+      default_cta: Μάθετε περισσότερα
+      email: 'Email:'
+      hot: -Ναι.
+      location: 'Τοποθεσία:'
+      more_from_html: Περισσότερα από  %{actor}
+      no_summary: Δημοσιεύσεις σε αυτό το προσδιοριστικό
+      trending_html: Εξέλιξη σε  %{app}
+    videos:
+      meta:
+        title: 'Βίντεο:'
+        og:
+          description: Όλα τα βίντεο σε  %{κοινότητα}
+      heading: ' %{κοινότητας} στο βίντεο'
+      beta_html: <strong>Το βίντεο είναι beta:</strong>  %{contact}
+      upload: "\U0001F3A5 Μεταφόρτωση αρχείου βίντεο \U0001F64C"
+

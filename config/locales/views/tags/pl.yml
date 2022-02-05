@@ -1,0 +1,64 @@
+pl:
+  views:
+    tags:
+      meta:
+        title: Znaczniki
+        description: Znaczniki, które należy śledzić w społeczności %{community}
+        og:
+          description: ' %{community} jest wielkie!'
+      heading:
+        default: Znaczniki górne
+        search_results: Wyniki wyszukiwania dla %{q}
+      search:
+        aria_labels:
+          search_input: Wyszukiwany termin
+          submit: Znaczniki wyszukiwania
+        placeholder: Szukaj znacznika
+      edit:
+        meta:
+          title: Edytuj znacznik %{tag}
+        admin: Administrator
+        help: Pomoc
+        view: Widok
+        form:
+          pretty_name:
+            label: Nazwa ładna
+            placeholder: Jest to nazwa w górnej części strony pokazu.
+          bg_color_hex:
+            label: Bg kolor szesnastkowy
+          text_color_hex:
+            label: Kolor tekstu szesnastkowego
+          short_summary:
+            label: Krótkie podsumowanie
+            placeholder: Krótki przegląd tego, co zawiera ten znacznik.
+          wiki_body_markdown:
+            label: Narzut treści obszaru wiki
+            placeholder: To jest sekcja 'o'. Zapraszamy do dodawania FAQ, dodatkowych zasobów, itp.
+          rules_markdown:
+            label: Narzut reguł
+            placeholder: Fakultatywnie-można użyć dla wyzwań, tj. wytycznych dotyczących składania wniosków.
+          submit: Zapisz
+      follow: Śledź
+      following_tags: Następujące znaczniki
+      moderator:
+        text_html: 'Oddzielone przecinkami, spacja jest opcjonalna. Przykład: %{code}'
+        code: 123
+        placeholder: 'Oddzielone przecinkami, spacja jest opcjonalna. Przykład: 1,2,3'
+      published:
+        one: 1 post opublikowany
+        other: 'Liczba opublikowanych wypowiedzi: %{count}'
+      sidebar:
+        about: 'około # %{tag}'
+        admin: Administrator
+        edit: Edytuj
+        guidelines: wytyczne dotyczące wprowadzania
+        moderate: Umiarkowany
+        mods: moderatory znaczników
+        new: Utwórz wpis
+        older: 'Liczba wypowiedzi w starszym # %{tag}'
+        published:
+          one: 1 wpis opublikowany
+          other: 'Liczba opublikowanych wypowiedzi: %{count}'
+        sponsor: ' %{tag} jest sponsorowany przez'
+      sponsor: '| Sponsorowane przez %{org} ❤️'
+

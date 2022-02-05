@@ -1,0 +1,121 @@
+pt:
+  api_secrets_controller:
+    generated: 'Sua Chave de API foi gerada: %{secret}'
+    revoked: Sua Chave de API foi revogada.
+  application_controller:
+    bad_request: 'Erro: Bad Request'
+    not_authorized: 'Erro: não autorizado'
+    please_sign_in: Assinale em
+  articles_controller:
+    deleted: Artigo foi excluído com sucesso.
+  comments_controller:
+    create:
+      success: criado
+      failure: comentário já existe
+    delete:
+      error: Algo deu errado; Comment NÃO deletado.
+      notice: Comentário foi excluído com sucesso.
+    markdown: 'Houve um erro no seu markdown: %{error}'
+    markdown_html: "<p>\U0001F614 Houve um erro no seu markdown</p><hr><p> %{error}</p>"
+    moderated: Não permitido devido à ação de moderação
+  confirmations_controller:
+    email_sent: E-mail enviado! Entre em contato com o suporte em %{email} se você estiver tendo problemas para receber suas instruções de confirmação.
+  credits_controller:
+    done:
+      one: ' %{count} novos créditos comprados!'
+      other: ' %{count} novos créditos comprados!'
+  devices_controller:
+    not_found: Não Encontrado
+  discussion_locks_controller:
+    locked: Discussão foi travada com sucesso!
+    unlocked: Discussão foi desbloqueada com sucesso!
+  email_subscriptions_controller:
+    badge_notifications: notificações de badge
+    comment_notifications: notificações de comentários
+    digest_emails: ' %{comunidade} compilação de emails'
+    follower_notifications: notificações de seguidor
+    mention_notifications: notificações de menção
+    this_list: esta lista
+    unread_notifications: notificações não lidas
+  feedback_messages_controller:
+    error_fill: "Faça com que os formulários sejam preenchidos. \U0001F916 Outros erros possíveis: %{erros}"
+    n_a: N/A
+    submitted: Seu relatório é enviado
+  follows_controller:
+    already_followed: já seguido
+    daily_limit: Conta diária seguir limite atingido!
+    followed: seguido
+    unfollowed: desseguido
+  github_repos_controller:
+    repo_not_found: Repositório GitHub não encontrado
+    github_unauthorized: 'GitHub Não autorizado: %{e_message}'
+  image_uploads_controller:
+    server_error: Ocorreu um erro do servidor!
+  listings_controller:
+    deleted: A listagem foi excluída com sucesso.
+    no_credit: Créditos disponíveis não suficientes
+  omniauth_callbacks_controller:
+    log_in_error: 'Log no erro: %{e}'
+    username_taken: username já foi tirado
+  organizations_controller:
+    secret_updated: Seu segredo de org foi atualizado
+    deletion_scheduled: 'Sua organização: " %{organization_name}" deleção está agendada. Você será notificado quando for deletado.'
+    not_deleted: Sua organização não foi excluída; você deve ser um admin, o único membro na organização, e não ter artigos conectados à organização.
+    created: Sua organização foi criada com sucesso e você é um admin.
+    updated: Sua organização foi atualizada com sucesso.
+  podcasts_controller:
+    podcast_suggested: Podcast sugerido
+  profiles_controller:
+    updated: Seu perfil foi atualizado
+  rating_votes_controller:
+    not_upserted_successfully: Não Upserted Êxito
+  registrations_controller:
+    error:
+      recaptcha: Você deve completar o recaptcha ✅
+      domain: não está incluído em domínios permitidos.
+  response_templates_controller:
+    response_template_error: 'Erro do modelo de resposta: %{erros}'
+    created: Seu modelo de resposta " %{título}" foi criado.
+    deleted: Seu modelo de resposta " %{title}" foi excluído.
+    updated: Seu modelo de resposta " %{title}" foi atualizado.
+  social_previews_controller:
+    fonts: Roboto | Roboto + Condenado
+  stories:
+    pinned_articles_controller:
+      not_found: não encontrado
+  stories_controller:
+    404_bio_not_found: 404 bio não encontrado
+    searching: '... procurando'
+  stripe_active_cards_controller:
+    cannot_remove: Não é possível remover cartão se você tiver uma adesão ativa. Por favor, cancele sua adesão primeiro.
+    cannot_update: Houve um problema na atualização de seu faturamento info.
+    updated: Suas informações de faturamento foram atualizadas
+    removed: Seu cartão foi removido com sucesso.
+  tag_adjustments_controller:
+    failure: 'Falha: %{erros}'
+    destroyed: Ajuste de Tag destruído
+  tags_controller:
+    tag_successfully_updated: "Tag atualizada com sucesso! \U0001F44D "
+  users_controller:
+    removed_admin: ' %{name} não é mais um admin.'
+    removed_member: ' %{nome} não faz mais parte de sua organização.'
+    added_admin: ' %{name} é agora um admin.'
+    provide_email: Por favor, forneça um e-mail para excluir sua conta.
+    provide_email_delete: Por favor, forneça um e-mail para excluir sua conta
+    send_export: ' A exportação será enviada por e-mail para você em breve.'
+    invalid_secret: O segredo de organização dado foi inválido.
+    username_blank: O username não pode ficar em branco
+    deletion_in_progress: Você já solicitou exclusão de conta. Por favor, verifique seu e-mail para obter mais instruções.
+    joined_org: Você se uniu à organização %{organization_name}.
+    left_org: Você deixou sua organização.
+    deletion_requested: Você solicitou exclusão de conta. Por favor, verifique seu e-mail para obter mais instruções.
+    log_in_to_delete: Você deve estar logado para prosseguir com exclusão de conta.
+    deletion_scheduled: Sua exclusão de conta está agendada. Você será notificado quando for deletado.
+    removed_identity: Sua conta %{provedor} foi removida com sucesso.
+    updated_config: Sua config foi atualizada. Atualize para ver todas as mudanças.
+    updated_profile: Seu perfil foi atualizado com sucesso.
+    token_expired: Seu token expirou, por favor, solicite um novo. Os tokens só duram 12 horas após a exclusão da conta ser iniciada.
+  video_states_controller:
+    related_article_not_found: Artigo relacionado não encontrado
+    video_state_updated: Estado de vídeo atualizado
+

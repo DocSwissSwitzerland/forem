@@ -1,0 +1,109 @@
+pl:
+  services:
+    analytics_service:
+      no_stats: Nie można wyświetlić statystyk tego artykułu
+    article_with_video_creation_service:
+      unpublished_video: Nieopublikowane wideo ~ %{rand}
+    authentication:
+      authenticator:
+        not_allowed: Przepraszamy, ale domena dla Twojego adresu e-mail jest niedozwolona. To Forem może mieć ograniczony sygnał tylko do określonych domen e-mail lub zablokowania tej konkretnej domeny od łączenia.
+      providers:
+        apple:
+          name: ' %{first} %{last}'
+        not_available: Dostawca %{name} jest niedostępny!
+        not_enabled: Dostawca %{name} nie jest włączony.
+    badges:
+      award_beloved_comment:
+        message: "Jesteś sławny! [To jest komentarz] ( %{comment}), dla którego jesteś rozpoznawany. \U0001F604"
+      award_streak:
+        longest: 16 tygodni! Udało ci się osiągnąć najdłuższą możliwią passę pisania. To sprawia, że jesteś uprawniony do specjalnych questów w przyszłości. Trzymaj się niesamowitych składek do naszej społeczności!
+        message:
+          one: "Congrats na osiąganiu tej passy! Konsekwentne pisanie jest trudne. Kolejną odznaką, którą można uzyskać, jest %{count} Badge Week. \U0001F609"
+          other: "Congrats na osiąganiu tej passy! Konsekwentne pisanie jest trudne. Kolejną odznaką, którą można uzyskać, jest %{count} Badge Week. \U0001F609"
+      award_yearly_club:
+        message:
+          one: Szczęśliwe %{community} urodzin! Czy możesz uwierzyć, że to już %{count} rok już?!
+          other: Szczęśliwe %{community} urodzin! Czy możesz uwierzyć, że to już %{count} lat już?!
+      congrats: Congrats !!!
+      thank_you: Dziękuję bardzo za wpłaty!
+    broadcasts:
+      welcome_notification:
+        generator:
+          welcome: 'Powiadomienie powitalne: %{key}'
+    error_messages:
+      clean:
+        parse_error: Wystąpił problem podczas analizowania elementu frontowego YAML. Być może trzeba uciec cytatu albo okrężnicy albo coś. E-mail %{email}, jeśli masz problemy.
+    html:
+      parser:
+        enter_fullscreen_mode: Wprowadź tryb pełnoekranowy
+        exit_fullscreen_mode: Wyjście z trybu pełnoekranowego
+    mailchimp:
+      bot:
+        member_in_compliance_state: Członek w stanie zgodności
+    markdown_processor:
+      parser:
+        invalid_markdown_detected: Wykryto niepoprawną wartość markdown!
+    moderator:
+      banish_user:
+        spam_account: konto spamu
+      manage_activity_and_roles:
+        need_super: Aby wykonać to działanie, należy mieć status superadministratora
+      merge_user:
+        duplicate: Użytkownik ma zduplikowane metody uwierzytelniania na dwóch kontach. Sprawdź i usuń tożsamość, której nie używa już użytkownik. Zwykle jest to już usunięte konto społecznościowe lub metoda uwierzytelniania powiązana z użytkownikiem, który ma zostać usunięty.
+        multiple: Usuwany użytkownik ma już dwie lub więcej metod uwierzytelniania. Czy na pewno ten użytkownik ma zostać usunięty? Jeśli tak, to super admin będzie musiał to zrobić z konsoli, aby być bezpiecznym.
+        same_user: Nie można scalić tych samych dwóch identyfikatorów użytkowników.
+    notifications:
+      new_comment:
+        new: "\U0001F4AC Nowy komentarz"
+      new_mention:
+        new: "\U0001F5E3️ Nowa wzmianka"
+    payments:
+      customer:
+        usd: usd
+      errors:
+        select_payment_method: Wybierz formę płatności
+      process_credit_purchase:
+        charge:
+          one: Zakup %{count} kredytów.
+          other: Zakup %{count} kredytów.
+    rate_limit_checker:
+      invalid_key: 'Niepoprawny klucz pamięci podręcznej: brak unikalnego komponentu'
+      limit_reached:
+        one: Osiągnięto limit szybkości, spróbuj ponownie w %{count} s
+        other: Osiągnięto limit szybkości, spróbuj ponownie w %{count} s
+    slack:
+      messengers:
+        article_fetched_feed:
+          body: >
+            Nowy artykuł pobrany przez RSS: %{title}
+             %{url}
+        article_published:
+          body: >
+            Opublikował nowy artykuł: %{title}
+             %{url}
+        feedback:
+          anonymous_report: '*Raport anonimowy:'
+          final_message: >2-
+             %{user_detail} Kategoria: %{category} Raport wewnętrzny: %{reports_url} * _ Zgłoszony adres URL: %{reported_url} _ *
+            ----- *Komunikat: * %{komunikat}
+          body: >
+            *Zalogowany przez użytkownika: * reporter: %{username}- %{url} email: <mailto:%{email}|%{email}>
+        potential_spammer:
+          body: >
+            Potencjalny użytkownik spamu! %{url}
+        sponsorship:
+          body: >
+            Użytkownik %{user} kupił sponsoring %{type} dla %{organization}
+    spam:
+      article_handler:
+        suspended_too_many: Użytkownik zawieszony dla zbyt wielu artykułów spamu, wyzwalanych przez autovomit.
+    user_subscriptions:
+      create_from_controller_params:
+        source_not_found: Nie znaleziono źródła.
+        email_mismatch: Niezgodność adresów e-mail subskrybenta.
+    users:
+      remove_role:
+        remove_self: Administratorzy nie mogą usuwać ról z siebie.
+        remove_super: Nie można usunąć ról superAdmin.
+        error: Wystąpił problem z usuwaniem tej roli.  %{e_message}
+

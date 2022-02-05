@@ -1,0 +1,77 @@
+de:
+  views:
+    auth:
+      background: Hintergrund-Hintergrund
+      create:
+        aria_label: Neues Konto erstellen
+        text: Account erstellen
+      creator:
+        text1: Let' s starten Sie Ihre Forem-Reise!
+        text2: Erstellen Sie zuerst Ihr Administratorkonto.
+        text3: Dann gehen wir Sie durch Ihren Forem-Setup.
+        hint:
+          aria_label: Benutzername bearbeiten
+          icon: Benutzername bearbeiten
+          text_html: ' %{start} Ihr Benutzername wird %{end} %{button}'
+        submit: Mein Konto erstellen
+      login:
+        aria_label: Anmelden
+        text: Anmelden
+        continue: Weiter
+        forgot: Ich habe mein Passwort vergessen
+      provider:
+        text: ' %{action} mit %{provider}'
+        login: Weiter
+        signup: Info
+        email:
+          icon: E-Mail
+          text: Melden Sie sich mit Email an
+      register:
+        errors:
+          one: Whoops, wir haben %{count} Problem gefunden
+          other: Whoops, wir haben %{count} Probleme gefunden
+        allow:
+          one_html: Registrierung ist auf E-Mails von <strong>@ %{domain}</strong> beschränkt.
+          list: Registrierung beschränkt auf die folgenden E-Mails
+        create: Konto erstellen
+        field:
+          name:
+            aria_label: Name
+            label: Name
+          username:
+            aria_label: Benutzername
+            desc: Ein Benutzername darf nur Buchstaben, Zahlen und Unterstreichungszeichen enthalten. Die maximale Benutzername-Länge kann 30 Zeichen lang sein.
+            label: Benutzername
+          email:
+            aria_label: E-Mail
+            label: E-Mail
+            placeholder: john@example.com
+          password:
+            aria_label: Kennwort
+            desc: Mindestens 8 Zeichen
+            label: Kennwort
+            placeholder: ••••••••
+            hide: Kennwort ausblenden
+            show: Kennwort anzeigen
+          confirm:
+            aria_label: Kennwortbestätigung
+            label: Kennwortbestätigung
+          required: '*-erforderlich'
+        secret:
+          label: Neues Forem-Geheimnis
+          placeholder: Wie von Ihrem Forem-Host bereitgestellt
+        submit: Info
+      wizard:
+        meta:
+          title: Lets bekommen mit "Forem" begonnen
+        heading: Let' s starten Sie Ihre Forem-Reise
+        step_1: Erstellen Sie ein Konto. Es wird das erste Superadmin-Konto sein.
+        step_2_html: Sobald Sie sich unten anmelden, können Sie Ihre Community auf %{path} konfigurieren.
+        step_3: Es gibt viel, was Sie als Admin tun können, aber es gibt eine Lernkurve.
+        step_4: Bitte erreichen Sie das Forem-Team, wenn Sie sich unsicher sind!
+        step_5: "Für die Ermächtigung der Community \U0001F331"
+      tagline: Melden Sie sich an, um Ihre Erfahrungen anzupassen und sich einzubringen.
+      title:
+        text_html: <a href="/" class="c-link c-link--branded"> %{name}</a> ist eine Community von %{maybe_size} erstaunliche %{label}
+        size: ' %{num} '
+

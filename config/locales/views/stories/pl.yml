@@ -1,0 +1,25 @@
+pl:
+  views:
+    stories:
+      meta:
+        description_tagged: ' %{tag} treść w %{name}'
+        page: ' Strona %{page}'
+        rss: Kanał informacyjny RSS ( %{name})
+      heading: Wypowiedzi
+      discuss: '#discuss'
+      follow: Śledź
+      menu:
+        aria_left: nav-button-lewy
+        aria_right: nav-button-prawy
+      sort:
+        aria_label: Wyświetl wypowiedzi wg
+        aria_tagged: Wyświetl oznaczone wypowiedzi wg
+        relevant: Istotne
+        week: Tydzień
+        month: Miesiąc
+        year: Rok
+        infinity: Nieskończoność
+        latest: Najnowsze
+        signin_html: "\U0001F44B <a href=\"%{path}\">Zaloguj się</a> , aby posortować wypowiedzi według <strong>góry</strong> i <strong>najnowszego</strong>."
+        top: Do góry
+

@@ -1,0 +1,36 @@
+el:
+  views:
+    podcasts:
+      meta:
+        title: Podcasts
+        description: Αναζήτηση τεχνικών podcast για το  %{member}
+        og:
+          title: Podcast σε  %{community}
+      browse: Αναζήτηση.
+      heading: Podcasts
+      close: ×
+      form:
+        heading: Πρότεινε ένα Podcast
+        errors:
+          one: '1 σφάλμα κατά τη δημιουργία podcast:'
+          other: ' %{count} σφάλματα κατά τη δημιουργία podcast:'
+        owner: Είμαι ο ιδιοκτήτης αυτού του podcast
+        return: < επιστροφή σε podcasts
+        suggest: 'Πρόταση:'
+      list: Podcasts
+      listen: Πατήστε εδώ για λήψη/ακρόαση
+      source: 'Πηγή:'
+      statuses:
+        ssl_failed: Αποτυχία επαλήθευσης πιστοποιητικού SSL κατά την ανάκτηση της υπηρεσίας feed_url της podcast
+        unparsable: Το rss του Podcast δεν μπορούσε να αναλυθεί
+        unplayable: Αυτό το podcast μπορεί να μην είναι playable στο πρόγραμμα πλοήγησης
+        unreachable: Το στοιχείο feed_url της Podcast δεν είναι προσβάσιμο
+      speed: 1x
+      tag: Podcast ...
+      initializing: προετοιμασία ...
+      unsupported: Το πρόγραμμα πλοήγησης δεν υποστηρίζει το στοιχείο ήχου.
+      featured_shows: Επιλεγμένα σόου.
+      latest_episodes: 'Τελευταία επεισόδια:'
+      suggest_a_podcast: Πρότεινε ένα Podcast
+      view_all_podcasts: Προβολή όλων των podcast
+

@@ -1,0 +1,33 @@
+it:
+  mailers:
+    digest_mailer:
+      from: Digest
+      more_top_posts: più alti %{community} post
+      more_top_posts_based: più alti %{community} posti in base ai tuoi interessi
+      more_top_posts_from: più letture più alte dalla community
+      more_trending_posts: più trending %{community} post
+      more_trending_posts_picked: più trending %{community} post prelevati per te
+      other_posts: altri posti che potresti piacere
+      other_community_posts: altri post %{community} che ti potrebbero piacere
+      other_top_posts: altri post top %{community}
+      other_trending_posts: altri trending %{community} post
+    notify_mailer:
+      account_deleted: ' %{community} - Conferma Cancellazione Account'
+      deletion_requested: ' %{community} - Cancellazione Account richiesta'
+      trusted: Congrats! Ora sei un utente "attendibile" su %{community}!
+      moderator: 'Congrats! Sei il moderatore per # %{tag_name}'
+      new_follower: appena ti seguo su %{community}
+      new_mention: ' %{name} ti ha appena parlato nel loro %{tipo}'
+      org_deleted: ' %{community} - Organizzazione conferma eliminazione'
+      new_reply: ' %{name} ha risposto al tuo %{tipo}'
+      feedback: Grazie per il tuo report su %{community}
+      export: L'esportazione del tuo contenuto è pronta
+      unread_notifications:
+        one: "\U0001F525 Hai %{count} notifiche non lette su %{community}"
+        other: "\U0001F525 Hai %{count} notifiche non lette su %{community}"
+      new_badge: Hai appena ricevuto un badge
+      video_upload: Il tuo caricamento video è completo
+    verification_mailer:
+      from: ' %{community} Verifica Email <%{email}>'
+      verify_ownership: Verifica la tua %{community} Account Ownership
+

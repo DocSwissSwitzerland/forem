@@ -1,0 +1,28 @@
+es:
+  views:
+    editor:
+      meta:
+        title: Editar post
+      heading:
+        new: New Post
+      create: Crear post
+      close:
+        icon: Cierre
+        title: Cierre el editor
+      cover_image:
+        add: Cómo agregar una imagen de portada
+        change: Cambio
+      edit: Editar
+      modes: Ver modalidades de publicación
+      new_title: Nuevo post título aquí ...
+      preview: Vista previa
+      video:
+        progress:
+          heading: ⏳ ⏳ Video Transcoding In Progress ⏳
+          notice_1: Recibirás un correo electrónico cuando este proceso termine.
+          notice_2: Se trata de un post inédito ordinario. Añada el título/tags/body/etc y, a continuación, marque como publicado después de que el vídeo se haya terminado de procesar.
+        submit_image:
+          button: Enviar cambio
+          text: 'Vista previa de la imagen: '
+          placeholder: Nuevo URL de miniatura
+

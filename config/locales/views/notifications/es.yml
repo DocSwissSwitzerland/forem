@@ -1,0 +1,87 @@
+es:
+  views:
+    notifications:
+      meta:
+        description: Bandeja de entrada de notificaciones para %{community}
+        og:
+          title: Notificaciones- %{community}
+      heading: Notificaciones
+      badge:
+        heading_html: Ha recibido el distintivo %{badge}
+        awarded_html: "También obtiene %{credits} para utilizar para %{listings} si tiene algo que le gustaría promocionar. \U0001F389"
+        credits:
+          one: ' %{count} nuevos créditos'
+          other: ' %{count} nuevos créditos'
+        listings: Listados comunitarios
+        more: Más información sobre los listados
+        profile: Visite su perfil
+      broadcast:
+        visit_html: Visite %{settings} para gestionar sus notificaciones.
+        settings: Configuración
+      comment:
+        commented_html: ' %{user} ha comentado en %{title}'
+        first_html: ' %{user} ha escrito su primer comentario en %{title}'
+        first_reply: "¡Darles su primera respuesta! \U0001F389"
+        left_html: ' %{user} acaba de dejar un comentario en %{title}.'
+        replied_html: ' %{user} ha respondido a una hebra en %{title}'
+        report: Todas las reacciones negativas son 100% privadas. Si este comentario viola el código de conducta, por favor downvote/informe como inapropiado.
+        welcome_html: Puesto que son nuevos para la comunidad, ¿podría dejar una buena respuesta para ayudarles a sentirse bienvenidos? <strong>¡Gracias!</strong>
+      error:
+        subtitle: Se ha producido un error.
+        desc: Esto ha sido registrado y lo estamos rastreando.
+      follow:
+        and_html: ' %{first} y %{second} le han seguido.'
+        and_other_html:
+          one: ' %{first} y %{others} le han seguido.'
+          other: ' %{first} y %{others} le han seguido.'
+        others:
+          one: ' %{count} otros'
+          other: ' %{count} otros'
+        single_html: ' %{name} le ha seguido.'
+      load: Cargar más
+      mention:
+        article_html: ' %{user} le ha mencionado en un post %{if_org}'
+        comment_html: ' %{user} le ha mencionado en un comentario'
+        article_mobile: ' %{user} le ha mencionado en el post %{title}'
+        comment_mobile: ' %{user} le ha mencionado en un comentario en %{title}'
+        if_org_html: ' en %{org}'
+      milestone:
+        heading_html: Su post %{title} ha pasado %{type}!
+        check: Compruebe el panel de control
+        intro: "\U0001F389\U0001F389\U0001F389\U0001F389\U0001F389\U0001F389\U0001F389\U0001F389"
+        type:
+          View:
+            one: ' %{count} vistas'
+            other: ' %{count} vistas'
+          Reaction:
+            one: ' %{count} reacciones'
+            other: ' %{count} reacciones'
+      nav:
+        aria_label: Notificaciones
+        all: Todos
+        comments: Observaciones
+        posts: Puestos
+      new_post:
+        if_org_html: ' en %{org}'
+        verb_html: ' %{user} ha realizado un nuevo post %{if_org}'
+      reacted:
+        and_html: ' %{first} y %{last}'
+        and_other_html:
+          one: ' %{first} y %{count} otros'
+          other: ' %{first} y %{count} otros'
+        verb_html:
+          one: ' %{start} %{actors} ha reaccionado a %{title} con %{end} %{reactions}'
+          other: ' %{start} %{actors} ha reaccionado a %{title} con %{end} %{reactions}'
+        your:
+          article: su artículo
+          comment: tu comentario
+      settings: Configuración
+      tag:
+        heading: "Hey allí \U0001F44B"
+        add_html: Los moderadores han añadido la etiqueta <strong> %{tag}</strong> a su título %{title}. Mods fields this tag represented your article.
+        check_html: Compruebe %{other} que puede ser más apropiado
+        other: otras etiquetas populares
+        reason: 'Motivo de la acción:'
+        remove_html: Los moderadores han eliminado el código <strong> %{tag}</strong> del cargo %{title}. Ciertas etiquetas tienen directrices especiales de envío, y los mods necesitan ajustar las etiquetas para que se ajusten mejor a la comunidad.
+        support_html: "Gracias por ser parte de %{community}! %{email} \U0001F917"
+

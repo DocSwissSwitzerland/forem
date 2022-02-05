@@ -1,0 +1,146 @@
+nl:
+  views:
+    comments:
+      meta:
+        title_root: Discussie van %{title}
+        description: Een artikel uit de community
+        og:
+          title: Discussie van %{title}
+          title_rel: ' %{root}- %{site}'
+          title_root: '[Discussie] %{title}- %{site}'
+          description: ' %{site} Commentaar'
+      parent:
+        subtitle_html: ' %{start} Discussie op: %{end} %{title}'
+        metadata_html: ' %{name} %{on}'
+        date: ' op %{date}'
+        full: Volledige discussie
+        read: Volledige post lezen
+        view: Post bekijken
+        view_full:
+          one: Volledige discussie bekijken ( %{count} reactie)
+          other: Volledige discussie bekijken ( %{count} reacties)
+        reply_html: ' %{start} Antwoorden voor: %{end} %{title}'
+      delete:
+        heading: Weet u zeker dat u deze reactie wilt wissen?
+        desc_html: U kunt deze actie niet ongedaan maken, misschien wilt u in plaats daarvan slechts %{action}?
+        action: Bewerken
+        submit: Wissen
+        edit: Bewerken
+        cancel: Afwijzen
+      collapse: Samenvouwen
+      edit: Commentaar bewerken
+      edited:
+        text_html: '&bull; bewerkt %{on}'
+        on_html: op %{date}
+      expand: Uitvouwen
+      hidden:
+        text_html: Sommige reacties zijn verborgen door de auteur van de post- %{info}
+        info: meer informatie
+      hider:
+        description_html: Weet u zeker dat u deze reactie wilt verbergen? Het wordt verborgen in uw post, maar zal nog steeds zichtbaar zijn via het commentaar %{permalink}.
+        hide_child: Onderliggende reacties ook verbergen
+        note_html: Voor verdere acties kunt u overwegen deze persoon te blokkeren en/of %{reporting}
+        permalink: permalink
+        reporting: melding van misbruik
+        submit: Bevestigen
+      locked: De discussie is afgesloten. Er kunnen geen nieuwe reacties worden toegevoegd.
+      orphan:
+        deleted: '[Commentaar van een verwijderde post]'
+      re:
+        text_html: ' %{re} %{titel}'
+        re: 'Betreft: '
+      settings:
+        meta:
+          title: Commentinstellingen
+        heading: Commentinstellingen
+        state:
+          show:
+            subtitle: Threadmeldingen afbeelden
+            desc: U ontvangt alle berichten voor deze reactie en alle opmerkingen in deze keten.
+          mute:
+            subtitle: Threadmeldingen worden gemuteerd
+            desc: Alle berichten voor deze reactie en eventuele opmerkingen in de thread worden momenteel inactief gemaakt.
+        subscribe:
+          subtitle: Abonnement
+          desc: U bent nog steeds geabonend op alle reacties in de bredere thread, wat betekent dat u nog steeds meldingen ontvangt voor antwoorden op deze reactie.
+          mute: Meldingmeldingen
+          unmute: Niet-demper-meldingen
+      quality:
+        low: Opmerking gemarkeerd als lage kwaliteit/niet-constructief door de gemeenschap.
+        conduct: Gedragscode bekijken
+        hidden:
+          icon: Info
+          text:
+            visible_in_permalink: Commentaar verborgen door post-auteur-thread alleen zichtbaar in deze permalink
+            accessible_via_permalink: Commentaar verborgen door post-auteur-thread alleen toegankelijk via permalink
+      write:
+        errors:
+          one: '1 fout bij het opslaan van deze reactie:'
+          other: ' %{count} fouten hebben deze reactie verboden om te worden opgeslagen:'
+        field:
+          aria_label: Commentaar toevoegen aan de discussie
+          placeholder: Toevoegen aan de discussie
+          submit: Uploaden
+          templates: Sjablonen
+          upload: Afbeelding uploaden
+          use: Een antwoordsjabloon gebruiken
+          guide:
+            title: Markdown-handleiding
+            icon: Editorhandleiding
+        template:
+          article: Deze post wordt geleverd met een commenzsjabloon
+          create:
+            subtitle: Sjabloon maken
+            desc: Met sjablonen kunt u snel FAQ's of snippets voor hergebruik opslaan.
+          moderator: Moderator
+          personal: Persoonlijk
+        submit: Verzenden
+        preview: Voorbeeld
+        cancel: Afwijzen
+      menu:
+        aria_label: Vervolgkeuzemenu in-/uitschakelen
+        icon: Vervolgkeuzemenu
+        copy:
+          aria_label: Link naar %{user}'s reactie kopiëren
+          text: Link kopiëren
+        settings:
+          aria_label: Instellingen voor commentaar van %{user}
+        action:
+          aria_label: " %{action} %{user}'s reactie"
+          hide: Verbergen
+          unhide: Verbergen
+          hide_text: Verbergen
+          unhide_text: Verbergen
+        moderate:
+          aria_label: Matig %{user}'s reactie
+        report:
+          aria_label: Rapport %{user}'s commentaar als beledigend of strijdig met onze gedragscode en/of voorwaarden en voorwaarden
+      footer:
+        heart:
+          title: hart
+          icon: 'Zoals commentaar: '
+          count_html: ' %{num} %{likes}'
+          text: Zoals
+        reply:
+          aria_label: Antwoord op commentaar ...
+          icon: Knop Commentaar
+          done: Beantwoord
+          text: Beantwoorden
+          placeholder: Beantwoorden ...
+        thread:
+          icon: Thread
+          text: Thread
+        view:
+          icon: Knop Bekijken
+          text: Bekijken
+      count:
+        one: ' %{count} reactie'
+        other: ' %{count} reacties'
+      empty: Nieuw
+      add: Commentaar toevoegen
+      summary:
+        count_html:
+          one: ' %{count} %{start} reactie %{end}'
+          other: ' %{count} %{start} reacties %{end}'
+        title: Commentaar
+

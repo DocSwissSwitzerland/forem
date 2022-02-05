@@ -1,0 +1,89 @@
+de:
+  views:
+    articles:
+      meta:
+        description: Ein Artikel aus der Community
+      actions:
+        aria_label: Artikel Maßnahmen
+      comments:
+        aria_label: Kommentare für Post %{title} ( %{num})
+        subtitle_html: Diskussion in %{num}
+        num: ( %{num})
+        subscribe: Subskribieren
+      conduct:
+        aria_label: Verhaltenssteuerungen
+        code: Code of Conduct
+        report: Missbrauch melden
+      delete:
+        heading: Sind Sie sicher, dass Sie diesen Artikel löschen möchten?
+        desc:
+          text_html: Sie können diese Aktion nicht rückgängig machen, möchten Sie stattdessen nur %{action} verwenden?
+          edit: Bearbeiten
+          unpublish: Nicht veröffentlichen
+        action:
+          button: Löschen
+          cancel: Entlassung
+          edit: Bearbeiten
+          unpublish: Nicht veröffentlichen
+      lock:
+        meta:
+          title: Diskussionssperre bestätigen
+        heading: Sind Sie sicher, dass Sie die Diskussion über diesen Beitrag sperren möchten?
+        desc_html: Die Benutzer werden keine neuen Kommentare hinzufügen können. Dadurch werden vorhandene Kommentare <em class="fw-bold">nicht</em> entfernt. Sie können die Diskussion jederzeit entsperren, damit die Benutzer Kommentare wieder abgeben können.
+        cancel: Abbrechen
+        notes:
+          label: Hinweise (optional)-Dies ist nur für Sie und Administratoren sichtbar
+          placeholder: Mehr Details dazu, warum Sie die Diskussion gesperrt haben.
+        reason:
+          label: Grund für die Sperrung der Diskussion (optional)-dies wird öffentlich angezeigt
+          placeholder: Der Grund, warum Sie diese Diskussion sperren.
+        submit: Diskussion sperren
+      preview_discuss_html:
+        zero: Neue Diskussion!
+        one: '#diskutieren <img src="%{image}" /> %{count}'
+        other: '#diskutieren <img src="%{image}" /> %{count}'
+      save:
+        title: In Leseliste speichern
+        aria_label: In Leseliste speichern
+        initial: Speichern
+        success: Gespeichert
+      series:
+        subtitle: ' %{slug} ( %{size})'
+        size:
+          one: ' %{count} Teileserie'
+          other: ' %{count} Teileserie'
+        published: Veröffentlicht in %{date}
+        inbetween:
+          num: '...'
+          text:
+            one: Ein weiterer Teil ...
+            other: ' %{count} weitere Teile ...'
+          title: Mehr anzeigen
+      unlock:
+        meta:
+          title: Entsperren der Diskussion bestätigen
+        heading: Sind Sie sicher, dass Sie die Diskussion über diesen Beitrag entsperren möchten?
+        desc: Die Benutzer werden in der Lage sein, neue Kommentare hinzuzufügen. Sie können die Diskussion jederzeit sperren, um zu verhindern, dass Benutzer Kommentare wieder verlassen.
+        cancel: Abbrechen
+        notes: 'Anmerkungen aus dem Zeitpunkt, an dem diese Diskussion gesperrt wurde (nur für Sie und Administratoren sichtbar):'
+        reason: 'Grund, warum diese Diskussion gesperrt wurde (öffentlich sichtbar):'
+        submit: Diskussion entsperren
+      unpublished:
+        subtitle: Unveröffentlichte Post.
+        text: ' Diese URL ist öffentlich, aber geheim, so dass sie nach eigenem Ermessen geteilt wird.'
+        edit: Zum Bearbeiten klicken
+      co_authors_html: mit %{names}
+      crossposted:
+        text_html: Ursprünglich veröffentlicht bei %{url} %{on}
+        on_html: am %{date}
+      edited: Aktualisiert am %{date}
+      edited_html: Aktualisiert am %{date}
+      for_org_html: ' %{start} für %{end} %{org}'
+      missing: Artikel Nicht Mehr Verfügbar
+      posted_html: Veröffentlicht unter %{date}
+      read_next: Weiterlesen
+      reading_time:
+        one: 1 min lesen
+        other: ' %{count} min gelesen'
+      right_nav: Autorendetails
+

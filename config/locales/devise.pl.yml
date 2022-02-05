@@ -1,0 +1,64 @@
+pl:
+  devise:
+    confirmations:
+      confirmed: Twój adres e-mail został pomyślnie potwierdzony.
+      send_instructions: Otrzymasz e-mail z instrukcją, jak potwierdzić swój adres e-mail w ciągu kilku minut.
+      send_paranoid_instructions: Jeśli Twój adres e-mail istnieje w naszej bazie danych, otrzymasz e-mail z instrukcją, jak potwierdzić swój adres e-mail w ciągu kilku minut.
+    failure:
+      already_authenticated: Użytkownik jest już zalogowany.
+      inactive: Konto użytkownika jeszcze nie zostało aktywowane.
+      invalid: Niepoprawne %{authentication_keys} lub hasło.
+      last_attempt: Masz jeszcze jedną próbę, zanim konto zostanie zablokowane.
+      locked: Konto jest zablokowane.
+      not_found_in_database: Niepoprawne %{authentication_keys} lub hasło.
+      timeout: Sesja utraciła ważność. Zaloguj się ponownie, aby kontynuować.
+      unauthenticated: Przed kontynuowaniem należy zalogować się lub zapisać się.
+      unconfirmed: Przed kontynuowaniem musisz potwierdzić swój adres e-mail.
+    mailer:
+      confirmation_instructions:
+        subject: Instrukcje dotyczące potwierdzenia
+      email_changed:
+        subject: Zmiana adresu e-mail
+      password_change:
+        subject: Hasło zostało zmienione
+      reset_password_instructions:
+        subject: Resetuj instrukcje dotyczące hasła
+      unlock_instructions:
+        subject: Odblokuj instrukcje
+    omniauth_callbacks:
+      failure: Nie można uwierzytelnić użytkownika z %{kind}, ponieważ " %{reason}".
+      success: Pomyślnie uwierzytelniono przy użyciu konta %{kind}.
+    passwords:
+      no_token: Nie można uzyskać dostępu do tej strony bez wyzerowania wiadomości e-mail z resetem hasła. Jeśli użytkownik pochodzi z adresu e-mail resetowania hasła, upewnij się, że został użyty pełny adres URL.
+      send_instructions: Otrzymasz e-mail z instrukcjami, jak zresetować hasło w ciągu kilku minut.
+      send_paranoid_instructions: Jeśli Twój adres e-mail istnieje w naszej bazie danych, w ciągu kilku minut otrzymasz link do odzyskiwania hasła na Twój adres e-mail.
+      updated: Hasło zostało pomyślnie zmienione. Użytkownik jest teraz zalogowany.
+      updated_not_active: Hasło zostało pomyślnie zmienione.
+    registrations:
+      destroyed: Bye! Twoje konto zostało pomyślnie anulowane. Mamy nadzieję, że zobaczymy się wkrótce.
+      signed_up: Witamy! Użytkownik został pomyślnie podpisany.
+      signed_up_but_inactive: Użytkownik został pomyślnie podpisany. Nie mogliśmy jednak wpisać się do Ciebie, ponieważ Twoje konto nie jest jeszcze aktywowane.
+      signed_up_but_locked: Użytkownik został pomyślnie podpisany. Nie mogliśmy jednak wpisać się do Ciebie, ponieważ Twoje konto jest zablokowane.
+      signed_up_but_unconfirmed: Wiadomość z odnośnym potwierdzeniem została wysłana na Twój adres e-mail. Aby aktywować konto, postępuj zgodnie z odsyłaczem.
+      update_needs_confirmation: Konto zostało pomyślnie zaktualizowane, ale musimy zweryfikować swój nowy adres e-mail. Sprawdź swój e-mail i postępuj zgodnie z linkiem potwierdzania, aby potwierdzić swój nowy adres e-mail.
+      updated: Konto zostało pomyślnie zaktualizowane.
+      updated_but_not_signed_in: Konto zostało pomyślnie zaktualizowane, ale ponieważ hasło zostało zmienione, należy zalogować się ponownie.
+    sessions:
+      already_signed_out: Pomyślnie wypisano.
+      signed_in: Podpisano pomyślnie.
+      signed_out: Pomyślnie wypisano.
+    unlocks:
+      send_instructions: Otrzymasz e-mail z instrukcją, jak odblokować konto w ciągu kilku minut.
+      send_paranoid_instructions: Jeśli Twoje konto istnieje, otrzymasz e-mail z instrukcjami, jak odblokować go w ciągu kilku minut.
+      unlocked: Konto zostało pomyślnie odblokowane. Zaloguj się, aby kontynuować.
+  errors:
+    messages:
+      already_confirmed: został już potwierdzony, proszę spróbować się wpisywać
+      confirmation_period_expired: wymaga potwierdzenia w ciągu %{period}, prosimy o zgłoszenie nowego
+      expired: utraciła ważność, prosimy o zgłoszenie nowego
+      not_found: nie znaleziono
+      not_locked: nie została zablokowana
+      not_saved:
+        one: '1 błąd zabroniony, aby ten %{zasób} został zapisany:'
+        other: 'Liczba błędów ( %{count}) zabronionych ( %{resource}) do zapisania:'
+

@@ -1,0 +1,80 @@
+sv:
+  views:
+    listings:
+      meta:
+        description: ' %{community} Listning'
+      heading: Listningar
+      back: Bakåt
+      delete:
+        subtitle: Är du säker på att du vill ta bort den här listan?
+        description:
+          text_html: Du kan inte ångra den här åtgärden. Du kanske bara vill ha %{action} i stället?
+          edit: redigera
+          unpublish: avpublicera
+        edit: Redigera
+        submit: Radera
+        unpublish: Avpublicera
+      edit:
+        heading: Redigera listning
+        bump:
+          subtitle: Bläng ditt upptagande
+          button: Bump-lista
+          description: Du kan göra en upptagande på listan för samma pris som den ursprungliga listan
+          last: 'Senast publicerat / Bumpat: %{date}'
+        notice: Du kan endast ändra namn / märke / etiketter för utkast eller inom de första 24 timmarna av upptagande på förteckningen eller upptagningen.
+        not_published:
+          text_html: Den här listan är %{not} publicerad.
+          aside_html: Den här listan är %{not} publicerad
+          not: inte
+        publish: Publicera listning
+        unpublish: Avpublicera lista
+        update: Uppdatera lista
+        update_draft: Uppdatera utkast
+      to_edit: Redigera
+      errors:
+        one: '1 fel. Det är inte tillåtet att spara den här listan:'
+        other: ' %{count} fel har förbjudit den här listan från att sparas:'
+      expired: Listan har upphört att gälla.
+      form:
+        body_markdown:
+          description: Max. 400 tecken max, 12 radbrytning max, inga bilder tillåtna, * markeringar uppmuntras *. Ta med en kontaktmetod om det behövs.
+          placeholder: -...
+        category:
+          label: Kategori
+          placeholder: Den gemensamma fiskeripolitiken (1 kredit)
+          summary: Kategoridetaljer / regler
+        expiry:
+          description: Om så är tillämpligt på tidskänsliga händelser, tidsfrister osv.
+        location:
+          description: Max 32 tecken, vanlig text
+          label: Plats (om tillämpligt för händelser, etc.)
+          placeholder: New York
+        no_credit: Du behöver minst en kreditering för att skapa en lista.
+        organization:
+          description: Om du vill ha en organisation för en organisations räkning, lägger du till företagskrediterna.
+          none: Ingen-
+        publish: Publicera listning
+        purchase: Inköpspoäng
+        save: Spara utkast
+        save_notice: Du kommer inte att debiteras krediter för att spara ett utkast.
+        tags:
+          placeholder: Lägg till upp till 8 taggar ...
+        title:
+          placeholder: Högst 128 tecken, vanlig text
+      nav:
+        aria_label: Listningar
+        create: Skapa
+        manage: Hantera
+      new:
+        meta:
+          title: Ny listning
+        heading: Skapa en gemenskapslistning
+        buy: Köp mer
+        disclaimer:
+          subtitle: Ansvarsfrihet
+          description1: ' %{community} admins kan ändra taggar och kategorier för att säkerställa att de är korrekta. Vi kan också ta ner och återbetala olämpliga förteckningar.'
+          description2: Listingarna upphör att gälla 30 dagar efter det att de har publicerats eller "gropiat".
+        organization: Företagspoäng
+        personal: Personliga krediter
+      preview_icon: Logotyp
+

@@ -1,0 +1,28 @@
+el:
+  views:
+    editor:
+      meta:
+        title: Τροποποίηση Post
+      heading:
+        new: New Post
+      create: Δημιουργία Post
+      close:
+        icon: Κλείσιμο
+        title: 'Κλείσιμο σύνταξης:'
+      cover_image:
+        add: Προσθήκη εικόνας κάλυψης
+        change: "' Αλλαγή"
+      edit: 'Τροποποίηση:'
+      modes: Προβολή κατάστασης μετά.
+      new_title: Νέος τίτλος εδώ ...
+      preview: 'Προεπισκόπηση:'
+      video:
+        progress:
+          heading: ⏳ Video Transcoding Σε Εξέλιξη ⏳
+          notice_1: Θα λάβετε ένα μήνυμα email όταν ολοκληρωθεί αυτή η διαδικασία.
+          notice_2: Αυτή είναι μια συνηθισμένη αδημοσίευτη θέση. Προσθέστε τον τίτλο/tags/body/etc, και στη συνέχεια το σήμα όπως δημοσιεύτηκε μετά το βίντεο γίνεται επεξεργασία.
+        submit_image:
+          button: 'Αλλαγή υποβολής:'
+          text: 'Προεπισκόπηση URL εικόνας: '
+          placeholder: Νέα διεύθυνση URL μικρογραφίας
+

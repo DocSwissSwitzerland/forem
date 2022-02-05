@@ -1,0 +1,25 @@
+it:
+  views:
+    stories:
+      meta:
+        description_tagged: ' %{tag} contenuto su %{name}'
+        page: ' Pagina %{page}'
+        rss: ' %{name} Feed RSS'
+      heading: Posti
+      discuss: '#discuss'
+      follow: Segui
+      menu:
+        aria_left: nav - pulsante - sinistro
+        aria_right: nav - pulsante - destra
+      sort:
+        aria_label: Visualizza post per
+        aria_tagged: Visualizza i posti contrassegnati da
+        relevant: Pertinente
+        week: Settimana
+        month: Mese
+        year: Anno
+        infinity: Infinito
+        latest: Ultimo
+        signin_html: "\U0001F44B <a href=\"%{path}\">Sign in</a> per i posti di ordinamento delle abilità da parte di <strong>top</strong> e <strong>più recente</strong>."
+        top: Top
+

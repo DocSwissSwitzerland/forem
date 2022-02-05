@@ -1,0 +1,122 @@
+pl:
+  views:
+    moderations:
+      heading: Centrum modyfikacji
+      actions:
+        meta:
+          title: Moderowanie %{title}
+          title2: '[Umiarkowany] %{title}'
+        heading: Umiarkowany wpis
+        subtitle: Oceń jakość tego postu
+        abusive:
+          subtitle_html: Flaga %{user} as Abusive
+          desc_html: Jest to odpowiednik flagowania <b>wszystkich</b> artykułów tego użytkownika i obniży ich wyniki.
+        adjust:
+          heading: Dostosuj znaczniki
+          subtitle: Dodaj lub usuń znaczniki
+          aria_label: Otwórz sekcję dopasowania znaczników
+          icon: Dostosuj znaczniki
+          add: Dodaj znacznik
+          add_placeholder: Dodaj znacznik
+          reason: Przyczyna korekty znaczników
+          remove: Usuń znacznik
+          submit: Wyślij
+        approve:
+          add: Oznacz jako zatwierdzone
+          remove: Usuń zatwierdzenie
+        checkmark: Znacznik wyboru
+        close: Zamknij panel działań moderatora
+        delete:
+          subtitle: Usuń ten komentarz
+          button: Usuń komentarz
+        edit:
+          post: Edytuj wpis
+          article_admin: 'Administrator: Artykuł'
+          comment_admin: 'Administrator: komentarz'
+          user_admin: 'Administrator: Użytkownik'
+          resource_admin: 'ResourceAdmin: Artykuł'
+        errors:
+          one: '1 błąd zabroniony, aby ten blok był składowany:'
+          other: 'Liczba błędów: %{count} zabronionych, aby ten blok został zapisany:'
+        experience:
+          heading: Ustaw poziom doświadczenia
+          heading2: Poziom doświadczenia wypowiedzi
+          subtitle: Kuruj najbardziej odpowiednią publiczność dla tego posta
+          aria_label: Otwórz sekcję poziomu doświadczenia
+          icon: Książka
+          desc_html: Kto <em>może</em> znaleźć ten post najcenniejszy, w oparciu o ogólny poziom doświadczenia?
+          from: ' %{lvl}- '
+          level:
+            Advanced: Zaawansowane
+            Beginner: Początkujący
+            Expert: Ekspert
+            Mid-level: Poziom średniej
+            Novice: Początkujący
+        flag: Oznacz użytkownika
+        how: Jak to działa?
+        hidden:
+          subtitle: Ukryte komentarze
+          by: Komentarz użytkownika %{user}
+        hint:
+          subtitle: Wszystkie negatywne reakcje są prywatne.
+          desc_html: >-
+            Użyj opcji <b>Wysoka jakość</b> , aby przenieść tę treść do góry z dowolnej przyczyny (jakość, użyteczność itp.).
+
+            <br /> Użyj opcji <b>niskiej jakości</b> , aby przenieść tę treść w dół z dowolnej przyczyny (jakość, użyteczność itp.).
+
+            <br /> Użyj opcji <b>Flaga do administratorów</b> w celu uzyskania kodu naruszeń zasad (molestowanie, bycie jerkiem, spamem itp.).
+        other: Inne rzeczy, które możesz zrobić
+        add_reaction: Dodaj reakcję
+        suspicious: Podejrzane
+        tag:
+          subtitle: Korekty znaczników
+          add: Dodaj
+          added_html: <b>Obecnie dodany znacznik:</b>  %{tag}
+          live_html: <b>Bieżące aktywne znaczniki:</b>  %{tags}
+          reason: Powód do korekty (Be super kind)-tylko powód jest potrzebny, zgłoszenie zajmie się resztą.
+          remove: Usuń
+          removed_html: <b>Obecnie usunięty znacznik:</b>  %{tag}
+          select: Wybierz znacznik
+          submit: Wprowadź korektę znacznika
+          tag_name: Nazwa znacznika
+          undo:
+            button: ×
+            confirm: Czy na pewno chcesz cofnąć %{type} znacznika %{tag}?
+            type:
+              addition: dodawanie
+              removal: usunięcie
+        thumb_down: Kciuk w dół
+        thumb_up: Kciuk w górę
+        toggle: Przełącz sekcję
+        unpublish: Opublikuj artykuł
+        vote_down: Niska jakość
+        flag_to_admins: Flaga do administratorów
+        vote_up: Wysoka jakość
+      all: Wszystkie tematy
+      aside:
+        all: Wszystkie tematy
+        code_of_conduct: Kodeks postępowania
+        external: Odsyłacz zewnętrzny
+        feedback:
+          subtitle: Masz opinię, aby poprawić swoje doświadczenie Mod?
+          description: 'E-mail: %{email}!'
+        hello: "Witaj! \U0001F44B"
+        thanks: Dziękujemy za pomoc w zatrzymaniu %{community} safe! ❤️
+        inbox: Skrzynka pocztowa
+        resources: Zasoby
+        tag: Podręcznik moderowania znaczników
+        terms_and_conditions: Warunki
+        trusted: Podręcznik użytkownika zaufanego
+      author: Autor
+      date: Data
+      notice:
+        subtitle: ' %{społeczności} Mods'
+        desc1_html: Okresowo przyznajemy niektórym członkom społeczności %{community} zwiększoną liczbę uprawnień ułatwiających moderowanie społeczności.
+        desc2_html: Pobierz nasz %{code} i odczytaj przez nasz %{trusted} i %{tag}.
+        desc3_html: Jeśli chcesz pomóc nam jako zaufany użytkownik lub znacznik mod, napisz do nas na adres %{email} i daj nam znać, jaką rolę Cię interesujesz i dlaczego. Jeśli to moderacja tagów, powiedz nam, na jakich znacznikach chciałbyś się moderować.
+        desc4: P.S. Użytkownik nie jest obecnie zalogowany.
+        code_of_conduct: Kodeks postępowania
+        tag: Podręcznik moderowania znaczników
+        trusted: Podręcznik użytkownika zaufanego
+      post: Publikuj
+

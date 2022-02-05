@@ -1,0 +1,5 @@
+it:
+  decorators:
+    article_decorator:
+      tagged_with: ' Etichettato con %{cached_tag_list}.'
+

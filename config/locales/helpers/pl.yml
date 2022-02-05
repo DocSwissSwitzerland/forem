@@ -1,0 +1,240 @@
+pl:
+  helpers:
+    label:
+      listing:
+        body_markdown: Obarczanie treści
+        expires_at: Niestandardowa data utraty ważności
+        location: Położenie
+        organization_id: Publikuj w organizacji
+        tag_list: Znaczniki
+        title: Tytuł
+      organization:
+        name: Nazwa
+        slug: Nazwa użytkownika
+        profile_image: Obraz profilu
+        nav_image: Logo dla motywów lekkich
+        dark_nav_image: Logo dla ciemnych motywów
+        twitter_username: Nazwa użytkownika Twitter
+        github_username: Nazwa użytkownika gitHub
+        url: adres URL serwisu WWW
+        tag_line: Linia znaczników
+        summary: Podsumowanie
+        location: Położenie
+        email: Obsługa poczty elektronicznej
+        company_size: Wielkość organizacji
+        story: Nasza historia
+        tech_stack: Nasz stos
+        cta_body_markdown: Tekst treści
+        cta_button_text: Tekst odsyłacza
+        cta_button_url: Adres URL odsyłacza
+        proof: Dowód
+      podcast:
+        android_url: Adres URL Android
+        description: Opis
+        feed_url: Adres URL kanału
+        image: Obraz
+        itunes_url: Adres URL itunes
+        main_color_hex: Główny kolor szesnastkowy
+        overcast_url: Adres URL nadcastu
+        pattern_image: Obraz wzorcowy
+        slug: Slug
+        soundcloud_url: Adres URL chmury dźwiękowej
+        title: Tytuł
+        twitter_username: Nazwa użytkownika Twitter
+        website_url: adres URL serwisu WWW
+      response_template:
+        title: Tytuł
+        content: Treść komentarza (Markdown)
+      user:
+        name: Nazwa
+        email: Adres e-mail
+        username: Nazwa użytkownika
+        profile_image: Obraz profilu
+      users_notification_setting:
+        email_newsletter: Wysyłaj mi cotygodniowe wiadomości e-mail
+        email_digest_periodic: Wyślij mi okresowe strawienie najważniejszych postów z moich tagów
+        email_membership_newsletter: Wyślij mi podtrzymywanie członkostwa w newsletterach
+        email_tag_mod_newsletter: Wyślij mi tag moderator newsletter e-maile
+        email_community_mod_newsletter: Wyślij mi społeczność moderator newsletter e-maile
+        email_comment_notifications: Wyślij mi wiadomość e-mail, gdy ktoś odpowie na mnie w wątku komentarza
+        email_follower_notifications: Wyślij mi wiadomość e-mail, gdy ktoś nowy podąża za mną
+        email_mention_notifications: Wyślij mi maila, gdy ktoś mnie wspomina
+        email_badge_notifications: Wyślij mi wiadomość e-mail, gdy otrzymam odznakę
+        email_unread_notifications: Wyślij mi okazjonalne przypomnienia, że mam nieprzeczytane powiadomienia o %{community}
+        mobile_mention_notifications: Wyślij mi powiadomienie, gdy ktoś mnie wspomni.
+        mobile_comment_notifications: Wyślij mi powiadomienie push, gdy ktoś odpowiada na mnie w wątku komentarza
+        welcome_notifications: Wyślij mi sporadyczne wskazówki, jak zwiększyć moje doświadczenie %{community}
+        reaction_notifications: Wysyłaj powiadomienia, gdy ktoś reaguje na moje komentarze lub wypowiedzi
+        mod_roundrobin_notifications: Wyślij mi okazjonalne społeczności-powiadomienia mod.
+      users_setting:
+        feed_url: Adres URL kanału informacyjnego RSS
+    placeholder:
+      organization:
+        name: Acme Inc.
+        slug: acmeinc
+        url: https://yoursite.com
+        location: Halifax, Nowa Szkocja
+        email: mail@example.com
+        company_size: '...'
+        story: '...'
+        tech_stack: '...'
+        cta_body_markdown: '...'
+        cta_button_text: Odwiedź serwis Acme
+        cta_button_url: https://example.com
+        proof: '...'
+      response_template:
+        title: '...'
+      user:
+        name: John Doe
+        email: john.doe@example.com
+        username: johndoe
+        feed_url: https://yoursite.com/feed
+    application_helper:
+      app_logo: Logo aplikacji
+      follow:
+        aria_label:
+          Organization: 'Obserwuj organizację: %{name}'
+          Tag: 'Znacznik śledzenia: %{name}'
+          User: 'Śledź użytkownika: %{name}'
+          default: 'Śledź %{type}: %{name}'
+        text:
+          Organization: Śledź
+          Tag: Śledź
+          User: Śledź
+          default: Śledź
+      required: Wymagane
+      subtitle:
+        week: Top postów w tym tygodniu
+        month: Pierwsze posty w tym miesiącu
+        year: Najważniejsze wypowiedzi w tym roku
+        infinity: Wszystkie posty
+        latest: Najnowsze wypowiedzi
+      title_text: ' %{title}- %{timeframe}'
+    articles_helper:
+      logo: ' %{service_name} logo'
+      most_comments: Najwięcej komentarzy
+      most_reactions: Większość reakcji
+      most_views: Większość widoków
+      recently_created: Ostatnio utworzone
+      recently_published: Ostatnio opublikowane
+    authentication_helper:
+      any_of_those: dowolne z tych
+      email_password: Adres e-mail i hasło
+      reminder: 'Przypomnienie: użyłeś %{method} w celu uwierzytelnienia konta, więc użyj %{dem}, aby zalogować się, jeśli zostanie wyświetlone zapytanie.'
+      that: that
+      invite_only: Nie można tego zrobić, dopóki nie wyłączy się trybu tylko zapraszania
+    comments_helper:
+      ama: Ama
+      ask_me_anything: Zapytaj mnie o cokolwiek
+      author: Autor
+      like: Podobne
+      nbsp_likes_html:
+        one: '&nbsp; podobne'
+        other: '&nbsp; polubienia'
+    feedback_messages_helper:
+      offender:
+        body: >
+          Witaj,
+
+
+          Zwrócono nam uwagę na to, że naruszyłeś %{community} Kodeks postępowania i/lub warunki korzystania.
+
+
+          Jeśli to zachowanie będzie kontynuowane, może być konieczne zawieszenie konta użytkownika %{community}.
+
+
+          Jeśli uważasz, że popełniono błąd, odpowiesz na tę wiadomość, a my przyjrzymy się innemu.
+
+
+          Zespół %{community}
+        subject: ' %{community}-kod naruszenia zachowania'
+      reporter:
+        body: >
+          Witam tam, Dziękuję za oznaczanie treści, które mogą naruszać %{community} Kodeks postępowania i/lub nasze Warunki korzystania. Zajmiemy się pańskiego sprawozdania i podejmiemy odpowiednie działania.
+
+          działanie.
+
+          Doceniamy Twoją pomoc, jak pracujemy, aby wspierać pozytywne i integracyjne środowisko dla wszystkich! %{community} Zespół
+        subject: Raport %{community}
+      affected:
+        body: >
+          Witam tam,
+
+
+          Zauważyliśmy kilka komentarzy (dokonanych przez innych) na Twojej wypowiedzi, które naruszają %{community} Kodeks postępowania i/lub nasze Warunki Używania. Mamy zerową tolerancję na takie zachowanie i podejmujemy odpowiednie działania.
+
+
+          Dzięki za bycie wspaniałym, i proszę nie wahaj się wysłać do nas z wszelkimi pytaniami! Z zadowoleniem przyjmujemy wszelkie opinie i pomysły, które kontynuujemy w celu wspierania społeczności otwartej i integracyjnych.
+
+
+          Zespół %{community}
+        subject: Powiadomienie uprzejmoce z %{community}
+    listing_helper:
+      option:
+        one: ' %{cl_name} ( %{count} Kredyt)'
+        other: ' %{cl_name} ( %{count} Kredytów)'
+    organization_helper:
+      option: ' %{org_name} ( %{unspędził})'
+    rate_limit_checker_helper:
+      day:
+        one: dzień
+        other: dni
+      general: Ile %{thing} może utworzyć nowy element ( %{timeframe} lub mniej) w ciągu 5-minutowego okresu?
+      published:
+        title: Ogranicz liczbę utworzonych wypowiedzi
+        description: Ile postów może utworzyć ktoś w ciągu 30 sekund?
+      antispam:
+        title: Ogranicz liczbę postów utworzonych przez nowego członka
+      update:
+        title: Ogranicz liczbę aktualizacji do wypowiedzi
+        description: Ile aktualizacji może dokonać ktoś w ciągu 30 sekund? Aktualizuj dokumenty interfejsu API po zmianie.
+      upload:
+        title: Ogranicz liczbę przesłanych obrazów
+        description: Ile obrazów może przesłać ktoś w ciągu 30 sekund?
+      user:
+        title: Ogranicz liczbę zmian, jakie ktoś może wprowadzić na swoje konto
+        description: Ile zmian może dokonać ktoś na swoim koncie użytkownika w ciągu 30 sekund?
+      follow:
+        title: Ograniczenie liczby wyznawców ktoś może śledzić codziennie
+        description: Ilu ludzi może za dzień iść za dzień?
+      reaction:
+        title: Ogranicz liczbę reakcji na wypowiedzię lub komentarz
+        description: Ile razy ktoś może reagować na post lub komentarz w ciągu jakichś 30 sekund?
+      feedback:
+        title: Ograniczenie liczby przypadków, w których ktoś może zgłosić nadużycie
+        description: Ile razy ktoś może zgłosić nadużycie w ciągu 5 minut?
+      comment:
+        title: Ogranicz liczbę utworzonych komentarzy
+        description: Ile komentarzy może utworzyć ktoś w ciągu 30 sekund?
+      comment_antispam:
+        title: Ogranicz liczbę komentarzy utworzonych przez nowego członka
+      mention:
+        title: Ogranicz liczbę @-wzmianek w poście lub komentarzu
+        description: Ile razy ktoś @-wspomina innych użytkowników w wypowiedziach lub komentarzach?
+      listing:
+        title: Ogranicz liczbę utworzonych listingów
+        description: Jak wiele listingów może ktoś stworzyć w ciągu 1 minuty?
+      organization:
+        title: Ogranicz liczbę utworzonych organizacji
+        description: Ile organizacji może utworzyć ktoś w ciągu 5 minut?
+      subscription:
+        title: Ogranicz liczbę przypadków, w których ktoś może zasubskrybować znacznik płynny listy adresowej
+        description: Ile razy ktoś może zapisać się na listę mailingową w ciągu 30 sekund?
+      recipient:
+        title: Ogranicz liczbę wiadomości e-mail, które wysyłamy
+        description: Ile e-maili możemy wysłać do kogoś w ciągu 2 minut?
+      confirmation:
+        title: Ogranicz liczbę wiadomości e-mail z potwierdzeniem wysyłamy
+        description: Ile razy możemy wysłać wiadomość e-mail z potwierdzeniem do kogoś w ciągu 2 minut?
+      thing:
+        posts: wypowiedzi
+        comments: komentarze
+    settings_helper:
+      advanced: Zaawansowane
+      beginner: Początkujący
+      expert: Ekspert
+      mid_level: Poziom średniej
+      novice: Początkujący
+    social_link_helper:
+      n_a: Nie dotyczy
+

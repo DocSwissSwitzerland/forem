@@ -1,0 +1,40 @@
+it:
+  create_mascot:
+    name: Mascotte
+    error: Mascotte già impostata
+  broadcast:
+    welcome:
+      ask_question: "Sloan qui! \U0001F44B Ho notato che non hai ancora <a href='https://dev.to/t/explainlikeimfive'>fatto una domanda</a> . Fare una domanda è facile da fare; basta clicca su 'Crea Post' nella barra laterale della pagina del tag per iniziare!"
+      customize_experience: "Sloan qui! \U0001F44B Lo sapevi che puoi personalizzare la tua esperienza DEV? Prova a modificare <a href='settings/customization'>il tuo carattere e il tuo tema</a> e trova il miglior stile per te!"
+      customize_feed: "Ciao, sono di nuovo io! \U0001F44B Ora che fai parte della comunità DEV, concentriamoci su personalizzare il tuo contenuto. Puoi iniziare da <a href='/tags'>seguendo alcuni tag</a> per aiutare a personalizzare il tuo feed! \U0001F389"
+      discuss_and_ask: "Sloan qui! \U0001F44B Ho notato che non hai <a href='https://dev.to/t/explainlikeimfive'>fatto una domanda</a> o <a href='https://dev.to/t/discuss'>ha iniziato una discussione</a> . È facile fare entrambi; basta clicca su 'Crea Post' nella barra laterale della pagina del tag per iniziare!"
+      download_app: "Sloan qui, con un'ultima punta! \U0001F44B Hai scaricato l'app mobile DEV ancora? Consideriamo <a href='https://dev.to/downloads'>download</a> in modo da poter accedere a tutti i tuoi contenuti DEV preferiti in via!"
+      set_up_profile: "Benvenuti in DEV! \U0001F44B Sono Sloan, la mascotte della comunità e sono qui per aiutarvi a iniziare. Iniziamo da <a href='/settings'>impostando il tuo profilo</a>!"
+      start_discussion: "Sloan qui! \U0001F44B Ho notato che non hai ancora <a href='https://dev.to/t/discuss'>avviato una discussione</a> . Avviare una discussione è facile da fare; basta fare clic su 'Crea post' nella barra laterale della pagina del tag per iniziare!"
+      welcome_thread: "Sloan qui di nuovo! \U0001F44B DEV è una comunità amichevole. Perché non presentarti lasciando un commento in <a href='/welcome'>il thread di benvenuto</a>!"
+    connect:
+      apple: "Sei su un roll! \U0001F389 Hai un account Apple? Considerare <a href='/settings'>collegarlo</a>."
+      facebook: "Sei su un roll! \U0001F389 Hai un account Facebook? Considerare <a href='/settings'>collegarlo</a>."
+      forem: "Sei su un roll! \U0001F389 Hai un account Forem? Considerare <a href='/settings'>collegarlo</a>."
+      github: "Sei su un roll! \U0001F389 Hai un account GitHub? Considerare <a href='/settings'>collegarlo</a> in modo da poter appicare qualsiasi sia il tuo repos al tuo profilo."
+      google: "Sei su un roll! \U0001F389 Hai un account Google? Considerare <a href='/settings'>collegarlo</a>."
+      twitter: "Sei su un roll! \U0001F389 Hai un account Twitter? Considerare <a href='/settings'>collegarlo</a> così possiamo @mention te se condividiamo il tuo post tramite il nostro account Twitter <a href='https://twitter.com/thePracticalDev'>@thePracticalDev</a>."
+  errors:
+    authentication:
+      errors:
+        suspended: Sembra che il tuo precedente %{community_name} account sia stato sospeso. Come tale abbiamo preso misure per evitare che si crei un nuovo account con %{community_name} e la sua community. Se pensate che ci sia stato un errore, vi preghiamo di inviarci l'email al %{community_email} e faremo un altro sguardo.
+    fastly_config:
+      must_be_array: 'configs: deve essere un Array di Strings'
+      invalid_config: Configurazione Fastly non valida - %{invalid_config}. Solo %{valid_configs_join} sono validi.
+  policies:
+    application_policy:
+      must_be_logged_in: deve essere registrato in
+      you_must_be_logged_in: È necessario essere collegati
+    liquid_tag_policy:
+      no_user_found: Nessun utente trovato
+      not_permitted: L'utente non è consentito utilizzare questo tag liquido
+  uploaders:
+    base_uploader:
+      too_many_frames: GIF contiene troppi frame. Il conteggio max frame consentito è %{frame_max}.
+      timeout: Elaborazione dell'immagine in timeout.
+

@@ -1,0 +1,31 @@
+nl:
+  views:
+    reactions:
+      category:
+        hands: Handen
+        like: Zoals
+        readinglist: Leeslijst
+        thinking: Denken
+        thumbsup: Duim omhoog
+        thumbsdown: Duimen omlaag
+        unicorn: Eenhoorn
+        vomit: Vlag
+      summary:
+        count_html:
+          one: ' %{count} %{start} reactie %{end}'
+          other: ' %{count} %{start} reacties %{end}'
+        title: Reacties
+      like:
+        title: Hart
+        aria_label: Zoals
+        icon: Favoriete hartknop
+        text: Zoals
+      unicorn:
+        title: Eenhoorn
+        aria_label: Reageren met eenhoorn
+      readingList:
+        title: Opslaan
+        aria_label: Toevoegen aan leeslijst
+        icon: Knop Opslaan
+        text: Opslaan
+

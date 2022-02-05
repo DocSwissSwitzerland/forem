@@ -1,0 +1,40 @@
+pl:
+  create_mascot:
+    name: Maskotka
+    error: Maskotka już ustawiona
+  broadcast:
+    welcome:
+      ask_question: "Sloan tutaj! \U0001F44B Zauważyłem, że jeszcze nie <a href='https://dev.to/t/explainlikeimfive'>zadał pytanie</a> . Zadaj pytanie jest łatwe do zrobienia; wystarczy kliknąć na 'Create Post' na pasku bocznym strony tag, aby rozpocząć!"
+      customize_experience: "Sloan tutaj! \U0001F44B Czy wiesz, że możesz dostosować swoje doświadczenie DEV? Spróbuj zmienić <a href='settings/customization'>swoją czcionkę i kompozycję</a> i znajdź najlepszy styl dla Ciebie!"
+      customize_feed: "Cześć, to mnie jeszcze raz! \U0001F44B Teraz, gdy jesteś częścią społeczności DEV, skupmy się na personalizacji swojej treści. Aby pomóc w dostosowaniu kanału informacyjnego, można uruchomić <a href='/tags'>po niektórych znacznikach</a> . \U0001F389"
+      discuss_and_ask: "Sloan tutaj! \U0001F44B Zauważyłem, że nie zostało <a href='https://dev.to/t/explainlikeimfive'>zadane pytanie</a> ani <a href='https://dev.to/t/discuss'>rozpoczęło dyskusję</a> jeszcze. Jest to łatwe do wykonania obu tych; po prostu kliknij na 'Create Post' na pasku bocznym strony tag, aby rozpocząć!"
+      download_app: "Sloan here, with one last tip! \U0001F44B Czy pobrałeś jeszcze aplikację mobilną DEV? Rozważ <a href='https://dev.to/downloads'>pobieranie</a> , aby można było uzyskać dostęp do wszystkich ulubionych treści DEV w tym systemie."
+      set_up_profile: "Witamy w DEV! \U0001F44B Jestem Sloan, wspólnota maskotka i jestem tutaj, aby pomóc Ci się rozpocząć. Zacznijmy od <a href='/settings'>konfigurowania swojego profilu</a>!"
+      start_discussion: "Sloan tutaj! \U0001F44B Zauważyłem, że jeszcze nie została <a href='https://dev.to/t/discuss'>rozpoczęta dyskusja</a> . Rozpoczęcie dyskusji jest łatwe do wykonania; po prostu kliknij na 'Create Post' na pasku bocznym strony tag, aby rozpocząć!"
+      welcome_thread: "Sloan tutaj ponownie! \U0001F44B DEV jest przyjazną społecznością. Dlaczego nie wprowadzać siebie, pozostawiając komentarz w <a href='/welcome'>wątku powitania</a>!"
+    connect:
+      apple: "Jesteś na rolce! \U0001F389 Czy masz konto Apple? Rozważ <a href='/settings'>połączenie</a>."
+      facebook: "Jesteś na rolce! \U0001F389 Czy masz konto na Facebooku? Rozważ <a href='/settings'>połączenie</a>."
+      forem: "Jesteś na rolce! \U0001F389 Czy masz konto Forem? Rozważ <a href='/settings'>połączenie</a>."
+      github: "Jesteś na rolce! \U0001F389 Czy masz konto GitHub? Rozważ <a href='/settings'>połączenie</a> , aby można było przypiąć dowolne z operacji repo do profilu użytkownika."
+      google: "Jesteś na rolce! \U0001F389 Czy masz konto Google? Rozważ <a href='/settings'>połączenie</a>."
+      twitter: "Jesteś na rolce! \U0001F389 Czy masz konto na Twitterze? Rozważ <a href='/settings'>połączenie</a> , abyśmy mogli @mention , jeśli udostępnimy swoje stanowisko za pośrednictwem naszego konta na Twitterze <a href='https://twitter.com/thePracticalDev'>@thePracticalDev</a>."
+  errors:
+    authentication:
+      errors:
+        suspended: Wygląda na to, że poprzednie konto użytkownika {community_name} zostało zawieszone. W związku z tym podjęliśmy kroki, aby uniemożliwić utworzenie nowego konta o nazwie %{community_name} i jego społeczności. Jeśli uważasz, że doszło do pomyłki, prosimy o maila na adres %{community_email}, a my przyjrzymy się innemu wyglądowi.
+    fastly_config:
+      must_be_array: 'configs: must be an Array of Strings (musi być tablica łańcuchów'
+      invalid_config: Niepoprawna konfiguracja Fastly- %{invalid_config}. Poprawne są tylko wartości %{valid_configs_join}.
+  policies:
+    application_policy:
+      must_be_logged_in: musi być zalogowany
+      you_must_be_logged_in: Użytkownik musi być zalogowany
+    liquid_tag_policy:
+      no_user_found: Nie znaleziono użytkownika
+      not_permitted: Użytkownik nie ma uprawnień do używania tego znacznika płynnego
+  uploaders:
+    base_uploader:
+      too_many_frames: GIF zawiera za dużo ramek. Maksymalna dozwolona liczba ramek wynosi %{frame_max}.
+      timeout: Przetwarzanie obrazu przekroczyło limit czasu.
+

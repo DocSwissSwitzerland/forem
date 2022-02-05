@@ -1,0 +1,5 @@
+sv:
+  decorators:
+    article_decorator:
+      tagged_with: ' Taggade med %{cached_tag_list}.'
+

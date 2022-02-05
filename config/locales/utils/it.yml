@@ -1,0 +1,14 @@
+it:
+  xml:
+    opensearch:
+      short_name: ' %{community} Ricerca'
+      description: Trova post da %{community}.
+    user:
+      image: Immagine del profilo %{user}
+  json:
+    author: Autore %{community} autore
+  mailer:
+    adjust: Regola le impostazioni delle email
+    adjust_only_html: Non vuoi ricevere email come questa? Regola le tue impostazioni email al %{path}
+    unsubscribe: Unsubscribe
+

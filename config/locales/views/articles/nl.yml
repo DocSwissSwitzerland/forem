@@ -1,0 +1,89 @@
+nl:
+  views:
+    articles:
+      meta:
+        description: Een artikel uit de community
+      actions:
+        aria_label: Artikel-acties
+      comments:
+        aria_label: Reacties voor post %{title} ( %{num})
+        subtitle_html: Discussie %{num}
+        num: ( %{num})
+        subscribe: Abonneren
+      conduct:
+        aria_label: Controles uitvoeren
+        code: Gedragscode
+        report: Misbruik melden
+      delete:
+        heading: Weet u zeker dat u dit artikel wilt wissen?
+        desc:
+          text_html: U kunt deze actie niet ongedaan maken, misschien wilt u in plaats daarvan slechts %{action}?
+          edit: bewerken
+          unpublish: niet publiceren
+        action:
+          button: Wissen
+          cancel: Afwijzen
+          edit: Bewerken
+          unpublish: Niet publiceren
+      lock:
+        meta:
+          title: Vergrendelingsvergrendeling bevestigen
+        heading: Weet u zeker dat u de discussie op dit bericht wilt vergrendelen?
+        desc_html: Gebruikers kunnen geen nieuwe reacties toevoegen. Hiermee worden bestaande reacties <em class="fw-bold">niet</em> verwijderd. U kunt de discussie op elk gewenst moment ontgrendelen zodat gebruikers hun commentaar opnieuw kunnen laten.
+        cancel: Annuleren
+        notes:
+          label: Notes (optioneel)-dit is alleen zichtbaar voor u en beheerders
+          placeholder: Meer details over waarom je de discussie hebt afgesloten.
+        reason:
+          label: Reden voor het vergrendelen van de discussie (optioneel)-dit wordt publiekelijk weergegeven
+          placeholder: De reden waarom je deze discussie sluit.
+        submit: Discussie vergrendelen
+      preview_discuss_html:
+        zero: Nieuwe Discussie!
+        one: '#bespreken <img src="%{image}" /> %{count}'
+        other: '#bespreken <img src="%{image}" /> %{count}'
+      save:
+        title: Opslaan in leeslijst
+        aria_label: Opslaan in leeslijst
+        initial: Opslaan
+        success: Opgeslagen
+      series:
+        subtitle: ' %{slug} ( %{size})'
+        size:
+          one: ' %{count} deelreeks'
+          other: ' %{count} deelreeks'
+        published: Gepubliceerd %{date}
+        inbetween:
+          num: '...'
+          text:
+            one: Nog een deel ...
+            other: ' %{count} meer onderdelen ...'
+          title: Meer bekijken
+      unlock:
+        meta:
+          title: Vergrendeling van discussie bevestigen
+        heading: Weet u zeker dat u de discussie op deze post wilt ontgrendelen?
+        desc: Gebruikers kunnen nieuwe reacties toevoegen. U kunt de discussie op elk gewenst moment vergrendelen om te voorkomen dat gebruikers commentaar weer verlaten.
+        cancel: Annuleren
+        notes: 'Notes vanaf wanneer deze discussie is vergrendeld (alleen zichtbaar voor u en admins):'
+        reason: 'Reden waarom deze discussie is vergrendeld (openbaar zichtbaar):'
+        submit: Discussie ontgrendelen
+      unpublished:
+        subtitle: Niet-gepubliceerde post.
+        text: ' Deze URL is openbaar maar geheim, dus deel naar eigen goeddunken.'
+        edit: Klik om te bewerken
+      co_authors_html: met %{names}
+      crossposted:
+        text_html: Oorspronkelijk gepubliceerd op %{url} %{on}
+        on_html: op %{date}
+      edited: Bijgewerkt op %{date}
+      edited_html: Bijgewerkt op %{date}
+      for_org_html: ' %{start} voor %{end} %{org}'
+      missing: Artikel Niet Meer Beschikbaar
+      posted_html: Gepost op %{date}
+      read_next: Volgende lezen
+      reading_time:
+        one: 1 min gelezen
+        other: ' %{count} min gelezen'
+      right_nav: Details van auteur
+

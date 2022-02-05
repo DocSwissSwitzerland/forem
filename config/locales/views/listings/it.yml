@@ -1,0 +1,80 @@
+it:
+  views:
+    listings:
+      meta:
+        description: ' %{community} Listing'
+      heading: Listini
+      back: Indietro
+      delete:
+        subtitle: Sei sicuro di voler eliminare questa quotazione?
+        description:
+          text_html: Non è possibile annullare questa azione, forse si desidera solo %{azione} invece?
+          edit: edit
+          unpublish: non pubblicare
+        edit: Modifica
+        submit: Elimina
+        unpublish: Annullamento della pubblicazione
+      edit:
+        heading: Modifica Elenco
+        bump:
+          subtitle: Acquista la tua quotazione
+          button: Listino Bump
+          description: Puoi tamponare la tua quotazione per lo stesso prezzo della quotazione originale
+          last: 'Ultimo Pubblicato / Bumped: %{data}'
+        notice: È possibile modificare solo titolo / body/tag di bozze o entro le prime 24 ore di quotazione o sbalzi
+        not_published:
+          text_html: Questa quotazione è %{non} pubblicata.
+          aside_html: Questa quotazione è %{non} pubblicata
+          not: non
+        publish: Pubblicazione elenco
+        unpublish: Elenco non pubblicare
+        update: Elenco di aggiornamento
+        update_draft: Bozza di aggiornamento
+      to_edit: Modifica
+      errors:
+        one: '1 errore ha vietato che questa quotazione venga salvata:'
+        other: 'Gli errori %{conteggio} hanno vietato che questa quotazione venga salvata:'
+      expired: Questa quotazione è scaduta.
+      form:
+        body_markdown:
+          description: 400 caratteri max, 12 riga break max, nessuna immagini consentita, * la markdown è incoraggiata *. Si prega di includere un metodo di contatto se necessario.
+          placeholder: '...'
+        category:
+          label: Categoria
+          placeholder: Conferenza CFP (1 Credito)
+          summary: Dettagli di categoria / regole
+        expiry:
+          description: Se applicabile per eventi sensibili al tempo, scadenze, ecc.
+        location:
+          description: 32 caratteri max, testo semplice
+          label: Ubicazione (Se applicabile per eventi, ecc.)
+          placeholder: New York
+        no_credit: Hai bisogno di almeno un credito per creare una quotazione.
+        organization:
+          description: Postare per conto di un'organizzazione trascorre i crediti dell'organizzazione.
+          none: Nessuno
+        publish: Pubblicazione elenco
+        purchase: Crediti di acquisto
+        save: Salva bozza
+        save_notice: Non verranno addebitato i crediti per salvare una bozza.
+        tags:
+          placeholder: Aggiungi fino a 8 tag ...
+        title:
+          placeholder: 128 caratteri max, testo semplice
+      nav:
+        aria_label: Listini
+        create: Crea
+        manage: Gestire
+      new:
+        meta:
+          title: Nuova Quotazione
+        heading: Creare un Listino comunitario
+        buy: Comprare di più
+        disclaimer:
+          subtitle: Disclaimer
+          description1: ' %{community} admins possono modificare tag e categorie per garantire la precisione. Potremmo anche abbattere e restituire i listini inappropriati.'
+          description2: I listini scadono 30 giorni dopo che sono pubblicati o "sbattuti".
+        organization: Crediti di organizzazione
+        personal: Crediti personali
+      preview_icon: Logo DEV
+

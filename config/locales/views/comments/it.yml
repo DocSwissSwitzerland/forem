@@ -1,0 +1,146 @@
+it:
+  views:
+    comments:
+      meta:
+        title_root: Discussione di %{titolo}
+        description: Un articolo della comunità
+        og:
+          title: Discussione di %{titolo}
+          title_rel: ' %{root} - %{sito}'
+          title_root: '[Discussione] %{titolo} - %{sito}'
+          description: ' %{sito} Commento'
+      parent:
+        subtitle_html: ' %{start} Discussione su: %{fine} %{titolo}'
+        metadata_html: ' %{name} %{su}'
+        date: ' al %{data}'
+        full: Discussione completa
+        read: Leggi il post completo
+        view: Visualizza post
+        view_full:
+          one: Visualizza discussione completa ( %{conteggio} commento)
+          other: Visualizza discussione completa ( %{count} commenti)
+        reply_html: ' %{start} Risposte per: %{fine} %{titolo}'
+      delete:
+        heading: Sei sicuro di voler eliminare questo commento?
+        desc_html: Non è possibile annullare questa azione, forse si desidera solo %{azione} invece?
+        action: Modifica
+        submit: Elimina
+        edit: Modifica
+        cancel: Licenziamento
+      collapse: Collapse
+      edit: Modifica commento
+      edited:
+        text_html: '&bull; Modificato %{su}'
+        on_html: al %{data}
+      expand: Espandi
+      hidden:
+        text_html: Alcuni commenti sono stati nascosti dall'autore del post - %{info}
+        info: scopri di più
+      hider:
+        description_html: Sei sicuro di voler nascondere questo commento? Diventerà nascosto nel tuo post, ma sarà ancora visibile tramite il commento %{permalink}.
+        hide_child: Nascondi anche i commenti del bambino
+        note_html: Per ulteriori azioni, è possibile considerare il blocco di questa persona e / o %{reporting}
+        permalink: permalink
+        reporting: abusi di segnalazione
+        submit: Conferma
+      locked: La discussione è stata bloccata. Nuovi commenti non possono essere aggiunti.
+      orphan:
+        deleted: '[Commento da un post cancellato]'
+      re:
+        text_html: ' %{re} %{titolo}'
+        re: 'Re: '
+      settings:
+        meta:
+          title: Impostazioni di commento
+        heading: Impostazioni di commento
+        state:
+          show:
+            subtitle: Visualizzazione delle notifiche del thread
+            desc: Riceverai tutte le notifiche per questo commento e qualsiasi tuo commento in questa catena.
+          mute:
+            subtitle: Muting notifiche thread
+            desc: Tutte le notifiche per questo commento e qualsiasi dei tuoi commenti presenti nel thread sono attualmente mutate.
+        subscribe:
+          subtitle: Abbonamento
+          desc: Siete comunque sottoscritti a tutti i commenti presenti nel thread più ampio, il che significherà che riceverete ancora notifiche per le risposte a questo commento.
+          mute: Notifiche di mute
+          unmute: Notifiche non mute
+      quality:
+        low: Commento contrassegnato come basso qualità/non costruttivo dalla comunità.
+        conduct: Visualizza codice di condotta
+        hidden:
+          icon: Info
+          text:
+            visible_in_permalink: Commento nascosto per post autore - thread visibile solo in questo permalink
+            accessible_via_permalink: Commento nascosto per post autore - thread solo accessibile via permalink
+      write:
+        errors:
+          one: '1 errore ha proibito questo commento di essere salvato:'
+          other: " %{conteggio} errori vietati questo commento dall'essere salvato:"
+        field:
+          aria_label: Aggiungi un commento alla discussione
+          placeholder: Aggiungi alla discussione
+          submit: Carica
+          templates: Modelli
+          upload: Immagine di caricamento
+          use: Utilizza un modello di risposta
+          guide:
+            title: Guida alla markdown
+            icon: Guida dell'editor
+        template:
+          article: Questo post arriva con un modello di commento
+          create:
+            subtitle: Crea modello
+            desc: I modelli consentono di rispondere rapidamente alle FAQ o ai frammenti di negozio per il riutilizzo.
+          moderator: Moderatore
+          personal: Personale
+        submit: Invia
+        preview: Anteprima
+        cancel: Licenziamento
+      menu:
+        aria_label: Menu a discesa Toggle
+        icon: Menu a discesa
+        copy:
+          aria_label: Copia link al commento %{utente}
+          text: Collegamento copia
+        settings:
+          aria_label: Vai alle impostazioni di commento di %{user}
+        action:
+          aria_label: ' %{azione} %{utente} commento'
+          hide: Nascondi
+          unhide: Scopri
+          hide_text: Nascondi
+          unhide_text: Scopri
+        moderate:
+          aria_label: Commento di moderato %{utente}
+        report:
+          aria_label: Report %{user} commento come abusivo o violando il nostro codice di condotta e / o termini e condizioni
+      footer:
+        heart:
+          title: cuore
+          icon: 'Come commento: '
+          count_html: ' %{num} %{like}'
+          text: Come
+        reply:
+          aria_label: Rispondi a un commento ...
+          icon: Pulsante di commento
+          done: Risposto
+          text: Rispondi
+          placeholder: Rispondi ...
+        thread:
+          icon: Thread
+          text: Thread
+        view:
+          icon: Pulsante di visualizzazione
+          text: Vista
+      count:
+        one: Commento %{conteggio}
+        other: ' %{conteggio} commenti'
+      empty: Nuovo
+      add: Aggiungi Commento
+      summary:
+        count_html:
+          one: ' %{count} %{start} commento %{fine}'
+          other: ' %{count} %{start} commenti %{fine}'
+        title: Commenti
+

@@ -1,0 +1,25 @@
+nl:
+  views:
+    stories:
+      meta:
+        description_tagged: ' %{tag} content op %{name}'
+        page: ' Pagina %{pagina}'
+        rss: ' %{name} RSS-feed'
+      heading: Posten
+      discuss: '#discuss'
+      follow: Volgen
+      menu:
+        aria_left: nav-knop-links
+        aria_right: nav-knop-rechts
+      sort:
+        aria_label: Postings weergeven op
+        aria_tagged: Gemarkeerde berichten weergeven door
+        relevant: Relevant
+        week: Week
+        month: Maand
+        year: Jaar
+        infinity: Oneindigheid
+        latest: Laatste
+        signin_html: "\U0001F44B <a href=\"%{path}\">Meld u aan</a> voor de functie voor het sorteren van functies door <strong>top</strong> en  <strong>latest</strong>."
+        top: Bovenaan
+

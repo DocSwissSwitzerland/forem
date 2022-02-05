@@ -1,0 +1,32 @@
+sv:
+  views:
+    organizations:
+      empty: 404 bio hittades inte
+      external:
+        icon: Extern länkikon
+      follow: Följ
+      github:
+        icon: GitHub-logotyp
+      joined:
+        icon: Koppfotade
+        text_html: Sammansatt på %{date}
+      location:
+        icon: Plats
+      logo: ' %{org} profilbild'
+      size: Anställda
+      sponsor:
+        text: ' %{level} Community Sponsor ❤️'
+        level:
+          gold: Guld
+          silver: Silver
+          bronze: Bronze
+          tag: Etikett
+          media: Media
+          devrel: Devrel
+      stack: vår stack
+      story: vår berättelse
+      support: Supportmejl
+      team: träffa gruppen
+      twitter:
+        icon: Twitter-logo
+

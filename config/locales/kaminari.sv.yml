@@ -1,0 +1,9 @@
+sv:
+  views:
+    pagination:
+      first: '&laquo; först'
+      last: Sista &ravoter.
+      next: Nästa &rsaquo;
+      previous: '&lsaquo; föregående'
+      truncate: '&hellip;'
+

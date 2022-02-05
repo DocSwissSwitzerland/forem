@@ -1,0 +1,33 @@
+el:
+  devise:
+    failure:
+      invited: Έχετε μια εκκρεμή πρόσκληση, αποδεχτείτε την για να ολοκληρώσετε τη δημιουργία του λογαριασμού σας.
+    invitations:
+      edit:
+        header: Ορισμός του κωδικού πρόσβασης
+        submit_button: Ας Ξεκινήσουμε.
+      invitation_removed: Η πρόσκλησή σας αφαιρέθηκε.
+      invitation_token_invalid: Το παρεχόμενο διακριτικό πρόσκλησης δεν είναι έγκυρο!
+      new:
+        header: 'Αποστολή πρόσκλησης:'
+        submit_button: 'Αποστολή πρόσκλησης:'
+      no_invitations_remaining: Δεν απομένουν προσκλήσεις.
+      send_instructions: Εστάλη μια πρόσκληση σε  %{email}.
+      updated: Ο κωδικός πρόσβασης ορίστηκε με επιτυχία. Τώρα έχεις υπογράψει.
+      updated_not_active: Ο κωδικός πρόσβασης ορίστηκε με επιτυχία.
+    mailer:
+      invitation_instructions:
+        accept_instructions: Μπορείτε να αποδεχθείτε την πρόσκληση πατώντας αυτή τη διασύνδεση.
+        accept: Αποδοχή πρόσκλησης.
+        accept_until: Η πρόσκληση θα λήξει μετά το  %{due_date}.
+        hello: Hello  %{όνομα}
+        ignore: Αν δεν θέλετε να αποδεχτείτε την πρόσκληση, αγνοήστε αυτό το μήνυμα e-mail. Ο λογαριασμός σας δεν θα δημιουργηθεί μέχρι να αποκτήσετε πρόσβαση στην παραπάνω διασύνδεση και να ορίσετε τον κωδικό πρόσβασης.
+        someone_invited_you: Έχετε προσκληθεί να συμμετάσχετε στην κοινότητα  %{community_name} στο  %{url}.
+        subject: 'Οδηγίες πρόσκλησης:'
+  time:
+    formats:
+      devise:
+        mailer:
+          invitation_instructions:
+            accept_until_format: '%B %d, %Y %I: %M %p'
+

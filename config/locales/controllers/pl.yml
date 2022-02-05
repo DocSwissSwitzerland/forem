@@ -1,0 +1,121 @@
+pl:
+  api_secrets_controller:
+    generated: 'Klucz API został wygenerowany: %{secret}'
+    revoked: Klucz API został unieważniony.
+  application_controller:
+    bad_request: 'Błąd: Niepoprawne żądanie'
+    not_authorized: 'Błąd: brak autoryzacji'
+    please_sign_in: Zaloguj się
+  articles_controller:
+    deleted: Artykuł został pomyślnie usunięty.
+  comments_controller:
+    create:
+      success: utworzone
+      failure: komentarz już istnieje
+    delete:
+      error: Coś poszło nie tak; komentarz NIE został usunięty.
+      notice: Komentarz został pomyślnie usunięty.
+    markdown: 'Wystąpił błąd w oznakowaniu: %{error}'
+    markdown_html: "<p>\U0001F614 Wystąpił błąd w markdown</p><hr><p> %{błąd}</p>"
+    moderated: Nie jest dozwolone z powodu działania moderowania
+  confirmations_controller:
+    email_sent: Wiadomość e-mail została wysłana! Skontaktuj się z działem wsparcia w %{email}, jeśli masz problemy z otrzymaniem instrukcji z potwierdzeniem.
+  credits_controller:
+    done:
+      one: ' %{count} nowych zaliczeń zakupionych!'
+      other: ' %{count} nowych zaliczeń zakupionych!'
+  devices_controller:
+    not_found: Nie znaleziono
+  discussion_locks_controller:
+    locked: Dyskusja została pomyślnie zablokowana!
+    unlocked: Dyskusja została pomyślnie odblokowana!
+  email_subscriptions_controller:
+    badge_notifications: powiadomienia o oznakach
+    comment_notifications: powiadomienia dotyczące komentarzy
+    digest_emails: ' %{społeczność} wiadomości e-mail ze strawieniem'
+    follower_notifications: powiadomienia o kontynuowaniu
+    mention_notifications: wzmianka powiadomień
+    this_list: ta lista
+    unread_notifications: nieprzeczytane powiadomienia
+  feedback_messages_controller:
+    error_fill: "Upewnij się, że formularze są wypełnione. \U0001F916 Inne możliwe błędy: %{errors}"
+    n_a: Nie dotyczy
+    submitted: Raport został wysłany
+  follows_controller:
+    already_followed: już po
+    daily_limit: 'Osiągnięto limit dzienny: osiągnięto limit!'
+    followed: śledziony
+    unfollowed: nieprzestrzegany
+  github_repos_controller:
+    repo_not_found: Nie znaleziono repozytorium gitHub
+    github_unauthorized: 'Nieautoryzowany GitHub: %{e_message}'
+  image_uploads_controller:
+    server_error: Wystąpił błąd serwera.
+  listings_controller:
+    deleted: Listing został pomyślnie usunięty.
+    no_credit: Niewystarczająca liczba dostępnych kredytów
+  omniauth_callbacks_controller:
+    log_in_error: 'Błąd logowania: %{e}'
+    username_taken: Nazwa użytkownika została już podjęta
+  organizations_controller:
+    secret_updated: Tajna organizacja została zaktualizowana
+    deletion_scheduled: 'Twoja organizacja: " %{organization_name}" jest zaplanowana. Będziesz powiadamiany o tym, kiedy zostanie usunięty.'
+    not_deleted: Twoja organizacja nie została usunięta; użytkownik musi być administratorem, jedynym członkiem organizacji i nie ma żadnych artykułów połączonych z organizacją.
+    created: Organizacja została pomyślnie utworzona, a użytkownik jest administratorem.
+    updated: Twoja organizacja została pomyślnie zaktualizowana.
+  podcasts_controller:
+    podcast_suggested: Sugerowane podcast
+  profiles_controller:
+    updated: Profil użytkownika został zaktualizowany
+  rating_votes_controller:
+    not_upserted_successfully: Nie został pomyślnie zaktualizowany
+  registrations_controller:
+    error:
+      recaptcha: Należy wykonać komendę recaptcha ✅
+      domain: nie jest uwzględniana w dozwolonych domenach.
+  response_templates_controller:
+    response_template_error: 'Błąd szablonu odpowiedzi: %{errors}'
+    created: Szablon odpowiedzi " %{title}" został utworzony.
+    deleted: Szablon odpowiedzi " %{title}" został usunięty.
+    updated: Szablon odpowiedzi " %{title}" został zaktualizowany.
+  social_previews_controller:
+    fonts: Roboty | Roboto + Condensed
+  stories:
+    pinned_articles_controller:
+      not_found: nie znaleziono
+  stories_controller:
+    404_bio_not_found: 404 bio nie znaleziono
+    searching: '... wyszukiwanie'
+  stripe_active_cards_controller:
+    cannot_remove: Nie można usunąć karty, jeśli użytkownik ma aktywne członkostwo. Najpierw anuluj przypisanie.
+    cannot_update: Wystąpił problem podczas aktualizacji informacji rozliczeniowych.
+    updated: Informacje rozliczeniowe zostały zaktualizowane
+    removed: Twoja karta została pomyślnie usunięta.
+  tag_adjustments_controller:
+    failure: 'Niepowodzenie: %{errors}'
+    destroyed: Korekta znacznika została zniszczona
+  tags_controller:
+    tag_successfully_updated: "Znacznik został pomyślnie zaktualizowany! \U0001F44D "
+  users_controller:
+    removed_admin: ' %{name} nie jest już administratorem.'
+    removed_member: Użytkownik %{name} nie jest już częścią organizacji użytkownika.
+    added_admin: Użytkownik %{name} jest teraz administratorem.
+    provide_email: Podaj wiadomość e-mail, aby usunąć konto.
+    provide_email_delete: Podaj adres e-mail, aby usunąć konto
+    send_export: ' Eksport zostanie wkrótce wysłany pocztą elektroniczną.'
+    invalid_secret: Podany klucz tajny organizacji był niepoprawny.
+    username_blank: Nazwa użytkownika nie może być pusta
+    deletion_in_progress: Żądanie usunięcia konta zostało już zażądane. Proszę, sprawdź swój adres e-mail, aby uzyskać dalsze instrukcje.
+    joined_org: Dołączyłaś do organizacji %{organization_name}.
+    left_org: Opuściłeś swoją organizację.
+    deletion_requested: Zażądano usunięcia konta. Proszę, sprawdź swój adres e-mail, aby uzyskać dalsze instrukcje.
+    log_in_to_delete: Aby kontynuować usuwanie konta, należy się zalogować.
+    deletion_scheduled: Zaplanowano usunięcie konta. Będziesz powiadamiany o tym, kiedy zostanie usunięty.
+    removed_identity: Twoje konto %{provider} zostało pomyślnie usunięte.
+    updated_config: Konfiguracja została zaktualizowana. Odśwież, aby wyświetlić wszystkie zmiany.
+    updated_profile: Profil został pomyślnie zaktualizowany.
+    token_expired: Token utracił ważność, prosimy o zgłoszenie nowego. Tokeny trwają tylko 12 godzin po zainicjowaniu usunięcia konta.
+  video_states_controller:
+    related_article_not_found: Nie znaleziono powiązanego artykułu
+    video_state_updated: Stan wideo został zaktualizowany
+

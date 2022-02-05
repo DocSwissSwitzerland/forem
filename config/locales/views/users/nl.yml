@@ -1,0 +1,90 @@
+nl:
+  views:
+    users:
+      meta:
+        og:
+          title: ' %{user}- %{community}-profiel'
+      comments:
+        all:
+          one: Alle %{count} reacties
+          other: Alle %{count} reacties
+        last:
+          one: Laatste %{count} reacties
+          other: Laatste %{count} reacties
+        recent: Recente reacties
+        view: Alle activiteit bekijken
+        view_all:
+          one: Alle %{count} reacties bekijken
+          other: Alle %{count} reacties bekijken
+        view_last:
+          one: Laatste 1 reactie weergeven
+          other: Laatste %{count} reacties weergeven
+      github:
+        heading: GitHub-repository's
+        fork: Vork
+        stars:
+          one: 1 ster
+          other: ' %{count} sterren'
+      pin_icon: Pennetje
+      pinned: Vastgezet
+      profile_fields:
+        bio:
+          label: Bio
+          placeholder: Een korte bio ...
+        display_email_on_profile: E-mail afbeelden in profiel
+        location:
+          label: Locatie
+          placeholder: Halifax, Nova Scotia
+        website:
+          label: URL van website
+          placeholder: https://yoursite.com
+        education: Onderwijs
+        currently_learning: Momenteel leren
+        currently_hacking_on: Momenteel hacken
+        available_for: Beschikbaar voor
+        skills_languages: Skills/Talen
+        work: Werk
+      side:
+        comment:
+          icon: Opmerking
+          text:
+            one: 1 reactie geschreven
+            other: ' %{count} reacties geschreven'
+        org: Organisaties
+        post:
+          icon: Posten
+          text:
+            one: 1 post gepubliceerd
+            other: ' %{count} berichten gepubliceerd'
+        tag:
+          icon: Label
+          text:
+            one: 1 tag gevolgd
+            other: ' %{count} tags gevolgd'
+      signout:
+        meta:
+          title: Ondertekenaar- %{community} bevestigen
+        heading: Weet u zeker dat u zich wilt melden?
+        yes: Ja, onderteken
+      block: Blok @ %{gebruiker}
+      details: ' %{user} profielgegevens'
+      dropdown: Gebruikersacties
+      email_icon: E-mailadres
+      empty: 404 bio niet gevonden
+      flag: Vlag @ %{gebruiker}
+      follow: Volgen
+      joined:
+        icon: Samengevoegd
+        text_html: Lid van %{date}
+      location_icon: Locatie
+      logo: ' %{user} profielafbeelding'
+      more: Meer info over @ %{user}
+      send_pm:
+        code: Gedragscode
+        notice_html: Alle persoonlijke interacties <b>moeten</b> voldoen aan de %{code}.
+        placeholder: Voer hier uw bericht in ...
+        submit: Verzenden
+      social: Website %{service}
+      unflag: Niet-vlag @ %{gebruiker}
+      website: Persoonlijke website
+

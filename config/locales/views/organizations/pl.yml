@@ -1,0 +1,32 @@
+pl:
+  views:
+    organizations:
+      empty: 404 bio nie znaleziono
+      external:
+        icon: Ikona odsyłacza zewnętrznego
+      follow: Śledź
+      github:
+        icon: Logo GitHub
+      joined:
+        icon: Połączono
+        text_html: 'Dołączył (a): %{date}'
+      location:
+        icon: Położenie
+      logo: Obraz profilu %{org}
+      size: Pracownicy
+      sponsor:
+        text: ' %{level} Sponsor Społeczności ❤️'
+        level:
+          gold: Złoty
+          silver: Srebrna
+          bronze: Brązowy
+          tag: Znacznik
+          media: Nośnik
+          devrel: Devrel
+      stack: Nasz stos
+      story: nasza historia
+      support: Obsługa poczty elektronicznej
+      team: spotkać się z zespołem
+      twitter:
+        icon: Logo serwisu Twitter
+

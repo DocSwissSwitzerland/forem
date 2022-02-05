@@ -1,0 +1,131 @@
+de:
+  models:
+    api_secret:
+      api_limit_reached: API-Geheimgrenze von 20 pro Benutzer wurde erreicht
+    application_record:
+      uninferrable: Ein Dekorator für %{class} konnte nicht abgerufen werden.
+    article:
+      a_post_by: Ein Beitrag von %{user_name}
+      video_unpermitted: kann von Mitglied nicht ohne Berechtigung hinzugefügt werden
+      video_processing: kann nicht auf 'true' gesetzt werden, wenn das Video noch verarbeitet wird
+      cannot_search_tags_for: 'Es können keine Tags für folgende Tags gesucht werden: %{tag}'
+      cannot_search_tags_for_tags: 'Es können keine Tags für folgende Tags gesucht werden: %{tags}'
+      unique_coauthor: Co-Autor-IDs müssen eindeutig sein
+      too_many_tags: Überschreiten Sie die maximal 4 Tags
+      is_too_long: ist zu lang.
+      invalid_date: muss im Format TT/MM/JJJJ mit aktuellem oder vergangenem Datum eingegeben werden
+      series_unpermitted: muss einer sein, dem Sie die Erlaubnis zum Posten haben
+      invalid_coauthor: muss gültige Benutzer-IDs sein
+      same_author: darf nicht der gleiche Benutzer sein wie der Autor
+      must_not_have_spaces: darf keine Leerzeichen enthalten
+      published: Veröffentlicht
+      unique_url: wurde bereits aufgenommen. E-Mail %{email} für weitere Details.
+      mention_too_many:
+        one: Sie können nicht mehr als %{count} Benutzer in einem Beitrag erwähnen!
+        other: Sie können nicht mehr als %{count} Benutzer in einem Beitrag erwähnen!
+    broadcast:
+      single_active: Sie können nur eine aktive Ankündigung übertragen
+    comment:
+      deleted: '[gelöscht]'
+      has_been_deleted: ' %{type} wurde gelöscht.'
+      hidden: '[verdeckt von der Post-Autorin]'
+      is_not_valid: ist nicht gültig.
+      locked: Die Diskussion ist für diese Post gesperrt
+      type:
+        Article: Artikel
+        item: Element
+        PodcastEpisode: Episode Podcast
+      suspended_too_many: Benutzer für zu viele spammy-Interaktionen ausgesetzt, ausgelöst durch autovomit.
+      mention_too_many:
+        one: Sie können nicht mehr als %{count} Benutzer in einem Kommentar angeben!
+        other: Sie können nicht mehr als %{count} Benutzer in einem Kommentar angeben!
+    feedback_message:
+      reported: (Sie) haben zuvor diese URL gemeldet.
+    github_issue:
+      issue_comment_not_found: Ausgabe-Kommentar %{issue_id} wurde nicht gefunden
+      issue_not_found: Problem %{issue_id} wurde nicht gefunden
+    html_variant:
+      no_edits: kann nicht einmal veröffentlicht und genehmigt werden
+    identity:
+      no_email_msg: Keine E-Mail gefunden. Um Fehler zu vermeiden, können Sie Ihr %{provider} -Konto erneut verknüpfen.
+    listing:
+      too_many_tags: Überschreiten Sie die maximal 8 Tags
+      too_many_linebreaks: hat zu viele Linebreaker. Nicht mehr als 12 zulässig.
+      image_not_allowed: ist es nicht erlaubt, Bilder aufzunehmen.
+      liquid_not_allowed: Es ist nicht zulässig, flüssige Tags einzuschließen.
+    mention:
+      is_not_valid: ist nicht gültig.
+    organization:
+      integer_only: Nur ganze Zahl. Kein Vorzeichen zulässig.
+      reserved_word: '%<value>s ist ein reserviertes Wort. Wenden Sie sich für die Registrierung Ihrer Organisation an die Site-Administratoren.'
+    page:
+      body_must_exist: muss vorhanden sein, wenn body_html oder body_json nicht vorhanden ist.
+    podcast:
+      slug_is_reserved: Slug ist reserviert
+    podcast_episode_appearance:
+      provided_role_is_not_valid: Die angegebene Rolle ist ungültig.
+    poll_skip:
+      cannot_vote_more_than_once: nicht mehr als einmal in einer Umfrage wählen können
+    poll_vote:
+      cannot_vote_more_than_once: nicht mehr als einmal in einer Umfrage wählen können
+    profile_pin:
+      only_five: kann nicht mehr als fünf Gesamtzahl gepinnter Stellen haben
+      pin_unpermitted: muss über die richtigen Berechtigungen für den Pin verfügen
+    rating_vote:
+      not_permitted: ist es nicht gestattet, diese Aktion zu ergreifen.
+    reaction:
+      is_not_valid: ist nicht gültig.
+    response_template:
+      user_nil_only: Es kann keine Benutzer-ID zugeordnet sein.
+      comment_markdown: Kommentarschablonen müssen Markdown als Inhaltstyp verwenden.
+      email_text: E-Mail-Vorlagen müssen Klartext oder HTML als Inhaltstyp verwenden.
+      limit_reached: Grenzwert für Antwortvorlage von 30 pro Benutzer wurde erreicht
+    settings:
+      campaign:
+        share_your_project: Projekt gemeinsam nutzen
+      community:
+        message: Das Zeichen "<" oder "">" darf nicht enthalten sein.
+        new_forem: Neuer Forem
+        user: Benutzer
+      general:
+        community_sponsors: Community-Sponsoren
+        the_community_mascot: Das Gemeinschaftsmaskottchen
+      user_experience:
+        message: 'muss ein 3-oder 6-Zeichen-Hexadezimalwert sein (beginnend mit #)'
+    sponsorship:
+      invalid_type: ist kein sponsoringfähiger Typ
+      already_sponsored: Der Tag wird bereits gesponsert
+      only_one_level: Sie können nur ein Sponsoring von %{levels} haben.
+      level:
+        gold: Gold
+        silver: Silber
+        bronze: Bronze
+    tag:
+      alias_for: "'alias_for' muss auf einen vorhandenen Tag verweisen."
+    tag_adjustment:
+      too_many_tags: 4 Tags max pro Artikel.
+      unpermitted: verfügt nicht über die Berechtigung zum Anpassen dieser Tags
+      not_live: für die Entfernung ausgewählt ist kein aktueller Live-Tag.
+      unique: Kann kein bereits bereinigter Tag sein
+    tweet:
+      tweet_not_found: Tweet nicht gefunden
+    user:
+      could_not_send: Bestätigung konnte nicht gesendet werden.  %{e_message}
+      password_not_matched: stimmt nicht mit der Kennwortbestätigung überein
+      has_been_banished: verbannt wurde.
+      is_taken: ' %{username} wird genommen.'
+      user_could_not_be_saved: Der Benutzer konnte nicht gespeichert werden.  %{e_message}
+      username_is_reserved: Benutzername ist reserviert
+    user_block:
+      cant_be_the_same: kann nicht mit der blocked_id identisch sein
+    user_subscription:
+      non_apple: Kann sich nicht mit einem Apple-Private-Relay abonnieren. Aktualisieren Sie die E-Mail.
+      source_not_found: Quelle nicht gefunden. Stellen Sie sicher, dass Ihr %{source} aktiv ist!
+      not_enabled: Benutzerabonnements sind für die Quelle nicht aktiviert.
+    users:
+      deleted_user:
+        name: '[Gelöschter Benutzer]'
+      setting:
+        invalid_hex: ist keine gültige hexadezimale Farbe
+        invalid_rss: ist kein gültiger RSS/Atom-Feed
+

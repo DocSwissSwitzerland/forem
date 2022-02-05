@@ -1,0 +1,87 @@
+de:
+  views:
+    notifications:
+      meta:
+        description: Benachrichtigungen-Posteingang für %{community}
+        og:
+          title: Benachrichtigungen- %{community}
+      heading: Benachrichtigungen
+      badge:
+        heading_html: Sie haben den %{badge} Badge erhalten
+        awarded_html: "Sie erhalten auch %{credits}, um für %{listings} zu verwenden, wenn Sie etwas haben möchten, das Sie fördern möchten. \U0001F389"
+        credits:
+          one: ' %{count} neue Credits'
+          other: ' %{count} neue Credits'
+        listings: Gemeinschaftslisten
+        more: Weitere Informationen zu Auflistungen
+        profile: Ihr Profil besuchen
+      broadcast:
+        visit_html: Besuchen Sie %{settings}, um Ihre Benachrichtigungen zu verwalten.
+        settings: Einstellungen
+      comment:
+        commented_html: ' %{user} hat einen Kommentar zu %{title} verfasst'
+        first_html: ' %{user} schrieb ihren ersten Kommentar zu %{title}'
+        first_reply: "Geben Sie ihnen die erste Antwort! \U0001F389"
+        left_html: ' %{user} hat gerade einen Kommentar zu %{title} hinterlassen.'
+        replied_html: ' %{user} hat auf einen Thread in %{title} geantwortet'
+        report: Alle negativen Reaktionen sind zu 100% privat. Wenn dieser Kommentar gegen den Verhaltenskodex verstößt, bitten wir Sie, den Bericht als unangemessen zu melden.
+        welcome_html: Da sie neu in der Gemeinschaft sind, könnten Sie eine nette Antwort hinterlassen, um ihnen zu helfen, sich willkommen zu fühlen? <strong>Vielen Dank!</strong>
+      error:
+        subtitle: Ein Fehler ist aufgetreten!
+        desc: Das wurde protokolliert und wir verfolgen es.
+      follow:
+        and_html: ' %{first} und %{second} gefolgt von Ihnen!'
+        and_other_html:
+          one: ' %{first} und %{others} sind Ihnen gefolgt!'
+          other: ' %{first} und %{others} sind Ihnen gefolgt!'
+        others:
+          one: ' %{count} andere'
+          other: ' %{count} andere'
+        single_html: ' %{name} gefolgt von Ihnen!'
+      load: Mehr laden
+      mention:
+        article_html: ' %{user} hat Sie in einem Beitrag in %{if_org} erwähnt'
+        comment_html: ' %{user} hat Sie in einem Kommentar erwähnt'
+        article_mobile: ' %{user} erwähnt Sie in der Post %{title}'
+        comment_mobile: ' %{user} hat Sie in einem Kommentar zu %{title} erwähnt'
+        if_org_html: ' unter %{org}'
+      milestone:
+        heading_html: Ihr Beitrag %{title} hat %{type} übergeben!
+        check: Überprüfen Sie Ihr Dashboard.
+        intro: "\U0001F389\U0001F389\U0001F389\U0001F389\U0001F389\U0001F389\U0001F389\U0001F389"
+        type:
+          View:
+            one: ' %{count} Ansichten'
+            other: ' %{count} Ansichten'
+          Reaction:
+            one: ' %{count} Reaktionen'
+            other: ' %{count} Reaktionen'
+      nav:
+        aria_label: Benachrichtigungen
+        all: Alle
+        comments: Kommentare
+        posts: Beiträge
+      new_post:
+        if_org_html: ' unter %{org}'
+        verb_html: ' %{user} hat einen neuen Beitrag %{if_org} erstellt'
+      reacted:
+        and_html: ' %{first} und %{last}'
+        and_other_html:
+          one: ' %{first} und %{count} andere'
+          other: ' %{first} und %{count} andere'
+        verb_html:
+          one: ' %{start} %{Akteure} reagierte auf %{title} mit %{end} %{Reaktionen}'
+          other: ' %{start} %{Akteure} reagierte auf %{title} mit %{end} %{Reaktionen}'
+        your:
+          article: Ihr Artikel
+          comment: Ihr Kommentar
+      settings: Einstellungen
+      tag:
+        heading: "Hey, dort \U0001F44B"
+        add_html: Moderatoren haben den Tag <strong> %{tag}</strong> zu Ihrem Beitrag %{title} hinzugefügt. Mods hat das Gefühl, dass dieser Tag Ihren Artikel dargestellt hat.
+        check_html: Überprüfen Sie %{other}, was möglicherweise besser geeignet ist.
+        other: andere beliebte Tags
+        reason: 'Der Grund für die Aktion:'
+        remove_html: Moderatoren haben den Tag <strong> %{tag}</strong> von Ihrem Beitrag in %{title} entfernt. Bestimmte Tags verfügen über spezielle Übergaberichtlinien, und Mods müssen die Tags anpassen, um die Community am besten geeignet zu machen.
+        support_html: "Danke, dass Sie Teil von %{community}! %{email} \U0001F917 sind"
+

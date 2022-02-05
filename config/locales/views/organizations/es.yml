@@ -1,0 +1,32 @@
+es:
+  views:
+    organizations:
+      empty: 404 bio no encontrado
+      external:
+        icon: Icono de enlace externo
+      follow: Continuación
+      github:
+        icon: Logotipo de GitHub
+      joined:
+        icon: Unidos
+        text_html: Unido en %{date}
+      location:
+        icon: Ubicación
+      logo: ' %{org} imagen de perfil'
+      size: Empleados
+      sponsor:
+        text: ' %{level} Patrocinador Comunitario ❤️'
+        level:
+          gold: Oro
+          silver: Plata
+          bronze: Bronce
+          tag: Etiqueta
+          media: Medios
+          devrel: Devrel
+      stack: nuestra pila
+      story: nuestra historia
+      support: Soporte electrónico
+      team: cumplir con el equipo
+      twitter:
+        icon: Logotipo de Twitter
+

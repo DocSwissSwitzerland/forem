@@ -1,0 +1,44 @@
+sv:
+  views:
+    liquids:
+      github:
+        view: Visa på GitHub
+      medium:
+        logo: Medelstor logotyp
+      poll:
+        show_results: Visa mig resultaten.
+      reddit:
+        author: 'Författare: %{author}'
+        see: Se Fullständigt inlägg
+      stackexchange:
+        answer:
+          text_html: ' %{svar} re: %{title}'
+          answer: svar
+        answers: 'Svar: %{count}'
+        comments: 'Kommentarer: %{count}'
+        open:
+          answer: Öppna fullt svar
+          article: Öppna fullständig artikel
+          question: Öppna fullständig fråga
+      twitter:
+        view: Visa på Twitter
+      user_subscription:
+        confirm:
+          subtitle: Bekräfta prenumerera
+          button_text: Bekräfta prenumeration
+          cancel_text: Avbryt
+          text_html: Du kommer att dela din e-postadress %{email}, användarnamn, namn och DEV-profil-URL med %{username}. När du väl gjort det kan du inte ångra det här.
+        logged_out: Du måste först logga in till DEV.
+        sign_in: Logga in
+        subscribe:
+          apple:
+            button: Prenumerera
+            desc_html: 'Hallå, där! Det ser ut som när du skapade ditt DEV-konto som du skrev upp med Apple med hjälp av en privat relay-e-postadress. Om du vill prenumerera: %{update} först till en annan e-postadress.'
+            update: uppdatera din mejladress i Inställningar
+          button: Prenumerera
+          desc_html: Du kommer att prenumerera med %{email} den e-postadress som är associerad med ditt DEV-konto. Om du vill använda en annan mejladress kan du %{update}.
+          update: uppdatera din mejladress i Inställningar
+      wikipedia:
+        logo: Wikipedia-logotyp
+        view: Visa på Wikipedia
+

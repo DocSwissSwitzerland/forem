@@ -1,0 +1,40 @@
+es:
+  create_mascot:
+    name: Mascot
+    error: Mascota ya establecida
+  broadcast:
+    welcome:
+      ask_question: "¡Préstamo aquí! \U0001F44B Me di cuenta de que todavía no ha <a href='https://dev.to/t/explainlikeimfive'>una pregunta</a> . Hacer una pregunta es fácil de hacer; simplemente haga clic en \"Create Post\" en la barra lateral de la página de etiquetas para empezar."
+      customize_experience: "¡Préstamo aquí! \U0001F44B ¿Sabías que puedes personalizar tu experiencia de DEV? Intente cambiar <a href='settings/customization'>su fuente y tema</a> y encuentre el mejor estilo para usted!"
+      customize_feed: "¡Hola, soy yo de nuevo! \U0001F44B Ahora que eres parte de la comunidad DEV, centrémonos en personalizar tu contenido. Puede iniciar <a href='/tags'>siguiendo algunas etiquetas</a> para ayudar a personalizar el canal de información. \U0001F389"
+      discuss_and_ask: "¡Préstamo aquí! \U0001F44B Me di cuenta de que no se ha <a href='https://dev.to/t/explainlikeimfive'>consultado una pregunta</a> o <a href='https://dev.to/t/discuss'>comenzó una discusión</a> todavía. Es fácil hacer ambas cosas; simplemente haga clic en \"Create Post\" en la barra lateral de la página de etiquetas para empezar."
+      download_app: "¡Préstamo aquí, con un último consejo! \U0001F44B ¿Has descargado la aplicación móvil de DEV todavía? Considere <a href='https://dev.to/downloads'>descargarlo</a> para que pueda acceder a todo su contenido de DEV favorito en la marcha."
+      set_up_profile: "Bienvenido a DEV! \U0001F44B Soy Sloan, la mascota de la comunidad y estoy aquí para ayudarle a empezar. ¡Vamos a empezar por <a href='/settings'>configurar su perfil</a>!"
+      start_discussion: "¡Préstamo aquí! \U0001F44B Me di cuenta de que todavía no ha <a href='https://dev.to/t/discuss'>iniciado una discusión</a> . Iniciar una discusión es fácil de hacer; simplemente haga clic en \"Create Post\" en la barra lateral de la página de etiquetas para empezar."
+      welcome_thread: "Sloan aquí otra vez! \U0001F44B DEV es una comunidad amistosa. ¿Por qué no presentarse dejando un comentario en <a href='/welcome'>la hebra de bienvenida</a>!"
+    connect:
+      apple: "¡Estás en rollo! \U0001F389 ¿Tienes una cuenta de Apple? Considere <a href='/settings'>conectarlo</a>."
+      facebook: "¡Estás en rollo! \U0001F389 ¿Tienes una cuenta de Facebook? Considere <a href='/settings'>conectarlo</a>."
+      forem: "¡Estás en rollo! \U0001F389 ¿Tienes una cuenta de Forem? Considere <a href='/settings'>conectarlo</a>."
+      github: "¡Estás en rollo! \U0001F389 ¿Tienes una cuenta de GitHub? Considere <a href='/settings'>conectarlo</a> para que pueda marcar cualquiera de sus repos en su perfil."
+      google: "¡Estás en rollo! \U0001F389 ¿Tienes una cuenta de Google? Considere <a href='/settings'>conectarlo</a>."
+      twitter: "¡Estás en rollo! \U0001F389 ¿Tienes una cuenta de Twitter? Considere <a href='/settings'>conectarlo</a> para que podamos @mention si compartimos su publicación a través de nuestra cuenta de Twitter <a href='https://twitter.com/thePracticalDev'>@thePracticalDev</a>."
+  errors:
+    authentication:
+      errors:
+        suspended: Parece que la cuenta de %{community_name} anterior se ha suspendido. Como tal, hemos tomado medidas para evitar que se cree una nueva cuenta con %{community_name} y su comunidad. Si usted piensa que ha habido un error, por favor envíenos un correo electrónico al %{community_email}, y tomaremos otra mirada.
+    fastly_config:
+      must_be_array: 'configs: debe ser una matriz de series'
+      invalid_config: Configuración de Fastly no válida- %{invalid_config}. Sólo el %{valid_configs_join} es válido.
+  policies:
+    application_policy:
+      must_be_logged_in: debe haber iniciado la sesión
+      you_must_be_logged_in: Debe haber iniciado la sesión
+    liquid_tag_policy:
+      no_user_found: No se ha encontrado usuario
+      not_permitted: No se permite al usuario utilizar este código de líquido
+  uploaders:
+    base_uploader:
+      too_many_frames: GIF contiene demasiados marcos. El número máximo de tramas permitidas es %{frame_max}.
+      timeout: El proceso de imagen ha excedido el tiempo
+

@@ -1,0 +1,131 @@
+pt:
+  models:
+    api_secret:
+      api_limit_reached: Limite secreto da API de 20 por usuário foi atingido
+    application_record:
+      uninferrable: Não poderia inferir um decorador para %{class}.
+    article:
+      a_post_by: Um post por %{user_name}
+      video_unpermitted: não pode ser incluído por membro sem permissão
+      video_processing: não pode ser configurado como true se o vídeo ainda for processamento
+      cannot_search_tags_for: 'Não é possível pesquisar tags para: %{tag}'
+      cannot_search_tags_for_tags: 'Não é possível pesquisar tags para: %{tags}'
+      unique_coauthor: IDs co-autores devem ser exclusivos
+      too_many_tags: exceder o máximo de 4 tags
+      is_too_long: é muito longo.
+      invalid_date: deve ser inserido no formato DD/MM/YYYY com data atual ou passada
+      series_unpermitted: deve ser uma você tem permissão para postar para
+      invalid_coauthor: devem ser IDs de usuário válidos
+      same_author: não deve ser o mesmo usuário do autor
+      must_not_have_spaces: não deve ter espaços
+      published: Publicado
+      unique_url: já foi levado. E-mail %{email} para mais detalhes.
+      mention_too_many:
+        one: Não é possível mencionar mais do que %{count} usuários em um post!
+        other: Não é possível mencionar mais do que %{count} usuários em um post!
+    broadcast:
+      single_active: Você só pode ter um anúncio ativo transmitido
+    comment:
+      deleted: '[excluído]'
+      has_been_deleted: ' %{type} foi excluído.'
+      hidden: '[oculto por post autor]'
+      is_not_valid: não é válido.
+      locked: a discussão está travada neste Post
+      type:
+        Article: Artigo
+        item: item
+        PodcastEpisode: Episódio do podcast
+      suspended_too_many: Usuário suspenso por muitas interações de spammy, acionadas por autovômito.
+      mention_too_many:
+        one: Não é possível mencionar mais do que %{count} usuários em um comentário!
+        other: Não é possível mencionar mais do que %{count} usuários em um comentário!
+    feedback_message:
+      reported: (você) reportou anteriormente esta URL.
+    github_issue:
+      issue_comment_not_found: Emitir comentário %{issue_id} não encontrado
+      issue_not_found: Problema %{issue_id} não encontrado
+    html_variant:
+      no_edits: não pode alterar uma vez publicado e aprovado
+    identity:
+      no_email_msg: Nenhum e-mail encontrado. Por favor, relé sua conta %{provedor} para evitar erros.
+    listing:
+      too_many_tags: exceder o máximo de 8 tags
+      too_many_linebreaks: tem linhagens demais. Não mais do que 12 permitidos.
+      image_not_allowed: não é permitido incluir imagens.
+      liquid_not_allowed: não é permitido incluir tags líquidas.
+    mention:
+      is_not_valid: não é válido.
+    organization:
+      integer_only: Inteiro apenas. Nenhum sinal permitido.
+      reserved_word: '%<value>s é uma palavra reservada. Entre em contato com os admins do site para ajudar a registrar sua organização.'
+    page:
+      body_must_exist: deve existir se body_html ou body_json não existir.
+    podcast:
+      slug_is_reserved: lesma é reservada
+    podcast_episode_appearance:
+      provided_role_is_not_valid: função fornecida não é válida
+    poll_skip:
+      cannot_vote_more_than_once: não pode votar mais de uma vez em uma pesquisa
+    poll_vote:
+      cannot_vote_more_than_once: não pode votar mais de uma vez em uma pesquisa
+    profile_pin:
+      only_five: não pode ter mais de cinco postes picados totais
+      pin_unpermitted: deve ter permissões adequadas para pino
+    rating_vote:
+      not_permitted: não é permitido tomar esta ação.
+    reaction:
+      is_not_valid: não é válido.
+    response_template:
+      user_nil_only: não pode ter um ID de usuário associado.
+      comment_markdown: Os modelos de comentários devem usar o Markdown como seu tipo de conteúdo.
+      email_text: Os modelos de e-mail devem usar texto simples ou HTML como seu tipo de conteúdo.
+      limit_reached: Limite de modelo de resposta de 30 por usuário foi atingido
+    settings:
+      campaign:
+        share_your_project: Compartilhe seu projeto
+      community:
+        message: pode não incluir o caractere "<" nem "> "
+        new_forem: Novos Forem
+        user: usuário
+      general:
+        community_sponsors: Patrocinadores Comunitários
+        the_community_mascot: O mascote comunitário
+      user_experience:
+        message: 'deve ser um hex de 3 ou 6 caracteres (começando com #)'
+    sponsorship:
+      invalid_type: não é um tipo patrocinável
+      already_sponsored: A tag já é patrocinada
+      only_one_level: Você pode ter apenas um patrocínio de %{níveis}
+      level:
+        gold: ouro
+        silver: prata
+        bronze: bronze
+    tag:
+      alias_for: alias_for deve referir-se a uma tag existente
+    tag_adjustment:
+      too_many_tags: 4 tags max por artigo.
+      unpermitted: não tem privilégio para ajustar essas tags
+      not_live: selecionada para remoção não é uma tag live atual.
+      unique: não pode ser uma tag já ajustada
+    tweet:
+      tweet_not_found: Tweet não encontrado
+    user:
+      could_not_send: a confirmação não pôde ser enviada.  %{e_message}
+      password_not_matched: não corresponde a confirmação de senha
+      has_been_banished: foi banido.
+      is_taken: ' %{username} é tomada.'
+      user_could_not_be_saved: O usuário não pôde ser salvo.  %{e_message}
+      username_is_reserved: username é reservado
+    user_block:
+      cant_be_the_same: não pode ser o mesmo que o blocked_id
+    user_subscription:
+      non_apple: Não pode se inscrever com um revezamento privado da Apple. Por favor, atualizar e-mail.
+      source_not_found: Fonte não encontrada. Por favor, certifique-se de que sua %{origem} esteja ativa!
+      not_enabled: As inscrições do usuário não estão habilitadas para a origem.
+    users:
+      deleted_user:
+        name: '[Usuário Excluído]'
+      setting:
+        invalid_hex: não é uma cor hex válida
+        invalid_rss: não é um feed RSS/Atom válido
+

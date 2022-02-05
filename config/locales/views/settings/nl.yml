@@ -1,0 +1,276 @@
+nl:
+  views:
+    settings:
+      meta:
+        title: Instellingen
+      account:
+        connect: ' %{provider}-account verbinden'
+        emails: E-mails met accounts
+        primary: Primaire e-mail
+        provider_email: ' %{provider} e-mail'
+        provider_profile: ' %{provider} profielinstellingen'
+        api:
+          heading: ' %{community} API-sleutels'
+          desc_html: U kunt persoonlijke API-sleutels genereren voor verificatie met de %{community} API.  De API bevindt zich nog in de bètafase. De %{doc} bevat nadere informatie.
+          active:
+            heading: Actieve API-sleutels (deel deze nooit!)
+            created: 'Gemaakt: %{time}'
+          doc: documentatie
+          gen:
+            heading: Nieuwe sleutel genereren
+            label: Omschrijving
+            text: Waarvoor is deze API-sleutel?
+            placeholder: Mijn projectnaam
+            submit: API-sleutel genereren
+          revoke: Intrekken
+        delete:
+          heading: Account wissen
+          desc1: 'Het verwijderen van uw account zal:'
+          desc1a: >
+            Wis uw profiel samen met uw verificaties.
+
+
+            Dit omvat niet de machtigingen voor toepassingen. U moet ze zelf verwijderen:
+          desc1b: Wis alle content die u hebt, zoals artikelen, commentaar of de uitleeslijst.
+          desc1c: Laat uw gebruikersnaam beschikbaar zijn voor iedereen.
+          desc2_html: Alstublieft, %{do} om uw account volledig te verwijderen.
+          provide: e-mail verstrekken
+          submit: Account wissen
+        export:
+          heading: Inhoud exporteren
+          desc: U kunt een export van al uw content aanvragen. Op dit moment ondersteunen wij alleen de export van uw berichten en commentaren. Ze worden gemaild naar uw postvak IN.
+          label: Een export van uw inhoud aanvragen
+          requested: U hebt onlangs een export van uw content aangevraagd. Controleer uw e-mail.
+          submit: Gegevensaanvraag indienen
+        remove:
+          heading: OAuth-koppelingen verwijderen
+          desc1: U kunt een van uw verificatiemethoden verwijderen. We hebben er nog een nodig om je te verifiëren.
+          desc2: 'Het verwijderen van een OAuth-koppeling:'
+          desc2a: verwijder uw vermogen om te tekenen in met dat account
+          desc2b: verwijder de bijbehorende URL uit uw profiel
+          desc3: >
+            Houd er rekening mee dat dit onze OAuth-app-toegang niet herroepen; dit moet u doen in uw instellingen voor de specifieke provider:
+          confirm: Weet u zeker dat u uw %{provider}-account wilt verwijderen?
+          submit: ' %{provider} verwijderen'
+      billing:
+        heading: Facturering
+        add: Creditcard toevoegen
+        another: + Voeg een andere creditcard
+        cards: Uw creditcards
+        exp: Vervalt %{month}/ %{jaar}
+        label: Kaart toevoegen
+        number: ' %{fire} eindigend in %{last}'
+        make: Primair maken
+        primary: primair
+        remove: Kaart verwijderen
+      characters: 'Gebruikte beschikbare tekens: '
+      complete:
+        heading: Bevestig uw e-mail om uw profiel te voltooien.
+        desc: Als je toch bezig bent, ga je gang en vul alles in.
+        github: Sluit uw github account zo goed om uw identiteit te voltooien.
+        twitter: Sluit uw twitter account ook aan om uw identiteit te voltooien.
+      custom:
+        adjacent: Mogelijk sponsors in de buurt toestaan (bij publiceren)
+        announce: Mededelingen
+        announce_desc: Aankondigingen informeren u over belangrijke informatie over de hele site, zoals updates en events.
+        announce_field: Mededelingen afbeelden (bij bladeren)
+        appearance: Uiterlijk
+        basic: Basismarkdown
+        content: Inhoud
+        editor: Editorversie
+        fixed: Vast aan venster
+        font: Lettertype voor basisuitlezing
+        level: Wat is uw geschatte ervaringsniveau (1-5)?
+        level_desc: Dit wordt niet openbaar gemaakt op uw profiel. Het helpt zachtjes vast te stellen welke inhoud je wordt getoond, samen met de tags die je volgt etc.
+        navbar: Site Navbar
+        rich: Rich + markdown
+        save: Opslaan
+        sponsor: Sponsors
+        sponsor_desc: Je hebt de mogelijkheid om sponsor messaging te verwijderen (waar het praktisch is om dat te doen). Onze geweldige sponsors helpen het platform te ondersteunen en uw ervaring te verbeteren, en we streven ernaar om hun aanwezigheid constructief te maken voor de gemeenschap, maar voel je vrij om deze instelling te gebruiken als je dat wilt.
+        sponsor_field: Sponsors afbeelden (bij bladeren)
+        static: Statische bovenkant van pagina
+        theme: Sitethema
+        writing: Schrijven
+      danger: Gevarenzone
+      destroy:
+        heading: Uw account vernietigen
+        desc: 'Het verwijderen van uw account zal:'
+        desc_1_html: verwijder uw profiel, samen met uw Twitter en/of GitHub verenigingen. Dit omvat niet de machtigingen voor apps. U moet ze zelf verwijderen op %{twitter} en %{github}.
+        desc_2: alle content die u hebt, zoals artikelen, commentaar of uw leeslijst te wissen.
+        desc_3: kan uw gebruikersnaam beschikbaar worden voor iedereen.
+        click: klik hier
+        confirm_html: 'Voor bevestiging typt u de volgende woorden: <code> %{word}</code>'
+        ghost_html: Als u uw inhoud onder het %{ghost} account wilt houden, wilt u %{click}
+        github: GitHub profiel instellingen
+        submit: Account wissen
+        to_delete: 'Uw account verwijderen:'
+        twitter: Twitter-profielinstellingen
+        type: Typ uw gebruikersnaam
+        username: gebruikersnaam
+        word: mijn account wissen
+      email: E-mailverificatie.
+      errors:
+        org:
+          one: '1 fout bij het opslaan van uw organisatieprofiel:'
+          other: ' %{count} fouten hebben uw organisatieprofiel verboden om te worden opgeslagen:'
+        profile:
+          one: '1 fout verbood uw profiel te worden opgeslagen:'
+          other: ' %{count} fouten hebben uw profiel niet kunnen worden opgeslagen:'
+      extensions:
+        comment:
+          heading: Commentsjablonen
+          desc_html: Maak en bewaar <strong>commenzsjablonen</strong> die u opnieuw kunt gebruiken.
+          add: Nieuwe commentsjabloon toevoegen
+          confirm: 'Weet u zeker dat u wilt wissen: %{template}?'
+          create: Een nieuwe responsjesjabloon maken
+          cue: Memorabele cue voor sjabloon
+          edit: Bewerken
+          edit_template: Commentsjabloon bewerken
+          remove: Verwijderen
+          save: Sjabloon opslaan
+          saved: Opgeslagen sjablonen
+        generate: Een persoonlijke blog genereren vanuit uw %{community}-posts
+        github:
+          heading: GitHub
+          desc1: Speld je GitHub repositories naar je profiel.
+          desc2: Repositories verdwijnen uit je profiel als je de OAuth-associatie met GitHub verwijdert.
+        learn: Meer informatie
+        micro: 'Ontvang microbetalingen voor de tijd besteed aan het lezen van uw berichten direct. '
+        payment: Betalingsaanwijzer
+        rss:
+          heading: Publiceren naar %{community} van RSS
+          desc1_html: Posts zullen landen in uw %{dashboard} <strong>als concepten</strong>, en vervolgens kunt u van daaruit publiceren.
+          desc2: Opmaak ziet er meestal goed uit, maar het kan zijn dat u handmatig fixes moet maken. In het geval van Medium, moet u mogelijk handmatig fix bedden.
+          desc3_html: Als u meer wilt weten over de manier waarop concepten uit uw feed worden gemaakt, leest u deze %{guide}.
+          desc4: Uw feed zal worden opgehaald elke keer dat u dit formulier en updates worden automatisch opgehaald periodiek daarna.
+          desc5_html: "FYI: Medium RSS-feed-URL's zijn <em>https://medium.com/feed/@your_username</em>"
+          desc6: Door uw RSS-feed-URL in te dienen, stemt u ermee in dat u eigenaar en/of gemachtigd bent om de bijbehorende content te syndiceren.
+          dashboard: dashboard
+          fetch: Feed nu ophalen
+          guide: Handleiding
+          last_html: 'Laatst opgehaald: %{time}'
+          mark_canonical_html: Markeer de RSS-bron standaard als canonieke URL <p class='crayons-field__description'>Als u dit vakje selecteert, markeert de post automatisch de feedbron als de canonieke URL.</p>
+          referential_html: Zelfverwijzende links vervangen door %{community}-specifieke koppelingen <p class='crayons-field__description'>Als u dit vakje selecteert, worden alle URL's die in de post zijn opgenomen automatisch gewijzigd om te verwijzen naar de versie van dat artikel in %{community}, indien beschikbaar. Dit is in de eerste plaats bedoeld voor personen die hun hele blog migreren naar %{community}.</p>
+          save: Feedinstellingen opslaan
+          submit: Feedinstellingen verzenden
+        save_web: Webmonetisatieinstellingen opslaan
+        web: Webmonetisering
+      finalize_html: U hebt een wijziging van %{email} aangevraagd. Controleer uw postvak IN voor de verificatielink om de wijziging af te ronden.
+      for_html: Instellingen voor %{name}
+      group:
+        user: Gebruiker
+        Basic: Standaard
+        Branding: Branding
+        Coding: Codering
+        Work: Werk
+      new_org: Nieuwe organisatie
+      notifications:
+        email: Meldingen via e-mail
+        general: Algemene aanmeldingen
+        general_desc_html: Meldingen die alleen worden weergegeven op de %{page}.
+        mobile: Mobiele meldingen
+        moderator: Berichten over moderator
+        page: berichten, pagina
+        save: Opslaan
+      org:
+        admin:
+          admin: Beheerder
+          copy:
+            button:
+              aria_label: Geheime code van organisatie kopiëren naar klembord
+            icon: Kopiëren naar klembord
+            input:
+              aria_label: Organisatiegeheim (regelmatig geroteerd)
+            text: Gekopieerd naar klembord!
+          cta: Call-to-action box
+          cta_desc: Aanpasbare tekst die rechts van elke post voor uw organisatie verschijnt.
+          delete:
+            heading: Organisatie wissen
+            confirm: 'Weet u zeker dat u uw organisatie wilt wissen: %{name}?'
+            desc_html: >-
+              U kunt uw organisatie verwijderen als u:
+
+              <ul>
+                <li>zijn de enige leden in de organisatie</li>
+                <li>zijn een beheerder van de organisatie</li>
+                <li>de organisatie heeft geen berichten</li>
+                <li>en de organisatie heeft geen kredieten</li>
+              </ul>
+            submit: '" %{name}" wissen'
+            questions_html: Vragen? E-mail ons om %{email} voor hulp.
+            unmet: Uw organisatie voldoet momenteel niet aan de bovenstaande vereisten. Verwijder eerst alle andere leden en organisatieplaatsen.
+          details: Organisatiegegevens
+          form:
+            slug: 'De URL van uw organisatie is: %{slug}'
+            tag_line: Limiet van 60 tekens
+            summary: Limiet van 250 tekens
+            location: Limiet van 64 tekens
+            email: Limiet van 64 tekens
+            company_size: Geef een getal op
+            story: Limiet van 640 tekens
+            tech_stack: Limiet van 640 tekens
+            cta_body_markdown: 'Beperkte markdown: _italic_ en ** bold** is okay. Links, en kopteksten etc. komen niet opdagen. 256 tekens.'
+            cta_button_text: Limiet van 20 tekens
+            submit: Opslaan
+          gen:
+            confirm: Weet u zeker dat u een nieuw geheim wilt genereren? Alle uitstaande geheimen zullen ongeldig zijn.
+            text: Je moet dit regelmatig draaien!
+            submit: Nieuw geheim genereren
+          grow: Het team laten groeien
+          invite: 'Nodig teamgenoten uit door ze het geheim en de volgende instructies te sturen:'
+          inst1_html: Aanmelden bij %{url}
+          inst2_html: Ga naar %{url}
+          inst3_html: Plak de geheime code hieronder en klik op <b>Join-organisatie</b>
+          make:
+            confirm: Weet u zeker dat u de beheerdersstatus van %{user} wilt geven?
+            title: Beheer maken
+            text: Beheer maken
+          members: Leden van organisatie
+          remove:
+            confirm: Weet u zeker dat u %{user} wilt verwijderen uit de organisatie?
+            title: Verwijderen van organisatie
+            text: Verwijderen van organisatie
+          revoke:
+            confirm: Weet u zeker dat u de beheerstatus wilt verwijderen van %{user}?
+            title: Beheerstatus intrekken
+            text: Beheerstatus intrekken
+          secret_code: 'Je geheime code is:'
+          you: U
+        create:
+          heading: Organisatie maken
+          notice: U moet de machtiging van uw organisatie hebben om dit formulier in te dienen. Oneerlijkheid kan leiden tot een permanente schorsing.
+          proof: Dit is slechts een snelle blurb die aangeeft of er een link is die laat zien dat u duidelijk bent verbonden met deze organisatie.
+          required: Starred velden zijn vereist
+          slug: Uw organisatie-URL is %{url}/{username}
+          submit: Organisatie maken
+        join:
+          heading: Deelnemen aan een organisatie
+          desc: Verstrekt aan u door een org-beheerder
+          label: Geheime code
+          placeholder: '...'
+          submit: Join-organisatie
+        leave:
+          confirm: Weet u zeker dat u deze organisatie wilt verlaten?
+          submit: Organisatie verlaten
+        divider: OF
+      password:
+        heading: Nieuw wachtwoord instellen
+        desc_html: >-
+          Als uw account is gemaakt met behulp van verificatie van de sociale rekening, kunt u er de voorkeur aan geven om een e-maillogboek toe te voegen. Als u zich hebt aangemeld met een social media-account, <a href="%{path}">
+
+          reset u het wachtwoord</a> voor uw primaire e-mailadres ( %{email}) om dit mogelijk te maken. Houd er rekening mee dat e-mail login is naast sociale login in plaats van een vervanging voor het, zodat uw geverifieerde sociale rekening zal blijven worden gekoppeld aan uw account.
+        current: Huidig wachtwoord
+        confirm: Nieuw wachtwoord bevestigen
+        new: Wachtwoord
+        submit: Nieuw wachtwoord instellen
+      previous: Er is een bestaand account dat is geautoriseerd voor die sociale account.
+      tab:
+        Profile: Profiel
+        Customization: Aanpassing
+        Notifications: Kennisgevingen
+        Account: Rekening
+        Billing: Facturering
+        Organization: Organisatie
+        Extensions: Extensies
+      save_profile: Profielgegevens opslaan
+

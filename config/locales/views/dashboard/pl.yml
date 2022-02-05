@@ -1,0 +1,150 @@
+pl:
+  views:
+    dashboard:
+      meta:
+        title: Panel kontrolny- %{site}
+      heading: Panel kontrolny
+      actions:
+        mobile:
+          posts: Posty ( %{num})
+          followers: Śledzący ( %{num})
+          following_tags: Następujące znaczniki ( %{num})
+          following_users: Następujący użytkownicy ( %{num})
+          following_orgs: Następujące organizacje ( %{num})
+          following_pods: Następujące podcasty ( %{num})
+        posts: Wypowiedzi
+        series: Seria
+        followers: Śledzący
+        following_tags: Następujące znaczniki
+        following_users: Następujący użytkownicy
+        following_orgs: Następujące organizacje
+        following_pods: Następujące podcasty
+        listings: Listingi
+        analytics: Analiza
+        for_org: Analiza dla %{org}
+        upload: Prześlij film wideo
+      analytics:
+        meta:
+          title: Analiza
+        heading: Panel kontrolny analizy dla %{name}
+        desc_1: Witamy w panelu kontrolnym analizy, w którym znajduje się strona główna szczegółowych pomiarów użytkownika, dzięki czemu autorzy mogą podejmować decyzje w zakresie przetwarzania danych na temat ekosystemu %{members}.
+        desc_2: Ten panel kontrolny wyróżnia głębokie spostrzeżenia, szczególnie istotne dla relacji %{członków}, autorów i poważnych blogerów.
+        back: "\U0001F448 Powrót do głównego panelu kontrolnego"
+        your: Panel kontrolny
+        org: Panel kontrolny produktu %{org} Analytics
+      article:
+        heading:
+          text_html: ' %{zarchiwizowane} %{title}'
+          archived: '[Zarchiwizowane] '
+        archived: Zarchiwizowane
+        published: 'Opublikowane:'
+        published_html: 'Opublikowane: %{date}'
+        edited: 'Edytowano:'
+        edited_html: 'Edytowano: %{date}'
+        series: 'Seria:'
+        series_html: <strong>Seria:</strong>  %{series}
+        draft: Wersja robocza
+        reactions:
+          title: Reakcje
+          icon: Reakcje
+          text_html:
+            one: ' %{num}-reakcja'
+            other: 'Liczba reakcji: %{num}'
+        comments:
+          title: Komentarze
+          icon: Komentarze
+          text_html:
+            one: ' %{num} komentarz'
+            other: 'Komentarze: %{num}'
+        views:
+          title: Widoki
+          icon: Widoki
+          lt_25: < 25
+          text_html:
+            one: Widok %{scale}
+            other: 'Liczba widoków: %{scale}'
+          u_25: poniżej 25
+        subscriptions:
+          title: Subskrypcje
+          icon: Dane
+          number: Subskrypcje ( %{num})
+        delete: Usuń
+        unpin: Odepnij
+        pin:
+          title: Przypnij do profilu
+          button: Przypnij do profilu
+          text: Zaczep
+        manage:
+          aria_label: 'Zarządzaj wypowiedzią: %{title}'
+          text: Zarządzaj
+        lock: Blokowanie dyskusji
+        unlock: Odblokuj dyskusję
+        edit:
+          aria_label: 'Edytuj wpis: %{title}'
+          text: Edytuj
+        more:
+          title: 'Więcej opcji dla wypowiedzi: %{title}'
+          icon: Więcej ...
+        stats: Statystyki
+        archive: Archiwum posta
+        unarchive: Rozpaczuj wpis
+        author: Autor
+        author_is: 'AUTOR: '
+        save: Zapisz
+        submit: Wprowadzanie zmiany autora
+      followers:
+        heading: Panel kontrolny " Śledzący
+        empty: Nie masz jeszcze żadnych zwolenników ...
+      following_orgs:
+        heading: Panel kontrolny " Następujące organizacje
+        empty: Nie śledzisz jeszcze żadnych organizacji ...
+      following_pods:
+        heading: Panel kontrolny " Następujące podcasty
+        empty: Nie śledzisz żadnych podcastów jeszcze ...
+      following_tags:
+        heading: Panel kontrolny " Następujące znaczniki
+        adjust: Dostosuj wagę znacznika, aby zmodyfikować kanał informacyjny dla domu. Wyższe wartości oznaczają więcej pozorów dla tego znacznika.
+        anti:
+          title: Ten znacznik ma ujemną wagę
+          text: Przeciwdziałanie
+        default: Domyślna 1.0
+        empty: Nie śledzisz jeszcze żadnych znaczników ...
+        number:
+          aria_label: Waga znacznika %{name}
+        update: Aktualizuj wagi
+      following_users:
+        heading: Panel kontrolny " Następujący użytkownicy
+        empty: Nie śledzisz żadnych użytkowników ...
+      listings:
+        meta:
+          title: Panel kontrolny Listings
+      posts:
+        heading: Wypowiedzi
+        archived: Pokaż zarchiwizowane
+        option:
+          creation-desc: Ostatnio utworzone
+          published-desc: Ostatnio opublikowane
+          views-desc: Większość widoków
+          reactions-desc: Większość reakcji
+          comments-desc: Najwięcej komentarzy
+          aria_label: Sortuj wg
+        org: ' %{name} ( %{num})'
+        personal: Osobiste
+        empty:
+          desc: W tym miejscu można zarządzać swoimi wypowiedziami, ale jeszcze nic nie napisałeś.
+          new: Napisz swój pierwszy post teraz
+      subscriptions:
+        meta:
+          title: Subskrypcje %{title}
+        heading: Subskrypcje
+        subhead:
+          text_html: ' %{dla} %{source}'
+          for: dla
+        empty: Nie masz żadnych subskrybentów dla tego %{kind} jeszcze ...
+      summary:
+        reactions: Łączna liczba reakcji postu
+        views: Łączna liczba wyświetleń wypowiedzi
+        listings: Utworzono listingi
+        credits: Dostępne kredyty
+        lt_500: < 500
+

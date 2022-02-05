@@ -1,0 +1,131 @@
+pl:
+  models:
+    api_secret:
+      api_limit_reached: Osiągnięto klucz tajny API 20 dla użytkownika
+    application_record:
+      uninferrable: Nie można wywnioskować dekoratora dla %{class}.
+    article:
+      a_post_by: 'Wypowiedziane przez użytkownika: %{user_name}'
+      video_unpermitted: nie może być dodane przez członka bez uprawnienia
+      video_processing: nie można ustawić na wartość true, jeśli film wideo jest nadal przetwarzalny
+      cannot_search_tags_for: 'Nie można wyszukać znaczników dla: %{tag}'
+      cannot_search_tags_for_tags: 'Nie można wyszukać znaczników dla: %{tags}'
+      unique_coauthor: identyfikatory współautorków muszą być unikalne
+      too_many_tags: przekracza maksymalną liczbę 4 znaczników
+      is_too_long: jest za długa.
+      invalid_date: musi być wprowadzany w formacie DD/MM/RRRR z datą bieżącą lub minionym
+      series_unpermitted: musi być jednym z użytkowników, do których masz uprawnienia
+      invalid_coauthor: muszą być poprawnymi identyfikatorami użytkowników
+      same_author: nie może być tym samym użytkownikiem, co autor
+      must_not_have_spaces: nie może zawierać spacji
+      published: Opublikowane
+      unique_url: 'został już zabrany. Adres e-mail: %{email}, aby uzyskać więcej szczegółów.'
+      mention_too_many:
+        one: Nie można nadmienić więcej niż %{count} użytkowników w poście!
+        other: Nie można nadmienić więcej niż %{count} użytkowników w poście!
+    broadcast:
+      single_active: Możliwe jest tylko jedno aktywne rozgłaszanie ogłoszeń
+    comment:
+      deleted: '[usunięte]'
+      has_been_deleted: Element %{type} został usunięty.
+      hidden: '[ukryty przez post autor]'
+      is_not_valid: nie jest poprawny.
+      locked: Dyskusja jest zablokowana na tej wypowiedzi
+      type:
+        Article: Artykuł
+        item: element
+        PodcastEpisode: Epizod podcastu
+      suspended_too_many: Użytkownik zawieszony dla zbyt wielu interakcji spamu, wyzwalany przez autovomit.
+      mention_too_many:
+        one: Nie można nadmienić więcej niż %{count} użytkowników w komentarzu!
+        other: Nie można nadmienić więcej niż %{count} użytkowników w komentarzu!
+    feedback_message:
+      reported: (użytkownik) wcześniej zgłosił ten adres URL.
+    github_issue:
+      issue_comment_not_found: Nie znaleziono komentarza problemu %{issue_id}
+      issue_not_found: Nie znaleziono problemu %{issue_id}
+    html_variant:
+      no_edits: nie można zmienić raz opublikowane i zatwierdzone
+    identity:
+      no_email_msg: Nie znaleziono wiadomości e-mail. Ponownie użyj konta %{provider}, aby uniknąć błędów.
+    listing:
+      too_many_tags: przekracza maksymalną liczbę 8 znaczników
+      too_many_linebreaks: ma zbyt wiele linijek. Nie więcej niż 12 dozwolone.
+      image_not_allowed: nie może zawierać obrazów.
+      liquid_not_allowed: nie może zawierać znaczników płynnych.
+    mention:
+      is_not_valid: nie jest poprawny.
+    organization:
+      integer_only: Tylko liczba całkowita. Znak nie jest dozwolony.
+      reserved_word: '%<value>s jest słowem zastrzeżonym. Skontaktuj się z administratorem serwisu, aby uzyskać pomoc w rejestracji organizacji.'
+    page:
+      body_must_exist: musi istnieć, jeśli plik body_html lub body_json nie istnieje.
+    podcast:
+      slug_is_reserved: slug jest zarezerwowany
+    podcast_episode_appearance:
+      provided_role_is_not_valid: Podana rola nie jest poprawna
+    poll_skip:
+      cannot_vote_more_than_once: nie można głosować więcej niż jeden raz w jednym ankiecie
+    poll_vote:
+      cannot_vote_more_than_once: nie można głosować więcej niż jeden raz w jednym ankiecie
+    profile_pin:
+      only_five: Nie może mieć więcej niż pięć przypiętych postów
+      pin_unpermitted: muszą mieć odpowiednie uprawnienia do przypinania
+    rating_vote:
+      not_permitted: nie ma uprawnień do podjęcia tego działania.
+    reaction:
+      is_not_valid: nie jest poprawny.
+    response_template:
+      user_nil_only: nie może mieć powiązanego identyfikatora użytkownika.
+      comment_markdown: Szablony komentarzy muszą używać znaczników Markdown jako jego typu treści.
+      email_text: Szablony wiadomości e-mail muszą używać zwykłego tekstu lub kodu HTML jako typu treści.
+      limit_reached: Osiągnięto limit 30 szablonu odpowiedzi dla każdego użytkownika
+    settings:
+      campaign:
+        share_your_project: Udostępnij swój projekt do współużytkowania
+      community:
+        message: może nie zawierać znaku "<" ani "">"
+        new_forem: Nowe Forem
+        user: użytkownik
+      general:
+        community_sponsors: Sponsorzy społeczności
+        the_community_mascot: Maskotka społeczności
+      user_experience:
+        message: 'Musi to być wartość szesnastkowa o długości 3 lub 6 znaków (zaczynając od znaku #)'
+    sponsorship:
+      invalid_type: nie jest typem sponsoringu
+      already_sponsored: Znacznik jest już sponsorowany
+      only_one_level: Możesz mieć tylko jeden sponsorowanie %{levels}
+      level:
+        gold: złoto
+        silver: srebro
+        bronze: brąz
+    tag:
+      alias_for: alias_for musi odwoływać się do istniejącego znacznika
+    tag_adjustment:
+      too_many_tags: 4 znaczniki max na artykuł.
+      unpermitted: nie ma uprawnień do dopasowania tych znaczników
+      not_live: wybrany do usunięcia nie jest bieżącym znacznikiem na żywo.
+      unique: nie może być już dopasowaną znacznikiem
+    tweet:
+      tweet_not_found: Nie znaleziono tweeta
+    user:
+      could_not_send: Nie można wysłać potwierdzenia.  %{e_message}
+      password_not_matched: nie jest zgodne z potwierdzeniem hasła
+      has_been_banished: został wygnany.
+      is_taken: Użytkownik %{username} jest przyjmowany.
+      user_could_not_be_saved: Nie można zapisać użytkownika.  %{e_message}
+      username_is_reserved: nazwa użytkownika jest zarezerwowany
+    user_block:
+      cant_be_the_same: nie może być taka sama, jak nazwa zablokowanej
+    user_subscription:
+      non_apple: Nie można zasubskrybować z prywatnym przekaźnikiem Apple. Zaktualizuj wiadomość e-mail.
+      source_not_found: Nie znaleziono źródła. Upewnij się, że %{source} jest aktywne!
+      not_enabled: Subskrypcje użytkowników nie są włączone dla źródła.
+    users:
+      deleted_user:
+        name: '[Usunięty użytkownik]'
+      setting:
+        invalid_hex: nie jest poprawnym kolorem szesnastkowym
+        invalid_rss: nie jest poprawnym paszą RSS/Atom
+

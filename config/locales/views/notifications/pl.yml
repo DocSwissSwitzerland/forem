@@ -1,0 +1,87 @@
+pl:
+  views:
+    notifications:
+      meta:
+        description: Powiadomienia skrzynki odbiorczej dla %{community}
+        og:
+          title: Powiadomienia- %{community}
+      heading: Powiadomienia
+      badge:
+        heading_html: Otrzymałeś odznakę %{badge}
+        awarded_html: "Otrzymujesz też %{credits} do wykorzystania na %{listings} jeśli masz coś, co chcesz promować. \U0001F389"
+        credits:
+          one: ' %{count} nowe kredyty'
+          other: ' %{count} nowe kredyty'
+        listings: lista społeczności
+        more: Więcej informacji o listingach
+        profile: Odwiedź swój profil
+      broadcast:
+        visit_html: Odwiedź %{settings}, aby zarządzać powiadomieniami.
+        settings: Ustawienia
+      comment:
+        commented_html: 'Użytkownik %{user} dodał komentarz: %{title}'
+        first_html: 'Użytkownik %{user} napisał swój pierwszy komentarz: %{title}'
+        first_reply: "Nadaj im swoją pierwszą odpowiedź! \U0001F389"
+        left_html: Użytkownik %{user} po prostu opuścił komentarz o %{title}.
+        replied_html: Użytkownik %{user} odpowiedział na wątek w %{title}
+        report: Wszystkie negatywne reakcje są w 100% prywatne. Jeśli ten komentarz narusza kodeks postępowania, proszę o obniżenie liczby głosów/zgłoś za niestosowny.
+        welcome_html: Skoro są nowością dla społeczności, czy można zostawić miłą odpowiedź, aby pomóc im poczuć się mile widziani? <strong>Dziękujemy!</strong>
+      error:
+        subtitle: Wystąpił błąd!
+        desc: To się zaprotokołowało i śledzimy to.
+      follow:
+        and_html: ' %{first} i %{second} śledziono Ciebie!'
+        and_other_html:
+          one: Użytkownik %{first} i %{others} śledziono Ciebie!
+          other: Użytkownik %{first} i %{others} śledziono Ciebie!
+        others:
+          one: ' %{count} innych'
+          other: ' %{count} innych'
+        single_html: Użytkownik %{name} śledziony przez Ciebie!
+      load: Załaduj więcej
+      mention:
+        article_html: Użytkownik %{user} wspomniał Cię na stanowisku %{if_org}
+        comment_html: Użytkownik %{user} wspomniał Cię w komentarzu
+        article_mobile: Użytkownik %{user} wspomniał Cię w tytule %{title}
+        comment_mobile: Użytkownik %{user} wspomniał Cię w komentarzu o %{title}
+        if_org_html: ' poniżej %{org}'
+      milestone:
+        heading_html: Twój post %{title} przekazał %{type}!
+        check: Sprawdź panel kontrolny
+        intro: "\U0001F389\U0001F389\U0001F389\U0001F389\U0001F389\U0001F389\U0001F389\U0001F389"
+        type:
+          View:
+            one: 'Liczba wyświetleń: %{count}'
+            other: 'Liczba wyświetleń: %{count}'
+          Reaction:
+            one: 'Liczba reakcji: %{count}'
+            other: 'Liczba reakcji: %{count}'
+      nav:
+        aria_label: Powiadomienia
+        all: Wszystko
+        comments: Komentarze
+        posts: Wypowiedzi
+      new_post:
+        if_org_html: ' poniżej %{org}'
+        verb_html: Użytkownik %{user} wykonał nowy post %{if_org}
+      reacted:
+        and_html: ' %{first} i %{last}'
+        and_other_html:
+          one: ' %{first} i %{count} innych'
+          other: ' %{first} i %{count} innych'
+        verb_html:
+          one: ' %{start} %{aktorzy} zareagował na %{title} z %{end} %{reakcjami}'
+          other: ' %{start} %{aktorzy} zareagował na %{title} z %{end} %{reakcjami}'
+        your:
+          article: artykuł
+          comment: komentarz użytkownika
+      settings: Ustawienia
+      tag:
+        heading: "Hej tam \U0001F44B"
+        add_html: Moderatorzy dodali znacznik <strong> %{tag}</strong> do swojego stanowiska %{title}. Mods czuł, że ten znacznik jest reprezentowany przez Twój artykuł.
+        check_html: Pobierz %{other}, które mogą być bardziej odpowiednie
+        other: inne popularne znaczniki
+        reason: 'Przyczyna działania:'
+        remove_html: Moderatorzy usuną znacznik <strong> %{tag}</strong> ze swojego wpisu %{title}. Niektóre znaczniki mają specjalne wytyczne dotyczące wprowadzania, a mody muszą dostosować znaczniki, aby najlepiej pasowały do społeczności.
+        support_html: "Dziękujemy za bycie częścią %{community}! %{email} \U0001F917"
+

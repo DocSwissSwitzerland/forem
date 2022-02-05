@@ -1,0 +1,122 @@
+de:
+  views:
+    moderations:
+      heading: Mod Center
+      actions:
+        meta:
+          title: ' %{title} moderieren'
+          title2: '[Moderate] %{title}'
+        heading: Moderate Post
+        subtitle: Bewerten Sie die Qualität dieses Beitrags
+        abusive:
+          subtitle_html: Flag %{user} als Abusive
+          desc_html: Dies ist das Äquivalent zum Markierung <b>all</b> der Artikel dieses Benutzers und wird deren Artikelbewertungen senken.
+        adjust:
+          heading: Tags anpassen
+          subtitle: Tags hinzufügen oder entfernen
+          aria_label: Abschnitt "Tags anpassen"
+          icon: Tags anpassen
+          add: Tag hinzufügen
+          add_placeholder: Tag hinzufügen
+          reason: Grund für die Taganpassung
+          remove: Tag entfernen
+          submit: Übergeben
+        approve:
+          add: Als genehmigt markieren
+          remove: Genehmigung entfernen
+        checkmark: Prüfzeichen
+        close: Anzeige "Moderatoraktionen schließen"
+        delete:
+          subtitle: Diesen Kommentar löschen
+          button: Kommentar löschen
+        edit:
+          post: Post bearbeiten
+          article_admin: 'Admin: Artikel'
+          comment_admin: 'Admin: Kommentar'
+          user_admin: 'Admin: Benutzer'
+          resource_admin: 'ResourceAdmin: Article'
+        errors:
+          one: '1 Fehler bei der Speicherung dieses Blocks:'
+          other: ' %{count} Fehler untersagten, dass dieser Block gesichert wurde:'
+        experience:
+          heading: Erfahrungsstufe festlegen
+          heading2: Erfahrungsstufe der Post
+          subtitle: Kuratieren Sie das am besten geeignete Publikum für diesen Beitrag
+          aria_label: Abschnitt 'Erfahrungsebene öffnen'
+          icon: Buch
+          desc_html: Wer <em>könnte</em> diese Stelle auf der Grundlage der gesamten Erfahrungsstufe am wertvollsten finden?
+          from: ' %{lvl}- '
+          level:
+            Advanced: Erweitert
+            Beginner: Beginner
+            Expert: Experte
+            Mid-level: Mittelebene
+            Novice: Novize
+        flag: Flag-Benutzer
+        how: Wie funktioniert das?
+        hidden:
+          subtitle: Versteckte Kommentare
+          by: Kommentar von %{user}
+        hint:
+          subtitle: Alle negativen Reaktionen sind privat.
+          desc_html: >-
+            Verwenden Sie <b>Hochwertige Qualität</b> , um diesen Inhalt aus irgendeinem Grund (Qualität, Nützlichkeit usw.) "nach oben" zu verschieben.
+
+            <br /> Verwenden Sie <b>Niedrige Qualität</b> , um diesen Inhalt aus irgendeinem Grund "nach unten" zu verschieben (Qualität, Nützlichkeit usw.).
+
+            <br /> Verwenden Sie <b>Flag to Admins</b> (Flag to Admins) für Code of Conduct Verstöße (Belästigung, ein Trick, Spam usw.).
+        other: Andere Dinge, die Sie tun können
+        add_reaction: Eine Reaktion hinzufügen
+        suspicious: Verdächtig
+        tag:
+          subtitle: Taganpassungen
+          add: Hinzufügen
+          added_html: <b>Derzeit hinzugefügter Tag:</b>  %{tag}
+          live_html: <b>Aktuelle Live-Tags:</b>  %{tags}
+          reason: Grund für die Anpassung (Be super Art)-Nur der Grund ist erforderlich, die Benachrichtigung wird sich um den Rest kümmern.
+          remove: Entfernen
+          removed_html: <b>Derzeit entfernter Tag:</b>  %{tag}
+          select: Tag auswählen
+          submit: Tag-Anpassung übergeben
+          tag_name: Tag-Name
+          undo:
+            button: ×
+            confirm: Sind Sie sicher, dass Sie den %{type} des Tags %{tag} rückgängig machen möchten?
+            type:
+              addition: Hinzufügung
+              removal: Entfernen
+        thumb_down: Daumen runter
+        thumb_up: Daumen hoch
+        toggle: Abschnitt umschalten
+        unpublish: Unveröffentlichter Artikel
+        vote_down: Niedrige Qualität
+        flag_to_admins: Flag für Admins
+        vote_up: Hohe Qualität
+      all: Alle Themen
+      aside:
+        all: Alle Themen
+        code_of_conduct: Code of Conduct
+        external: Externer Link
+        feedback:
+          subtitle: Haben Sie Feedback, um Ihre Mod-Erfahrung zu verbessern?
+          description: Bitte E-Mail %{email}!
+        hello: "Hallo! \U0001F44B"
+        thanks: Vielen Dank, dass Sie dabei geholfen haben, %{community} sicher zu halten! ❤️
+        inbox: Eingang
+        resources: Ressourcen
+        tag: Tag Moderation Guide
+        terms_and_conditions: Allgemeine Geschäftsbedingungen
+        trusted: Trusted User Guide
+      author: Autor
+      date: Datum
+      notice:
+        subtitle: ' %{community} Mods'
+        desc1_html: Wir vergeben in regelmäßigen Abständen einige %{Community} Mitglieder mit verschärften Privilegien, um die Community zu moderieren.
+        desc2_html: Schauen Sie sich unseren %{code} an und lesen Sie unsere %{trusted} und %{tag}.
+        desc3_html: Wenn Sie uns als vertrauenswürdigen Benutzer oder Tag-Mod unterstützen möchten, senden Sie uns bitte eine E-Mail an %{email} und teilen Sie uns mit, welche Rolle Sie interessieren und warum. Wenn es Tag-Moderation ist, teilen Sie uns bitte mit, welche Tags Sie moderieren möchten.
+        desc4: P.S. Sie sind derzeit nicht angemeldet.
+        code_of_conduct: Code of Conduct
+        tag: Tag Moderation Guide
+        trusted: Trusted User Guide
+      post: Beitrag
+

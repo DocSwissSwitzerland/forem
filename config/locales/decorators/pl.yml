@@ -1,0 +1,5 @@
+pl:
+  decorators:
+    article_decorator:
+      tagged_with: ' Oznaczone jako %{cached_tag_list}.'
+
