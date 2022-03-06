@@ -1,13 +1,11 @@
 class VideoPolicy < ApplicationPolicy
   def new?
-    user.created_at < 2.weeks.ago if user.created_at
+    return false unless Settings::General.enable_video_upload
+    return false if user.suspended?
+    return false unless user.created_at
+
+    user.created_at.before?(2.weeks.ago)
   end
 
-  def create?
-    user.created_at < 2.weeks.ago if user.created_at
-  end
-
-  def enabled?
-    Settings::General.enable_video_upload
-  end
+  alias create? new?
 end

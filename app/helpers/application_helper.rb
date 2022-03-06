@@ -182,15 +182,6 @@ module ApplicationHelper
     "/t/#{params[:tag]}"
   end
 
-  def logo_svg
-    if Settings::General.logo_svg.present?
-      Settings::General.logo_svg.html_safe # rubocop:disable Rails/OutputSafety
-    else
-      inline_svg_tag("devplain.svg", class: "logo", size: "20% * 20%", aria: true,
-                                     title: I18n.t("helpers.application_helper.app_logo"))
-    end
-  end
-
   def community_name
     @community_name ||= Settings::Community.community_name
   end
@@ -227,8 +218,8 @@ module ApplicationHelper
     link_to body, collection.path, **kwargs
   end
 
-  def email_link(text: nil, additional_info: nil)
-    email = ForemInstance.email
+  def contact_link(text: nil, additional_info: nil)
+    email = ForemInstance.contact_email
     mail_to email, text || email, additional_info
   end
 

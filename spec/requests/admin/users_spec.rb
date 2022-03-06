@@ -16,6 +16,20 @@ RSpec.describe "/admin/users", type: :request do
       get admin_users_path
       expect(response.body).to include(user.username)
     end
+
+    context "when searching" do
+      it "finds the proper user by GitHub username" do
+        get "#{admin_users_path}?search=#{user.github_username}"
+        expect(response.body).to include(CGI.escapeHTML(user.github_username))
+      end
+    end
+
+    context "when filtering by role" do
+      it "filters and shows the proper user(s)" do
+        get "#{admin_users_path}?search&role=super_admin"
+        expect(response.body).to include(CGI.escapeHTML(admin.name))
+      end
+    end
   end
 
   describe "GET /admin/users/:id" do
@@ -24,14 +38,6 @@ RSpec.describe "/admin/users", type: :request do
 
       expect(response.body).to include(user.username)
       expect(response.body).not_to include("Go back to All members")
-    end
-
-    it "renders the new admin page if the feature flag is enabled" do
-      FeatureFlag.enable(:new_admin_members, admin)
-
-      get admin_user_path(user)
-
-      expect(response.body).to include("Go back to All members")
     end
 
     context "when a user is unregistered" do
@@ -158,7 +164,7 @@ RSpec.describe "/admin/users", type: :request do
           post send_email_admin_user_path(user.id), params: params
         end
 
-        expect(response).to redirect_to(admin_users_path)
+        expect(response).to redirect_to(admin_user_path)
         expect(flash[:danger]).to include("failed")
       end
 
@@ -167,7 +173,7 @@ RSpec.describe "/admin/users", type: :request do
           post send_email_admin_user_path(user.id), params: params
         end
 
-        expect(response).to redirect_to(admin_users_path)
+        expect(response).to redirect_to(admin_user_path)
         expect(flash[:success]).to include("sent")
 
         email = ActionMailer::Base.deliveries.last
@@ -235,7 +241,7 @@ RSpec.describe "/admin/users", type: :request do
           post verify_email_ownership_admin_user_path(user), params: { user_id: user.id }
         end
 
-        expect(response).to redirect_to(admin_users_path)
+        expect(response).to redirect_to(admin_user_path)
         expect(flash[:danger]).to include("failed")
       end
 
@@ -244,7 +250,7 @@ RSpec.describe "/admin/users", type: :request do
           post verify_email_ownership_admin_user_path(user), params: { user_id: user.id }
         end
 
-        expect(response).to redirect_to(admin_users_path)
+        expect(response).to redirect_to(admin_user_path)
         expect(flash[:success]).to include("sent")
       end
 
@@ -394,7 +400,7 @@ RSpec.describe "/admin/users", type: :request do
     it "redirects properly to the user edit page" do
       sign_in admin
       post export_data_admin_user_path(user), params: { send_to_admin: "true" }
-      expect(response).to redirect_to edit_admin_user_path(user)
+      expect(response).to redirect_to admin_user_path(user)
     end
   end
 end
