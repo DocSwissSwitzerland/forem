@@ -27,6 +27,7 @@ default: &default
 
 development:
   <<: *default
+  adapter: postgresql
   url: <%= ENV.fetch("DATABASE_URL", "postgres:///Forem_development") %>
   database: <%= ENV.fetch("DATABASE_NAME", "Forem_development") %>
   variables:
