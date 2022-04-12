@@ -91,5 +91,6 @@ test:
 #
 production:
   <<: *default
+  adapter: postgresql
   url: <%= ENV["DATABASE_URL"] %>
   database: <%= ENV["DATABASE_NAME"] %>
