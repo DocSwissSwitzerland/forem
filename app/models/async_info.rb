@@ -51,8 +51,12 @@ class AsyncInfo
       admin: user.any_admin?,
       policies: [
         {
-          dom_class: ApplicationPolicy.dom_class_for(record: Article, query: :create?),
+          dom_class: ApplicationPolicy.base_dom_class_for(record: Article, query: :create?),
           visible: visible?(record: Article, query: :create?)
+        },
+        {
+          dom_class: ApplicationPolicy.base_dom_class_for(record: Article, query: :moderate?),
+          visible: visible?(record: Article, query: :moderate?)
         },
       ],
       apple_auth: user.email.to_s.end_with?("@privaterelay.appleid.com")

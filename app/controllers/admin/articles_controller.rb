@@ -18,8 +18,6 @@ module Admin
                                  published_at].freeze
 
     def index
-      @pinned_article = PinnedArticle.get
-
       case params[:state]
       when /top-/
         months_ago = params[:state].split("-")[1].to_i.months.ago
@@ -30,6 +28,9 @@ module Admin
         @articles = articles_mixed
         @featured_articles = articles_featured
       end
+
+      @pinned_article = PinnedArticle.get
+      @articles = @articles.where.not(id: @pinned_article) if @pinned_article
     end
 
     def show
@@ -40,7 +41,7 @@ module Admin
       article = Article.find(params[:id])
 
       if article.update(article_params)
-        flash[:success] = "Article saved!"
+        flash[:success] = I18n.t("admin.articles_controller.saved")
       else
         flash[:danger] = article.errors_as_sentence
       end
@@ -55,7 +56,7 @@ module Admin
 
       respond_to do |format|
         format.html do
-          flash[:success] = "Article Pinned!"
+          flash[:danger] = I18n.t("admin.articles_controller.unpinned")
           redirect_to admin_article_path(article.id)
         end
         format.js do
@@ -71,7 +72,7 @@ module Admin
 
       respond_to do |format|
         format.html do
-          flash[:success] = "Article Pinned!"
+          flash[:success] = I18n.t("admin.articles_controller.pinned")
           redirect_to admin_article_path(article.id)
         end
         format.js do

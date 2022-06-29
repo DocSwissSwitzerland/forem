@@ -34,6 +34,7 @@ work_attr = ProfileField.find_by(label: "Work").attribute_name
 education_attr = ProfileField.find_by(label: "Education").attribute_name
 ##############################################################################
 
+# admin-user needs to be the first user, to maintain specs validity
 seeder.create_if_doesnt_exist(User, "email", "admin@forem.local") do
   user = User.create!(
     name: "Admin McAdmin",
@@ -71,6 +72,7 @@ admin_user = User.find_by(email: "admin@forem.local")
 
 ##############################################################################
 
+# trusted-user-1 needs to be the second user, to maintain specs validity
 seeder.create_if_doesnt_exist(User, "email", "trusted-user-1@forem.local") do
   user = User.create!(
     name: "Trusted User 1 \\:/",
@@ -99,6 +101,7 @@ trusted_user = User.find_by(email: "trusted-user-1@forem.local")
 
 ##############################################################################
 
+# punctuated-name-user needs to remain the 3rd user created, for tests' sake
 seeder.create_if_doesnt_exist(User, "email", "punctuated-name-user@forem.local") do
   user = User.create!(
     name: "User \"The test breaker\" A'postrophe  \\:/",
@@ -136,6 +139,72 @@ end
 
 ##############################################################################
 
+seeder.create_if_doesnt_exist(User, "email", "user-with-many-orgs@forem.local") do
+  User.create!(
+    name: "Many orgs user",
+    email: "user-with-many-orgs@forem.local",
+    username: "many_orgs_user",
+    profile_image: File.open(Rails.root.join("app/assets/images/#{rand(1..40)}.png")),
+    confirmed_at: Time.current,
+    registered_at: Time.current,
+    password: "password",
+    password_confirmation: "password",
+    saw_onboarding: true,
+    checked_code_of_conduct: true,
+    checked_terms_and_conditions: true,
+  )
+end
+
+many_orgs_user = User.find_by(email: "user-with-many-orgs@forem.local")
+
+##############################################################################
+
+seeder.create_if_doesnt_exist(User, "email", "gdpr-delete-user@forem.local") do
+  gdpr_user = User.create!(
+    name: "GDPR delete user",
+    email: "gdpr-delete-user@forem.local",
+    username: "gdpr_delete_user",
+    profile_image: File.open(Rails.root.join("app/assets/images/#{rand(1..40)}.png")),
+    confirmed_at: Time.current,
+    registered_at: Time.current,
+    password: "password",
+    password_confirmation: "password",
+    saw_onboarding: true,
+    checked_code_of_conduct: true,
+    checked_terms_and_conditions: true,
+  )
+  Users::DeleteWorker.new.perform(gdpr_user.id, true)
+end
+
+##############################################################################
+
+seeder.create_if_doesnt_exist(User, "email", "moderator-user@forem.local") do
+  user = User.create!(
+    name: "Moderator User",
+    email: "moderator-user@forem.local",
+    username: "moderator_user",
+    profile_image: File.open(Rails.root.join("app/assets/images/#{rand(1..40)}.png")),
+    confirmed_at: Time.current,
+    registered_at: Time.current,
+    password: "password",
+    password_confirmation: "password",
+    saw_onboarding: true,
+    checked_code_of_conduct: true,
+    checked_terms_and_conditions: true,
+  )
+  user.notification_setting.update(
+    email_comment_notifications: false,
+    email_follower_notifications: false,
+  )
+
+  user.profile.update(website_url: Faker::Internet.url)
+
+  user.add_role(:moderator)
+  user.add_role(:trusted)
+end
+
+##############################################################################
+
 seeder.create_if_doesnt_exist(Organization, "slug", "bachmanity") do
   organization = Organization.create!(
     name: "Bachmanity",
@@ -151,6 +220,12 @@ seeder.create_if_doesnt_exist(Organization, "slug", "bachmanity") do
     organization_id: organization.id,
     type_of_user: "admin",
   )
+
+  OrganizationMembership.create!(
+    user_id: many_orgs_user.id,
+    organization_id: organization.id,
+    type_of_user: "member",
+  )
 end
 
 seeder.create_if_doesnt_exist(Organization, "slug", "awesomeorg") do
@@ -165,6 +240,46 @@ seeder.create_if_doesnt_exist(Organization, "slug", "awesomeorg") do
 
   OrganizationMembership.create!(
     user_id: trusted_user.id,
+    organization_id: organization.id,
+    type_of_user: "member",
+  )
+
+  OrganizationMembership.create!(
+    user_id: many_orgs_user.id,
+    organization_id: organization.id,
+    type_of_user: "member",
+  )
+end
+
+seeder.create_if_doesnt_exist(Organization, "slug", "org3") do
+  organization = Organization.create!(
+    name: "Org 3",
+    summary: Faker::Company.bs,
+    profile_image: logo = File.open(Rails.root.join("app/assets/images/#{rand(1..40)}.png")),
+    nav_image: logo,
+    url: Faker::Internet.url,
+    slug: "org3",
+  )
+
+  OrganizationMembership.create!(
+    user_id: many_orgs_user.id,
+    organization_id: organization.id,
+    type_of_user: "member",
+  )
+end
+
+seeder.create_if_doesnt_exist(Organization, "slug", "org4") do
+  organization = Organization.create!(
+    name: "Org 4",
+    summary: Faker::Company.bs,
+    profile_image: logo = File.open(Rails.root.join("app/assets/images/#{rand(1..40)}.png")),
+    nav_image: logo,
+    url: Faker::Internet.url,
+    slug: "org4",
+  )
+
+  OrganizationMembership.create!(
+    user_id: many_orgs_user.id,
     organization_id: organization.id,
     type_of_user: "member",
   )
@@ -471,6 +586,26 @@ end
 
 ##############################################################################
 
+seeder.create_if_doesnt_exist(Article, "slug", "unfeatured-article-slug") do
+  markdown = <<~MARKDOWN
+    ---
+    title:  Unfeatured article
+    published: true
+    ---
+    #{Faker::Hipster.paragraph(sentence_count: 2)}
+    #{Faker::Markdown.random}
+    #{Faker::Hipster.paragraph(sentence_count: 2)}
+  MARKDOWN
+  Article.create!(
+    body_markdown: markdown,
+    featured: false,
+    user_id: admin_user.id,
+    slug: "unfeatured-article-slug",
+  )
+end
+
+##############################################################################
+
 seeder.create_if_doesnt_exist(Article, "slug", "test-article-with-hidden-comments-slug") do
   markdown = <<~MARKDOWN
     ---
@@ -538,6 +673,26 @@ end
 
 ##############################################################################
 
+seeder.create_if_doesnt_exist(User, "email", "tech-admin-user@forem.local") do
+  tech_admin_user = User.create!(
+    name: "Tech admin User",
+    email: "tech-admin-user@forem.local",
+    username: "tech_admin_user",
+    profile_image: File.open(Rails.root.join("app/assets/images/#{rand(1..40)}.png")),
+    confirmed_at: Time.current,
+    registered_at: Time.current,
+    password: "password",
+    password_confirmation: "password",
+    saw_onboarding: true,
+    checked_code_of_conduct: true,
+    checked_terms_and_conditions: true,
+  )
+
+  tech_admin_user.add_role(:tech_admin)
+end
+
+##############################################################################
+
 seeder.create_if_doesnt_exist(User, "email", "series-user@forem.local") do
   series_user = User.create!(
     name: "Series User",
@@ -567,6 +722,48 @@ end
 
 ##############################################################################
 
+seeder.create_if_doesnt_exist(User, "email", "suspended-user@forem.local") do
+  suspended_user = User.create!(
+    name: "Suspended User",
+    email: "suspended-user@forem.local",
+    username: "suspended_user",
+    profile_image: File.open(Rails.root.join("app/assets/images/#{rand(1..40)}.png")),
+    confirmed_at: Time.current,
+    registered_at: Time.current,
+    password: "password",
+    password_confirmation: "password",
+    saw_onboarding: true,
+    checked_code_of_conduct: true,
+    checked_terms_and_conditions: true,
+  )
+
+  suspended_user.add_role(:suspended)
+end
+
+##############################################################################
+
+seeder.create_if_doesnt_exist(Article, "title", "Suspended user article") do
+  markdown = <<~MARKDOWN
+    ---
+    title:  Suspended user article
+    published: true
+    cover_image: #{Faker::Company.logo}
+    ---
+    #{Faker::Hipster.paragraph(sentence_count: 2)}
+    #{Faker::Markdown.random}
+    #{Faker::Hipster.paragraph(sentence_count: 2)}
+  MARKDOWN
+  Article.create(
+    body_markdown: markdown,
+    featured: false,
+    show_comments: true,
+    slug: "suspended-user-article-slug",
+    user_id: User.find_by(email: "suspended-user@forem.local").id,
+  )
+end
+
+##############################################################################
+
 seeder.create_if_doesnt_exist(Article, "title", "Series test article") do
   markdown = <<~MARKDOWN
     ---
@@ -583,6 +780,7 @@ seeder.create_if_doesnt_exist(Article, "title", "Series test article") do
     body_markdown: markdown,
     featured: true,
     show_comments: true,
+    slug: "series-test-article-slug",
     user_id: User.find_by(email: "series-user@forem.local").id,
   )
 end

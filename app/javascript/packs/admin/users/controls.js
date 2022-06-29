@@ -1,3 +1,4 @@
+import { initializeFiltersModal } from './filtersModal';
 import { INTERACTIVE_ELEMENTS_QUERY } from '@utilities/dropdownUtils';
 
 const expandSearchButton = document.getElementById('expand-search-btn');
@@ -73,13 +74,13 @@ const sendFocusToFirstInteractiveItem = (element) => {
 };
 
 /**
- * Ensures that search/filter button indicators stay in sync with the user's current selections.
+ * Ensures that search/filter button indicators in mobile view stay in sync with the user's current selections.
  * Indicators may become visible when a search term or filter option is input (although they are only displayed via CSS
  * when the section is collapsed).
  */
 const initializeSectionIndicators = () => {
   document
-    .getElementById('search')
+    .getElementById('search-small')
     ?.addEventListener('change', ({ target: { value } }) => {
       toggleIndicator({
         indicator: expandSearchButton?.querySelector('.search-indicator'),
@@ -88,7 +89,7 @@ const initializeSectionIndicators = () => {
     });
 
   document
-    .getElementById('role')
+    .getElementById('filter-small')
     ?.addEventListener('change', ({ target: { value } }) => {
       toggleIndicator({
         indicator: expandFilterButton?.querySelector('.search-indicator'),
@@ -114,3 +115,4 @@ const toggleIndicator = ({ value, indicator }) => {
 
 initializeExpandingSections();
 initializeSectionIndicators();
+initializeFiltersModal();

@@ -13,6 +13,12 @@ RSpec.describe Article, type: :model do
   include_examples "#sync_reactions_count", :article
   it_behaves_like "UserSubscriptionSourceable"
 
+  describe "ignored columns" do
+    it "ignores spaminess rating" do
+      expect(described_class.ignored_columns).to eq ["spaminess_rating"]
+    end
+  end
+
   describe "validations" do
     it { is_expected.to belong_to(:collection).optional }
     it { is_expected.to belong_to(:organization).optional }
@@ -21,6 +27,7 @@ RSpec.describe Article, type: :model do
     it { is_expected.to have_one(:discussion_lock).dependent(:delete) }
 
     it { is_expected.to have_many(:comments).dependent(:nullify) }
+    it { is_expected.to have_many(:context_notifications).dependent(:delete_all) }
     it { is_expected.to have_many(:mentions).dependent(:delete_all) }
     it { is_expected.to have_many(:html_variant_successes).dependent(:nullify) }
     it { is_expected.to have_many(:html_variant_trials).dependent(:nullify) }
@@ -236,6 +243,14 @@ RSpec.describe Article, type: :model do
         expect(article.title).to eq allowed_title
       end
 
+      it "allows Euro symbol (€)" do
+        allowed_title = "Euro code €€€"
+
+        article = create(:article, title: allowed_title)
+
+        expect(article.title).to eq allowed_title
+      end
+
       it "produces a proper title" do
         test_article = build(:article, title: "An Article Title")
 
@@ -266,7 +281,7 @@ RSpec.describe Article, type: :model do
     describe "tag validation" do
       let(:article) { build(:article, user: user) }
 
-      # See https://github.com/thepracticaldev/dev.to/pull/6302
+      # See https://github.com/forem/forem/pull/6302
       # rubocop:disable RSpec/VerifiedDoubles
       it "does not modify the tag list if there are no adjustments" do
         allow(TagAdjustment).to receive(:where).and_return(TagAdjustment.none)
@@ -1117,6 +1132,17 @@ RSpec.describe Article, type: :model do
         allow(Spam::Handler).to receive(:handle_article!).with(article: article).and_call_original
         article.save
         expect(Spam::Handler).to have_received(:handle_article!).with(article: article)
+      end
+    end
+
+    describe "record field test event" do
+      it "enqueues Users::RecordFieldTestEventWorker" do
+        sidekiq_assert_enqueued_with(
+          job: Users::RecordFieldTestEventWorker,
+          args: [article.user_id, AbExperiment::GoalConversionHandler::USER_PUBLISHES_POST_GOAL],
+        ) do
+          article.save
+        end
       end
     end
 

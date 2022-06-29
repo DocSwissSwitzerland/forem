@@ -14,6 +14,7 @@ namespace :admin do
 
     mount Sidekiq::Web => "sidekiq"
     mount FieldTest::Engine, at: "abtests"
+    get "abtests/experiments/:experiment_id/:goal", to: "/field_test/experiments#goal"
 
     flipper_ui = Flipper::UI.app(Flipper,
                                  { rack_protection: { except: %i[authenticity_token form_token json_csrf
@@ -22,7 +23,6 @@ namespace :admin do
     mount PgHero::Engine, at: "pghero"
   end
 
-  resources :invitations, only: %i[index new create destroy]
   resources :organization_memberships, only: %i[update destroy create]
   resources :permissions, only: %i[index]
   resources :reactions, only: %i[update]
@@ -39,32 +39,38 @@ namespace :admin do
     resources :user_experiences, only: [:create]
   end
 
-  namespace :users do
+  scope :member_manager do
+    resources :users, only: %i[index show update destroy] do
+      resources :email_messages, only: :show
+      collection do
+        get "export"
+      end
+
+      member do
+        post "banish"
+        post "export_data"
+        post "full_delete"
+        patch "user_status"
+        post "merge"
+        delete "remove_identity"
+        post "send_email"
+        post "verify_email_ownership"
+        patch "unlock_access"
+        post "unpublish_all_articles"
+      end
+    end
+
+    resources :invitations, only: %i[index new create destroy] do
+      member do
+        post "resend"
+      end
+    end
+
     resources :gdpr_delete_requests, only: %i[index destroy]
   end
 
-  resources :users, only: %i[index show update destroy] do
-    resources :email_messages, only: :show
-
-    member do
-      post "banish"
-      post "export_data"
-      post "full_delete"
-      patch "user_status"
-      post "merge"
-      delete "remove_identity"
-      post "send_email"
-      post "verify_email_ownership"
-      patch "unlock_access"
-      post "unpublish_all_articles"
-    end
-  end
-
   scope :content_manager do
-    # This is a temporary constraint as we work towards releasing https://github.com/orgs/forem/projects/46/views/1
-    constraints(->(_request) { FeatureFlag.exist?(:limit_post_creation_to_admins) }) do
-      resources :spaces, only: %i[index update]
-    end
+    resources :spaces, only: %i[index update]
     resources :articles, only: %i[index show update] do
       member do
         delete :unpin

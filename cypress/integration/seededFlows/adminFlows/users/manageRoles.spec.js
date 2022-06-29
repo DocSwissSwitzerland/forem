@@ -24,17 +24,17 @@ describe('Manage User Roles', () => {
 
     describe('Changing Roles', () => {
       beforeEach(() => {
-        cy.visit('/admin/users/2');
+        cy.visit('/admin/member_manager/users/2');
       });
 
-      it('should change a role', () => {
+      it('Remove other roles and add a note when Warned role added', () => {
         checkUserStatus('Trusted');
 
         cy.findByRole('button', { name: 'Remove role: Trusted' }).should(
           'exist',
         );
         openRolesModal().within(() => {
-          cy.findByRole('combobox', { name: 'Role' }).select('Warn');
+          cy.findByRole('combobox', { name: 'Role' }).select('Warned');
           cy.findByRole('textbox', { name: 'Add a note to this action:' }).type(
             'some reason',
           );
@@ -51,6 +51,42 @@ describe('Manage User Roles', () => {
         cy.findByRole('button', { name: 'Remove role: Trusted' }).should(
           'not.exist',
         );
+
+        cy.findByRole('navigation', { name: 'Member details' })
+          .findByRole('link', { name: 'Notes' })
+          .click();
+
+        cy.findByText('some reason').should('exist');
+        cy.findByText(/Warned by/).should('exist');
+      });
+
+      it('should remove other roles & add a note when Suspend role added', () => {
+        cy.findByRole('button', { name: 'Remove role: Trusted' });
+        openRolesModal().within(() => {
+          cy.findByRole('combobox', { name: 'Role' }).select('Suspended');
+          cy.findByRole('textbox', { name: 'Add a note to this action:' }).type(
+            'some reason',
+          );
+          cy.findByRole('button', { name: 'Add' }).click();
+        });
+
+        cy.getModal().should('not.exist');
+        verifyAndDismissUserUpdatedMessage();
+
+        cy.findByRole('button', {
+          name: "Suspended You can't remove this role.",
+        }).should('exist');
+        checkUserStatus('Suspended');
+
+        cy.findByRole('button', { name: 'Remove role: Trusted' }).should(
+          'not.exist',
+        );
+
+        cy.findByRole('navigation', { name: 'Member details' })
+          .findByRole('link', { name: 'Notes' })
+          .click();
+        cy.findByText('some reason').should('exist');
+        cy.findByText(/Suspended by/).should('exist');
       });
 
       it('should remove a role', () => {
@@ -88,7 +124,7 @@ describe('Manage User Roles', () => {
 
     describe('Adding Roles', () => {
       beforeEach(() => {
-        cy.visit('/admin/users/3');
+        cy.visit('/admin/member_manager/users/3');
       });
 
       it('should not add a role if a reason is missing.', () => {
@@ -96,7 +132,7 @@ describe('Manage User Roles', () => {
         cy.findByText('No roles assigned yet.').should('be.visible');
 
         openRolesModal().within(() => {
-          cy.findByRole('combobox', { name: 'Role' }).select('Warn');
+          cy.findByRole('combobox', { name: 'Role' }).select('Warned');
           cy.findByRole('button', { name: 'Add' }).click();
           cy.findByRole('button', { name: 'Close' }).click();
         });
@@ -111,7 +147,7 @@ describe('Manage User Roles', () => {
         cy.findByText('No roles assigned yet.').should('be.visible');
 
         openRolesModal().within(() => {
-          cy.findByRole('combobox', { name: 'Role' }).select('Warn');
+          cy.findByRole('combobox', { name: 'Role' }).select('Warned');
           cy.findByRole('textbox', { name: 'Add a note to this action:' }).type(
             'some reason',
           );
@@ -127,7 +163,9 @@ describe('Manage User Roles', () => {
         );
 
         openRolesModal().within(() => {
-          cy.findByRole('combobox', { name: 'Role' }).select('Comment Suspend');
+          cy.findByRole('combobox', { name: 'Role' }).select(
+            'Comment Suspended',
+          );
           cy.findByRole('textbox', { name: 'Add a note to this action:' }).type(
             'some reason',
           );

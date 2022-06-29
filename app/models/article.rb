@@ -45,6 +45,8 @@ class Article < ApplicationRecord
   MAX_USER_MENTION_LIVE_AT = Time.utc(2021, 4, 7).freeze
   PROHIBITED_UNICODE_CHARACTERS_REGEX = /[\u202a-\u202e]/ # BIDI embedding controls
 
+  MAX_TAG_LIST_SIZE = 4
+
   # Filter out anything that isn't a word, space, punctuation mark, or
   # recognized emoji.
   # See: https://github.com/forem/forem/pull/16787#issuecomment-1062044359
@@ -83,6 +85,7 @@ class Article < ApplicationRecord
     \u303d        # Either a line chart plummeting or the letter M, not sure
     \u3297        # Circled Ideograph Congratulation
     \u3299        # Circled Ideograph Secret
+    \u20ac        # Euro symbol (€)
     \u{1f000}-\u{1ffff} # More common emoji
   ]+/m
   # rubocop:enable Lint/DuplicateRegexpCharacterClassElement
@@ -95,6 +98,7 @@ class Article < ApplicationRecord
 
   has_many :mentions, as: :mentionable, inverse_of: :mentionable, dependent: :delete_all
   has_many :comments, as: :commentable, inverse_of: :commentable, dependent: :nullify
+  has_many :context_notifications, as: :context, inverse_of: :context, dependent: :delete_all
   has_many :html_variant_successes, dependent: :nullify
   has_many :html_variant_trials, dependent: :nullify
   has_many :notification_subscriptions, as: :notifiable, inverse_of: :notifiable, dependent: :delete_all
@@ -184,7 +188,8 @@ class Article < ApplicationRecord
     article.saved_change_to_user_id?
   }
 
-  after_commit :async_score_calc, :touch_collection, :enrich_image_attributes, on: %i[create update]
+  after_commit :async_score_calc, :touch_collection, :enrich_image_attributes, :record_field_test_event,
+               on: %i[create update]
 
   # The trigger `update_reading_list_document` is used to keep the `articles.reading_list_document` column updated.
   #
@@ -353,18 +358,21 @@ class Article < ApplicationRecord
 
     dir = "desc" unless %w[asc desc].include?(dir)
 
-    column =
-      case kind
-      when "creation"  then :created_at
-      when "views"     then :page_views_count
-      when "reactions" then :public_reactions_count
-      when "comments"  then :comments_count
-      when "published" then :published_at
-      else
-        :created_at
-      end
-
-    order(column => dir.to_sym)
+    case kind
+    when "creation"
+      order(created_at: dir)
+    when "views"
+      order(page_views_count: dir)
+    when "reactions"
+      order(public_reactions_count: dir)
+    when "comments"
+      order(comments_count: dir)
+    when "published"
+      # NOTE: For recently published, we further filter to only published posts
+      order(published_at: dir).published
+    else
+      order(created_at: dir)
+    end
   }
 
   # @note This includes the `featured` scope, which may or may not be
@@ -394,6 +402,8 @@ class Article < ApplicationRecord
                      }
 
   scope :eager_load_serialized_data, -> { includes(:user, :organization, :tags) }
+
+  self.ignored_columns = ["spaminess_rating"]
 
   def self.seo_boostable(tag = nil, time_ago = 18.days.ago)
     # Time ago sometimes returns this phrase instead of a date
@@ -557,8 +567,7 @@ class Article < ApplicationRecord
     update_columns(score: score,
                    privileged_users_reaction_points_sum: reactions.privileged_category.sum(:points),
                    comment_score: comments.sum(:score),
-                   hotness_score: BlackBox.article_hotness_score(self),
-                   spaminess_rating: BlackBox.calculate_spaminess(self))
+                   hotness_score: BlackBox.article_hotness_score(self))
   end
 
   def co_author_ids_list=(list_of_co_author_ids)
@@ -738,7 +747,7 @@ class Article < ApplicationRecord
     add_tag_adjustments_to_tag_list
 
     # check there are not too many tags
-    return errors.add(:tag_list, I18n.t("models.article.too_many_tags")) if tag_list.size > 4
+    return errors.add(:tag_list, I18n.t("models.article.too_many_tags")) if tag_list.size > MAX_TAG_LIST_SIZE
 
     # check tags names aren't too long and don't contain non alphabet characters
     tag_list.each do |tag|
@@ -903,7 +912,6 @@ class Article < ApplicationRecord
 
   def calculate_base_scores
     self.hotness_score = 1000 if hotness_score.blank?
-    self.spaminess_rating = 0 if new_record?
   end
 
   def create_conditional_autovomits
@@ -932,5 +940,13 @@ class Article < ApplicationRecord
     return unless title&.match?(PROHIBITED_UNICODE_CHARACTERS_REGEX)
 
     self.title = title.gsub(PROHIBITED_UNICODE_CHARACTERS_REGEX, "")
+  end
+
+  def record_field_test_event
+    return unless published?
+    return if FieldTest.config["experiments"].nil?
+
+    Users::RecordFieldTestEventWorker
+      .perform_async(user_id, AbExperiment::GoalConversionHandler::USER_PUBLISHES_POST_GOAL)
   end
 end
