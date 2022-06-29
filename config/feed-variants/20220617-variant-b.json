@@ -1,4 +1,3 @@
-
 {
   "max_days_since_published": 15,
   "description": "Derived from 20220617-variant-a but with re-seeding every request",

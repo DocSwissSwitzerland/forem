@@ -15,24 +15,16 @@ function callAnalyticsAPI(path, date, { organizationId, articleId }) {
     .then((response) => response.json());
 }
 
-export function callHistoricalAPI(
-  date,
-  { organizationId, articleId },
-) {
-  return callAnalyticsAPI(
-    '/api/analytics/historical',
-    date,
-    { organizationId, articleId },
-  );
+export function callHistoricalAPI(date, { organizationId, articleId }) {
+  return callAnalyticsAPI('/api/analytics/historical', date, {
+    organizationId,
+    articleId,
+  });
 }
 
-export function callReferrersAPI(
-  date,
-  { organizationId, articleId },
-) {
-  return callAnalyticsAPI(
-    '/api/analytics/referrers',
-    date,
-    { organizationId, articleId },
-  );
+export function callReferrersAPI(date, { organizationId, articleId }) {
+  return callAnalyticsAPI('/api/analytics/referrers', date, {
+    organizationId,
+    articleId,
+  });
 }

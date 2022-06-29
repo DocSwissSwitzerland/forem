@@ -406,7 +406,8 @@ export function addBottomActionsListeners() {
     .getElementById('unsuspend-user-btn')
     ?.addEventListener('click', toggleModal);
 
-  document.getElementById('unpublish-all-posts-btn')
+  document
+    .getElementById('unpublish-all-posts-btn')
     ?.addEventListener('click', toggleUnpublishAllPostsModal);
 }
 
